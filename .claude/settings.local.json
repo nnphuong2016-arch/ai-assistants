@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rn --include=\"*.md\" -oE '`[a-zA-Z0-9_/.-]+\\\\.md`' .)",
+      "Read(//c/projects/funamark/**)",
+      "Read(//c/projects/**)",
+      "Bash(ls \"C:/projects/funamark/project-memory\" 2>/dev/null; echo \"exists check done\")",
+      "Bash(ls -la \"C:/projects/funamark/project-memory/\" 2>&1; echo \"---\"; find \"C:/projects/funamark\" -iname \"*blueprint*\" 2>&1; echo \"---stat---\"; stat \"C:/projects/funamark/project-memory/funamark-master-blueprint-v2.md\" 2>&1)",
+      "Bash(grep -n \"templates\\\\\\\\\\\\\\\\|CÒN THIẾU\" \"C:/projects/funamark/project-memory/funamark-master-blueprint-v2.md\")",
+      "Bash(grep -n \"content_queue\\\\s*\\(id\\\\|GATE TRƯỚC THÔNG BÁO\\\\|Output đúng \\\\`publish-factory/output_schema.md\\\\`\" \"C:/projects/funamark/project-memory/funamark-master-blueprint-v2.md\")",
+      "Bash(grep -n \"community-factory\\\\\\\\\\\\\\\\\" \"C:/projects/funamark/project-memory/funamark-master-blueprint-v2.md\")",
+      "Bash(grep -n \"WF-07 — VIDEO FACTORY\\\\|research_results     \\(id\\\\|core-brain\\\\\\\\\\\\\\\\\\\\|video-factory\\\\\\\\\\\\\\\\\" \"C:/projects/funamark/project-memory/funamark-master-blueprint-v2.md\")",
+      "Bash(awk '/^## [0-9]/{if\\(name\\)print name\": \"count\" hooks\"; name=$0; count=0; next} /^[0-9]+\\\\./{count++} END{print name\": \"count\" hooks\"}' hook_library_full.md)",
+      "Bash(grep -n \"PHẦN J — CHAT FACTORY\\\\|chat-factory\\\\\\\\\\\\\\\\\" \"C:/projects/funamark/project-memory/funamark-master-blueprint-v2.md\")",
+      "Read(//tmp/**)",
+      "Bash(sort -t: -k3)",
+      "Bash(echo \"ffmpeg: $?\")",
+      "Bash(echo \"python: $?\")",
+      "Bash(where n8n *)",
+      "Bash(echo \"n8n: $?\")"
+    ]
+  }
+}

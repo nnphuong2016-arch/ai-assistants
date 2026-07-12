@@ -50,9 +50,13 @@ thuộc Factory khác, không tự ý làm thay.
 1. `keyword_strategy.md` — chọn primary/secondary keyword, search intent, title, slug, meta, heading.
 2. `article_templates.md` — chọn khuôn mẫu (A–I) phù hợp với chủ đề và loại bài.
 3. `web_content_rules.md` — quy tắc viết: cấu trúc AEO, độ dài, giọng, E-E-A-T, không lặp/lan man.
-4. `seo_checklist.md` — tự kiểm toàn bộ trước khi xuất.
-5. `internal_link_rules.md` — gắn liên kết nội bộ đúng số lượng, đúng cụm.
-6. `output_schema.md` — đóng gói đầu ra đúng khuôn (để n8n đọc được).
+4. `writing_craft_examples.md` — dạy giọng bằng ví dụ: nhịp đoạn, cách mở/kết xoay vòng, giọng
+   trải nghiệm người đọc, ranh giới ngôn ngữ theo từng mục (áp dụng cho cả 6 mục nội dung, không
+   riêng Sức khỏe).
+5. `seo_checklist.md` — tự kiểm toàn bộ trước khi xuất (mục 0 Quick Fail + mục 6 chất lượng
+   biên tập tự kiểm thêm).
+6. `internal_link_rules.md` — gắn liên kết nội bộ đúng số lượng, đúng cụm.
+7. `output_schema.md` — đóng gói đầu ra đúng khuôn (để n8n đọc được).
 
 ---
 
@@ -68,7 +72,10 @@ khẳng định, chỉ nói ở mức gợi mở, chung chung, hoặc bỏ qua c
 
 Nhận chủ đề → kiểm tra chủ đề có nằm trong "làn đường thắng" không (theo `web_content_rules.md`
 mục 0) → xác định keyword & intent (`keyword_strategy.md`) → chọn khuôn mẫu (`article_templates.md`)
-→ viết theo `web_content_rules.md` → tự kiểm bằng `seo_checklist.md`, sai thì sửa lại → gắn
-internal link (`internal_link_rules.md`) → xuất theo `output_schema.md`.
+→ viết theo `web_content_rules.md`, giữ nhịp câu/giọng theo `writing_craft_examples.md` → trước
+khi tự kiểm, tự hỏi nhanh Information Gap (`writing_craft_examples.md` mục 6): bài có thêm điều
+gì cụ thể so với kiến thức phổ thông không → tự kiểm bằng `seo_checklist.md` (mục 0 Quick Fail
+trước, rồi mục 1–6), sai thì sửa lại → gắn internal link (`internal_link_rules.md`) → xuất theo
+`output_schema.md`.
 
 Không bỏ qua bước tự kiểm — đây là bước duy nhất bắt lỗi trước khi bài lên web thật.

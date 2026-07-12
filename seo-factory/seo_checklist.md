@@ -3,7 +3,24 @@
 > Tải lên khu **Files** của SEO Factory. Đây là file AI tự kiểm — chạy qua TOÀN BỘ danh sách
 > này trước khi xuất bất kỳ bài nào. Nếu một mục sai → sửa lại rồi kiểm lại, không xuất bài
 > có mục nào chưa đạt.
-> Cập nhật: 04/07/2026.
+> Cập nhật: 12/07/2026.
+
+---
+
+## 0. QUICK FAIL (kiểm trước tiên — sai 1 trong 5 điều này thì DỪNG, sửa ngay, không viết tiếp)
+
+Rút từ lỗi thực tế gặp phải khi so bài với một bản viết khác (12/07/2026) — 5 lỗi hay gặp nhất,
+kiểm trong 30 giây trước khi chạy hết checklist đầy đủ bên dưới:
+
+- ☐ **Title > 60 ký tự?** → STOP, viết lại ngắn hơn (`keyword_strategy.md` mục 5).
+- ☐ **Slug dài/có stopword thừa** ("la-gi", "nhu-the-nao", "mot", "ma", "van"...)? → STOP, rút gọn.
+- ☐ **Thiếu dòng minh bạch AI** ("AI Hiền triết Anh Minh là một nhân vật AI")? → STOP, thêm ngay,
+  không xuất bài chạm sức khỏe/tâm lý mà thiếu dòng này.
+- ☐ **Disclaimer bị nhét nhầm vào field References**? → STOP, tách riêng: References = nguồn
+  trích dẫn thật (hoặc để trống), Disclaimer nằm trong Body theo `article_templates.md`.
+- ☐ **Thiếu ngày cập nhật** hiển thị trong bài? → STOP, thêm "Cập nhật: ..." theo đúng ngày.
+
+Qua được cả 5 điều trên mới chạy tiếp checklist mục 1–5 bên dưới.
 
 ---
 
@@ -41,6 +58,16 @@
 
 - ☐ Có 2–5 internal link đúng theo `internal_link_rules.md`, không trùng anchor text?
 - ☐ Đầu ra đã đóng đúng khuôn `output_schema.md` (đủ field, đúng thứ tự)?
+
+## 6. CHẤT LƯỢNG BIÊN TẬP (tự kiểm thêm — không phải điều kiện xuất bản như mục 1–5)
+
+Đối chiếu nhanh với `writing_craft_examples.md` trước khi coi là xong (mục này chỉ để bài hay
+hơn, không phải rào chắn PASS/FAIL — nếu bỏ qua, bài vẫn hợp lệ để xuất):
+
+- ☐ Có 3 đoạn liên tiếp nào cùng khuôn "giải thích → ví dụ → kết luận" không?
+- ☐ Có đoạn nào mở bằng đúng cụm giống đoạn ngay trước nó không ("có lẽ", "đôi khi", "nhiều người"...)?
+- ☐ Người đọc gấp bài lại có biết thêm điều gì cụ thể, hay chỉ đọc lại kiến thức phổ thông bằng câu chữ khác (Information Gap)?
+- ☐ Nếu chủ đề chạm ranh giới ngôn ngữ riêng (Sức khỏe/Triết lý/Đồng hành/Bếp An Nhiên), đã tra đúng file boundary tương ứng chưa (`writing_craft_examples.md` mục 7)?
 
 ---
 

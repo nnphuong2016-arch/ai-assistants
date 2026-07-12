@@ -88,3 +88,31 @@ Góc nói: già đi là tự nhiên; chăm thân–tâm để mỗi giai đoạn
 | "Ăn cái này sẽ khỏi bệnh" | "Bữa ăn cân bằng có thể hỗ trợ cảm giác dễ chịu" |
 | "Nếu không làm, bạn sẽ bị…" | "Quan tâm sớm tới cơ thể là điều nên làm" |
 | "Đây là cách chữa khỏi" | "Đây là một thói quen nhiều người thấy hữu ích" |
+
+---
+
+## 9. BẢNG SEMANTIC ENTITY — PREFERRED / ALLOWED / FORBIDDEN
+
+> Dùng khi muốn tăng "chiều sâu chủ đề" (semantic keyword) cho bài SEO/kịch bản mà không lệch
+> giọng hiền triết sang giọng bài báo y sinh. Rút ra từ một đợt test thật (12/07/2026) — mô hình
+> khác đề xuất thêm "cortisol/melatonin" cho bài về giấc ngủ; bảng này là câu trả lời chuẩn hoá
+> cho tình huống đó, để không phải tranh luận lại từ đầu mỗi lần.
+>
+> **Preferred** = ưu tiên dùng trước (đúng giọng, đủ chiều sâu). **Allowed** = dùng được khi cần
+> nhưng không phải lựa chọn đầu tiên. **Forbidden** = tránh hoàn toàn — thuật ngữ y sinh/hormone/
+> cơ chế sinh lý chi tiết, kéo bài sang vùng YMYL và lệch giọng kênh (xem `web_content_rules.md`
+> mục 0 + mục 2 file này).
+
+| Ý muốn diễn đạt | Preferred (ưu tiên) | Allowed (dùng được) | Forbidden (tránh hoàn toàn) |
+|---|---|---|---|
+| Nhịp ngủ – thức | nhịp ngày, nhịp sống đều | đồng hồ sinh học | melatonin |
+| Căng thẳng kéo dài | tâm chưa yên, gồng lâu | phản ứng stress | cortisol, adrenaline |
+| Phục hồi cơ thể | nghỉ ngơi, hồi lại | tái tạo năng lượng | ATP, cơ chế tế bào |
+| Năng lượng trong ngày | sức bền, sự đều đặn | mức năng lượng | chuyển hoá năng lượng (chi tiết) |
+| Tâm trạng/cảm xúc | lòng nhẹ, tâm yên | trạng thái tinh thần | serotonin, dopamine |
+| Miễn dịch/đề kháng | cơ thể khỏe từ bên trong | sức đề kháng nói chung | tên tế bào/kháng thể cụ thể |
+
+**Nguyên tắc chung:** nếu một entity chỉ có thể giải thích rõ bằng cách nhắc tên hormone/cơ chế
+sinh học/chỉ số xét nghiệm — đừng thêm, đổi sang mô tả hiện tượng đời thường tương đương (cột
+Preferred/Allowed). Bảng này sẽ nối dài khi gặp tình huống mới, không cần hỏi lại nếu đã có tiền
+lệ tương tự ở đây.

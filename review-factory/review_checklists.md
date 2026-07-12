@@ -18,6 +18,12 @@
 **Review-riêng (không có trong checklist gốc):**
 - Claim y khoa vượt mức (chẩn đoán/kê đơn/cam kết điều trị) — **luôn kiểm độc lập lần 2** dù
   `seo_checklist.md` đã có mục này, vì đây là điểm compliance nhạy cảm nhất trong toàn hệ thống.
+- **Content Quality (chỉ ghi vào Suggestions, KHÔNG ảnh hưởng Final Decision):** đối chiếu
+  `seo-factory/writing_craft_examples.md` — nhịp đoạn có lặp khuôn 3 lần liên tiếp không, có câu
+  nghe sáo AI không, có Information Gap không. Đây là chất lượng biên tập, không phải tiêu chí
+  an toàn/schema — theo đúng `review_rules.md` mục 1 ("không đánh giá hay/dở theo cảm nhận"),
+  tuyệt đối không dùng để hạ PASS xuống NEED FIX/FAIL. Chỉ ghi nhận ở khối **Suggestions** của
+  `output_schema.md` để người phụ trách tham khảo.
 
 ## IMAGE
 

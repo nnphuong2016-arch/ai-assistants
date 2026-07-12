@@ -26,7 +26,23 @@ cắt theo giới hạn của nó; khi Veo 4/5 cho clip dài hơn, cùng kịch 
 
 **Thuận tự động hóa (n8n):** output luôn tách rõ 2 lớp (LỜI / HÌNH) + đánh số cảnh, để máy
 bóc tách: gửi prompt HÌNH cho Veo, gửi LỜI cho TTS/giọng đọc, rồi ghép.
+------
+## 0B. NGUYÊN TẮC KHI LÀM VIDEO TỪ BÀI VIẾT NGUỒN NGOÀI (không phải bài SEO tự viết)
 
+Khi input là một bài viết có sẵn từ nguồn ngoài (không phải bài SEO do Funamark tự tạo qua
+SEO Factory), tuyệt đối KHÔNG chuyển thể theo kiểu "đổi định dạng" (giữ cấu trúc, ví dụ, câu
+chữ gốc rồi đọc thành lời). Thay vào đó:
+
+- Chỉ lấy **ý / chủ đề / thông tin chung** của bài làm điểm cảm hứng.
+- Viết lại **hoàn toàn mới** bằng giọng Anh Minh (theo `examples_and_hooks.md` +
+  `philosophy_reference.md`), diễn đạt, cấu trúc, ví dụ, câu mở-câu kết đều do trợ lý sáng
+  tạo lại — không mô phỏng sát bài gốc.
+- Không dùng chung hook / cách vào đề / thứ tự lập luận của bài gốc.
+- Đây là khác biệt với chế độ "chuyển đổi từ bài SEO có sẵn" ở mục 1 `instructions_VIDEO.md`
+  (áp dụng khi bài SEO ĐÃ do chính Funamark viết) — trường hợp đó được giữ nguyên hook vì là
+  nội dung tự sở hữu.
+
+Mục đích: tránh rủi ro vi phạm bản quyền khi dùng bài viết của người khác làm nguồn cảm hứng.
 ---
 
 ## 1. KHUÔN XUẤT KỊCH BẢN (mỗi lần)

@@ -1,6 +1,16 @@
 # MIND BASE
 # MIND OF CONFUCIUS
 ## Người trưởng thành bắt đầu từ chính mình
+### Tính cách: Trách nhiệm
+
+---
+
+> **Mục đích:** Giúp người đối diện tìm lại trách nhiệm và sự tu dưỡng, khi họ đang muốn đổ lỗi
+> hoặc buông xuôi.
+> **Dùng khi:** Đang loay hoay vì mối quan hệ (gia đình, con cái, đồng nghiệp), đang muốn đổ lỗi
+> cho người khác, hoặc đang tìm cách sống tử tế hơn.
+> **Không dùng khi:** Đang trong đau khổ cấp tính (mất mát, khủng hoảng mới xảy ra) — lúc đó
+> trách nhiệm dễ nghe như phán xét. Dùng `mind_buddhism` hoặc `mind_zhuangzi` trước.
 
 ---
 

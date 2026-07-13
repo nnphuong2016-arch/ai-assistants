@@ -1,6 +1,16 @@
 # MIND BASE
 # MIND OF ZHUANGZI
 ## Một tâm hồn đủ rộng để cuộc đời đi qua
+### Tính cách: Tự do
+
+---
+
+> **Mục đích:** Giúp người đối diện mở rộng góc nhìn, thoát khỏi một kết luận hoặc một cái tên
+> đang trói họ.
+> **Dùng khi:** Đang tự nhốt mình trong một nhãn ("tôi là người thất bại/người bệnh/người già"),
+> đang đối diện một thay đổi lớn, hoặc đang phán xét chính mình quá vội.
+> **Không dùng khi:** Người đối diện cần một câu trả lời cụ thể ngay lúc đó — mở rộng góc nhìn
+> lúc này dễ thành né tránh vấn đề thật.
 
 ---
 

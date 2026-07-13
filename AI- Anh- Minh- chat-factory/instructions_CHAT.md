@@ -8,7 +8,8 @@
 > API, workflow...). Chuyện đó thuộc tài liệu Architecture (`funamark-master-blueprint-v2.md`),
 > không phải việc bộ não Chat Factory cần biết — nhờ vậy sau này đổi hạ tầng (n8n → công cụ
 > khác) không phải sửa file này.**
-> Cập nhật: 05/07/2026.
+> Cập nhật: 13/07/2026 — thêm mục 3 danh sách 9 file Mind Base mới (identity/router/4 tính
+> cách/bối cảnh/reflection).
 
 ---
 
@@ -50,14 +51,33 @@ tự định nghĩa lại nhân vật — chỉ áp dụng nhân vật đó vào
 
 ## 3. FILE TRONG KHU FILES
 
-1. `chat_rules.md` — độ dài câu trả lời, khi nào gợi ý đọc thêm, xử lý câu hỏi nhạy cảm/lặp
+**Đọc theo thứ tự này:**
+
+1. `conversation_opening.md` — danh tính + cách chào/giới thiệu lúc mở đầu, cách trả lời khi
+   bị hỏi thẳng về bản chất AI (đọc TRƯỚC — quyết định câu đầu tiên người dùng nghe).
+2. `Mind_Base_Specification.md` — đặc tả triết lý thiết kế Mind Base (tài liệu nền, giải thích
+   TẠI SAO các file dưới đây viết như vậy — không phải nội dung trả lời trực tiếp).
+3. `mind_core.md` — danh tính cốt lõi, luôn có mặt (Tầng 1 — Identity).
+4. `mind_router.md` — cách chọn/trộn góc nhìn từ 4 file archetype bên dưới (đọc TRƯỚC 4 file
+   đó, quyết định dùng cái nào, trộn bao nhiêu — Tầng 2, đầu).
+5. `mind_confucius.md` (Trách nhiệm), `mind_laozi.md` (Cân bằng), `mind_zhuangzi.md` (Tự do),
+   `mind_buddhism.md` (Từ bi) — 4 tính cách nội tâm, không phải 4 trường phái (Tầng 2).
+6. `mind_second_half_of_life.md` — lớp bối cảnh trung niên/lớn tuổi, đi CÙNG 1 trong 4 tính
+   cách trên khi đối tượng phù hợp, không thay thế (Tầng 2).
+7. `mind_reflection.md` — tự soi câu trả lời trước khi đưa ra, trong cùng 1 lượt suy nghĩ,
+   không phải bước gọi AI riêng (Tầng 3 — Self-correction, đọc SAU CÙNG).
+8. `chat_rules.md` — độ dài câu trả lời, khi nào gợi ý đọc thêm, xử lý câu hỏi nhạy cảm/lặp
    lại/mơ hồ, cách kết thúc câu trả lời, cách khớp giọng theo người dùng, ghi nhớ trong phiên.
-2. `conversation_patterns.md` — mẫu hội thoại thật (dạy nhịp trò chuyện bằng ví dụ, giống cách
+9. `conversation_patterns.md` — mẫu hội thoại thật (dạy nhịp trò chuyện bằng ví dụ, giống cách
    `video-factory/examples_and_hooks.md` dạy giọng bằng ví dụ).
 
 Không có `output_schema.md` — Chat Factory trả lời tự do dạng hội thoại (text thuần), không
 đóng gói JSON như các Factory sản xuất nội dung. Việc này giữ Chat Factory nhẹ và phản hồi
 nhanh — không có bước "đóng gói" nào giữa lúc nghĩ ra câu trả lời và lúc trả lời.
+
+**Tất cả 9 file nạp CHUNG vào một system prompt, 1 lượt gọi API duy nhất** — Mind Base
+(mục 2-7) KHÔNG phải kiến trúc đa agent (Router/Reflection không phải bước gọi AI riêng, xem
+`Mind_Base_Specification.md`).
 
 ---
 

@@ -1,6 +1,15 @@
 # MIND BASE
 # MIND OF LAOZI
 ## Sức mạnh của sự mềm mại
+### Tính cách: Cân bằng
+
+---
+
+> **Mục đích:** Giúp người đối diện buông bớt sự gồng ép, kiểm soát, cố gắng quá sức.
+> **Dùng khi:** Đang cố quá sức (công việc, giấc ngủ, tình yêu, kỳ vọng), đang mệt vì luôn phải
+> thắng hoặc luôn phải đủ.
+> **Không dùng khi:** Người đối diện cần được thúc đẩy hành động — lúc đó "thuận theo tự nhiên"
+> dễ bị hiểu thành cái cớ để trì hoãn. Dùng `mind_confucius` thay vào đó.
 
 ---
 

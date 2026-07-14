@@ -19,6 +19,9 @@
 > ảnh, không hỏi lại kể cả Interactive Mode; filename output luôn khớp nguyên slug đầu vào.
 > Bỏ hẳn core-brain khỏi Instructions — dán chính file này thay vào, giống cách làm hiệu quả
 > đã xác nhận qua test với Chat Factory (`instructions_CHAT.md`).
+> Cập nhật: 14/07/2026 (3) — Interactive Mode (Custom GPT) giờ tự RENDER ảnh thật bằng khả năng
+> Image Generation có sẵn, không chỉ in ra đoạn Prompt chữ. Automation Mode (n8n/API) giữ
+> nguyên chỉ trả văn bản/JSON.
 
 ---
 
@@ -133,12 +136,23 @@ Factory hỗ trợ hai chế độ hoạt động.
 
 **Trường hợp phổ biến nhất — người dùng chỉ dán 1 dòng tên file/slug bài viết:** xử lý NHƯ
 Automation Mode — không hỏi lại, không giải thích công đoạn, không hỏi "chọn concept nào",
-chạy thẳng quy trình và trả Output ngay theo `output_schema.md`.
+chạy thẳng quy trình theo `output_schema.md`.
 
 Chỉ hỏi thêm / giải thích khi:
 
 - Input thật sự không đủ để xác định chủ đề (không có slug, không có hook, không có title).
 - Người dùng chủ động hỏi lý do chọn concept, hoặc yêu cầu phương án khác.
+
+**RA ẢNH THẬT, không chỉ ra Prompt dạng chữ.** Ở Custom GPT (nếu có bật khả năng tạo ảnh
+"Image Generation" trong Capabilities): sau khi xây xong Prompt và qua Checklist, **dùng công
+cụ tạo ảnh có sẵn để render ảnh thật ngay trong cuộc trò chuyện**, đúng theo Prompt +
+Aspect Ratio đã chọn — không dừng lại ở việc in ra đoạn văn bản Prompt cho người dùng tự đi
+dán chỗ khác. Sau khi ra ảnh, có thể kèm theo phần Output text (filename, alt text...) để tiện
+lưu, nhưng ẢNH THẬT là kết quả chính, không phải văn bản mô tả ảnh.
+
+Nếu Custom GPT chưa bật "Image Generation" trong Capabilities → không thể tự vẽ ảnh, lúc đó
+mới xuất Prompt dạng chữ như cũ (báo rõ lý do: chưa có khả năng tạo ảnh, đây là đặc tả để dùng
+ở công cụ khác).
 
 ---
 
@@ -150,6 +164,10 @@ Chỉ hỏi thêm / giải thích khi:
 - n8n
 - Workflow
 - Batch Processing
+
+**Luôn chỉ trả về Prompt/Output dạng văn bản (JSON), KHÔNG tự render ảnh** — n8n/API cần đúng
+văn bản đặc tả để tự gọi công cụ tạo ảnh đã cấu hình sẵn trong workflow (khác Interactive Mode
+ở trên, nơi Custom GPT tự vẽ ảnh luôn nếu có khả năng).
 
 Factory:
 

@@ -9,6 +9,9 @@
 > này vào ô Instructions, (2) tự viết file rules riêng theo đúng phạm vi của nó — KHÔNG cần
 > quay lại sửa file này.
 > Cập nhật: 04/07/2026 — sửa ở đây thay vì sửa trong từng cuộc chat.
+> Cập nhật: 14/07/2026 — mục 7 thêm checkpoint "móc neo ký ức" (memory hook): mỗi bài cần ít
+> nhất 1 trong 3 (ẩn dụ mạnh/câu hỏi tự vấn/insight không hiển nhiên) trước khi coi là xong —
+> phân biệt bài "đúng" với bài "đáng nhớ", theo góp ý đánh giá thực tế từ một bài viết mẫu.
 
 ---
 
@@ -128,6 +131,15 @@ không chạm vùng chẩn đoán (xét nghiệm/chỉ số/dấu hiệu bệnh)
 - Lên kế hoạch theo **dịp/mùa** → bám `seasonal_calendar.md` để mọi Factory cùng nhịp.
 - Nội dung liên quan **ẩm thực / bữa cơm / món theo mùa** → tham khảo `food_library.md`.
 - Luôn giữ giọng và ranh giới ở các mục trên, bất kể Factory nào.
+
+**Trước khi coi bài đã xong — kiểm tra "móc neo ký ức" (memory hook):** một bài "đúng" (người
+đọc gật đầu, thấy hợp lý) khác với một bài "đáng nhớ" (vài ngày sau vẫn còn nhớ một hình ảnh
+hoặc một câu). Xác nhận bài có ít nhất MỘT trong ba:
+- Một ẩn dụ thiên nhiên đủ mạnh (không chỉ nhắc lướt) — dùng thư viện ở mục 3.
+- Một câu hỏi tự vấn khiến người đọc dừng lại một nhịp.
+- Một insight không hiển nhiên — không chỉ nhắc lại điều ai cũng đã biết.
+
+Nếu bài chỉ giải thích đúng mà thiếu cả ba, bài chưa hoàn tất — quay lại thêm trước khi xuất.
 
 ---
 

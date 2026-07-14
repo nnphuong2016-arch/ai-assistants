@@ -1,20 +1,24 @@
 # FEATURED IMAGE FACTORY — INSTRUCTIONS (ROLE & WORKFLOW)
 
-> Tải lên khu **Files** của Featured Image Factory.
-> File này được đọc ĐẦU TIÊN.
-> Đây là tài liệu định nghĩa vai trò, phạm vi, nguyên tắc và quy trình hoạt động của Featured Image Factory.
+> **KHÁC QUY ƯỚC CÁC FACTORY KHÁC:** Featured Image Factory KHÔNG dán `core-brain/
+> instructions.md` vào ô Instructions — hầu hết core-brain nói về giọng văn/danh tính Anh Minh
+> (dùng khi VIẾT nội dung), không liên quan tới việc ra đặc tả ảnh, và có rủi ro khiến model tự
+> nhận là "Anh Minh" khi trả lời người thao tác. Quy tắc an toàn (không giật gân, không dọa
+> bệnh...) đã có sẵn, chi tiết hơn, trong `featured_image_style_rules.md` +
+> `featured_image_editorial_rules.md`.
+> **Cách dùng:** Dán TOÀN BỘ nội dung CHÍNH FILE NÀY (`instructions_FEATURED_IMAGE.md`, từ dòng
+> `---` bên dưới) vào ô Instructions của Custom GPT. Đồng thời vẫn tải file này lên khu Files
+> như các file khác. Video/SEO/Image/Community Factory không áp dụng ngoại lệ này.
+> File này được đọc ĐẦU TIÊN trong khu Files.
 > File này KHÔNG quy định phong cách hình ảnh, concept hay cấu trúc Prompt (xem các file tương ứng).
-> **Ô Instructions của Custom GPT vẫn dán `core-brain/instructions.md` như các Factory khác**
-> (file này KHÔNG thay thế ô Instructions, chỉ bổ sung vai trò/phạm vi riêng của Featured Image
-> Factory) — TRỪ mục 1 (Vai trò) và mục 5-13 vẫn áp dụng bình thường trong Files.
 > **Đọc theo thứ tự này trong khu Files:** 1. `instructions_FEATURED_IMAGE.md` (file này) →
 > 2. `input_schema.md` → 3. `featured_image_editorial_rules.md` → 4. `featured_image_style_rules.md`
 > → 5. `featured_image_prompt_rules.md` → 6. `featured_image_checklist.md` (đọc SAU CÙNG, trước
 > khi xuất) → 7. `output_schema.md`.
-> Cập nhật: 14/07/2026 — thêm chuẩn ô Instructions + thứ tự đọc file tường minh, sau khi phát
-> hiện thiếu 2 điều này ở Chat Factory khiến model không đáng tin cậy tra Files khi cần.
-> Cập nhật: 14/07/2026 (2) — dán tên file/slug bài viết (VD: `1.5.ten-bai.md`) là chạy thẳng ra
+> Cập nhật: 14/07/2026 — dán tên file/slug bài viết (VD: `1.5.ten-bai.md`) là chạy thẳng ra
 > ảnh, không hỏi lại kể cả Interactive Mode; filename output luôn khớp nguyên slug đầu vào.
+> Bỏ hẳn core-brain khỏi Instructions — dán chính file này thay vào, giống cách làm hiệu quả
+> đã xác nhận qua test với Chat Factory (`instructions_CHAT.md`).
 
 ---
 

@@ -1,37 +1,31 @@
 # OUTPUT SCHEMA — FEATURED IMAGE FACTORY
 
 > Tải lên khu **Files** của Featured Image Factory.
-> Quy định khuôn xuất cuối cùng của mọi Featured Image.
-> Không thay đổi thứ tự Field.
+> File này định nghĩa dữ liệu đầu ra chuẩn của Factory.
+> Mọi Output phải tuân thủ đúng Schema này.
 > Không tự thêm Field.
 > Không tự bỏ Field.
+> Không đổi tên Field.
 
 ---
 
-# OUTPUT FORMAT
+# OUTPUT OBJECT
 
-Mỗi Featured Image phải xuất theo đúng thứ tự dưới đây.
+Factory luôn xuất một Object gồm các Field sau.
 
 ---
 
-## 1. Image Type
+## image_type
 
 Luôn là:
 
 Featured Image
 
-Không được ghi:
-
-- Thumbnail
-- Hero
-- Cover
-- Banner
-
 ---
 
-## 2. Category
+## category
 
-Một trong các giá trị sau.
+Một trong các giá trị:
 
 - Sức khỏe
 - Tâm lý & Đời sống
@@ -42,34 +36,37 @@ Một trong các giá trị sau.
 
 ---
 
-## 3. Main Concept
+## concept
 
 Concept đã chọn.
 
 Ví dụ:
 
-- Lifestyle
-- Food
-- Human Emotion
-- Nature
-- Medical Illustration
-- Object
+Lifestyle
+
+Food
+
+Human Emotion
+
+Medical Illustration
+
+Nature
+
+Object
 
 ---
 
-## 4. Main Subject
+## subject
 
 Chủ thể chính của ảnh.
 
 Ví dụ:
 
-Asian elderly woman drinking warm tea.
-
-Không mô tả dài.
+Asian elderly woman drinking warm tea
 
 ---
 
-## 5. Prompt
+## prompt
 
 Prompt hoàn chỉnh.
 
@@ -79,63 +76,61 @@ Theo đúng Prompt Rules.
 
 ---
 
-## 6. Negative Prompt
+## negative_prompt
 
 Negative Prompt hoàn chỉnh.
 
-Không được bỏ.
+Không được để trống.
 
 ---
 
-## 7. Aspect Ratio
+## aspect_ratio
 
-Luôn là
+Mặc định:
 
 16:9
 
 ---
 
-## 8. Suggested Size
+## suggested_size
 
 Mặc định:
 
-1600 × 900
+1600x900
 
-Có thể thay đổi nếu nền tảng yêu cầu.
+Có thể thay đổi nếu Workflow yêu cầu.
 
 ---
 
-## 9. Filename
+## filename
 
-Tên file gợi ý.
+Tên file.
 
-Dạng:
-
-slug-khong-dau.jpg
-
-Ví dụ
+Ví dụ:
 
 gan-nhiem-mo-nen-an-gi.jpg
 
+Không có dấu.
+
+Không có khoảng trắng.
+
 ---
 
-## 10. Alt Text
+## alt_text
 
 Viết bằng tiếng Việt.
 
-Ngắn.
+Ngắn gọn.
 
 Trung thực.
 
-Mô tả đúng ảnh.
+Mô tả đúng hình ảnh.
 
-Không nhồi từ khóa SEO.
+Không nhồi từ khóa.
 
 ---
 
-## 11. Caption
-
-Chỉ điền khi thực sự cần.
+## caption
 
 Nếu không cần.
 
@@ -143,14 +138,79 @@ Nếu không cần.
 
 ---
 
-# QUY TẮC
+# OUTPUT FORMAT
 
-Không đổi thứ tự.
+Trong Interactive Mode.
 
-Không thêm Field.
+Xuất dạng Markdown.
 
-Không xóa Field.
+Ví dụ:
 
-Không tự thêm giải thích.
+Image Type:
 
-Chỉ xuất đúng Schema trên.
+Category:
+
+Concept:
+
+Subject:
+
+Prompt:
+
+Negative Prompt:
+
+Aspect Ratio:
+
+Suggested Size:
+
+Filename:
+
+Alt Text:
+
+Caption:
+
+---
+
+Trong Automation Mode.
+
+Xuất đúng Object.
+
+Ví dụ:
+
+{
+  "image_type": "...",
+  "category": "...",
+  "concept": "...",
+  "subject": "...",
+  "prompt": "...",
+  "negative_prompt": "...",
+  "aspect_ratio": "...",
+  "suggested_size": "...",
+  "filename": "...",
+  "alt_text": "...",
+  "caption": ""
+}
+
+---
+
+# OUTPUT RULES
+
+Không đổi tên Field.
+
+Không đổi thứ tự Field.
+
+Không thêm giải thích.
+
+Không thêm nhận xét.
+
+Không thêm Markdown ngoài Interactive Mode.
+
+Automation Mode chỉ trả về Object.
+
+Factory phải đảm bảo Output luôn hợp lệ để có thể sử dụng trực tiếp trong:
+
+- Custom GPT
+- OpenAI API
+- n8n
+- Google Sheet
+- WordPress
+- Workflow Automation

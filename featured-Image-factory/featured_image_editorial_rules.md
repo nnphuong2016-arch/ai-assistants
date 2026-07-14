@@ -2,467 +2,375 @@
 
 > Tải lên khu **Files** của Featured Image Factory.
 > File này quyết định ý tưởng hình ảnh (Visual Concept).
-> Không quy định style, không quy định prompt.
-> Mọi Featured Image phải được chọn concept theo file này trước khi viết prompt.
+> Không quy định Style.
+> Không quy định Prompt.
+> Không phụ thuộc Image AI.
+> Mọi Featured Image đều phải được quyết định theo file này trước khi viết Prompt.
 
 ---
 
-# 1. TRIẾT LÝ BIÊN TẬP
+# 1. MỤC TIÊU
 
-Featured Image không phải để trang trí.
+Editorial chịu trách nhiệm trả lời một câu hỏi duy nhất:
 
-Featured Image là một tiêu đề bằng hình ảnh.
+"Nên dùng hình ảnh nào để truyền tải nội dung bài viết tốt nhất?"
 
-Người đọc chỉ nhìn ảnh khoảng 1–2 giây.
+Không quan tâm Prompt.
 
-Trong thời gian đó họ phải hiểu được:
+Không quan tâm kỹ thuật tạo ảnh.
 
-- Bài viết nói về điều gì.
-- Cảm xúc chính của bài.
-- Có lý do để bấm đọc.
+Chỉ quyết định:
 
-Nếu ảnh đẹp nhưng không truyền tải đúng nội dung,
-
-ảnh đó thất bại.
+- Concept
+- Subject
+- Visual Story
 
 ---
 
-# 2. THỨ TỰ SUY LUẬN
+# 2. QUY TRÌNH SUY LUẬN
 
-Luôn làm theo đúng thứ tự.
+Luôn theo đúng thứ tự.
 
-Bước 1
-
-Hiểu bài viết.
+Input
 
 ↓
 
-Bước 2
-
-Xác định thông điệp chính.
+Hiểu bài viết
 
 ↓
 
-Bước 3
-
-Chọn concept.
+Xác định thông điệp chính
 
 ↓
 
-Bước 4
-
-Chọn chủ thể.
+Chọn Concept
 
 ↓
 
-Bước 5
+Chọn Subject
 
-Viết prompt.
+↓
+
+Chọn Visual Story
+
+↓
+
+Chuyển sang Prompt Rules
 
 Không được đảo ngược quy trình.
 
 ---
 
-# 3. MỖI ẢNH CHỈ CÓ MỘT THÔNG ĐIỆP
+# 3. MỖI ẢNH CHỈ MỘT THÔNG ĐIỆP
 
-Một Featured Image chỉ truyền tải một ý chính.
+Một Featured Image chỉ truyền tải một ý.
 
-Không cố đưa nhiều nội dung vào cùng một ảnh.
+Không cố kể toàn bộ bài viết.
 
-Nếu bài có nhiều ý,
+Nếu bài có nhiều ý.
 
-chỉ chọn ý quan trọng nhất.
+Chỉ chọn ý quan trọng nhất.
 
 ---
 
-# 4. CHỈ MỘT CHỦ THỂ CHÍNH
+# 4. MỘT CHỦ THỂ CHÍNH
 
-Luôn có một điểm nhìn đầu tiên.
+Ảnh luôn có:
 
-Không tạo ảnh có:
+- Một Subject chính.
 
-- quá nhiều người
-- quá nhiều đồ vật
-- quá nhiều hành động
+Có thể có Subject phụ.
 
-Người xem phải biết ngay
-
-điều gì là trọng tâm.
+Nhưng Subject phụ không được cạnh tranh với Subject chính.
 
 ---
 
 # 5. CHỌN CONCEPT
 
-Factory phải chọn một trong các concept sau.
+Factory chỉ chọn một Concept.
 
-Không pha trộn quá nhiều concept.
+Không pha trộn nhiều Concept.
 
-----------------------------------------
-
-A.
+Các Concept chuẩn:
 
 Lifestyle
 
-Ảnh đời sống.
-
-Ví dụ:
-
-- ăn
-- ngủ
-- đi bộ
-- uống trà
-- đọc sách
-
-Ưu tiên sử dụng.
-
-----------------------------------------
-
-B.
-
 Food
-
-Thực phẩm.
-
-Khi bài nói về:
-
-- món ăn
-- nguyên liệu
-- dinh dưỡng
-
-Món ăn là chủ thể chính.
-
-Không để người lấn át món ăn.
-
-----------------------------------------
-
-C.
 
 Human Emotion
 
-Con người.
-
-Dùng khi bài liên quan:
-
-- tâm lý
-- cảm xúc
-- gia đình
-- tuổi già
-
-Biểu cảm tự nhiên.
-
-----------------------------------------
-
-D.
-
 Medical Illustration
 
-Minh họa y khoa.
-
-Chỉ dùng khi thật sự cần.
-
-Ví dụ:
-
-- gan
-- tim
-- phổi
-- não
-
-Không lạm dụng.
-
-----------------------------------------
-
-E.
-
 Nature
-
-Thiên nhiên.
-
-Dùng cho:
-
-- dưỡng sinh
-- triết lý
-- thiền
-- an nhiên
-
-----------------------------------------
-
-F.
 
 Object
 
-Một đồ vật duy nhất.
-
-Ví dụ:
-
-- tách trà
-
-- quyển sách
-
-- đôi giày đi bộ
-
-- đồng hồ
-
-Khi đồ vật đủ truyền tải nội dung.
-
-----------------------------------------
+---
 
 # 6. QUY TẮC CHỌN CONCEPT
 
-Nếu bài nói về
+Nếu bài nói về:
 
-THỰC PHẨM
+Thực phẩm
 
-↓
+→ Food
 
-Food
+---------------
 
-----------------
+Thói quen
 
-Nếu bài nói về
+→ Lifestyle
 
-THÓI QUEN
+---------------
 
-↓
+Cảm xúc
 
-Lifestyle
+→ Human Emotion
 
-----------------
+---------------
 
-Nếu bài nói về
+Gia đình
 
-CẢM XÚC
+→ Human Emotion
 
-↓
+---------------
 
-Human Emotion
+Người cao tuổi
 
-----------------
+→ Human Emotion
 
-Nếu bài nói về
-
-NỘI TẠNG
-
-↓
-
-Medical Illustration
-
-----------------
-
-Nếu bài nói về
-
-TRIẾT LÝ
-
-↓
-
-Nature
-
-----------------
-
-Nếu bài nói về
-
-DƯỠNG SINH
-
-↓
+hoặc
 
 Lifestyle
+
+---------------
+
+Nội tạng
+
+→ Medical Illustration
+
+---------------
+
+Dưỡng sinh
+
+→ Lifestyle
 
 hoặc
 
 Nature
 
-----------------
+---------------
 
-Nếu bài nói về
+Triết lý
 
-NGƯỜI GIÀ
-
-↓
-
-Human Emotion
+→ Nature
 
 hoặc
 
-Lifestyle
+Object
+
+---------------
+
+Bếp
+
+→ Food
 
 ---
 
-# 7. KHÔNG LẠM DỤNG Y KHOA
+# 7. CHỌN SUBJECT
+
+Subject luôn là thứ giúp người đọc hiểu bài nhanh nhất.
+
+Ưu tiên theo thứ tự:
+
+Hành động
+
+>
+
+Con người
+
+>
+
+Thực phẩm
+
+>
+
+Đồ vật
+
+>
+
+Nội tạng
+
+>
+
+Phong cảnh
+
+Không chọn Subject chỉ vì đẹp.
+
+---
+
+# 8. VISUAL STORY
+
+Ảnh phải kể được một câu chuyện.
+
+Không chỉ chụp một vật thể.
+
+Ví dụ:
+
+Không phải
+
+"Tách trà."
+
+Mà là
+
+"Người lớn tuổi đang uống trà buổi sáng."
+
+Không phải
+
+"Quả táo."
+
+Mà là
+
+"Người đang chuẩn bị bữa sáng với táo."
+
+Visual Story luôn quan trọng hơn Object.
+
+---
+
+# 9. ĐỜI SỐNG TRƯỚC - Y KHOA SAU
 
 Đối với bài sức khỏe.
 
 Ưu tiên:
 
-đời sống
+Lifestyle
 
 >
 
-thực phẩm
+Food
 
 >
 
-con người
+Human Emotion
 
 >
 
-minh họa y khoa.
+Medical Illustration
 
-Không mặc định bài sức khỏe phải có:
+Không mặc định dùng:
 
 - bác sĩ
 - bệnh viện
-- kim tiêm
 - áo blouse
+- thiết bị y tế
 
 ---
 
-# 8. KHÔNG GIẬT GÂN
+# 10. KHÔNG GIẬT GÂN
 
-Không dùng:
+Không sử dụng:
 
 - máu
-- đau đớn
+- phẫu thuật
 - bệnh nặng
 - biểu cảm kinh hãi
-- màu đỏ cực mạnh
-
-để tăng CTR.
+- hình ảnh gây sợ
 
 CTR phải đến từ:
 
-sự tò mò
+Sự tò mò.
 
-không phải
+Không phải
 
-sự sợ hãi.
+Sự sợ hãi.
 
 ---
 
-# 9. KHÔNG DIỄN
+# 11. KHÔNG DÀN DỰNG
+
+Ưu tiên:
+
+Khoảnh khắc tự nhiên.
 
 Không tạo:
 
-người nhìn thẳng camera.
-
-Không tạo:
-
-người tạo dáng.
-
-Không tạo:
-
-nụ cười quảng cáo.
-
-Ưu tiên:
-
-khoảnh khắc tự nhiên.
+- người nhìn thẳng camera
+- tạo dáng
+- cười quảng cáo
+- biểu cảm giả
 
 ---
 
-# 10. ĐỘ ƯU TIÊN
+# 12. ƯU TIÊN BIÊN TẬP
 
-Khi có nhiều lựa chọn.
+Nếu có nhiều phương án.
 
-Ưu tiên theo thứ tự.
+Ưu tiên theo thứ tự:
 
-1.
+Đúng nội dung
 
-Dễ hiểu.
+>
 
-2.
+Dễ hiểu
 
-Đúng nội dung.
+>
 
-3.
+Đúng cảm xúc
 
-Đúng cảm xúc.
+>
 
-4.
+Đúng thương hiệu
 
-Đẹp.
+>
 
-5.
+Đẹp
 
-Nghệ thuật.
+>
 
-Không hy sinh nội dung vì nghệ thuật.
-
----
-
-# 11. QUY TẮC CHUYÊN MỤC
-
-## Sức khỏe
-
-Ưu tiên:
-
-- Lifestyle
-- Food
-- Medical Illustration (khi cần)
+Nghệ thuật
 
 ---
 
-## Tâm lý
+# 13. QUY TẮC CHUYÊN MỤC
 
-Ưu tiên:
+Sức khỏe
 
-- Human Emotion
+→ Lifestyle, Food, Medical Illustration
 
-- Lifestyle
+Tâm lý
 
----
+→ Human Emotion, Lifestyle
 
-## Dưỡng sinh
+Dưỡng sinh
 
-Ưu tiên:
+→ Lifestyle, Nature
 
-- Lifestyle
+Triết lý phương Đông
 
-- Nature
+→ Nature, Object
 
----
+Đồng hành tuổi già
 
-## Triết lý phương Đông
+→ Human Emotion, Lifestyle
 
-Ưu tiên:
+Bếp An Nhiên
 
-- Nature
-
-- Object
-
-Không minh họa thần bí.
+→ Food, Lifestyle
 
 ---
 
-## Đồng hành tuổi già
+# 14. TỰ KIỂM
 
-Ưu tiên:
+Trước khi chuyển sang Prompt Rules.
 
-- Human Emotion
+Factory phải tự hỏi:
 
-- Lifestyle
+Nếu người đọc chỉ nhìn Featured Image trong khoảng 2 giây.
 
----
-
-## Bếp An Nhiên
-
-Ưu tiên:
-
-- Food
-
-- Lifestyle
-
-Món ăn luôn là trung tâm.
-
----
-
-# 12. CÂU HỎI KIỂM TRA
-
-Trước khi viết prompt.
-
-Factory phải tự hỏi.
-
-Nếu chỉ nhìn ảnh trong 2 giây.
-
-Người đọc có đoán đúng chủ đề bài không?
+Họ có đoán đúng bài viết nói về điều gì không?
 
 Nếu KHÔNG.
 
-Chọn concept khác.
+Chọn lại Concept hoặc Subject.
+
+Không chuyển sang bước viết Prompt.

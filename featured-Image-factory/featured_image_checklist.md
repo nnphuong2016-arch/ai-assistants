@@ -1,89 +1,83 @@
-# FEATURED IMAGE CHECKLIST — TỰ KIỂM TRƯỚC KHI XUẤT
+# FEATURED IMAGE CHECKLIST
 
 > Tải lên khu **Files** của Featured Image Factory.
-> Chạy qua TOÀN BỘ Checklist này trước khi xuất Prompt.
-> Nếu có bất kỳ mục nào không đạt:
+> Đây là bước kiểm tra cuối cùng trước khi xuất Output.
+> Nếu bất kỳ mục nào không đạt:
 >
-> → Sửa Prompt.
+> → Sửa lại.
 > → Kiểm tra lại từ đầu.
 >
 > Không xuất Prompt khi Checklist chưa đạt.
 
 ---
 
-# 1. ĐÚNG NỘI DUNG
+# 1. NỘI DUNG
 
-□ Đã hiểu đúng bài viết?
+□ Đã hiểu đúng nội dung bài viết?
 
-□ Ảnh phản ánh đúng chủ đề chính?
+□ Đã xác định đúng thông điệp chính?
 
-□ Nếu chỉ nhìn ảnh trong 2 giây, người đọc có đoán được bài viết nói về gì?
+□ Featured Image phản ánh đúng nội dung trọng tâm?
 
-□ Có đúng thông điệp quan trọng nhất của bài?
+□ Người đọc nhìn khoảng 2 giây có thể đoán đúng chủ đề bài?
 
-Không cố đưa nhiều ý vào cùng một ảnh.
-
----
-
-# 2. ĐÚNG CONCEPT
-
-□ Đã chọn đúng Concept theo Editorial Rules?
-
-□ Concept có phù hợp chuyên mục?
-
-□ Có phải Concept đơn giản nhất nhưng hiệu quả nhất?
-
-□ Có tránh pha trộn nhiều Concept?
+□ Chỉ truyền tải một thông điệp?
 
 ---
 
-# 3. CHỦ THỂ
+# 2. EDITORIAL
 
-□ Chỉ có một chủ thể chính?
+□ Đã chọn đúng Concept?
 
-□ Chủ thể nổi bật ngay khi thu nhỏ?
+□ Đã chọn đúng Subject?
 
-□ Không có quá nhiều người?
+□ Subject phù hợp với Concept?
 
-□ Không có quá nhiều vật thể?
+□ Visual Story rõ ràng?
 
-□ Người xem biết ngay điều cần nhìn đầu tiên?
-
----
-
-# 4. THƯƠNG HIỆU
-
-□ Đúng phong cách Funamark?
-
-□ Đúng bảng màu thương hiệu?
-
-□ Đúng ánh sáng thương hiệu?
-
-□ Đúng cảm xúc thương hiệu?
-
-□ Không tạo cảm giác quảng cáo?
+□ Không pha trộn nhiều Concept?
 
 ---
 
-# 5. BỐ CỤC
+# 3. THỊ GIÁC
+
+□ Có đúng một Subject chính?
+
+□ Chủ thể nổi bật?
 
 □ Bố cục rõ ràng?
 
 □ Không rối mắt?
 
+□ Có điểm nhìn đầu tiên?
+
 □ Có khoảng thở?
 
-□ Chủ thể không bị cắt?
+□ Không quá nhiều chi tiết?
 
-□ Có thể hiển thị tốt ở kích thước nhỏ?
+□ Nhìn rõ khi thu nhỏ?
 
 ---
 
-# 6. CON NGƯỜI
+# 4. PHONG CÁCH
+
+□ Đúng Style Rules?
+
+□ Đúng bảng màu thương hiệu?
+
+□ Đúng ánh sáng?
+
+□ Đúng cảm xúc?
+
+□ Đúng phong cách Funamark?
+
+---
+
+# 5. CON NGƯỜI
 
 Nếu có người.
 
-□ Độ tuổi phù hợp nội dung?
+□ Độ tuổi phù hợp?
 
 □ Biểu cảm tự nhiên?
 
@@ -91,11 +85,11 @@ Nếu có người.
 
 □ Không nhìn thẳng camera nếu không cần?
 
-□ Không giống người mẫu quảng cáo?
+□ Không giống ảnh quảng cáo?
 
 ---
 
-# 7. Y KHOA
+# 6. Y KHOA
 
 Nếu là bài sức khỏe.
 
@@ -107,29 +101,73 @@ Nếu là bài sức khỏe.
 
 □ Không có bệnh viện nếu không cần?
 
-□ Không gây hiểu nhầm điều trị?
+□ Không gây hiểu nhầm y khoa?
 
-□ Không hứa hẹn kết quả y khoa?
+□ Không hứa hẹn hiệu quả điều trị?
 
 ---
 
-# 8. THỰC PHẨM
+# 7. THỰC PHẨM
 
-Nếu là Bếp An Nhiên hoặc Dinh dưỡng.
+Nếu là bài dinh dưỡng hoặc Bếp An Nhiên.
 
 □ Thực phẩm thật?
 
-□ Màu sắc tự nhiên?
+□ Tươi?
+
+□ Tự nhiên?
 
 □ Không giống đồ nhựa?
 
 □ Không quá nhiều món?
 
-□ Món ăn là chủ thể chính?
+□ Món ăn là Subject chính?
 
 ---
 
-# 9. CHẤT LƯỢNG
+# 8. PROMPT
+
+□ Prompt đúng Concept?
+
+□ Prompt đúng Style?
+
+□ Prompt đúng Subject?
+
+□ Prompt không mâu thuẫn?
+
+□ Prompt đủ rõ?
+
+□ Prompt không quá dài?
+
+□ Prompt có thể dùng cho mọi Image AI?
+
+---
+
+# 9. NEGATIVE PROMPT
+
+□ Có Negative Prompt?
+
+□ Không thiếu lỗi phổ biến?
+
+□ Có bổ sung Negative Prompt chuyên ngành khi cần?
+
+---
+
+# 10. OUTPUT
+
+□ Đúng Output Schema?
+
+□ Aspect Ratio đúng?
+
+□ Filename hợp lý?
+
+□ Alt Text đúng?
+
+□ Caption đúng?
+
+---
+
+# 11. CHẤT LƯỢNG
 
 □ Không watermark?
 
@@ -139,49 +177,25 @@ Nếu là Bếp An Nhiên hoặc Dinh dưỡng.
 
 □ Không AI artifacts?
 
-□ Không tay thừa?
-
 □ Không méo mặt?
+
+□ Không tay thừa?
 
 □ Không vật thể biến dạng?
 
 □ Không ảnh mờ?
 
----
-
-# 10. PROMPT
-
-□ Prompt đúng cấu trúc?
-
-□ Không mâu thuẫn?
-
-□ Không quá dài?
-
-□ Negative Prompt đầy đủ?
-
-□ Không thiếu thông tin quan trọng?
+□ Độ phân giải cao?
 
 ---
 
-# 11. OUTPUT
+# 12. KIỂM TRA CUỐI
 
-□ Aspect Ratio đúng?
+Trước khi xuất Output.
 
-□ Filename hợp lý?
+Factory tự hỏi:
 
-□ Alt Text đúng nội dung?
-
-□ Caption đúng quy định?
-
-□ Output đúng output_schema?
-
----
-
-# 12. CÂU HỎI CUỐI CÙNG
-
-Trước khi xuất Prompt, tự hỏi:
-
-"Nếu đây là Featured Image của một website lớn, mình có sẵn sàng đăng ngay mà không chỉnh sửa thêm không?"
+"Nếu đây là Featured Image của một website lớn, mình có sẵn sàng sử dụng ngay mà không cần chỉnh sửa thêm không?"
 
 Nếu câu trả lời là:
 
@@ -189,12 +203,12 @@ KHÔNG
 
 ↓
 
-Không xuất.
+Quay lại chỉnh sửa.
 
 ↓
 
-Quay lại sửa Prompt.
+Kiểm tra lại toàn bộ Checklist.
 
-Chỉ xuất khi câu trả lời là:
+Chỉ xuất Output khi câu trả lời là:
 
 CÓ.

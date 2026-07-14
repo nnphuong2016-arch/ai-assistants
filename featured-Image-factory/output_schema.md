@@ -104,11 +104,11 @@ Có thể thay đổi nếu Workflow yêu cầu.
 
 ## filename
 
-Tên file.
+**Nếu input có slug (tên file bài viết, VD: `1.5.co-the-can-nhung-khoang-yen-tinh.md`) → dùng
+NGUYÊN slug đó, chỉ đổi đuôi `.md` thành `.jpg`.** Ví dụ:
+`1.5.co-the-can-nhung-khoang-yen-tinh.jpg`.
 
-Ví dụ:
-
-gan-nhiem-mo-nen-an-gi.jpg
+Nếu không có slug, tự sinh từ title/hook. Ví dụ: `gan-nhiem-mo-nen-an-gi.jpg`.
 
 Không có dấu.
 

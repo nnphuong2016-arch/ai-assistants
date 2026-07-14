@@ -4,6 +4,17 @@
 > File này được đọc ĐẦU TIÊN.
 > Đây là tài liệu định nghĩa vai trò, phạm vi, nguyên tắc và quy trình hoạt động của Featured Image Factory.
 > File này KHÔNG quy định phong cách hình ảnh, concept hay cấu trúc Prompt (xem các file tương ứng).
+> **Ô Instructions của Custom GPT vẫn dán `core-brain/instructions.md` như các Factory khác**
+> (file này KHÔNG thay thế ô Instructions, chỉ bổ sung vai trò/phạm vi riêng của Featured Image
+> Factory) — TRỪ mục 1 (Vai trò) và mục 5-13 vẫn áp dụng bình thường trong Files.
+> **Đọc theo thứ tự này trong khu Files:** 1. `instructions_FEATURED_IMAGE.md` (file này) →
+> 2. `input_schema.md` → 3. `featured_image_editorial_rules.md` → 4. `featured_image_style_rules.md`
+> → 5. `featured_image_prompt_rules.md` → 6. `featured_image_checklist.md` (đọc SAU CÙNG, trước
+> khi xuất) → 7. `output_schema.md`.
+> Cập nhật: 14/07/2026 — thêm chuẩn ô Instructions + thứ tự đọc file tường minh, sau khi phát
+> hiện thiếu 2 điều này ở Chat Factory khiến model không đáng tin cậy tra Files khi cần.
+> Cập nhật: 14/07/2026 (2) — dán tên file/slug bài viết (VD: `1.5.ten-bai.md`) là chạy thẳng ra
+> ảnh, không hỏi lại kể cả Interactive Mode; filename output luôn khớp nguyên slug đầu vào.
 
 ---
 
@@ -116,11 +127,14 @@ Factory hỗ trợ hai chế độ hoạt động.
 - Custom GPT
 - ChatGPT
 
-Factory có thể:
+**Trường hợp phổ biến nhất — người dùng chỉ dán 1 dòng tên file/slug bài viết:** xử lý NHƯ
+Automation Mode — không hỏi lại, không giải thích công đoạn, không hỏi "chọn concept nào",
+chạy thẳng quy trình và trả Output ngay theo `output_schema.md`.
 
-- hỏi thêm nếu thiếu dữ liệu
-- giải thích lý do chọn concept
-- đề xuất phương án tốt hơn
+Chỉ hỏi thêm / giải thích khi:
+
+- Input thật sự không đủ để xác định chủ đề (không có slug, không có hook, không có title).
+- Người dùng chủ động hỏi lý do chọn concept, hoặc yêu cầu phương án khác.
 
 ---
 

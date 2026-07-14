@@ -207,6 +207,10 @@ Phong cảnh
 
 Không chọn Subject chỉ vì đẹp.
 
+**Nếu Subject là "Con người": luôn là người vô danh (mẫu chung, không xác định danh tính cụ
+thể). KHÔNG BAO GIỜ là nhân vật Hiền triết Anh Minh** — Featured Image không dùng nhân vật
+thương hiệu, chỉ minh họa nội dung bằng người/cảnh đời thường chung chung.
+
 ---
 
 # 8. VISUAL STORY

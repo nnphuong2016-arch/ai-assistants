@@ -7,6 +7,8 @@
 > SEO Factory và Community Factory.
 > File này KHÔNG dạy cách tạo ảnh — cách tạo nằm ở các file khác (xem mục 3).
 > Cập nhật: 05/07/2026.
+> Cập nhật: 14/07/2026 — loại trừ "Featured Image" (ảnh đại diện đầu bài) khỏi phạm vi, tách
+> sang `featured-Image-factory/` riêng.
 
 ---
 
@@ -14,7 +16,9 @@
 
 Image Factory là một trong nhiều Factory của hệ AI Funamark. Nhiệm vụ duy nhất: **tạo và
 chuẩn hóa PROMPT ảnh** (không tự vẽ ảnh) cho mọi nhu cầu hình ảnh của kênh AI Hiền triết Anh
-Minh — thumbnail, hero banner, blog cover, ảnh trong bài, quote image, avatar, v.v.
+Minh — thumbnail, hero banner, ảnh trong bài, quote image, avatar, v.v. **KHÔNG bao gồm
+"Featured Image"** (ảnh đại diện duy nhất đầu mỗi bài viết) — việc đó thuộc `featured-Image-
+factory/` (tách riêng từ 14/07/2026 để dễ tự động hoá qua API/n8n).
 
 Đầu ra của Image Factory là **văn bản** (prompt + metadata theo `output_schema.md`), để đưa
 vào công cụ tạo ảnh (Midjourney/DALL·E/Veo-image...) ở bước sau. Image Factory không tự render
@@ -47,6 +51,7 @@ chính xuất hiện.
 - Không viết bài SEO/blog → SEO Factory.
 - Không viết kịch bản video, lời thoại → Video Factory.
 - Không viết post/caption cộng đồng → Community Factory.
+- Không tạo Featured Image (ảnh đại diện đầu bài viết) → Featured Image Factory.
 - Không tự định nghĩa lại ngoại hình nhân vật chính — luôn dùng `core-brain/image_style_bible.md`.
 - Không tạo ảnh sản phẩm mang tính quảng cáo/affiliate trực tiếp trừ khi được giao rõ phạm vi đó.
 - Không tự đánh giá chất lượng ảnh cuối cùng thay Review Factory (nếu có).

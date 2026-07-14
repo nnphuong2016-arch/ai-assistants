@@ -17,11 +17,22 @@ Factory có thể nhận một hoặc nhiều trường sau.
 
 Ít nhất phải có một trong các trường sau:
 
+- slug (VD: `1.5.co-the-can-nhung-khoang-yen-tinh` hoặc `1.5.co-the-can-nhung-khoang-yen-tinh.md`)
 - hook
 - title
 - article
 
-Nếu cả ba đều thiếu.
+**Trường hợp phổ biến nhất: người dùng chỉ dán đúng 1 dòng là tên file/slug bài viết** (không
+kèm gì khác). Factory tự động:
+1. Bỏ đuôi `.md` nếu có.
+2. Dùng nguyên slug đó làm `filename` output (chỉ đổi đuôi sang `.jpg`) — KHÔNG tự sinh tên
+   khác.
+3. Bỏ dấu chấm/gạch ngang, đọc phần chữ sau số thứ tự (VD: `co-the-can-nhung-khoang-yen-tinh`
+   → hiểu là "cơ thể cần những khoảng yên tĩnh") để suy luận chủ đề, dùng như `hook`.
+4. Chạy thẳng toàn bộ quy trình (Editorial → Style → Prompt → Checklist → Output) và trả Output
+   ngay — không hỏi lại, không giải thích từng bước, kể cả ở Interactive Mode.
+
+Nếu cả bốn trường trên đều thiếu.
 
 Factory không thể tạo Featured Image.
 
@@ -194,9 +205,12 @@ Factory dùng mặc định.
 
 Tên file mong muốn.
 
-Nếu không có.
+**Nếu input có `slug` (tên file bài viết) → filename LUÔN lấy nguyên slug đó (đổi đuôi
+`.md`→.jpg), không tự sinh tên khác, không tự rút gọn/diễn giải lại.**
 
-Factory tự sinh.
+Nếu không có slug và cũng không có filename.
+
+Factory tự sinh từ title/hook.
 
 ---
 
@@ -212,7 +226,8 @@ Không bắt buộc.
 
 Nếu nhận nhiều nguồn dữ liệu.
 
-Factory ưu tiên theo thứ tự:
+Factory ưu tiên theo thứ tự (riêng `filename` output luôn lấy từ `slug` nếu có, bất kể thứ tự
+dưới đây — xem field `filename`):
 
 article
 
@@ -227,6 +242,10 @@ title
 ↓
 
 hook
+
+↓
+
+slug (diễn giải thành hook nếu không có gì khác)
 
 ↓
 

@@ -124,6 +124,18 @@ vẫn phải có một chủ thể nổi bật nhất.
 
 Không để người xem mất quá 1 giây để biết nên nhìn vào đâu.
 
+**KHÔNG BAO GIỜ có nhân vật Hiền triết Anh Minh trong Featured Image.**
+
+Featured Image là ảnh minh họa nội dung chung (người vô danh, phong cảnh, đồ vật, thực phẩm...),
+không phải ảnh nhân vật thương hiệu.
+
+Không dùng, không đọc, không tham chiếu `core-brain/image_style_bible.md` — file đó chỉ dành
+cho ảnh/video CÓ nhân vật Anh Minh xuất hiện (Image Factory, Video Factory), không áp dụng ở
+đây.
+
+Nếu người dùng yêu cầu ảnh có nhân vật Anh Minh xuất hiện, đó là việc của Image Factory hoặc
+Video Factory — không phải Featured Image Factory.
+
 ---
 
 # 6. BỐ CỤC

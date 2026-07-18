@@ -189,6 +189,36 @@ video được chuyển thể từ đúng bài SEO đó).
 Hai repo output này KHÔNG chứa bộ não/quy tắc — chỉ chứa thành phẩm cuối cùng. Không tự thêm
 CLAUDE.md hay file cấu hình vào hai repo đó.
 
+### Bước 5.5 — TẠO PROMPT ẢNH MINH HỌA ĐI KÈM (bắt buộc, ngay sau khi lưu bài SEO — quyết định
+18/07/2026)
+
+Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 prompt ảnh minh họa** cho đúng
+bài đó — không phải việc riêng phải đợi người dùng nhắc:
+
+1. Đọc `image-factory/image_prompt_rules.md` (cấu trúc 8 phần Scene→Subject→Composition→
+   Lighting→Color→Mood→Camera→Negative Prompt), `image-factory/image_style_rules.md` (tone màu
+   Beige/Cream/Warm Green/Walnut/Gold, ánh sáng tự nhiên, không nhân vật trừ khi bài cần),
+   `image-factory/image_templates.md` (mặc định dùng **Mẫu E — Blog Cover/OG**, 1.91:1, trừ khi
+   người dùng chỉ định mẫu khác), và `core-brain/image_style_bible.md` nếu ảnh có nhân vật chính.
+2. Ưu tiên ảnh tĩnh vật/khung cảnh đời thường (không có nhân vật) khi bài không cần nhân vật
+   chính xuất hiện — tránh phải khớp ngoại hình mỗi lần, vẫn đủ ẩn dụ khớp nội dung bài.
+3. **KHÔNG** cho prompt ảnh vào file `.md` của bài viết (giữ đúng quy tắc pure-content ở Bước 5).
+   Thay vào đó, ghi vào **1 file Excel chạy dọc duy nhất** (không tạo file rời cho từng bài, không
+   kiểm soát được khi số bài tăng — quyết định 18/07/2026):
+   - Vị trí: `bai-viet-seo/_prompt-anh/prompt-anh.xlsx` (cho ảnh bài SEO). Nếu sau này cần prompt
+     ảnh riêng cho video/kịch bản, tạo tương tự ở `kich-ban-video/_prompt-anh/prompt-anh.xlsx`
+     (không gộp chung 2 file, vì 2 repo đếm số thứ tự độc lập nhau).
+   - Mỗi bài = 1 dòng mới, cột theo đúng thứ tự `image-factory/output_schema.md` (Template, Usage,
+     Prompt, Negative Prompt, Aspect Ratio, Size, Filename, Alt Text, Caption), cộng thêm cột định
+     danh ở đầu: STT, Bài viết (tên file), Link bài SEO (raw GitHub link).
+   - Không ghi đè các dòng cũ — chỉ thêm dòng mới ở cuối.
+4. Commit + push file Excel đã cập nhật vào đúng repo output (cùng lúc hoặc ngay sau khi push bài
+   viết), rồi gửi file đã cập nhật cho người dùng (không chỉ báo đã làm xong mà không đưa file).
+5. File Excel này nằm trong repo chỉ để lưu bền qua các phiên làm việc (môi trường chạy có thể bị
+   dọn sạch giữa các phiên) — không phải nội dung xuất bản, không vi phạm quy tắc "repo output chỉ
+   chứa thành phẩm cuối cùng" vì đây là file phụ trợ pipeline riêng, đặt trong thư mục con
+   `_prompt-anh/` tách biệt rõ khỏi các file `.md` bài viết.
+
 ### Bước 6 — DÁN LINK VÀO GOOGLE SHEET ĐẦU VÀO CHO N8N (bắt buộc, sau khi đã push file)
 
 Sheet: `https://docs.google.com/spreadsheets/d/145dk7FIIzMphDeaZJa9KCyp_Hq4c2YkmNO0h37SIFUk/edit?gid=0#gid=0`

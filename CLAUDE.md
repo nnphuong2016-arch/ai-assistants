@@ -21,6 +21,8 @@ cùng `hook_library_full.md` (kho hook).
 **Nội dung thành phẩm KHÔNG lưu ở repo này** — xem Bước 5 bên dưới:
 - Bài viết SEO → `nnphuong2016-arch/bai-viet-seo`.
 - Kịch bản video → `nnphuong2016-arch/kich-ban-video`.
+- Sau khi push GitHub, luôn tạo thêm file manifest JSON trong Google Drive ("Anh Minh - N8N
+  Trigger") để kích hoạt n8n — xem Bước 6 (thay thế Google Sheet cũ, không dùng nữa).
 
 ---
 
@@ -217,10 +219,13 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
    - Vị trí: `bai-viet-seo/_prompt-anh/prompt-anh.xlsx` (cho ảnh bài SEO). Nếu sau này cần prompt
      ảnh riêng cho video/kịch bản, tạo tương tự ở `kich-ban-video/_prompt-anh/prompt-anh.xlsx`
      (không gộp chung 2 file, vì 2 repo đếm số thứ tự độc lập nhau).
-   - Mỗi bài = 1 dòng mới, cột theo đúng thứ tự `featured-Image-factory/output_schema.md`
-     (Image Type, Category, Concept, Subject, Prompt, Negative Prompt, Aspect Ratio, Suggested
-     Size, Filename, Alt Text, Caption), cộng thêm cột định danh ở đầu: STT, Bài viết (tên
-     file), Link bài SEO (raw GitHub link).
+   - **Thứ tự cột đầy đủ** (cập nhật 14/07/2026, khớp cấu trúc Google Sheet "Anh Minh hook
+     list" ở Bước 6 để đồng bộ): STT, Bài viết (tên file), Link bài SEO (raw GitHub link),
+     **Link kịch bản video** (raw GitHub link — để trống nếu bài chưa có video), rồi tới các
+     cột theo `featured-Image-factory/output_schema.md` (Image Type, Category, Concept,
+     Subject, Prompt, Negative Prompt, Aspect Ratio, Suggested Size, Filename, Alt Text,
+     Caption), và **Trạng thái** ở cột cuối cùng (để trống khi mới tạo, cập nhật thủ công khi
+     đã đăng/publish).
    - Không ghi đè các dòng cũ — chỉ thêm dòng mới ở cuối.
 5. Commit + push file Excel đã cập nhật vào đúng repo output (cùng lúc hoặc ngay sau khi push bài
    viết), rồi gửi file đã cập nhật cho người dùng (không chỉ báo đã làm xong mà không đưa file).
@@ -229,41 +234,56 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
    chứa thành phẩm cuối cùng" vì đây là file phụ trợ pipeline riêng, đặt trong thư mục con
    `_prompt-anh/` tách biệt rõ khỏi các file `.md` bài viết.
 
-### Bước 6 — DÁN LINK VÀO GOOGLE SHEET ĐẦU VÀO CHO N8N (bắt buộc, sau khi đã push file)
+### Bước 6 — TẠO FILE MANIFEST TRONG GOOGLE DRIVE CHO N8N (bắt buộc, sau khi đã push file)
 
-Sheet: `https://docs.google.com/spreadsheets/d/145dk7FIIzMphDeaZJa9KCyp_Hq4c2YkmNO0h37SIFUk/edit?gid=0#gid=0`
-(tên "Anh Minh hook list") — đây là bảng n8n đọc để tự động đăng bài lên web.
+**Đã đổi từ Google Sheet sang Google Drive (quyết định 14/07/2026)** — Google Sheet "Anh Minh
+hook list" KHÔNG còn dùng làm đầu vào n8n nữa (không có connector ghi Sheet, kỹ thuật không cho
+phép). Thay bằng: tạo 1 file JSON "manifest" trong Google Drive cho mỗi bài/kịch bản/ảnh đã
+hoàn tất — n8n dùng Drive Trigger theo dõi 3 thư mục dưới đây để tự kích hoạt workflow (đăng
+bài, tạo ảnh, chuyển video...).
 
-**Cấu trúc Sheet thật (xác nhận 12/07/2026, không đoán nữa):**
+**Thư mục gốc:** "Anh Minh - N8N Trigger" trên Google Drive, gồm 3 thư mục con (ID xác nhận
+14/07/2026, dùng công cụ Drive `create_file` với đúng `parentId`):
 
-| Cột | Nội dung |
-|---|---|
-| A | `stt` |
-| B | `Tên chủ đề` — mỗi dòng là **đúng một hook**, số + câu y hệt `hook_library_full.md` (có
-  dòng tiêu đề mục lớn xen giữa, kiểu `## 1. SỨC KHỎE — HIỂU CƠ THỂ`, không phải hook, bỏ qua) |
-| C | `link bài viết seo` |
-| D | `link ảnh cho bài viết seo` |
-| E | `link video tạo ra từ bài viết seo` |
-| F | `Trạng thái` |
+| Thư mục | parentId | Dùng cho |
+|---|---|---|
+| `Bai-viet-SEO` | `1ubrFWlDezfMX91zoV7hqjc1PqnGNZ3Gn` | Manifest bài viết SEO |
+| `Kich-ban-video` | `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F` | Manifest kịch bản video |
+| `Prompt-Featured-Image` | `17ni-02iYzjljg0IM1E9aQcPShtxhiE0I` | Manifest Featured Image |
 
-**Quan trọng:** dòng khớp theo **đúng số hook + câu hook đã dùng** (cột B), KHÔNG phải theo tên
-bài SEO/tiêu đề bài viết — vì cột B là hook gốc, còn tiêu đề bài do Factory viết ra có thể diễn
-đạt khác câu hook. Luôn đối chiếu lại đúng hook đã dùng ở Bước 2 để tìm đúng dòng.
+**Tên file:** khớp đúng slug bài viết + `.json` (VD: `1.5.co-the-can-nhung-khoang-yen-tinh.json`)
+— dùng `disableConversionToGoogleType: true` khi tạo, để giữ đúng JSON thuần, không bị convert
+sang Google Docs.
 
-**Cách truy cập Sheet:** cần connector Google có quyền ghi (Sheets) đã bật trong phiên. Tính đến
-12/07/2026: chỉ có connector Google Drive (đọc, không ghi được ô) hoạt động; connector Custom
-"google sheet - Anh Minh hook list" bị lỗi cấu hình OAuth (Authorization URL sai, trả 404) —
-CHƯA dùng được để tự ghi. Cho tới khi có connector ghi được:
-1. Xác định đúng dòng theo hook (cột B) đã dùng cho bài/kịch bản vừa xong.
-2. Đưa cho người dùng: **số dòng/hook** + **link raw GitHub** tương ứng đúng cột (C = bài SEO,
-   D = ảnh, E = video) — để người dùng tự dán, không tự đoán rồi báo "đã dán" khi chưa thật sự
-   ghi được.
-3. Nếu sau này có connector ghi Sheet hoạt động, chuyển sang tự làm bước dán, không cần hỏi lại.
+**Nội dung file:**
 
-Metadata còn lại mà pipeline cần (Slug, Meta Description, Category, Tags, Featured Image mô tả...)
-— vì không còn nằm trong file .md (xem Bước 5) — Sheet này hiện CHƯA có cột riêng cho các
-metadata đó (chỉ có 3 cột link + Trạng thái). Nếu cần lưu, hỏi lại người dùng nên thêm cột nào,
-không tự ý thêm cột mới vào Sheet.
+`Bai-viet-SEO/<slug>.json`:
+```json
+{
+  "slug": "1.5.co-the-can-nhung-khoang-yen-tinh",
+  "hook_number": "1.5",
+  "hook_text": "...(đúng câu hook đã dùng, khớp hook_library_full.md)...",
+  "category": "Sức khỏe",
+  "title": "...",
+  "content_markdown": "...(toàn văn bài viết, đúng nội dung đã push GitHub — Bước 5)...",
+  "link_github": "https://raw.githubusercontent.com/nnphuong2016-arch/bai-viet-seo/main/1.5.co-the-can-nhung-khoang-yen-tinh.md"
+}
+```
+
+`Kich-ban-video/<slug>.json`: cấu trúc tương tự (thay `content_markdown` bằng nội dung kịch
+bản, `link_github` trỏ repo `kich-ban-video`).
+
+`Prompt-Featured-Image/<slug>.json`: đúng nguyên object `output_schema.md` của Featured Image
+Factory (`image_type`, `category`, `concept`, `subject`, `prompt`, `negative_prompt`,
+`aspect_ratio`, `suggested_size`, `filename`, `alt_text`, `caption`) — thêm `slug` ở đầu để dễ
+đối chiếu.
+
+**Quy trình:** ngay sau khi push GitHub (Bước 5) và cập nhật Excel (Bước 5.5), tạo LUÔN 2-3 file
+manifest tương ứng (SEO luôn có, video/ảnh tuỳ đã làm xong phần nào) — không đợi người dùng
+nhắc, không hỏi lại. Không tự xoá/ghi đè manifest cũ trừ khi đang sửa đúng bài đó.
+
+Excel (`prompt-anh.xlsx`, Bước 5.5) vẫn giữ nguyên song song — dùng để người dùng rà soát thủ
+công, độc lập với luồng Drive/n8n tự động.
 
 ---
 

@@ -13,9 +13,10 @@
 Đây chính là repo `ai-assistants` — bộ não & quy tắc thật của hệ thống nội dung **AI Hiền triết
 Anh Minh** (Funamark) nằm ngay trong các thư mục con của repo này: `core-brain/` (persona, ranh
 giới an toàn, kiến thức nền dùng chung), và từng thư mục Factory riêng (`seo-factory/`,
-`video-factory/`, `community-factory/`, `image-factory/`, `AI- Anh- Minh- chat-factory/`,
-`research-factory/`, `review-factory/`, `publish-factory/`), cùng `hook_library_full.md` (kho
-hook).
+`video-factory/`, `community-factory/`, `image-factory/`, `featured-Image-factory/` (chuyên
+riêng ảnh đại diện đầu bài viết — tách khỏi `image-factory/` từ 14/07/2026),
+`AI- Anh- Minh- chat-factory/`, `research-factory/`, `review-factory/`, `publish-factory/`),
+cùng `hook_library_full.md` (kho hook).
 
 **Nội dung thành phẩm KHÔNG lưu ở repo này** — xem Bước 5 bên dưới:
 - Bài viết SEO → `nnphuong2016-arch/bai-viet-seo`.
@@ -95,9 +96,16 @@ melatonin...) dù nghe "chuyên sâu hơn".
 community_rules, social_templates, storytelling_patterns, engagement_rules, community_checklist,
 output_schema).
 
-**Khi được yêu cầu tạo PROMPT ẢNH:** đọc `image-factory/` (instructions_IMAGE, image_style_rules,
-image_prompt_rules, image_templates, image_checklist, output_schema); ảnh sản phẩm dùng thêm
-`product-image-factory/product_image_guide.md`.
+**Khi được yêu cầu tạo PROMPT ẢNH:**
+- **Ảnh đại diện đầu bài viết (Featured Image)** → đọc `featured-Image-factory/`
+  (`instructions_FEATURED_IMAGE.md` → `input_schema.md` → `featured_image_editorial_rules.md`
+  → `featured_image_style_rules.md` → `featured_image_prompt_rules.md` →
+  `featured_image_checklist.md` → `output_schema.md`). Đây là Factory riêng cho đúng việc này —
+  xem Bước 5.5.
+- **Mọi loại ảnh khác** (thumbnail YouTube, hero banner, quote image, avatar, ảnh chèn giữa
+  bài, v.v. — KHÔNG bao gồm Featured Image) → đọc `image-factory/` (instructions_IMAGE,
+  image_style_rules, image_prompt_rules, image_templates, image_checklist, output_schema); ảnh
+  sản phẩm dùng thêm `product-image-factory/product_image_guide.md`.
 
 **Khi được yêu cầu trò chuyện trực tiếp (chat/tư vấn nhanh):** đọc
 `AI- Anh- Minh- chat-factory/` (đọc đúng thứ tự ghi trong `instructions_CHAT.md` mục 3 của
@@ -190,31 +198,33 @@ Hai repo output này KHÔNG chứa bộ não/quy tắc — chỉ chứa thành p
 CLAUDE.md hay file cấu hình vào hai repo đó.
 
 ### Bước 5.5 — TẠO PROMPT ẢNH MINH HỌA ĐI KÈM (bắt buộc, ngay sau khi lưu bài SEO — quyết định
-18/07/2026)
+18/07/2026, cập nhật 14/07/2026 dùng Featured Image Factory riêng)
 
-Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 prompt ảnh minh họa** cho đúng
-bài đó — không phải việc riêng phải đợi người dùng nhắc:
+Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Featured Image** cho đúng bài
+đó — không phải việc riêng phải đợi người dùng nhắc:
 
-1. Đọc `image-factory/image_prompt_rules.md` (cấu trúc 8 phần Scene→Subject→Composition→
-   Lighting→Color→Mood→Camera→Negative Prompt), `image-factory/image_style_rules.md` (tone màu
-   Beige/Cream/Warm Green/Walnut/Gold, ánh sáng tự nhiên, không nhân vật trừ khi bài cần),
-   `image-factory/image_templates.md` (mặc định dùng **Mẫu E — Blog Cover/OG**, 1.91:1, trừ khi
-   người dùng chỉ định mẫu khác), và `core-brain/image_style_bible.md` nếu ảnh có nhân vật chính.
-2. Ưu tiên ảnh tĩnh vật/khung cảnh đời thường (không có nhân vật) khi bài không cần nhân vật
-   chính xuất hiện — tránh phải khớp ngoại hình mỗi lần, vẫn đủ ẩn dụ khớp nội dung bài.
-3. **KHÔNG** cho prompt ảnh vào file `.md` của bài viết (giữ đúng quy tắc pure-content ở Bước 5).
-   Thay vào đó, ghi vào **1 file Excel chạy dọc duy nhất** (không tạo file rời cho từng bài, không
-   kiểm soát được khi số bài tăng — quyết định 18/07/2026):
+1. Đọc `featured-Image-factory/` theo đúng thứ tự trong `instructions_FEATURED_IMAGE.md` mục
+   "Đọc theo thứ tự" (editorial → style → prompt → checklist → output schema). **Không dùng**
+   `image-factory/` cho việc này nữa (đã tách riêng).
+2. Input = đúng tên file bài viết vừa lưu (VD `1.5.co-the-can-nhung-khoang-yen-tinh.md`) —
+   Featured Image Factory tự suy luận chủ đề từ slug và tự đặt `filename` output khớp nguyên
+   tên bài (chỉ đổi đuôi `.md`→`.jpg`), không cần tự viết prompt tay.
+3. Featured Image **không bao giờ có nhân vật Hiền triết Anh Minh** — đây là ảnh minh họa nội
+   dung chung (người vô danh/phong cảnh/đồ vật), không phải ảnh nhân vật thương hiệu. Không tra
+   `core-brain/image_style_bible.md` cho việc này.
+4. **KHÔNG** cho prompt ảnh vào file `.md` của bài viết (giữ đúng quy tắc pure-content ở Bước 5).
+   Thay vào đó, ghi vào **1 file Excel chạy dọc duy nhất** (không tạo file rời cho từng bài):
    - Vị trí: `bai-viet-seo/_prompt-anh/prompt-anh.xlsx` (cho ảnh bài SEO). Nếu sau này cần prompt
      ảnh riêng cho video/kịch bản, tạo tương tự ở `kich-ban-video/_prompt-anh/prompt-anh.xlsx`
      (không gộp chung 2 file, vì 2 repo đếm số thứ tự độc lập nhau).
-   - Mỗi bài = 1 dòng mới, cột theo đúng thứ tự `image-factory/output_schema.md` (Template, Usage,
-     Prompt, Negative Prompt, Aspect Ratio, Size, Filename, Alt Text, Caption), cộng thêm cột định
-     danh ở đầu: STT, Bài viết (tên file), Link bài SEO (raw GitHub link).
+   - Mỗi bài = 1 dòng mới, cột theo đúng thứ tự `featured-Image-factory/output_schema.md`
+     (Image Type, Category, Concept, Subject, Prompt, Negative Prompt, Aspect Ratio, Suggested
+     Size, Filename, Alt Text, Caption), cộng thêm cột định danh ở đầu: STT, Bài viết (tên
+     file), Link bài SEO (raw GitHub link).
    - Không ghi đè các dòng cũ — chỉ thêm dòng mới ở cuối.
-4. Commit + push file Excel đã cập nhật vào đúng repo output (cùng lúc hoặc ngay sau khi push bài
+5. Commit + push file Excel đã cập nhật vào đúng repo output (cùng lúc hoặc ngay sau khi push bài
    viết), rồi gửi file đã cập nhật cho người dùng (không chỉ báo đã làm xong mà không đưa file).
-5. File Excel này nằm trong repo chỉ để lưu bền qua các phiên làm việc (môi trường chạy có thể bị
+6. File Excel này nằm trong repo chỉ để lưu bền qua các phiên làm việc (môi trường chạy có thể bị
    dọn sạch giữa các phiên) — không phải nội dung xuất bản, không vi phạm quy tắc "repo output chỉ
    chứa thành phẩm cuối cùng" vì đây là file phụ trợ pipeline riêng, đặt trong thư mục con
    `_prompt-anh/` tách biệt rõ khỏi các file `.md` bài viết.

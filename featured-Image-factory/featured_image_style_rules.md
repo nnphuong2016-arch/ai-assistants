@@ -184,10 +184,15 @@ Không để nền nổi bật hơn chủ thể.
 
 Nếu ảnh có người.
 
-Ưu tiên:
+**BẮT BUỘC (không phải ưu tiên) — chủng tộc:** người trong ảnh luôn phải là người châu Á
+(ưu tiên nhận diện được là người Việt Nam). Luôn ghi rõ trong Prompt bằng từ khóa như
+"Asian" / "Vietnamese" gắn trực tiếp vào mô tả nhân vật (VD: "an Asian middle-aged woman...",
+không viết chung chung "a middle-aged woman..." rồi để mặc định) — vì model tạo ảnh có xu
+hướng mặc định ra người da trắng nếu không ghi rõ chủng tộc. Không được ra người da trắng,
+da đen, hay bất kỳ chủng tộc nào khác dưới bất kỳ lý do gì.
 
-- Người Việt Nam
-- Người châu Á
+Ưu tiên (có thể linh hoạt theo nội dung):
+
 - Độ tuổi phù hợp nội dung
 - Trang phục đời thường
 - Biểu cảm tự nhiên

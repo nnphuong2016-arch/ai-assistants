@@ -9,8 +9,10 @@
 
 - Lên kế hoạch trước mỗi dịp **2–3 tuần** để các Factory kịp đồng bộ.
 - ⚠️ Ngày **âm lịch trôi theo năm dương** — luôn tra lịch âm của năm hiện tại để chốt ngày thật.
-- Mỗi dịp đã gắn **trụ nội dung** liên quan, để biết kéo từ kho nào (`project-memory/hook_library_full.md`
-  — sắp thành Sheet dùng chung, food_library, life_stories, quotes).
+- Mỗi dịp đã gắn **trụ nội dung** liên quan, để biết kéo từ kho nào: file backlog riêng của từng
+  kênh (`bai-seo-dang-website-Anh-Minh.md`/`bai-dang-Facebook-Anh-Minh.md`/
+  `bai-video-dang-Youtube-Anh-Minh.md` — xem `CLAUDE.md` Bước 2), hoặc `food_library.md`,
+  `life_stories.md`, `anh_minh_quotes.md` tuỳ loại nội dung.
 
 ---
 

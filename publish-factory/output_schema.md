@@ -3,6 +3,8 @@
 > Tải lên khu **Files** của Publish Factory. Quy định khuôn xuất gói dữ liệu cuối cùng — để n8n
 > đọc và đẩy thẳng lên CMS.
 > Cập nhật: 04/07/2026.
+> Cập nhật: 20/07/2026 — field 8 Thumbnail: sửa nguồn từ "Image Factory" thành "Featured Image
+> Factory" (Factory riêng, độc lập, tách khỏi Image Factory từ 14/07/2026).
 
 ---
 
@@ -22,7 +24,7 @@ không thêm field ngoài danh sách.
 5. **Target** — kênh xuất bản, hiện tại luôn là `Website` (theo `publishing_targets.md`).
 6. **Category** — lấy nguyên từ SEO Factory, chỉ kiểm tra không rỗng.
 7. **Slug** — lấy nguyên từ SEO Factory.
-8. **Thumbnail** — lấy nguyên từ Image Factory (Featured Image).
+8. **Thumbnail** — lấy nguyên từ **Featured Image Factory** (`featured-image-factory/`).
 9. **Meta** — Title + Meta Description, lấy nguyên từ SEO Factory.
 10. **OG** — OG title/description/image (theo `metadata_rules.md` mục 2).
 11. **Canonical** — URL chuẩn nếu đã biết, để trống nếu chưa (theo `metadata_rules.md` mục 3).

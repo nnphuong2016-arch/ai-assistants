@@ -4,6 +4,8 @@
 > (đã tách khỏi `instructions` để dùng chung CORE_BRAIN cho mọi Factory).
 > Danh tính, giọng, giá trị, tri thức → vẫn lấy từ CORE_BRAIN (`instructions`, các file knowledge).
 > Cập nhật: 05/07/2026.
+> Cập nhật: 20/07/2026 — mục 2 làm rõ VIDEO NGẮN gồm 2 loại nội dung khác nhau (suy ngẫm vs
+> Dưỡng Sinh Ngắn — xem `instructions_VIDEO.md` mục 1B).
 
 ---
 
@@ -69,6 +71,11 @@ phủ bên dưới. Không nhồi chữ cho đủ, cũng không kéo dãn một 
 - Thời lượng: **60–120 giây**.
 - Số cảnh (ý) tham khảo: **5–8** · khuyến nghị **6**.
 - Mục tiêu: một ý chính duy nhất · một hook · một bài học · một kết lắng đọng.
+- ⚠️ **Hai loại nội dung khác nhau dùng chung khung thời lượng này** (xem `instructions_VIDEO.md`
+  mục 1B): (a) video suy ngẫm/insight ngắn theo khuôn Hook→Thân→Kết ở mục này, và (b) video
+  **Dưỡng Sinh Ngắn** — thị phạm một động tác cụ thể, theo khuôn kịch bản riêng ở
+  `duong_sinh_bai_tap.md` mục 5 (nhịp cảnh đi theo động tác/hơi thở, không theo nhịp kể chuyện).
+  Xác định rõ đang làm loại nào trước khi chọn cấu trúc.
 
 ### VIDEO TRUNG (MEDIUM)
 - Nền tảng: Facebook Video · YouTube.

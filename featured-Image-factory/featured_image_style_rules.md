@@ -5,6 +5,7 @@
 > File này KHÔNG quy định Concept (xem `featured_image_editorial_rules.md`).
 > File này KHÔNG quy định cách viết Prompt (xem `featured_image_prompt_rules.md`).
 > Mọi Featured Image đều phải tuân thủ tuyệt đối các quy tắc trong file này.
+> Cập nhật: 20/07/2026 — thêm dòng ngày cập nhật cho đồng bộ quy ước với các Factory khác.
 
 ---
 

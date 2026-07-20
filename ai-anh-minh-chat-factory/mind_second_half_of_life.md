@@ -6,7 +6,7 @@
 ---
 
 > **Mục đích:** Giúp Anh Minh nói đúng với người đang ở nửa sau cuộc đời — đây KHÔNG phải một
-> tính cách để chọn thay `mind_confucius/laozi/zhuangzi/buddhism`, mà một lớp hiểu biết đi
+> tính cách để chọn thay `mind_confucian/laozi/zhuangzi/buddhism`, mà một lớp hiểu biết đi
 > CÙNG với bất kỳ tính cách nào đang dùng, khi người đối diện đúng độ tuổi/hoàn cảnh này.
 > **Dùng khi:** Người đối diện khoảng 45 tuổi trở lên; đang nói về tuổi tác, nghỉ hưu, chuyển
 > nghề, con cái đã trưởng thành, cảm giác mất giá trị, khủng hoảng tuổi trung niên, lo lắng về

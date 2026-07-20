@@ -1,50 +1,4 @@
-# HOOK LIBRARY FULL — KHO ĐỀ TÀI SẢN XUẤT (6 MỤC × 50 = 300 HOOK)
-
-> **CHUYỂN TỪ `ai-assistants/video-factory/` SANG `project-memory/` NGÀY 05/07/2026.**
-> Lý do: đây là **dữ liệu có trạng thái** (hook nào đã dùng, chưa dùng), không phải bộ não/rules
-> tĩnh — không nên nằm trong `ai-assistants/` (khu vực chỉ chứa persona/quy tắc cố định của từng
-> AI Factory). Kế hoạch: nội dung file này sẽ được đưa vào **Google Sheet** làm đầu vào DÙNG
-> CHUNG cho nhiều Factory qua n8n (SEO Factory viết bài từ một hook → Video Factory chuyển đổi
-> CHÍNH bài đó thành video, dùng lại đúng hook đã chọn, không tự chọn hook riêng → tránh trùng/
-> lệch hook giữa bài viết và video). Chat Factory sau này có thể đọc (không đánh dấu đã dùng)
-> để lấy cảm hứng trả lời khách hàng.
->
-> **Trong lúc chưa dựng Sheet:** file này nằm ở `project-memory/` như bản lưu tạm — KHÔNG upload
-> vào khu Files của Video Factory hay SEO Factory nữa (nếu vẫn dùng thủ công qua Custom GPT một
-> thời gian nữa, hỏi trực tiếp trong hội thoại "lấy hook số N trụ X" như trước, dựa theo file
-> này, chứ không upload để AI tự chọn — tránh lặp vì AI không tự nhớ hook nào đã dùng qua các
-> phiên chat khác nhau).
->
-> **Đã có đủ 6 mục (05/07/2026):** 5 trụ lối sống + mục 6 Bếp An Nhiên (giọng kể chuyện món
-> ăn/ký ức gia đình, KHÔNG dùng khuôn "Vì sao/Điều gì" như 5 trụ kia). Đã rà soát và giảm trùng
-> góc vào giữa Sức khỏe/Dưỡng sinh (đi bộ, ngủ sớm, ăn chậm...), bổ sung góc hiện đại cho Tâm lý
-> (áp lực công việc, nghỉ hưu, tổ trống, mạng xã hội) và mở rộng Đồng hành ra ngoài "người bệnh"
-> (ông bà/cháu, vợ chồng già, anh chị em).
->
-> **Kế hoạch metadata khi lên Sheet (chưa gắn vào file này, tránh làm hai lần):** mỗi hook nên
-> có thêm cột **Theme** (chủ đề xuyên trụ, VD: sleep/loneliness/tea/aging — để chống lặp GIỮA
-> các mục, không chỉ trong một mục), **Emotion**, **Season**, **Audience**, **Format** — xem
-> `funamark-master-blueprint-v2.md` Phần B4 để biết schema đề xuất đầy đủ. Việc gắn tag này nên
-> làm trực tiếp trên Sheet (đã có cột sẵn), không gắn tay vào file markdown này rồi phải chuyển
-> lại lần nữa khi có Sheet thật.
->
-> Đây là **kho hook để vận hành**, khác với `video-factory/examples_and_hooks.md` (file dạy
-> giọng — vẫn ở lại Video Factory, không chuyển). Dùng file này như một **lịch nội dung / checklist**.
-> Cập nhật: 05/07/2026.
-
-## CÁCH DÙNG
-
-- Mỗi hook có số. Khi sản xuất: "lấy hook số 12 trụ Dưỡng sinh, viết bản NGẮN" — trợ lý
-  bám đúng câu đó làm điểm vào.
-- **Chống lặp:** đánh dấu hook đã làm; trong mỗi trụ, các hook đã được trải nhiều góc khác
-  nhau (giấc ngủ / năng lượng / nhịp ngày / tuổi tác…), nên chọn cách quãng để không hai
-  video liền kề cùng một góc.
-- Hook là **điểm vào**, không phải cả kịch bản. Giọng, cấu trúc, kịch bản mẫu, phản ví dụ
-  vẫn theo `video-factory/examples_and_hooks.md`.
-- Tất cả hook ở đây đã theo giọng kênh: tò mò bằng insight, **không** dọa bệnh, **không**
-  clickbait bỏ lửng, **không** chạm chẩn đoán, **không** lạc quan độc hại.
-
----
+Các bài seo đăng website - Anh Minh
 
 ## 1. SỨC KHỎE — HIỂU CƠ THỂ
 
@@ -382,53 +336,53 @@
 48. Có những món ăn đi cùng cả tuổi thơ mà ta không nhận ra.
 49. Một căn bếp có khói luôn gợi cảm giác được trở về.
 50. Cuối cùng, điều ta nhớ nhất sau một bữa cơm thường là những người đã ngồi quanh mâm.
-51.Có những món ăn ngon nhất khi cả nhà cùng ngồi xuống.
-52.Có những mùi hương chỉ cần thoảng qua là nhớ cả tuổi thơ.
-53.Một bữa cơm giản dị đôi khi giữ cả một gia đình.
-54.Có những món mẹ nấu, lớn rồi mới hiểu vì sao nhớ.
-55.Người xưa thường bắt đầu yêu thương từ căn bếp.
-56.Một nồi canh nóng có thể làm dịu cả một ngày dài.
-57.Có những món ăn không đắt, nhưng ai đi xa cũng nhớ.
-58.Điều quý nhất trên mâm cơm đôi khi không phải món ăn.
-59.Vì sao bữa cơm nhà luôn có hương vị rất riêng?
-60.Có những món chỉ ngon khi được ăn cùng đúng người.
-61.Một chén cơm nóng luôn đến đúng lúc hơn ta nghĩ.
-62.Tiếng dao thớt chiều về từng là âm thanh rất quen.
-63.Có những món ăn gắn với một mùa trong năm.
-64.Mỗi mùa đều có một món khiến người ta mong đợi.
-65.Người xưa thường chọn món theo mùa hơn theo ý thích.
-66.Có những nguyên liệu bình dị mà đi cùng bao thế hệ.
-67.Một mâm cơm đủ đầy không nhất thiết phải nhiều món.
-68.Điều còn lại sau bữa ăn thường là những câu chuyện.
-69.Có những bữa cơm làm người ta thấy mình được trở về.
-70.Mùi cơm mới luôn có cách khiến lòng chậm lại.
-71.Có những món ăn chỉ cần nhìn đã thấy Tết.
-72.Một bát canh quê đôi khi đủ làm dịu nỗi nhớ nhà.
-73.Vì sao nhiều món quê càng giản dị càng khó quên?
-74.Có những món ăn ngon hơn vào ngày mưa.
-75.Bữa cơm ngon thường bắt đầu từ sự chờ nhau.
-76.Người nấu ăn luôn gửi vào món ăn nhiều hơn gia vị.
-77.Có những công thức không nằm trong cuốn sách nào.
-78.Bà ngoại từng nêm món ăn bằng điều gì?
-79.Có những món ăn kể lại cả một vùng quê.
-80.Một góc chợ sáng chứa cả nhịp sống của một ngày.
-81.Mỗi chiếc rổ ngoài chợ đều có một câu chuyện nhỏ.
-82.Người bán rau quen đôi khi nhớ mình hơn cả tên món.
-83.Có những món ăn ngon vì đúng mùa, không phải vì đắt.
-84.Một chiếc bếp nhỏ từng là nơi cả nhà quây quần.
-85.Có những bữa cơm nghèo mà lòng lại rất giàu.
-86.Mâm cơm ngày thường cũng đáng được trân trọng.
-87.Có những món ăn càng nấu chậm càng ngon.
-88.Điều khiến món ăn đáng nhớ đôi khi là người cùng ăn.
-89.Có những căn bếp giữ ký ức lâu hơn cả những bức ảnh.
-90.Mỗi vùng đất đều có một món ăn kể chuyện về con người nơi đó.
-91.Một tách trà sau bữa cơm có thể kéo dài câu chuyện.
-92.Có những món ăn sinh ra để dành cho ngày đoàn viên.
-93.Điều làm bữa cơm ấm hơn không nằm ở thực đơn.
-94.Có những món ăn càng lớn tuổi càng thấy ngon.
-95.Mùa nào thức nấy, người xưa đã dạy như vậy.
-96.Có những món ăn làm ta nhớ một người đã lâu không gặp.
-97.Bữa cơm không chỉ nuôi cơ thể, mà còn nuôi ký ức.
-98.Có những món ăn đi cùng cả tuổi thơ mà ta không nhận ra.
-99.Một căn bếp có khói luôn gợi cảm giác được trở về.
-100.Cuối cùng, điều ta nhớ nhất sau một bữa cơm thường là những người đã ngồi quanh mâm.
+51.Có những món ăn ngon hơn hẳn khi được nấu bằng nồi gang cũ của bà.
+52.Bàn tay mẹ đong gia vị không cần cân, vẫn vừa miệng cả nhà.
+53.Có những công thức chỉ truyền miệng, không ai viết ra giấy.
+54.Tiếng nước sôi lục bục trên bếp từng là báo hiệu giờ cơm sắp tới.
+55.Một món ăn học được từ mẹ, sau này lại nấu cho con mình.
+56.Có những bữa cơm đơn giản trở thành ký ức đẹp nhất của một người xa quê.
+57.Nồi cơm cháy đáy nồi từng là phần được tranh nhau trong nhà.
+58.Có những món chỉ xuất hiện đúng một dịp trong năm, nên càng chờ đợi.
+59.Người lớn tuổi thường nhớ rõ mùi bếp hơn nhớ mặt món ăn.
+60.Có những bữa cơm nấu vội mà vẫn ấm, vì có người đợi ở nhà.
+61.Một món ăn ngon đôi khi chỉ vì được nấu đúng lúc đói nhất.
+62.Có những gia đình giữ nguyên một món ăn suốt mấy thế hệ không đổi.
+63.Chái bếp nhỏ sau nhà từng là nơi giữ nhiều chuyện riêng của mẹ.
+64.Có những món ăn ngon hơn khi ăn ngay trên bếp, chưa kịp dọn ra bàn.
+65.Người đi làm xa thường nhớ nhất bữa cơm mẹ nấu ngày trở về.
+66.Có những món quà quê gói vội mang theo khi con cái lên thành phố.
+67.Một nồi cá kho để dành ăn dần cả tuần vẫn không ai thấy chán.
+68.Có những bữa cơm chỉ có cà và rau nhưng vẫn thấy đủ đầy.
+69.Nhà đông con, mâm cơm khi xưa luôn phải chia phần đều tay.
+70.Có những mùi khói bếp bay ra ngõ, khiến người đi đường cũng thấy nhớ nhà.
+71.Một đĩa rau vườn nhà bao giờ cũng có vị khác hẳn rau mua chợ.
+72.Có những món ăn gắn với đúng một người, ăn ở đâu cũng nhớ về người đó.
+73.Bát nước chấm pha đúng công thức của mẹ, không ai pha giống được.
+74.Có những bữa giỗ, món ăn tuy quen nhưng năm nào cũng thấy khác một chút.
+75.Người già thường nấu nhạt hơn ngày trẻ, nhưng vẫn đậm đà theo cách riêng.
+76.Có những món ăn đơn giản trở thành đặc sản chỉ vì gắn với một vùng đất.
+77.Một bữa cơm có canh nóng, cá kho, rau luộc — vậy là đã đủ một ngày an.
+78.Có những đứa trẻ lớn lên nhớ mùi bếp hơn nhớ đồ chơi từng có.
+79.Người mẹ già vẫn quen nấu nhiều như ngày con cái còn ở nhà đông đủ.
+80.Có những món ăn không cầu kỳ, nhưng thiếu nó bữa cơm thấy chưa trọn.
+81.Một chiếc muôi gỗ cũ trong bếp mẹ dùng đã qua nhiều năm không đổi.
+82.Có những mùa gặt, cả xóm cùng góp gạo mới nấu chung một nồi cơm.
+83.Người xa nhà lâu năm, chỉ cần ngửi lại mùi món cũ là nhớ ngay tuổi thơ.
+84.Có những bữa cơm chan nước mắt mà vẫn phải ăn cho xong, rồi thấy nhẹ lòng hơn.
+85.Một nồi chè nấu chung dịp lễ luôn đông đủ người ngồi đợi múc.
+86.Có những món ăn theo con cái đi xa, nấu lại chẳng bao giờ đúng vị cũ.
+87.Người nội trợ giỏi không cần công thức, chỉ cần nêm bằng cảm giác quen tay.
+88.Có những bữa cơm muộn vẫn được giữ ấm, chờ người về trễ.
+89.Một góc bếp nhỏ, dù nghèo, vẫn luôn có chỗ cho khách ghé bất ngờ.
+90.Có những món ăn ngon nhờ nấu chung với hàng xóm trong ngày hội làng.
+91.Người bà hay để dành phần ngon nhất trong nồi cho cháu về muộn.
+92.Có những bữa cơm cuối trước khi xa nhà, mẹ nấu nhiều hơn hẳn ngày thường.
+93.Một chiếc chạn bát cũ vẫn giữ nguyên chỗ suốt mấy chục năm trong bếp.
+94.Có những món ăn ngày khó khăn nay lại trở thành món được nhớ nhất.
+95.Người xưa quan niệm mâm cơm đầy đủ ba thế hệ mới thật sự trọn vẹn.
+96.Có những buổi chiều, cả nhà cùng nhặt rau, chuyện trò rôm rả bên hiên bếp.
+97.Một câu "ăn cơm chưa" của người Việt vốn mang theo cả một tấm lòng.
+98.Có những món ăn ngon hơn khi được chia sẻ, dù phần mỗi người ít lại.
+99.Người đi xa thường học nấu lại món mẹ chỉ để nguôi nỗi nhớ nhà.
+100.Cuối cùng, bếp nhà không chỉ nấu ra bữa ăn — mà nấu ra cả một nơi để trở về.

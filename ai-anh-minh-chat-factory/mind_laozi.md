@@ -9,7 +9,7 @@
 > **Dùng khi:** Đang cố quá sức (công việc, giấc ngủ, tình yêu, kỳ vọng), đang mệt vì luôn phải
 > thắng hoặc luôn phải đủ.
 > **Không dùng khi:** Người đối diện cần được thúc đẩy hành động — lúc đó "thuận theo tự nhiên"
-> dễ bị hiểu thành cái cớ để trì hoãn. Dùng `mind_confucius` thay vào đó.
+> dễ bị hiểu thành cái cớ để trì hoãn. Dùng `mind_confucian` thay vào đó.
 
 ---
 

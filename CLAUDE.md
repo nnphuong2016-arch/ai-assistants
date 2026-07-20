@@ -13,10 +13,12 @@
 Đây chính là repo `ai-assistants` — bộ não & quy tắc thật của hệ thống nội dung **AI Hiền triết
 Anh Minh** (Funamark) nằm ngay trong các thư mục con của repo này: `core-brain/` (persona, ranh
 giới an toàn, kiến thức nền dùng chung), và từng thư mục Factory riêng (`seo-factory/`,
-`video-factory/`, `community-factory/`, `image-factory/`, `featured-Image-factory/` (chuyên
-riêng ảnh đại diện đầu bài viết — tách khỏi `image-factory/` từ 14/07/2026),
-`AI- Anh- Minh- chat-factory/`, `research-factory/`, `review-factory/`, `publish-factory/`),
-cùng `hook_library_full.md` (kho hook).
+`video-factory/`, `community-factory/`, `image-factory/`, `featured-image-factory/` (chuyên
+riêng ảnh đại diện đầu bài viết — tách khỏi `image-factory/` từ 14/07/2026, độc lập, không gắn
+với Image Factory hay bất kỳ Factory nào khác), `ai-anh-minh-chat-factory/`, `research-factory/`,
+`review-factory/`, `publish-factory/`), cùng 3 file backlog chủ đề riêng cho từng kênh (thay cho
+`hook_library_full.md` cũ — xem Bước 2): `bai-seo-dang-website-Anh-Minh.md`,
+`bai-dang-Facebook-Anh-Minh.md`, `bai-video-dang-Youtube-Anh-Minh.md`.
 
 **Nội dung thành phẩm KHÔNG lưu ở repo này** — xem Bước 5 bên dưới:
 - Bài viết SEO → `nnphuong2016-arch/bai-viet-seo`.
@@ -33,6 +35,11 @@ nội dung nào cho kênh này, LUÔN thực hiện theo đúng thứ tự:
 
 ### Bước 1 — Luôn đọc CORE_BRAIN trước (bắt buộc, mọi loại nội dung)
 
+> **Ngoại lệ đã xác nhận đúng, giữ nguyên:** Chat Factory (`ai-anh-minh-chat-factory/`) và
+> Featured Image Factory (`featured-image-factory/`) KHÔNG dán `core-brain/instructions.md` vào
+> ô Instructions — mỗi factory có lý do riêng đã ghi trong `instructions_CHAT.md` và
+> `instructions_FEATURED_IMAGE.md` của chính nó. Đây là ngoại lệ có chủ đích, không phải thiếu sót.
+
 - `core-brain/instructions.md` — danh tính "Hiền triết Anh Minh", giọng nói, 5 trụ nội dung,
   ranh giới TUYỆT ĐỐI KHÔNG (không dọa bệnh, không chẩn đoán/kê đơn, không thần bí, không sến,
   không toxic motivation, không CAPS/giật gân, không tranh cãi chính trị), và checkpoint "móc
@@ -46,19 +53,37 @@ nội dung nào cho kênh này, LUÔN thực hiện theo đúng thứ tự:
   chốt), `core-brain/seasonal_calendar.md` (lịch mùa/dịp), `core-brain/image_style_bible.md`
   (ngoại hình nhân vật — nguồn DUY NHẤT, dùng cho mọi ảnh/video có nhân vật).
 
-### Bước 2 — LUÔN lấy hook từ `hook_library_full.md`
+### Bước 2 — LUÔN lấy hook/chủ đề từ đúng file backlog riêng của kênh đang làm (KHÔNG dùng chung
+một kho nữa)
 
-- File: `hook_library_full.md` (gốc repo) — kho 300 hook, chia 6 mục: (1) Sức khỏe, (2) Tâm lý &
-  đời sống, (3) Dưỡng sinh, (4) Triết lý phương Đông, (5) Đồng hành tuổi già & người bệnh,
-  (6) Bếp An Nhiên (giọng kể chuyện món ăn — không dùng khuôn "Vì sao/Điều gì").
-- Cách dùng: nếu người dùng chỉ định "hook số N trụ X" → dùng đúng câu đó làm điểm vào. Nếu
-  không chỉ định, tự chọn hook phù hợp chủ đề, ưu tiên hook CHƯA dùng gần đây (chống lặp —
-  không có bộ nhớ dài hạn giữa các phiên, nên nếu người dùng nhắc "đã dùng hook nào rồi" hãy
-  tôn trọng thông tin đó).
-- Hook chỉ là **điểm vào**, không phải cả kịch bản/bài viết — giọng, cấu trúc, ví dụ vẫn theo
-  file rules của Factory tương ứng (bước 3).
-- Nếu SEO và Video cùng làm một chủ đề (chuyển đổi bài viết → video), **dùng lại đúng hook** đã
-  chọn ở bài SEO gốc — không tự chọn hook khác, tránh lệch giữa bài viết và video.
+> **Cập nhật 20/07/2026:** `hook_library_full.md` (kho hook dùng chung 5 trụ) **không còn dùng**.
+> Lý do đổi: kho dùng chung khiến nhiều kênh dễ khai thác đúng một câu hook theo cùng cách diễn
+> đạt, dẫn tới nội dung na ná nhau giữa Web/Facebook/YouTube. Thay vào đó, **mỗi kênh có một file
+> backlog chủ đề riêng, KHÔNG dùng chéo sang factory khác**:
+
+| Factory | File backlog nguồn hook/chủ đề | Vị trí |
+|---|---|---|
+| SEO Factory (Web) | `bai-seo-dang-website-Anh-Minh.md` | gốc repo `ai-assistants/` |
+| Community Factory (Facebook/X) | `bai-dang-Facebook-Anh-Minh.md` | gốc repo `ai-assistants/` |
+| Video Factory (nhánh Giải Đáp — YouTube) | `bai-video-dang-Youtube-Anh-Minh.md` **+ nguồn ngoài** (Google Drive/Google Sheet khi có) | gốc repo `ai-assistants/` + Drive/Sheet |
+
+- Cách dùng: nếu người dùng chỉ định "hook/dòng số N" → dùng đúng câu đó trong đúng file backlog
+  của Factory đang làm làm điểm vào. Nếu không chỉ định, tự chọn dòng phù hợp chủ đề trong đúng
+  file đó, ưu tiên dòng CHƯA dùng gần đây (chống lặp — không có bộ nhớ dài hạn giữa các phiên,
+  nên nếu người dùng nhắc "đã dùng dòng nào rồi" hãy tôn trọng thông tin đó).
+- Hook/chủ đề gốc chỉ là **điểm vào**, không phải cả kịch bản/bài viết — giọng, cấu trúc, ví dụ
+  vẫn theo file rules của Factory tương ứng (bước 3). Đặc biệt: **không copy nguyên một dòng
+  trong file backlog để làm thẳng title/caption/lời thoại** — luôn viết lại theo đúng vai trò
+  kênh (xem `core-brain/channel_roles.md`).
+- Nếu SEO và Video cùng làm một chủ đề (chuyển đổi bài viết → video), Video Factory **không tự
+  tra lại `bai-video-dang-Youtube-Anh-Minh.md`** cho chủ đề đó — dùng lại đúng góc/hook đã chọn
+  ở bài SEO gốc, tránh lệch giữa bài viết và video.
+- Video Factory là factory DUY NHẤT còn nhận hook từ **nguồn ngoài file backlog** (Google Drive/
+  Google Sheet) khi vận hành tự động — vì nhánh Giải Đáp cần đồng bộ với hook đã chọn ở bài SEO
+  (xem trên), và nhánh Dưỡng Sinh Ngắn dùng `video-factory/bai_tap_library.md` làm nguồn riêng,
+  không phải file backlog nào ở trên.
+- `hook_library_full.md` (2 bản cũ ở `assets/` và `project-memory/`) giữ lại để tham khảo lịch
+  sử, KHÔNG xoá, nhưng KHÔNG Factory nào còn đọc file này nữa.
 
 ### Bước 3 — Đọc đúng file Factory theo loại nội dung được yêu cầu
 
@@ -99,7 +124,7 @@ community_rules, social_templates, storytelling_patterns, engagement_rules, comm
 output_schema).
 
 **Khi được yêu cầu tạo PROMPT ẢNH:**
-- **Ảnh đại diện đầu bài viết (Featured Image)** → đọc `featured-Image-factory/`
+- **Ảnh đại diện đầu bài viết (Featured Image)** → đọc `featured-image-factory/`
   (`instructions_FEATURED_IMAGE.md` → `input_schema.md` → `featured_image_editorial_rules.md`
   → `featured_image_style_rules.md` → `featured_image_prompt_rules.md` →
   `featured_image_checklist.md` → `output_schema.md`). Đây là Factory riêng cho đúng việc này —
@@ -110,7 +135,7 @@ output_schema).
   sản phẩm dùng thêm `product-image-factory/product_image_guide.md`.
 
 **Khi được yêu cầu trò chuyện trực tiếp (chat/tư vấn nhanh):** đọc
-`AI- Anh- Minh- chat-factory/` (đọc đúng thứ tự ghi trong `instructions_CHAT.md` mục 3 của
+`ai-anh-minh-chat-factory/` (đọc đúng thứ tự ghi trong `instructions_CHAT.md` mục 3 của
 chính thư mục đó).
 
 **Research / Review / Publish:** dùng khi pipeline cần — xem `research-factory/`,
@@ -176,7 +201,9 @@ Quy trình khi lưu:
 
 `<số chủ đề>.<số thứ tự bài trong chủ đề đó>.<slug>.md`
 
-Số chủ đề đánh theo đúng thứ tự 6 mục của `hook_library_full.md` (không tự đổi số):
+Số chủ đề đánh theo đúng thứ tự 6 trụ/mục nội dung chuẩn của hệ thống (theo `core-brain/
+instructions.md` mục 6 + mục Bếp An Nhiên — không tự đổi số, không còn phụ thuộc
+`hook_library_full.md` đã ngưng dùng):
 
 | Số | Chủ đề |
 |---|---|
@@ -205,7 +232,7 @@ CLAUDE.md hay file cấu hình vào hai repo đó.
 Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Featured Image** cho đúng bài
 đó — không phải việc riêng phải đợi người dùng nhắc:
 
-1. Đọc `featured-Image-factory/` theo đúng thứ tự trong `instructions_FEATURED_IMAGE.md` mục
+1. Đọc `featured-image-factory/` theo đúng thứ tự trong `instructions_FEATURED_IMAGE.md` mục
    "Đọc theo thứ tự" (editorial → style → prompt → checklist → output schema). **Không dùng**
    `image-factory/` cho việc này nữa (đã tách riêng).
 2. Input = đúng tên file bài viết vừa lưu (VD `1.5.co-the-can-nhung-khoang-yen-tinh.md`) —
@@ -222,7 +249,7 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
    - **Thứ tự cột đầy đủ** (cập nhật 14/07/2026, khớp cấu trúc Google Sheet "Anh Minh hook
      list" ở Bước 6 để đồng bộ): STT, Bài viết (tên file), Link bài SEO (raw GitHub link),
      **Link kịch bản video** (raw GitHub link — để trống nếu bài chưa có video), rồi tới các
-     cột theo `featured-Image-factory/output_schema.md` (Image Type, Category, Concept,
+     cột theo `featured-image-factory/output_schema.md` (Image Type, Category, Concept,
      Subject, Prompt, Negative Prompt, Aspect Ratio, Suggested Size, Filename, Alt Text,
      Caption), và **Trạng thái** ở cột cuối cùng (để trống khi mới tạo, cập nhật thủ công khi
      đã đăng/publish).
@@ -262,7 +289,7 @@ sang Google Docs.
 {
   "slug": "1.5.co-the-can-nhung-khoang-yen-tinh",
   "hook_number": "1.5",
-  "hook_text": "...(đúng câu hook đã dùng, khớp hook_library_full.md)...",
+  "hook_text": "...(đúng câu/dòng đã dùng, khớp đúng file backlog của Factory tương ứng — xem Bước 2)...",
   "category": "Sức khỏe",
   "title": "...",
   "content_markdown": "...(toàn văn bài viết, đúng nội dung đã push GitHub — Bước 5)...",

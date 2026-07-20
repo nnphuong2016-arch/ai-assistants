@@ -7,6 +7,8 @@
 > chung `core-brain/instructions.md` — theo đúng quy ước đã dùng ở `seo-factory/instructions_SEO.md`.
 > File này KHÔNG quy định cách viết post — cách viết nằm ở các file khác (xem mục 3).
 > Cập nhật: 04/07/2026.
+> Cập nhật: 20/07/2026 — thêm tham chiếu `core-brain/channel_roles.md` (vai trò kênh, chống
+> trùng nội dung/câu chữ với SEO Factory và Video Factory khi cùng một chủ đề gốc).
 
 ---
 
@@ -16,9 +18,22 @@ Community Factory là một trong nhiều Factory của hệ AI Funamark. Nhiệ
 **xây gắn kết cộng đồng** cho kênh AI Hiền triết Anh Minh — không phải phát sóng, mà xây sự
 thuộc về.
 
+**Vai trò kênh (so với Website/Video — xem `core-brain/channel_roles.md`): Facebook/X/Zalo CHIA
+SẺ ĐIỀU ĐÁNG NHỚ MỖI NGÀY.** Đây là kênh NÔNG NHẤT có chủ đích trong hệ sinh thái — một cảm xúc,
+một hình ảnh, một câu chốt, KHÔNG giải thích nguyên nhân/cơ chế như bài SEO. Nếu một post đang
+dài ra và bắt đầu giải thích "vì sao"/"cơ chế" như một bài blog — post đó đang lấn vai trò của
+SEO Factory, cần cắt lại đúng độ ngắn & cảm xúc theo `social_templates.md`. Khi cùng một chủ đề
+gốc đã có bài SEO hoặc video gần đây, KHÔNG mở post bằng đúng câu hook đã dùng ở kênh kia — xem
+`core-brain/channel_roles.md` mục 2 & 4 để biết cách kể lại theo góc khác.
+
 Danh tính, giọng nói, giá trị, tri thức, ranh giới an toàn → luôn lấy từ **CORE_BRAIN**
 (`core-brain/instructions.md` + các file knowledge của CORE_BRAIN). Community Factory không
 tự định nghĩa lại nhân vật — chỉ áp dụng nhân vật đó vào định dạng post/tương tác cộng đồng.
+
+**Nguồn chủ đề/backlog (cập nhật 20/07/2026):** khi không được giao chủ đề cụ thể, lấy dòng tiếp
+theo (chưa dùng) trong `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) làm điểm vào
+— đây là backlog RIÊNG của Community Factory, không dùng chung với SEO/Video Factory (xem
+`CLAUDE.md` Bước 2, `core-brain/channel_roles.md` mục 3–4). Không còn dùng `hook_library_full.md`.
 
 ---
 
@@ -57,6 +72,9 @@ tự định nghĩa lại nhân vật — chỉ áp dụng nhân vật đó vào
 4. `engagement_rules.md` — quy tắc trả lời bình luận & tương tác, kể cả tình huống nhạy cảm.
 5. `community_checklist.md` — tự kiểm trước khi xuất (giọng, CTA, chống lặp, một ý chính).
 6. `output_schema.md` — đóng gói đầu ra đúng khuôn (để n8n đọc được).
+7. `core-brain/channel_roles.md` — vai trò của Facebook/X/Zalo so với Website và Video trong hệ
+   sinh thái — đọc để biết ranh giới, tránh viết post trùng góc/trùng câu với bài SEO hoặc kịch
+   bản video khi cùng một chủ đề gốc được khai thác nhiều nơi.
 
 ---
 

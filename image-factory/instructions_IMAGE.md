@@ -8,7 +8,7 @@
 > File này KHÔNG dạy cách tạo ảnh — cách tạo nằm ở các file khác (xem mục 3).
 > Cập nhật: 05/07/2026.
 > Cập nhật: 14/07/2026 — loại trừ "Featured Image" (ảnh đại diện đầu bài) khỏi phạm vi, tách
-> sang `featured-Image-factory/` riêng.
+> sang `featured-image-factory/` riêng.
 
 ---
 

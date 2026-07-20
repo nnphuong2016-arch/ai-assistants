@@ -8,6 +8,7 @@
 > → Kiểm tra lại từ đầu.
 >
 > Không xuất Prompt khi Checklist chưa đạt.
+> Cập nhật: 20/07/2026 — thêm dòng ngày cập nhật cho đồng bộ quy ước với các Factory khác.
 
 ---
 

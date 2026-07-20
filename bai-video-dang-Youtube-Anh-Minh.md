@@ -1,6 +1,6 @@
-Bài video đăng YouTube - Anh Minh
+# Bài video đăng YouTube - Anh Minh
 
-1. SỨC KHỎE & CƠ THỂ (20 câu)
+## 1. SỨC KHỎE & CƠ THỂ (20 câu)
 
 Tại sao càng lớn tuổi cơ thể càng hồi phục chậm?
 Tại sao có người ăn rất ít mà vẫn tăng cân?
@@ -23,7 +23,7 @@ Tại sao nghỉ ngơi cũng là một phần của sức khỏe?
 Tại sao cơ thể luôn gửi tín hiệu trước khi quá tải?
 Tại sao sức khỏe được xây từng ngày chứ không trong một tháng?
 
-2. TÂM LÝ & CẢM XÚC
+## 2. TÂM LÝ & CẢM XÚC (20 câu)
 
 Tại sao càng cố quên lại càng nhớ?
 Tại sao con người hay tự trách mình?
@@ -46,7 +46,30 @@ Tại sao con người cần nghỉ ngơi về tinh thần?
 Tại sao bình yên không đến từ tiền bạc?
 Tại sao hạnh phúc thường rất giản dị?
 
-3. TUỔI GIÀ & NỬA SAU CUỘC ĐỜI
+## 3. DƯỠNG SINH (20 câu)
+
+Tại sao cơ thể thích sự đều đặn hơn những cố gắng nhất thời?
+Tại sao thức dậy cùng một giờ mỗi ngày lại tốt cho sức khỏe?
+Tại sao người sống thuận nhịp sinh học thường khỏe hơn?
+Tại sao buổi sáng quyết định chất lượng cả ngày?
+Tại sao cơ thể cần những khoảng nghỉ ngắn trong ngày?
+Tại sao hơi thở lại ảnh hưởng đến tâm trí?
+Tại sao ngủ đúng giờ quan trọng hơn ngủ nhiều?
+Tại sao đi bộ chậm đôi khi tốt hơn chạy nhanh?
+Tại sao ăn đúng giờ giúp cơ thể khỏe lâu?
+Tại sao cơ thể thích những thói quen lặp lại?
+Tại sao sống thuận theo mùa lại có lợi?
+Tại sao dưỡng sinh bắt đầu từ những điều rất nhỏ?
+Tại sao thư giãn cũng là một kỹ năng?
+Tại sao ngồi yên vài phút mỗi ngày lại giúp khỏe hơn?
+Tại sao thiên nhiên luôn giúp con người phục hồi?
+Tại sao càng đơn giản càng dễ duy trì sức khỏe?
+Tại sao cơ thể luôn muốn trở về trạng thái cân bằng?
+Tại sao điều độ luôn tốt hơn cực đoan?
+Tại sao dưỡng sinh không phải là chữa bệnh?
+Tại sao sống thuận tự nhiên lại giúp sống lâu hơn?
+
+## 4. TUỔI GIÀ & NỬA SAU CUỘC ĐỜI (20 câu)
 
 Tại sao nhiều người về hưu lại thấy trống trải?
 Tại sao tuổi già không phải là đi xuống?
@@ -69,7 +92,7 @@ Tại sao ký ức tuổi thơ luôn đẹp?
 Tại sao tuổi già cần ý nghĩa hơn tiền bạc?
 Tại sao nửa sau cuộc đời có thể là giai đoạn đẹp nhất?
 
-4. GIA ĐÌNH
+## 5. GIA ĐÌNH (20 câu)
 
 Tại sao cha mẹ ít nói "yêu con"?
 Tại sao cha mẹ già thường không muốn làm phiền con?
@@ -92,7 +115,7 @@ Tại sao tuổi già sợ cô đơn hơn bệnh tật?
 Tại sao người già thích kể chuyện cũ?
 Tại sao hạnh phúc gia đình đến từ điều nhỏ?
 
-5. TRIẾT LÝ SỐNG
+## 6. TRIẾT LÝ SỐNG (20 câu)
 
 Tại sao con người luôn đi tìm hạnh phúc?
 Tại sao càng cố kiểm soát càng khổ?
@@ -114,3 +137,26 @@ Tại sao ai cũng cần một mục đích sống?
 Tại sao hạnh phúc không nằm ở tương lai?
 Tại sao sự tử tế luôn có giá trị?
 Tại sao điều đơn giản lại khó nhất?
+
+## 7. BẾP AN NHIÊN (20 câu)
+
+Tại sao bữa cơm nhà luôn ngon hơn ăn ngoài?
+Tại sao người Việt luôn mong được ăn cơm cùng gia đình?
+Tại sao căn bếp là trái tim của ngôi nhà?
+Tại sao một bát canh nóng lại làm dịu cả ngày dài?
+Tại sao những món ăn tuổi thơ luôn ngon nhất?
+Tại sao người lớn tuổi luôn quý bữa cơm gia đình?
+Tại sao mùi cơm mới luôn gợi nhớ về nhà?
+Tại sao nấu ăn cũng là một cách chăm sóc người mình yêu?
+Tại sao bữa cơm tối lại quan trọng với gia đình?
+Tại sao ăn theo mùa lại tốt cho sức khỏe?
+Tại sao thực phẩm tự nhiên luôn được ưu tiên?
+Tại sao người Việt có thói quen mời nhau ăn cơm?
+Tại sao một tách trà có thể làm lòng người bình yên?
+Tại sao căn bếp gọn gàng khiến cuộc sống nhẹ nhàng hơn?
+Tại sao gia vị nhỏ lại tạo nên hương vị lớn?
+Tại sao nhiều kỷ niệm đẹp đều bắt đầu từ mâm cơm?
+Tại sao bữa cơm không chỉ là để ăn?
+Tại sao những món ăn giản dị lại dễ làm người ta nhớ nhất?
+Tại sao một bữa cơm đủ đầy không cần nhiều món?
+Tại sao bình yên thường bắt đầu từ căn bếp?

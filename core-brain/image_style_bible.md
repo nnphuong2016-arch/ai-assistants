@@ -9,8 +9,9 @@
 > Mục đích: giữ nhân vật & không khí hình ảnh NHẤT QUÁN qua mọi cảnh Veo/ảnh tĩnh.
 > Nhân vật là HIỀN TRIẾT phương Đông (nam) — KHÔNG phải bác sĩ, KHÔNG phải đạo sĩ.
 > Cập nhật: 18/07/2026 — thêm mục 0B (khoá nhận diện qua img2video, dùng thẳng kho ảnh có sẵn,
-> không train LoRA) + Voice ID ở mục 11, để giữ nhân vật/giọng ổn định khi sản xuất hàng trăm
-> video qua n8n.
+> không train LoRA; nếu cần text-to-image thật sự thì ưu tiên InstantID/PuLID/IP-Adapter FaceID
+> miễn phí trước khi tính tới LoRA) + Voice ID ở mục 11, để giữ nhân vật/giọng ổn định khi sản
+> xuất hàng trăm video qua n8n.
 
 ---
 
@@ -55,6 +56,15 @@ Không tạo lại nhân vật từ đầu.
   review đạt (khớp nhận diện), thêm vào kho ảnh nguồn vĩnh viễn (đặt tên rõ, VD
   `anh_minh_sitting_tea.png`) để dùng lại về sau — kho ảnh nguồn sẽ nối dài theo thời gian,
   không cố định mãi ở 5 ảnh ban đầu.
+- **Nếu image editing/inpainting không đủ** (cần một pose/bối cảnh mới hẳn mà sửa ảnh cũ không
+  ra được, buộc phải text-to-image thật sự) — **thứ tự ưu tiên công cụ khoá nhận diện, rẻ nhất
+  trước:**
+  1. **InstantID / PuLID / IP-Adapter FaceID** — miễn phí, mã nguồn mở, **không cần train**, chỉ
+     cần đưa 1 ảnh mặt làm điều kiện khi generate. Dùng trước tiên.
+  2. **LoRA riêng cho Anh Minh** — chỉ cân nhắc nếu bước 1 không đủ giữ nhận diện ổn định; cần
+     train + hạ tầng riêng, tốn kém hơn hẳn. Nếu tới bước này, ghi version rõ ràng (VD
+     `anh_minh_lora_v1`) và không âm thầm thay thế giữa các video.
+  Ảnh mới tạo ra dù bằng cách nào cũng phải qua review đạt trước khi thêm vào kho ảnh nguồn.
 - **KHÔNG bao giờ generate lại các ảnh đã có "cho đẹp hơn"** — ảnh trong kho là tài sản khoá
   cứng; thay ảnh cũ bằng ảnh mới (dù đẹp hơn) sẽ làm nhận diện lệch so với các video đã làm
   trước đó bằng ảnh cũ.

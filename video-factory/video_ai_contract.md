@@ -1,7 +1,7 @@
 # VIDEO PROMPT TEMPLATES
 STATUS: LOCKED
-VERSION: V1.0
-DATE: 10/07/2026
+VERSION: V1.1
+DATE: 18/07/2026
 
 Mục đích:
 Đây là nơi lưu các Prompt Template dùng riêng cho Video Factory.
@@ -12,12 +12,15 @@ Không chứa kiến thức.
 
 Các Prompt này chỉ mô tả CÁCH AI phải làm việc.
 
-GHI CHÚ VẬN HÀNH (10/07/2026, xem funamark-master-blueprint-v2.md WF-07B):
-Khi input là file .md do Video Factory (WF-07) xuất ra và đã PASS Review (WF-05), Stage 1 +
-Stage 2 dưới đây KHÔNG cần gọi AI — Shot List trong .md đã có sẵn đúng Storyboard (mỗi
-"### Cảnh N" = 1 scene) và đúng Scene Prompt (nội dung [HÌNH] từng cảnh, đã tuân luật "không
-mô tả mặt/quần áo/nhân vật" bên dưới). WF-07B chỉ cần PARSE file bằng Code node. Chỉ gọi AI
-cho Stage 1-2 khi input là script rời rạc KHÔNG qua Video Factory (trường hợp hiếm, chưa build).
+GHI CHÚ VẬN HÀNH (cập nhật 18/07/2026, xem funamark-master-blueprint-v2.md WF-07B):
+Khi input là file `..._master_script.md` do Video Factory (WF-07) xuất ra và đã PASS Review
+(WF-05), Stage 1 + Stage 2 dưới đây KHÔNG cần gọi AI — file đã có sẵn đúng Storyboard (mỗi
+`### Scene <ID>` = 1 scene, ID zero-padded 3 chữ số theo `video_rules.md` mục 1.C) và đúng nội
+dung Scene Prompt (field **Visual** + **Camera** từng cảnh, đã tuân luật "không mô tả mặt/quần
+áo/nhân vật" bên dưới — nhận diện nhân vật nằm riêng ở field **Character**). WF-07B chỉ cần
+PARSE file bằng Code node theo thứ tự field: Scene ID → Duration → Voice → Visual → Camera →
+Character → Emotion → Loop. Chỉ gọi AI cho Stage 1-2 khi input là script rời rạc KHÔNG qua Video
+Factory (trường hợp hiếm, chưa build).
 
 ========================================================
 1. VIDEO PLANNER AI
@@ -39,7 +42,7 @@ JSON
 
 [
   {
-    "scene":1,
+    "scene_id":"001",
     "duration":12,
     "purpose":"Hook",
     "summary":"..."
@@ -72,7 +75,7 @@ Output
 JSON
 
 {
-   "scene":1,
+   "scene_id":"001",
    "prompt":"..."
 }
 

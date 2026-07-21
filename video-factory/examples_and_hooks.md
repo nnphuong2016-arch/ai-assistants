@@ -120,57 +120,107 @@ nhịp, góc nhìn — dù nói cùng một đề tài.
 
 ## 6. KỊCH BẢN MẪU 1 — ĐỊNH DẠNG NGẮN (9:16, 4 cảnh, ~30s)
 
+> Viết theo khuôn field chuẩn ở `video_rules.md` mục 1.C (Scene ID/Duration/Voice/Visual/
+> Camera/Character/Emotion/Loop) — cập nhật 18/07/2026.
+
 **TÊN:** "Buổi sáng, đừng vội cầm điện thoại"
 **Ý chính:** một khoảng thở ngắn đầu ngày giúp thân–tâm bớt cuống.
 
-**HOOK (cảnh 1):**
-- `[VEO PROMPT]` Close-up of a hand reaching for a glowing phone on a wooden bedside table
-  at dawn, soft blue morning light, the hand pauses and slowly withdraws. Static gentle
-  shot, shallow depth of field, quiet ambient room tone, faint birdsong. 8s.
-- `[LỜI DẪN]` "Buổi sáng, nhiều người cầm điện thoại trước khi kịp thở một hơi đầu tiên."
+### Scene 001 (HOOK)
+- **Duration:** 8s
+- **Voice:** "Buổi sáng, nhiều người cầm điện thoại trước khi kịp thở một hơi đầu tiên."
+- **Visual:** Close-up of a hand reaching for a glowing phone on a wooden bedside table at
+  dawn; the hand pauses and slowly withdraws.
+- **Camera:** Static gentle shot, shallow depth of field, soft blue morning light, quiet
+  ambient room tone, faint birdsong.
+- **Character:** (trống — B-roll trung tính, chỉ có bàn tay)
+- **Emotion:** Tò mò, khựng lại nhẹ
+- **Loop:** false
 
-**Cảnh 2:**
-- `[VEO PROMPT]` The sage character (see core-brain/image_style_bible.md) sits by a large window opening
-  onto a green garden, eyes closed, taking one slow breath, morning light warm on his face.
-  Slow push-in, 35mm, soft ambient, leaves rustling. 8s.
-- `[LỜI DẪN]` "Chỉ một hơi thở chậm thôi — trước khi cả thế giới ùa vào trong đầu ta."
+### Scene 002
+- **Duration:** 8s
+- **Voice:** "Chỉ một hơi thở chậm thôi — trước khi cả thế giới ùa vào trong đầu ta."
+- **Visual:** Sitting by a large window opening onto a green garden, eyes closed, taking one
+  slow breath.
+- **Camera:** Slow push-in, 35mm, warm morning light on face, soft ambient, leaves rustling.
+- **Character:** Hiền triết Anh Minh
+- **Emotion:** Tĩnh lặng
+- **Loop:** true
 
-**Cảnh 3:**
-- `[VEO PROMPT]` Close-up of tea being poured slowly into a dark ceramic cup, steam rising
-  in soft window light, calm and unhurried. Static macro shot, gentle pouring sound. 8s.
-- `[LỜI DẪN]` "Một ngày bắt đầu vội thường kéo theo cả một ngày mệt."
+### Scene 003
+- **Duration:** 8s
+- **Voice:** "Một ngày bắt đầu vội thường kéo theo cả một ngày mệt."
+- **Visual:** Tea being poured slowly into a dark ceramic cup, steam rising in soft window
+  light.
+- **Camera:** Static macro shot, calm and unhurried, gentle pouring sound.
+- **Character:** (trống — B-roll trung tính)
+- **Emotion:** Chậm rãi
+- **Loop:** true
 
-**KẾT (cảnh 4):**
-- `[VEO PROMPT]` The sage looks gently toward camera with a faint warm half-smile, then
-  back to the garden, holding the warm cup. Soft natural light, slow subtle movement. 8s.
-- `[LỜI DẪN]` "Sáng mai, thử để cơ thể thức trước cái điện thoại một chút xem sao."
+### Scene 004 (KẾT)
+- **Duration:** 8s
+- **Voice:** "Sáng mai, thử để cơ thể thức trước cái điện thoại một chút xem sao."
+- **Visual:** Looking gently toward camera with a faint warm half-smile, then back to the
+  garden, holding the warm cup.
+- **Camera:** Soft natural light, slow subtle movement.
+- **Character:** Hiền triết Anh Minh
+- **Emotion:** Ấm áp, lắng đọng
+- **Loop:** false
 
 ---
 
 ## 7. KỊCH BẢN MẪU 2 — ĐỊNH DẠNG TRUNG (9:16, mạch B, ~75s)
 
+> Viết theo khuôn field chuẩn ở `video_rules.md` mục 1.C — cập nhật 18/07/2026.
+
 **TÊN:** "Vì sao càng cố mạnh mẽ, càng mệt lâu"
 **Ý chính:** gồng liên tục khiến thân–tâm khó hồi; mềm lại không phải yếu đuối.
 
-- **Cảnh 1 (Mở):** `[VEO]` A tired person at a desk at night, shoulders tense, rubbing the
-  back of the neck, dim warm lamp light. Slow observational shot. 8s.
-  `[LỜI DẪN]` "Có những người luôn cố mạnh mẽ — và thường, đó là người mệt sâu nhất."
+### Scene 001 (Mở)
+- **Duration:** 8s
+- **Voice:** "Có những người luôn cố mạnh mẽ — và thường, đó là người mệt sâu nhất."
+- **Visual:** A tired person at a desk at night, shoulders tense, rubbing the back of the
+  neck.
+- **Camera:** Slow observational shot, dim warm lamp light.
+- **Character:** (trống — B-roll trung tính)
+- **Emotion:** Mệt mỏi, nén lại
+- **Loop:** false
 
-- **Cảnh 2 (Nhận diện):** `[VEO]` Close-up of hands gripping a pen too tightly, then slowly
-  loosening. Shallow focus, quiet room tone. 8s.
-  `[LỜI DẪN]` "Khi ta gồng quá lâu, cơ thể quên mất cảm giác được buông lỏng."
+### Scene 002 (Nhận diện)
+- **Duration:** 8s
+- **Voice:** "Khi ta gồng quá lâu, cơ thể quên mất cảm giác được buông lỏng."
+- **Visual:** Close-up of hands gripping a pen too tightly, then slowly loosening.
+- **Camera:** Shallow focus, quiet room tone.
+- **Character:** (trống — B-roll trung tính)
+- **Emotion:** Căng thẳng dịu dần
+- **Loop:** true
 
-- **Cảnh 3 (Nhịp sống):** `[VEO]` The sage walking slowly along a green garden path,
-  unhurried, hands behind his back. Gentle tracking shot, birdsong. 8s.
-  `[LỜI DẪN]` "Lão Tử nói: nước mềm, nhưng chảy mãi thì đá cũng mòn. Mềm không phải là yếu."
+### Scene 003 (Nhịp sống)
+- **Duration:** 8s
+- **Voice:** "Lão Tử nói: nước mềm, nhưng chảy mãi thì đá cũng mòn. Mềm không phải là yếu."
+- **Visual:** Walking slowly along a green garden path, unhurried, hands behind the back.
+- **Camera:** Gentle tracking shot, birdsong.
+- **Character:** Hiền triết Anh Minh
+- **Emotion:** Trầm tĩnh, chiêm nghiệm
+- **Loop:** true
 
-- **Cảnh 4 (Thay đổi nhỏ):** `[VEO]` The sage sets down a heavy stack of books, exhales,
-  and picks up just one. Warm window light. Static intimate shot. 8s.
-  `[LỜI DẪN]` "Có lẽ điều cần làm không phải gánh thêm — mà là đặt bớt xuống một chút."
+### Scene 004 (Thay đổi nhỏ)
+- **Duration:** 8s
+- **Voice:** "Có lẽ điều cần làm không phải gánh thêm — mà là đặt bớt xuống một chút."
+- **Visual:** Setting down a heavy stack of books, exhaling, picking up just one.
+- **Camera:** Static intimate shot, warm window light.
+- **Character:** Hiền triết Anh Minh
+- **Emotion:** Nhẹ nhõm
+- **Loop:** false
 
-- **Cảnh 5 (Kết):** `[VEO]` The sage sits quietly with tea, eyes soft, looking at the rain
-  outside the window. Slow push-in, gentle rain sound. 8s.
-  `[LỜI DẪN]` "Cho phép mình mềm lại — đôi khi, đó mới là sức mạnh bền nhất."
+### Scene 005 (Kết)
+- **Duration:** 8s
+- **Voice:** "Cho phép mình mềm lại — đôi khi, đó mới là sức mạnh bền nhất."
+- **Visual:** Sitting quietly with tea, eyes soft, looking at the rain outside the window.
+- **Camera:** Slow push-in, gentle rain sound.
+- **Character:** Hiền triết Anh Minh
+- **Emotion:** Ấm áp, lắng đọng
+- **Loop:** true
 
 ---
 

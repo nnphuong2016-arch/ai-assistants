@@ -106,8 +106,8 @@ không kéo dãn một ý cho đủ giờ.
 
 ### VIDEO DÀI (LONG)
 - Nền tảng: YouTube · Podcast video.
-- Thời lượng: **8–12 phút**.
-- Số cảnh (ý) tham khảo: **15–22** · khuyến nghị **18**.
+- Thời lượng: **8–10 phút**.
+- Số cảnh (ý) tham khảo: **15–20** · khuyến nghị **17**.
 - Mục tiêu: đào sâu chủ đề · nhiều lớp góc nhìn · có phần áp dụng thực tế · KHÔNG kéo dài một ý cho đủ giờ.
 - Theo **kiến trúc long-form ở mục 4**.
 
@@ -130,7 +130,7 @@ không kéo dãn một ý cho đủ giờ.
 
 ---
 
-## 4. KIẾN TRÚC VIDEO DÀI (8–12 phút)
+## 4. KIẾN TRÚC VIDEO DÀI (8–10 phút)
 
 Mục tiêu: chiều sâu thật, để người xem thấy "mình vừa nhận được điều gì đó".
 
@@ -147,7 +147,7 @@ còn hơn 12 phút loãng.
 
 **Khuôn xuất video dài:** A. Tên + ý chính + 1 câu hứa · B. Viết **lời dẫn liền mạch theo 5
 phần** trước (như một bài nói chậm, để giữ mạch cảm xúc — đây là bước nháp) · C. Sau đó **chia
-lời dẫn đã viết thành ~15–22 cảnh**, đóng gói mỗi cảnh theo đúng khuôn field ở mục 1.C (Scene ID
+lời dẫn đã viết thành ~15–20 cảnh**, đóng gói mỗi cảnh theo đúng khuôn field ở mục 1.C (Scene ID
 zero-padded, Duration, Voice, Visual, Camera, Character, Emotion, Loop) — mỗi field Voice là một
 đoạn của lời dẫn liền mạch đã viết ở bước B, không viết lại. Đánh dấu `Loop: true` cho cảnh
 B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn khác nhau.

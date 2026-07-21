@@ -35,8 +35,9 @@
    Claude, yêu cầu "chuyển thành prompt Kling/Veo3") hoặc tự động (node Scene Generator trong
    n8n, xem `video_ai_contract.md`). Nhờ vậy khi đổi/thêm công cụ AI, chỉ cần sửa bước build
    prompt, không phải viết lại Master Script.
-7. **Character Reference** — `true`/`false`: cảnh nào có nhân vật chính xuất hiện, tham chiếu
-   `core-brain/image_style_bible.md` — để trống nếu toàn bộ video chỉ có B-roll trung tính.
+7. **Character Reference** — `true`/`false`: video này có cảnh nào chứa nhân vật chính không
+   (cờ tổng quan cấp video, suy ra nhanh từ việc field Character ở bất kỳ Scene nào trong mục 6
+   có giá trị hay không) — để trống nếu toàn bộ video chỉ có B-roll trung tính.
 8. **Suggested Thumbnail** — mô tả ý tưởng thumbnail (không phải ảnh thật) theo mục 8
    `video_rules.md` — để Image Factory hoặc bước sau tạo ảnh thật.
 9. **Music** — gợi ý nhạc nền theo `core-brain/image_style_bible.md` mục 11 (piano tối giản,
@@ -46,6 +47,30 @@
 11. **Metadata** — Category (trụ nội dung), Season (nếu gắn mùa, theo `seasonal_calendar.md`),
     Audience (đối tượng hướng tới).
 12. **Tags** — 3–6 tag liên quan chủ đề, dùng cho tìm kiếm nội bộ trên nền tảng đăng.
+
+---
+
+## LƯU FILE (tên & nơi lưu)
+
+> Cập nhật 18/07/2026 — quyết định trong phiên "trợ lý kịch bản video": chuyển từ GitHub sang
+> lưu trực tiếp vào Google Drive. ⚠️ **Phạm vi:** đây là quy ước áp dụng cho phiên làm việc đó;
+> CLAUDE.md gốc (Bước 5/6) vẫn ghi kịch bản video lưu ở GitHub repo `kich-ban-video` + manifest
+> JSON trên Drive. Nếu đây là thay đổi VĨNH VIỄN cho toàn hệ thống, cần cập nhật lại CLAUDE.md —
+> chưa sửa, đang chờ xác nhận.
+
+- **Nơi lưu:** thư mục Google Drive "Anh Minh - N8N Trigger" → "Kich-ban-video"
+  (parentId `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F`). File chứa **toàn văn Master Script** (không
+  phải manifest JSON) — n8n đọc trực tiếp file này.
+- **Tên file:** `<số chủ đề>.<STT>. <Tên video>_master_script.md`
+  - `<số chủ đề>` và `<STT>`: theo đúng quy tắc đánh số ở CLAUDE.md (6 mục `hook_library_full.md`;
+    STT xác định bằng cách liệt kê file đã có cùng `<số chủ đề>.` trong thư mục Drive này, +1).
+  - `<Tên video>`: giữ nguyên tên video tiếng Việt, có dấu cách và viết hoa như bình thường —
+    KHÔNG rút gọn thành slug. Bỏ các ký tự không an toàn cho tên file khi tải về máy (Windows):
+    `\ / : * ? " < > |` (VD dấu `?` cuối câu hỏi thì bỏ hẳn, không thay bằng ký tự khác).
+  - Kết thúc bằng `_master_script.md` (chữ thường, gạch dưới) — phân biệt với file prompt
+    platform-specific sinh ra ở bước riêng sau đó (nếu có lưu lại, xem lưu ý mục 1.C
+    `video_rules.md`).
+  - VD: `1.1. Vì sao ngủ đủ tám tiếng mà vẫn thấy mệt_master_script.md`
 
 ---
 

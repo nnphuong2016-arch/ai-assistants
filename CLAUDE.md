@@ -13,11 +13,14 @@
 Đây chính là repo `ai-assistants` — bộ não & quy tắc thật của hệ thống nội dung **AI Hiền triết
 Anh Minh** (Funamark) nằm ngay trong các thư mục con của repo này: `core-brain/` (persona, ranh
 giới an toàn, kiến thức nền dùng chung), và từng thư mục Factory riêng (`seo-factory/`,
-`video-factory/`, `community-factory/`, `image-factory/`, `featured-image-factory/` (chuyên
-riêng ảnh đại diện đầu bài viết — tách khỏi `image-factory/` từ 14/07/2026, độc lập, không gắn
-với Image Factory hay bất kỳ Factory nào khác), `ai-anh-minh-chat-factory/`, `research-factory/`,
-`review-factory/`, `publish-factory/`), cùng 3 file backlog chủ đề riêng cho từng kênh (thay cho
-`hook_library_full.md` cũ — xem Bước 2): `bai-seo-dang-website-Anh-Minh.md`,
+`video-factory/`, `community-factory/` (Zalo/Newsletter/bình luận, KHÔNG còn viết Facebook),
+`facebook-factory/` (chuyên riêng bài đăng Facebook — tách khỏi Community Factory từ
+20/07/2026; **2 nguồn ý tưởng song song**: `bai-dang-Facebook-Anh-Minh.md` + tự sinh qua
+`idea_library.md` — xem Bước 2), `image-factory/`, `featured-image-factory/` (chuyên riêng ảnh
+đại diện đầu bài viết — tách khỏi `image-factory/` từ 14/07/2026, độc lập, không gắn với Image
+Factory hay bất kỳ Factory nào khác), `ai-anh-minh-chat-factory/`, `research-factory/`,
+`review-factory/`, `publish-factory/`), cùng 3 file backlog chủ đề riêng cho từng kênh (thay
+cho `hook_library_full.md` cũ — xem Bước 2): `bai-seo-dang-website-Anh-Minh.md`,
 `bai-dang-Facebook-Anh-Minh.md`, `bai-video-dang-Youtube-Anh-Minh.md`.
 
 **Nội dung thành phẩm KHÔNG lưu ở repo này** — xem Bước 5 bên dưới:
@@ -64,8 +67,8 @@ một kho nữa)
 | Factory | File backlog nguồn hook/chủ đề | Vị trí |
 |---|---|---|
 | SEO Factory (Web) | `bai-seo-dang-website-Anh-Minh.md` | gốc repo `ai-assistants/` |
-| Community Factory (Facebook/X) | `bai-dang-Facebook-Anh-Minh.md` | gốc repo `ai-assistants/` |
 | Video Factory (nhánh Giải Đáp — YouTube) | `bai-video-dang-Youtube-Anh-Minh.md` **+ nguồn ngoài** (Google Drive/Google Sheet khi có) | gốc repo `ai-assistants/` + Drive/Sheet |
+| Facebook Factory | **2 nguồn song song** (20/07/2026): `bai-dang-Facebook-Anh-Minh.md` (kho 210 hook có sẵn, 7 series) + tự sinh qua `facebook-factory/idea_library.md` (Pattern + Emotion + Observation + Contradiction). Ưu tiên hook chưa dùng trong file trước; nếu đã dùng hết/không hợp chủ đề đang cần → chuyển sang tự sinh. | gốc repo `ai-assistants/` + `facebook-factory/idea_library.md` |
 
 - Cách dùng: nếu người dùng chỉ định "hook/dòng số N" → dùng đúng câu đó trong đúng file backlog
   của Factory đang làm làm điểm vào. Nếu không chỉ định, tự chọn dòng phù hợp chủ đề trong đúng
@@ -119,9 +122,16 @@ melatonin...) dù nghe "chuyên sâu hơn".
    `video-factory/food_library.md`.
 6. `video-factory/output_schema.md` — đóng gói đúng khuôn field.
 
-**Khi được yêu cầu viết POST CỘNG ĐỒNG / social:** đọc `community-factory/` (instructions_COMMUNITY,
-community_rules, social_templates, storytelling_patterns, engagement_rules, community_checklist,
-output_schema).
+**Khi được yêu cầu viết BÀI ĐĂNG FACEBOOK (Page/Group):** đọc `facebook-factory/` theo đúng thứ
+tự trong `instructions_facebook.md` (đã ghi rõ trong file: instructions_facebook → execution_flow
+→ writing_rules → writing_craft → quality_check → post_frameworks → emotion_palette →
+idea_library → hook_library → topic_map → post_examples → output_schema). Factory riêng, tách
+khỏi Community Factory từ 20/07/2026.
+
+**Khi được yêu cầu viết post Zalo/Newsletter hoặc trả lời bình luận:** đọc `community-factory/`
+(instructions_COMMUNITY, community_rules, social_templates, storytelling_patterns,
+engagement_rules, community_checklist, output_schema). Community Factory KHÔNG còn viết bài
+Facebook nữa.
 
 **Khi được yêu cầu tạo PROMPT ẢNH:**
 - **Ảnh đại diện đầu bài viết (Featured Image)** → đọc `featured-image-factory/`
@@ -226,6 +236,24 @@ video được chuyển thể từ đúng bài SEO đó).
 Hai repo output này KHÔNG chứa bộ não/quy tắc — chỉ chứa thành phẩm cuối cùng. Không tự thêm
 CLAUDE.md hay file cấu hình vào hai repo đó.
 
+### Bước 5F — LƯU BÀI ĐĂNG FACEBOOK (song song với Bước 5, khác quy trình — thêm 20/07/2026)
+
+Khi được yêu cầu viết **bài đăng Facebook** (đọc `facebook-factory/` — xem Bước 3), quy trình
+lưu KHÁC hẳn bài SEO/kịch bản video:
+
+- **Không dùng GitHub** — Facebook Factory không có repo output riêng.
+- Sau khi bài đạt `facebook-factory/quality_check.md`, lưu thành file `.md` chứa ĐÚNG nội dung
+  bài viết (không kèm field Mood/Topic/Framework/Internal Tags — những field đó chỉ dùng nội bộ
+  lúc soạn, không đưa vào file lưu, giữ đúng tinh thần "pure content" như Bước 5).
+- Đặt tên file: `<ngày YYYY-MM-DD>-<vài từ khoá chủ đề>.md` (VD: `2026-07-20-ngu-som-hon.md`) —
+  Facebook Factory không có quy cách số thứ tự theo trụ như SEO/Video.
+- Lưu trực tiếp vào thư mục Google Drive **"Bai-dang-Facebook"**
+  (parentId `1zrZzd_1YEu8PC8LEQ14hGHwjuQbkV0ha`, dùng công cụ Drive `create_file`,
+  `disableConversionToGoogleType: true`).
+- **Đây KHÔNG phải file trigger cho n8n** — n8n có workflow "Facebook Factory" riêng, tự đọc/ghi
+  Google Sheet "bai-dang-facebook-anh-minh" qua API, hoàn toàn độc lập với thư mục Drive này.
+  Không tạo thêm manifest JSON cho Facebook ở Bước 6 bên dưới.
+
 ### Bước 5.5 — TẠO PROMPT ẢNH MINH HỌA ĐI KÈM (bắt buộc, ngay sau khi lưu bài SEO — quyết định
 18/07/2026, cập nhật 14/07/2026 dùng Featured Image Factory riêng)
 
@@ -278,6 +306,11 @@ bài, tạo ảnh, chuyển video...).
 | `Kich-ban-video` | `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F` | Manifest kịch bản video |
 | `Prompt-Featured-Image` | `17ni-02iYzjljg0IM1E9aQcPShtxhiE0I` | Manifest Featured Image |
 
+**Không áp dụng cho Facebook** — thư mục Drive `Bai-dang-Facebook`
+(`1zrZzd_1YEu8PC8LEQ14hGHwjuQbkV0ha`) lưu file `.md` nội dung thuần theo Bước 5F, KHÔNG phải
+manifest JSON kích hoạt n8n — workflow Facebook Factory trong n8n đọc trực tiếp Google Sheet
+"bai-dang-facebook-anh-minh" qua API, không dùng Drive Trigger.
+
 **Tên file:** khớp đúng slug bài viết + `.json` (VD: `1.5.co-the-can-nhung-khoang-yen-tinh.json`)
 — dùng `disableConversionToGoogleType: true` khi tạo, để giữ đúng JSON thuần, không bị convert
 sang Google Docs.
@@ -305,9 +338,10 @@ Factory (`image_type`, `category`, `concept`, `subject`, `prompt`, `negative_pro
 `aspect_ratio`, `suggested_size`, `filename`, `alt_text`, `caption`) — thêm `slug` ở đầu để dễ
 đối chiếu.
 
-**Quy trình:** ngay sau khi push GitHub (Bước 5) và cập nhật Excel (Bước 5.5), tạo LUÔN 2-3 file
+**Quy trình:** ngay sau khi push GitHub (Bước 5) và cập nhật Excel (Bước 5.5), tạo LUÔN các file
 manifest tương ứng (SEO luôn có, video/ảnh tuỳ đã làm xong phần nào) — không đợi người dùng
-nhắc, không hỏi lại. Không tự xoá/ghi đè manifest cũ trừ khi đang sửa đúng bài đó.
+nhắc, không hỏi lại. Không tự xoá/ghi đè manifest cũ trừ khi đang sửa đúng bài đó. (Facebook
+không tham gia bước này — xem Bước 5F.)
 
 Excel (`prompt-anh.xlsx`, Bước 5.5) vẫn giữ nguyên song song — dùng để người dùng rà soát thủ
 công, độc lập với luồng Drive/n8n tự động.

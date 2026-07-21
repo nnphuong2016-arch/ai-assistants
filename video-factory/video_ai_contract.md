@@ -99,16 +99,18 @@ Chỉ mô tả
 - composition
 
 ========================================================
-3. FLUX IMAGE AI
+3. FLUX IMAGE AI (chỉ cho cảnh KHÔNG có nhân vật)
 ========================================================
+
+Mục tiêu
+
+Sinh ảnh B-roll trung tính cho cảnh không có nhân vật (field Character trống ở Master Script).
+KHÔNG dùng bước này để tạo ảnh nhân vật mới — cảnh có nhân vật bỏ qua Stage này, lấy thẳng ảnh
+có sẵn trong kho ảnh nguồn (xem image_style_bible.md mục 0B) làm input cho Stage 4.
 
 Input
 
-LoRA Anh Minh (đã train từ bộ ảnh reference khoá cứng — xem image_style_bible.md mục 0B)
-+
-Character Prompt
-+
-Scene Prompt
+Scene Prompt (field Visual + Camera)
 
 Output
 
@@ -116,31 +118,24 @@ PNG
 
 Yêu cầu
 
-- dùng ĐÚNG version LoRA đã khoá cho pipeline hiện tại — không tự đổi version giữa các video
-  trừ khi có quyết định nâng cấp chính thức (ghi version theo image_style_bible.md mục 0B)
-- giữ nguyên nhận diện nhân vật
-- không thay đổi tuổi
-- không thay đổi khuôn mặt
-- không thay đổi trang phục
-- giữ đúng image_style_bible.md
-- khuyến nghị: so khớp khuôn mặt (face similarity) với ảnh reference gốc trước khi coi Stage
-  này đạt (xem image_style_bible.md mục 0B)
+- giữ đúng bảng màu/ánh sáng theo image_style_bible.md
+- không có nhân vật trong khung hình (cảnh này chỉ dùng khi Character trống)
 
 ========================================================
-4. KLING VIDEO AI
+4. KLING / VEO3 IMG2VIDEO
 ========================================================
+
+Mục tiêu
+
+Animate một ảnh tĩnh có sẵn thành clip chuyển động — đây là cơ chế khoá nhận diện nhân vật
+chính thức của pipeline (img2video, không train LoRA — xem image_style_bible.md mục 0B).
 
 Input
 
-Image
-
+Ảnh gốc — nếu Character có giá trị: chọn từ kho ảnh nhân vật cố định ở image_style_bible.md
+mục 0B (KHÔNG tạo ảnh mới bằng text-to-image); nếu Character trống: dùng ảnh B-roll từ Stage 3
 +
-
-Reference Images
-
-+
-
-Motion Prompt
+Motion Prompt (field Camera + Visual)
 
 Output
 
@@ -148,10 +143,10 @@ MP4
 
 Yêu cầu
 
-- chuyển động tự nhiên
+- chuyển động tự nhiên, camera CHẬM (chuyển động mạnh dễ khiến model tự vẽ thêm chi tiết mặt
+  không có trong ảnh gốc — xem image_style_bible.md mục 0B)
 - không méo mặt
 - không đổi nhân vật
-- camera chậm
 - cinematic
 - giữ ánh sáng
 
@@ -236,7 +231,7 @@ Không AI nào được tự ý thay đổi:
 - Giọng Anh Minh
 - Nhân vật
 - Thời lượng
-- LoRA version (nhận diện nhân vật — xem image_style_bible.md mục 0B)
+- Ảnh nhân vật dùng cho img2video (chỉ lấy từ kho ảnh cố định — xem image_style_bible.md mục 0B)
 - Voice ID (giọng đọc — xem image_style_bible.md mục 11)
 
 Nếu phát hiện lỗi

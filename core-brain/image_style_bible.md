@@ -8,8 +8,9 @@
 > Factory cụ thể.
 > Mục đích: giữ nhân vật & không khí hình ảnh NHẤT QUÁN qua mọi cảnh Veo/ảnh tĩnh.
 > Nhân vật là HIỀN TRIẾT phương Đông (nam) — KHÔNG phải bác sĩ, KHÔNG phải đạo sĩ.
-> Cập nhật: 18/07/2026 — thêm mục 0B (khoá nhận diện qua LoRA) + Voice ID ở mục 11, để giữ nhân
-> vật/giọng ổn định khi sản xuất hàng trăm video qua n8n.
+> Cập nhật: 18/07/2026 — thêm mục 0B (khoá nhận diện qua img2video, dùng thẳng kho ảnh có sẵn,
+> không train LoRA) + Voice ID ở mục 11, để giữ nhân vật/giọng ổn định khi sản xuất hàng trăm
+> video qua n8n.
 
 ---
 
@@ -34,26 +35,33 @@ luôn nạp toàn bộ bộ ảnh Reference này cùng Master Character Prompt.
 
 Không tạo lại nhân vật từ đầu.
 
-## 0B. KHOÁ NHẬN DIỆN QUA QUY MÔ LỚN (LoRA) — quyết định 18/07/2026
+## 0B. KHOÁ NHẬN DIỆN QUA QUY MÔ LỚN (img2video, không train LoRA) — quyết định 18/07/2026
 
 > Bổ sung sau khi bàn về rủi ro "nhân vật trôi mặt" khi sản xuất hàng trăm video tự động qua
-> n8n. Chỉ đưa ảnh reference vào prompt Flux thường (vanilla) là KHÔNG đủ giữ nhận diện ổn định
-> ở quy mô đó — pipeline dùng **LoRA** làm cơ chế khoá nhận diện chính thức.
+> n8n. Đã cân nhắc train LoRA riêng cho khuôn mặt Anh Minh, nhưng chọn phương án rẻ hơn: dùng
+> thẳng tính năng **img2video có sẵn trong Kling/Veo3** (đã trả phí subscription, gần như không
+> phát sinh thêm chi phí) — animate trực tiếp từ một ảnh nhân vật ĐÃ CÓ sẵn, thay vì generate
+> ảnh mới mỗi cảnh bằng text-to-image (cách dễ trôi mặt nhất nếu không có LoRA khoá riêng).
 
-- **Bộ ảnh reference ở mục 0** (`anh_minh_front/left/right/back/fullbody.png`) là **tài sản
-  khoá cứng, versioned** — dùng để TRAIN một LoRA riêng cho khuôn mặt/ngoại hình Anh Minh, rồi
-  LoRA đó được dùng lại cho MỌI lần generate ảnh (Flux) sau này. KHÔNG bao giờ generate lại bộ
-  ảnh gốc "cho đẹp hơn" — mỗi lần tạo lại ảnh gốc là một lần nhận diện có thể lệch so với các
-  video đã làm trước đó.
-- **LoRA là nguồn khoá nhận diện DUY NHẤT** cho Flux Image AI (xem `video-factory/
-  video_ai_contract.md` Stage 3) — ảnh reference ở mục 0 sau khi dùng để train chỉ còn vai trò
-  tài liệu tham chiếu cho người review bằng mắt, không phải cơ chế khoá độc lập nữa.
-- **Versioning:** nếu LoRA được train lại/nâng cấp (VD: thêm ảnh reference mới, đổi checkpoint
-  nền), đặt tên version rõ ràng (VD `anh_minh_lora_v1`, `anh_minh_lora_v2`) — KHÔNG âm thầm thay
-  thế; ghi lại video nào dùng version nào nếu cần truy vết khi phát hiện lệch nhận diện.
-- **Kiểm tra định kỳ:** nên so khớp khuôn mặt (face similarity) giữa frame Flux sinh ra và ảnh
-  reference gốc trước khi coi một video là đạt — tối thiểu kiểm tra thủ công định kỳ (VD: mỗi
-  20–30 video), lý tưởng là một bước tự động trong n8n (xem `video_ai_contract.md` Stage 3).
+- **Bộ ảnh reference ở mục 0** (`anh_minh_front/left/right/back/fullbody.png`) là **kho ảnh
+  nguồn cố định** — đây chính là ảnh input trực tiếp cho bước img2video (xem `video-factory/
+  video_ai_contract.md` Stage 4), KHÔNG chỉ để tham khảo.
+- **Nguyên tắc chọn ảnh cho một cảnh có nhân vật:** chọn ảnh có sẵn trong kho khớp nhất với tư
+  thế/bối cảnh cảnh đó, rồi img2video thẳng từ đúng ảnh này. KHÔNG text-to-image tạo ảnh nhân
+  vật mới cho từng cảnh — mỗi lần tạo ảnh mới bằng text là một lần nhận diện có thể lệch.
+- **Khi kho ảnh hiện có chưa đủ tư thế/bối cảnh cần dùng:** ưu tiên tạo ảnh mới bằng cách
+  **chỉnh sửa/ghép ảnh (image editing/inpainting) từ chính ảnh gốc đã có** — giữ nguyên khuôn
+  mặt, chỉ đổi tư thế/bối cảnh xung quanh — thay vì text-to-image từ đầu. Sau khi ảnh mới được
+  review đạt (khớp nhận diện), thêm vào kho ảnh nguồn vĩnh viễn (đặt tên rõ, VD
+  `anh_minh_sitting_tea.png`) để dùng lại về sau — kho ảnh nguồn sẽ nối dài theo thời gian,
+  không cố định mãi ở 5 ảnh ban đầu.
+- **KHÔNG bao giờ generate lại các ảnh đã có "cho đẹp hơn"** — ảnh trong kho là tài sản khoá
+  cứng; thay ảnh cũ bằng ảnh mới (dù đẹp hơn) sẽ làm nhận diện lệch so với các video đã làm
+  trước đó bằng ảnh cũ.
+- **Kiểm tra định kỳ:** vì img2video giữ gần như nguyên khuôn mặt của ảnh gốc, rủi ro "trôi
+  mặt" chủ yếu đến từ chuyển động quá mạnh khiến Kling/Veo3 tự vẽ thêm chi tiết khuôn mặt không
+  có trong ảnh gốc — ưu tiên chuyển động máy chậm, camera tĩnh (đã quy định ở `video_rules.md`
+  mục 5), và rà soát nhanh bằng mắt các cảnh có chuyển động mạnh trước khi publish.
 
 ---
 

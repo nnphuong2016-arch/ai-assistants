@@ -3,7 +3,8 @@
 > Tải lên khu **Files** của Video Factory. File này chứa toàn bộ quy tắc làm video
 > (đã tách khỏi `instructions` để dùng chung CORE_BRAIN cho mọi Factory).
 > Danh tính, giọng, giá trị, tri thức → vẫn lấy từ CORE_BRAIN (`instructions`, các file knowledge).
-> Cập nhật: 05/07/2026.
+> Cập nhật: 18/07/2026 — mục 1.C chuẩn hoá field Scene ID zero-padded/Duration/Voice/Visual/
+> Camera/Character/Emotion/Loop, tách Master Script khỏi prompt platform-specific (xem mục 1, 4, 5).
 
 ---
 
@@ -47,18 +48,45 @@ Mục đích: tránh rủi ro vi phạm bản quyền khi dùng bài viết củ
 
 ## 1. KHUÔN XUẤT KỊCH BẢN (mỗi lần)
 
+> **Cập nhật 18/07/2026:** chuẩn hoá mỗi cảnh thành khối field cố định (Scene ID zero-padded +
+> Duration/Voice/Visual/Camera/Character/Emotion/Loop tách riêng) — để Master Script là **nguồn
+> dữ liệu** duy nhất, không lẫn prompt riêng cho một công cụ AI cụ thể (Kling/Veo3/Sora...).
+> Việc build prompt cho từng công cụ là một bước RIÊNG, làm SAU khi Master Script này đã hoàn
+> tất (thủ công: đưa lại Master Script cho Claude và yêu cầu "chuyển thành prompt Kling/Veo3";
+> tự động: node Scene Generator trong n8n, xem `video_ai_contract.md`). Nhờ vậy khi công cụ AI
+> đổi/ra bản mới, chỉ cần sửa bước build prompt, không phải viết lại kịch bản.
+
 - **A. TÊN VIDEO** + 1 câu ý chính (+ 1 câu hứa với video TRUNG/DÀI).
 - **B. HOOK (3 giây đầu):** một câu/hình khơi tò mò điềm tĩnh — KHÔNG giật gân.
-- **C. CÁC CẢNH** (đánh số). Mỗi cảnh gồm:
-  - `[HÌNH]` — tiếng Anh: loại cảnh + chủ thể + chuyển động máy + ánh sáng + âm thanh nền.
-    Tham chiếu nhân vật theo `core-brain/image_style_bible.md`. Đánh dấu cảnh nào **dùng lại / loop** được.
-  - `[LỜI DẪN]` — tiếng Việt: voiceover cho ý đó. **Giọng đọc lồng riêng** (không để công cụ
-    đọc tiếng Việt — giữ kiểm soát tông).
+- **C. CÁC CẢNH** — mỗi cảnh là một khối field cố định, theo đúng thứ tự sau:
+  - **Scene ID:** số thứ tự cảnh, zero-padded 3 chữ số (`001`, `002`, `003`...) — để pipeline
+    map 1:1 sang file media cùng ID (`Voice001.mp3`, `Clip001.mp4`, `Subtitle001.srt`...).
+  - **Duration:** thời lượng cảnh (giây), ước theo ngân sách lời của đoạn Voice trong cảnh đó.
+  - **Voice** — tiếng Việt: voiceover cho ý đó. **Giọng đọc lồng riêng** (không để công cụ đọc
+    tiếng Việt — giữ kiểm soát tông).
+  - **Visual** — tiếng Anh: bối cảnh + chủ thể + hành động (không lặp lại nội dung đã có ở
+    Camera/Character bên dưới). ⚠️ **KHÔNG mô tả khuôn mặt/trang phục/đặc điểm ngoại hình nhân
+    vật ở đây** — nhận diện nhân vật do field Character đảm nhiệm (xem bên dưới), khớp đúng quy
+    tắc "Scene Generator AI" ở `video_ai_contract.md` ("không mô tả khuôn mặt, không mô tả quần
+    áo, không mô tả nhân vật — Character sẽ được n8n ghép sau"). Nhờ vậy Master Script dùng
+    được thẳng cho cả Cách 1 (thủ công) lẫn Cách 2 (n8n) mà không cần sửa lại.
+  - **Camera** — tiếng Anh: loại cảnh (close-up, wide…) + chuyển động máy (slow push-in,
+    static, gentle pan…) + ánh sáng + âm thanh nền (ambient). Cũng không mô tả nhân vật ở đây,
+    cùng lý do như field Visual.
+  - **Character** — tên nhân vật xuất hiện trong cảnh (VD: "Hiền triết Anh Minh"), tham chiếu
+    `core-brain/image_style_bible.md` để giữ nhận diện nhất quán; để trống nếu cảnh chỉ có
+    B-roll trung tính không có nhân vật. Khi làm thủ công (Cách 1), thấy field này có tên thì tự
+    nạp bộ ảnh reference tương ứng vào Veo3/Kling; khi tự động (Cách 2), n8n đọc field này để
+    biết cảnh nào cần ghép ảnh nhân vật ở bước Flux/Kling.
+  - **Emotion** — tâm trạng/cảm xúc chủ đạo của cảnh (VD: "tĩnh lặng", "ấm áp", "trầm ngâm").
+  - **Loop** — `true`/`false`: cảnh này có dùng lại/loop được cho video khác không.
 - **D. KẾT:** một câu lắng đọng, mở ra suy ngẫm. Không "like share" gắt.
 
-**Ngân sách lời (giọng trầm-chậm):** ~110–130 từ/phút. Với video NGẮN, mỗi nhịp ý ngắn giữ
-gọn (~14–16 từ/8 giây hình); với TRUNG/DÀI, lời dẫn viết liền mạch theo tổng thời lượng, B-roll
-phủ bên dưới. Không nhồi chữ cho đủ, cũng không kéo dãn một ý cho đủ giờ.
+**Ngân sách lời (giọng trầm-chậm):** ~110–130 từ/phút. Với video NGẮN, mỗi cảnh giữ gọn
+(~14–16 từ Voice / ~8 giây Duration); với TRUNG/DÀI, viết lời dẫn liền mạch theo tổng thời
+lượng trước (giữ mạch cảm xúc), rồi chia thành các cảnh theo khuôn field ở trên — mỗi field
+Voice là một đoạn của lời dẫn liền mạch đã viết, không viết lại. Không nhồi chữ cho đủ, cũng
+không kéo dãn một ý cho đủ giờ.
 
 ---
 
@@ -117,19 +145,27 @@ Mục tiêu: chiều sâu thật, để người xem thấy "mình vừa nhận 
 **Kỷ luật giữ chân:** mỗi lớp phải THÊM cái mới; chuyển lớp thì "re-hook" nhẹ; thà 8 phút đặc
 còn hơn 12 phút loãng.
 
-**Khuôn xuất video dài:** A. Tên + ý chính + 1 câu hứa · B. **LỜI DẪN liền mạch** theo 5 phần
-(viết như một bài nói chậm — lớp mang độ dài) · C. **SHOT LIST B-ROLL** ~15–22 cảnh dùng lại
-được, đánh dấu cảnh loop/kéo dài để phủ dưới lời dẫn.
+**Khuôn xuất video dài:** A. Tên + ý chính + 1 câu hứa · B. Viết **lời dẫn liền mạch theo 5
+phần** trước (như một bài nói chậm, để giữ mạch cảm xúc — đây là bước nháp) · C. Sau đó **chia
+lời dẫn đã viết thành ~15–22 cảnh**, đóng gói mỗi cảnh theo đúng khuôn field ở mục 1.C (Scene ID
+zero-padded, Duration, Voice, Visual, Camera, Character, Emotion, Loop) — mỗi field Voice là một
+đoạn của lời dẫn liền mạch đã viết ở bước B, không viết lại. Đánh dấu `Loop: true` cho cảnh
+B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn khác nhau.
 
 ---
 
 ## 5. QUY TẮC VIẾT PROMPT HÌNH (Veo / công cụ AI)
 
-- Luôn nêu: loại cảnh (close-up, wide…), chuyển động máy (slow push-in, static, gentle pan…),
-  ánh sáng (soft morning light…), tâm trạng, âm thanh nền (ambient). Mô tả cụ thể, điện ảnh,
+> Mục này hướng dẫn nội dung cần có trong field **Visual** + **Camera** (mục 1.C) khi viết Master
+> Script — không phải nơi viết prompt platform-specific (xem lưu ý "KHÔNG mô tả nhân vật" ở
+> mục 1.C: nhận diện nhân vật do field **Character** đảm nhiệm, không nhét vào Visual/Camera).
+
+- Field **Camera**: luôn nêu loại cảnh (close-up, wide…), chuyển động máy (slow push-in, static,
+  gentle pan…), ánh sáng (soft morning light…), âm thanh nền (ambient). Mô tả cụ thể, điện ảnh,
   nhưng **tĩnh tại** — tránh chuyển động dồn dập, cắt nhanh.
-- Tham chiếu nhân vật & bối cảnh theo `core-brain/image_style_bible.md` để giữ nhất quán; nạp tối đa 3 ảnh
-  tham chiếu khi generate.
+- Field **Character**: chỉ ghi tên nhân vật (VD "Hiền triết Anh Minh"), tham chiếu
+  `core-brain/image_style_bible.md` để giữ nhất quán nhận diện — không mô tả lại ngoại hình bằng
+  chữ trong Visual/Camera. Khi làm thủ công, nạp tối đa 3 ảnh tham chiếu khi generate.
 - **Chỉ chữ Việt** trong khung hình (hoặc không chữ) — không bao giờ chữ Hán (theo style bible).
 - Ưu tiên B-roll **trung tính, dùng lại được** (trà, vườn, hơi thở, cửa sổ, bàn tay, bước chân,
   sách…) để một kho hình phục vụ nhiều video — tiết kiệm chi phí generate.

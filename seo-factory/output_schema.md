@@ -37,7 +37,9 @@ không thêm field ngoài danh sách.
 
 - Field nào không áp dụng cho loại bài (VD: Mẫu G Nhật ký thường không có FAQ) → để trống,
   không xóa field khỏi khuôn.
-- Body dùng markdown thuần, không HTML thô, để pipeline tự xử lý chuyển đổi.
+- Body là văn bản thuần 100% chữ liền mạch — KHÔNG markdown, KHÔNG HTML, KHÔNG bất kỳ ký tự
+  định dạng/phân cách nào (`#`, `-`, `--`, `—`, `*`, `•`...), theo `web_content_rules.md`
+  mục 3D — pipeline giọng đọc cần đọc được nguyên văn không vấp ký tự lạ.
 - Không chèn disclaimer/ngày cập nhật như field riêng — chúng nằm trong Body, ở vị trí đã
   quy định tại `web_content_rules.md` và `article_templates.md`.
 - **Reading Time không nằm trong khuôn xuất** — pipeline/CMS tự tính từ độ dài `Body`

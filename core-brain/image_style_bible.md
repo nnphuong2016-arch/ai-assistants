@@ -8,7 +8,8 @@
 > Factory cụ thể.
 > Mục đích: giữ nhân vật & không khí hình ảnh NHẤT QUÁN qua mọi cảnh Veo/ảnh tĩnh.
 > Nhân vật là HIỀN TRIẾT phương Đông (nam) — KHÔNG phải bác sĩ, KHÔNG phải đạo sĩ.
-> Cập nhật: 05/07/2026.
+> Cập nhật: 18/07/2026 — thêm mục 0B (khoá nhận diện qua LoRA) + Voice ID ở mục 11, để giữ nhân
+> vật/giọng ổn định khi sản xuất hàng trăm video qua n8n.
 
 ---
 
@@ -32,6 +33,29 @@ Khi Image Factory hoặc Video Factory tạo ảnh/video có nhân vật Anh Min
 luôn nạp toàn bộ bộ ảnh Reference này cùng Master Character Prompt.
 
 Không tạo lại nhân vật từ đầu.
+
+## 0B. KHOÁ NHẬN DIỆN QUA QUY MÔ LỚN (LoRA) — quyết định 18/07/2026
+
+> Bổ sung sau khi bàn về rủi ro "nhân vật trôi mặt" khi sản xuất hàng trăm video tự động qua
+> n8n. Chỉ đưa ảnh reference vào prompt Flux thường (vanilla) là KHÔNG đủ giữ nhận diện ổn định
+> ở quy mô đó — pipeline dùng **LoRA** làm cơ chế khoá nhận diện chính thức.
+
+- **Bộ ảnh reference ở mục 0** (`anh_minh_front/left/right/back/fullbody.png`) là **tài sản
+  khoá cứng, versioned** — dùng để TRAIN một LoRA riêng cho khuôn mặt/ngoại hình Anh Minh, rồi
+  LoRA đó được dùng lại cho MỌI lần generate ảnh (Flux) sau này. KHÔNG bao giờ generate lại bộ
+  ảnh gốc "cho đẹp hơn" — mỗi lần tạo lại ảnh gốc là một lần nhận diện có thể lệch so với các
+  video đã làm trước đó.
+- **LoRA là nguồn khoá nhận diện DUY NHẤT** cho Flux Image AI (xem `video-factory/
+  video_ai_contract.md` Stage 3) — ảnh reference ở mục 0 sau khi dùng để train chỉ còn vai trò
+  tài liệu tham chiếu cho người review bằng mắt, không phải cơ chế khoá độc lập nữa.
+- **Versioning:** nếu LoRA được train lại/nâng cấp (VD: thêm ảnh reference mới, đổi checkpoint
+  nền), đặt tên version rõ ràng (VD `anh_minh_lora_v1`, `anh_minh_lora_v2`) — KHÔNG âm thầm thay
+  thế; ghi lại video nào dùng version nào nếu cần truy vết khi phát hiện lệch nhận diện.
+- **Kiểm tra định kỳ:** nên so khớp khuôn mặt (face similarity) giữa frame Flux sinh ra và ảnh
+  reference gốc trước khi coi một video là đạt — tối thiểu kiểm tra thủ công định kỳ (VD: mỗi
+  20–30 video), lý tưởng là một bước tự động trong n8n (xem `video_ai_contract.md` Stage 3).
+
+---
 
 ## 1. MASTER CHARACTER PROMPT (chính diện — dùng làm ảnh tham chiếu gốc)
 
@@ -176,3 +200,9 @@ TRÁNH: cảm xúc áp đảo, hình ảnh bi kịch, ánh sáng u ám gây nặ
 Nhạc nền: piano tối giản, cello nhẹ, ambient Việt Nam tinh tế — **cảm xúc nhưng kiềm chế**.
 
 TUYỆT ĐỐI KHÔNG: nhạc epic, nhạc motivational beats, nhạc thao túng cảm xúc kiểu phim quảng cáo.
+
+**Giọng đọc (Voice ID — ElevenLabs, quyết định 18/07/2026):** dùng đúng **1 voice đã clone/khoá
+riêng cho Anh Minh**, giữ nguyên qua mọi video — không dùng giọng preset có sẵn hoặc đổi giọng
+giữa các video (giống nguyên tắc khoá LoRA ở mục 0B, áp dụng cho giọng thay vì mặt).
+Voice ID: `<điền khi đã tạo voice clone chính thức>`. Cho tới khi có voice ID chính thức, ưu
+tiên một giọng đọc người thật thu âm nhất quán thay vì TTS ngẫu nhiên đổi giọng mỗi video.

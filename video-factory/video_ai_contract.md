@@ -104,9 +104,9 @@ Chỉ mô tả
 
 Input
 
-Character Prompt
+LoRA Anh Minh (đã train từ bộ ảnh reference khoá cứng — xem image_style_bible.md mục 0B)
 +
-Reference Images
+Character Prompt
 +
 Scene Prompt
 
@@ -116,11 +116,15 @@ PNG
 
 Yêu cầu
 
+- dùng ĐÚNG version LoRA đã khoá cho pipeline hiện tại — không tự đổi version giữa các video
+  trừ khi có quyết định nâng cấp chính thức (ghi version theo image_style_bible.md mục 0B)
 - giữ nguyên nhận diện nhân vật
 - không thay đổi tuổi
 - không thay đổi khuôn mặt
 - không thay đổi trang phục
 - giữ đúng image_style_bible.md
+- khuyến nghị: so khớp khuôn mặt (face similarity) với ảnh reference gốc trước khi coi Stage
+  này đạt (xem image_style_bible.md mục 0B)
 
 ========================================================
 4. KLING VIDEO AI
@@ -165,6 +169,8 @@ Narration.mp3
 
 Yêu cầu
 
+- dùng ĐÚNG 1 voice ID đã clone/khoá riêng cho Anh Minh — KHÔNG dùng giọng preset ngẫu nhiên
+  hay đổi giọng giữa các video (voice ID xem image_style_bible.md mục 11)
 - giọng ấm
 - tốc độ chậm
 - ngắt nghỉ tự nhiên
@@ -230,6 +236,8 @@ Không AI nào được tự ý thay đổi:
 - Giọng Anh Minh
 - Nhân vật
 - Thời lượng
+- LoRA version (nhận diện nhân vật — xem image_style_bible.md mục 0B)
+- Voice ID (giọng đọc — xem image_style_bible.md mục 11)
 
 Nếu phát hiện lỗi
 

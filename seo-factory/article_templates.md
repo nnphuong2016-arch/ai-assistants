@@ -6,6 +6,11 @@
 
 ---
 
+> **Lưu ý định dạng (từ 21/07/2026):** Ký hiệu H1/H2/H3, gạch đầu dòng "-" trong các mẫu dưới
+> đây chỉ mô tả **cấu trúc/dàn ý** khi soạn bài — Body xuất ra KHÔNG được chứa ký tự `#`, `-`,
+> `--`, `—`, `*`, `•` thật sự (xem `web_content_rules.md` mục 3D). Heading viết thành một dòng
+> chữ thường, danh sách chuyển thành câu văn xuôi nối tiếp.
+
 ## KHUNG CHUNG (mọi bài đều có)
 
 1. **Tiêu đề (H1):** chứa từ khóa/ý định, khơi tò mò điềm tĩnh — không clickbait.

@@ -142,6 +142,32 @@ Chọn loại trước khi viết — không để bài phình dần trong lúc 
 
 ---
 
+## 3D. ĐỊNH DẠNG THUẦN CHỮ — KHÔNG KÝ TỰ ĐẶC BIỆT (bắt buộc, phục vụ giọng đọc)
+
+> Bổ sung 21/07/2026: Body của bài đi qua pipeline giọng đọc (voice/TTS) — máy đọc sẽ đọc
+> thành lời MỌI ký tự xuất hiện trong văn bản, kể cả ký tự định dạng, nghe rất buồn cười nếu
+> để sót. Vì vậy Body phải là **100% chữ liền mạch, không chứa bất kỳ ký tự đặc biệt/định
+> dạng/phân cách nào**:
+
+- Không dùng `#`, `##`, `###` cho heading — tiêu đề mục viết thành một câu/dòng chữ bình
+  thường, không có ký tự đứng trước.
+- Không dùng gạch đầu dòng `-` hoặc `--` cho danh sách — chuyển mọi ý liệt kê thành câu văn
+  xuôi nối tiếp nhau (dùng từ nối: "Trước tiên…", "Sau đó…", "Ngoài ra…", "Cuối cùng…") thay
+  vì bullet.
+- Không dùng gạch ngang `—` (em dash) để ngắt ý giữa câu — viết lại bằng dấu phẩy, dấu chấm,
+  hoặc nối câu tự nhiên thay cho gạch ngang.
+- Không dùng `*`, `**` (in đậm/in nghiêng kiểu markdown), `•`, hay bất kỳ ký tự markdown/bullet
+  nào khác.
+- Dấu câu thông thường (`,` `.` `?` `!` `:` ngoặc kép) vẫn dùng bình thường — chỉ cấm các ký tự
+  ĐỊNH DẠNG/PHÂN CÁCH kể trên, không cấm dấu câu.
+- Ngoại lệ: Slug vẫn dùng gạch nối theo `keyword_strategy.md` mục 6 (slug không được đọc
+  thành giọng, chỉ nằm trong URL).
+
+Quy tắc này áp dụng cho **Body** — field khác (Title, Slug, Meta Description...) giữ nguyên
+quy tắc riêng đã có ở các file tương ứng.
+
+---
+
 ## 4. GIỌNG VIẾT WEB (khác lớp lời video)
 
 - Vẫn là giọng hiền triết của CORE_BRAIN: điềm tĩnh, gợi mở, không giật gân — nhưng viết để

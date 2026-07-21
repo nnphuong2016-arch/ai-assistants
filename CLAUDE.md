@@ -19,10 +19,11 @@ riêng ảnh đại diện đầu bài viết — tách khỏi `image-factory/` 
 cùng `hook_library_full.md` (kho hook).
 
 **Nội dung thành phẩm KHÔNG lưu ở repo này** — xem Bước 5 bên dưới:
-- Bài viết SEO → `nnphuong2016-arch/bai-viet-seo`.
-- Kịch bản video → `nnphuong2016-arch/kich-ban-video`.
-- Sau khi push GitHub, luôn tạo thêm file manifest JSON trong Google Drive ("Anh Minh - N8N
-  Trigger") để kích hoạt n8n — xem Bước 6 (thay thế Google Sheet cũ, không dùng nữa).
+- Bài viết SEO → GitHub `nnphuong2016-arch/bai-viet-seo`, sau đó luôn tạo thêm file manifest
+  JSON trong Google Drive ("Anh Minh - N8N Trigger") để kích hoạt n8n — xem Bước 6.
+- Kịch bản video → **chỉ lưu trực tiếp Google Drive, KHÔNG dùng GitHub nữa** (quyết định
+  18/07/2026 — đã ngừng dùng repo `kich-ban-video`) — thư mục "Anh Minh - N8N Trigger" →
+  "Kich-ban-video". Không cần thêm manifest JSON riêng cho video (xem Bước 5.B + Bước 6).
 
 ---
 
@@ -122,18 +123,18 @@ Luôn chạy qua đúng file `*_checklist.md` (hoặc `seo_checklist.md`/`commun
 `image_checklist.md`) của Factory tương ứng trước khi coi là xong — không xuất nội dung "tạm
 được" rồi sửa sau.
 
-### Bước 5 — LƯU KẾT QUẢ VÀO ĐÚNG REPO ĐẦU RA (bắt buộc, không nhầm lẫn)
+### Bước 5 — LƯU KẾT QUẢ VÀO ĐÚNG NƠI OUTPUT (bắt buộc, không nhầm lẫn)
 
 Sau khi hoàn tất một bài SEO hoặc một kịch bản video (đã qua Bước 4), LUÔN lưu file kết quả vào
-đúng repo output riêng — KHÔNG lưu trong repo `ai-assistants` này (repo này chỉ chứa bộ não/cấu
-hình, không chứa nội dung thành phẩm):
+đúng nơi output — KHÔNG lưu trong repo `ai-assistants` này (repo này chỉ chứa bộ não/cấu hình,
+không chứa nội dung thành phẩm). **Bài SEO và kịch bản video lưu ở HAI NƠI KHÁC NHAU** (5.A/5.B)
+— quyết định 18/07/2026: kịch bản video chuyển hẳn sang Google Drive, ngừng dùng GitHub.
 
-- **Bài viết SEO** → repo `nnphuong2016-arch/bai-viet-seo`.
-- **Kịch bản video** → repo `nnphuong2016-arch/kich-ban-video`.
+#### 5.A — Bài viết SEO (GitHub `nnphuong2016-arch/bai-viet-seo`)
 
 Quy trình khi lưu:
-1. Nếu repo output chưa có trong session → gọi `add_repo` (owner: `nnphuong2016-arch`, repo:
-   `bai-viet-seo` hoặc `kich-ban-video`), clone, rồi `register_repo_root`.
+1. Nếu repo chưa có trong session → gọi `add_repo` (owner: `nnphuong2016-arch`, repo:
+   `bai-viet-seo`), clone, rồi `register_repo_root`.
 2. Đặt tên file theo đúng quy cách ở dưới — không ghi đè file cũ trừ khi đang sửa đúng bài đó.
 3. **File .md CHỈ chứa đúng nội dung bài viết (những gì hiển thị cho người đọc trên web) — KHÔNG
    thêm bất kỳ chữ/field/ghi chú nào khác**:
@@ -165,16 +166,14 @@ Quy trình khi lưu:
    - KHÔNG cho vào file: Slug, Meta Description, Excerpt, Category, Tags, Featured Image
      (mô tả prompt ảnh), tên Hook đã dùng, Loại bài, ghi chú kiểu "References để trống vì...",
      "chưa có internal link vì...". Những thứ này là metadata cho pipeline, không phải nội dung
-     đọc được — chuyển sang lưu ở Google Sheet (xem Bước 6) hoặc trong commit message (lý do
-     quyết định), không nằm trong file.
+     đọc được — chuyển sang lưu ở Google Drive manifest (xem Bước 6) hoặc trong commit message
+     (lý do quyết định), không nằm trong file.
    - Field nào không có nội dung thật (VD: chưa có nguồn để trích dẫn) → **không đưa vào file**,
      không viết placeholder giải thích.
 4. Commit + push (hỏi người dùng trước nếu ngữ cảnh chưa rõ có nên tự push luôn không, trừ khi
    người dùng đã xác nhận sẵn "luôn tự lưu, không cần hỏi lại" trong phiên).
 
-**Quy cách đặt tên file (bắt buộc, áp dụng cả `bai-viet-seo` và `kich-ban-video`):**
-
-`<số chủ đề>.<số thứ tự bài trong chủ đề đó>.<slug>.md`
+**Quy cách đặt tên file bài SEO:** `<số chủ đề>.<số thứ tự bài trong chủ đề đó>.<slug>.md`
 
 Số chủ đề đánh theo đúng thứ tự 6 mục của `hook_library_full.md` (không tự đổi số):
 
@@ -190,14 +189,33 @@ Số chủ đề đánh theo đúng thứ tự 6 mục của `hook_library_full.
 Ví dụ: bài SEO đầu tiên thuộc chủ đề Sức khỏe → `1.1.<slug>.md`. Bài Sức khỏe tiếp theo →
 `1.2.<slug>.md`. Bài đầu tiên thuộc Tâm lý & đời sống → `2.1.<slug>.md`.
 
-**Cách xác định số thứ tự:** trước khi tạo file mới, liệt kê các file đã có trong repo output
-đó bắt đầu bằng đúng `<số chủ đề>.` (VD: liệt kê file bắt đầu `1.` để biết đã có bài Sức khỏe
-nào), lấy số thứ tự lớn nhất + 1. Nếu chưa có file nào của chủ đề đó → bắt đầu từ `1`. `bai-viet-seo`
-và `kich-ban-video` đếm **độc lập nhau** (số thứ tự trong hai repo không cần khớp nhau, kể cả khi
-video được chuyển thể từ đúng bài SEO đó).
+**Cách xác định số thứ tự:** trước khi tạo file mới, liệt kê các file đã có trong repo
+`bai-viet-seo` bắt đầu bằng đúng `<số chủ đề>.` (VD: liệt kê file bắt đầu `1.` để biết đã có bài
+Sức khỏe nào), lấy số thứ tự lớn nhất + 1. Nếu chưa có file nào của chủ đề đó → bắt đầu từ `1`.
 
-Hai repo output này KHÔNG chứa bộ não/quy tắc — chỉ chứa thành phẩm cuối cùng. Không tự thêm
-CLAUDE.md hay file cấu hình vào hai repo đó.
+Repo `bai-viet-seo` KHÔNG chứa bộ não/quy tắc — chỉ chứa thành phẩm cuối cùng. Không tự thêm
+CLAUDE.md hay file cấu hình vào repo đó.
+
+#### 5.B — Kịch bản video (Google Drive — KHÔNG dùng GitHub)
+
+- **Nơi lưu:** Google Drive, thư mục "Anh Minh - N8N Trigger" → "Kich-ban-video" (parentId
+  `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F`, dùng công cụ Drive `create_file`). File chứa **toàn văn
+  Master Script** — n8n đọc/parse trực tiếp file này (xem `video-factory/video_ai_contract.md`),
+  KHÔNG cần repo GitHub `kich-ban-video` (đã ngừng dùng) và KHÔNG cần thêm manifest JSON riêng
+  (nội dung thật đã nằm sẵn trong chính file `.md` này — xem thêm ghi chú ở Bước 6).
+- **Tên file:** `<số chủ đề>.<STT>. <Tên video>_master_script.md` — số chủ đề theo đúng bảng ở
+  mục 5.A; STT xác định bằng cách liệt kê file đã có cùng `<số chủ đề>.` trong thư mục Drive
+  "Kich-ban-video" (đếm ĐỘC LẬP với `bai-viet-seo`, kể cả khi video chuyển thể từ đúng bài SEO
+  đó). `<Tên video>` giữ nguyên tên tiếng Việt, có dấu cách/viết hoa như bình thường — KHÔNG rút
+  gọn thành slug; bỏ các ký tự không an toàn cho tên file khi tải về máy (Windows):
+  `\ / : * ? " < > |` (VD dấu `?` cuối câu hỏi thì bỏ hẳn).
+  VD: `1.1. Vì sao ngủ đủ tám tiếng mà vẫn thấy mệt_master_script.md`.
+- **Nội dung & khuôn field:** viết đúng theo `video-factory/video_rules.md` mục 1.C (Scene ID
+  zero-padded, Duration, Voice, Visual, Camera, Character, Emotion, Loop) và đóng gói theo
+  `video-factory/output_schema.md`.
+- Không có bước commit/push (không còn GitHub cho video) — chỉ `create_file` lên đúng thư mục
+  Drive trên rồi gửi link file cho người dùng. Hỏi người dùng trước nếu ngữ cảnh chưa rõ có nên
+  tự lưu luôn không, trừ khi đã xác nhận sẵn "luôn tự lưu, không cần hỏi lại" trong phiên.
 
 ### Bước 5.5 — TẠO PROMPT ẢNH MINH HỌA ĐI KÈM (bắt buộc, ngay sau khi lưu bài SEO — quyết định
 18/07/2026, cập nhật 14/07/2026 dùng Featured Image Factory riêng)
@@ -217,12 +235,15 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
 4. **KHÔNG** cho prompt ảnh vào file `.md` của bài viết (giữ đúng quy tắc pure-content ở Bước 5).
    Thay vào đó, ghi vào **1 file Excel chạy dọc duy nhất** (không tạo file rời cho từng bài):
    - Vị trí: `bai-viet-seo/_prompt-anh/prompt-anh.xlsx` (cho ảnh bài SEO). Nếu sau này cần prompt
-     ảnh riêng cho video/kịch bản, tạo tương tự ở `kich-ban-video/_prompt-anh/prompt-anh.xlsx`
-     (không gộp chung 2 file, vì 2 repo đếm số thứ tự độc lập nhau).
+     ảnh riêng cho video/kịch bản, lưu tương tự nhưng dưới dạng file Excel riêng trong Google
+     Drive (không dùng đường dẫn GitHub `kich-ban-video/_prompt-anh/` nữa — repo đó đã ngừng
+     dùng từ 18/07/2026, xem Bước 5.B).
    - **Thứ tự cột đầy đủ** (cập nhật 14/07/2026, khớp cấu trúc Google Sheet "Anh Minh hook
-     list" ở Bước 6 để đồng bộ): STT, Bài viết (tên file), Link bài SEO (raw GitHub link),
-     **Link kịch bản video** (raw GitHub link — để trống nếu bài chưa có video), rồi tới các
-     cột theo `featured-Image-factory/output_schema.md` (Image Type, Category, Concept,
+     list" ở Bước 6 để đồng bộ; cột Link kịch bản video sửa 18/07/2026 vì video không còn ở
+     GitHub): STT, Bài viết (tên file), Link bài SEO (raw GitHub link), **Link kịch bản video**
+     (link Google Drive file `_master_script.md` trong thư mục "Kich-ban-video" — để trống nếu
+     bài chưa có video), rồi tới các cột theo `featured-Image-factory/output_schema.md` (Image
+     Type, Category, Concept,
      Subject, Prompt, Negative Prompt, Aspect Ratio, Suggested Size, Filename, Alt Text,
      Caption), và **Trạng thái** ở cột cuối cùng (để trống khi mới tạo, cập nhật thủ công khi
      đã đăng/publish).
@@ -234,26 +255,34 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
    chứa thành phẩm cuối cùng" vì đây là file phụ trợ pipeline riêng, đặt trong thư mục con
    `_prompt-anh/` tách biệt rõ khỏi các file `.md` bài viết.
 
-### Bước 6 — TẠO FILE MANIFEST TRONG GOOGLE DRIVE CHO N8N (bắt buộc, sau khi đã push file)
+### Bước 6 — TẠO FILE MANIFEST TRONG GOOGLE DRIVE CHO N8N (bắt buộc — chỉ còn áp dụng cho SEO
+và Featured Image, KHÔNG còn áp dụng cho video, xem lý do bên dưới)
 
 **Đã đổi từ Google Sheet sang Google Drive (quyết định 14/07/2026)** — Google Sheet "Anh Minh
 hook list" KHÔNG còn dùng làm đầu vào n8n nữa (không có connector ghi Sheet, kỹ thuật không cho
-phép). Thay bằng: tạo 1 file JSON "manifest" trong Google Drive cho mỗi bài/kịch bản/ảnh đã
-hoàn tất — n8n dùng Drive Trigger theo dõi 3 thư mục dưới đây để tự kích hoạt workflow (đăng
-bài, tạo ảnh, chuyển video...).
+phép). Thay bằng: tạo 1 file JSON "manifest" trong Google Drive cho mỗi bài/ảnh đã hoàn tất —
+n8n dùng Drive Trigger theo dõi các thư mục dưới đây để tự kích hoạt workflow (đăng bài, tạo
+ảnh...).
+
+**Cập nhật 18/07/2026 — bỏ manifest JSON cho video:** từ khi kịch bản video chuyển sang lưu trực
+tiếp Google Drive dưới dạng file `..._master_script.md` thật (Bước 5.B) ngay trong chính thư mục
+`Kich-ban-video` mà n8n theo dõi, việc tạo thêm 1 file `.json` chứa lại y nguyên nội dung đó là
+**dư thừa/trùng lặp** — n8n parse thẳng file `.md` (xem `video-factory/video_ai_contract.md`
+ghi chú WF-07B). Vì vậy **KHÔNG còn tạo manifest JSON cho video nữa** — chỉ còn áp dụng cho bài
+viết SEO và Featured Image.
 
 **Thư mục gốc:** "Anh Minh - N8N Trigger" trên Google Drive, gồm 3 thư mục con (ID xác nhận
 14/07/2026, dùng công cụ Drive `create_file` với đúng `parentId`):
 
 | Thư mục | parentId | Dùng cho |
 |---|---|---|
-| `Bai-viet-SEO` | `1ubrFWlDezfMX91zoV7hqjc1PqnGNZ3Gn` | Manifest bài viết SEO |
-| `Kich-ban-video` | `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F` | Manifest kịch bản video |
-| `Prompt-Featured-Image` | `17ni-02iYzjljg0IM1E9aQcPShtxhiE0I` | Manifest Featured Image |
+| `Bai-viet-SEO` | `1ubrFWlDezfMX91zoV7hqjc1PqnGNZ3Gn` | Manifest bài viết SEO (JSON) |
+| `Kich-ban-video` | `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F` | File Master Script kịch bản video thật (`.md`, xem Bước 5.B) — KHÔNG tạo thêm manifest JSON ở đây nữa |
+| `Prompt-Featured-Image` | `17ni-02iYzjljg0IM1E9aQcPShtxhiE0I` | Manifest Featured Image (JSON) |
 
-**Tên file:** khớp đúng slug bài viết + `.json` (VD: `1.5.co-the-can-nhung-khoang-yen-tinh.json`)
-— dùng `disableConversionToGoogleType: true` khi tạo, để giữ đúng JSON thuần, không bị convert
-sang Google Docs.
+**Tên file manifest:** khớp đúng slug bài viết + `.json` (VD:
+`1.5.co-the-can-nhung-khoang-yen-tinh.json`) — dùng `disableConversionToGoogleType: true` khi
+tạo, để giữ đúng JSON thuần, không bị convert sang Google Docs.
 
 **Nội dung file:**
 
@@ -265,22 +294,21 @@ sang Google Docs.
   "hook_text": "...(đúng câu hook đã dùng, khớp hook_library_full.md)...",
   "category": "Sức khỏe",
   "title": "...",
-  "content_markdown": "...(toàn văn bài viết, đúng nội dung đã push GitHub — Bước 5)...",
+  "content_markdown": "...(toàn văn bài viết, đúng nội dung đã push GitHub — Bước 5.A)...",
   "link_github": "https://raw.githubusercontent.com/nnphuong2016-arch/bai-viet-seo/main/1.5.co-the-can-nhung-khoang-yen-tinh.md"
 }
 ```
-
-`Kich-ban-video/<slug>.json`: cấu trúc tương tự (thay `content_markdown` bằng nội dung kịch
-bản, `link_github` trỏ repo `kich-ban-video`).
 
 `Prompt-Featured-Image/<slug>.json`: đúng nguyên object `output_schema.md` của Featured Image
 Factory (`image_type`, `category`, `concept`, `subject`, `prompt`, `negative_prompt`,
 `aspect_ratio`, `suggested_size`, `filename`, `alt_text`, `caption`) — thêm `slug` ở đầu để dễ
 đối chiếu.
 
-**Quy trình:** ngay sau khi push GitHub (Bước 5) và cập nhật Excel (Bước 5.5), tạo LUÔN 2-3 file
-manifest tương ứng (SEO luôn có, video/ảnh tuỳ đã làm xong phần nào) — không đợi người dùng
-nhắc, không hỏi lại. Không tự xoá/ghi đè manifest cũ trừ khi đang sửa đúng bài đó.
+**Quy trình:** ngay sau khi push GitHub bài SEO (Bước 5.A) và cập nhật Excel (Bước 5.5), tạo
+LUÔN manifest JSON tương ứng (SEO luôn có, Featured Image tuỳ đã làm xong phần nào) — không đợi
+người dùng nhắc, không hỏi lại. Với kịch bản video, chỉ cần lưu đúng file `_master_script.md`
+theo Bước 5.B, KHÔNG tạo thêm file `.json`. Không tự xoá/ghi đè manifest cũ trừ khi đang sửa
+đúng bài đó.
 
 Excel (`prompt-anh.xlsx`, Bước 5.5) vẫn giữ nguyên song song — dùng để người dùng rà soát thủ
 công, độc lập với luồng Drive/n8n tự động.

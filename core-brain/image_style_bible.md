@@ -8,7 +8,10 @@
 > Factory cụ thể.
 > Mục đích: giữ nhân vật & không khí hình ảnh NHẤT QUÁN qua mọi cảnh Veo/ảnh tĩnh.
 > Nhân vật là HIỀN TRIẾT phương Đông (nam) — KHÔNG phải bác sĩ, KHÔNG phải đạo sĩ.
-> Cập nhật: 05/07/2026.
+> Cập nhật: 18/07/2026 — thêm mục 0B (khoá nhận diện qua img2video, dùng thẳng kho ảnh có sẵn,
+> không train LoRA; nếu cần text-to-image thật sự thì ưu tiên InstantID/PuLID/IP-Adapter FaceID
+> miễn phí trước khi tính tới LoRA) + Voice ID ở mục 11, để giữ nhân vật/giọng ổn định khi sản
+> xuất hàng trăm video qua n8n.
 
 ---
 
@@ -32,6 +35,45 @@ Khi Image Factory hoặc Video Factory tạo ảnh/video có nhân vật Anh Min
 luôn nạp toàn bộ bộ ảnh Reference này cùng Master Character Prompt.
 
 Không tạo lại nhân vật từ đầu.
+
+## 0B. KHOÁ NHẬN DIỆN QUA QUY MÔ LỚN (img2video, không train LoRA) — quyết định 18/07/2026
+
+> Bổ sung sau khi bàn về rủi ro "nhân vật trôi mặt" khi sản xuất hàng trăm video tự động qua
+> n8n. Đã cân nhắc train LoRA riêng cho khuôn mặt Anh Minh, nhưng chọn phương án rẻ hơn: dùng
+> thẳng tính năng **img2video có sẵn trong Kling/Veo3** (đã trả phí subscription, gần như không
+> phát sinh thêm chi phí) — animate trực tiếp từ một ảnh nhân vật ĐÃ CÓ sẵn, thay vì generate
+> ảnh mới mỗi cảnh bằng text-to-image (cách dễ trôi mặt nhất nếu không có LoRA khoá riêng).
+
+- **Bộ ảnh reference ở mục 0** (`anh_minh_front/left/right/back/fullbody.png`) là **kho ảnh
+  nguồn cố định** — đây chính là ảnh input trực tiếp cho bước img2video (xem `video-factory/
+  video_ai_contract.md` Stage 4), KHÔNG chỉ để tham khảo.
+- **Nguyên tắc chọn ảnh cho một cảnh có nhân vật:** chọn ảnh có sẵn trong kho khớp nhất với tư
+  thế/bối cảnh cảnh đó, rồi img2video thẳng từ đúng ảnh này. KHÔNG text-to-image tạo ảnh nhân
+  vật mới cho từng cảnh — mỗi lần tạo ảnh mới bằng text là một lần nhận diện có thể lệch.
+- **Khi kho ảnh hiện có chưa đủ tư thế/bối cảnh cần dùng:** ưu tiên tạo ảnh mới bằng cách
+  **chỉnh sửa/ghép ảnh (image editing/inpainting) từ chính ảnh gốc đã có** — giữ nguyên khuôn
+  mặt, chỉ đổi tư thế/bối cảnh xung quanh — thay vì text-to-image từ đầu. Sau khi ảnh mới được
+  review đạt (khớp nhận diện), thêm vào kho ảnh nguồn vĩnh viễn (đặt tên rõ, VD
+  `anh_minh_sitting_tea.png`) để dùng lại về sau — kho ảnh nguồn sẽ nối dài theo thời gian,
+  không cố định mãi ở 5 ảnh ban đầu.
+- **Nếu image editing/inpainting không đủ** (cần một pose/bối cảnh mới hẳn mà sửa ảnh cũ không
+  ra được, buộc phải text-to-image thật sự) — **thứ tự ưu tiên công cụ khoá nhận diện, rẻ nhất
+  trước:**
+  1. **InstantID / PuLID / IP-Adapter FaceID** — miễn phí, mã nguồn mở, **không cần train**, chỉ
+     cần đưa 1 ảnh mặt làm điều kiện khi generate. Dùng trước tiên.
+  2. **LoRA riêng cho Anh Minh** — chỉ cân nhắc nếu bước 1 không đủ giữ nhận diện ổn định; cần
+     train + hạ tầng riêng, tốn kém hơn hẳn. Nếu tới bước này, ghi version rõ ràng (VD
+     `anh_minh_lora_v1`) và không âm thầm thay thế giữa các video.
+  Ảnh mới tạo ra dù bằng cách nào cũng phải qua review đạt trước khi thêm vào kho ảnh nguồn.
+- **KHÔNG bao giờ generate lại các ảnh đã có "cho đẹp hơn"** — ảnh trong kho là tài sản khoá
+  cứng; thay ảnh cũ bằng ảnh mới (dù đẹp hơn) sẽ làm nhận diện lệch so với các video đã làm
+  trước đó bằng ảnh cũ.
+- **Kiểm tra định kỳ:** vì img2video giữ gần như nguyên khuôn mặt của ảnh gốc, rủi ro "trôi
+  mặt" chủ yếu đến từ chuyển động quá mạnh khiến Kling/Veo3 tự vẽ thêm chi tiết khuôn mặt không
+  có trong ảnh gốc — ưu tiên chuyển động máy chậm, camera tĩnh (đã quy định ở `video_rules.md`
+  mục 5), và rà soát nhanh bằng mắt các cảnh có chuyển động mạnh trước khi publish.
+
+---
 
 ## 1. MASTER CHARACTER PROMPT (chính diện — dùng làm ảnh tham chiếu gốc)
 
@@ -176,3 +218,9 @@ TRÁNH: cảm xúc áp đảo, hình ảnh bi kịch, ánh sáng u ám gây nặ
 Nhạc nền: piano tối giản, cello nhẹ, ambient Việt Nam tinh tế — **cảm xúc nhưng kiềm chế**.
 
 TUYỆT ĐỐI KHÔNG: nhạc epic, nhạc motivational beats, nhạc thao túng cảm xúc kiểu phim quảng cáo.
+
+**Giọng đọc (Voice ID — ElevenLabs, quyết định 18/07/2026):** dùng đúng **1 voice đã clone/khoá
+riêng cho Anh Minh**, giữ nguyên qua mọi video — không dùng giọng preset có sẵn hoặc đổi giọng
+giữa các video (giống nguyên tắc khoá LoRA ở mục 0B, áp dụng cho giọng thay vì mặt).
+Voice ID: `<điền khi đã tạo voice clone chính thức>`. Cho tới khi có voice ID chính thức, ưu
+tiên một giọng đọc người thật thu âm nhất quán thay vì TTS ngẫu nhiên đổi giọng mỗi video.

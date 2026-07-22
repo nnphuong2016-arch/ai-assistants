@@ -4,6 +4,9 @@
 > n8n (hoặc bất kỳ pipeline nào đọc output) luôn nhận đúng field, đúng thứ tự. Theo đúng pattern
 > đã dùng ở SEO/Image/Community/Publish/Research Factory (mỗi Factory có output_schema.md riêng).
 > Cập nhật: 05/07/2026.
+> Cập nhật: 18/07/2026 — field Scenes chuẩn hoá theo Scene ID zero-padded (khớp `video_rules.md`
+> mục 1.C), rõ Master Script không chứa prompt platform-specific; thêm mục "LƯU FILE" (Google
+> Drive, không qua GitHub — nay đã chính thức áp dụng toàn hệ thống, xem `CLAUDE.md` Bước 5.B).
 > Cập nhật: 20/07/2026 — thêm field 2 "Content Track" (Giải Đáp / Dưỡng Sinh Ngắn / Bếp An
 > Nhiên / Suy Ngẫm), field còn lại đánh số lại theo đó.
 
@@ -25,11 +28,26 @@
    Content Track `Dưỡng Sinh Ngắn`, Hook ghi tên động tác nguồn từ `bai_tap_library.md` thay vì
    dòng backlog.
 6. **Voice** — toàn văn lời dẫn (LỜI), viết liền mạch theo khuôn xuất kịch bản (`video_rules.md`
-   mục 1/4 tùy độ dài) — đây là lớp mang độ dài và giá trị của video.
-7. **Scenes** — shot list B-roll (HÌNH), đánh số cảnh, mỗi cảnh gồm mô tả cảnh + đánh dấu
-   cảnh nào dùng lại/loop được (theo `video_rules.md` mục 0/1).
-8. **Character Reference** — `true`/`false`: cảnh nào có nhân vật chính xuất hiện, tham chiếu
-   `core-brain/image_style_bible.md` — để trống nếu toàn bộ video chỉ có B-roll trung tính.
+   mục 1/4 tùy độ dài) — đây là lớp mang độ dài và giá trị của video. Bằng đúng nội dung ghép nối
+   các field Voice trong Scenes theo thứ tự Scene ID; dùng để đọc liền mạch/kiểm tra tổng thể,
+   không thay thế Scenes.
+7. **Scenes** — danh sách cảnh theo đúng khuôn field ở `video_rules.md` mục 1.C. Mỗi cảnh gồm:
+   **Scene ID** (zero-padded 3 chữ số, VD `001`), **Duration** (giây), **Voice** (đoạn lời dẫn
+   tiếng Việt của cảnh đó), **Visual** (bối cảnh + chủ thể + hành động, tiếng Anh), **Camera**
+   (loại cảnh + chuyển động máy + ánh sáng + âm thanh nền, tiếng Anh), **Character** (tên nhân
+   vật nếu có, tham chiếu `core-brain/image_style_bible.md` — để trống nếu B-roll trung tính),
+   **Emotion** (tâm trạng chủ đạo của cảnh), **Loop** (`true`/`false`).
+
+   ⚠️ Đây là **Master Script** — nguồn dữ liệu gốc, KHÔNG chứa prompt platform-specific
+   (Kling/Veo3/Sora/Hailuo...) và KHÔNG mô tả khuôn mặt/trang phục nhân vật trong Visual/Camera
+   (nhận diện nhân vật do field Character đảm nhiệm). Prompt cho từng công cụ AI cụ thể được
+   build ở bước RIÊNG, SAU khi Master Script này hoàn tất — thủ công (đưa lại Master Script cho
+   Claude, yêu cầu "chuyển thành prompt Kling/Veo3") hoặc tự động (node Scene Generator trong
+   n8n, xem `video_ai_contract.md`). Nhờ vậy khi đổi/thêm công cụ AI, chỉ cần sửa bước build
+   prompt, không phải viết lại Master Script.
+8. **Character Reference** — `true`/`false`: video này có cảnh nào chứa nhân vật chính không
+   (cờ tổng quan cấp video, suy ra nhanh từ việc field Character ở bất kỳ Scene nào trong mục 7
+   có giá trị hay không) — để trống nếu toàn bộ video chỉ có B-roll trung tính.
 9. **Suggested Thumbnail** — mô tả ý tưởng thumbnail (không phải ảnh thật) theo mục 8
    `video_rules.md` — để Image Factory hoặc bước sau tạo ảnh thật.
 10. **Music** — gợi ý nhạc nền theo `core-brain/image_style_bible.md` mục 11 (piano tối giản,
@@ -41,6 +59,29 @@
 12. **Metadata** — Category (trụ nội dung), Season (nếu gắn mùa, theo `seasonal_calendar.md`),
     Audience (đối tượng hướng tới).
 13. **Tags** — 3–6 tag liên quan chủ đề, dùng cho tìm kiếm nội bộ trên nền tảng đăng.
+
+---
+
+## LƯU FILE (tên & nơi lưu)
+
+> Cập nhật 18/07/2026, chính thức hoá 20/07/2026 — kịch bản video chuyển từ GitHub sang lưu trực
+> tiếp vào Google Drive, áp dụng cho toàn hệ thống (đã cập nhật `CLAUDE.md` Bước 5.B).
+
+- **Nơi lưu:** thư mục Google Drive "Anh Minh - N8N Trigger" → "Kich-ban-video"
+  (parentId `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F`). File chứa **toàn văn Master Script** (không
+  phải manifest JSON) — n8n đọc trực tiếp file này.
+- **Tên file:** `<số chủ đề>.<STT>. <Tên video>_master_script.md`
+  - `<số chủ đề>` và `<STT>`: theo đúng quy tắc đánh số ở `CLAUDE.md` (6 trụ/mục nội dung chuẩn
+    theo `core-brain/instructions.md` mục 6 + mục Bếp An Nhiên — không còn phụ thuộc
+    `hook_library_full.md` đã ngưng dùng); STT xác định bằng cách liệt kê file đã có cùng
+    `<số chủ đề>.` trong thư mục Drive này, +1.
+  - `<Tên video>`: giữ nguyên tên video tiếng Việt, có dấu cách và viết hoa như bình thường —
+    KHÔNG rút gọn thành slug. Bỏ các ký tự không an toàn cho tên file khi tải về máy (Windows):
+    `\ / : * ? " < > |` (VD dấu `?` cuối câu hỏi thì bỏ hẳn, không thay bằng ký tự khác).
+  - Kết thúc bằng `_master_script.md` (chữ thường, gạch dưới) — phân biệt với file prompt
+    platform-specific sinh ra ở bước riêng sau đó (nếu có lưu lại, xem lưu ý mục 1.C
+    `video_rules.md`).
+  - VD: `1.1. Vì sao ngủ đủ tám tiếng mà vẫn thấy mệt_master_script.md`
 
 ---
 

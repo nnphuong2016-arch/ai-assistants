@@ -1,7 +1,14 @@
 # PRODUCT IMAGE GUIDE
-Version: 1.0
+
+> Tải lên khu **Files** của Image Factory (đây là file addendum đọc bởi Image Factory khi task
+> là Product Image — bản thân KHÔNG phải một Factory/persona riêng, dù nằm trong thư mục
+> `product-image-factory/` ngang hàng các Factory khác).
+> Cập nhật: 20/07/2026 — chuẩn hoá dòng ngày cập nhật theo quy ước chung (trước đây dùng
+> `Version`/`Updated` kiểu tiếng Anh); nội dung kỹ thuật (Studio/Lifestyle/Infographic, OUTPUT)
+> giữ nguyên, không đổi. Field OUTPUT của file này (`Mode`, `Suggested Size`, `Suggested
+> Filename`...) là khuôn RIÊNG cho Product Image — xem ngoại lệ tương ứng ở
+> `image-factory/output_schema.md`.
 Factory: Image Factory
-Updated: 2026-07
 
 ====================================================
 MỤC ĐÍCH

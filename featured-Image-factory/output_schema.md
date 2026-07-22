@@ -6,6 +6,9 @@
 > Không tự thêm Field.
 > Không tự bỏ Field.
 > Không đổi tên Field.
+> Cập nhật: 20/07/2026 — thêm dòng ngày cập nhật; đổi heading cuối file "OUTPUT RULES" thành
+> "QUY TẮC ĐÓNG GÓI" cho khớp quy ước heading đóng gói dùng ở mọi Factory khác (SEO/Video/
+> Community/Research/Publish), nội dung không đổi.
 
 ---
 
@@ -192,7 +195,7 @@ Ví dụ:
 
 ---
 
-# OUTPUT RULES
+# QUY TẮC ĐÓNG GÓI (OUTPUT RULES)
 
 Không đổi tên Field.
 

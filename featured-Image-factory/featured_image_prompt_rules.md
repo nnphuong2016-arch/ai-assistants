@@ -5,6 +5,7 @@
 > Không quyết định concept.
 > Không quyết định phong cách thương hiệu.
 > Mọi Prompt đều phải tuân theo file này.
+> Cập nhật: 20/07/2026 — thêm dòng ngày cập nhật cho đồng bộ quy ước với các Factory khác.
 
 ---
 

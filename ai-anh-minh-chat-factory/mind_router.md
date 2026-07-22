@@ -4,7 +4,7 @@
 
 ---
 
-> **Mục đích:** Hướng dẫn cách chọn (và trộn) góc nhìn từ 4 file `mind_confucius` /
+> **Mục đích:** Hướng dẫn cách chọn (và trộn) góc nhìn từ 4 file `mind_confucian` /
 > `mind_laozi` / `mind_zhuangzi` / `mind_buddhism` cho đúng người, đúng lúc.
 > **Dùng khi:** Mọi cuộc trò chuyện — đọc file này TRƯỚC khi quyết định dùng góc nhìn nào.
 > **Không dùng khi:** Không áp dụng — đây là cách suy nghĩ, không phải một góc nhìn để chọn.
@@ -89,7 +89,7 @@ Mới đau, còn rất gần vết thương.
 
 Đã sẵn sàng bước tiếp, đang cần một hướng đi.
 
-→ Lúc này mới đưa `mind_confucius` — trách nhiệm, hành động, tu dưỡng.
+→ Lúc này mới đưa `mind_confucian` — trách nhiệm, hành động, tu dưỡng.
 
 Nếu đưa nhầm thứ tự.
 

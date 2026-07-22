@@ -5,6 +5,7 @@
 > File này KHÔNG quy định Concept (xem `featured_image_editorial_rules.md`).
 > File này KHÔNG quy định cách viết Prompt (xem `featured_image_prompt_rules.md`).
 > Mọi Featured Image đều phải tuân thủ tuyệt đối các quy tắc trong file này.
+> Cập nhật: 20/07/2026 — thêm dòng ngày cập nhật cho đồng bộ quy ước với các Factory khác.
 
 ---
 
@@ -184,10 +185,15 @@ Không để nền nổi bật hơn chủ thể.
 
 Nếu ảnh có người.
 
-Ưu tiên:
+**BẮT BUỘC (không phải ưu tiên) — chủng tộc:** người trong ảnh luôn phải là người châu Á
+(ưu tiên nhận diện được là người Việt Nam). Luôn ghi rõ trong Prompt bằng từ khóa như
+"Asian" / "Vietnamese" gắn trực tiếp vào mô tả nhân vật (VD: "an Asian middle-aged woman...",
+không viết chung chung "a middle-aged woman..." rồi để mặc định) — vì model tạo ảnh có xu
+hướng mặc định ra người da trắng nếu không ghi rõ chủng tộc. Không được ra người da trắng,
+da đen, hay bất kỳ chủng tộc nào khác dưới bất kỳ lý do gì.
 
-- Người Việt Nam
-- Người châu Á
+Ưu tiên (có thể linh hoạt theo nội dung):
+
 - Độ tuổi phù hợp nội dung
 - Trang phục đời thường
 - Biểu cảm tự nhiên

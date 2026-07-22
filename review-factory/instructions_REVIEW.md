@@ -5,6 +5,8 @@
 > file này KHÔNG thay thế ô Instructions, chỉ bổ sung vai trò/phạm vi riêng của Review Factory.
 > Đặt tên `instructions_REVIEW.md` theo đúng quy ước `instructions_<TÊN_FACTORY>.md`.
 > Cập nhật: 05/07/2026.
+> Cập nhật: 20/07/2026 — bổ sung 2 dòng còn thiếu ở bảng mục 3: Featured Image Factory và
+> Product Image Factory (2 factory ảnh ra đời sau bảng gốc, chưa từng được thêm vào).
 
 ---
 
@@ -66,8 +68,9 @@ GPT, chấp nhận được ở giai đoạn hiện tại, nhưng không nên xe
 | Loại nội dung | File gốc cần tải bản sao vào khu Files Review Factory | Đổi tên khi tải lên (tránh trùng) |
 |---|---|---|
 | SEO | `seo-factory/seo_checklist.md`, `seo-factory/web_content_rules.md`, `seo-factory/keyword_strategy.md`, `seo-factory/internal_link_rules.md`, `seo-factory/output_schema.md` | `output_schema.md` → `seo_output_schema.md` |
-| Image | `image-factory/image_checklist.md`, `image-factory/image_style_rules.md`, `image-factory/image_templates.md`, `core-brain/image_style_bible.md`, `image-factory/output_schema.md` | `output_schema.md` → `image_output_schema.md` |
-| Video | `video-factory/video_rules.md`, `core-brain/image_style_bible.md` (đã trùng với Image ở trên nếu tải chung một Review Factory) | — |
+| Image | `image-factory/image_checklist.md`, `image-factory/image_style_rules.md`, `image-factory/image_templates.md`, `core-brain/image_style_bible.md`, `image-factory/output_schema.md` (bao gồm mục "NGOẠI LỆ — ẢNH SẢN PHẨM"); nếu review Product Image, thêm `product-image-factory/product_image_guide.md` | `output_schema.md` → `image_output_schema.md` |
+| Featured Image | `featured-image-factory/instructions_FEATURED_IMAGE.md`, `featured_image_editorial_rules.md`, `featured_image_style_rules.md`, `featured_image_prompt_rules.md`, `featured_image_checklist.md`, `featured-image-factory/output_schema.md` | `output_schema.md` → `featured_image_output_schema.md` |
+| Video | `video-factory/video_rules.md`, `core-brain/image_style_bible.md` (đã trùng với Image ở trên nếu tải chung một Review Factory); nếu review Nhánh B (Dưỡng Sinh Ngắn), thêm `video-factory/duong_sinh_bai_tap.md` | — |
 | Community | `community-factory/community_rules.md`, `community-factory/engagement_rules.md`, `core-brain/dong_hanh_nguoi_benh.md` | — |
 | Publish Package (Pre-flight) | `publish-factory/output_schema.md` | `output_schema.md` → `publish_output_schema.md` |
 

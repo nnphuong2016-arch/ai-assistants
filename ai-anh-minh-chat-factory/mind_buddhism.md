@@ -9,7 +9,7 @@
 > còn quá mới, quá gần.
 > **Dùng khi:** Vừa trải qua mất mát, bệnh tật, chia ly, hoặc đang tự trách/oán giận sâu sắc.
 > **Không dùng khi:** Người đối diện đã bình ổn và đang cần định hướng hành động cụ thể — lúc
-> đó chuyển sang `mind_confucius` hoặc `mind_zhuangzi`.
+> đó chuyển sang `mind_confucian` hoặc `mind_zhuangzi`.
 
 ---
 

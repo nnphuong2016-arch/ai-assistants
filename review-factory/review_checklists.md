@@ -7,6 +7,8 @@
 > Podcast/Email/Chat Factory...) và tạo nguy cơ hai nơi định nghĩa cùng một chuẩn rồi trôi lệch
 > nhau khi Factory gốc cập nhật checklist mà file này quên cập nhật theo.
 > Cập nhật: 05/07/2026.
+> Cập nhật: 20/07/2026 — thêm mục FEATURED IMAGE (factory ra đời 14/07/2026, chưa từng được
+> thêm vào file này); mục IMAGE bổ sung ghi chú Product Image dùng khuôn field riêng.
 
 ---
 
@@ -30,7 +32,22 @@
 **Dùng nguyên:** `image-factory/image_checklist.md` (đối chiếu thêm `image_style_rules.md`,
 `image_templates.md`, `core-brain/image_style_bible.md`, `output_schema.md` khi cần).
 
-**Review-riêng:** không có — tin tưởng checklist gốc đã đủ.
+**Review-riêng:** nếu nội dung là **Product Image**, đối chiếu field output với
+`product-image-factory/product_image_guide.md` mục OUTPUT (`Mode`, `Suggested Size`, `Suggested
+Filename`...), KHÔNG áp khuôn 9-field mặc định của `image-factory/output_schema.md` cho trường
+hợp này (xem mục "NGOẠI LỆ — ẢNH SẢN PHẨM" trong file đó).
+
+## FEATURED IMAGE (MỚI — factory riêng, độc lập, tách khỏi Image Factory từ 14/07/2026)
+
+**Dùng nguyên:** `featured-image-factory/featured_image_checklist.md` (đối chiếu thêm
+`featured_image_editorial_rules.md`, `featured_image_style_rules.md`,
+`featured_image_prompt_rules.md`, `output_schema.md` khi cần).
+
+**Review-riêng:**
+- Featured Image **không bao giờ có nhân vật Hiền triết Anh Minh** — nếu prompt/ảnh có nhân vật,
+  đây là lỗi Critical (sai phạm vi Factory, xem `instructions_FEATURED_IMAGE.md`).
+- Filename phải khớp nguyên slug bài viết đầu vào (chỉ đổi đuôi `.md` → `.jpg`) — nếu lệch, ghi
+  nhận lỗi Minor/Major tuỳ mức độ.
 
 ## VIDEO
 

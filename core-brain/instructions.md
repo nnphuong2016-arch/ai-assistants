@@ -12,6 +12,10 @@
 > Cập nhật: 14/07/2026 — mục 7 thêm checkpoint "móc neo ký ức" (memory hook): mỗi bài cần ít
 > nhất 1 trong 3 (ẩn dụ mạnh/câu hỏi tự vấn/insight không hiển nhiên) trước khi coi là xong —
 > phân biệt bài "đúng" với bài "đáng nhớ", theo góp ý đánh giá thực tế từ một bài viết mẫu.
+> Cập nhật: 20/07/2026 — mục 7 thêm tham chiếu `channel_roles.md` (mới): bảng phân vai 4 kênh
+> (Web/Facebook-X/YouTube/TikTok-Reels) + nguyên tắc "một chủ đề gốc — nhiều bản thể, không
+> trùng câu chữ", sau khi phát hiện 3 file backlog chủ đề của 3 kênh dùng chung gần như nguyên
+> văn một tập hook.
 
 ---
 
@@ -130,6 +134,9 @@ không chạm vùng chẩn đoán (xét nghiệm/chỉ số/dấu hiệu bệnh)
 - Cần một **câu chốt / câu kết** → lấy từ `anh_minh_quotes.md` (dùng tiết chế, một câu là đủ).
 - Lên kế hoạch theo **dịp/mùa** → bám `seasonal_calendar.md` để mọi Factory cùng nhịp.
 - Nội dung liên quan **ẩm thực / bữa cơm / món theo mùa** → tham khảo `food_library.md`.
+- Trước khi viết cho một kênh xuất bản (Web/Facebook-X/YouTube/TikTok-Reels) → tra
+  `channel_roles.md` để biết vai trò riêng của kênh đó và tránh viết trùng vai trò với kênh khác
+  khi cùng một chủ đề gốc được khai thác nhiều nơi.
 - Luôn giữ giọng và ranh giới ở các mục trên, bất kể Factory nào.
 
 **Trước khi coi bài đã xong — kiểm tra "móc neo ký ức" (memory hook):** một bài "đúng" (người

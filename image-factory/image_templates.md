@@ -6,7 +6,7 @@
 > ảnh cùng loại luôn đồng nhất kích thước giữa các lần sinh.
 > Cập nhật: 05/07/2026.
 > Cập nhật: 14/07/2026 — Mẫu B (Thumbnail bài viết = Featured Image) chuyển hẳn sang
-> `featured-Image-factory/`; Mẫu E (Blog Cover/OG) chỉ còn dùng cho trường hợp ngoại lệ cần
+> `featured-image-factory/`; Mẫu E (Blog Cover/OG) chỉ còn dùng cho trường hợp ngoại lệ cần
 > ảnh OG khác Featured Image.
 
 ---
@@ -17,10 +17,10 @@
 - **Aspect Ratio mặc định:** 21:9 (hoặc 16:9 nếu nền tảng không hỗ trợ 21:9).
 - Bối cảnh rộng, nhiều khoảng trống, có thể có nhân vật ở góc khung (không che nội dung/text overlay).
 
-## MẪU B — THUMBNAIL BÀI VIẾT (⚠️ CHUYỂN SANG `featured-Image-factory/` TỪ 14/07/2026)
+## MẪU B — THUMBNAIL BÀI VIẾT (⚠️ CHUYỂN SANG `featured-image-factory/` TỪ 14/07/2026)
 
 - Đây chính là "Featured Image" — không còn tạo ở Image Factory nữa, xem
-  `featured-Image-factory/instructions_FEATURED_IMAGE.md`.
+  `featured-image-factory/instructions_FEATURED_IMAGE.md`.
 - Giữ lại mục này chỉ để tránh nhầm khi có người tìm "Mẫu B" theo thói quen cũ.
 
 ## MẪU C — CATEGORY THUMBNAIL
@@ -38,7 +38,7 @@
 ## MẪU E — BLOG COVER (Open Graph) — CHỈ DÙNG KHI CẦN ẢNH OG RIÊNG, KHÁC FEATURED IMAGE
 
 - **Dùng cho:** ảnh chia sẻ mạng xã hội, CHỈ khi bài cần một ảnh OG khác hẳn Featured Image
-  (trường hợp ngoại lệ). Mặc định, Featured Image (từ `featured-Image-factory/`) đã tự động
+  (trường hợp ngoại lệ). Mặc định, Featured Image (từ `featured-image-factory/`) đã tự động
   dùng luôn làm ảnh chia sẻ mạng xã hội — không cần tạo thêm Mẫu E trừ khi có lý do cụ thể.
 - **Aspect Ratio mặc định:** 1.91:1 (chuẩn OG).
 - Giống Hero Banner nhưng theo đúng chủ đề riêng của từng bài, không dùng ảnh chung chung.

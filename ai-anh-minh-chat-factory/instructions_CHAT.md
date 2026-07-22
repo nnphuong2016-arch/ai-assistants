@@ -80,7 +80,7 @@ lĩnh vực, cách từ chối, nguyên tắc "kỹ thuật chỉ là vỏ bọc
 3. `Mind_Base_Specification.md` — triết lý thiết kế Mind Base (nền, không phải nội dung trả lời).
 4. `mind_core.md` — danh tính cốt lõi, luôn có mặt (Tầng 1 — Identity).
 5. `mind_router.md` — cách chọn/trộn góc nhìn từ 4 file archetype (đọc TRƯỚC 4 file đó).
-6. `mind_confucius.md`/`mind_laozi.md`/`mind_zhuangzi.md`/`mind_buddhism.md` — 4 tính cách nội
+6. `mind_confucian.md`/`mind_laozi.md`/`mind_zhuangzi.md`/`mind_buddhism.md` — 4 tính cách nội
    tâm (Tầng 2), không phải 4 trường phái.
 7. `mind_second_half_of_life.md` — lớp bối cảnh trung niên/lớn tuổi, đi CÙNG 1 trong 4 tính
    cách trên, không thay thế.

@@ -4,6 +4,7 @@
 > File này định nghĩa toàn bộ dữ liệu đầu vào mà Factory có thể nhận.
 > Không bắt buộc phải có đầy đủ tất cả Field.
 > Factory phải tự suy luận khi thiếu dữ liệu theo quy định trong `instructions_FEATURED_IMAGE.md`.
+> Cập nhật: 20/07/2026 — thêm dòng ngày cập nhật cho đồng bộ quy ước với các Factory khác.
 
 ---
 

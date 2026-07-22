@@ -6,6 +6,7 @@
 > Không quy định Prompt.
 > Không phụ thuộc Image AI.
 > Mọi Featured Image đều phải được quyết định theo file này trước khi viết Prompt.
+> Cập nhật: 20/07/2026 — thêm dòng ngày cập nhật cho đồng bộ quy ước với các Factory khác.
 
 ---
 

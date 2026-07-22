@@ -13,10 +13,15 @@
 Đây chính là repo `ai-assistants` — bộ não & quy tắc thật của hệ thống nội dung **AI Hiền triết
 Anh Minh** (Funamark) nằm ngay trong các thư mục con của repo này: `core-brain/` (persona, ranh
 giới an toàn, kiến thức nền dùng chung), và từng thư mục Factory riêng (`seo-factory/`,
-`video-factory/`, `community-factory/`, `image-factory/`, `featured-Image-factory/` (chuyên
-riêng ảnh đại diện đầu bài viết — tách khỏi `image-factory/` từ 14/07/2026),
-`AI- Anh- Minh- chat-factory/`, `research-factory/`, `review-factory/`, `publish-factory/`),
-cùng `hook_library_full.md` (kho hook).
+`video-factory/`, `community-factory/` (Zalo/Newsletter/bình luận, KHÔNG còn viết Facebook),
+`facebook-factory/` (chuyên riêng bài đăng Facebook — tách khỏi Community Factory từ
+20/07/2026; **2 nguồn ý tưởng song song**: `bai-dang-Facebook-Anh-Minh.md` + tự sinh qua
+`idea_library.md` — xem Bước 2), `image-factory/`, `featured-image-factory/` (chuyên riêng ảnh
+đại diện đầu bài viết — tách khỏi `image-factory/` từ 14/07/2026, độc lập, không gắn với Image
+Factory hay bất kỳ Factory nào khác), `ai-anh-minh-chat-factory/`, `research-factory/`,
+`review-factory/`, `publish-factory/`), cùng 3 file backlog chủ đề riêng cho từng kênh (thay
+cho `hook_library_full.md` cũ — xem Bước 2): `bai-seo-dang-website-Anh-Minh.md`,
+`bai-dang-Facebook-Anh-Minh.md`, `bai-video-dang-Youtube-Anh-Minh.md`.
 
 **Nội dung thành phẩm KHÔNG lưu ở repo này** — xem Bước 5 bên dưới:
 - Bài viết SEO → GitHub `nnphuong2016-arch/bai-viet-seo`, sau đó luôn tạo thêm file manifest
@@ -24,6 +29,7 @@ cùng `hook_library_full.md` (kho hook).
 - Kịch bản video → **chỉ lưu trực tiếp Google Drive, KHÔNG dùng GitHub nữa** (quyết định
   18/07/2026 — đã ngừng dùng repo `kich-ban-video`) — thư mục "Anh Minh - N8N Trigger" →
   "Kich-ban-video". Không cần thêm manifest JSON riêng cho video (xem Bước 5.B + Bước 6).
+- Bài đăng Facebook → Google Drive riêng (không GitHub) — xem Bước 5F.
 
 ---
 
@@ -33,6 +39,11 @@ Trước khi viết **bài SEO**, **kịch bản video**, **post cộng đồng*
 nội dung nào cho kênh này, LUÔN thực hiện theo đúng thứ tự:
 
 ### Bước 1 — Luôn đọc CORE_BRAIN trước (bắt buộc, mọi loại nội dung)
+
+> **Ngoại lệ đã xác nhận đúng, giữ nguyên:** Chat Factory (`ai-anh-minh-chat-factory/`) và
+> Featured Image Factory (`featured-image-factory/`) KHÔNG dán `core-brain/instructions.md` vào
+> ô Instructions — mỗi factory có lý do riêng đã ghi trong `instructions_CHAT.md` và
+> `instructions_FEATURED_IMAGE.md` của chính nó. Đây là ngoại lệ có chủ đích, không phải thiếu sót.
 
 - `core-brain/instructions.md` — danh tính "Hiền triết Anh Minh", giọng nói, 5 trụ nội dung,
   ranh giới TUYỆT ĐỐI KHÔNG (không dọa bệnh, không chẩn đoán/kê đơn, không thần bí, không sến,
@@ -47,19 +58,37 @@ nội dung nào cho kênh này, LUÔN thực hiện theo đúng thứ tự:
   chốt), `core-brain/seasonal_calendar.md` (lịch mùa/dịp), `core-brain/image_style_bible.md`
   (ngoại hình nhân vật — nguồn DUY NHẤT, dùng cho mọi ảnh/video có nhân vật).
 
-### Bước 2 — LUÔN lấy hook từ `hook_library_full.md`
+### Bước 2 — LUÔN lấy hook/chủ đề từ đúng file backlog riêng của kênh đang làm (KHÔNG dùng chung
+một kho nữa)
 
-- File: `hook_library_full.md` (gốc repo) — kho 300 hook, chia 6 mục: (1) Sức khỏe, (2) Tâm lý &
-  đời sống, (3) Dưỡng sinh, (4) Triết lý phương Đông, (5) Đồng hành tuổi già & người bệnh,
-  (6) Bếp An Nhiên (giọng kể chuyện món ăn — không dùng khuôn "Vì sao/Điều gì").
-- Cách dùng: nếu người dùng chỉ định "hook số N trụ X" → dùng đúng câu đó làm điểm vào. Nếu
-  không chỉ định, tự chọn hook phù hợp chủ đề, ưu tiên hook CHƯA dùng gần đây (chống lặp —
-  không có bộ nhớ dài hạn giữa các phiên, nên nếu người dùng nhắc "đã dùng hook nào rồi" hãy
-  tôn trọng thông tin đó).
-- Hook chỉ là **điểm vào**, không phải cả kịch bản/bài viết — giọng, cấu trúc, ví dụ vẫn theo
-  file rules của Factory tương ứng (bước 3).
-- Nếu SEO và Video cùng làm một chủ đề (chuyển đổi bài viết → video), **dùng lại đúng hook** đã
-  chọn ở bài SEO gốc — không tự chọn hook khác, tránh lệch giữa bài viết và video.
+> **Cập nhật 20/07/2026:** `hook_library_full.md` (kho hook dùng chung 5 trụ) **không còn dùng**.
+> Lý do đổi: kho dùng chung khiến nhiều kênh dễ khai thác đúng một câu hook theo cùng cách diễn
+> đạt, dẫn tới nội dung na ná nhau giữa Web/Facebook/YouTube. Thay vào đó, **mỗi kênh có một file
+> backlog chủ đề riêng, KHÔNG dùng chéo sang factory khác**:
+
+| Factory | File backlog nguồn hook/chủ đề | Vị trí |
+|---|---|---|
+| SEO Factory (Web) | `bai-seo-dang-website-Anh-Minh.md` | gốc repo `ai-assistants/` |
+| Video Factory (nhánh Giải Đáp — YouTube) | `bai-video-dang-Youtube-Anh-Minh.md` **+ nguồn ngoài** (Google Drive/Google Sheet khi có) | gốc repo `ai-assistants/` + Drive/Sheet |
+| Facebook Factory | **2 nguồn song song** (20/07/2026): `bai-dang-Facebook-Anh-Minh.md` (kho 210 hook có sẵn, 7 series) + tự sinh qua `facebook-factory/idea_library.md` (Pattern + Emotion + Observation + Contradiction). Ưu tiên hook chưa dùng trong file trước; nếu đã dùng hết/không hợp chủ đề đang cần → chuyển sang tự sinh. | gốc repo `ai-assistants/` + `facebook-factory/idea_library.md` |
+
+- Cách dùng: nếu người dùng chỉ định "hook/dòng số N" → dùng đúng câu đó trong đúng file backlog
+  của Factory đang làm làm điểm vào. Nếu không chỉ định, tự chọn dòng phù hợp chủ đề trong đúng
+  file đó, ưu tiên dòng CHƯA dùng gần đây (chống lặp — không có bộ nhớ dài hạn giữa các phiên,
+  nên nếu người dùng nhắc "đã dùng dòng nào rồi" hãy tôn trọng thông tin đó).
+- Hook/chủ đề gốc chỉ là **điểm vào**, không phải cả kịch bản/bài viết — giọng, cấu trúc, ví dụ
+  vẫn theo file rules của Factory tương ứng (bước 3). Đặc biệt: **không copy nguyên một dòng
+  trong file backlog để làm thẳng title/caption/lời thoại** — luôn viết lại theo đúng vai trò
+  kênh (xem `core-brain/channel_roles.md`).
+- Nếu SEO và Video cùng làm một chủ đề (chuyển đổi bài viết → video), Video Factory **không tự
+  tra lại `bai-video-dang-Youtube-Anh-Minh.md`** cho chủ đề đó — dùng lại đúng góc/hook đã chọn
+  ở bài SEO gốc, tránh lệch giữa bài viết và video.
+- Video Factory là factory DUY NHẤT còn nhận hook từ **nguồn ngoài file backlog** (Google Drive/
+  Google Sheet) khi vận hành tự động — vì nhánh Giải Đáp cần đồng bộ với hook đã chọn ở bài SEO
+  (xem trên), và nhánh Dưỡng Sinh Ngắn dùng `video-factory/bai_tap_library.md` làm nguồn riêng,
+  không phải file backlog nào ở trên.
+- `hook_library_full.md` (2 bản cũ ở `assets/` và `project-memory/`) giữ lại để tham khảo lịch
+  sử, KHÔNG xoá, nhưng KHÔNG Factory nào còn đọc file này nữa.
 
 ### Bước 3 — Đọc đúng file Factory theo loại nội dung được yêu cầu
 
@@ -95,12 +124,19 @@ melatonin...) dù nghe "chuyên sâu hơn".
    `video-factory/food_library.md`.
 6. `video-factory/output_schema.md` — đóng gói đúng khuôn field.
 
-**Khi được yêu cầu viết POST CỘNG ĐỒNG / social:** đọc `community-factory/` (instructions_COMMUNITY,
-community_rules, social_templates, storytelling_patterns, engagement_rules, community_checklist,
-output_schema).
+**Khi được yêu cầu viết BÀI ĐĂNG FACEBOOK (Page/Group):** đọc `facebook-factory/` theo đúng thứ
+tự trong `instructions_facebook.md` (đã ghi rõ trong file: instructions_facebook → execution_flow
+→ writing_rules → writing_craft → quality_check → post_frameworks → emotion_palette →
+idea_library → hook_library → topic_map → post_examples → output_schema). Factory riêng, tách
+khỏi Community Factory từ 20/07/2026.
+
+**Khi được yêu cầu viết post Zalo/Newsletter hoặc trả lời bình luận:** đọc `community-factory/`
+(instructions_COMMUNITY, community_rules, social_templates, storytelling_patterns,
+engagement_rules, community_checklist, output_schema). Community Factory KHÔNG còn viết bài
+Facebook nữa.
 
 **Khi được yêu cầu tạo PROMPT ẢNH:**
-- **Ảnh đại diện đầu bài viết (Featured Image)** → đọc `featured-Image-factory/`
+- **Ảnh đại diện đầu bài viết (Featured Image)** → đọc `featured-image-factory/`
   (`instructions_FEATURED_IMAGE.md` → `input_schema.md` → `featured_image_editorial_rules.md`
   → `featured_image_style_rules.md` → `featured_image_prompt_rules.md` →
   `featured_image_checklist.md` → `output_schema.md`). Đây là Factory riêng cho đúng việc này —
@@ -111,7 +147,7 @@ output_schema).
   sản phẩm dùng thêm `product-image-factory/product_image_guide.md`.
 
 **Khi được yêu cầu trò chuyện trực tiếp (chat/tư vấn nhanh):** đọc
-`AI- Anh- Minh- chat-factory/` (đọc đúng thứ tự ghi trong `instructions_CHAT.md` mục 3 của
+`ai-anh-minh-chat-factory/` (đọc đúng thứ tự ghi trong `instructions_CHAT.md` mục 3 của
 chính thư mục đó).
 
 **Research / Review / Publish:** dùng khi pipeline cần — xem `research-factory/`,
@@ -175,7 +211,9 @@ Quy trình khi lưu:
 
 **Quy cách đặt tên file bài SEO:** `<số chủ đề>.<số thứ tự bài trong chủ đề đó>.<slug>.md`
 
-Số chủ đề đánh theo đúng thứ tự 6 mục của `hook_library_full.md` (không tự đổi số):
+Số chủ đề đánh theo đúng thứ tự 6 trụ/mục nội dung chuẩn của hệ thống (theo `core-brain/
+instructions.md` mục 6 + mục Bếp An Nhiên — không tự đổi số, không còn phụ thuộc
+`hook_library_full.md` đã ngưng dùng):
 
 | Số | Chủ đề |
 |---|---|
@@ -213,9 +251,30 @@ CLAUDE.md hay file cấu hình vào repo đó.
 - **Nội dung & khuôn field:** viết đúng theo `video-factory/video_rules.md` mục 1.C (Scene ID
   zero-padded, Duration, Voice, Visual, Camera, Character, Emotion, Loop) và đóng gói theo
   `video-factory/output_schema.md`.
+- **Hook/chủ đề gốc:** lấy theo đúng Bước 2 — `bai-video-dang-Youtube-Anh-Minh.md` (hoặc nguồn
+  ngoài Drive/Sheet khi vận hành tự động) nếu viết độc lập, hoặc hook đã chọn sẵn ở bài SEO gốc
+  nếu đang convert. **KHÔNG còn dùng `hook_library_full.md`.**
 - Không có bước commit/push (không còn GitHub cho video) — chỉ `create_file` lên đúng thư mục
   Drive trên rồi gửi link file cho người dùng. Hỏi người dùng trước nếu ngữ cảnh chưa rõ có nên
   tự lưu luôn không, trừ khi đã xác nhận sẵn "luôn tự lưu, không cần hỏi lại" trong phiên.
+
+### Bước 5F — LƯU BÀI ĐĂNG FACEBOOK (song song với Bước 5, khác quy trình — thêm 20/07/2026)
+
+Khi được yêu cầu viết **bài đăng Facebook** (đọc `facebook-factory/` — xem Bước 3), quy trình
+lưu KHÁC hẳn bài SEO/kịch bản video:
+
+- **Không dùng GitHub** — Facebook Factory không có repo output riêng.
+- Sau khi bài đạt `facebook-factory/quality_check.md`, lưu thành file `.md` chứa ĐÚNG nội dung
+  bài viết (không kèm field Mood/Topic/Framework/Internal Tags — những field đó chỉ dùng nội bộ
+  lúc soạn, không đưa vào file lưu, giữ đúng tinh thần "pure content" như Bước 5).
+- Đặt tên file: `<ngày YYYY-MM-DD>-<vài từ khoá chủ đề>.md` (VD: `2026-07-20-ngu-som-hon.md`) —
+  Facebook Factory không có quy cách số thứ tự theo trụ như SEO/Video.
+- Lưu trực tiếp vào thư mục Google Drive **"Bai-dang-Facebook"**
+  (parentId `1zrZzd_1YEu8PC8LEQ14hGHwjuQbkV0ha`, dùng công cụ Drive `create_file`,
+  `disableConversionToGoogleType: true`).
+- **Đây KHÔNG phải file trigger cho n8n** — n8n có workflow "Facebook Factory" riêng, tự đọc/ghi
+  Google Sheet "bai-dang-facebook-anh-minh" qua API, hoàn toàn độc lập với thư mục Drive này.
+  Không tạo thêm manifest JSON cho Facebook ở Bước 6 bên dưới.
 
 ### Bước 5.5 — TẠO PROMPT ẢNH MINH HỌA ĐI KÈM (bắt buộc, ngay sau khi lưu bài SEO — quyết định
 18/07/2026, cập nhật 14/07/2026 dùng Featured Image Factory riêng)
@@ -223,7 +282,7 @@ CLAUDE.md hay file cấu hình vào repo đó.
 Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Featured Image** cho đúng bài
 đó — không phải việc riêng phải đợi người dùng nhắc:
 
-1. Đọc `featured-Image-factory/` theo đúng thứ tự trong `instructions_FEATURED_IMAGE.md` mục
+1. Đọc `featured-image-factory/` theo đúng thứ tự trong `instructions_FEATURED_IMAGE.md` mục
    "Đọc theo thứ tự" (editorial → style → prompt → checklist → output schema). **Không dùng**
    `image-factory/` cho việc này nữa (đã tách riêng).
 2. Input = đúng tên file bài viết vừa lưu (VD `1.5.co-the-can-nhung-khoang-yen-tinh.md`) —
@@ -242,7 +301,7 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
      list" ở Bước 6 để đồng bộ; cột Link kịch bản video sửa 18/07/2026 vì video không còn ở
      GitHub): STT, Bài viết (tên file), Link bài SEO (raw GitHub link), **Link kịch bản video**
      (link Google Drive file `_master_script.md` trong thư mục "Kich-ban-video" — để trống nếu
-     bài chưa có video), rồi tới các cột theo `featured-Image-factory/output_schema.md` (Image
+     bài chưa có video), rồi tới các cột theo `featured-image-factory/output_schema.md` (Image
      Type, Category, Concept,
      Subject, Prompt, Negative Prompt, Aspect Ratio, Suggested Size, Filename, Alt Text,
      Caption), và **Trạng thái** ở cột cuối cùng (để trống khi mới tạo, cập nhật thủ công khi
@@ -256,7 +315,7 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
    `_prompt-anh/` tách biệt rõ khỏi các file `.md` bài viết.
 
 ### Bước 6 — TẠO FILE MANIFEST TRONG GOOGLE DRIVE CHO N8N (bắt buộc — chỉ còn áp dụng cho SEO
-và Featured Image, KHÔNG còn áp dụng cho video, xem lý do bên dưới)
+và Featured Image, KHÔNG áp dụng cho video/Facebook, xem lý do bên dưới)
 
 **Đã đổi từ Google Sheet sang Google Drive (quyết định 14/07/2026)** — Google Sheet "Anh Minh
 hook list" KHÔNG còn dùng làm đầu vào n8n nữa (không có connector ghi Sheet, kỹ thuật không cho
@@ -280,6 +339,11 @@ viết SEO và Featured Image.
 | `Kich-ban-video` | `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F` | File Master Script kịch bản video thật (`.md`, xem Bước 5.B) — KHÔNG tạo thêm manifest JSON ở đây nữa |
 | `Prompt-Featured-Image` | `17ni-02iYzjljg0IM1E9aQcPShtxhiE0I` | Manifest Featured Image (JSON) |
 
+**Không áp dụng cho Facebook** — thư mục Drive `Bai-dang-Facebook`
+(`1zrZzd_1YEu8PC8LEQ14hGHwjuQbkV0ha`) lưu file `.md` nội dung thuần theo Bước 5F, KHÔNG phải
+manifest JSON kích hoạt n8n — workflow Facebook Factory trong n8n đọc trực tiếp Google Sheet
+"bai-dang-facebook-anh-minh" qua API, không dùng Drive Trigger.
+
 **Tên file manifest:** khớp đúng slug bài viết + `.json` (VD:
 `1.5.co-the-can-nhung-khoang-yen-tinh.json`) — dùng `disableConversionToGoogleType: true` khi
 tạo, để giữ đúng JSON thuần, không bị convert sang Google Docs.
@@ -291,7 +355,7 @@ tạo, để giữ đúng JSON thuần, không bị convert sang Google Docs.
 {
   "slug": "1.5.co-the-can-nhung-khoang-yen-tinh",
   "hook_number": "1.5",
-  "hook_text": "...(đúng câu hook đã dùng, khớp hook_library_full.md)...",
+  "hook_text": "...(đúng câu/dòng đã dùng, khớp đúng file backlog của Factory tương ứng — xem Bước 2)...",
   "category": "Sức khỏe",
   "title": "...",
   "content_markdown": "...(toàn văn bài viết, đúng nội dung đã push GitHub — Bước 5.A)...",
@@ -307,8 +371,8 @@ Factory (`image_type`, `category`, `concept`, `subject`, `prompt`, `negative_pro
 **Quy trình:** ngay sau khi push GitHub bài SEO (Bước 5.A) và cập nhật Excel (Bước 5.5), tạo
 LUÔN manifest JSON tương ứng (SEO luôn có, Featured Image tuỳ đã làm xong phần nào) — không đợi
 người dùng nhắc, không hỏi lại. Với kịch bản video, chỉ cần lưu đúng file `_master_script.md`
-theo Bước 5.B, KHÔNG tạo thêm file `.json`. Không tự xoá/ghi đè manifest cũ trừ khi đang sửa
-đúng bài đó.
+theo Bước 5.B, KHÔNG tạo thêm file `.json`. Facebook cũng không tham gia bước này (xem Bước 5F).
+Không tự xoá/ghi đè manifest cũ trừ khi đang sửa đúng bài đó.
 
 Excel (`prompt-anh.xlsx`, Bước 5.5) vẫn giữ nguyên song song — dùng để người dùng rà soát thủ
 công, độc lập với luồng Drive/n8n tự động.

@@ -7,6 +7,13 @@
 > chung `core-brain/instructions.md` — theo đúng quy ước đã dùng ở `seo-factory/instructions_SEO.md`.
 > File này KHÔNG quy định cách viết post — cách viết nằm ở các file khác (xem mục 3).
 > Cập nhật: 04/07/2026.
+> Cập nhật: 20/07/2026 — thêm tham chiếu `core-brain/channel_roles.md` (vai trò kênh, chống
+> trùng nội dung/câu chữ với SEO Factory và Video Factory khi cùng một chủ đề gốc).
+> Cập nhật: 20/07/2026 (2) — bỏ hẳn "viết post Facebook" khỏi phạm vi, chuyển sang
+> `facebook-factory/` (Factory chuyên biệt mới). Community Factory chỉ còn Zalo/Newsletter/
+> trả lời bình luận. **Cần cập nhật WF-08/Dispatcher trong n8n để trỏ bước tạo post FB sang
+> facebook-factory thay vì Community Factory** — việc này chưa làm, cần người vận hành tự sửa
+> trong n8n.
 
 ---
 
@@ -15,6 +22,15 @@
 Community Factory là một trong nhiều Factory của hệ AI Funamark. Nhiệm vụ duy nhất:
 **xây gắn kết cộng đồng** cho kênh AI Hiền triết Anh Minh — không phải phát sóng, mà xây sự
 thuộc về.
+
+**Vai trò kênh (so với Website/Video — xem `core-brain/channel_roles.md`): Zalo/Newsletter/
+bình luận CHIA SẺ ĐIỀU ĐÁNG NHỚ MỖI NGÀY.** (Facebook/X post đã chuyển sang `facebook-factory/`
+— xem mục 2.) Đây là kênh NÔNG NHẤT có chủ đích trong hệ sinh thái — một cảm xúc, một hình ảnh,
+một câu chốt, KHÔNG giải thích nguyên nhân/cơ chế như bài SEO. Nếu một post đang dài ra và bắt
+đầu giải thích "vì sao"/"cơ chế" như một bài blog — post đó đang lấn vai trò của SEO Factory,
+cần cắt lại đúng độ ngắn & cảm xúc theo `social_templates.md`. Khi cùng một chủ đề gốc đã có
+bài SEO hoặc video gần đây, KHÔNG mở post bằng đúng câu hook đã dùng ở kênh kia — xem
+`core-brain/channel_roles.md` mục 2 & 4 để biết cách kể lại theo góc khác.
 
 Danh tính, giọng nói, giá trị, tri thức, ranh giới an toàn → luôn lấy từ **CORE_BRAIN**
 (`core-brain/instructions.md` + các file knowledge của CORE_BRAIN). Community Factory không
@@ -25,13 +41,15 @@ tự định nghĩa lại nhân vật — chỉ áp dụng nhân vật đó vào
 ## 2. PHẠM VI — CHỈ LÀM, KHÔNG LÀM
 
 **Chỉ làm:**
-- Viết post Facebook (Page + Group).
 - Viết post ngắn cho Zalo, Newsletter.
 - Trả lời bình luận & tương tác thành viên theo `engagement_rules.md`.
 - Nhận diện chủ đề lặp lại nhiều trong bình luận → **đề xuất** (không tự viết) bài SEO mới
   cho SEO Factory (xem `engagement_rules.md` mục 6).
 
 **Không làm (việc của Factory khác):**
+- **Không viết bài đăng Facebook** (Page/Group) → chuyển hẳn sang `facebook-factory/` từ
+  20/07/2026 (Factory chuyên biệt, xem `facebook-factory/instructions_facebook.md`). Community
+  Factory chỉ còn giữ Zalo/Newsletter/trả lời bình luận.
 - Không viết bài SEO/blog dài → SEO Factory.
 - Không viết kịch bản video, không tạo prompt ảnh/thumbnail, không viết audio script → Video Factory.
 - Không tự viết bài SEO dù đã phát hiện nhu cầu — chỉ đề xuất chủ đề, việc viết thuộc SEO Factory.
@@ -57,6 +75,9 @@ tự định nghĩa lại nhân vật — chỉ áp dụng nhân vật đó vào
 4. `engagement_rules.md` — quy tắc trả lời bình luận & tương tác, kể cả tình huống nhạy cảm.
 5. `community_checklist.md` — tự kiểm trước khi xuất (giọng, CTA, chống lặp, một ý chính).
 6. `output_schema.md` — đóng gói đầu ra đúng khuôn (để n8n đọc được).
+7. `core-brain/channel_roles.md` — vai trò của Facebook/X/Zalo so với Website và Video trong hệ
+   sinh thái — đọc để biết ranh giới, tránh viết post trùng góc/trùng câu với bài SEO hoặc kịch
+   bản video khi cùng một chủ đề gốc được khai thác nhiều nơi.
 
 ---
 

@@ -130,24 +130,25 @@ còn hơn 12 phút loãng.
 
 ---
 
-## 5. QUY TẮC VIẾT PROMPT HÌNH (Veo / công cụ AI)
+## 5. QUY TẮC VIẾT PROMPT HÌNH (tóm tắt — chi tiết đầy đủ ở file riêng)
 
-- Luôn nêu: loại cảnh (close-up, wide…), chuyển động máy (slow push-in, static, gentle pan…),
-  ánh sáng (soft morning light…), tâm trạng, âm thanh nền (ambient). Mô tả cụ thể, điện ảnh,
-  nhưng **tĩnh tại** — tránh chuyển động dồn dập, cắt nhanh.
-- Tham chiếu nhân vật & bối cảnh theo `core-brain/image_style_bible.md` để giữ nhất quán; nạp tối đa 3 ảnh
-  tham chiếu khi generate.
-- **Chỉ chữ Việt** trong khung hình (hoặc không chữ) — không bao giờ chữ Hán (theo style bible).
-- Ưu tiên B-roll **trung tính, dùng lại được** (trà, vườn, hơi thở, cửa sổ, bàn tay, bước chân,
-  sách…) để một kho hình phục vụ nhiều video — tiết kiệm chi phí generate.
+Quy tắc viết prompt đầy đủ (mọi công cụ AI: Veo 3, Kling, Hailuo, Runway) → xem
+`video_ai_prompt_rules.md`. Chọn công cụ nào cho từng loại cảnh → xem `model_selection_rules.md`.
+Ngoại hình nhân vật Anh Minh → luôn `core-brain/image_style_bible.md`, không định nghĩa lại ở
+bất kỳ file nào khác.
+
+Tóm tắt nhanh: mô tả cụ thể, điện ảnh, nhưng **tĩnh tại** — tránh chuyển động dồn dập, cắt
+nhanh. **Chỉ chữ Việt** trong khung hình (hoặc không chữ). Ưu tiên B-roll **trung tính, dùng
+lại được** (trà, vườn, hơi thở, cửa sổ, bàn tay, bước chân, sách…) để một kho hình phục vụ
+nhiều video — tiết kiệm chi phí generate.
 
 ---
 
-## 6. MẸO HYBRID & CHI PHÍ
+## 6. MẸO HYBRID & CHI PHÍ (tóm tắt — chi tiết phân bổ % theo công cụ ở `model_selection_rules.md`)
 
 - Tạo MỘT kho B-roll tĩnh đẹp, dùng lại across nhiều video — đừng generate mới từng cảnh.
 - Chỉ generate vài cảnh "mặt nhân vật" làm điểm nhấn; phần còn lại là B-roll loop + lời dẫn phủ lên.
-- Veo lo HÌNH + ambient; lời dẫn tiếng Việt lồng riêng (TTS chất lượng cao hoặc người đọc).
+- Công cụ AI lo HÌNH + ambient; lời dẫn tiếng Việt lồng riêng (TTS chất lượng cao hoặc người đọc).
 - Video dài: chi phí generate tăng nhanh — hybrid (kho B-roll dùng lại + lời dẫn dài) là cách bền nhất.
 
 ---

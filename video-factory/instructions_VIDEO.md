@@ -73,7 +73,9 @@ DUY NHẤT cho toàn hệ thống; Video Factory vẫn cần tải file này và
   giọng theo `examples_and_hooks.md`. **Không tự tra `hook_library_full.md`** (đã ngưng dùng,
   tránh tình trạng Video tự chọn hook khác với hook bài SEO đã dùng, hoặc lệch với file backlog
   riêng của kênh mình).
-- Viết prompt hình cho Veo/công cụ AI, tham chiếu nhân vật theo `core-brain/image_style_bible.md`.
+- Viết prompt hình cho công cụ AI (Veo 3/Kling/Hailuo/Runway) theo `video_ai_prompt_rules.md`,
+  chọn đúng công cụ theo `model_selection_rules.md`, tham chiếu nhân vật theo
+  `core-brain/image_style_bible.md`.
 - Vận hành chuỗi video món ăn "Bếp An Nhiên" theo `bep_an_nhien.md` + `food_library.md`.
 - Vận hành chuỗi video "Dưỡng Sinh Ngắn" (Nhánh B, mục 1B) theo `duong_sinh_bai_tap.md` +
   `bai_tap_library.md`.
@@ -101,16 +103,20 @@ thuộc Factory khác, không tự ý làm thay.
    phải kho hook để chọn, xem lưu ý dưới).
 3. `core-brain/image_style_bible.md` — ngoại hình & không khí hình ảnh nhân vật, dùng cho mọi prompt hình
    có nhân vật (kể cả khi Image Factory cần tham chiếu ngược).
-4. `bep_an_nhien.md` — luật chơi module video món ăn (chỉ khi làm chuỗi "Bếp An Nhiên").
-5. `food_library.md` — kho dữ liệu món ăn theo mùa cho module đó (lịch/checklist, không phải luật).
-6. `duong_sinh_bai_tap.md` — luật chơi module video bài tập dưỡng sinh/yoga ngắn (Nhánh B, mục
+4. `video_ai_prompt_rules.md` — quy tắc viết prompt hình đầy đủ, dùng chung mọi công cụ AI
+   (Veo 3, Kling, Hailuo, Runway) — đọc cùng lúc với mục 5 dưới đây.
+5. `model_selection_rules.md` — chọn công cụ AI nào cho từng loại cảnh, tỷ lệ chi phí khuyến
+   nghị — LUÔN đọc cùng `video_ai_prompt_rules.md`, không dùng file này mà thiếu file kia.
+6. `bep_an_nhien.md` — luật chơi module video món ăn (chỉ khi làm chuỗi "Bếp An Nhiên").
+7. `food_library.md` — kho dữ liệu món ăn theo mùa cho module đó (lịch/checklist, không phải luật).
+8. `duong_sinh_bai_tap.md` — luật chơi module video bài tập dưỡng sinh/yoga ngắn (Nhánh B, mục
    1B của `instructions_VIDEO.md`) — chỉ khi làm video TikTok/Reels/Shorts thị phạm động tác.
-7. `bai_tap_library.md` — kho dữ liệu động tác dưỡng sinh/yoga cho module đó (lịch/checklist,
+9. `bai_tap_library.md` — kho dữ liệu động tác dưỡng sinh/yoga cho module đó (lịch/checklist,
    không phải luật).
-8. `core-brain/channel_roles.md` — vai trò của Video (cả 2 nhánh) so với Website và Facebook/X
-   trong hệ sinh thái — đọc để biết ranh giới, tránh kịch bản trùng góc/trùng câu với bài SEO
-   hoặc post cộng đồng khi cùng một chủ đề gốc được khai thác nhiều nơi.
-9. `output_schema.md` — đóng gói đầu ra đúng khuôn (để n8n đọc được).
+10. `core-brain/channel_roles.md` — vai trò của Video (cả 2 nhánh) so với Website và Facebook/X
+    trong hệ sinh thái — đọc để biết ranh giới, tránh kịch bản trùng góc/trùng câu với bài SEO
+    hoặc post cộng đồng khi cùng một chủ đề gốc được khai thác nhiều nơi.
+11. `output_schema.md` — đóng gói đầu ra đúng khuôn (để n8n đọc được).
 
 **⚠️ Không còn dùng `hook_library_full.md` (đã ngưng dùng từ 20/07/2026 — xem `CLAUDE.md` Bước
 2).** Nguồn hook/câu hỏi của Video Factory giờ là:
@@ -137,6 +143,7 @@ Nhận chủ đề + định dạng (NGẮN/TRUNG/DÀI, hoặc thời lượng c
 chuyển đổi từ bài SEO có sẵn, **dùng lại đúng hook bài đó đã chọn**; nếu viết độc lập (Nhánh A),
 lấy câu hỏi từ `bai-video-dang-Youtube-Anh-Minh.md` hoặc nguồn ngoài (Drive/Sheet) → viết theo khuôn xuất & khung định dạng tương ứng
 (`video_rules.md` mục 1–4), giữ đúng giọng viết hook theo `examples_and_hooks.md` → viết prompt
-hình tham chiếu nhân vật (`core-brain/image_style_bible.md`) theo quy tắc mục 5 `video_rules.md`
-→ áp quy tắc chống lặp nếu sản xuất hàng loạt (mục 7 `video_rules.md`) → nếu cần thumbnail,
-theo mục 8 → xuất theo `output_schema.md`.
+hình tham chiếu nhân vật (`core-brain/image_style_bible.md`), chọn công cụ AI theo
+`model_selection_rules.md` rồi viết prompt theo `video_ai_prompt_rules.md` → áp quy tắc chống
+lặp nếu sản xuất hàng loạt (mục 7 `video_rules.md`) → nếu cần thumbnail, theo mục 8 → xuất theo
+`output_schema.md`.

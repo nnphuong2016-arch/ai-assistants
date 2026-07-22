@@ -1,7 +1,15 @@
 # VIDEO PROMPT TEMPLATES
 STATUS: LOCKED
-VERSION: V1.1
-DATE: 18/07/2026
+VERSION: V1.2
+DATE: 22/07/2026
+
+> ⚠️ **Liên quan `video_ai_prompt_rules.md` + `model_selection_rules.md` (thêm 20/07/2026):**
+> hai file đó định nghĩa quy tắc viết prompt đầy đủ + cách chọn công cụ (Veo 3/Kling/Hailuo/
+> Runway) dùng chung mọi cảnh. File này (`video_ai_contract.md`) mô tả riêng pipeline n8n cho
+> **cảnh có nhân vật Anh Minh** — img2video từ kho ảnh cố định (Stage 3/4, xem
+> `image_style_bible.md` mục 0B) là cách khoá nhận diện cho các cảnh đó; cảnh B-roll/thiên
+> nhiên/đồ vật không có nhân vật thì theo đúng `model_selection_rules.md` (thường Hailuo/Runway,
+> text-to-video bình thường, không cần img2video).
 
 Mục đích:
 Đây là nơi lưu các Prompt Template dùng riêng cho Video Factory.

@@ -162,7 +162,7 @@ optimized framing, face clearly readable on a phone screen.
 
 ---
 
-## 8. KHÓA NHẤT QUÁN (đọc trước mỗi lần generate)
+## 7. KHÓA NHẤT QUÁN (đọc trước mỗi lần generate)
 
 Luôn giữ: cùng nhận diện khuôn mặt, hình mắt, kiểu tóc, độ tuổi, tông da, cặp kính, trang phục
 linen, năng lượng ấm-tĩnh, không khí điện ảnh ấm áp.
@@ -171,7 +171,7 @@ biến thành phong cách influencer.
 
 ---
 
-## 9. HÀNH VI & NĂNG LƯỢNG NHÂN VẬT (dùng khi viết prompt cảnh có nhân vật)
+## 8. HÀNH VI & NĂNG LƯỢNG NHÂN VẬT (dùng khi viết prompt cảnh có nhân vật)
 
 Nhân vật hành xử như:
 - **không bao giờ vội** — mọi cử chỉ đều chậm và có chủ đích
@@ -191,7 +191,7 @@ Nhân vật KHÔNG bao giờ trông như:
 
 ---
 
-## 10. EMOTIONAL TONE (kiểm soát cảm xúc hình ảnh)
+## 9. EMOTIONAL TONE (kiểm soát cảm xúc hình ảnh)
 
 Cường độ cảm xúc: **LOW → MEDIUM** — ấm áp nhưng không kịch tính, an ủi nhưng không giả tạo.
 
@@ -204,7 +204,7 @@ TRÁNH: cảm xúc áp đảo, hình ảnh bi kịch, ánh sáng u ám gây nặ
 
 ---
 
-## 11. SOUND DESIGN (nhắc nhở khi render / ghép video)
+## 10. SOUND DESIGN (nhắc nhở khi render / ghép video)
 
 Âm thanh nền ưu tiên:
 - tiếng trà rót chậm

@@ -1,7 +1,7 @@
 # VIDEO PROMPT TEMPLATES
 STATUS: LOCKED
-VERSION: V1.2
-DATE: 22/07/2026
+VERSION: V1.3
+DATE: 23/07/2026
 
 > ⚠️ **Liên quan `video_ai_prompt_rules.md` + `model_selection_rules.md` (thêm 20/07/2026):**
 > hai file đó định nghĩa quy tắc viết prompt đầy đủ + cách chọn công cụ (Veo 3/Kling/Hailuo/
@@ -10,6 +10,14 @@ DATE: 22/07/2026
 > `image_style_bible.md` mục 0B) là cách khoá nhận diện cho các cảnh đó; cảnh B-roll/thiên
 > nhiên/đồ vật không có nhân vật thì theo đúng `model_selection_rules.md` (thường Hailuo/Runway,
 > text-to-video bình thường, không cần img2video).
+
+> ⚠️ **Cập nhật 23/07/2026 — mô hình hybrid tiết kiệm chi phí (xem `model_selection_rules.md`
+> mục 1B):** từ nay pipeline có **2 nhánh song song** sau Stage 2, không phải mọi Scene đều đi
+> qua Stage 4 (generate Clip). Đa số Scene (~69–72% với video TRUNG/DÀI) chỉ dừng ở Ảnh tĩnh
+> (Stage 3, hoặc lấy thẳng ảnh có sẵn trong kho `image_style_bible.md` mục 0B nếu là Anh Minh
+> đứng/ngồi yên) rồi đi thẳng tới Stage 7 kèm tham số Ken Burns — **bỏ qua Stage 4 hoàn toàn**,
+> tiết kiệm chi phí generate video. Chỉ Scene được đánh dấu Clip ở Stage 2B mới đi qua Stage 4.
+> Xem Stage 2B (mới) bên dưới.
 
 Mục đích:
 Đây là nơi lưu các Prompt Template dùng riêng cho Video Factory.
@@ -107,6 +115,53 @@ Chỉ mô tả
 - composition
 
 ========================================================
+2B. MEDIA TYPE & TOOL SELECTION AI (MỚI — 23/07/2026)
+========================================================
+
+Mục tiêu
+
+Với mỗi Scene, quyết định: Clip AI video hay Ảnh tĩnh + Ken Burns — và nếu là Clip, chọn công
+cụ nào (Veo3/Kling/Hailuo/Runway). Theo đúng logic ở `model_selection_rules.md` mục 1B (Lớp
+quyết định 0) + mục 2-4 (chọn công cụ).
+
+Input
+
+Storyboard JSON (Stage 1) + Scene Prompt (Stage 2) + field Character (từ Master Script gốc)
+
+Output
+
+JSON
+
+{
+   "scene_id":"001",
+   "media_type":"static",
+   "tool": null
+}
+
+hoặc
+
+{
+   "scene_id":"002",
+   "media_type":"clip",
+   "tool":"kling"
+}
+
+Yêu cầu
+
+- Mặc định `media_type: "static"` trừ khi Scene khớp 1 trong 4 tiêu chí "Clip" ở
+  `model_selection_rules.md` mục 1B (Anh Minh nói trực diện / cận cảnh cảm xúc / khoảnh khắc
+  chủ đạo / hành động là chính nội dung cảnh).
+- Tỷ lệ tham khảo toàn video: ~28–31% Scene là `"clip"`, phần còn lại `"static"` (video TRUNG/DÀI
+  — xem bảng số liệu ở `model_selection_rules.md` mục 1B). Không ép cứng %, chỉ dùng để tự kiểm
+  nếu lệch quá xa (VD 80% Scene ra "clip" thì phải xét lại).
+- Nếu `media_type = "static"` và Character có giá trị (Anh Minh) → Stage 3 KHÔNG generate ảnh
+  mới, lấy thẳng ảnh từ kho `image_style_bible.md` mục 0B.
+- Nếu `media_type = "static"` và Character trống → đi Stage 3 (Flux) như bình thường.
+- Nếu `media_type = "clip"` → đi Stage 4, `tool` xác định theo bảng quyết định
+  `model_selection_rules.md` mục 4.
+- Không tự suy diễn ngoài 2 file rules trên.
+
+========================================================
 3. FLUX IMAGE AI (chỉ cho cảnh KHÔNG có nhân vật)
 ========================================================
 
@@ -130,13 +185,16 @@ Yêu cầu
 - không có nhân vật trong khung hình (cảnh này chỉ dùng khi Character trống)
 
 ========================================================
-4. KLING / VEO3 IMG2VIDEO
+4. KLING / VEO3 IMG2VIDEO (chỉ chạy khi Stage 2B đánh dấu media_type = "clip")
 ========================================================
 
 Mục tiêu
 
 Animate một ảnh tĩnh có sẵn thành clip chuyển động — đây là cơ chế khoá nhận diện nhân vật
 chính thức của pipeline (img2video, không train LoRA — xem image_style_bible.md mục 0B).
+
+Chỉ chạy Stage này cho Scene có `media_type: "clip"` (theo Stage 2B). Scene `"static"` bỏ qua
+hoàn toàn Stage này, đi thẳng từ Stage 3 (hoặc kho ảnh nhân vật) sang Stage 7.
 
 Input
 
@@ -205,7 +263,9 @@ Yêu cầu
 
 Input
 
-Video Clips
+Video Clips (Scene "clip", từ Stage 4)
+
+Ảnh tĩnh + tham số Ken Burns (Scene "static", từ Stage 3 hoặc kho ảnh nhân vật — xem Stage 2B)
 
 Narration
 
@@ -221,7 +281,11 @@ Video.mp4
 
 Yêu cầu
 
-- ghép đúng thứ tự
+- ghép đúng thứ tự theo Scene ID
+- Scene "static": áp Ken Burns (zoom in/out chậm, pan ngang/dọc nhẹ) trong đúng **Duration** của
+  Scene đó (lấy từ Master Script, ~110–130 từ/phút theo Voice — xem `video_rules.md` mục 1.C)
+- Scene "clip": clip gốc 6–10 giây → kéo dài cảm giác thành 8–12 giây bằng zoom/pan/crop nhẹ
+  ngay trên clip đó (không generate lại clip dài hơn)
 - subtitle đồng bộ
 - nhạc nhỏ hơn voice
 - giữ 1080p

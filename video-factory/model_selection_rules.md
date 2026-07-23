@@ -9,6 +9,10 @@
 > Cập nhật: 20/07/2026 — dịch + viết lại tiếng Việt từ bản gốc tiếng Anh (dự án tham khảo khác,
 > nhân vật "Brian Chen"), thay bằng Hiền triết Anh Minh, gộp giữ nguyên khung quyết định gốc vì
 > đã khá tốt — chỉ đổi ngôn ngữ và nhân vật, không đổi logic chọn công cụ.
+> Cập nhật: 23/07/2026 — thêm **mục 1B "LỚP QUYẾT ĐỊNH 0"** (Clip AI video hay Ảnh tĩnh + Ken
+> Burns) — quy định chính thức mô hình hybrid tiết kiệm chi phí: phần lớn cảnh dùng ảnh tĩnh +
+> kỹ thuật zoom/pan (rẻ), chỉ cảnh thật sự quan trọng mới generate clip AI (đắt). Mục 4/5 cập
+> nhật theo lớp quyết định mới này.
 
 ---
 
@@ -74,6 +78,59 @@ Chỉ dùng Runway khi bố cục hoặc chuyển động máy quay là ưu tiê
 
 ---
 
+## 1B. LỚP QUYẾT ĐỊNH 0 — CLIP AI VIDEO HAY ẢNH TĨNH + KEN BURNS (quyết định TRƯỚC khi chọn công cụ)
+
+> Thêm 23/07/2026 — chính thức hoá mô hình hybrid tiết kiệm chi phí. Đây là bước quyết định
+> **đứng trước** mục 2–4 bên dưới: trước khi hỏi "cảnh này dùng Veo3 hay Kling hay Hailuo hay
+> Runway", phải hỏi câu hỏi gốc hơn — **"cảnh này có cần generate clip AI (chuyển động thật)
+> không, hay một ảnh tĩnh + hiệu ứng zoom/pan (Ken Burns) là đủ?"** Phần lớn cảnh KHÔNG cần
+> clip — ảnh tĩnh rẻ hơn nhiều lần so với video generate (dù công cụ nào), vì chỉ tốn 1 lần
+> generate ảnh (hoặc dùng ảnh có sẵn từ kho) thay vì generate video.
+
+**Mặc định: Ảnh tĩnh + Ken Burns.** Chỉ chuyển sang Clip AI video khi cảnh thuộc một trong các
+trường hợp sau:
+- Anh Minh nói trực diện camera (môi/biểu cảm cần chuyển động thật).
+- Cận cảnh cảm xúc — khoảnh khắc khán giả cần thấy vi biểu cảm (chớp mắt, thở, ngập ngừng).
+- Khoảnh khắc chủ đạo (hero scene) của cả video — nơi giá trị hình ảnh quyết định cảm xúc chính.
+- Hành động có chuyển động là chính nội dung cảnh (VD: bước đi, cầm/đặt vật, cử chỉ tay có ý
+  nghĩa) — nếu đứng yên thì mất hết ý cảnh muốn truyền tải.
+
+**Giữ Ảnh tĩnh + Ken Burns cho các trường hợp còn lại** (đa số cảnh): thiên nhiên, đồ vật, bối
+cảnh/không gian, ẩn dụ hình ảnh, establishing shot, nhân vật ngồi/đứng yên lặng không cần biểu
+cảm vi tế, B-roll chuyển cảnh. Với cảnh có Anh Minh nhưng chỉ ngồi/đứng tĩnh (không nói, không
+biểu cảm mạnh) → dùng thẳng ảnh từ kho ảnh nhân vật cố định (`core-brain/image_style_bible.md`
+mục 0B) làm ảnh tĩnh, KHÔNG cần img2video — rẻ nhất, vẫn giữ đúng nhận diện nhân vật vì là ảnh
+gốc, không generate lại.
+
+**Tỷ lệ tham khảo (video TRUNG/DÀI, ví dụ một tập ~8-10 phút):**
+
+| Thành phần | Số lượng tham khảo |
+|---|---|
+| Tổng số cảnh | 30–35 |
+| Clip AI video (Veo3/Kling/Hailuo/Runway) | 9–11 cảnh (≈ 28–31%) |
+| Ảnh tĩnh + Ken Burns (zoom/pan) | 20–24 cảnh (≈ 69–72%) |
+
+Đây là **tỷ lệ tham khảo cho video TRUNG/DÀI** (nhiều cảnh, dư địa để đa số là ảnh tĩnh). Với
+video NGẮN (5–8 cảnh), tỷ lệ này không co giãn tuyến tính — mỗi cảnh trong video ngắn "nặng ký"
+hơn, nên vẫn ưu tiên xét theo 4 tiêu chí ở trên cho từng cảnh cụ thể thay vì áp cứng %.
+
+**Độ dài Clip AI video (khi đã chọn generate clip):** gốc 6–10 giây (tuỳ công cụ, xem mục 12
+`video_ai_prompt_rules.md`) — khi dựng (edit), có thể **kéo dài cảm giác thành 8–12 giây** bằng
+kỹ thuật zoom/pan/crop nhẹ trên chính clip đó (không phải generate clip dài hơn — tốn thêm chi
+phí). Kỹ thuật này áp dụng ở bước FFMPEG Composer, xem `video_ai_contract.md` Stage 7.
+
+**Độ dài hiển thị Ảnh tĩnh:** bám sát **Duration** của scene đó (đã có sẵn ở khuôn field
+`video_rules.md` mục 1.C — Duration ước theo ngân sách lời của đoạn Voice, ~110–130 từ/phút),
+không phải một con số cố định riêng cho ảnh tĩnh. Ảnh tĩnh giữ nguyên khung hình, chỉ áp Ken
+Burns (zoom in/out chậm, pan ngang/dọc nhẹ) trong suốt Duration đó.
+
+**Quan trọng:** quyết định Clip hay Ảnh tĩnh là việc của **pipeline sản xuất** (bước Scene
+Generator/chọn công cụ, sau khi Master Script đã viết xong), giống hệt nguyên tắc ở mục 0 —
+**Master Script KHÔNG tự đánh dấu cảnh nào là Clip/Ảnh tĩnh**, để giữ kịch bản tool-agnostic
+(không phải sửa lại Master Script mỗi khi đổi kỹ thuật sản xuất).
+
+---
+
 ## 2. THỨ TỰ ƯU TIÊN MẶC ĐỊNH
 
 | Loại cảnh | Công cụ mặc định |
@@ -127,14 +184,17 @@ Nhân vật · Hội thoại · Anh Minh nói trực diện · Thiên nhiên · 
 
 ## 5. TỐI ƯU CHI PHÍ
 
-Hệ thống sản xuất nên tự động ưu tiên hiệu quả chi phí. Phân bổ khuyến nghị cho một tập video
-chuẩn:
+Hệ thống sản xuất nên tự động ưu tiên hiệu quả chi phí. **Trước hết, áp dụng Lớp quyết định 0
+(mục 1B)** — loại phần lớn cảnh (~69–72%) sang Ảnh tĩnh + Ken Burns, không tốn chi phí generate
+video. Bảng % dưới đây chỉ áp dụng cho phần cảnh CÒN LẠI đã được xác định là cần Clip AI video
+(≈ 28–31% tổng số cảnh, xem mục 1B) — tức là % trong nội bộ "rổ Clip", không phải % trên tổng số
+cảnh của cả video:
 
-| Công cụ | Tỷ lệ | Dùng cho |
+| Công cụ | Tỷ lệ (trong số cảnh đã chọn là Clip) | Dùng cho |
 |---|---|---|
 | **Veo 3** | ≈ 10% | Anh Minh nói trực diện · khoảnh khắc chủ đạo · cận cảnh cảm xúc |
 | **Kling** | ≈ 45% | Nhân vật chính trong câu chuyện · cảnh kể chuyện · tương tác con người |
-| **Hailuo** | ≈ 35% | Thiên nhiên · đồ vật · bối cảnh · hình ảnh biểu tượng · establishing shot |
+| **Hailuo** | ≈ 35% | Thiên nhiên/B-roll hiếm khi cần chuyển động thật — phần lớn trường hợp này nên là Ảnh tĩnh (mục 1B) thay vì Clip Hailuo; chỉ dùng Clip Hailuo khi B-roll đó thật sự cần chuyển động (nước chảy, khói bay, mưa rơi) |
 | **Runway** | ≈ 10% | Chuyển cảnh · chuyển động máy quay · montage · tăng giá trị hình ảnh |
 
 ---

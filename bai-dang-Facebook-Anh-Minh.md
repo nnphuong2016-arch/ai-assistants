@@ -165,7 +165,7 @@ Một phút nhìn lại → Tự nhìn lại bản thân và thói quen.
 14. Nếu hôm nay còn có thể nói lời cảm ơn, hãy nói ngay.
 15. Nếu hôm nay còn có thể xin lỗi, đừng để quá muộn.
 16. Nếu hôm nay còn có thể uống thêm một cốc nước, hãy làm ngay bây giờ.
-17. Nếu hôm nay còn có thể đứng dậy vận động, đừng ngồi thêm một giờ nữa.
+17. Nếu hôm nay còn có thể vươn vai vài giây giữa giờ làm việc, đừng bỏ lỡ.
 18. Nếu hôm nay còn có thể ngắm bình minh hoặc hoàng hôn, hãy dành vài phút cho khoảnh khắc ấy.
 19. Nếu hôm nay còn có thể học một điều mới, hãy bắt đầu từ điều nhỏ nhất.
 20. Nếu hôm nay còn có thể giúp ai đó, đừng chờ có thật nhiều mới cho đi.
@@ -185,7 +185,7 @@ Một phút nhìn lại → Tự nhìn lại bản thân và thói quen.
 
 1. Điều đáng nghĩ hôm nay: Cơ thể không đòi hỏi quá nhiều, chỉ cần ta quan tâm đúng lúc.
 2. Điều đáng nghĩ hôm nay: Sức khỏe không mất trong một ngày, mà được đánh đổi bằng rất nhiều ngày.
-3. Điều đáng nghĩ hôm nay: Người khôn ngoan không chờ đến khi có bệnh mới học cách sống khỏe.
+3. Điều đáng nghĩ hôm nay: Sức khỏe tốt nhất thường đến từ những ngày không có gì đặc biệt xảy ra.
 4. Điều đáng nghĩ hôm nay: Thời gian dành cho sức khỏe chưa bao giờ là thời gian lãng phí.
 5. Điều đáng nghĩ hôm nay: Có những điều chỉ khi mất đi, con người mới biết mình từng hạnh phúc.
 6. Điều đáng nghĩ hôm nay: Một giấc ngủ ngon là nền tảng của rất nhiều điều tốt đẹp.
@@ -204,12 +204,12 @@ Một phút nhìn lại → Tự nhìn lại bản thân và thói quen.
 19. Điều đáng nghĩ hôm nay: Có lẽ điều khó nhất không phải là sống lâu, mà là sống những năm tháng cuối đời trong khỏe mạnh.
 20. Điều đáng nghĩ hôm nay: Điều con cái nhớ về cha mẹ thường không phải là tài sản, mà là những bữa cơm và khoảng thời gian bên nhau.
 21. Điều đáng nghĩ hôm nay: Căng thẳng kéo dài đang âm thầm lấy đi nhiều thứ hơn ta tưởng.
-22. Điều đáng nghĩ hôm nay: Một lời hỏi thăm đúng lúc đôi khi quý hơn rất nhiều lời khuyên.
+22. Điều đáng nghĩ hôm nay: Có những món quà không cần gói giấy, chỉ cần đúng lúc.
 23. Điều đáng nghĩ hôm nay: Biết dừng lại cũng là một dạng của trí tuệ.
 24. Điều đáng nghĩ hôm nay: Chăm sóc bản thân không phải vì mình sống lâu hơn, mà để sống tốt hơn.
 25. Điều đáng nghĩ hôm nay: Mỗi ngày bình thường đều đáng quý khi ta còn đủ sức để tận hưởng nó.
 26. Điều đáng nghĩ hôm nay: Cuộc sống không thưởng cho người cố gắng nhất, mà thường ưu ái người biết cân bằng.
-27. Điều đáng nghĩ hôm nay: Không ai có thể chăm sóc cơ thể bạn tốt hơn chính bạn.
+27. Điều đáng nghĩ hôm nay: Nghỉ ngơi không phải là lười biếng, mà là một phần của làm việc hiệu quả.
 28. Điều đáng nghĩ hôm nay: Điều đáng tiếc nhất không phải là già đi, mà là già đi trong hối tiếc.
 29. Điều đáng nghĩ hôm nay: Một cuộc đời ý nghĩa luôn bắt đầu từ những lựa chọn rất bình thường mỗi ngày.
 30. Điều đáng nghĩ hôm nay: Đến một lúc nào đó, ta sẽ nhận ra sức khỏe chính là nền móng của mọi ước mơ.

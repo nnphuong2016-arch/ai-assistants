@@ -1,7 +1,12 @@
 # VIDEO PROMPT TEMPLATES
 STATUS: LOCKED
-VERSION: V1.3
+VERSION: V1.4
 DATE: 23/07/2026
+
+> ⚠️ **Cập nhật 23/07/2026 (2):** làm rõ Stage 3 (Flux) còn dùng cho **nhân vật khách** (bất kỳ
+> ai không phải Hiền triết Anh Minh) — chỉ Anh Minh có kho ảnh cố định, nhân vật khách phải
+> generate mới nhưng CHỈ generate 1 lần/video rồi dùng lại cho mọi Scene cùng người đó trong
+> video đó (xem Stage 2B/3/4 bên dưới + `video_ai_prompt_rules.md` mục 9).
 
 > ⚠️ **Liên quan `video_ai_prompt_rules.md` + `model_selection_rules.md` (thêm 20/07/2026):**
 > hai file đó định nghĩa quy tắc viết prompt đầy đủ + cách chọn công cụ (Veo 3/Kling/Hailuo/
@@ -154,26 +159,40 @@ Yêu cầu
 - Tỷ lệ tham khảo toàn video: ~28–31% Scene là `"clip"`, phần còn lại `"static"` (video TRUNG/DÀI
   — xem bảng số liệu ở `model_selection_rules.md` mục 1B). Không ép cứng %, chỉ dùng để tự kiểm
   nếu lệch quá xa (VD 80% Scene ra "clip" thì phải xét lại).
-- Nếu `media_type = "static"` và Character có giá trị (Anh Minh) → Stage 3 KHÔNG generate ảnh
-  mới, lấy thẳng ảnh từ kho `image_style_bible.md` mục 0B.
-- Nếu `media_type = "static"` và Character trống → đi Stage 3 (Flux) như bình thường.
+- **Phân loại field Character trước khi quyết định nguồn ảnh** (3 trường hợp, xem thêm Stage 3):
+  1. **Character trống** → B-roll, không có nhân vật.
+  2. **Character = "Hiền triết Anh Minh"** → CHỈ nhân vật này có kho ảnh cố định. `media_type =
+     "static"` → lấy thẳng ảnh từ kho (`image_style_bible.md` mục 0B), KHÔNG generate. `media_type
+     = "clip"` → img2video từ đúng ảnh đó (Stage 4).
+  3. **Character = tên khác** (nhân vật khách trong câu chuyện, xem `video_ai_prompt_rules.md`
+     mục 9) → KHÔNG có kho ảnh sẵn, phải generate ở Flux (Stage 3) — xem quy tắc nhất quán trong
+     Stage 3.
 - Nếu `media_type = "clip"` → đi Stage 4, `tool` xác định theo bảng quyết định
   `model_selection_rules.md` mục 4.
 - Không tự suy diễn ngoài 2 file rules trên.
 
 ========================================================
-3. FLUX IMAGE AI (chỉ cho cảnh KHÔNG có nhân vật)
+3. FLUX IMAGE AI
 ========================================================
 
 Mục tiêu
 
-Sinh ảnh B-roll trung tính cho cảnh không có nhân vật (field Character trống ở Master Script).
-KHÔNG dùng bước này để tạo ảnh nhân vật mới — cảnh có nhân vật bỏ qua Stage này, lấy thẳng ảnh
-có sẵn trong kho ảnh nguồn (xem image_style_bible.md mục 0B) làm input cho Stage 4.
+Sinh ảnh cho 2 trường hợp: (a) B-roll không có nhân vật (Character trống), và (b) nhân vật khách
+— bất kỳ ai KHÔNG PHẢI Hiền triết Anh Minh (Character có tên khác Anh Minh). Anh Minh là nhân
+vật DUY NHẤT có kho ảnh cố định — Stage này KHÔNG BAO GIỜ generate ảnh Anh Minh, luôn lấy thẳng
+từ kho (`image_style_bible.md` mục 0B) cho Stage 4.
+
+Quy tắc nhất quán nhân vật khách: nếu nhiều Scene trong CÙNG một video dùng cùng một tên nhân vật
+khách, chỉ generate ảnh gốc CHO người đó MỘT LẦN (ở Scene đầu tiên xuất hiện), rồi dùng lại đúng
+ảnh đó cho mọi Scene khác cùng nhân vật trong video đó — kể cả khi Scene là `"clip"` (img2video
+từ chính ảnh Flux vừa tạo, giống cơ chế Anh Minh nhưng không lưu vĩnh viễn qua nhiều video, chỉ
+nhất quán trong nội bộ MỘT video/tập — xem `video_ai_prompt_rules.md` mục 9: không dùng lại
+ngoại hình nhân vật khách giữa các tập trừ khi cố ý nối tiếp câu chuyện).
 
 Input
 
-Scene Prompt (field Visual + Camera)
+Scene Prompt (field Visual + Camera) — nếu là nhân vật khách, thêm mô tả ngoại hình nhân vật đó
+(tuổi/nghề nghiệp/bối cảnh sống khớp nội dung câu chuyện, xem video_ai_prompt_rules.md mục 9)
 
 Output
 
@@ -182,7 +201,10 @@ PNG
 Yêu cầu
 
 - giữ đúng bảng màu/ánh sáng theo image_style_bible.md
-- không có nhân vật trong khung hình (cảnh này chỉ dùng khi Character trống)
+- Nếu Character trống: không có nhân vật trong khung hình.
+- Nếu Character là nhân vật khách: generate MỘT LẦN cho cả video, các Scene sau dùng lại đúng
+  ảnh đó (không generate lại mỗi Scene).
+- TUYỆT ĐỐI KHÔNG generate ảnh Hiền triết Anh Minh ở Stage này dưới bất kỳ hình thức nào.
 
 ========================================================
 4. KLING / VEO3 IMG2VIDEO (chỉ chạy khi Stage 2B đánh dấu media_type = "clip")
@@ -198,8 +220,12 @@ hoàn toàn Stage này, đi thẳng từ Stage 3 (hoặc kho ảnh nhân vật) 
 
 Input
 
-Ảnh gốc — nếu Character có giá trị: chọn từ kho ảnh nhân vật cố định ở image_style_bible.md
-mục 0B (KHÔNG tạo ảnh mới bằng text-to-image); nếu Character trống: dùng ảnh B-roll từ Stage 3
+Ảnh gốc, chọn theo đúng 3 trường hợp Character ở Stage 2B:
+- Character = "Hiền triết Anh Minh" → chọn từ kho ảnh nhân vật cố định ở image_style_bible.md
+  mục 0B (KHÔNG tạo ảnh mới bằng text-to-image).
+- Character = tên nhân vật khách → dùng đúng ảnh Flux đã generate cho người đó ở Stage 3 (không
+  generate ảnh mới riêng cho Stage 4).
+- Character trống → dùng ảnh B-roll từ Stage 3.
 +
 Motion Prompt (field Camera + Visual)
 
@@ -231,7 +257,7 @@ Narration.mp3
 Yêu cầu
 
 - dùng ĐÚNG 1 voice ID đã clone/khoá riêng cho Anh Minh — KHÔNG dùng giọng preset ngẫu nhiên
-  hay đổi giọng giữa các video (voice ID xem image_style_bible.md mục 11)
+  hay đổi giọng giữa các video (voice ID xem image_style_bible.md mục 10)
 - giọng ấm
 - tốc độ chậm
 - ngắt nghỉ tự nhiên
@@ -304,7 +330,7 @@ Không AI nào được tự ý thay đổi:
 - Nhân vật
 - Thời lượng
 - Ảnh nhân vật dùng cho img2video (chỉ lấy từ kho ảnh cố định — xem image_style_bible.md mục 0B)
-- Voice ID (giọng đọc — xem image_style_bible.md mục 11)
+- Voice ID (giọng đọc — xem image_style_bible.md mục 10)
 
 Nếu phát hiện lỗi
 

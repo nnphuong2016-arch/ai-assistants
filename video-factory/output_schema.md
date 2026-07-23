@@ -50,7 +50,7 @@
    có giá trị hay không) — để trống nếu toàn bộ video chỉ có B-roll trung tính.
 9. **Suggested Thumbnail** — mô tả ý tưởng thumbnail (không phải ảnh thật) theo mục 8
    `video_rules.md` — để Image Factory hoặc bước sau tạo ảnh thật.
-10. **Music** — gợi ý nhạc nền theo `core-brain/image_style_bible.md` mục 11 (piano tối giản,
+10. **Music** — gợi ý nhạc nền theo `core-brain/image_style_bible.md` mục 10 (piano tối giản,
     ambient) — để trống nếu dùng nhạc mặc định của kênh.
 11. **Structure Used** — cấu trúc kịch bản đã dùng (A–E theo `video_rules.md` mục 7); để trống
     nếu Content Track là `Dưỡng Sinh Ngắn` (dùng khung riêng ở `duong_sinh_bai_tap.md` mục 5,

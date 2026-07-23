@@ -112,17 +112,14 @@ Chủ đề Sức khỏe cần tăng chiều sâu (semantic entity) → tra bả
 `core-brain/health_knowledge.md` mục 9 trước — KHÔNG tự thêm thuật ngữ hormone/y sinh (cortisol,
 melatonin...) dù nghe "chuyên sâu hơn".
 
-**Khi được yêu cầu viết KỊCH BẢN VIDEO:**
-1. `video-factory/instructions_VIDEO.md` — vai trò & quy trình (2 chế độ: chuyển đổi từ bài SEO
-   có sẵn, hoặc viết độc lập từ hook).
-2. `video-factory/video_rules.md` — mô hình 2 lớp LỜI/HÌNH, khuôn xuất, khung NGẮN/TRUNG/DÀI,
-   quy tắc viết prompt hình, chống lặp, thumbnail ethics.
-3. `video-factory/examples_and_hooks.md` — dạy giọng bằng ví dụ, các cấu trúc kể (A–E), phản
-   ví dụ (KHÔNG viết như thế nào).
-4. `core-brain/image_style_bible.md` — ngoại hình & hành vi nhân vật khi prompt hình có nhân vật.
-5. Nếu là chuỗi món ăn "Bếp An Nhiên": thêm `video-factory/bep_an_nhien.md` +
-   `video-factory/food_library.md`.
-6. `video-factory/output_schema.md` — đóng gói đúng khuôn field.
+**Khi được yêu cầu viết KỊCH BẢN VIDEO:** đọc đúng theo thứ tự trong `video-factory/
+instructions_VIDEO.md` mục 3 (nguồn danh sách file đầy đủ, cập nhật 23/07/2026 — không lặp lại
+danh sách ở đây để tránh 2 nơi cùng liệt kê rồi lệch nhau khi thêm file mới): `instructions_VIDEO.md`
+→ `video_rules.md` → `examples_and_hooks.md` → `core-brain/image_style_bible.md` →
+`video_ai_prompt_rules.md` + `model_selection_rules.md` (luôn đọc cùng nhau) → `bep_an_nhien.md`
++ `food_library.md` (chỉ khi làm chuỗi "Bếp An Nhiên") → `duong_sinh_bai_tap.md` +
+`bai_tap_library.md` (chỉ khi làm Nhánh B — Dưỡng Sinh Ngắn) → `core-brain/channel_roles.md` →
+`output_schema.md`.
 
 **Khi được yêu cầu viết BÀI ĐĂNG FACEBOOK (Page/Group):** đọc `facebook-factory/` theo đúng thứ
 tự trong `instructions_facebook.md` (đã ghi rõ trong file: instructions_facebook → execution_flow

@@ -10,26 +10,34 @@
 > Nhân vật là HIỀN TRIẾT phương Đông (nam) — KHÔNG phải bác sĩ, KHÔNG phải đạo sĩ.
 > Cập nhật: 18/07/2026 — thêm mục 0B (khoá nhận diện qua img2video, dùng thẳng kho ảnh có sẵn,
 > không train LoRA; nếu cần text-to-image thật sự thì ưu tiên InstantID/PuLID/IP-Adapter FaceID
-> miễn phí trước khi tính tới LoRA) + Voice ID ở mục 11, để giữ nhân vật/giọng ổn định khi sản
+> miễn phí trước khi tính tới LoRA) + Voice ID ở mục 10, để giữ nhân vật/giọng ổn định khi sản
 > xuất hàng trăm video qua n8n.
+> Cập nhật: 23/07/2026 — mục 0 sửa đúng đường dẫn thật (`characters/`, không phải
+> `assets/characters/`) + cập nhật đủ 8 ảnh reference đã có trong repo (5 ảnh gốc +
+> `anh minh 1/2/3.png`); sửa số mục nhảy cóc (8→7, đánh số lại 8–11 thành 7–10).
 
 ---
 
 ## 0. CHARACTER REFERENCE
 
-Reference Images
+Reference Images — đã có thật trong repo, thư mục `characters/` (gốc repo `ai-assistants/`,
+KHÔNG phải `assets/characters/` như ghi trước đây), 8 ảnh (cập nhật 23/07/2026):
 
-assets/characters:
+- `characters/anh_minh_front.png`
+- `characters/anh_minh_left.png`
+- `characters/anh_minh_right.png`
+- `characters/anh_minh_back.png`
+- `characters/anh_minh_fullbody.png`
+- `characters/anh minh 1.png`
+- `characters/anh minh 2.png`
+- `characters/anh minh 3.png`
 
-anh_minh_front.png
-
-anh_minh_left.png
-
-anh_minh_right.png
-
-anh_minh_back.png
-
-anh_minh_fullbody.png
+**Khuyến khích dùng tối đa số ảnh reference hiện có (cả 8 ảnh, không chỉ 1) khi generate** —
+càng nhiều góc/ảnh làm điều kiện đầu vào, nhận diện khuôn mặt càng ít bị lệch giữa các video.
+Riêng bước img2video (`video-factory/video_ai_contract.md` Stage 4) chỉ cần **1 ảnh gốc** khớp
+đúng tư thế/bối cảnh cảnh đó làm khung hình xuất phát (bản chất img2video là animate từ một ảnh
+duy nhất) — việc "dùng tối đa nhiều ảnh" áp dụng cho bước tạo ảnh mới bằng text-to-image/
+InstantID/PuLID khi kho hiện có chưa đủ tư thế cần dùng (xem mục 0B).
 
 Khi Image Factory hoặc Video Factory tạo ảnh/video có nhân vật Anh Minh,
 luôn nạp toàn bộ bộ ảnh Reference này cùng Master Character Prompt.
@@ -162,7 +170,7 @@ optimized framing, face clearly readable on a phone screen.
 
 ---
 
-## 8. KHÓA NHẤT QUÁN (đọc trước mỗi lần generate)
+## 7. KHÓA NHẤT QUÁN (đọc trước mỗi lần generate)
 
 Luôn giữ: cùng nhận diện khuôn mặt, hình mắt, kiểu tóc, độ tuổi, tông da, cặp kính, trang phục
 linen, năng lượng ấm-tĩnh, không khí điện ảnh ấm áp.
@@ -171,7 +179,7 @@ biến thành phong cách influencer.
 
 ---
 
-## 9. HÀNH VI & NĂNG LƯỢNG NHÂN VẬT (dùng khi viết prompt cảnh có nhân vật)
+## 8. HÀNH VI & NĂNG LƯỢNG NHÂN VẬT (dùng khi viết prompt cảnh có nhân vật)
 
 Nhân vật hành xử như:
 - **không bao giờ vội** — mọi cử chỉ đều chậm và có chủ đích
@@ -191,7 +199,7 @@ Nhân vật KHÔNG bao giờ trông như:
 
 ---
 
-## 10. EMOTIONAL TONE (kiểm soát cảm xúc hình ảnh)
+## 9. EMOTIONAL TONE (kiểm soát cảm xúc hình ảnh)
 
 Cường độ cảm xúc: **LOW → MEDIUM** — ấm áp nhưng không kịch tính, an ủi nhưng không giả tạo.
 
@@ -204,7 +212,7 @@ TRÁNH: cảm xúc áp đảo, hình ảnh bi kịch, ánh sáng u ám gây nặ
 
 ---
 
-## 11. SOUND DESIGN (nhắc nhở khi render / ghép video)
+## 10. SOUND DESIGN (nhắc nhở khi render / ghép video)
 
 Âm thanh nền ưu tiên:
 - tiếng trà rót chậm

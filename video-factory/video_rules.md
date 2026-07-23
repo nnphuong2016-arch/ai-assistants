@@ -76,11 +76,18 @@ Mục đích: tránh rủi ro vi phạm bản quyền khi dùng bài viết củ
   - **Camera** — tiếng Anh: loại cảnh (close-up, wide…) + chuyển động máy (slow push-in,
     static, gentle pan…) + ánh sáng + âm thanh nền (ambient). Cũng không mô tả nhân vật ở đây,
     cùng lý do như field Visual.
-  - **Character** — tên nhân vật xuất hiện trong cảnh (VD: "Hiền triết Anh Minh"), tham chiếu
-    `core-brain/image_style_bible.md` để giữ nhận diện nhất quán; để trống nếu cảnh chỉ có
-    B-roll trung tính không có nhân vật. Khi làm thủ công (Cách 1), thấy field này có tên thì tự
-    nạp bộ ảnh reference tương ứng vào Veo3/Kling; khi tự động (Cách 2), n8n đọc field này để
-    biết cảnh nào cần ghép ảnh nhân vật ở bước Flux/Kling.
+  - **Character** — tên nhân vật xuất hiện trong cảnh; để trống nếu cảnh chỉ có B-roll trung
+    tính không có nhân vật. Hai loại nhân vật, xử lý khác nhau ở bước sau (Master Script chỉ cần
+    ghi đúng tên, không cần biết chi tiết pipeline):
+    - **"Hiền triết Anh Minh"** — nhân vật DUY NHẤT có kho ảnh cố định (tham chiếu
+      `core-brain/image_style_bible.md` mục 0B). Phần lớn cảnh tĩnh của Anh Minh lấy thẳng ảnh
+      có sẵn (không generate); cảnh cần chuyển động mới img2video từ đúng ảnh đó.
+    - **Tên nhân vật khách** (người trong câu chuyện đang kể, không phải Anh Minh) — KHÔNG có
+      kho ảnh sẵn, generate mới ở Flux nhưng chỉ 1 lần cho cả video rồi dùng lại xuyên suốt (xem
+      `video_ai_prompt_rules.md` mục 9 + `video_ai_contract.md` Stage 3).
+    Khi làm thủ công (Cách 1), thấy field này có tên Anh Minh thì tự nạp bộ ảnh reference tương
+    ứng vào Veo3/Kling; nhân vật khách thì tự tạo ảnh nhất quán rồi dùng lại. Khi tự động (Cách
+    2), n8n đọc field này ở Stage 2B/3/4 (`video_ai_contract.md`) để định tuyến đúng nguồn ảnh.
   - **Emotion** — tâm trạng/cảm xúc chủ đạo của cảnh (VD: "tĩnh lặng", "ấm áp", "trầm ngâm").
   - **Loop** — `true`/`false`: cảnh này có dùng lại/loop được cho video khác không.
 - **D. KẾT:** một câu lắng đọng, mở ra suy ngẫm. Không "like share" gắt.

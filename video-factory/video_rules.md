@@ -61,7 +61,13 @@ Mục đích: tránh rủi ro vi phạm bản quyền khi dùng bài viết củ
 
 - **A. TÊN VIDEO** + 1 câu ý chính (+ 1 câu hứa với video TRUNG/DÀI).
 - **B. HOOK (3 giây đầu):** một câu/hình khơi tò mò điềm tĩnh — KHÔNG giật gân.
-- **C. CÁC CẢNH** — mỗi cảnh là một khối field cố định, theo đúng thứ tự sau:
+- **C. CÁC CẢNH** — mỗi cảnh là một khối field cố định, theo đúng thứ tự sau.
+  ⚠️ **Định dạng bắt buộc:** mỗi cảnh phải mở đầu bằng heading markdown `### Scene <ID>` (VD
+  `### Scene 001`, có thể kèm chú thích trong ngoặc: `### Scene 001 (HOOK)`), rồi tới các field
+  dạng gạch đầu dòng `- **Tên field:** giá trị` theo đúng thứ tự dưới đây. Đây không phải sở
+  thích trình bày — Code node của n8n (WF-07B) parse file `_master_script.md` đúng theo khuôn
+  này (`video_ai_contract.md` GHI CHÚ VẬN HÀNH). Viết "Cảnh 1:", "**Scene 001**" hay đổi thứ tự
+  field đều làm parser gãy. Xem ví dụ đầy đủ ở `examples_and_hooks.md` mục 6.
   - **Scene ID:** số thứ tự cảnh, zero-padded 3 chữ số (`001`, `002`, `003`...) — để pipeline
     map 1:1 sang file media cùng ID (`Voice001.mp3`, `Clip001.mp4`, `Subtitle001.srt`...).
   - **Duration:** thời lượng cảnh (giây), ước theo ngân sách lời của đoạn Voice trong cảnh đó.
@@ -158,7 +164,7 @@ Mục tiêu: chiều sâu thật, để người xem thấy "mình vừa nhận 
 5. **KẾT LẮNG (15–20s):** một câu để nhớ.
 
 **Kỷ luật giữ chân:** mỗi lớp phải THÊM cái mới; chuyển lớp thì "re-hook" nhẹ; thà 8 phút đặc
-còn hơn 12 phút loãng.
+còn hơn 10 phút loãng.
 
 **Khuôn xuất video dài:** A. Tên + ý chính + 1 câu hứa · B. Viết **lời dẫn liền mạch theo 5
 phần** trước (như một bài nói chậm, để giữ mạch cảm xúc — đây là bước nháp) · C. Sau đó **chia

@@ -16,7 +16,7 @@ giới an toàn, kiến thức nền dùng chung), và từng thư mục Factory
 `video-factory/`, `community-factory/` (Zalo/Newsletter/bình luận, KHÔNG còn viết Facebook),
 `facebook-factory/` (chuyên riêng bài đăng Facebook — tách khỏi Community Factory từ
 20/07/2026; **2 nguồn ý tưởng song song**: `bai-dang-Facebook-Anh-Minh.md` + tự sinh qua
-`idea_library.md` — xem Bước 2), `image-factory/`, `featured-image-factory/` (chuyên riêng ảnh
+`idea_library.md` — xem Bước 2), `image-factory/`, `featured-Image-factory/` (chuyên riêng ảnh
 đại diện đầu bài viết — tách khỏi `image-factory/` từ 14/07/2026, độc lập, không gắn với Image
 Factory hay bất kỳ Factory nào khác), `ai-anh-minh-chat-factory/`, `research-factory/`,
 `review-factory/`, `publish-factory/`), cùng 3 file backlog chủ đề riêng cho từng kênh (thay
@@ -41,7 +41,7 @@ nội dung nào cho kênh này, LUÔN thực hiện theo đúng thứ tự:
 ### Bước 1 — Luôn đọc CORE_BRAIN trước (bắt buộc, mọi loại nội dung)
 
 > **Ngoại lệ đã xác nhận đúng, giữ nguyên:** Chat Factory (`ai-anh-minh-chat-factory/`) và
-> Featured Image Factory (`featured-image-factory/`) KHÔNG dán `core-brain/instructions.md` vào
+> Featured Image Factory (`featured-Image-factory/`) KHÔNG dán `core-brain/instructions.md` vào
 > ô Instructions — mỗi factory có lý do riêng đã ghi trong `instructions_CHAT.md` và
 > `instructions_FEATURED_IMAGE.md` của chính nó. Đây là ngoại lệ có chủ đích, không phải thiếu sót.
 
@@ -87,8 +87,11 @@ một kho nữa)
   Google Sheet) khi vận hành tự động — vì nhánh Giải Đáp cần đồng bộ với hook đã chọn ở bài SEO
   (xem trên), và nhánh Dưỡng Sinh Ngắn dùng `video-factory/bai_tap_library.md` làm nguồn riêng,
   không phải file backlog nào ở trên.
-- `hook_library_full.md` (2 bản cũ ở `assets/` và `project-memory/`) giữ lại để tham khảo lịch
-  sử, KHÔNG xoá, nhưng KHÔNG Factory nào còn đọc file này nữa.
+- `hook_library_full.md`: **đã bị xoá hẳn khỏi repo** (rà soát 25/07/2026 — cả 2 thư mục
+  `assets/` và `project-memory/` từng chứa file này đều không còn tồn tại). Ghi chú cũ ở đây nói
+  "giữ lại để tham khảo lịch sử, KHÔNG xoá" nay không còn đúng thực tế. Không Factory nào đọc
+  file này nữa, nên việc mất file không ảnh hưởng vận hành — chỉ cần biết để đừng đi tìm. Nếu
+  cần xem lại nội dung cũ, lấy từ lịch sử git.
 
 ### Bước 3 — Đọc đúng file Factory theo loại nội dung được yêu cầu
 
@@ -119,7 +122,8 @@ danh sách ở đây để tránh 2 nơi cùng liệt kê rồi lệch nhau khi 
 `video_ai_prompt_rules.md` + `model_selection_rules.md` (luôn đọc cùng nhau) → `bep_an_nhien.md`
 + `food_library.md` (chỉ khi làm chuỗi "Bếp An Nhiên") → `duong_sinh_bai_tap.md` +
 `bai_tap_library.md` (chỉ khi làm Nhánh B — Dưỡng Sinh Ngắn) → `core-brain/channel_roles.md` →
-`output_schema.md`.
+`output_schema.md` → `video_ai_contract.md` (chỉ khi đụng tới pipeline n8n/khuôn field, không
+cần khi viết kịch bản thủ công).
 
 **Khi được yêu cầu viết BÀI ĐĂNG FACEBOOK (Page/Group):** đọc `facebook-factory/` theo đúng thứ
 tự trong `instructions_facebook.md` (đã ghi rõ trong file: instructions_facebook → execution_flow
@@ -133,7 +137,7 @@ engagement_rules, community_checklist, output_schema). Community Factory KHÔNG 
 Facebook nữa.
 
 **Khi được yêu cầu tạo PROMPT ẢNH:**
-- **Ảnh đại diện đầu bài viết (Featured Image)** → đọc `featured-image-factory/`
+- **Ảnh đại diện đầu bài viết (Featured Image)** → đọc `featured-Image-factory/`
   (`instructions_FEATURED_IMAGE.md` → `input_schema.md` → `featured_image_editorial_rules.md`
   → `featured_image_style_rules.md` → `featured_image_prompt_rules.md` →
   `featured_image_checklist.md` → `output_schema.md`). Đây là Factory riêng cho đúng việc này —
@@ -279,7 +283,7 @@ lưu KHÁC hẳn bài SEO/kịch bản video:
 Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Featured Image** cho đúng bài
 đó — không phải việc riêng phải đợi người dùng nhắc:
 
-1. Đọc `featured-image-factory/` theo đúng thứ tự trong `instructions_FEATURED_IMAGE.md` mục
+1. Đọc `featured-Image-factory/` theo đúng thứ tự trong `instructions_FEATURED_IMAGE.md` mục
    "Đọc theo thứ tự" (editorial → style → prompt → checklist → output schema). **Không dùng**
    `image-factory/` cho việc này nữa (đã tách riêng).
 2. Input = đúng tên file bài viết vừa lưu (VD `1.5.co-the-can-nhung-khoang-yen-tinh.md`) —
@@ -298,7 +302,7 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
      list" ở Bước 6 để đồng bộ; cột Link kịch bản video sửa 18/07/2026 vì video không còn ở
      GitHub): STT, Bài viết (tên file), Link bài SEO (raw GitHub link), **Link kịch bản video**
      (link Google Drive file `_master_script.md` trong thư mục "Kich-ban-video" — để trống nếu
-     bài chưa có video), rồi tới các cột theo `featured-image-factory/output_schema.md` (Image
+     bài chưa có video), rồi tới các cột theo `featured-Image-factory/output_schema.md` (Image
      Type, Category, Concept,
      Subject, Prompt, Negative Prompt, Aspect Ratio, Suggested Size, Filename, Alt Text,
      Caption), và **Trạng thái** ở cột cuối cùng (để trống khi mới tạo, cập nhật thủ công khi

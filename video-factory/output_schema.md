@@ -31,7 +31,9 @@
    mục 1/4 tùy độ dài) — đây là lớp mang độ dài và giá trị của video. Bằng đúng nội dung ghép nối
    các field Voice trong Scenes theo thứ tự Scene ID; dùng để đọc liền mạch/kiểm tra tổng thể,
    không thay thế Scenes.
-7. **Scenes** — danh sách cảnh theo đúng khuôn field ở `video_rules.md` mục 1.C. Mỗi cảnh gồm:
+7. **Scenes** — danh sách cảnh theo đúng khuôn field ở `video_rules.md` mục 1.C. Mỗi cảnh mở đầu
+   bằng heading `### Scene <ID>` (bắt buộc — n8n parse theo khuôn này, xem `video_rules.md` mục
+   1.C và `video_ai_contract.md` GHI CHÚ VẬN HÀNH), rồi tới các field theo đúng thứ tự:
    **Scene ID** (zero-padded 3 chữ số, VD `001`), **Duration** (giây), **Voice** (đoạn lời dẫn
    tiếng Việt của cảnh đó), **Visual** (bối cảnh + chủ thể + hành động, tiếng Anh), **Camera**
    (loại cảnh + chuyển động máy + ánh sáng + âm thanh nền, tiếng Anh), **Character** (tên nhân
@@ -93,7 +95,8 @@
 
 **Production Memory (khi vận hành qua n8n):** Hook, Structure Used, Scenes lặp lại (VD: cùng
 Hook #27, cùng Cấu trúc D, cùng cảnh "Garden") nên được đối chiếu với lịch sử sản xuất gần đây
-(bảng `video_production_log` — xem `funamark-master-blueprint-v2.md` Phần D, WF-07) trước khi
+(bảng `video_production_log` bên n8n — định nghĩa đầy đủ từng nằm ở `funamark-master-blueprint-v2.md`
+Phần D, WF-07, nhưng file đó KHÔNG còn trong repo này từ 25/07/2026; tra trực tiếp trong n8n) trước khi
 chọn, để tránh lặp quá gần nhau khi sản xuất hàng trăm video. Ở chế độ chat thủ công (không qua
 n8n), Video Factory chỉ dựa vào ngữ cảnh cuộc trò chuyện hiện tại để chống lặp (không có bộ nhớ
 dài hạn) — đây là giới hạn đã biết, không phải lỗi.

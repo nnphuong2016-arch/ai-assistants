@@ -27,7 +27,8 @@ Xem bảng đầy đủ 4 kênh ở `core-brain/channel_roles.md` mục 1. Trong
 đang làm nhánh nào trước khi chọn file rules:
 
 - **Nhánh A — GIẢI ĐÁP (kênh chính: YouTube):** chuyển thể các câu hỏi "Tại sao..." thành video
-  TRUNG/DÀI (3–12 phút). Vai trò: **giải đáp câu hỏi** — kể chuyện + giải thích bằng hình ảnh,
+  TRUNG (3–6 phút) hoặc DÀI (8–10 phút) — con số chuẩn duy nhất nằm ở `video_rules.md` mục 2,
+  không ghi lại khoảng thời lượng ở đây để tránh 2 nơi lệch nhau. Vai trò: **giải đáp câu hỏi** — kể chuyện + giải thích bằng hình ảnh,
   trả lời trọn vẹn câu hỏi trong tên video. Dùng `video_rules.md` mục 2 (TRUNG/DÀI) + mục 4
   (kiến trúc video dài) + `examples_and_hooks.md`.
 - **Nhánh B — DƯỠNG SINH NGẮN (kênh chính: TikTok / Facebook Reels / YouTube Shorts):** video
@@ -117,6 +118,11 @@ thuộc Factory khác, không tự ý làm thay.
     trong hệ sinh thái — đọc để biết ranh giới, tránh kịch bản trùng góc/trùng câu với bài SEO
     hoặc post cộng đồng khi cùng một chủ đề gốc được khai thác nhiều nơi.
 11. `output_schema.md` — đóng gói đầu ra đúng khuôn (để n8n đọc được).
+12. `video_ai_contract.md` — hợp đồng pipeline n8n (8 Stage: Planner → Scene Generator → Media
+    Type & Tool → Flux → img2video → ElevenLabs → Whisper → FFmpeg). **Không cần đọc khi chỉ
+    viết kịch bản thủ công**, nhưng BẮT BUỘC đọc khi: chỉnh khuôn field/Scene ID, đổi cách lưu
+    file, hoặc sửa bất kỳ thứ gì n8n phải parse — vì file này quy định chính xác thứ tự field
+    và định dạng heading `### Scene <ID>` mà Code node dựa vào.
 
 **⚠️ Không còn dùng `hook_library_full.md` (đã ngưng dùng từ 20/07/2026 — xem `CLAUDE.md` Bước
 2).** Nguồn hook/câu hỏi của Video Factory giờ là:

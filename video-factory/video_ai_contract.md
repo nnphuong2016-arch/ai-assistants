@@ -1,7 +1,12 @@
-# VIDEO PROMPT TEMPLATES
-STATUS: LOCKED
-VERSION: V1.4
-DATE: 23/07/2026
+# VIDEO AI CONTRACT — HỢP ĐỒNG PIPELINE n8n (8 STAGE)
+STATUS: ACTIVE (sửa được — mọi thay đổi phải bump VERSION + ghi dòng "Cập nhật" bên dưới)
+VERSION: V1.5
+DATE: 25/07/2026
+
+> Đổi tên tiêu đề 25/07/2026: cũ là "VIDEO PROMPT TEMPLATES" — không khớp tên file lẫn nội dung
+> (file mô tả 8 Stage của pipeline n8n, không phải kho prompt template). Nhãn `STATUS: LOCKED`
+> cũng đổi thành ACTIVE vì file đã sửa 4 lần trong một tuần, giữ chữ LOCKED gây hiểu nhầm là
+> không được đụng vào.
 
 > ⚠️ **Cập nhật 23/07/2026 (2):** làm rõ Stage 3 (Flux) còn dùng cho **nhân vật khách** (bất kỳ
 > ai không phải Hiền triết Anh Minh) — chỉ Anh Minh có kho ảnh cố định, nhân vật khách phải
@@ -33,7 +38,11 @@ Không chứa kiến thức.
 
 Các Prompt này chỉ mô tả CÁCH AI phải làm việc.
 
-GHI CHÚ VẬN HÀNH (cập nhật 18/07/2026, xem funamark-master-blueprint-v2.md WF-07B):
+GHI CHÚ VẬN HÀNH (cập nhật 18/07/2026 — WF-07B):
+⚠️ 25/07/2026: `funamark-master-blueprint-v2.md` (từng ở thư mục `project-memory/`) KHÔNG còn
+trong repo này — mã workflow WF-xx dưới đây chỉ còn là tên gọi quy ước trong n8n, không tra
+được trong repo. Nếu cần định nghĩa đầy đủ các WF, lấy trực tiếp từ n8n hoặc phục hồi file
+blueprint vào repo rồi sửa lại tham chiếu này.
 Khi input là file `..._master_script.md` do Video Factory (WF-07) xuất ra và đã PASS Review
 (WF-05), Stage 1 + Stage 2 dưới đây KHÔNG cần gọi AI — file đã có sẵn đúng Storyboard (mỗi
 `### Scene <ID>` = 1 scene, ID zero-padded 3 chữ số theo `video_rules.md` mục 1.C) và đúng nội
@@ -76,7 +85,10 @@ Yêu cầu
 - Mỗi Scene chỉ có 1 ý chính.
 - Video phải đủ thời lượng.
 - Không kéo dài nội dung vô nghĩa.
-- Không bỏ sót CTA.
+- Không bỏ sót CTA. ⚠️ Với kênh này, "CTA" KHÔNG phải lời kêu gọi like/share/mua hàng — mà là
+  **câu kết lắng đọng** ở cảnh cuối (`video_rules.md` mục 1.D: "một câu lắng đọng, mở ra suy
+  ngẫm. Không 'like share' gắt"). Yêu cầu ở đây chỉ có nghĩa: không được cắt mất cảnh kết.
+  Master Script không có field CTA riêng — nó nằm trong Voice của cảnh cuối.
 - Tuân thủ video_rules.md.
 
 ========================================================

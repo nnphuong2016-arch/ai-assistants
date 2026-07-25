@@ -403,3 +403,20 @@ song với bác sĩ.
 - File này (`CLAUDE.md`) nằm ngay trong `ai-assistants` — khi repo này được cập nhật (thêm/sửa
   file bộ não), lần sau chỉ cần đọc lại từ đầu (không cần hỏi lại người dùng), vì đây là nguồn
   gốc duy nhất (single source of truth) cho toàn bộ persona & quy tắc.
+
+### ĐỒNG BỘ NGAY SAU MỖI LẦN SỬA FILE TRONG REPO NÀY (bắt buộc — quy tắc thường trực,
+xác nhận 25/07/2026)
+
+Mỗi lần sửa BẤT KỲ file nào trong repo `ai-assistants` (kể cả sửa nhỏ, sửa 1 dòng, sửa file
+bộ não của bất kỳ Factory nào — `seo-factory/`, `video-factory/`, `core-brain/`, các file
+backlog ở gốc repo, hay chính `CLAUDE.md`), phải **commit + push lên GitHub ngay trong cùng
+lượt làm việc đó** — KHÔNG để dồn sang lượt sau, KHÔNG đợi người dùng nhắc.
+
+- Lý do: môi trường chạy là container tạm, có thể bị dọn sạch giữa các phiên — sửa mà chưa
+  push là mất trắng. Người dùng cũng làm việc song song trên máy khác, nên bản GitHub phải
+  luôn là bản mới nhất.
+- Mức "đồng bộ" đạt yêu cầu = cả 3 nơi cùng trỏ về một commit: worktree local sạch
+  (`git status` không còn file modified/untracked), nhánh làm việc trên remote, và `main`.
+- Quy trình chuẩn đang dùng: commit → push nhánh làm việc → tạo PR → merge vào `main` →
+  `git checkout -B <nhánh> origin/main` rồi push lại nhánh để mọi thứ cùng một commit.
+- Sau khi xong, báo lại cho người dùng commit/PR tương ứng, không chỉ nói "đã sửa xong".

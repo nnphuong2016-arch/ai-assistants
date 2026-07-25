@@ -8,10 +8,12 @@
 > Camera/Character/Emotion/Loop, tách Master Script khỏi prompt platform-specific (xem mục 1, 4, 5).
 > Cập nhật: 20/07/2026 — mục 2 làm rõ VIDEO NGẮN gồm 2 loại nội dung khác nhau (suy ngẫm vs
 > Dưỡng Sinh Ngắn — xem `instructions_VIDEO.md` mục 1B).
-> Cập nhật: 25/07/2026 — **chốt VIDEO DÀI = 8–10 cảnh · tối đa 3 Clip · tối đa 10–12 Ảnh giữ**
+> Cập nhật: 25/07/2026 — **chốt VIDEO DÀI = 8–10 cảnh · tối đa 3 Clip · tối đa 13–16 Ảnh giữ**
 > (mục 2 + mục 6), thay "15–20 cảnh" cũ và gỡ mâu thuẫn với bảng "30–35 cảnh" ở
 > `model_selection_rules.md`. Thêm **mục 6B Image Motion Engine** — Ken Burns đơn thuần chỉ giữ
-> được ảnh ~20–25 giây, muốn giữ 45–75 giây phải xếp tầng hiệu ứng. Học từ mô hình kênh
+> được ảnh ~20–25 giây, muốn giữ 30–45 giây phải xếp tầng hiệu ứng. Trần ảnh nâng từ 10–12 lên
+> 13–16 (25/07/2026, quyết định của chủ kênh) — thời lượng giữ mỗi ảnh giảm tương ứng còn 30–45
+> giây thay vì 45–75. Học từ mô hình kênh
 > My Dog & My Love (`youtube-mydog_mylove`), điều chỉnh theo thể loại chiêm nghiệm và thực tế
 > khán giả kênh này **nghe nhiều hơn nhìn**.
 
@@ -135,7 +137,7 @@ không kéo dãn một ý cho đủ giờ.
 - Nền tảng: YouTube · Podcast video.
 - Thời lượng: **8–10 phút**.
 - Số cảnh: **8–10 cảnh** (chốt 25/07/2026 — thay "15–20" cũ). Mỗi cảnh **55–75 giây lời dẫn**.
-- **Ngân sách hình (trần cứng): tối đa 3 Clip + tối đa 10–12 Ảnh giữ** — xem mục 6 và
+- **Ngân sách hình (trần cứng): tối đa 3 Clip + tối đa 13–16 Ảnh giữ** — xem mục 6 và
   `model_selection_rules.md` mục 1B.
 - Mục tiêu: đào sâu chủ đề · nhiều lớp góc nhìn · có phần áp dụng thực tế · KHÔNG kéo dài một ý cho đủ giờ.
 - Theo **kiến trúc long-form ở mục 4**.
@@ -219,17 +221,20 @@ B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn kh�
 |---|---|
 | Cảnh | 8–10 (mỗi cảnh 55–75 giây lời dẫn) |
 | Clip AI video | **tối đa 3** |
-| Ảnh giữ | **tối đa 10–12** (mỗi ảnh giữ 45–75 giây) |
+| Ảnh giữ | **tối đa 13–16** (mỗi ảnh giữ 30–45 giây) |
 
 - **Vị trí 3 Clip:** MỞ (Anh Minh nói trực diện, neo sự hiện diện nhân vật) · một khoảnh khắc chủ
   đạo giữa bài · KẾT LẮNG. Không rải đều — đặt đúng 3 điểm cảm xúc.
-- **Ảnh làm start-frame cho Clip KHÔNG tính vào trần 10–12.** Chỉ đếm ảnh **giữ độc lập** (tự nó
+- **Ảnh làm start-frame cho Clip KHÔNG tính vào trần 13–16.** Chỉ đếm ảnh **giữ độc lập** (tự nó
   hiện trên màn hình). Với kênh này, start-frame của cả 3 Clip lấy thẳng từ `characters/` nên
   **chi phí ảnh nhân vật bằng 0** — không generate lại (xem `core-brain/image_style_bible.md` mục 0B).
 - **Khán giả kênh này NGHE nhiều hơn NHÌN** (nội dung sức khỏe/triết lý dạng kể chuyện, thường
-  bật lên nghe khi đang làm việc khác). Vì vậy ưu tiên giữ ảnh ở **mức dài của khoảng (60–75
+  bật lên nghe khi đang làm việc khác). Vì vậy ưu tiên giữ ảnh ở **mức dài của khoảng (40–45
   giây)**, không cần đổi hình dồn dập. Giá trị video nằm ở lời dẫn — hình để nâng đỡ, không để
   tranh sự chú ý.
+- **Cách tính ra 13–16 ảnh:** video 8–10 phút trừ đi ~27 giây của 3 Clip còn ~450–570 giây hình.
+  Chia cho 13–16 ảnh ra ~30–45 giây mỗi ảnh. Muốn ảnh giữ lâu hơn thì giảm số ảnh, muốn đổi hình
+  dày hơn thì tăng số ảnh — nhưng **không vượt trần 16**.
 - Tạo MỘT kho B-roll tĩnh đẹp, dùng lại across nhiều video — đừng generate mới từng cảnh.
 - Clip AI video generate gốc 6–10 giây → khi dựng, kéo dài cảm giác thành 8–12 giây bằng
   zoom/pan/crop nhẹ (không generate clip dài hơn — tốn thêm chi phí).
@@ -238,7 +243,7 @@ B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn kh�
 ### 6B. IMAGE MOTION ENGINE (bắt buộc — không giữ ảnh lâu chỉ bằng Ken Burns)
 
 > Thêm 25/07/2026. Đây là mảnh còn thiếu khiến các tính toán trước đó sai: **Ken Burns đơn thuần
-> chỉ giữ được một ảnh ~20–25 giây trước khi màn hình thấy đứng chết.** Muốn giữ 45–75 giây thì
+> chỉ giữ được một ảnh ~20–25 giây trước khi màn hình thấy đứng chết.** Muốn giữ 30–45 giây thì
 > phải xếp tầng hiệu ứng. Học từ `visual_bible_dog1.md` §15.4 của kênh My Dog & My Love.
 
 Mỗi ảnh giữ đi qua một chồng lớp hiệu ứng ở bước dựng — **Ken Burns là lớp nền của mọi ảnh**,
@@ -247,7 +252,7 @@ cộng thêm **tối đa 2 lớp** trong số:
 - **Parallax** — tách ảnh thành lớp gần/giữa/xa trôi khác tốc độ. Dùng cho cảnh không gian, hoặc
   ảnh có chủ thể tiền cảnh rõ (bàn tay, khung cửa, tách trà).
 - **Depth of Field** — chuyển nét (rack focus) hoặc mờ hậu cảnh co/giãn nhẹ, để dẫn mắt người xem
-  giữa một lần giữ dài. Hiệu quả nhất với ảnh giữ trên 45 giây.
+  giữa một lần giữ dài. Hiệu quả nhất với ảnh giữ trên 35 giây.
 - **Light Rays / Light Leak** — tia nắng mềm qua cửa sổ/tán cây. Để dành cho đoạn ấm áp, hy vọng,
   chữa lành — không dùng ở đoạn trầm buồn, sẽ mất trọng lượng cảm xúc.
 - **Particles** — bụi nắng, lá rơi, hạt mưa. Dùng rất tiết chế, chỉ khi mùa/thời tiết trong nội

@@ -141,7 +141,7 @@ gốc, không generate lại.
 |---|---|
 | Cảnh (đơn vị lời dẫn) | 8–10 (mỗi cảnh 55–75 giây) |
 | Clip AI video | **tối đa 3** |
-| Ảnh giữ độc lập | **tối đa 10–12** (mỗi ảnh giữ 45–75 giây, qua Image Motion Engine) |
+| Ảnh giữ độc lập | **tối đa 13–16** (mỗi ảnh giữ 30–45 giây, qua Image Motion Engine) |
 
 > ⚠️ **Bảng này thay bảng cũ "30–35 cảnh / 9–11 Clip / 20–24 ảnh tĩnh"** (bản 23/07/2026). Bảng cũ
 > vừa mâu thuẫn với `video_rules.md` mục 2, vừa đắt bất hợp lý: 9–11 Clip cho 8–10 phút là
@@ -151,7 +151,7 @@ gốc, không generate lại.
 
 **Hai quy tắc đếm bắt buộc nhớ:**
 
-1. **Ảnh dùng làm start-frame cho Clip KHÔNG tính vào trần 10–12.** Chỉ đếm ảnh **giữ độc lập**
+1. **Ảnh dùng làm start-frame cho Clip KHÔNG tính vào trần 13–16.** Chỉ đếm ảnh **giữ độc lập**
    (tự nó hiện trên màn hình). Mỗi Clip đều cần một khung mở đầu, nhưng khung đó không phải một
    "ảnh giữ".
 2. **Start-frame của kênh này miễn phí.** Cả 3 Clip đều là img2video animate thẳng từ kho ảnh nhân

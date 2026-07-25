@@ -96,7 +96,7 @@ Mỗi video có **2 file** trong cùng thư mục Drive, không phải 1:
 
 - Tên file prompt: giống hệt master script, chỉ đổi đuôi `_master_script.md` → `_prompts.md`.
 - Cuối file prompt ghi một dòng **tự kiểm ngân sách**: số Ảnh giữ độc lập và số Clip thực tế, đối
-  chiếu trần ở `model_selection_rules.md` mục 1B (video DÀI Mức 1: ≤3 Clip, ≤10–12 Ảnh giữ). Ảnh
+  chiếu trần ở `model_selection_rules.md` mục 1B (video DÀI Mức 1: ≤3 Clip, ≤13–16 Ảnh giữ). Ảnh
   làm start-frame cho Clip liệt kê riêng, không tính vào trần.
 - Tách 2 file để khi đổi/thêm công cụ AI chỉ phải viết lại file prompt, giữ nguyên Master Script —
   đúng nguyên tắc tool-agnostic ở mục 7 trên.

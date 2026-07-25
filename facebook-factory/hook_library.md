@@ -333,13 +333,23 @@ Cơ thể không biết nói.
 
 Nhưng luôn biết nhắc.
 
-Tim không than phiền.
+Có những buổi sáng.
 
-Cho đến khi quá muộn.
+Cơ thể dậy trước cả suy nghĩ.
 
-Gan rất ít khi đau.
+Đôi vai vẫn gồng.
 
-Đó cũng là điều đáng sợ.
+Dù hôm nay chẳng mang gì nặng.
+
+Lưu ý
+
+Body Hooks nói về cảm nhận cơ thể trong ngày sống.
+
+Không nói về bệnh.
+
+Không hàm ý sẽ phải trả giá về sau.
+
+Không lấy tên nội tạng làm điểm vào.
 
 ---
 

@@ -226,39 +226,60 @@ Mọi điều liên quan đến cơ thể.
 
 ---
 
-# 6. SỨC KHỎE (HEALTH)
+# 6. GIỮ GÌN SỨC KHỎE (HEALTH CARE)
 
 Không viết như bác sĩ.
 
 Viết từ trải nghiệm.
 
-### Phòng bệnh
+Nhóm này KHÔNG lấy tên cơ quan nội tạng, tên bệnh hay chỉ số xét nghiệm làm Topic.
 
-### Phục hồi
+Tim mạch, gan, huyết áp, đường huyết, mỡ máu, ung thư đều KHÔNG phải Topic hợp lệ —
+đúng như phần Content Philosophy ở đầu file đã nêu. Nếu một ý tưởng chỉ có thể kể được
+bằng cách gọi tên cơ quan hay tên bệnh, ý tưởng đó không thuộc Facebook Factory.
 
-### Miễn dịch
+### Giữ gìn mỗi ngày
 
-### Tim mạch
+- Thói quen nhỏ
+- Sự đều đặn
+- Điều làm hôm nay cho nhiều năm sau
 
-### Gan
+### Lắng nghe cơ thể
 
-### Não
+- Dấu hiệu mệt
+- Khi nào nên dừng
+- Khi nào nên nghỉ
 
-### Huyết áp
+### Đi khám
 
-### Đường huyết
+- Ngại đi khám
+- Khám định kỳ
+- Sau khi đi khám về
 
-### Mỡ máu
+### Hồi phục
 
-### Cơ xương khớp
-
-### Tiêu hóa
-
-### Hô hấp
-
-### Ung thư
+- Sau một trận ốm
+- Những ngày đầu khỏe lại
+- Nhịp sống chậm lại
 
 ### Chăm sóc người bệnh
+
+> Nhóm này bắt buộc theo ranh giới cứng ở `core-brain/dong_hanh_nguoi_benh.md` —
+> chỉ đồng hành tinh thần, không nói về bệnh.
+
+---
+
+## Phân biệt nhóm 1 và nhóm 6
+
+Hai nhóm dễ lẫn. Tiêu chí chọn:
+
+**Nhóm 1 — Cơ thể:** bài kể về **một ngày sống cụ thể** với cơ thể.
+Ví dụ: sáng dậy còn nặng người, bữa cơm ăn vội, đi bộ buổi chiều.
+
+**Nhóm 6 — Giữ gìn sức khỏe:** bài kể về **thái độ chăm sóc lâu dài**.
+Ví dụ: ngại đi khám, giữ một thói quen suốt nhiều năm, chăm người ốm.
+
+Nếu vẫn phân vân, chọn nhóm 1.
 
 ---
 
@@ -316,7 +337,7 @@ với Website/YouTube/Chat), dùng bảng quy đổi sau:
 | 3. Gia đình | Tâm lý & đời sống |
 | 4. Đời sống | Tâm lý & đời sống (riêng "Thiên nhiên" có thể lệch sang Triết lý phương Đông) |
 | 5. Thời gian | Không phải trụ riêng — là khung thời gian áp lên trụ khác, chọn trụ theo nội dung thật của bài |
-| 6. Sức khỏe | Sức khỏe |
+| 6. Giữ gìn sức khỏe | Sức khỏe |
 | 7. Đồng hành | Đồng hành tuổi già & người bệnh |
 | 8. Triết lý sống | Triết lý phương Đông |
 

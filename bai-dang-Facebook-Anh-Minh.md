@@ -17,7 +17,7 @@ Một phút nhìn lại → Tự nhìn lại bản thân và thói quen.
 2. Có những thay đổi của cơ thể diễn ra rất lâu trước khi ta nhận ra.
 3. Có những người chỉ bắt đầu yêu sức khỏe sau một lần nhập viện.
 4. Có những ngày điều cơ thể cần nhất chỉ là được nghỉ ngơi.
-5. Có những cơn đau không lớn, nhưng âm thầm ở lại nhiều năm.
+5. Có những cơn đau không lớn, nhưng ở lại rất lâu trong đời sống thường ngày.
 6. Có những thói quen nhỏ đang quyết định sức khỏe của cả tương lai.
 7. Có những bữa cơm ngon nhất không phải vì món ăn, mà vì đủ người.
 8. Có những khoảng lặng giúp cơ thể hồi phục hơn cả một ngày nghỉ.
@@ -29,7 +29,7 @@ Một phút nhìn lại → Tự nhìn lại bản thân và thói quen.
 14. Có những nỗi mệt không thể chữa bằng một giấc ngủ.
 15. Có những người khỏe mạnh vì biết dừng đúng lúc.
 16. Có những ngày đi chậm lại lại giúp ta đi xa hơn.
-17. Có những điều cơ thể tha thứ khi còn trẻ nhưng sẽ đòi lại khi lớn tuổi.
+17. Có những thói quen tuổi trẻ dễ bỏ qua, đến khi lớn tuổi mới thấy cần chăm chút hơn.
 18. Có những áp lực không ai nhìn thấy nhưng cơ thể vẫn ghi nhớ.
 19. Có những thay đổi rất nhỏ hôm nay sẽ tạo nên khác biệt lớn vài năm sau.
 20. Có những người không già vì tuổi tác mà vì đánh mất sự tò mò với cuộc sống.
@@ -42,7 +42,7 @@ Một phút nhìn lại → Tự nhìn lại bản thân và thói quen.
 27. Có những ngày bình thường chính là điều đáng biết ơn nhất.
 28. Có những thay đổi bắt đầu từ việc ngủ sớm hơn một giờ.
 29. Có những người không cần sống lâu hơn, chỉ cần sống khỏe hơn.
-30. Có những điều chỉ khi cơ thể lên tiếng, con người mới chịu thay đổi.
+30. Có những thay đổi chỉ bắt đầu khi ta thật sự lắng nghe cơ thể mình.
 
 # SERIES 2 – ĐÔI KHI...
 (Mục đích: Những nghịch lý ít người để ý)
@@ -54,14 +54,14 @@ Một phút nhìn lại → Tự nhìn lại bản thân và thói quen.
 5. Đôi khi điều khó nhất không phải thay đổi cuộc sống mà là thay đổi một thói quen nhỏ.
 6. Đôi khi càng lo cho tương lai, ta càng bỏ quên hiện tại.
 7. Đôi khi một tiếng cười giúp cơ thể thư giãn hơn nhiều loại thuốc bổ.
-8. Đôi khi sức khỏe mất đi rất chậm, đến mức ta tưởng nó vẫn còn nguyên vẹn.
+8. Đôi khi sức khỏe thay đổi rất chậm, chậm đến mức ta quên để ý tới nó.
 9. Đôi khi một bữa cơm đúng giờ còn quan trọng hơn một bữa ăn thật đắt tiền.
 10. Đôi khi điều cơ thể cần chỉ là một đêm ngủ trọn vẹn.
 11. Đôi khi những người luôn nói "tôi ổn" lại là người cần được quan tâm nhất.
 12. Đôi khi ta chăm sóc điện thoại kỹ hơn chính cơ thể mình.
-13. Đôi khi bệnh không đến vì một ngày quá sức mà vì nhiều năm sống quá sức.
+13. Đôi khi sự mệt mỏi không đến từ một ngày quá sức, mà từ nhiều năm không có khoảng nghỉ.
 14. Đôi khi càng lớn tuổi, điều đáng tự hào nhất lại là còn khỏe mạnh.
-15. Đôi khi cơ thể tha thứ rất nhiều, nhưng không tha thứ mãi mãi.
+15. Đôi khi cơ thể chịu đựng rất giỏi, nên càng cần được nghỉ đúng lúc.
 16. Đôi khi sự bình yên bắt đầu từ việc tắt bớt một thông báo trên điện thoại.
 17. Đôi khi điều làm tim nhẹ hơn không phải tiền bạc mà là một cuộc trò chuyện chân thành.
 18. Đôi khi sống chậm lại mới nhận ra mình đã bỏ lỡ quá nhiều điều đẹp.
@@ -144,7 +144,7 @@ Một phút nhìn lại → Tự nhìn lại bản thân và thói quen.
 27. Đừng vội để một ngày trôi qua mà không dành vài phút cho bản thân.
 28. Đừng vội nghĩ bình an là điều tự nhiên mà có.
 29. Đừng vội đợi cuộc sống chậm lại rồi mới bắt đầu sống chậm.
-30. Đừng vội quên rằng mỗi lựa chọn hôm nay đang âm thầm tạo nên sức khỏe của ngày mai.
+30. Đừng vội quên rằng mỗi lựa chọn hôm nay đang góp phần tạo nên sức khỏe của ngày mai.
 
 # SERIES 5 – NẾU HÔM NAY...
 (Mục đích: Gợi ý một hành động nhỏ ngay hôm nay)
@@ -163,7 +163,7 @@ Một phút nhìn lại → Tự nhìn lại bản thân và thói quen.
 12. Nếu hôm nay còn có thể ăn cùng gia đình, hãy ăn chậm và trò chuyện nhiều hơn.
 13. Nếu hôm nay còn có thể tha thứ, đừng để ngày mai.
 14. Nếu hôm nay còn có thể nói lời cảm ơn, hãy nói ngay.
-15. Nếu hôm nay còn có thể xin lỗi, đừng để quá muộn.
+15. Nếu hôm nay còn có thể nói một lời xin lỗi, đừng để lời ấy chờ quá lâu.
 16. Nếu hôm nay còn có thể uống thêm một cốc nước, hãy làm ngay bây giờ.
 17. Nếu hôm nay còn có thể vươn vai vài giây giữa giờ làm việc, đừng bỏ lỡ.
 18. Nếu hôm nay còn có thể ngắm bình minh hoặc hoàng hôn, hãy dành vài phút cho khoảnh khắc ấy.
@@ -203,7 +203,7 @@ Một phút nhìn lại → Tự nhìn lại bản thân và thói quen.
 18. Điều đáng nghĩ hôm nay: Mỗi ngày sống chậm lại một chút, ta sẽ nhìn rõ cuộc sống hơn.
 19. Điều đáng nghĩ hôm nay: Có lẽ điều khó nhất không phải là sống lâu, mà là sống những năm tháng cuối đời trong khỏe mạnh.
 20. Điều đáng nghĩ hôm nay: Điều con cái nhớ về cha mẹ thường không phải là tài sản, mà là những bữa cơm và khoảng thời gian bên nhau.
-21. Điều đáng nghĩ hôm nay: Căng thẳng kéo dài đang âm thầm lấy đi nhiều thứ hơn ta tưởng.
+21. Điều đáng nghĩ hôm nay: Căng thẳng kéo dài ảnh hưởng tới nhiều thứ hơn ta thường để ý.
 22. Điều đáng nghĩ hôm nay: Có những món quà không cần gói giấy, chỉ cần đúng lúc.
 23. Điều đáng nghĩ hôm nay: Biết dừng lại cũng là một dạng của trí tuệ.
 24. Điều đáng nghĩ hôm nay: Chăm sóc bản thân không phải vì mình sống lâu hơn, mà để sống tốt hơn.
@@ -236,7 +236,7 @@ Một phút nhìn lại → Tự nhìn lại bản thân và thói quen.
 17. Một phút nhìn lại: Bạn đang sống theo điều mình mong muốn hay chỉ đang chạy theo nhịp sống?
 18. Một phút nhìn lại: Hôm nay bạn có gọi cho người mình yêu thương không?
 19. Một phút nhìn lại: Có bao lâu rồi bạn chưa đi bộ chỉ để tận hưởng cuộc sống?
-20. Một phút nhìn lại: Bạn đang tích lũy sức khỏe hay đang âm thầm rút bớt nó mỗi ngày?
+20. Một phút nhìn lại: Mỗi ngày, bạn đang thêm vào hay bớt đi một chút sức khỏe của mình?
 21. Một phút nhìn lại: Điều gì hôm nay đáng để biết ơn nhất?
 22. Một phút nhìn lại: Bạn có đang để công việc chiếm hết cuộc sống của mình không?
 23. Một phút nhìn lại: Lần cuối bạn đi ngủ trước 11 giờ là khi nào?

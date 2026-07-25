@@ -137,6 +137,52 @@ tưởng tự sinh.
 
 ---
 
+# STEP 3.5
+Safety Filter
+
+Bắt buộc. Không bỏ qua kể cả khi hook lấy từ kho có sẵn.
+
+Kho hook và ý tưởng tự sinh đều KHÔNG được coi là đã an toàn.
+
+Đối chiếu ý tưởng vừa chọn với
+
+writing_rules.md mục 4.1
+
+Loại ngay nếu hook chứa:
+
+- Dọa bệnh.
+- Hàm ý cơ thể đang suy yếu mà ta không biết.
+- Hàm ý sẽ phải trả giá về sau.
+- Nói về diễn tiến bệnh.
+- Chỉ số xét nghiệm.
+- Tên cơ quan nội tạng làm chủ đề chính.
+
+Ví dụ
+
+Không dùng
+
+Sức khỏe mất đi rất chậm, đến mức ta tưởng nó vẫn còn nguyên vẹn.
+
+Cơ thể tha thứ rất nhiều, nhưng không tha thứ mãi mãi.
+
+Dùng
+
+Sức khỏe thay đổi rất chậm, chậm đến mức ta quên để ý tới nó.
+
+Cơ thể chịu đựng rất giỏi, nên càng cần được nghỉ đúng lúc.
+
+Cùng một quan sát.
+
+Bỏ phần dọa.
+
+Giữ phần thấu hiểu.
+
+Nếu hook không qua được bước này.
+
+Quay lại STEP 3.
+
+---
+
 # STEP 4
 Choose Hook
 
@@ -340,6 +386,10 @@ Ideas
 
 ↓
 
+Safety Filter
+
+↓
+
 Hook
 
 ↓
@@ -377,6 +427,12 @@ Quay lại Step 4.
 Nếu ý tưởng yếu.
 
 Quay lại Step 3.
+
+Nếu hook chạm ranh giới an toàn.
+
+Quay lại Step 3.
+
+Không sửa nhẹ để lách.
 
 Nếu cấu trúc chưa ổn.
 

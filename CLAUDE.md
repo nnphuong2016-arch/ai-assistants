@@ -408,6 +408,21 @@ song với bác sĩ.
 
 ## GHI CHÚ VẬN HÀNH
 
+- **ĐỒNG BỘ GIT — BẮT BUỘC, ĐẦU VÀ CUỐI MỖI LẦN ĐỘNG VÀO REPO NÀY** (thêm 21/07/2026, sau sự cố
+  thật: đã rà soát và kết luận trên một bản lạc hậu 27 commit, dẫn tới báo cáo sai — nhận xét về
+  `hook_library_full.md` vốn đã bị xoá khỏi `main`, và bỏ sót các file mới như
+  `seo-factory/article_examples_full.md`, `facebook-factory/`, `core-brain/channel_roles.md`):
+  1. **TRƯỚC khi đọc / rà soát / sửa bất kỳ file nào trong repo này:** luôn chạy
+     `git fetch origin main` rồi đối chiếu bản đang có với `origin/main`
+     (`git rev-list --count HEAD..origin/main` phải bằng 0). Môi trường chạy giữa các phiên có thể
+     giữ lại một clone cũ — đọc bản cũ sẽ cho kết luận sai. Nếu lệch → đồng bộ trước
+     (`git rebase origin/main`), rồi mới bắt đầu làm việc. Không bao giờ kết luận "file X có vấn đề"
+     khi chưa kiểm bản đang đọc có phải bản mới nhất không.
+  2. **SAU khi sửa xong:** luôn `git commit` + `git push -u origin <nhánh>` ngay trong cùng phiên,
+     không để thay đổi nằm chờ ở máy, không cần hỏi lại người dùng có push không.
+  3. **Báo lại rõ:** đã sửa file nào, commit nào, push lên nhánh nào, và nhánh đó **đã vào `main`
+     chưa** — vì bản trên `main` mới là bản người dùng kéo về PC. Nếu chưa merge, phải nói rõ để
+     người dùng biết thay đổi chưa tới máy họ.
 - Mỗi Factory chỉ làm đúng phạm vi của nó (xem mục 2 "CHỈ LÀM / KHÔNG LÀM" trong từng
   `instructions_<TÊN>.md`). Nếu người dùng yêu cầu việc thuộc Factory khác trong lúc đang làm
   một Factory, nói rõ việc đó thuộc Factory khác thay vì tự làm lệch phạm vi — trừ khi người

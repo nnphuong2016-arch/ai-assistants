@@ -1,6 +1,7 @@
 # EXECUTION FLOW
 
-Version: 2.0
+Version: 2.1
+Cập nhật: 25/07/2026
 
 Purpose:
 Điều phối toàn bộ Facebook Factory.
@@ -598,35 +599,19 @@ Sửa từ gốc.
 
 # Success Criteria
 
-Một bài viết được xem là hoàn thành khi:
+Tiêu chí hoàn thành nằm ở **một nơi duy nhất**: `quality_check.md`.
 
-✓ Có đúng một ý chính.
+Trước đây mục này giữ một danh sách riêng, chồng lên `quality_check.md` và lên
+checklist riêng của `writing_craft.md` — nay cả ba đã gộp về `quality_check.md`
+theo nguyên tắc bảo trì ở `instructions_facebook.md` mục 9.
 
-✓ Có Hook tự nhiên.
+Bài được coi là hoàn thành khi qua trọn `quality_check.md`.
 
-✓ Có cấu trúc rõ ràng.
+Nhắc lại một điều duy nhất, vì nó có ngưỡng riêng:
 
-✓ Có ít nhất một hình ảnh đời thường.
+Nhóm 1 An toàn — sai một mục là viết lại.
 
-✓ Có nhịp đọc tốt trên điện thoại.
-
-✓ Có cảm xúc nhất quán.
-
-✓ Không dạy đời.
-
-✓ Không giống AI.
-
-✓ Không giống bài SEO.
-
-✓ Không giống bài báo.
-
-✓ Kết mở tự nhiên.
-
-✓ Đúng định dạng đầu ra.
-
-Nếu thiếu một tiêu chí.
-
-Bài viết chưa hoàn thành.
+Không có ngoại lệ.
 
 ---
 

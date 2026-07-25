@@ -1,6 +1,7 @@
 WRITING CRAFT
 
-Version: 2.0
+Version: 2.1
+Cập nhật: 25/07/2026
 Status: Foundation Document
 Applies to: Facebook Factory (AI-Agnostic)
 
@@ -478,65 +479,21 @@ Hãy khiến người đọc nghĩ:
 
 "Câu này giống mình."
 
-Kiểu 1 — Quan sát
+Toàn bộ **thư viện mẫu mở bài** nằm ở `hook_library.md` (20 TYPE + Hook Engine) —
+mục này KHÔNG lặp lại danh sách đó.
 
-Ví dụ
+Ở đây chỉ giữ nguyên tắc chọn:
 
-Dạo này mình để ý một chuyện...
+Hook phải phục vụ chủ đề.
 
-Kiểu 2 — Hóa ra
+Không chọn hook chỉ vì nó hay.
 
-Hóa ra cơ thể không ghét làm việc.
+Một hook đúng nhưng nhạt.
 
-Nó chỉ ghét làm mãi mà không được nghỉ.
+Vẫn hơn một hook mạnh nhưng lệch bài.
 
-Kiểu 3 — Có những ngày
-
-Có những ngày.
-
-Chỉ cần bước ra khỏi giường cũng thấy mệt.
-
-Kiểu 4 — Một câu hỏi thật
-
-Không phải
-
-Bạn có biết...
-
-Mà là
-
-Có bao giờ bạn ngủ đủ.
-
-Nhưng vẫn thấy như chưa ngủ?
-
-Kiểu 5 — Một hình ảnh
-
-Chiếc cốc trà trên bàn đã nguội.
-
-Mình mới nhớ.
-
-Hôm nay vẫn chưa uống ngụm nào.
-
-Kiểu 6 — Một câu nói
-
-Có người cha từng nói với con...
-
-Kiểu 7 — Một điều vừa nhận ra
-
-Hôm qua mình mới hiểu...
-
-Kiểu 8 — Một ký ức
-
-Hồi còn nhỏ...
-
-Kiểu 9 — Một hành động
-
-Sáng nay mình mở cửa sổ.
-
-Kiểu 10 — Một nghịch lý
-
-Càng cố ngủ.
-
-Lại càng khó ngủ.
+Và bắt buộc: mọi hook phải qua STEP 3.5 Safety Filter của `execution_flow.md`
+trước khi dùng.
 
 20. Transition Techniques (Chuyển ý)
 
@@ -624,9 +581,14 @@ Biết đâu.
 
 Chỉ là nghỉ sớm hơn một chút.
 
-22. Những câu AI rất hay dùng (và nên tránh)
+22. Ngôn ngữ cần tránh
 
-Không nên viết:
+> Toàn bộ danh sách từ ngữ và câu cần tránh gom về đúng mục này. Mục 27, 30, 31 trước đây
+> giữ ba danh sách rời chồng lên nhau — nay đã gộp vào đây.
+> Các hành vi bị CẤM (dạy đời, clickbait, liệt kê...) nằm ở `writing_rules.md` mục 4,
+> không lặp lại ở đây.
+
+22.1 Câu mở và câu chuyển kiểu AI
 
 Điều này vô cùng quan trọng...
 Chúng ta cần...
@@ -636,8 +598,45 @@ Không thể phủ nhận...
 Từ đó cho thấy...
 Điều đáng nói là...
 Qua bài viết này...
+Ngoài ra... / Bên cạnh đó... / Hơn nữa...
 
-Những câu này khiến bài viết mất đi cảm giác chân thật.
+22.2 Từ đệm rỗng
+
+vô cùng
+cực kỳ
+đặc biệt
+quan trọng
+cần thiết
+hiệu quả
+tối ưu
+đáng lưu ý
+không thể phủ nhận
+rõ ràng
+
+Thay bằng ngôn ngữ bình thường.
+
+Thay "vô cùng mệt" bằng "thấy hơi mệt".
+
+22.3 Tính từ tán dương
+
+Tuyệt vời. Xuất sắc. Kỳ diệu.
+
+22.4 Giọng dẫn nguồn không cần thiết
+
+Theo nghiên cứu... Theo thống kê... Theo chuyên gia...
+
+Nghiên cứu đã chứng minh... Các chuyên gia đều đồng ý...
+
+22.5 Câu khẩu hiệu ở cuối bài
+
+Hãy sống tích cực. Chúc bạn thành công. Hy vọng bài viết hữu ích.
+
+22.6 Cụm đúng giọng nhưng dễ thành công thức
+
+Hóa ra... · Có lẽ... · Mình nhận ra... · Đôi khi... · Thật ra...
+
+Những cụm này KHÔNG sai — nhưng mỗi bài chỉ nên dùng **một** làm điểm nhấn.
+Dùng ba bốn lần trong một bài là lộ công thức.
 
 23. Nguyên tắc cuối cùng
 
@@ -904,7 +903,8 @@ Người đọc sẽ mệt.
 
 27. Anti-patterns
 
-Đây là danh sách AI phải tránh.
+Danh sách **hành vi** cần tránh. Danh sách **ngôn ngữ** cần tránh nằm ở mục 22.
+Danh sách bị CẤM tuyệt đối nằm ở `writing_rules.md` mục 4.
 
 27.1 Dạy đời
 
@@ -923,43 +923,8 @@ Sai
 Thứ nhất
 Thứ hai
 Thứ ba
-27.3 Quá nhiều tính từ
 
-Sai
-
-Tuyệt vời.
-
-Xuất sắc.
-
-Kỳ diệu.
-
-Vô cùng.
-
-27.4 Viết như ChatGPT
-
-Ví dụ
-
-Trong cuộc sống hiện đại...
-
-Điều quan trọng là...
-
-Điều đáng lưu ý...
-
-Cấm.
-
-27.5 Viết như báo
-
-Theo nghiên cứu...
-
-Theo thống kê...
-
-Theo chuyên gia...
-
-Nếu bài không cần.
-
-Đừng dùng.
-
-27.6 Mở bài bằng định nghĩa
+27.3 Mở bài bằng định nghĩa
 
 Sai
 
@@ -967,19 +932,29 @@ Giấc ngủ là...
 
 Facebook không phải Wikipedia.
 
-27.7 Kết bằng khẩu hiệu
+27.4 Để nhân vật nói ra bài học thay tác giả
+
+Lỗi hay gặp nhất ở bài hội thoại (F11).
 
 Sai
 
-Hãy sống tích cực.
+"Nhân cách là thứ sẽ đi cùng con suốt cuộc đời."
 
-Sai
+Không ai nói câu đó ngoài đời.
 
-Chúc bạn thành công.
+Đúng
 
-Sai
+"Bố chỉ sợ con chọn đường này vì bố."
 
-Hy vọng bài viết hữu ích.
+Một nỗi sợ thật.
+
+Không phải một bài giảng.
+
+27.5 Giải thích thêm sau khi câu chuyện đã kết thúc
+
+Nếu cảnh cuối đã đủ.
+
+Đừng viết thêm một đoạn rút ra ý nghĩa.
 
 28. Quy tắc vàng
 
@@ -1066,52 +1041,7 @@ Rồi mang đi làm luôn.
 
 Hôm nay vẫn chưa ăn gì.
 
-30. Những từ AI rất thích dùng
-
-Nếu không cần.
-
-Đừng dùng.
-
-Ví dụ
-
-vô cùng
-cực kỳ
-đặc biệt
-quan trọng
-cần thiết
-hiệu quả
-tối ưu
-đáng lưu ý
-không thể phủ nhận
-rõ ràng
-
-Thay bằng ngôn ngữ bình thường.
-
-Ví dụ
-
-Thay
-
-vô cùng mệt
-
-bằng
-
-thấy hơi mệt
-
-31. Những cụm nên hạn chế
-
-Không nên lặp quá nhiều
-
-Hóa ra...
-Có lẽ...
-Mình nhận ra...
-Đôi khi...
-Thật ra...
-
-Mỗi bài chỉ nên có một "điểm nhấn".
-
-Đừng biến chúng thành công thức.
-
-32. Người đọc thích điều gì?
+30. Người đọc thích điều gì?
 
 Không phải kiến thức.
 
@@ -1123,7 +1053,7 @@ Nếu bài viết khiến người đọc gật đầu.
 
 Đã thành công.
 
-33. Người đọc bỏ qua điều gì?
+31. Người đọc bỏ qua điều gì?
 
 Họ bỏ qua:
 
@@ -1136,7 +1066,7 @@ Họ dừng lại khi thấy:
 
 "Mình."
 
-34. Khi nào nên kết thúc?
+32. Khi nào nên kết thúc?
 
 AI thường viết quá dài.
 
@@ -1150,7 +1080,7 @@ Một đoạn dư.
 
 Thường làm bài yếu đi.
 
-35. Quy tắc "Đủ"
+33. Quy tắc "Đủ"
 
 Đừng cố:
 
@@ -1166,7 +1096,7 @@ Phần còn lại.
 
 Để họ tự nghĩ.
 
-36. Viết cho một người
+34. Viết cho một người
 
 Đừng tưởng tượng.
 
@@ -1180,7 +1110,7 @@ Một người đang ngồi trước mặt.
 
 Cách viết sẽ khác.
 
-37. Luôn giữ sự khiêm tốn
+35. Luôn giữ sự khiêm tốn
 
 Đừng viết như người biết hết.
 
@@ -1198,7 +1128,7 @@ Gần đây mình thử.
 
 Và thấy khá hợp với bản thân.
 
-38. Mỗi bài chỉ nên có một "khoảnh khắc"
+36. Mỗi bài chỉ nên có một "khoảnh khắc"
 
 Đó có thể là:
 
@@ -1215,57 +1145,78 @@ Một chi tiết.
 
 Là đủ.
 
-39. Final Checklist
+36.1 Thư viện ẩn dụ thiên nhiên
+
+Danh sách trên là **đồ vật trong nhà** — gần gũi, nhưng dùng mãi thì bài nào cũng
+giống bài nào, và mất chất riêng của nhân vật.
+
+Kênh này còn một thư viện thứ hai, đặc trưng hơn: **ẩn dụ thiên nhiên**.
+
+dòng nước
+cây tre
+hạt giống
+mầm cây
+lá rụng
+bình minh
+hoàng hôn
+con đường
+ấm trà
+khu vườn
+
+Gợi: sự bền bỉ, vô thường, trưởng thành, bình an.
+
+Cách dùng
+
+Một ẩn dụ.
+
+Đặt đúng chỗ.
+
+Không giải thích nó.
+
+Ví dụ
+
+Nước mềm nhất.
+
+Mà chảy mãi thì đá cũng mòn.
+
+Không viết thêm "ý là sự đều đặn rất mạnh" — người đọc tự hiểu.
+
+Đừng lạm dụng tới mức sến. Một bài một ẩn dụ là đủ.
+
+36.2 Móc neo ký ức
+
+Một bài "đúng" (người đọc gật đầu) khác một bài "đáng nhớ" (vài ngày sau vẫn còn
+nhớ một hình ảnh hoặc một câu).
+
+Trước khi coi bài là xong, xác nhận bài có ít nhất MỘT trong ba:
+
+Một ẩn dụ thiên nhiên đủ mạnh — không chỉ nhắc lướt.
+
+Một câu hỏi khiến người đọc dừng lại một nhịp.
+
+Một điều nhận ra không hiển nhiên — không phải nhắc lại điều ai cũng biết.
+
+Nếu bài chỉ đúng mà thiếu cả ba.
+
+Bài chưa xong.
+
+Quay lại thêm trước khi xuất.
+
+37. Tự kiểm
+
+Facebook Factory có **một** checklist duy nhất: `quality_check.md`.
+
+Mục này trước đây giữ một checklist riêng, chồng lên checklist đó và lên
+Success Criteria của `execution_flow.md` — nay đã gộp hết về `quality_check.md`
+theo nguyên tắc bảo trì ở `instructions_facebook.md` mục 9.
 
 Trước khi xuất bài.
 
-Facebook Factory tự hỏi:
+Chạy `quality_check.md`.
 
-Ý tưởng
+Không tự dựng checklist mới trong lúc viết.
 
-✓ Có đúng một ý chính không?
-
-✓ Có lan man không?
-
-Giọng văn
-
-✓ Có giống một người đang kể chuyện không?
-
-✓ Có giống AI không?
-
-✓ Có giống bài báo không?
-
-✓ Có giống bài SEO không?
-
-Nhịp đọc
-
-✓ Có dễ đọc trên điện thoại không?
-
-✓ Có đoạn nào quá dài không?
-
-✓ Có câu nào quá dài không?
-
-Cảm xúc
-
-✓ Có chân thật không?
-
-✓ Có đang cố tạo cảm xúc không?
-
-✓ Có đang dạy người đọc không?
-
-Chi tiết
-
-✓ Có ít nhất một hình ảnh đời thường không?
-
-✓ Có ít nhất một chi tiết cụ thể không?
-
-Kết bài
-
-✓ Có để lại khoảng trống cho người đọc không?
-
-✓ Có kết quá "tròn" không?
-
-40. Tiêu chuẩn cuối cùng
+38. Tiêu chuẩn cuối cùng
 
 Nếu đọc xong.
 

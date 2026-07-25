@@ -1,6 +1,7 @@
 # HOOK LIBRARY
 
-Version: 2.0
+Version: 2.1
+Cập nhật: 25/07/2026
 
 Purpose:
 Hook không dùng để câu view.
@@ -423,9 +424,10 @@ Lại là...
 # TYPE 17
 Silent Hooks
 
-Ví dụ
+Mở bằng một khoảng lặng — bằng **câu ngắn và dòng trống**, không bằng dấu ba chấm
+(`writing_rules.md` mục 7 hạn chế dấu "...").
 
-...
+Ví dụ
 
 Có hôm.
 
@@ -433,9 +435,13 @@ Mình ngồi rất lâu.
 
 Không làm gì cả.
 
-...
+Không nghe nhạc.
 
-Đó là lúc mình nhận ra.
+Không mở điện thoại.
+
+Khoảng lặng nằm ở dòng trống giữa các câu.
+
+Không nằm ở dấu chấm lửng.
 
 ---
 
@@ -511,6 +517,9 @@ Một hook tốt nên:
 ---
 
 # Hook Anti-patterns
+
+Chỉ nói về **câu mở bài**. Danh sách từ ngữ cần tránh trong toàn bài nằm ở
+`writing_craft.md` mục 22; danh sách hành vi bị cấm nằm ở `writing_rules.md` mục 4.
 
 Không nên mở bài bằng:
 

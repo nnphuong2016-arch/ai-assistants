@@ -1,12 +1,16 @@
 # FACEBOOK FACTORY --- INSTRUCTIONS
 
-Version: 1.1\
+Version: 1.2\
+Cập nhật: 25/07/2026\
 Status: Official Foundation Document
 
 > **Ô Instructions (Custom GPT/Claude Project):** dán TOÀN BỘ nội dung CHÍNH FILE NÀY vào ô
 > Instructions — không phải `core-brain/instructions.md` (writing_craft.md quá dài, không vừa
 > giới hạn 8000 ký tự; ranh giới an toàn cốt lõi đã có sẵn ở `writing_rules.md` mục 4.1).
-> **Đọc theo thứ tự này trong khu Files** (đúng theo Priority Order ở `execution_flow.md`):
+> **Đọc theo thứ tự này trong khu Files** — đây là thứ tự NẠP, để nắm luật trước rồi mới tới
+> kho tra cứu. Nó KHÁC với thứ tự THỰC THI (10 bước ở `execution_flow.md`) và KHÁC với thứ tự
+> ƯU TIÊN khi hai file mâu thuẫn (Priority Order ở `execution_flow.md`). Ba thứ tự này phục vụ
+> ba việc khác nhau, đừng lẫn:
 > 1. `instructions_facebook.md` (file này) → 2. `execution_flow.md` → 3. `writing_rules.md` →
 > 4. `writing_craft.md` → 5. `quality_check.md` → 6. `post_frameworks.md` →
 > 7. `emotion_palette.md` → 8. `bai-dang-Facebook-Anh-Minh.md` (kho 210 hook có sẵn — tải thêm

@@ -1,5 +1,18 @@
-idea_library.md
-1. Philosophy
+# IDEA LIBRARY
+
+Version: 1.1
+Cập nhật: 25/07/2026
+
+> Nguồn ý tưởng thứ ba của Facebook Factory (`execution_flow.md` STEP 3) — dùng khi
+> người vận hành không đưa chủ đề cụ thể và kho `bai-dang-Facebook-Anh-Minh.md` không có
+> dòng hợp chủ đề đang cần.
+>
+> File này sinh **ý tưởng** (viết về cái gì). Mẫu **câu mở đầu** nằm ở `hook_library.md`.
+> Danh sách điều cần tránh nằm ở `writing_rules.md` mục 4 — file này không lặp lại.
+
+---
+
+# 1. Triết lý
 
 Ý tưởng không nằm trên Internet.
 
@@ -9,54 +22,29 @@ AI không đi tìm chủ đề.
 
 AI học cách quan sát.
 
-2. Idea Sources (Nguồn ý tưởng)
+---
 
-Ví dụ chia thành khoảng 20 nguồn:
+# 2. Nguồn ý tưởng
 
-Thói quen hằng ngày
-Cơ thể
-Bữa cơm
-Giấc ngủ
-Tuổi tác
-Cha mẹ
-Con cái
-Công việc
-Tiền bạc
-Cảm xúc
-Ký ức
-Thiên nhiên
-Thời tiết
-Mùa
-Nhà cửa
-Sức khỏe
-Người bệnh
-Người già
-Những lần thất bại
-Những điều từng hiểu sai
+Thói quen hằng ngày · Cơ thể · Bữa cơm · Giấc ngủ · Tuổi tác · Cha mẹ · Con cái ·
+Công việc · Tiền bạc · Cảm xúc · Ký ức · Thiên nhiên · Thời tiết · Mùa · Nhà cửa ·
+Sức khỏe · Người bệnh · Người già · Những lần thất bại · Những điều từng hiểu sai
 
-=> Một nguồn có thể sinh hàng trăm bài.
+Một nguồn có thể sinh hàng trăm bài.
 
-3. Universal Idea Patterns
+---
 
-Đây mới là "mỏ vàng".
+# 3. Universal Idea Patterns
 
-Ví dụ:
+Bốn khung câu sinh ý tưởng nhanh nhất:
 
-Hóa ra...
-
-Hóa ra ________
-
-Ví dụ
+**Hóa ra ________**
 
 Hóa ra cơ thể thích sự đều đặn hơn.
 
 Hóa ra người già sợ cô đơn hơn bệnh tật.
 
-...
-
-Có những...
-
-Có những ________
+**Có những ________**
 
 Có những buổi sáng...
 
@@ -64,203 +52,105 @@ Có những người...
 
 Có những điều...
 
-...
-
-Đừng vội...
-
-Đừng vội ________
+**Đừng vội ________**
 
 Đừng vội trách cơ thể.
 
 Đừng vội lo.
 
-...
+**Nếu hôm nay ________**
 
-Nếu hôm nay...
+Nếu hôm nay thấy mệt...
 
-Nếu hôm nay...
+Nếu hôm nay chẳng muốn làm gì...
 
-...
+Một pattern có thể sinh vài nghìn ý.
 
-Một pattern có thể sinh vài nghìn bài.
+---
 
-4. Observation Library
+# 4. Observation Library
 
-AI phải học quan sát.
+Chọn một không gian. Liệt kê những gì có trong đó. Mỗi thứ là một ý tưởng.
 
-Ví dụ.
+Ví dụ — phòng ngủ:
 
-Trong phòng ngủ.
+đồng hồ · rèm cửa · ánh nắng · quạt · điều hòa · gối · chăn · tiếng chim
 
-Có gì?
+Làm tương tự với: gian bếp, ban công, hiên nhà, đường đi bộ buổi sáng, phòng chờ khám.
 
-đồng hồ
-rèm cửa
-ánh nắng
-quạt
-điều hòa
-gối
-chăn
-tiếng chim
+---
 
-Mỗi thứ.
+# 5. Emotion Library
 
-Lại sinh chủ đề.
+mệt · nhẹ nhõm · bình yên · tiếc nuối · biết ơn · cô đơn · hy vọng · lo lắng
 
-5. Emotion Library
+Mỗi cảm xúc sinh hàng trăm ý.
 
-Các trạng thái:
+Lưu ý: đây là cảm xúc **của nhân vật trong bài**. Cảm xúc **của bài** chọn riêng ở
+`emotion_palette.md`, và danh sách đó hẹp hơn.
 
-mệt
-nhẹ nhõm
-bình yên
-tiếc nuối
-biết ơn
-cô đơn
-hy vọng
-lo lắng
+---
 
-Mỗi cảm xúc.
+# 6. Contradiction Library
 
-Sinh hàng trăm bài.
+Nơi tạo ý tưởng mạnh nhất.
 
-6. Contradiction Library
+Ngủ đủ. Nhưng vẫn mệt.
 
-Đây là nơi tạo hook.
+Ăn ít. Nhưng tăng cân.
 
-Ví dụ
+Ở cạnh nhiều người. Nhưng vẫn cô đơn.
 
-Ngủ đủ.
+Có thời gian. Nhưng chẳng còn năng lượng.
 
-Nhưng vẫn mệt.
+Nhà đông người. Nhưng bữa cơm rất lặng.
 
-Ăn ít.
+---
 
-Nhưng tăng cân.
+# 7. Question Library
 
-Ở cạnh nhiều người.
+Không phải FAQ. Là câu hỏi đời sống.
 
-Nhưng vẫn cô đơn.
+Tại sao... · Vì sao... · Có bao giờ... · Điều gì xảy ra nếu... ·
+Lần cuối cùng bạn... · Bạn còn nhớ...
 
-...
+---
 
-7. Question Library
+# 8. Perspective Library
 
-Danh sách vài trăm câu hỏi.
+Một chủ đề, nhìn từ nhiều người.
 
-Không phải FAQ.
+Ví dụ — giấc ngủ:
 
-Mà là câu hỏi đời sống.
+người trẻ → người già → người bệnh → người chăm sóc → một đứa trẻ →
+một người từng mất ngủ nhiều năm
 
-Ví dụ
+Một ý. Sinh sáu bài khác nhau.
 
-Tại sao...
+---
 
-Vì sao...
+# 9. Seasonal Library
 
-Có bao giờ...
+mùa · thời tiết · Tết · cuối năm · đầu tuần · cuối tuần · sinh nhật ·
+tuổi 40 · tuổi 50 · nghỉ hưu
 
-Điều gì xảy ra nếu...
+---
 
-8. Perspective Library
+# 10. Infinite Idea Engine
 
-Một chủ đề.
+Không lưu ý tưởng. Sinh ý tưởng.
 
-Nhìn từ nhiều góc.
+Pattern + Emotion + Observation + Contradiction = Idea
 
 Ví dụ
 
-Ngủ.
+"Hóa ra" + "Mệt" + "Đồng hồ báo thức" + "Ngủ đủ"
 
-↓
+= Hóa ra ngủ đủ chưa chắc đã tỉnh táo.
 
-Người trẻ.
+---
 
-↓
-
-Người già.
-
-↓
-
-Bác sĩ.
-
-↓
-
-Người bệnh.
-
-↓
-
-Người chăm sóc.
-
-↓
-
-Một đứa trẻ.
-
-↓
-
-Một người từng mất ngủ.
-
-Một ý.
-
-Sinh 8 bài.
-
-9. Seasonal Library
-
-Theo:
-
-mùa
-thời tiết
-Tết
-cuối năm
-đầu tuần
-cuối tuần
-sinh nhật
-tuổi 40
-tuổi 50
-nghỉ hưu
-10. Infinite Idea Engine
-
-Đây là phần quan trọng nhất.
-
-Không lưu ý tưởng.
-
-Mà sinh ý tưởng.
-
-Ví dụ.
-
-Pattern
-
-+
-
-Emotion
-
-+
-
-Observation
-
-+
-
-Contradiction
-
-=
-
-Idea
-
-Ví dụ
-
-"Hóa ra"
-
-"Mệt"
-
-"Đồng hồ báo thức"
-
-"Ngủ đủ"
-
-=
-
-Hóa ra ngủ đủ chưa chắc đã tỉnh táo.
-
-11. Idea Quality Filter
+# 11. Idea Quality Filter
 
 Một ý tưởng tốt phải có:
 
@@ -276,13 +166,12 @@ Một ý tưởng tốt phải có:
 
 ✓ không cần giải thích nhiều
 
-12. Anti-Idea
+---
 
-Không nên lấy ý tưởng:
+# 12. Anti-Idea
 
-quá giật gân
-quá chính trị
-quá thời sự
-quá chuyên môn
-quá xa đời sống
-chỉ để câu view
+Không lấy ý tưởng: quá giật gân · quá chính trị · quá thời sự · quá chuyên môn ·
+quá xa đời sống · chỉ để câu view.
+
+Mọi ý tưởng sinh ra ở file này vẫn phải qua **STEP 3.5 Safety Filter** của
+`execution_flow.md` trước khi dùng — kể cả ý tưởng nghe rất hợp giọng.

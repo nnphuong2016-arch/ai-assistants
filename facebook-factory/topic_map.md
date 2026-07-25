@@ -1,6 +1,7 @@
 # TOPIC MAP
 
-Version: 2.0
+Version: 2.1
+Cập nhật: 25/07/2026
 
 Purpose:
 Đây không phải danh sách bài viết.
@@ -323,6 +324,39 @@ Nếu vẫn phân vân, chọn nhóm 1.
 
 ---
 
+# 9. BẾP & BỮA CƠM (KITCHEN)
+
+Không phải nhóm công thức nấu ăn. Là nhóm về **ký ức và sự gắn bó quanh bữa ăn**.
+
+### Bữa cơm gia đình
+
+- Đủ người
+- Vắng một chỗ
+- Ăn một mình
+- Phần cơm để dành
+
+### Món cũ
+
+- Món mẹ hay nấu
+- Vị nhớ mãi không tìm lại được
+- Món chỉ nấu vào dịp đặc biệt
+
+### Gian bếp
+
+- Tiếng dao thớt buổi sáng
+- Mùi cơm mới
+- Ấm nước, ấm trà
+
+### Món theo mùa
+
+- Món mùa lạnh
+- Món ngày Tết
+- Món ăn khi trong người mệt
+
+> Nhóm này quy về Pillar **Bếp An Nhiên**.
+
+---
+
 # Cầu nối 6 trụ chính thức
 
 8 nhóm Topic ở trên là bản đồ RIÊNG của Facebook Factory (theo trải nghiệm sống, không theo
@@ -340,9 +374,13 @@ với Website/YouTube/Chat), dùng bảng quy đổi sau:
 | 6. Giữ gìn sức khỏe | Sức khỏe |
 | 7. Đồng hành | Đồng hành tuổi già & người bệnh |
 | 8. Triết lý sống | Triết lý phương Đông |
+| 9. Bếp & Bữa cơm | Bếp An Nhiên |
 
-Bếp An Nhiên (trụ thứ 6 chính thức) hiện CHƯA có nhóm riêng trong Topic Map — nếu bài chạm chủ
-đề món ăn/bếp/ký ức ẩm thực, gán Pillar = "Bếp An Nhiên" dù không có Topic khớp sẵn ở trên.
+Cả 6 trụ chính thức nay đều có Topic tương ứng — không còn trường hợp điền được `Pillar`
+nhưng bỏ trống `Topic` như trước.
+
+Lưu ý phân biệt: "Ăn uống" ở nhóm 1 là **cơ thể trong một ngày** (ăn vội, bỏ bữa, ăn khuya).
+Nhóm 9 là **ký ức và sự gắn bó quanh bữa ăn**. Cùng nói về bữa cơm, khác góc nhìn.
 
 ---
 

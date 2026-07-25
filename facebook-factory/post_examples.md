@@ -1,6 +1,7 @@
 # POST EXAMPLES
 
-Version: 2.0
+Version: 2.1
+Cập nhật: 25/07/2026
 
 Purpose:
 Không dùng để copy bài viết.
@@ -342,6 +343,99 @@ Nên
 
 ---
 
+# Example 22
+## Bài hoàn chỉnh — F09 Quan sát (Mood: Bình yên)
+
+> Sáng nay ngoài công viên.
+>
+> Có bác lớn tuổi đi bộ rất chậm.
+>
+> Chậm đến mức người phía sau phải vòng qua.
+>
+> Đi được một vòng.
+>
+> Bác dừng lại.
+>
+> Ngồi xuống ghế đá.
+>
+> Nhìn mấy con chim sà xuống bãi cỏ.
+>
+> Rất lâu.
+>
+> Có lẽ với bác.
+>
+> Đi bộ không phải để về đích.
+
+Điểm học:
+
+- Một quan sát, một ý, không giải thích
+- Chi tiết cụ thể ("người phía sau phải vòng qua") thay vì tính từ
+- Kết mở, không có chữ "bài học"
+- Nhân vật là người vô danh, không phải người thân của Anh Minh
+
+---
+
+# Example 23
+## Bài hoàn chỉnh — F02 Có những ngày (Mood: Đồng cảm)
+
+> Có những ngày.
+>
+> Việc chẳng nhiều hơn hôm qua.
+>
+> Mà người thì nặng hơn hẳn.
+>
+> Buổi trưa chỉ muốn ngồi yên một lúc.
+>
+> Không ăn.
+>
+> Không nói.
+>
+> Không mở điện thoại.
+>
+> Những ngày như vậy.
+>
+> Có khi cơ thể không đòi hỏi gì to tát.
+>
+> Chỉ xin được nghỉ một chút.
+
+Điểm học:
+
+- Cảm xúc đồng cảm giữ đều từ đầu đến cuối, không lên cao trào
+- Ba câu phủ định liên tiếp tạo khoảng lặng
+- Không khuyên gì, không kê đơn nghỉ ngơi
+
+---
+
+# Example 24
+## Bài hoàn chỉnh — F01 Hóa ra, mở bằng hook hình ảnh (Mood: Hoài niệm)
+
+> Trong bếp có một cái ấm cũ.
+>
+> Men đã rạn, quai hơi lung lay.
+>
+> Nhà có ấm mới rồi.
+>
+> Nhưng sáng nào cũng vẫn dùng cái cũ.
+>
+> Trước đây cứ nghĩ đó là tiếc của.
+>
+> Hóa ra không phải.
+>
+> Có những thứ ta giữ lại.
+>
+> Không vì nó còn tốt.
+>
+> Mà vì nó đã ở đó quá lâu.
+
+Điểm học:
+
+- Framework F01 nhưng hook là **hình ảnh**, không mở bằng chữ "Hóa ra"
+  (`post_frameworks.md` mục 2.1)
+- "Hóa ra" nằm giữa bài, làm bản lề chuyển ý
+- Đồ vật cũ làm móc neo ký ức
+
+---
+
 # Common Patterns
 
 Mẫu mở đầu
@@ -393,9 +487,16 @@ Chỉ học:
 - cách tạo hình ảnh
 - cách để người đọc tự cảm nhận
 
-Nếu hai bài viết giống ví dụ trên 30%.
+Cách tự kiểm ở STEP 8 — ba câu hỏi, không đo bằng phần trăm:
 
-Hãy viết lại.
+1. Bài có mượn lại **hình ảnh trung tâm** của một ví dụ không?
+   (cốc trà nguội, chuông báo thức lần thứ ba, điện thoại không rung)
+
+2. Bài có dùng lại **đúng câu chốt** của một ví dụ không?
+
+3. Nếu đặt bài cạnh ví dụ, người đọc có thấy là hai bản của cùng một bài không?
+
+Trả lời "có" ở bất kỳ câu nào → đổi hình ảnh, giữ ý, viết lại.
 
 Ví dụ chỉ để học tư duy.
 

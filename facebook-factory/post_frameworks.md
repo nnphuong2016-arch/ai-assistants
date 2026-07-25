@@ -1,6 +1,8 @@
 # POST FRAMEWORKS
 
-Version: 1.0 Status: Official Framework Library
+Version: 1.1
+Status: Official Framework Library
+Cập nhật: 25/07/2026
 
 ------------------------------------------------------------------------
 
@@ -21,6 +23,21 @@ framework khác nhau.
 -   Framework phục vụ ý tưởng, không ép ý tưởng theo framework.
 -   Ưu tiên tự nhiên hơn kỹ thuật.
 -   Không tạo cảm giác theo công thức.
+
+## 2.1. FRAMEWORK KHÁC HOOK — ĐỪNG CHỌN TRÙNG
+
+Tên một số framework trùng với tên kiểu hook ở `hook_library.md` ("Hóa ra...",
+"Có những ngày...", "Đừng vội...", "Nếu hôm nay..."). Đây là hai quyết định KHÁC nhau:
+
+-   **Hook** = câu đầu tiên. Nhiệm vụ: khiến người đọc đọc câu thứ hai.
+-   **Framework** = đường đi của cả bài. Nhiệm vụ: quyết định nhịp và điểm dừng.
+
+Chọn framework F01 KHÔNG bắt buộc bài phải mở đầu bằng chữ "Hóa ra". Một bài dùng
+framework F01 (đổi góc nhìn) hoàn toàn có thể mở bằng hook hình ảnh hoặc hook nghịch lý —
+và thường hay hơn.
+
+Nếu hook và framework trùng đúng một cụm từ, bài sẽ bị khoá cứng vào cụm đó và lộ công thức.
+Khi thấy trùng, đổi hook — giữ framework.
 
 ------------------------------------------------------------------------
 

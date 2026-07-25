@@ -1,5 +1,8 @@
 # CLAUDE.md — FACEBOOK FACTORY (bài đăng Facebook Page/Group)
 
+Version: 1.1
+Cập nhật: 25/07/2026
+
 > File nhắc việc riêng cho Facebook Factory, đặt trong chính thư mục này để mỗi lần mở cửa sổ
 > làm việc ở đây, Claude tự đọc lại và không quên quy trình — không cần người dùng nhắc lại.
 > File này KHÔNG thay thế `CLAUDE.md` gốc ở root repo (`ai-assistants/CLAUDE.md`) — đó vẫn là
@@ -43,14 +46,18 @@ seasonal_calendar.md` (post theo mùa/dịp).
 
 ## 1. QUY TRÌNH 10 BƯỚC (`execution_flow.md`) — KHÔNG BỎ BƯỚC, KHÔNG ĐẢO THỨ TỰ
 
-Input → Understand → Select Topic (`topic_map.md`, CHỈ 1 topic chính) → Generate Ideas (2 nguồn
-song song, mục 0.8–0.9) → Choose Hook (`hook_library.md`) → Choose Framework
-(`post_frameworks.md`) → Write Draft (`writing_rules.md` + `writing_craft.md` đồng thời, KHÔNG
-tự sửa trong lúc viết) → Inject Emotion (`emotion_palette.md`) → Compare Examples
-(`post_examples.md`, chỉ so sánh không copy) → Quality Review (`quality_check.md`, ≥2 lỗi thì
-quay lại Step 6 Write Draft) → Output Format (`output_schema.md`).
+Understand → Select Topic (`topic_map.md`, CHỈ 1 topic chính) → Generate Ideas (**3 nguồn**:
+chủ đề người dùng đưa trực tiếp ưu tiên cao nhất → kho hook → `idea_library.md`) →
+**Safety Filter (STEP 3.5)** → Choose Hook (`hook_library.md`) → Choose Framework
+(`post_frameworks.md`, F01–F11) → **Choose Emotion** (`emotion_palette.md`, chọn TRƯỚC khi
+viết) → Write Draft (`writing_rules.md` + `writing_craft.md`, không tự sửa trong lúc viết) →
+Compare Examples (`post_examples.md`, chỉ so sánh không copy) → Quality Review
+(`quality_check.md`) → Output (`output_schema.md`).
 
 Nếu một bước chưa đạt, quay lại đúng bước đó theo Retry Logic — không sửa chắp vá từng câu.
+
+**STEP 3.5 Safety Filter là bắt buộc tuyệt đối** — kể cả khi hook lấy từ kho `bai-dang-Facebook-
+Anh-Minh.md`. Kho hook KHÔNG được coi là đã an toàn sẵn.
 
 ---
 
@@ -66,6 +73,12 @@ Nếu một bước chưa đạt, quay lại đúng bước đó theo Retry Logi
 - Tránh các câu mở kiểu AI: "Bạn có biết...", "Hôm nay mình sẽ chia sẻ...", "5 cách để...",
   "Theo nghiên cứu...", "Hãy cùng tìm hiểu...".
 - Không lạm dụng dấu chấm than, CHỮ HOA, emoji, dấu "...".
+- **Độ dài:** mục tiêu 120–250 từ, trần cứng 300 từ (`writing_rules.md` mục 6.1).
+- **Nhân xưng** (`writing_rules.md` mục 5.1): "mình" **được nghĩ, không được nhớ**. Cấm dựng
+  quan hệ gia đình riêng cho nhân vật ("bố mình", "con trai mình") và hồi ký cá nhân cụ thể.
+  Chuyện về người khác → giọng quan sát ngôi ba ("Có người cha…", "Có những người…").
+- **Móc neo ký ức:** mỗi bài cần ≥1 trong 3 — ẩn dụ thiên nhiên mạnh / câu hỏi khiến người đọc
+  dừng một nhịp / insight không hiển nhiên (`writing_craft.md` mục 36.1–36.2).
 
 ---
 
@@ -100,11 +113,15 @@ CORE_BRAIN:
 
 ---
 
-## 5. TRƯỚC KHI XUẤT — `quality_check.md`
+## 5. TRƯỚC KHI XUẤT — `quality_check.md` (checklist DUY NHẤT)
 
-Kiểm: một ý chính? mạch lạc? đúng chủ đề? cảm xúc chân thật không gượng ép? giọng tự nhiên
-không giống AI không dạy đời? không SEO/clickbait/CTA rẻ tiền/hashtag thừa? **Còn ≥2 lỗi →
-viết lại từ Step 6 (Write Draft), không vá từng câu.**
+6 nhóm: An toàn thương hiệu · Nội dung · Cảm xúc · Giọng văn · Facebook · Móc neo ký ức.
+
+**Hai ngưỡng khác nhau:**
+- **Nhóm 1 (An toàn):** sai **1** mục → viết lại ngay, không ngoại lệ.
+- **Nhóm 2–6:** sai **≥2** mục → viết lại.
+
+Viết lại thì quay về đúng bước hỏng theo Retry Logic, không vá từng câu.
 
 ---
 

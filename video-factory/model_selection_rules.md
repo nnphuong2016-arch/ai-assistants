@@ -102,17 +102,29 @@ biểu cảm mạnh) → dùng thẳng ảnh từ kho ảnh nhân vật cố đ�
 mục 0B) làm ảnh tĩnh, KHÔNG cần img2video — rẻ nhất, vẫn giữ đúng nhận diện nhân vật vì là ảnh
 gốc, không generate lại.
 
-**Tỷ lệ tham khảo (video TRUNG/DÀI, ví dụ một tập ~8-10 phút):**
+**Ngân sách hình cho VIDEO DÀI (8–10 phút) — chốt 25/07/2026, đây là TRẦN cứng:**
 
-| Thành phần | Số lượng tham khảo |
+| Thành phần | Số lượng |
 |---|---|
-| Tổng số cảnh | 30–35 |
-| Clip AI video (Veo3/Kling/Hailuo/Runway) | 9–11 cảnh (≈ 28–31%) |
-| Ảnh tĩnh + Ken Burns (zoom/pan) | 20–24 cảnh (≈ 69–72%) |
+| Số cảnh (đơn vị lời dẫn, Scene ID) | **10** |
+| Clip AI video (Veo3/Kling/Hailuo/Runway) | **tối đa 3** |
+| Ảnh tĩnh + Ken Burns (zoom/pan) | **tối đa 15** |
+| Tổng đơn vị hình | tối đa 18 (≈17% Clip · ≈83% Ảnh tĩnh) |
 
-Đây là **tỷ lệ tham khảo cho video TRUNG/DÀI** (nhiều cảnh, dư địa để đa số là ảnh tĩnh). Với
-video NGẮN (5–8 cảnh), tỷ lệ này không co giãn tuyến tính — mỗi cảnh trong video ngắn "nặng ký"
-hơn, nên vẫn ưu tiên xét theo 4 tiêu chí ở trên cho từng cảnh cụ thể thay vì áp cứng %.
+> ⚠️ **Bảng này thay bảng cũ "30–35 cảnh / 9–11 clip / 20–24 ảnh tĩnh"** (bản 23/07/2026), vốn
+> mâu thuẫn trực tiếp với `video_rules.md` mục 2. Nay thống nhất: `video_rules.md` mục 2 là nguồn
+> chốt số cảnh, file này chỉ chi tiết hoá cách chia ngân sách hình trong số đó.
+>
+> **Vì sao 18 hình > 10 cảnh:** "cảnh" là đơn vị **lời dẫn** (~50–60 giây/cảnh với video DÀI),
+> còn Clip/Ảnh là đơn vị **hình**. Một cảnh 50–60 giây được phủ bằng 1–3 hình (field **Shots**,
+> `video_rules.md` mục 1.C) — không phải 1 cảnh 1 hình. Đây là hai lớp đếm khác nhau, đừng cộng
+> lẫn.
+>
+> Đây là **TRẦN**, không phải chỉ tiêu: dùng ít hơn luôn tốt hơn. Vượt trần thì gộp bớt hình,
+> không xin thêm ngân sách.
+
+Với video TRUNG và NGẮN, ngân sách hình chưa được chốt bằng con số cứng — vẫn xét theo 4 tiêu
+chí "Clip" ở trên cho từng cảnh cụ thể, giữ tinh thần đa số là Ảnh tĩnh.
 
 **Độ dài Clip AI video (khi đã chọn generate clip):** gốc 6–10 giây (tuỳ công cụ, xem mục 12
 `video_ai_prompt_rules.md`) — khi dựng (edit), có thể **kéo dài cảm giác thành 8–12 giây** bằng
@@ -185,10 +197,10 @@ Nhân vật · Hội thoại · Anh Minh nói trực diện · Thiên nhiên · 
 ## 5. TỐI ƯU CHI PHÍ
 
 Hệ thống sản xuất nên tự động ưu tiên hiệu quả chi phí. **Trước hết, áp dụng Lớp quyết định 0
-(mục 1B)** — loại phần lớn cảnh (~69–72%) sang Ảnh tĩnh + Ken Burns, không tốn chi phí generate
-video. Bảng % dưới đây chỉ áp dụng cho phần cảnh CÒN LẠI đã được xác định là cần Clip AI video
-(≈ 28–31% tổng số cảnh, xem mục 1B) — tức là % trong nội bộ "rổ Clip", không phải % trên tổng số
-cảnh của cả video:
+(mục 1B)** — loại phần lớn hình sang Ảnh tĩnh + Ken Burns, không tốn chi phí generate video.
+Bảng % dưới đây chỉ áp dụng cho phần hình CÒN LẠI đã được xác định là cần Clip AI video (video
+DÀI: tối đa 3 Clip, xem mục 1B) — tức là % trong nội bộ "rổ Clip", không phải % trên tổng số
+hình của cả video:
 
 | Công cụ | Tỷ lệ (trong số cảnh đã chọn là Clip) | Dùng cho |
 |---|---|---|

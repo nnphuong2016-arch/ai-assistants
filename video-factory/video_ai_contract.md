@@ -23,7 +23,7 @@ DATE: 25/07/2026
 
 > ⚠️ **Cập nhật 23/07/2026 — mô hình hybrid tiết kiệm chi phí (xem `model_selection_rules.md`
 > mục 1B):** từ nay pipeline có **2 nhánh song song** sau Stage 2, không phải mọi Scene đều đi
-> qua Stage 4 (generate Clip). Đa số Scene (~69–72% với video TRUNG/DÀI) chỉ dừng ở Ảnh tĩnh
+> qua Stage 4 (generate Clip). Đa số Scene (video DÀI: tối đa 3 Clip trên tổng ~18 hình) chỉ dừng ở Ảnh tĩnh
 > (Stage 3, hoặc lấy thẳng ảnh có sẵn trong kho `image_style_bible.md` mục 0B nếu là Anh Minh
 > đứng/ngồi yên) rồi đi thẳng tới Stage 7 kèm tham số Ken Burns — **bỏ qua Stage 4 hoàn toàn**,
 > tiết kiệm chi phí generate video. Chỉ Scene được đánh dấu Clip ở Stage 2B mới đi qua Stage 4.
@@ -48,9 +48,16 @@ Khi input là file `..._master_script.md` do Video Factory (WF-07) xuất ra và
 `### Scene <ID>` = 1 scene, ID zero-padded 3 chữ số theo `video_rules.md` mục 1.C) và đúng nội
 dung Scene Prompt (field **Visual** + **Camera** từng cảnh, đã tuân luật "không mô tả mặt/quần
 áo/nhân vật" bên dưới — nhận diện nhân vật nằm riêng ở field **Character**). WF-07B chỉ cần
-PARSE file bằng Code node theo thứ tự field: Scene ID → Duration → Voice → Visual → Camera →
-Character → Emotion → Loop. Chỉ gọi AI cho Stage 1-2 khi input là script rời rạc KHÔNG qua Video
-Factory (trường hợp hiếm, chưa build).
+PARSE file bằng Code node theo thứ tự field: Scene ID → Duration → Voice → **Shots** → Visual →
+Camera → Character → Emotion → Loop. Chỉ gọi AI cho Stage 1-2 khi input là script rời rạc KHÔNG
+qua Video Factory (trường hợp hiếm, chưa build).
+
+⚠️ **Cập nhật 25/07/2026 — field `Shots` mới, parser PHẢI xử lý:** một Scene giờ có thể chứa
+nhiều hình (`Shots: 1|2|3`). Khi `Shots > 1`, các field Visual/Camera xuất hiện dạng đánh số
+(`Visual 1:`, `Camera 1:`, `Visual 2:`, `Camera 2:`...) thay vì một khối duy nhất — parser phải
+đọc đủ ngần ấy cặp, sinh ra `Shot<SceneID>-<n>` cho mỗi cặp. `Voice`/`Subtitle` vẫn 1 file/Scene.
+Parser cũ (giả định 1 Visual + 1 Camera/Scene) sẽ bỏ sót hình thứ 2, 3 — phải sửa Code node
+trước khi chạy video DÀI theo chuẩn mới.
 
 ========================================================
 1. VIDEO PLANNER AI
@@ -168,9 +175,11 @@ Yêu cầu
 - Mặc định `media_type: "static"` trừ khi Scene khớp 1 trong 4 tiêu chí "Clip" ở
   `model_selection_rules.md` mục 1B (Anh Minh nói trực diện / cận cảnh cảm xúc / khoảnh khắc
   chủ đạo / hành động là chính nội dung cảnh).
-- Tỷ lệ tham khảo toàn video: ~28–31% Scene là `"clip"`, phần còn lại `"static"` (video TRUNG/DÀI
-  — xem bảng số liệu ở `model_selection_rules.md` mục 1B). Không ép cứng %, chỉ dùng để tự kiểm
-  nếu lệch quá xa (VD 80% Scene ra "clip" thì phải xét lại).
+- **Trần cứng cho video DÀI (8–10 phút): tối đa 3 Scene được `"clip"`, tối đa 15 Ảnh tĩnh**
+  (bảng ở `model_selection_rules.md` mục 1B). Đây là trần chặn chi phí — vượt thì phải hạ bớt
+  Scene xuống `"static"`, không được nới. Lưu ý một Scene có thể gồm nhiều hình (field **Shots**,
+  `video_rules.md` mục 1.C) nên tổng hình (~18) lớn hơn tổng Scene (10) — đếm theo hình khi đối
+  chiếu trần, không đếm theo Scene.
 - **Phân loại field Character trước khi quyết định nguồn ảnh** (3 trường hợp, xem thêm Stage 3):
   1. **Character trống** → B-roll, không có nhân vật.
   2. **Character = "Hiền triết Anh Minh"** → CHỈ nhân vật này có kho ảnh cố định. `media_type =

@@ -35,10 +35,16 @@
    bằng heading `### Scene <ID>` (bắt buộc — n8n parse theo khuôn này, xem `video_rules.md` mục
    1.C và `video_ai_contract.md` GHI CHÚ VẬN HÀNH), rồi tới các field theo đúng thứ tự:
    **Scene ID** (zero-padded 3 chữ số, VD `001`), **Duration** (giây), **Voice** (đoạn lời dẫn
-   tiếng Việt của cảnh đó), **Visual** (bối cảnh + chủ thể + hành động, tiếng Anh), **Camera**
+   tiếng Việt của cảnh đó), **Shots** (`1`/`2`/`3` — số hình phủ cảnh này, mặc định `1`),
+   **Visual** (bối cảnh + chủ thể + hành động, tiếng Anh), **Camera**
    (loại cảnh + chuyển động máy + ánh sáng + âm thanh nền, tiếng Anh), **Character** (tên nhân
    vật nếu có, tham chiếu `core-brain/image_style_bible.md` — để trống nếu B-roll trung tính),
    **Emotion** (tâm trạng chủ đạo của cảnh), **Loop** (`true`/`false`).
+
+   Khi `Shots > 1`, Visual/Camera viết thành các khối đánh số (`Visual 1:`/`Camera 1:`,
+   `Visual 2:`/`Camera 2:`...) — xem `video_rules.md` mục 1.C. **Video DÀI có trần cứng: 10 cảnh,
+   tối đa 3 Clip AI, tối đa 15 Ảnh tĩnh** (`model_selection_rules.md` mục 1B) — cộng tổng Shots
+   để tự kiểm trước khi xuất.
 
    ⚠️ Đây là **Master Script** — nguồn dữ liệu gốc, KHÔNG chứa prompt platform-specific
    (Kling/Veo3/Sora/Hailuo...) và KHÔNG mô tả khuôn mặt/trang phục nhân vật trong Visual/Camera

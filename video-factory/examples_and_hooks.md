@@ -3,6 +3,10 @@
 > Tải lên khu **Files**. Đây là file dạy giọng bằng VÍ DỤ — mạnh hơn mọi mô tả.
 > Chắt lọc từ Hook Library + Anti-Repetition của bạn, bỏ giọng thầy thuốc, thêm trụ Nhân sinh.
 > Cập nhật: 22/06/2026.
+> Cập nhật: 25/07/2026 — mục 5 đổi vai trò từ "thư viện hook để chọn" thành "ví dụ mẫu giọng
+> hook" (nguồn hook thật là `bai-video-dang-Youtube-Anh-Minh.md`, xem `CLAUDE.md` Bước 2); mục
+> 6/7 ghi rõ là trích đoạn minh hoạ khuôn field, không phải video hoàn chỉnh đúng khung định
+> dạng ở `video_rules.md` mục 2.
 
 ---
 
@@ -50,7 +54,20 @@ nhịp, góc nhìn — dù nói cùng một đề tài.
 
 ---
 
-## 5. THƯ VIỆN HOOK THEO 5 TRỤ (đã lọc theo giọng kênh)
+## 5. VÍ DỤ MẪU GIỌNG HOOK (đọc để NGẤM GIỌNG — không phải kho hook để chọn)
+
+> ⚠️ **Cập nhật 25/07/2026 — đổi vai trò mục này.** Trước đây mục này tên là "Thư viện hook theo
+> 5 trụ" và bị dùng như một kho hook để chọn. Từ 20/07/2026 hệ thống đã bỏ cơ chế kho hook dùng
+> chung (`hook_library_full.md` ngưng dùng) vì làm nhiều kênh khai thác trùng nhau. **Nguồn hook
+> thật của Video Factory chỉ có 3** (xem `CLAUDE.md` Bước 2 + mục 3 file này): file backlog
+> `bai-video-dang-Youtube-Anh-Minh.md`, hook đã chọn sẵn ở bài SEO gốc khi đang convert, hoặc
+> nguồn ngoài Drive/Sheet khi chạy tự động. **KHÔNG lấy hook từ mục 5 này để làm tên video/
+> lời thoại** — các câu dưới đây chỉ để cảm nhận *đúng độ mềm, độ mở, độ dài* của một câu hook
+> đạt chuẩn giọng kênh, rồi tự viết câu mới.
+>
+> Danh sách dưới đây gom theo 5 trụ nội dung cũ. Hệ thống hiện có **6 trụ** (thêm *Bếp An Nhiên*
+> — xem `core-brain/instructions.md` mục 6) — trụ thứ 6 không có ví dụ ở đây, lấy giọng mẫu từ
+> `bep_an_nhien.md` mục 4 (ví dụ mở/ví dụ câu kết) thay thế.
 
 > **Luật riêng nhóm Sức khỏe:** được khơi tò mò mạnh (câu hỏi, nghịch lý, "nhiều người hiểu nhầm…"),
 > NHƯNG không dọa bệnh / dọa ung thư / "âm thầm suy yếu", không clickbait bỏ lửng (…),
@@ -118,10 +135,16 @@ nhịp, góc nhìn — dù nói cùng một đề tài.
 
 ---
 
-## 6. KỊCH BẢN MẪU 1 — ĐỊNH DẠNG NGẮN (9:16, 4 cảnh, ~30s)
+## 6. KỊCH BẢN MẪU 1 — TRÍCH ĐOẠN MINH HOẠ KHUÔN FIELD (9:16, 4 cảnh, ~30s)
 
 > Viết theo khuôn field chuẩn ở `video_rules.md` mục 1.C (Scene ID/Duration/Voice/Visual/
 > Camera/Character/Emotion/Loop) — cập nhật 18/07/2026.
+>
+> ⚠️ **Đây là TRÍCH ĐOẠN dạy khuôn field + giọng, KHÔNG phải một video hoàn chỉnh.** 4 cảnh/~30s
+> nằm ngoài khung VIDEO NGẮN hiện hành (60–120 giây, 5–8 cảnh — `video_rules.md` mục 2). Khi làm
+> video thật, luôn theo khung ở `video_rules.md` mục 2, không copy độ dài của mẫu này.
+> Lưu ý định dạng heading: mỗi cảnh mở đầu bằng `### Scene <ID>` (ID zero-padded 3 chữ số) —
+> đây là định dạng bắt buộc để n8n parse được, xem `video_ai_contract.md` GHI CHÚ VẬN HÀNH.
 
 **TÊN:** "Buổi sáng, đừng vội cầm điện thoại"
 **Ý chính:** một khoảng thở ngắn đầu ngày giúp thân–tâm bớt cuống.
@@ -169,9 +192,15 @@ nhịp, góc nhìn — dù nói cùng một đề tài.
 
 ---
 
-## 7. KỊCH BẢN MẪU 2 — ĐỊNH DẠNG TRUNG (9:16, mạch B, ~75s)
+## 7. KỊCH BẢN MẪU 2 — TRÍCH ĐOẠN MINH HOẠ CẤU TRÚC B (9:16, 5 cảnh, ~75s)
 
 > Viết theo khuôn field chuẩn ở `video_rules.md` mục 1.C — cập nhật 18/07/2026.
+>
+> ⚠️ **Cũng là TRÍCH ĐOẠN, không phải video TRUNG.** Nhãn cũ ghi "định dạng TRUNG" là sai: TRUNG
+> hiện là 3–6 phút / 10–14 cảnh và quay ngang cho Facebook Video/YouTube (`video_rules.md` mục
+> 2), trong khi mẫu này chỉ 75 giây / 5 cảnh / khung dọc 9:16. Mục đích thật của mẫu: minh hoạ
+> **Cấu trúc B** (Mở → Nhận diện cảm xúc → Lý giải nhịp sống → Thay đổi nhỏ → Suy ngẫm, xem mục
+> 4) chạy trọn vẹn qua 5 cảnh. Đừng dùng độ dài/tỷ lệ khung hình của mẫu này làm chuẩn.
 
 **TÊN:** "Vì sao càng cố mạnh mẽ, càng mệt lâu"
 **Ý chính:** gồng liên tục khiến thân–tâm khó hồi; mềm lại không phải yếu đuối.

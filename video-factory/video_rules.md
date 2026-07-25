@@ -8,6 +8,12 @@
 > Camera/Character/Emotion/Loop, tách Master Script khỏi prompt platform-specific (xem mục 1, 4, 5).
 > Cập nhật: 20/07/2026 — mục 2 làm rõ VIDEO NGẮN gồm 2 loại nội dung khác nhau (suy ngẫm vs
 > Dưỡng Sinh Ngắn — xem `instructions_VIDEO.md` mục 1B).
+> Cập nhật: 25/07/2026 — **chốt VIDEO DÀI = 8–10 cảnh · tối đa 3 Clip · tối đa 10–12 Ảnh giữ**
+> (mục 2 + mục 6), thay "15–20 cảnh" cũ và gỡ mâu thuẫn với bảng "30–35 cảnh" ở
+> `model_selection_rules.md`. Thêm **mục 6B Image Motion Engine** — Ken Burns đơn thuần chỉ giữ
+> được ảnh ~20–25 giây, muốn giữ 45–75 giây phải xếp tầng hiệu ứng. Học từ mô hình kênh
+> My Dog & My Love (`youtube-mydog_mylove`), điều chỉnh theo thể loại chiêm nghiệm và thực tế
+> khán giả kênh này **nghe nhiều hơn nhìn**.
 
 ---
 
@@ -128,7 +134,9 @@ không kéo dãn một ý cho đủ giờ.
 ### VIDEO DÀI (LONG)
 - Nền tảng: YouTube · Podcast video.
 - Thời lượng: **8–10 phút**.
-- Số cảnh (ý) tham khảo: **15–20** · khuyến nghị **17**.
+- Số cảnh: **8–10 cảnh** (chốt 25/07/2026 — thay "15–20" cũ). Mỗi cảnh **55–75 giây lời dẫn**.
+- **Ngân sách hình (trần cứng): tối đa 3 Clip + tối đa 10–12 Ảnh giữ** — xem mục 6 và
+  `model_selection_rules.md` mục 1B.
 - Mục tiêu: đào sâu chủ đề · nhiều lớp góc nhìn · có phần áp dụng thực tế · KHÔNG kéo dài một ý cho đủ giờ.
 - Theo **kiến trúc long-form ở mục 4**.
 
@@ -168,7 +176,8 @@ còn hơn 10 phút loãng.
 
 **Khuôn xuất video dài:** A. Tên + ý chính + 1 câu hứa · B. Viết **lời dẫn liền mạch theo 5
 phần** trước (như một bài nói chậm, để giữ mạch cảm xúc — đây là bước nháp) · C. Sau đó **chia
-lời dẫn đã viết thành ~15–20 cảnh**, đóng gói mỗi cảnh theo đúng khuôn field ở mục 1.C (Scene ID
+lời dẫn đã viết thành 8–10 cảnh** (mỗi cảnh 55–75 giây lời dẫn — xem trần ngân sách hình ở mục
+2 và mục 6), đóng gói mỗi cảnh theo đúng khuôn field ở mục 1.C (Scene ID
 zero-padded, Duration, Voice, Visual, Camera, Character, Emotion, Loop) — mỗi field Voice là một
 đoạn của lời dẫn liền mạch đã viết ở bước B, không viết lại. Đánh dấu `Loop: true` cho cảnh
 B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn khác nhau.
@@ -197,23 +206,57 @@ B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn kh�
 
 ---
 
-## 6. MẸO HYBRID & CHI PHÍ (tóm tắt — chi tiết đầy đủ ở `model_selection_rules.md` mục 1B/5)
+## 6. NGÂN SÁCH HÌNH & CHI PHÍ (tóm tắt — chi tiết đầy đủ ở `model_selection_rules.md` mục 1B/5)
 
-> Cập nhật 23/07/2026: chính thức hoá bằng con số — xem `model_selection_rules.md` mục 1B
-> "Lớp quyết định 0" (Clip AI video hay Ảnh tĩnh + Ken Burns, quyết định TRƯỚC khi chọn công cụ).
+> **Cập nhật 25/07/2026 — thay hẳn mô hình "% cảnh là Clip" cũ.** Tỷ lệ 28–31% Clip trước đây
+> khiến một video 8–10 phút cần 9–11 Clip, tức **1,0–1,2 clip/phút** — đắt hơn cả mức cao nhất
+> của kênh tham chiếu My Dog & My Love (Tier 3: 0,68 clip/phút, chỉ mở khi doanh thu đã gấp 3–5
+> lần chi phí). Nay chuyển sang **trần cứng theo số tuyệt đối**, học từ mô hình đó.
 
-- **Mặc định là Ảnh tĩnh + Ken Burns (zoom/pan), không phải Clip AI video.** Với video TRUNG/DÀI,
-  tỷ lệ tham khảo: ~28–31% cảnh là Clip (thời điểm thật sự quan trọng), ~69–72% là Ảnh tĩnh.
+**Trần cứng cho VIDEO DÀI (8–10 phút):**
+
+| Thành phần | Trần |
+|---|---|
+| Cảnh | 8–10 (mỗi cảnh 55–75 giây lời dẫn) |
+| Clip AI video | **tối đa 3** |
+| Ảnh giữ | **tối đa 10–12** (mỗi ảnh giữ 45–75 giây) |
+
+- **Vị trí 3 Clip:** MỞ (Anh Minh nói trực diện, neo sự hiện diện nhân vật) · một khoảnh khắc chủ
+  đạo giữa bài · KẾT LẮNG. Không rải đều — đặt đúng 3 điểm cảm xúc.
+- **Ảnh làm start-frame cho Clip KHÔNG tính vào trần 10–12.** Chỉ đếm ảnh **giữ độc lập** (tự nó
+  hiện trên màn hình). Với kênh này, start-frame của cả 3 Clip lấy thẳng từ `characters/` nên
+  **chi phí ảnh nhân vật bằng 0** — không generate lại (xem `core-brain/image_style_bible.md` mục 0B).
+- **Khán giả kênh này NGHE nhiều hơn NHÌN** (nội dung sức khỏe/triết lý dạng kể chuyện, thường
+  bật lên nghe khi đang làm việc khác). Vì vậy ưu tiên giữ ảnh ở **mức dài của khoảng (60–75
+  giây)**, không cần đổi hình dồn dập. Giá trị video nằm ở lời dẫn — hình để nâng đỡ, không để
+  tranh sự chú ý.
 - Tạo MỘT kho B-roll tĩnh đẹp, dùng lại across nhiều video — đừng generate mới từng cảnh.
-- Chỉ generate Clip cho vài cảnh "mặt nhân vật"/khoảnh khắc chủ đạo làm điểm nhấn; phần còn lại
-  là Ảnh tĩnh + Ken Burns hoặc B-roll loop + lời dẫn phủ lên.
 - Clip AI video generate gốc 6–10 giây → khi dựng, kéo dài cảm giác thành 8–12 giây bằng
   zoom/pan/crop nhẹ (không generate clip dài hơn — tốn thêm chi phí).
-- Độ dài hiển thị Ảnh tĩnh bám theo **Duration** của scene đó (mục 1.C, ~110–130 từ/phút) —
-  không phải một con số cố định riêng.
 - Công cụ AI lo HÌNH + ambient; lời dẫn tiếng Việt lồng riêng (TTS chất lượng cao hoặc người đọc).
-- Video dài: chi phí generate tăng nhanh — hybrid (đa số Ảnh tĩnh + kho B-roll dùng lại + lời
-  dẫn dài) là cách bền nhất.
+
+### 6B. IMAGE MOTION ENGINE (bắt buộc — không giữ ảnh lâu chỉ bằng Ken Burns)
+
+> Thêm 25/07/2026. Đây là mảnh còn thiếu khiến các tính toán trước đó sai: **Ken Burns đơn thuần
+> chỉ giữ được một ảnh ~20–25 giây trước khi màn hình thấy đứng chết.** Muốn giữ 45–75 giây thì
+> phải xếp tầng hiệu ứng. Học từ `visual_bible_dog1.md` §15.4 của kênh My Dog & My Love.
+
+Mỗi ảnh giữ đi qua một chồng lớp hiệu ứng ở bước dựng — **Ken Burns là lớp nền của mọi ảnh**,
+cộng thêm **tối đa 2 lớp** trong số:
+
+- **Parallax** — tách ảnh thành lớp gần/giữa/xa trôi khác tốc độ. Dùng cho cảnh không gian, hoặc
+  ảnh có chủ thể tiền cảnh rõ (bàn tay, khung cửa, tách trà).
+- **Depth of Field** — chuyển nét (rack focus) hoặc mờ hậu cảnh co/giãn nhẹ, để dẫn mắt người xem
+  giữa một lần giữ dài. Hiệu quả nhất với ảnh giữ trên 45 giây.
+- **Light Rays / Light Leak** — tia nắng mềm qua cửa sổ/tán cây. Để dành cho đoạn ấm áp, hy vọng,
+  chữa lành — không dùng ở đoạn trầm buồn, sẽ mất trọng lượng cảm xúc.
+- **Particles** — bụi nắng, lá rơi, hạt mưa. Dùng rất tiết chế, chỉ khi mùa/thời tiết trong nội
+  dung gọi tới. Không thêm chỉ để cho đẹp.
+
+⚠️ **Không chồng quá 2 lớp phụ** — nhiều hơn sẽ thành hình "làm quá", phạm đúng tinh thần tĩnh
+tại/chân thật của kênh. **Không dùng Camera Shake** (kể cả nhẹ) cho kênh này: My Dog dùng nó cho
+cảnh căng thẳng/hành động, còn nội dung Anh Minh là chiêm nghiệm — rung máy sẽ đọc thành lỗi kỹ
+thuật chứ không thành chủ ý.
 
 ---
 

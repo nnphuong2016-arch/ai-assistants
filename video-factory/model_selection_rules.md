@@ -13,6 +13,38 @@
 > Burns) — quy định chính thức mô hình hybrid tiết kiệm chi phí: phần lớn cảnh dùng ảnh tĩnh +
 > kỹ thuật zoom/pan (rẻ), chỉ cảnh thật sự quan trọng mới generate clip AI (đắt). Mục 4/5 cập
 > nhật theo lớp quyết định mới này.
+> Cập nhật: 25/07/2026 — thêm **cờ MỨC CHI HIỆN HÀNH** ngay dưới đây (đọc TRƯỚC mọi thứ khác);
+> thay bảng "30–35 cảnh / 9–11 Clip" bằng trần cứng theo số tuyệt đối; đổi "Ken Burns" thành
+> **Image Motion Engine** (Ken Burns chỉ là lớp nền, xem `video_rules.md` mục 6B).
+
+---
+
+## MỨC CHI HIỆN HÀNH: MỨC 1 (tối đa 3 Clip)
+
+**Ngày đặt: 25/07/2026 · Người đặt: chủ kênh.**
+
+**Mọi video DÀI sản xuất từ lúc này phải theo Mức 1 (tối đa 3 Clip: MỞ · khoảnh khắc chủ đạo ·
+KẾT LẮNG) cho tới khi chính dòng này được sửa.**
+
+Cờ này **chỉ chủ kênh mới được đổi**. KHÔNG AI nào trong pipeline (kể cả trợ lý viết kịch bản,
+Scene Generator, hay chính lập luận của tài liệu này) được tự nâng lên mức cao hơn vì thấy một
+video "có vẻ chạy tốt" — điều kiện nâng mức phụ thuộc số liệu thật trên YouTube Studio và doanh
+thu, thứ mà không AI nào ở đây truy cập được. Chúng tồn tại để **con người** biết khi nào quay lại
+sửa dòng này, không phải để AI tự đánh giá.
+
+Nếu được yêu cầu lên kế hoạch hay viết một kịch bản video DÀI, phải đọc dòng này TRƯỚC và dùng
+đúng mức đang ghi — không đoán, không suy diễn, không tự nâng.
+
+| Mức | Trần Clip | Khi nào dùng |
+|---|---|---|
+| **Mức 1 — Khởi động** | **3 Clip** | Mặc định, từ video đầu tiên, cho tới khi đạt điều kiện nâng |
+| **Mức 2 — Tăng trưởng** | 5 Clip | Khi kênh đã bật kiếm tiền, hoặc ≥8 video Mức 1 giữ chân trung bình ≥45% |
+| **Mức 3 — Mở rộng** | 8 Clip | Khi doanh thu tháng vượt chi phí sản xuất 3–5 lần, 2 tháng liên tiếp |
+
+Các mức **cộng dồn**, không phải bản dựng khác nhau: Mức 2 = 3 Clip của Mức 1 + 2 cảnh vốn là ảnh
+được nâng lên Clip. Không phải làm lại video. **Ảnh giữ đứng yên ở mọi mức** — ảnh rẻ, không có lý
+do gì phải scale theo.
+
 
 ---
 
@@ -78,16 +110,17 @@ Chỉ dùng Runway khi bố cục hoặc chuyển động máy quay là ưu tiê
 
 ---
 
-## 1B. LỚP QUYẾT ĐỊNH 0 — CLIP AI VIDEO HAY ẢNH TĨNH + KEN BURNS (quyết định TRƯỚC khi chọn công cụ)
+## 1B. LỚP QUYẾT ĐỊNH 0 — CLIP AI VIDEO HAY ẢNH GIỮ + IMAGE MOTION ENGINE (quyết định TRƯỚC khi chọn công cụ)
 
 > Thêm 23/07/2026 — chính thức hoá mô hình hybrid tiết kiệm chi phí. Đây là bước quyết định
 > **đứng trước** mục 2–4 bên dưới: trước khi hỏi "cảnh này dùng Veo3 hay Kling hay Hailuo hay
 > Runway", phải hỏi câu hỏi gốc hơn — **"cảnh này có cần generate clip AI (chuyển động thật)
-> không, hay một ảnh tĩnh + hiệu ứng zoom/pan (Ken Burns) là đủ?"** Phần lớn cảnh KHÔNG cần
+> không, hay một ảnh giữ + Image Motion Engine là đủ?"** Phần lớn cảnh KHÔNG cần
 > clip — ảnh tĩnh rẻ hơn nhiều lần so với video generate (dù công cụ nào), vì chỉ tốn 1 lần
 > generate ảnh (hoặc dùng ảnh có sẵn từ kho) thay vì generate video.
 
-**Mặc định: Ảnh tĩnh + Ken Burns.** Chỉ chuyển sang Clip AI video khi cảnh thuộc một trong các
+**Mặc định: Ảnh giữ + Image Motion Engine** (Ken Burns + tối đa 2 lớp phụ, `video_rules.md` mục
+6B)**.** Chỉ chuyển sang Clip AI video khi cảnh thuộc một trong các
 trường hợp sau:
 - Anh Minh nói trực diện camera (môi/biểu cảm cần chuyển động thật).
 - Cận cảnh cảm xúc — khoảnh khắc khán giả cần thấy vi biểu cảm (chớp mắt, thở, ngập ngừng).
@@ -95,24 +128,44 @@ trường hợp sau:
 - Hành động có chuyển động là chính nội dung cảnh (VD: bước đi, cầm/đặt vật, cử chỉ tay có ý
   nghĩa) — nếu đứng yên thì mất hết ý cảnh muốn truyền tải.
 
-**Giữ Ảnh tĩnh + Ken Burns cho các trường hợp còn lại** (đa số cảnh): thiên nhiên, đồ vật, bối
+**Giữ Ảnh giữ + Image Motion Engine cho các trường hợp còn lại** (đa số cảnh): thiên nhiên, đồ vật, bối
 cảnh/không gian, ẩn dụ hình ảnh, establishing shot, nhân vật ngồi/đứng yên lặng không cần biểu
 cảm vi tế, B-roll chuyển cảnh. Với cảnh có Anh Minh nhưng chỉ ngồi/đứng tĩnh (không nói, không
 biểu cảm mạnh) → dùng thẳng ảnh từ kho ảnh nhân vật cố định (`core-brain/image_style_bible.md`
 mục 0B) làm ảnh tĩnh, KHÔNG cần img2video — rẻ nhất, vẫn giữ đúng nhận diện nhân vật vì là ảnh
 gốc, không generate lại.
 
-**Tỷ lệ tham khảo (video TRUNG/DÀI, ví dụ một tập ~8-10 phút):**
+**Ngân sách hình cho VIDEO DÀI (8–10 phút) — Mức 1, trần cứng:**
 
-| Thành phần | Số lượng tham khảo |
+| Thành phần | Trần |
 |---|---|
-| Tổng số cảnh | 30–35 |
-| Clip AI video (Veo3/Kling/Hailuo/Runway) | 9–11 cảnh (≈ 28–31%) |
-| Ảnh tĩnh + Ken Burns (zoom/pan) | 20–24 cảnh (≈ 69–72%) |
+| Cảnh (đơn vị lời dẫn) | 8–10 (mỗi cảnh 55–75 giây) |
+| Clip AI video | **tối đa 3** |
+| Ảnh giữ độc lập | **tối đa 10–12** (mỗi ảnh giữ 45–75 giây, qua Image Motion Engine) |
 
-Đây là **tỷ lệ tham khảo cho video TRUNG/DÀI** (nhiều cảnh, dư địa để đa số là ảnh tĩnh). Với
-video NGẮN (5–8 cảnh), tỷ lệ này không co giãn tuyến tính — mỗi cảnh trong video ngắn "nặng ký"
-hơn, nên vẫn ưu tiên xét theo 4 tiêu chí ở trên cho từng cảnh cụ thể thay vì áp cứng %.
+> ⚠️ **Bảng này thay bảng cũ "30–35 cảnh / 9–11 Clip / 20–24 ảnh tĩnh"** (bản 23/07/2026). Bảng cũ
+> vừa mâu thuẫn với `video_rules.md` mục 2, vừa đắt bất hợp lý: 9–11 Clip cho 8–10 phút là
+> **1,0–1,2 clip/phút**, cao hơn cả mức chi cao nhất của kênh tham chiếu My Dog & My Love (Mức 3
+> của họ: 0,68 clip/phút, chỉ mở khi đã có lãi vững). Nay `video_rules.md` mục 2 là nguồn chốt số
+> cảnh, file này chốt trần hình.
+
+**Hai quy tắc đếm bắt buộc nhớ:**
+
+1. **Ảnh dùng làm start-frame cho Clip KHÔNG tính vào trần 10–12.** Chỉ đếm ảnh **giữ độc lập**
+   (tự nó hiện trên màn hình). Mỗi Clip đều cần một khung mở đầu, nhưng khung đó không phải một
+   "ảnh giữ".
+2. **Start-frame của kênh này miễn phí.** Cả 3 Clip đều là img2video animate thẳng từ kho ảnh nhân
+   vật cố định trong `characters/` (`core-brain/image_style_bible.md` mục 0B) — không generate lại.
+   Đây là lợi thế so với kênh tham chiếu, vốn phải sinh mới ảnh nhân vật cho từng tập.
+
+**Vì sao chỉ 3 Clip mà không phải 5 như kênh tham chiếu:** thể loại khác nhau. My Dog là kể chuyện
+có chạy/cứu/đoàn tụ — chuyển động chính là nội dung, bỏ chuyển động là mất cảm xúc. Nội dung Anh
+Minh là chiêm nghiệm về sức khỏe/triết lý, gần như không cảnh nào qua được bài kiểm "bỏ chuyển
+động thì mất cảm xúc". Thêm nữa, **khán giả kênh này nghe nhiều hơn nhìn** — thường bật lên nghe
+khi đang làm việc khác — nên hình chỉ cần nâng đỡ lời dẫn, không cần tranh sự chú ý.
+
+Với video TRUNG và NGẮN, ngân sách hình chưa được chốt bằng con số cứng — vẫn xét theo 4 tiêu
+chí "Clip" ở trên cho từng cảnh cụ thể, giữ tinh thần đa số là Ảnh tĩnh.
 
 **Độ dài Clip AI video (khi đã chọn generate clip):** gốc 6–10 giây (tuỳ công cụ, xem mục 12
 `video_ai_prompt_rules.md`) — khi dựng (edit), có thể **kéo dài cảm giác thành 8–12 giây** bằng
@@ -185,10 +238,10 @@ Nhân vật · Hội thoại · Anh Minh nói trực diện · Thiên nhiên · 
 ## 5. TỐI ƯU CHI PHÍ
 
 Hệ thống sản xuất nên tự động ưu tiên hiệu quả chi phí. **Trước hết, áp dụng Lớp quyết định 0
-(mục 1B)** — loại phần lớn cảnh (~69–72%) sang Ảnh tĩnh + Ken Burns, không tốn chi phí generate
-video. Bảng % dưới đây chỉ áp dụng cho phần cảnh CÒN LẠI đã được xác định là cần Clip AI video
-(≈ 28–31% tổng số cảnh, xem mục 1B) — tức là % trong nội bộ "rổ Clip", không phải % trên tổng số
-cảnh của cả video:
+(mục 1B)** — loại phần lớn cảnh sang Ảnh giữ + Image Motion Engine, không tốn chi phí generate
+video. Bảng % dưới đây chỉ áp dụng cho phần CÒN LẠI đã được xác định là cần Clip AI video (video
+DÀI Mức 1: tối đa 3 Clip, xem mục 1B) — tức là % trong nội bộ "rổ Clip", không phải % trên tổng
+số cảnh của cả video:
 
 | Công cụ | Tỷ lệ (trong số cảnh đã chọn là Clip) | Dùng cho |
 |---|---|---|

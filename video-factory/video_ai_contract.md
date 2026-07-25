@@ -23,7 +23,7 @@ DATE: 25/07/2026
 
 > ⚠️ **Cập nhật 23/07/2026 — mô hình hybrid tiết kiệm chi phí (xem `model_selection_rules.md`
 > mục 1B):** từ nay pipeline có **2 nhánh song song** sau Stage 2, không phải mọi Scene đều đi
-> qua Stage 4 (generate Clip). Đa số Scene (~69–72% với video TRUNG/DÀI) chỉ dừng ở Ảnh tĩnh
+> qua Stage 4 (generate Clip). Đa số Scene (video DÀI Mức 1: chỉ 3 Clip trên 8–10 cảnh) chỉ dừng ở Ảnh giữ
 > (Stage 3, hoặc lấy thẳng ảnh có sẵn trong kho `image_style_bible.md` mục 0B nếu là Anh Minh
 > đứng/ngồi yên) rồi đi thẳng tới Stage 7 kèm tham số Ken Burns — **bỏ qua Stage 4 hoàn toàn**,
 > tiết kiệm chi phí generate video. Chỉ Scene được đánh dấu Clip ở Stage 2B mới đi qua Stage 4.
@@ -168,9 +168,10 @@ Yêu cầu
 - Mặc định `media_type: "static"` trừ khi Scene khớp 1 trong 4 tiêu chí "Clip" ở
   `model_selection_rules.md` mục 1B (Anh Minh nói trực diện / cận cảnh cảm xúc / khoảnh khắc
   chủ đạo / hành động là chính nội dung cảnh).
-- Tỷ lệ tham khảo toàn video: ~28–31% Scene là `"clip"`, phần còn lại `"static"` (video TRUNG/DÀI
-  — xem bảng số liệu ở `model_selection_rules.md` mục 1B). Không ép cứng %, chỉ dùng để tự kiểm
-  nếu lệch quá xa (VD 80% Scene ra "clip" thì phải xét lại).
+- **Trần cứng, video DÀI Mức 1: tối đa 3 Scene được `"clip"`** (đặt ở MỞ · khoảnh khắc chủ đạo ·
+  KẾT LẮNG), tối đa 10–12 Ảnh giữ độc lập. Đọc cờ "MỨC CHI HIỆN HÀNH" ở đầu mục 1B
+  `model_selection_rules.md` TRƯỚC — dùng đúng mức đang ghi, KHÔNG tự nâng. Ảnh dùng làm
+  start-frame cho Clip không tính vào trần ảnh giữ.
 - **Phân loại field Character trước khi quyết định nguồn ảnh** (3 trường hợp, xem thêm Stage 3):
   1. **Character trống** → B-roll, không có nhân vật.
   2. **Character = "Hiền triết Anh Minh"** → CHỈ nhân vật này có kho ảnh cố định. `media_type =
@@ -320,8 +321,11 @@ Video.mp4
 Yêu cầu
 
 - ghép đúng thứ tự theo Scene ID
-- Scene "static": áp Ken Burns (zoom in/out chậm, pan ngang/dọc nhẹ) trong đúng **Duration** của
-  Scene đó (lấy từ Master Script, ~110–130 từ/phút theo Voice — xem `video_rules.md` mục 1.C)
+- Scene "static": áp **Image Motion Engine** (Ken Burns là lớp nền + tối đa 2 lớp phụ:
+  Parallax / Depth of Field / Light Rays / Particles — xem `video_rules.md` mục 6B) trong đúng
+  **Duration** của Scene đó (lấy từ Master Script, ~110–130 từ/phút theo Voice — mục 1.C).
+  ⚠️ KHÔNG giữ một ảnh 45 giây trở lên chỉ bằng Ken Burns — màn hình sẽ đứng chết. KHÔNG dùng
+  Camera Shake cho kênh này (nội dung chiêm nghiệm, rung máy đọc thành lỗi kỹ thuật).
 - Scene "clip": clip gốc 6–10 giây → kéo dài cảm giác thành 8–12 giây bằng zoom/pan/crop nhẹ
   ngay trên clip đó (không generate lại clip dài hơn)
 - subtitle đồng bộ

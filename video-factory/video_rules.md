@@ -8,9 +8,6 @@
 > Camera/Character/Emotion/Loop, tách Master Script khỏi prompt platform-specific (xem mục 1, 4, 5).
 > Cập nhật: 20/07/2026 — mục 2 làm rõ VIDEO NGẮN gồm 2 loại nội dung khác nhau (suy ngẫm vs
 > Dưỡng Sinh Ngắn — xem `instructions_VIDEO.md` mục 1B).
-> Cập nhật: 25/07/2026 — **chốt VIDEO DÀI = 10 cảnh, tối đa 3 Clip + tối đa 15 Ảnh tĩnh** (thay
-> "15–20 cảnh" cũ, đồng thời gỡ mâu thuẫn với bảng "30–35 cảnh" ở `model_selection_rules.md`).
-> Thêm field **Shots** ở mục 1.C vì một cảnh ~50–60 giây cần được phủ bằng 1–3 hình.
 
 ---
 
@@ -21,11 +18,7 @@ Mỗi kịch bản gồm **2 lớp tách rời**:
 - **LỚP HÌNH (shot list B-roll):** danh sách cảnh hình cho công cụ AI (Veo…), **dùng lại được**.
 
 **Nguyên tắc cốt lõi — "cảnh" ≠ "clip lấp đầy thời lượng":**
-- Một **cảnh = một Ý / một nhịp nội dung**, KHÔNG phải một clip cố định 8 giây.
-  ⚠️ **Cảnh cũng KHÔNG đồng nghĩa với một khung hình** (làm rõ 25/07/2026): cảnh là đơn vị của
-  **lời dẫn**; một cảnh dài có thể đổi hình vài lần bên dưới cùng một mạch lời (field **Shots**,
-  mục 1.C). Vì vậy tổng số hình của cả video luôn ≥ tổng số cảnh — hai lớp đếm khác nhau, đừng
-  cộng lẫn khi đối chiếu ngân sách ở mục 2.
+- Một **cảnh = một Ý / một nhịp nội dung** (chỗ hình thay đổi), KHÔNG phải một clip cố định 8 giây.
 - **Độ dài video do LỜI DẪN quyết định**, không phải do số cảnh × độ dài clip.
 - Công cụ AI hiện tạo clip ngắn (Veo 3.1: 4/6/8 giây mỗi lần). Để phủ một ý dài hơn:
   **loop / nối (extend) / giữ hình / đổi góc B-roll** dưới cùng một mạch lời dẫn.
@@ -80,14 +73,6 @@ Mục đích: tránh rủi ro vi phạm bản quyền khi dùng bài viết củ
   - **Duration:** thời lượng cảnh (giây), ước theo ngân sách lời của đoạn Voice trong cảnh đó.
   - **Voice** — tiếng Việt: voiceover cho ý đó. **Giọng đọc lồng riêng** (không để công cụ đọc
     tiếng Việt — giữ kiểm soát tông).
-  - **Shots** — số hình phủ cảnh này: `1`, `2` hoặc `3` (mặc định `1`). Chỉ tách >1 khi cảnh dài
-    và một khung hình duy nhất sẽ đứng chết. Với video DÀI, tổng Shots của cả 10 cảnh phải nằm
-    trong trần ngân sách hình ở mục 2 (**tối đa 3 Clip + tối đa 15 Ảnh tĩnh**) — cộng lại trước
-    khi xuất để tự kiểm.
-    ⚠️ Khi `Shots > 1`, viết Visual/Camera thành đúng ngần ấy khối đánh số (`Visual 1:`,
-    `Camera 1:`, `Visual 2:`, `Camera 2:`...), mỗi khối là một hình riêng. File media map theo
-    `<Scene ID>-<số shot>` (VD cảnh 003 có 2 hình → `Shot003-1`, `Shot003-2`); riêng
-    `Voice003.mp3` và `Subtitle003.srt` vẫn 1 file/cảnh vì lời dẫn không tách theo hình.
   - **Visual** — tiếng Anh: bối cảnh + chủ thể + hành động (không lặp lại nội dung đã có ở
     Camera/Character bên dưới). ⚠️ **KHÔNG mô tả khuôn mặt/trang phục/đặc điểm ngoại hình nhân
     vật ở đây** — nhận diện nhân vật do field Character đảm nhiệm (xem bên dưới), khớp đúng quy
@@ -143,27 +128,14 @@ không kéo dãn một ý cho đủ giờ.
 ### VIDEO DÀI (LONG)
 - Nền tảng: YouTube · Podcast video.
 - Thời lượng: **8–10 phút**.
-- Số cảnh: **10 cảnh** (chốt 25/07/2026 — thay cho "15–20" cũ). Mỗi cảnh ~50–60 giây lời dẫn.
-- **Ngân sách hình cả video: tối đa 3 Clip AI video + tối đa 15 Ảnh tĩnh** (trần 18 đơn vị hình,
-  dùng ít hơn được — đây là mức TRẦN để chặn chi phí, không phải chỉ tiêu phải đạt).
-  ⚠️ Trần 18 hình > 10 cảnh là **có chủ đích, không phải lỗi**: một cảnh dài ~50–60 giây không
-  thể đứng yên trên một khung hình duy nhất, nên mỗi cảnh được phủ bằng **1–3 hình** (xem mục
-  1.C field Shots). Clip AI chỉ dành cho tối đa 3 khoảnh khắc đắt nhất của cả video.
+- Số cảnh (ý) tham khảo: **15–20** · khuyến nghị **17**.
 - Mục tiêu: đào sâu chủ đề · nhiều lớp góc nhìn · có phần áp dụng thực tế · KHÔNG kéo dài một ý cho đủ giờ.
 - Theo **kiến trúc long-form ở mục 4**.
-
-> ⚠️ **Điểm chưa chốt (25/07/2026):** sau khi DÀI hạ xuống 10 cảnh, TRUNG (10–14 cảnh) đang có
-> số cảnh **bằng hoặc nhiều hơn** DÀI, dù ngắn hơn về thời lượng. Mật độ hiện tại: NGẮN ~15
-> giây/cảnh · TRUNG ~20 giây/cảnh · DÀI ~55 giây/cảnh — chênh lệch lớn ở bậc DÀI. Chỉ có VIDEO
-> DÀI được chốt lại; con số của NGẮN/TRUNG giữ nguyên tạm thời, **chờ quyết định riêng**. Khi
-> làm video TRUNG, biết là số cảnh có thể sẽ đổi.
 
 **Nguyên tắc chung về số cảnh:**
 - Mỗi cảnh đại diện cho một ý.
 - Không thêm cảnh chỉ để đạt đủ số lượng; không cắt ý quan trọng để giảm số cảnh.
-- Chất lượng nội dung quan trọng hơn số cảnh. Trợ lý được phép tăng/giảm số cảnh theo yêu cầu
-  của chủ đề — **trừ VIDEO DÀI**: 10 cảnh và trần hình (≤3 Clip, ≤15 Ảnh tĩnh) là con số cứng,
-  không tự nới. Nếu chủ đề thấy chật, gộp ý lại hoặc hạ xuống định dạng TRUNG, không thêm cảnh.
+- Chất lượng nội dung quan trọng hơn số cảnh. Trợ lý được phép tăng/giảm số cảnh theo yêu cầu của chủ đề.
 
 ---
 
@@ -196,15 +168,10 @@ còn hơn 10 phút loãng.
 
 **Khuôn xuất video dài:** A. Tên + ý chính + 1 câu hứa · B. Viết **lời dẫn liền mạch theo 5
 phần** trước (như một bài nói chậm, để giữ mạch cảm xúc — đây là bước nháp) · C. Sau đó **chia
-lời dẫn đã viết thành đúng 10 cảnh**, đóng gói mỗi cảnh theo đúng khuôn field ở mục 1.C (Scene ID
-zero-padded, Duration, Shots, Voice, Visual, Camera, Character, Emotion, Loop) — mỗi field Voice
-là một đoạn của lời dẫn liền mạch đã viết ở bước B, không viết lại. Đánh dấu `Loop: true` cho cảnh
+lời dẫn đã viết thành ~15–20 cảnh**, đóng gói mỗi cảnh theo đúng khuôn field ở mục 1.C (Scene ID
+zero-padded, Duration, Voice, Visual, Camera, Character, Emotion, Loop) — mỗi field Voice là một
+đoạn của lời dẫn liền mạch đã viết ở bước B, không viết lại. Đánh dấu `Loop: true` cho cảnh
 B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn khác nhau.
-
-**Tự kiểm ngân sách hình trước khi xuất (video DÀI):** cộng tổng Shots của cả 10 cảnh, đối chiếu
-trần ở mục 2 — **≤3 Clip AI** và **≤15 Ảnh tĩnh**. Vượt trần thì gộp bớt hình, không tăng ngân
-sách. 5 phần của khung trên trải trên 10 cảnh, không phải mỗi phần một cảnh: MỞ và KẾT LẮNG
-thường 1 cảnh mỗi phần, THÂN chiếm phần lớn số cảnh còn lại.
 
 ---
 
@@ -236,7 +203,7 @@ thường 1 cảnh mỗi phần, THÂN chiếm phần lớn số cảnh còn l�
 > "Lớp quyết định 0" (Clip AI video hay Ảnh tĩnh + Ken Burns, quyết định TRƯỚC khi chọn công cụ).
 
 - **Mặc định là Ảnh tĩnh + Ken Burns (zoom/pan), không phải Clip AI video.** Với video TRUNG/DÀI,
-  video DÀI (8–10 phút) có trần cứng: **10 cảnh · tối đa 3 Clip · tối đa 15 Ảnh tĩnh** (mục 2).
+  tỷ lệ tham khảo: ~28–31% cảnh là Clip (thời điểm thật sự quan trọng), ~69–72% là Ảnh tĩnh.
 - Tạo MỘT kho B-roll tĩnh đẹp, dùng lại across nhiều video — đừng generate mới từng cảnh.
 - Chỉ generate Clip cho vài cảnh "mặt nhân vật"/khoảnh khắc chủ đạo làm điểm nhấn; phần còn lại
   là Ảnh tĩnh + Ken Burns hoặc B-roll loop + lời dẫn phủ lên.

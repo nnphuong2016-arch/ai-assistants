@@ -153,7 +153,7 @@ Chuyển động → Phong cách hình ảnh → Chất lượng kỹ thuật �
 ## 11B. PROMPT ẢNH TĨNH + KEN BURNS (khác với prompt Clip)
 
 > Thêm 23/07/2026 — theo mô hình hybrid ở `model_selection_rules.md` mục 1B, phần lớn cảnh
-> (video DÀI: tối đa 15 Ảnh tĩnh so với tối đa 3 Clip) là **Ảnh tĩnh + hiệu ứng zoom/pan (Ken Burns)** ở bước dựng,
+> (~69–72% với video TRUNG/DÀI) là **Ảnh tĩnh + hiệu ứng zoom/pan (Ken Burns)** ở bước dựng,
 > không phải Clip AI video. Prompt cho ảnh tĩnh (Flux hoặc công cụ ảnh khác, xem
 > `video_ai_contract.md` Stage 3) khác Clip ở vài điểm:
 

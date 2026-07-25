@@ -169,7 +169,7 @@ Yêu cầu
   `model_selection_rules.md` mục 1B (Anh Minh nói trực diện / cận cảnh cảm xúc / khoảnh khắc
   chủ đạo / hành động là chính nội dung cảnh).
 - **Trần cứng, video DÀI Mức 1: tối đa 3 Scene được `"clip"`** (đặt ở MỞ · khoảnh khắc chủ đạo ·
-  KẾT LẮNG), tối đa 10–12 Ảnh giữ độc lập. Đọc cờ "MỨC CHI HIỆN HÀNH" ở đầu mục 1B
+  KẾT LẮNG), tối đa 13–16 Ảnh giữ độc lập. Đọc cờ "MỨC CHI HIỆN HÀNH" ở đầu mục 1B
   `model_selection_rules.md` TRƯỚC — dùng đúng mức đang ghi, KHÔNG tự nâng. Ảnh dùng làm
   start-frame cho Clip không tính vào trần ảnh giữ.
 - **Phân loại field Character trước khi quyết định nguồn ảnh** (3 trường hợp, xem thêm Stage 3):

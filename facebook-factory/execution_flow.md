@@ -73,7 +73,13 @@ Xác định:
 
 Nếu chủ đề chưa rõ.
 
-Phải làm rõ trước.
+Interactive Mode: hỏi lại để làm rõ trước.
+
+Automation Mode: KHÔNG hỏi lại (theo `output_schema.md`).
+
+Tự thu hẹp đầu vào thành một ý duy nhất rồi đi tiếp.
+
+Chọn ý gần đời sống nhất trong các cách hiểu có thể.
 
 ---
 
@@ -105,14 +111,17 @@ Không trộn nhiều chủ đề.
 # STEP 3
 Generate Ideas
 
-Hai nguồn song song (cập nhật 20/07/2026):
+Ba nguồn (cập nhật 25/07/2026):
 
-1. `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — kho 210 hook có sẵn, 7 series
+1. **Chủ đề do người vận hành đưa trực tiếp** — một chủ đề, một câu nói, một câu chuyện, một
+   tình huống. Đây là nguồn ƯU TIÊN CAO NHẤT: khi có, bỏ qua nguồn 2, đi thẳng sang STEP 3.5.
+   Nếu đầu vào quá rộng, tự thu hẹp thành một ý duy nhất trước khi đi tiếp.
+2. `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — kho 210 hook có sẵn, 7 series
    (Có những.../Đôi khi.../Hóa ra.../Đừng vội.../Nếu hôm nay.../Điều đáng nghĩ hôm nay/Một phút
-   nhìn lại). Nếu người dùng chỉ định số dòng → dùng đúng dòng đó. Nếu không, ưu tiên dòng CHƯA
-   dùng gần đây trong file này trước.
-2. `idea_library.md` — tự sinh khi file ở trên không có hook hợp chủ đề đang cần, hoặc khi cần
-   nhiều ý tưởng hơn 210 dòng có sẵn.
+   nhìn lại). Dùng khi người vận hành KHÔNG đưa chủ đề cụ thể. Nếu người dùng chỉ định số dòng →
+   dùng đúng dòng đó. Nếu không, ưu tiên dòng CHƯA dùng gần đây trong file này trước.
+3. `idea_library.md` — tự sinh khi hai nguồn trên không đủ, hoặc khi cần thêm hướng tiếp cận cho
+   cùng một chủ đề.
 
 Sinh nhiều hướng tiếp cận.
 
@@ -132,8 +141,8 @@ Tạo nhiều lựa chọn.
 Sau đó chọn ý mạnh nhất.
 
 Hook/dòng từ `bai-dang-Facebook-Anh-Minh.md` chỉ là **điểm vào** — không copy nguyên câu làm
-bài hoàn chỉnh, vẫn phải qua Hook (STEP 4), Framework (STEP 5), Writing Craft (STEP 6) như ý
-tưởng tự sinh.
+bài hoàn chỉnh, vẫn phải qua Lọc an toàn (STEP 3.5), Hook (STEP 4), Framework (STEP 5) và
+Writing Craft (STEP 7) như ý tưởng tự sinh.
 
 ---
 
@@ -250,34 +259,22 @@ Framework quyết định nhịp bài.
 ---
 
 # STEP 6
-Write Draft
-
-Sử dụng đồng thời:
-
-writing_rules.md
-
-writing_craft.md
-
-Trong bước này.
-
-Không kiểm tra.
-
-Không sửa.
-
-Chỉ tập trung viết.
-
----
-
-# STEP 7
-Inject Emotion
+Choose Emotion
 
 Sử dụng
 
 emotion_palette.md
 
-Kiểm tra:
+Chọn TRƯỚC khi viết, không phải sau.
 
-Bài đang mang cảm xúc gì?
+Cảm xúc quyết định cách chọn chi tiết và nhịp câu — chọn sau thì chỉ còn cách tô thêm,
+và bài sẽ lộ ra là đang cố tạo cảm xúc.
+
+Chọn:
+
+Một cảm xúc chính.
+
+Tối đa một cảm xúc phụ.
 
 Ví dụ
 
@@ -287,9 +284,30 @@ Ví dụ
 - Hy vọng
 - Biết ơn
 
-Không cố tạo cảm xúc mạnh.
+Không chọn cảm xúc mạnh.
 
 Chỉ cần đúng cảm xúc.
+
+---
+
+# STEP 7
+Write Draft
+
+Sử dụng đồng thời:
+
+writing_rules.md
+
+writing_craft.md
+
+Giữ đúng cảm xúc đã chọn ở STEP 6.
+
+Trong bước này.
+
+Không kiểm tra.
+
+Không sửa.
+
+Chỉ tập trung viết.
 
 ---
 
@@ -349,7 +367,7 @@ Có quá nhiều giải thích?
 
 Nếu chưa đạt.
 
-Quay lại Step 6.
+Quay lại Step 7.
 
 ---
 
@@ -398,11 +416,11 @@ Framework
 
 ↓
 
-Draft
+Emotion
 
 ↓
 
-Emotion
+Draft
 
 ↓
 
@@ -438,11 +456,11 @@ Nếu cấu trúc chưa ổn.
 
 Quay lại Step 5.
 
-Nếu bài viết cứng.
+Nếu cảm xúc sai.
 
 Quay lại Step 6.
 
-Nếu cảm xúc sai.
+Nếu bài viết cứng.
 
 Quay lại Step 7.
 

@@ -71,7 +71,7 @@ Dạo này mình để ý một chuyện.
 
 Dạo này cơ thể mình lạ lắm.
 
-Dạo này bố mình ngủ sớm hơn.
+Dạo này nhiều người lớn tuổi đi ngủ sớm hơn trước.
 
 Dạo này sáng nào mình cũng dậy mệt.
 
@@ -234,17 +234,26 @@ Nhưng chẳng còn năng lượng.
 # TYPE 8
 Memory Hooks
 
-Ví dụ
+Ký ức ở đây là **ký ức chung của một thế hệ**, không phải hồi ký riêng của nhân vật
+(xem `writing_rules.md` mục 5.1).
 
-Hồi nhỏ...
+Ví dụ
 
 Ngày trước...
 
-Có lần...
+Có một thời...
 
-Mình còn nhớ...
+Nhiều người còn nhớ...
 
-Ngày bé...
+Hồi ấy, nhà nào cũng...
+
+Ngày xưa, người ta hay bảo...
+
+Không dùng
+
+❌ Hồi nhỏ mình...
+
+❌ Ngày bé mình...
 
 ---
 
@@ -282,11 +291,11 @@ Nhưng...
 
 ---
 
-Có lần.
+Có người cha.
 
-Bố mình nói một câu.
+Chỉ nói một câu.
 
-Đến giờ mình vẫn nhớ.
+Mà người con nhớ mãi.
 
 ---
 
@@ -356,19 +365,24 @@ Không lấy tên nội tạng làm điểm vào.
 # TYPE 14
 Family Hooks
 
+Kể về gia đình bằng giọng quan sát ngôi ba — nhân vật không có gia đình riêng
+(xem `writing_rules.md` mục 5.1).
+
 Ví dụ
 
-Bố mình...
+Có người cha...
 
-Mẹ mình...
+Có người mẹ...
 
-Con trai mình...
+Nhiều người con...
 
-Một người bạn...
+Có những gia đình...
 
-Người hàng xóm...
+Ở nhà bên...
 
-Bác sĩ từng nói...
+Không dùng
+
+❌ Bố mình... ❌ Mẹ mình... ❌ Con trai mình...
 
 ---
 
@@ -445,15 +459,15 @@ Quote Hooks
 
 Không dùng danh ngôn nổi tiếng.
 
-Dùng lời thật.
+Dùng lời đời thường, kể bằng giọng quan sát.
 
 Ví dụ
 
-Bố mình từng nói.
+Có người cha từng nói với con.
 
-Mẹ mình vẫn hay bảo.
+Các cụ ngày trước hay bảo.
 
-Một bác lớn tuổi từng kể.
+Người lớn tuổi hay nói một câu.
 
 ---
 

@@ -69,15 +69,17 @@ Luôn ưu tiên Writing Craft.
 # Example 4
 ## Opening bằng ký ức
 
-> Hồi nhỏ.
+> Ngày trước.
 >
-> Chỉ cần ngã một lần.
+> Trẻ con ngã một lần.
 >
 > Hôm sau đã quên.
 
 Điểm học:
 
 - Ký ức tạo kết nối rất nhanh
+- Là ký ức chung của một thế hệ, không phải hồi ký riêng của nhân vật
+  (`writing_rules.md` mục 5.1)
 
 ---
 
@@ -235,7 +237,7 @@ Nên
 # Example 17
 ## Một khoảnh khắc
 
-> Bố mình đứng trước cửa.
+> Người cha đứng trước cửa.
 >
 > Không nói gì.
 >
@@ -305,6 +307,41 @@ Nên
 
 ---
 
+# Example 21
+## Một bài hội thoại hoàn chỉnh (F11)
+
+> Buổi tối.
+>
+> Hai cha con ngồi ngoài hiên.
+>
+> Người con nói, giọng nhỏ:
+>
+> "Con muốn chọn hướng khác, không phải hướng bố mong."
+>
+> Người cha im một lúc.
+>
+> "Bố có buồn không ạ?"
+>
+> "Bố chỉ sợ con chọn đường này vì bố. Chứ không phải vì con."
+>
+> Người con ngồi yên.
+>
+> Nhìn ra khoảng sân tối.
+>
+> Đêm ấy hai người ngồi rất lâu.
+>
+> Không ai nói thêm gì nữa.
+
+Điểm học:
+
+- Đúng 4 lượt thoại, hai nhân vật
+- Câu chốt nằm trong lời thoại của người cha, nhưng là một **nỗi sợ**, không phải một bài học
+- Kết bằng khoảng lặng, không giải thích gì thêm
+- KHÔNG có câu kiểu "Nhân cách là thứ đi cùng con suốt đời" — đó là lỗi biến nhân vật
+  thành cái loa giảng đạo
+
+---
+
 # Common Patterns
 
 Mẫu mở đầu
@@ -313,7 +350,7 @@ Mẫu mở đầu
 - Có những ngày...
 - Hóa ra...
 - Hôm qua mình mới nhận ra...
-- Hồi nhỏ...
+- Ngày trước...
 - Có bao giờ...
 - Điều thú vị là...
 

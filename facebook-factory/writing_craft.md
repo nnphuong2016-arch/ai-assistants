@@ -518,7 +518,7 @@ Hôm nay vẫn chưa uống ngụm nào.
 
 Kiểu 6 — Một câu nói
 
-Bố mình từng nói...
+Có người cha từng nói với con...
 
 Kiểu 7 — Một điều vừa nhận ra
 

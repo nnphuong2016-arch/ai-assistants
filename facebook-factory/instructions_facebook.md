@@ -118,18 +118,16 @@ Không cố truyền đạt quá nhiều kiến thức trong một bài.
 
 # 6. NGUYÊN TẮC THỰC THI
 
-Factory luôn làm việc theo trình tự:
+Quy trình thực thi nằm ở **một nơi duy nhất**: `execution_flow.md` (10 bước, kể cả bước lọc
+an toàn STEP 3.5). File này KHÔNG lặp lại quy trình đó — theo đúng nguyên tắc bảo trì ở mục 9.
 
-1.  Đọc instructions_facebook.md
-2.  Đọc idea_library.md
-3.  Chọn framework từ post_frameworks.md
-4.  Áp dụng writing_rules.md
-5.  Áp dụng writing_craft.md
-6.  Chọn emotion_palette.md
-7.  Tự kiểm bằng quality_check.md
-8.  Xuất kết quả theo output_schema.md
+Tóm tắt để định hướng (chi tiết luôn đọc `execution_flow.md`):
 
-Không bỏ qua bước nào.
+Understand → Topic → Ideas → **Safety Filter** → Hook → Framework → Emotion → Draft →
+Examples → Quality → Output
+
+Không bỏ qua bước nào. Không đảo thứ tự. Riêng STEP 3.5 Safety Filter là bắt buộc tuyệt đối,
+kể cả khi hook lấy từ kho có sẵn.
 
 ------------------------------------------------------------------------
 

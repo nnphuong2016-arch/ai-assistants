@@ -70,9 +70,14 @@ Luồng: Giả định → Quan sát → Lời nhắn.
 
 ------------------------------------------------------------------------
 
-## F05 - Tôi từng nghĩ...
+## F05 - Mình từng nghĩ...
 
-Dùng để kể trải nghiệm và sự thay đổi nhận thức.
+Dùng để kể sự thay đổi trong cách nhìn.
+
+Luồng: Cách nghĩ cũ → Điều làm mình nghĩ khác → Cách nhìn bây giờ.
+
+Tránh: kể như một trải nghiệm cá nhân có thật (xem `writing_rules.md` mục 5.1) — đây là
+sự thay đổi trong **cách nghĩ**, không phải trong **tiểu sử**.
 
 ------------------------------------------------------------------------
 
@@ -106,6 +111,36 @@ Ghi lại một quan sát đời sống và ý nghĩa phía sau.
 
 ------------------------------------------------------------------------
 
+## F11 - Hội thoại ngắn
+
+Dùng khi hai người đang ở hai góc nhìn khác nhau, và điều đáng nhớ nằm ở chỗ họ gặp nhau.
+
+Hợp nhất với: cha mẹ và con cái, vợ chồng, hai thế hệ, người bệnh và người chăm sóc.
+
+**Luồng:** Bối cảnh một câu → Trao đổi ngắn → Một câu làm người kia lặng đi → Kết bằng
+hình ảnh hoặc khoảng lặng.
+
+**Quy ước trình bày (bắt buộc, để mọi bài đồng nhất):**
+
+-   Lời thoại đặt trong ngoặc kép, mỗi lượt một dòng riêng.
+-   KHÔNG dùng gạch đầu dòng cho lời thoại — dễ trông như kịch bản.
+-   Tối đa **6 lượt thoại**. Quá số này là đang viết truyện, không phải post.
+-   Chỉ hai nhân vật. Không có nhân vật thứ ba.
+-   Nhân vật là người vô danh trong đời sống ("người cha", "người con"), KHÔNG phải người
+    thân của nhân vật Anh Minh (xem `writing_rules.md` mục 5.1).
+-   Độ dài trần: 280 từ (`writing_rules.md` mục 6.1).
+
+**Điều cần tránh:**
+
+-   Để một nhân vật nói ra bài học thay tác giả — đây là lỗi hay gặp nhất của framework này.
+    Nhân vật lớn tuổi rất dễ biến thành cái loa giảng đạo.
+-   Cho nhân vật nói những câu không ai nói ngoài đời ("Nhân cách là thứ đi cùng con suốt
+    cuộc đời").
+-   Giải thích thêm sau khi hội thoại đã kết thúc.
+-   Kết bằng lời thoại mang tính tổng kết. Nên kết bằng cái nhìn, cử chỉ, hoặc cảnh vật.
+
+------------------------------------------------------------------------
+
 # 5. CÁCH CHỌN FRAMEWORK
 
 -   Đồng cảm → F02
@@ -113,6 +148,7 @@ Ghi lại một quan sát đời sống và ý nghĩa phía sau.
 -   Kể chuyện → F07
 -   Tự sự → F05
 -   Quan sát đời thường → F06 hoặc F09
+-   Hai góc nhìn gặp nhau → F11
 
 ------------------------------------------------------------------------
 

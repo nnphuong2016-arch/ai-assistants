@@ -112,9 +112,15 @@ Nếu chỉ có thể là tiêu đề trên kênh lối sống/triết sống �
 AI Overviews trích nội dung **dễ tổng hợp, dễ trích**. Mỗi bài nên có:
 
 - **Câu trả lời trực tiếp ~50–100 từ ngay đầu bài** (trả lời thẳng câu hỏi tiêu đề), rồi mới mở rộng.
-- **Tiêu đề rõ ràng** H1 → H2 → H3; mỗi mục mở bằng 2 câu trả lời thẳng rồi mới khai triển.
-- **Đoạn ngắn**, dễ quét. Dùng **danh sách** và **bảng** khi hợp (AI Overviews rất hay trích list).
-- **Khối FAQ** ở cuối, mô phỏng đúng cách người ta hỏi (3–5 câu).
+- **Phân cấp tiêu đề rõ ràng** (tiêu đề bài → tiêu đề mục lớn → tiêu đề mục nhỏ); mỗi mục mở bằng
+  2 câu trả lời thẳng rồi mới khai triển. **Cách trình bày:** tiêu đề mục viết thành một dòng chữ
+  riêng, KHÔNG có `#`/`##` đứng trước (xem mục 3D) — n8n/CMS tự bọc thẻ `<h2>`/`<h3>` khi đăng
+  web, nên vẫn giữ nguyên lợi ích SEO mà giọng đọc không bị vấp ký tự.
+- **Đoạn ngắn**, dễ quét. Khi cần liệt kê nhiều ý ngang hàng, viết thành **câu văn xuôi nối tiếp
+  có từ dẫn rõ ràng** ("Trước hết…", "Bên cạnh đó…", "Cuối cùng…") thay cho bullet/bảng — vẫn đủ
+  tín hiệu liệt kê để AI Overviews trích, mà Body giữ được 100% chữ.
+- **Khối FAQ** ở cuối, mô phỏng đúng cách người ta hỏi (3–5 câu). Mỗi cặp câu hỏi/câu trả lời
+  cũng viết thuần chữ, không đánh số bằng ký tự đặc biệt.
 - **Ngày cập nhật** hiển thị ("Cập nhật: …") để báo độ tươi mới.
 - **Schema** khi triển khai web: Article/BlogPosting + FAQ + Person (tác giả). Chỉ schema khớp nội dung thật.
 
@@ -158,13 +164,24 @@ Chọn loại trước khi viết — không để bài phình dần trong lúc 
   hoặc nối câu tự nhiên thay cho gạch ngang.
 - Không dùng `*`, `**` (in đậm/in nghiêng kiểu markdown), `•`, hay bất kỳ ký tự markdown/bullet
   nào khác.
+- Không dùng **link markdown** `[chữ neo](/slug)` trong Body — dấu ngoặc vuông và ngoặc đơn cũng
+  bị đọc thành lời. Internal link chuyển sang field riêng `Internal Links` ở `output_schema.md`,
+  để n8n/CMS tự gắn link vào đúng cụm chữ khi đăng web (xem `internal_link_rules.md` mục 5).
+- Không dùng bảng markdown (`|`, `---`) — nội dung dạng bảng viết lại thành đoạn văn xuôi mô tả
+  từng dòng, hoặc bỏ nếu không cần thiết.
+- Không đánh số danh sách bằng `1.` `2.` đứng đầu dòng — nếu cần thứ tự, dùng chữ ("Điều đầu
+  tiên…", "Điều thứ hai…").
 - Dấu câu thông thường (`,` `.` `?` `!` `:` ngoặc kép) vẫn dùng bình thường — chỉ cấm các ký tự
   ĐỊNH DẠNG/PHÂN CÁCH kể trên, không cấm dấu câu.
 - Ngoại lệ: Slug vẫn dùng gạch nối theo `keyword_strategy.md` mục 6 (slug không được đọc
   thành giọng, chỉ nằm trong URL).
 
-Quy tắc này áp dụng cho **Body** — field khác (Title, Slug, Meta Description...) giữ nguyên
-quy tắc riêng đã có ở các file tương ứng.
+Quy tắc này áp dụng cho **Body và FAQ** (hai phần được đọc thành tiếng) — field khác (Title,
+Slug, Meta Description, Tags...) giữ nguyên quy tắc riêng đã có ở các file tương ứng.
+
+**Không mất SEO:** phân cấp tiêu đề vẫn giữ nguyên về mặt nội dung (xem mục 3), chỉ bỏ ký tự
+đánh dấu; n8n/CMS bọc thẻ `<h2>`/`<h3>` và gắn internal link ở bước đăng web. Bài mẫu viết đúng
+chuẩn này xem `article_examples_full.md`.
 
 ---
 
@@ -180,7 +197,8 @@ quy tắc riêng đã có ở các file tương ứng.
 
 ## 5. LIÊN KẾT NỘI BỘ & UY TÍN CHỦ ĐỀ (TOPICAL AUTHORITY)
 
-- Gom bài theo **cụm chủ đề** quanh 6 trụ; mỗi bài liên kết tới 2–4 bài liên quan cùng cụm.
+- Gom bài theo **cụm chủ đề** quanh 6 mục nội dung; mỗi bài liên kết tới **2–5** bài liên quan
+  cùng cụm (con số thống nhất với `internal_link_rules.md` mục 1 và `seo_checklist.md` mục 5).
 - Xây đủ chiều sâu một trụ trước khi nhảy lung tung — Google thưởng cho **uy tín chủ đề**.
 - Liên kết cả sang video tương ứng (web ↔ YouTube) để củng cố hệ sinh thái.
 

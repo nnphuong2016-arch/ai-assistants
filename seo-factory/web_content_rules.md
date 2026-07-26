@@ -131,8 +131,13 @@ AI Overviews trích nội dung **dễ tổng hợp, dễ trích**. Mỗi bài n�
 | Loại | Độ dài | Dùng khi |
 |---|---|---|
 | **Quick Answer** | 600–800 từ | Câu hỏi hẹp, trả lời xong là hết ý (vệ tinh nhỏ, FAQ mở rộng). |
-| **Standard** | 1200–1500 từ | Bài vệ tinh thường, Mẫu A/B/C/D/F. |
+| **Standard** | 1200–1500 từ | Bài vệ tinh thường: Mẫu A/B/C/D/F, và Mẫu H (Checklist),
+  Mẫu I (So sánh). |
 | **Pillar** | 1800–2500 từ | Bài trụ đầu cụm (Mẫu E), tổng quan, liên kết ra vệ tinh. |
+
+**Mẫu G — Nhật ký Anh Minh** không gán vào bảng trên. Đây là bài thương hiệu, viết theo
+nhịp cảm xúc chứ không theo truy vấn tìm kiếm, nên **không đặt sàn độ dài**: dừng khi ý đã
+đủ. Trần mềm 1200 từ — dài hơn thì gần như chắc chắn đang kể lan man.
 
 Chọn loại trước khi viết — không để bài phình dần trong lúc viết.
 

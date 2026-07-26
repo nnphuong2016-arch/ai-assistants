@@ -109,11 +109,12 @@ một kho nữa)
 5. `seo-factory/writing_craft_examples.md` — dạy giọng bằng ví dụ: nhịp đoạn xoay vòng, giọng
    trải nghiệm người đọc, cách mở/kết bài, Information Gap tự kiểm, ranh giới ngôn ngữ theo
    từng mục (áp dụng cả 6 mục nội dung, không riêng Sức khỏe).
-6. `seo-factory/seo_checklist.md` — tự kiểm TRƯỚC khi xuất, bắt buộc không bỏ qua (mục 0 Quick
+6. `seo-factory/article_examples_full.md` — 3 bài mẫu VIẾT TRỌN VẸN (Mẫu A/C/E), đối chiếu khi
+   thấy bài đang viết còn mỏng hoặc lệch khuôn. Đọc TRƯỚC checklist — bài mẫu để viết, checklist
+   để kiểm; thứ tự này khớp `seo-factory/instructions_SEO.md` mục 3.
+7. `seo-factory/seo_checklist.md` — tự kiểm TRƯỚC khi xuất, bắt buộc không bỏ qua (mục 0 Quick
    Fail: title dài, slug thừa stopword, thiếu minh bạch AI, Disclaimer lẫn References, thiếu
    ngày cập nhật, Body còn ký tự định dạng — sai 1 trong 6 điều này thì dừng và sửa ngay).
-7. `seo-factory/article_examples_full.md` — 3 bài mẫu VIẾT TRỌN VẸN (Mẫu A/C/E), đối chiếu khi
-   thấy bài đang viết còn mỏng hoặc lệch khuôn.
 8. `seo-factory/internal_link_rules.md` — gắn 2–5 internal link (ghi ở field `Internal Links`,
    không nhúng markdown vào Body — mục 4 của file đó).
 9. `core-brain/channel_roles.md` — vai trò Website so với Facebook/YouTube, tránh viết trùng vai
@@ -193,13 +194,28 @@ Quy trình khi lưu:
    - **Viết thuần chữ 100%** theo `web_content_rules.md` mục 3D: KHÔNG `#`, `-`, `—`, `*`,
      bảng, link markdown — vì pipeline giọng đọc sẽ đọc thành lời mọi ký tự còn sót. Tiêu đề
      mục viết thành một dòng chữ riêng; n8n/CMS tự bọc thẻ `<h2>` khi đăng web.
+   - **Hai thứ khác nhau, đừng gộp làm một:** *minh bạch AI* (người đọc phải biết đây là nhân
+     vật AI) và *miễn trừ y khoa* (nội dung không thay tư vấn bác sĩ). Trước đây cả hai nằm chung
+     một khối chỉ dùng cho Sức khỏe, khiến bài Tâm lý kẹt: `seo_checklist.md` mục 0 bắt buộc dòng
+     minh bạch AI cho bài "chạm sức khỏe/tâm lý", mà khối chứa dòng đó lại không áp cho Tâm lý.
+     Tách ra như sau:
+
+     | Chủ đề | Minh bạch AI | Miễn trừ y khoa |
+     |---|---|---|
+     | Sức khỏe (1) | Có | Có — dùng khối đầy đủ dưới đây |
+     | Tâm lý & đời sống (2) | **Có** — dùng khối rút gọn ở cuối mục này | Không |
+     | Dưỡng sinh, Triết lý, Đồng hành, Bếp An Nhiên | Không bắt buộc | Không |
+
+     (Mẫu D — Đồng hành — có khối kết riêng theo `dong_hanh_nguoi_benh.md`, giữ nguyên.)
+
    - **Khối đóng bài chuẩn (bắt buộc, CHỈ áp dụng cho bài thuộc chủ đề Sức khỏe — số 1):** đặt
      cuối file, sau FAQ, dùng đúng khuôn dưới đây — dòng tiêu đề "Lưu ý" (viết trơn, KHÔNG có
      `###` đứng trước, theo mục 3D) tạo ranh giới rõ giữa đoạn kết cảm xúc của bài và phần thông
      tin bắt buộc, tránh gãy mạch/gây hụt hẫng cho người
      đọc. Mở đầu bằng tên nhân vật "Hiền triết Anh Minh" (không mở đầu bằng chữ "AI") — vẫn giữ
      đủ minh bạch AI ngay trong cùng câu, chỉ đổi từ đầu tiên người đọc thấy. **Các chủ đề khác
-     (Tâm lý, Dưỡng sinh, Triết lý, Đồng hành, Bếp An Nhiên) KHÔNG dùng khối này** — khớp đúng
+     (Dưỡng sinh, Triết lý, Đồng hành, Bếp An Nhiên) KHÔNG dùng khối này; **Tâm lý dùng khối
+     rút gọn** ghi ở cuối mục — khớp đúng
      `web_content_rules.md` mục 2 (disclaimer y khoa chỉ bắt buộc cho bài chạm sức khỏe) và
      `article_templates.md` (Mẫu C triết lý không cần disclaimer y khoa, Mẫu D đồng hành có
      khối kết riêng theo `dong_hanh_nguoi_benh.md`). Nếu một bài ở chủ đề khác có chạm nhẹ tới

@@ -17,7 +17,9 @@
 
 Thứ tự ưu tiên khi chọn bài để link (từ cao xuống thấp):
 
-1. **Cùng category** (cùng trụ nội dung: Sức khỏe/Tâm lý/Dưỡng sinh/Triết lý/Đồng hành).
+1. **Cùng category** (cùng trụ nội dung: Sức khỏe / Tâm lý & đời sống / Dưỡng sinh /
+   Triết lý phương Đông / Đồng hành người bệnh & tuổi già / Bếp An Nhiên — 6 trụ theo
+   `core-brain/instructions.md` mục 6).
 2. **Cùng cluster** (cùng cụm bài trụ + vệ tinh, xem `web_content_rules.md` mục 5B).
 3. **Cùng tag** (secondary keyword trùng nhau dù khác cluster).
 4. **Video tương ứng** (web ↔ YouTube) nếu đã có, theo `web_content_rules.md` mục 5.

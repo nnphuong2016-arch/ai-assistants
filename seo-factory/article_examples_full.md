@@ -74,7 +74,11 @@ Mất ngủ kéo dài có nên tự điều chỉnh không? Nên gặp chuyên g
 **Disclaimer + AI transparency:** AI Hiền triết Anh Minh là một nhân vật AI, chia sẻ góc nhìn lối sống — không thay tư vấn y khoa. Nếu mất ngủ kéo dài hoặc ảnh hưởng nhiều đến cuộc sống, nên gặp bác sĩ hoặc chuyên gia giấc ngủ.
 **Ngày cập nhật:** 20/07/2026.
 **References:** để trống — kiến thức lối sống tổng hợp, không trích số liệu y khoa cụ thể.
-**Featured Image:** phòng ngủ tối dịu, ánh đèn ngủ ấm nhẹ, đồng hồ analog, không có điện thoại trên giường.
+**Internal Links:**
+- anchor "nhịp sinh học" → slug `nhip-sinh-hoc-la-gi`
+- anchor "thói quen buổi tối" → slug `thoi-quen-buoi-toi-de-ngu-ngon`
+
+**Featured Image:** để trống — Featured Image Factory tự sinh từ slug bài.
 
 ---
 
@@ -118,7 +122,11 @@ Biết đủ có áp dụng được trong công việc không? Có. Nó giúp b
 **AI transparency:** AI Hiền triết Anh Minh là một nhân vật AI, chia sẻ góc nhìn từ triết Đông — không phải lời phán xét đúng sai cho riêng ai.
 **Ngày cập nhật:** 20/07/2026.
 **References:** để trống — nội dung triết lý, không cần nguồn khoa học.
-**Featured Image:** một ấm trà cũ đặt bên khung cửa sổ, ánh chiều tà, không gian giản dị.
+**Internal Links:**
+- anchor "sống chậm" → slug `song-cham-khong-phai-luoi`
+- anchor "Lão Tử" → slug `lao-tu-va-triet-ly-vo-vi`
+
+**Featured Image:** để trống — Featured Image Factory tự sinh từ slug bài.
 
 ---
 
@@ -176,7 +184,12 @@ Nên bắt đầu dưỡng sinh từ thói quen nào ngay hôm nay? Chọn một
 **Disclaimer + AI transparency:** AI Hiền triết Anh Minh là một nhân vật AI, chia sẻ góc nhìn lối sống — không thay tư vấn y khoa. Mọi thay đổi lớn về ăn uống, vận động nên tham khảo bác sĩ hoặc chuyên gia phù hợp với thể trạng riêng.
 **Ngày cập nhật:** 20/07/2026.
 **References:** để trống — kiến thức lối sống tổng hợp.
-**Featured Image:** một con đường làng buổi sáng sớm có nắng nhẹ, một người đi bộ chậm rãi, không khí tĩnh lặng.
+**Internal Links:**
+- anchor "đi bộ buổi sáng" → slug `di-bo-buoi-sang-bao-lau-la-du`
+- anchor "ăn tối sớm" → slug `an-toi-som-co-thuc-su-tot-khong`
+- anchor "giấc ngủ" → slug `nhip-ngu-deu-dan`
+
+**Featured Image:** để trống — Featured Image Factory tự sinh từ slug bài.
 
 **Liên kết vệ tinh (cùng cụm Dưỡng sinh):**
 1. Ngủ đủ vẫn mệt: vì sao nhịp ngủ quan trọng hơn số giờ? *(Bài mẫu 1 ở trên)*

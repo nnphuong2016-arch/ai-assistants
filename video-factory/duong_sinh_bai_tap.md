@@ -90,6 +90,9 @@ kỹ mà video ngắn không đủ thời lượng dạy đúng).
 - **Cảm giác sau khi tập (5–10s):** một câu về cảm giác cơ thể ngay lúc đó (nhẹ vai, dễ thở hơn)
   — KHÔNG cam kết hiệu quả dài hạn hay chữa bệnh.
 - **Kết (5–10s):** một câu lắng đọng, mời tập lại mỗi ngày — không "like share" gắt.
+- **Outro cố định:** sau câu kết, đọc nguyên văn đoạn outro ở `video_rules.md` mục 1.E. Đây là
+  CTA duy nhất được phép; mọi vị trí khác vẫn cấm kêu gọi like/share. ⚠️ Xem cảnh báo ở
+  `video_rules.md` mục 2 về tỷ trọng outro trên định dạng CLIP — điểm này còn chờ chủ kênh chốt.
 
 (Định dạng 2 lớp LỜI/HÌNH, ngân sách lời, prompt hình... vẫn theo `video_rules.md` mục 1 và 5;
 điểm khác duy nhất là nhịp cảnh đi theo nhịp động tác/hơi thở, không theo nhịp kể chuyện.)

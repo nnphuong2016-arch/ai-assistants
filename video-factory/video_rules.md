@@ -16,6 +16,10 @@
 > giây thay vì 45–75. Học từ mô hình kênh
 > My Dog & My Love (`youtube-mydog_mylove`), điều chỉnh theo thể loại chiêm nghiệm và thực tế
 > khán giả kênh này **nghe nhiều hơn nhìn**.
+> Cập nhật: 25/07/2026 (2) — thêm **mục 1.E OUTRO CỐ ĐỊNH**: mọi video kết thúc bằng một đoạn
+> nguyên văn cố định (93 từ ≈ 43–51 giây), là CTA duy nhất được phép trên toàn kênh. Nguyên văn
+> chỉ nằm ở mục 1.E, các file khác trỏ về. Mục 2/4/7 cập nhật theo (trừ thời lượng outro khỏi
+> ngân sách, thêm vào khung 5 phần, miễn trừ khỏi luật chống lặp).
 
 ---
 
@@ -114,6 +118,51 @@ Mục đích: tránh rủi ro vi phạm bản quyền khi dùng bài viết củ
   - **Emotion** — tâm trạng/cảm xúc chủ đạo của cảnh (VD: "tĩnh lặng", "ấm áp", "trầm ngâm").
   - **Loop** — `true`/`false`: cảnh này có dùng lại/loop được cho video khác không.
 - **D. KẾT:** một câu lắng đọng, mở ra suy ngẫm. Không "like share" gắt.
+- **E. OUTRO CỐ ĐỊNH (bắt buộc, đọc nguyên văn — xem mục 1.E bên dưới).**
+
+### 1.E. OUTRO CỐ ĐỊNH — NGUỒN GỐC DUY NHẤT (chốt 25/07/2026)
+
+> ⚠️ **Đây là nơi DUY NHẤT chứa nguyên văn đoạn outro.** Mọi file khác chỉ được **trỏ về mục
+> này**, không chép lại — chép lại là mở đường cho hai bản lệch nhau khi sửa.
+
+**Mọi video đều kết thúc bằng đúng đoạn này, đọc nguyên văn, KHÔNG viết lại, KHÔNG rút gọn,
+KHÔNG diễn đạt khác:**
+
+```
+Cảm ơn bạn đã ngồi lại cùng Anh Minh đến những phút cuối của video.
+
+Nếu những chia sẻ hôm nay mang đến cho bạn một suy nghĩ mới, một chút bình yên hay chỉ là một
+lời nhắc nhẹ nhàng dành cho chính mình, hãy đăng ký kênh để chúng ta tiếp tục đồng hành trên
+hành trình này.
+
+Cuộc sống không phải lúc nào cũng dễ dàng. Nhưng chỉ cần mỗi ngày hiểu mình hơn một chút, lòng
+sẽ nhẹ hơn một chút.
+
+Hẹn gặp lại bạn trong video tiếp theo.
+```
+
+**Ngân sách thời lượng:** 93 từ ≈ **43–51 giây** (ở 110–130 từ/phút). Phải **trừ trước** khỏi tổng
+thời lượng khi chia cảnh — nếu quên, video sẽ dài hơn khung định dạng gần một phút.
+
+**Quan hệ với phần D:** outro đứng **SAU** câu kết lắng đọng, không thay thế nó. Phần D vẫn là
+câu để nhớ của riêng video đó; outro là phần đóng khung chung của kênh.
+
+**Đóng gói trong Master Script:** outro là **một cảnh riêng, luôn là cảnh cuối cùng**, với
+`Loop: true` (dùng lại được ở mọi video). Không tính vào phần THÂN khi phân bổ nội dung.
+
+**Ngoại lệ về CTA:** câu "hãy đăng ký kênh" trong outro là **CTA duy nhất được phép** trên toàn
+kênh, và chỉ ở đúng chỗ này, đúng cách diễn đạt này. Quy tắc *không "like share" gắt* (phần D,
+`bep_an_nhien.md` mục 5, `duong_sinh_bai_tap.md` mục 5) vẫn giữ nguyên cho mọi vị trí khác — cấm
+chèn thêm lời kêu gọi like/share/bình luận/bấm chuông ở đầu hay giữa video, cấm tự chế biến thể
+khác của lời mời đăng ký.
+
+**Miễn trừ chống lặp:** outro cố ý giống hệt nhau ở mọi video — **không** áp quy tắc chống lặp ở
+mục 7 lên đoạn này, và không tính nó khi kiểm tra "video này có trùng câu kết với video trước
+không".
+
+**Tiết kiệm chi phí:** vì lời và hình của outro không đổi giữa các video, chỉ cần render **một
+lần** rồi tái sử dụng — không tốn TTS và không tốn generate hình cho mỗi tập (xem
+`video_ai_contract.md` Stage 5 và Stage 7).
 
 **Ngân sách lời (giọng trầm-chậm):** ~110–130 từ/phút. Với video NGẮN, mỗi cảnh giữ gọn
 (~14–16 từ Voice / ~8 giây Duration); **với video DÀI, mỗi cảnh ~110–160 từ Voice / 55–70 giây
@@ -142,6 +191,17 @@ không kéo dãn một ý cho đủ giờ.
 | **DÀI** *(mặc định)* | 8–12 phút | **8–12** | ~55–70 | tối đa **3** | **12–16** |
 
 **Cách nhớ nhanh cho VIDEO DÀI: số cảnh ≈ số phút** (mỗi cảnh ~1 phút lời dẫn).
+
+> ⚠️ **Số cảnh trong bảng ĐÃ BAO GỒM cảnh outro cố định** (mục 1.E, 43–51 giây). Nghĩa là phần
+> nội dung thật chỉ còn N−1 cảnh. Với video DÀI 10 phút: 600 giây − ~47 giây outro = ~553 giây
+> cho nội dung, chia 9–11 cảnh nội dung. **Luôn trừ outro trước khi chia cảnh.**
+>
+> ⚠️ **Định dạng CLIP: outro chiếm tỷ trọng quá lớn — cần chủ kênh quyết.** Outro 43–51 giây trên
+> một CLIP 60 giây là **~78% thời lượng**, chỉ còn ~13 giây cho nội dung → không dùng được. Ngay
+> cả CLIP 3 phút thì outro vẫn chiếm ~26%. Hiện quy định "mọi video đều có outro" áp cho **TRUNG
+> và DÀI** là an toàn; với **CLIP và NGẮN**, tạm thời vẫn gắn outro theo đúng yêu cầu nhưng đây
+> là điểm **chờ quyết định** — hai hướng khả dĩ: (a) dùng bản rút gọn chỉ 2 câu cuối cho
+> CLIP/NGẮN, hoặc (b) miễn outro cho CLIP. Không tự chọn thay chủ kênh.
 
 **Ngân sách hình là TRẦN CỨNG, không phải chỉ tiêu** — dùng ít hơn luôn tốt hơn. Ảnh làm
 start-frame cho Clip AI **không tính vào trần Ảnh giữ** (xem mục 6). Chi tiết cách chia và cách
@@ -197,8 +257,9 @@ Mục tiêu: chiều sâu thật, để người xem thấy "mình vừa nhận 
 > ⚠️ **Các mốc giây dưới đây là TỶ TRỌNG NỘI DUNG, không phải ranh giới cảnh.** Mỗi cảnh video
 > DÀI dài 55–70 giây, nên MỞ (10–20s) và KẾT LẮNG (15–20s) **không đứng riêng thành một cảnh** —
 > chúng nằm gọn trong cảnh đầu và cảnh cuối cùng với phần nội dung kế bên. Cộng 4 phần có số:
-> 75–115 giây; phần THÂN gánh toàn bộ ~365–645 giây còn lại (video 8–12 phút), tức chiếm 6–10
-> trong tổng số 8–12 cảnh.
+> 75–115 giây, **cộng outro cố định 43–51 giây (mục 1.E) = 118–166 giây**; phần THÂN gánh phần
+> còn lại ~314–602 giây (video 8–12 phút), tức chiếm 6–10 trong tổng số 8–12 cảnh.
+> Outro luôn là cảnh cuối và đã nằm trong tổng số cảnh của bảng mục 2.
 
 **Khung 5 phần:**
 1. **MỞ (10–20s):** hook điềm tĩnh + một câu hứa nhẹ về điều người xem sẽ hiểu. Không clickbait.
@@ -207,12 +268,15 @@ Mục tiêu: chiều sâu thật, để người xem thấy "mình vừa nhận 
    có mở–khai triển–lắng riêng + B-roll riêng. Có thể chèn một câu chuyện đời thực (xem `life_stories.md`).
 4. **ÁP DỤNG (30–45s):** vài gợi ý cụ thể, nhẹ nhàng, người xem làm được ngay.
 5. **KẾT LẮNG (15–20s):** một câu để nhớ.
+6. **OUTRO CỐ ĐỊNH (43–51s):** đọc nguyên văn đoạn ở mục 1.E — không viết lại, không rút gọn.
+   Đây là cảnh cuối cùng, `Loop: true`, dùng lại y hệt ở mọi video.
 
 **Kỷ luật giữ chân:** mỗi lớp phải THÊM cái mới; chuyển lớp thì "re-hook" nhẹ; thà 8 phút đặc
 còn hơn 10 phút loãng.
 
 **Khuôn xuất video dài:** A. Tên + ý chính + 1 câu hứa · B. Viết **lời dẫn liền mạch theo 5
-phần** trước (như một bài nói chậm, để giữ mạch cảm xúc — đây là bước nháp) · C. Sau đó **chia
+phần đầu** trước (outro ở phần 6 là văn bản cố định, không cần viết — chỉ dán nguyên văn từ mục
+1.E vào cảnh cuối) (như một bài nói chậm, để giữ mạch cảm xúc — đây là bước nháp) · C. Sau đó **chia
 lời dẫn đã viết thành 8–12 cảnh** (mỗi cảnh 55–70 giây lời dẫn — xem trần ngân sách hình ở mục
 2 và mục 6), đóng gói mỗi cảnh theo đúng khuôn field ở mục 1.C (Scene ID
 zero-padded, Duration, Voice, Visual, Camera, Character, Emotion, Loop) — mỗi field Voice là một
@@ -319,6 +383,10 @@ mệt mỏi cảm xúc · cảm giác cơ thể · thói quen hằng ngày · nh
 **Xoay vòng bối cảnh hình:** góc trà · bàn viết cửa sổ · hiên nhà · vườn nhỏ · kệ sách · bước chân trong vườn.
 
 **Xoay vòng câu kết:** tránh lặp "hãy chăm sóc cơ thể mình" — xoay giữa: an ủi cảm xúc / nhắc nhở thực tế / chiêm nghiệm lặng / khích lệ nhẹ / nhận ra bình thường.
+
+⚠️ **Miễn trừ: outro cố định (mục 1.E) KHÔNG thuộc phạm vi chống lặp.** Nó cố ý giống hệt nhau ở
+mọi video. Quy tắc xoay vòng câu kết ở trên chỉ áp cho **phần D — câu kết lắng đọng riêng của
+từng video**, đứng trước outro.
 
 ## 8. THUMBNAIL ETHICS (ảnh đại diện video)
 

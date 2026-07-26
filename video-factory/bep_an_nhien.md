@@ -75,6 +75,8 @@ có người để cùng ngồi xuống."*
 - **Câu chuyện / văn hóa:** một lát ký ức hoặc tập quán gắn với món.
 - **Cảm giác:** *ăn vào thấy thế nào* + *quây quần*, thay cho giá trị sinh học.
 - **Kết:** một câu lắng đọng nối với triết "biết đủ", "thuận mùa".
+- **Outro cố định:** sau câu kết, đọc nguyên văn đoạn outro ở `video_rules.md` mục 1.E — bắt
+  buộc với mọi video, không viết lại, không rút gọn.
 
 (Định dạng 2 lớp LỜI/HÌNH, số cảnh, ngân sách lời… theo `video_rules.md`.)
 

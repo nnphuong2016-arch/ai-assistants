@@ -1,7 +1,12 @@
 # VIDEO AI CONTRACT — HỢP ĐỒNG PIPELINE n8n (8 STAGE)
 STATUS: ACTIVE (sửa được — mọi thay đổi phải bump VERSION + ghi dòng "Cập nhật" bên dưới)
-VERSION: V1.5
+VERSION: V1.6
 DATE: 25/07/2026
+
+> ⚠️ **V1.6 (25/07/2026):** thêm **OUTRO CỐ ĐỊNH** cuối mọi video — định nghĩa CTA ở Stage 1 đổi
+> theo (nay CÓ lời mời đăng ký kênh, trước đây ghi là không). Nguyên văn outro nằm ở
+> `video_rules.md` mục 1.E, KHÔNG chép vào file này. Stage 5 + Stage 7: outro chỉ render một lần
+> rồi tái sử dụng, không gọi TTS/generate hình lại mỗi tập.
 
 > Đổi tên tiêu đề 25/07/2026: cũ là "VIDEO PROMPT TEMPLATES" — không khớp tên file lẫn nội dung
 > (file mô tả 8 Stage của pipeline n8n, không phải kho prompt template). Nhãn `STATUS: LOCKED`
@@ -92,10 +97,13 @@ Yêu cầu
 - Mỗi Scene chỉ có 1 ý chính.
 - Video phải đủ thời lượng.
 - Không kéo dài nội dung vô nghĩa.
-- Không bỏ sót CTA. ⚠️ Với kênh này, "CTA" KHÔNG phải lời kêu gọi like/share/mua hàng — mà là
-  **câu kết lắng đọng** ở cảnh cuối (`video_rules.md` mục 1.D: "một câu lắng đọng, mở ra suy
-  ngẫm. Không 'like share' gắt"). Yêu cầu ở đây chỉ có nghĩa: không được cắt mất cảnh kết.
-  Master Script không có field CTA riêng — nó nằm trong Voice của cảnh cuối.
+- Không bỏ sót CTA. ⚠️ **Cập nhật 25/07/2026 — định nghĩa CTA đã đổi.** Với kênh này, "CTA" gồm
+  2 phần ở cuối video: (a) **câu kết lắng đọng** riêng của video đó (`video_rules.md` mục 1.D),
+  và (b) **OUTRO CỐ ĐỊNH** đọc nguyên văn, có câu mời đăng ký kênh (`video_rules.md` mục 1.E —
+  nguyên văn nằm ở đó, KHÔNG chép lại vào file này). Outro là **cảnh cuối cùng**, `Loop: true`.
+  Yêu cầu ở đây nghĩa là: không được cắt mất cảnh kết, và không được thiếu cảnh outro.
+  Master Script không có field CTA riêng — cả hai nằm trong Voice của 2 cảnh cuối.
+  Vẫn CẤM mọi lời kêu gọi like/share/bình luận/bấm chuông ở đầu hay giữa video.
 - Tuân thủ video_rules.md.
 
 ========================================================
@@ -276,6 +284,9 @@ Narration.mp3
 
 Yêu cầu
 
+- ⚠️ **Outro cố định (`video_rules.md` mục 1.E) chỉ render MỘT LẦN rồi tái sử dụng cho mọi
+  video** — lời không đổi nên không cần gọi TTS lại mỗi tập. Lưu thành file audio dùng chung,
+  Stage 7 ghép vào cuối. Tương tự với hình của cảnh outro (Stage 7).
 - dùng ĐÚNG 1 voice ID đã clone/khoá riêng cho Anh Minh — KHÔNG dùng giọng preset ngẫu nhiên
   hay đổi giọng giữa các video (voice ID xem image_style_bible.md mục 10)
 - giọng ấm
@@ -349,6 +360,7 @@ Không AI nào được tự ý thay đổi:
 - Hook
 - Nội dung lời
 - CTA
+- **Outro cố định** (nguyên văn ở `video_rules.md` mục 1.E — không viết lại, không rút gọn)
 - Giọng Anh Minh
 - Nhân vật
 - Thời lượng

@@ -237,9 +237,20 @@ CLAUDE.md hay file cấu hình vào repo đó.
 
 #### 5.B — Kịch bản video (Google Drive — KHÔNG dùng GitHub)
 
+- **MỖI VIDEO SINH RA 2 FILE `.md`, KHÔNG PHẢI 1** (chuẩn hoá 25/07/2026 theo mô hình kênh
+  My Dog & My Love — xem `video-factory/output_schema.md` mục "File prompt đi kèm"):
+  1. `..._master_script.md` — kịch bản: cảnh, lời dẫn, Visual/Camera trung tính. **Không** chứa
+     prompt của bất kỳ công cụ AI nào.
+  2. `..._prompts.md` — prompt thật để generate, viết **SAU** khi Master Script xong. Đánh dấu rõ
+     cảnh nào là Clip (`🎬 CLIP 1/3`), cảnh nào là Ảnh giữ; cuối file có dòng tự kiểm ngân sách
+     (đếm Clip và Ảnh giữ, đối chiếu trần ở `model_selection_rules.md` mục 1B).
+
+  Chưa tạo đủ 2 file thì **chưa coi là xong**. Tách 2 file để khi đổi/thêm công cụ AI chỉ phải
+  viết lại file prompt, giữ nguyên kịch bản.
 - **Nơi lưu:** Google Drive, thư mục "Anh Minh - N8N Trigger" → "Kich-ban-video" (parentId
-  `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F`, dùng công cụ Drive `create_file`). File chứa **toàn văn
-  Master Script** — n8n đọc/parse trực tiếp file này (xem `video-factory/video_ai_contract.md`),
+  `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F`, dùng công cụ Drive `create_file`) — lưu **cả hai file** vào
+  đây. File Master Script chứa **toàn văn** kịch bản — n8n đọc/parse trực tiếp file này (xem
+  `video-factory/video_ai_contract.md`),
   KHÔNG cần repo GitHub `kich-ban-video` (đã ngừng dùng) và KHÔNG cần thêm manifest JSON riêng
   (nội dung thật đã nằm sẵn trong chính file `.md` này — xem thêm ghi chú ở Bước 6).
 - **Tên file:** `<số chủ đề>.<STT>. <Tên video>_master_script.md` — số chủ đề theo đúng bảng ở
@@ -249,6 +260,8 @@ CLAUDE.md hay file cấu hình vào repo đó.
   gọn thành slug; bỏ các ký tự không an toàn cho tên file khi tải về máy (Windows):
   `\ / : * ? " < > |` (VD dấu `?` cuối câu hỏi thì bỏ hẳn).
   VD: `1.1. Vì sao ngủ đủ tám tiếng mà vẫn thấy mệt_master_script.md`.
+  File prompt dùng **đúng tên đó**, chỉ đổi đuôi `_master_script.md` → `_prompts.md`
+  (VD: `1.1. Vì sao ngủ đủ tám tiếng mà vẫn thấy mệt_prompts.md`).
 - **Nội dung & khuôn field:** viết đúng theo `video-factory/video_rules.md` mục 1.C (Scene ID
   zero-padded, Duration, Voice, Visual, Camera, Character, Emotion, Loop) và đóng gói theo
   `video-factory/output_schema.md`.

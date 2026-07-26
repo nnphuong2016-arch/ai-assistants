@@ -48,8 +48,15 @@ Khi input là file `..._master_script.md` do Video Factory (WF-07) xuất ra và
 `### Scene <ID>` = 1 scene, ID zero-padded 3 chữ số theo `video_rules.md` mục 1.C) và đúng nội
 dung Scene Prompt (field **Visual** + **Camera** từng cảnh, đã tuân luật "không mô tả mặt/quần
 áo/nhân vật" bên dưới — nhận diện nhân vật nằm riêng ở field **Character**). WF-07B chỉ cần
-PARSE file bằng Code node theo thứ tự field: Scene ID → Duration → Voice → Visual → Camera →
-Character → Emotion → Loop. Chỉ gọi AI cho Stage 1-2 khi input là script rời rạc KHÔNG qua Video
+PARSE file bằng Code node theo thứ tự field: Scene ID → Duration → Voice → **Shots** → Visual →
+Camera → Character → Emotion → Loop.
+
+⚠️ **Field `Shots` (25/07/2026) — parser BẮT BUỘC xử lý:** một Scene có thể chứa nhiều hình
+(`Shots: 1|2|3`). Khi `Shots > 1`, Visual/Camera xuất hiện dạng đánh số (`Visual 1:`, `Camera 1:`,
+`Visual 2:`, `Camera 2:`...) thay vì một khối duy nhất — parser phải đọc đủ ngần ấy cặp và sinh
+`Shot<SceneID>-<n>` cho mỗi cặp. `Voice`/`Subtitle` vẫn 1 file/Scene. Parser cũ (giả định 1 Visual
++ 1 Camera mỗi Scene) sẽ bỏ sót hình thứ 2–3 → **phải sửa Code node trước khi chạy video DÀI theo
+chuẩn hiện hành**, vì 8–10 cảnh với trần 13–16 ảnh chắc chắn có cảnh nhiều hình. Chỉ gọi AI cho Stage 1-2 khi input là script rời rạc KHÔNG qua Video
 Factory (trường hợp hiếm, chưa build).
 
 ========================================================

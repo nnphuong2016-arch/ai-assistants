@@ -81,6 +81,15 @@ Mục đích: tránh rủi ro vi phạm bản quyền khi dùng bài viết củ
   - **Duration:** thời lượng cảnh (giây), ước theo ngân sách lời của đoạn Voice trong cảnh đó.
   - **Voice** — tiếng Việt: voiceover cho ý đó. **Giọng đọc lồng riêng** (không để công cụ đọc
     tiếng Việt — giữ kiểm soát tông).
+  - **Shots** — số hình phủ cảnh này: `1`, `2` hoặc `3` (mặc định `1`).
+    ⚠️ **Bắt buộc với video DÀI.** Một cảnh DÀI dài 55–75 giây, trong khi một ảnh chỉ giữ tự
+    nhiên được 30–45 giây (mục 6B) → phần lớn cảnh cần 2 hình. Không có field này thì 8–10 cảnh
+    chỉ diễn đạt được tối đa 10 hình, trong khi trần là 13–16 (mục 2/mục 6) — kịch bản sẽ không
+    thể hợp lệ. Cộng tổng Shots của cả video trước khi xuất để tự kiểm trần.
+    Khi `Shots > 1`, viết Visual/Camera thành đúng ngần ấy khối đánh số (`Visual 1:`/`Camera 1:`,
+    `Visual 2:`/`Camera 2:`...), mỗi khối là một hình riêng. File media map theo
+    `<Scene ID>-<số shot>` (VD cảnh 003 có 2 hình → `Shot003-1`, `Shot003-2`); riêng
+    `Voice003.mp3` và `Subtitle003.srt` vẫn 1 file/cảnh vì lời dẫn không tách theo hình.
   - **Visual** — tiếng Anh: bối cảnh + chủ thể + hành động (không lặp lại nội dung đã có ở
     Camera/Character bên dưới). ⚠️ **KHÔNG mô tả khuôn mặt/trang phục/đặc điểm ngoại hình nhân
     vật ở đây** — nhận diện nhân vật do field Character đảm nhiệm (xem bên dưới), khớp đúng quy
@@ -107,7 +116,8 @@ Mục đích: tránh rủi ro vi phạm bản quyền khi dùng bài viết củ
 - **D. KẾT:** một câu lắng đọng, mở ra suy ngẫm. Không "like share" gắt.
 
 **Ngân sách lời (giọng trầm-chậm):** ~110–130 từ/phút. Với video NGẮN, mỗi cảnh giữ gọn
-(~14–16 từ Voice / ~8 giây Duration); với TRUNG/DÀI, viết lời dẫn liền mạch theo tổng thời
+(~14–16 từ Voice / ~8 giây Duration); **với video DÀI, mỗi cảnh ~110–160 từ Voice / 55–75 giây
+Duration** (quy từ 110–130 từ/phút — mục 2); với TRUNG/DÀI, viết lời dẫn liền mạch theo tổng thời
 lượng trước (giữ mạch cảm xúc), rồi chia thành các cảnh theo khuôn field ở trên — mỗi field
 Voice là một đoạn của lời dẫn liền mạch đã viết, không viết lại. Không nhồi chữ cho đủ, cũng
 không kéo dãn một ý cho đủ giờ.
@@ -132,6 +142,12 @@ không kéo dãn một ý cho đủ giờ.
 - Thời lượng: **3–6 phút**.
 - Số cảnh (ý) tham khảo: **10–14** · khuyến nghị **12**.
 - Mục tiêu: một chủ đề có chiều sâu hơn · có ví dụ hoặc một câu chuyện đời thực (xem `life_stories.md`).
+- ⚠️ **Điểm CHƯA chốt (25/07/2026):** sau khi DÀI hạ xuống 8–10 cảnh, TRUNG đang có **nhiều cảnh
+  hơn DÀI** dù ngắn hơn một nửa về thời lượng. Mật độ hiện tại: NGẮN ~15 giây/cảnh · TRUNG ~20
+  giây/cảnh · DÀI ~65 giây/cảnh — bậc DÀI lệch hẳn. Chỉ VIDEO DÀI được chốt lại theo mô hình
+  My Dog; NGẮN/TRUNG giữ nguyên tạm thời, **chờ quyết định riêng của chủ kênh**. Cũng vì vậy
+  TRUNG/NGẮN **chưa có trần ngân sách hình** — khi làm, xét từng cảnh theo 4 tiêu chí "Clip" ở
+  `model_selection_rules.md` mục 1B thay vì áp con số của video DÀI.
 
 ### VIDEO DÀI (LONG)
 - Nền tảng: YouTube · Podcast video.
@@ -164,6 +180,11 @@ không kéo dãn một ý cho đủ giờ.
 ## 4. KIẾN TRÚC VIDEO DÀI (8–10 phút)
 
 Mục tiêu: chiều sâu thật, để người xem thấy "mình vừa nhận được điều gì đó".
+
+> ⚠️ **Các mốc giây dưới đây là TỶ TRỌNG NỘI DUNG, không phải ranh giới cảnh.** Mỗi cảnh video
+> DÀI dài 55–75 giây, nên MỞ (10–20s) và KẾT LẮNG (15–20s) **không đứng riêng thành một cảnh** —
+> chúng nằm gọn trong cảnh đầu và cảnh cuối cùng với phần nội dung kế bên. Cộng 4 phần có số:
+> 75–115 giây; phần THÂN gánh toàn bộ ~365–525 giây còn lại, tức chiếm 6–8 trong tổng số 8–10 cảnh.
 
 **Khung 5 phần:**
 1. **MỞ (10–20s):** hook điềm tĩnh + một câu hứa nhẹ về điều người xem sẽ hiểu. Không clickbait.

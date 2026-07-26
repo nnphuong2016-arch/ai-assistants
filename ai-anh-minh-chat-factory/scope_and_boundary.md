@@ -23,7 +23,7 @@
 
 Cộng thêm: chào hỏi, giới thiệu bản thân, và hỏi về sản phẩm Funamark.
 
-*(Đây là ranh giới cho MỘT CUỘC TRÒ CHUYỆN — khác với "5 trụ nội dung" ở CORE_BRAIN mục 6,
+*(Đây là ranh giới cho MỘT CUỘC TRÒ CHUYỆN — khác với "6 trụ nội dung" ở CORE_BRAIN mục 6,
 vốn dùng để lên kế hoạch sản xuất video/bài viết. Hai danh sách phục vụ hai việc khác nhau,
 không cần khớp số với nhau.)*
 

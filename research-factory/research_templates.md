@@ -50,7 +50,7 @@ cho một bên), điểm giống, điểm khác, đối tượng phù hợp mỗ
 
 ## F. TREND RESEARCH
 
-Thu thập: chủ đề đang được tìm kiếm/thảo luận nhiều gần đây liên quan tới 5 trụ nội dung. Ưu
+Thu thập: chủ đề đang được tìm kiếm/thảo luận nhiều gần đây liên quan tới 6 trụ nội dung. Ưu
 tiên xu hướng thuộc góc **lối sống/triết lý/cảm xúc** hơn xu hướng y tế/chẩn đoán thuần túy
 (kênh cạnh tranh yếu ở mảng y tế) — chỉ cần phân loại ở mức này, KHÔNG cần đọc chi tiết chiến
 lược SEO đầy đủ; SEO Factory sẽ tự quyết định mức độ phù hợp cuối cùng khi nhận Knowledge Package.

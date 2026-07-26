@@ -61,6 +61,8 @@ tên khi tải lên").
 thống nào đọc trực tiếp được thư mục của từng Factory), Review Factory phải **bỏ hẳn cách copy
 này**, chuyển sang **tham chiếu/Read File trực tiếp** tới file gốc của Factory tương ứng — xem
 `funamark-master-blueprint-v2.md` (project-memory) Phần D, WF-05 để biết cách n8n làm việc này.
+⚠️ **Rà soát 25/07/2026:** file blueprint đó và thư mục `project-memory/` KHÔNG còn trong repo —
+mã WF-xx giờ chỉ là tên gọi quy ước trong n8n, tra trực tiếp bên n8n nếu cần định nghĩa đầy đủ.
 Lý do bỏ copy: bản sao dễ trôi lệch với bản gốc khi Factory gốc cập nhật checklist mà quên cập
 nhật bản sao trong Review Factory — copy chỉ là giải pháp tình thế do giới hạn nền tảng Custom
 GPT, chấp nhận được ở giai đoạn hiện tại, nhưng không nên xem là thiết kế lâu dài.
@@ -69,7 +71,7 @@ GPT, chấp nhận được ở giai đoạn hiện tại, nhưng không nên xe
 |---|---|---|
 | SEO | `seo-factory/seo_checklist.md`, `seo-factory/web_content_rules.md`, `seo-factory/keyword_strategy.md`, `seo-factory/internal_link_rules.md`, `seo-factory/output_schema.md` | `output_schema.md` → `seo_output_schema.md` |
 | Image | `image-factory/image_checklist.md`, `image-factory/image_style_rules.md`, `image-factory/image_templates.md`, `core-brain/image_style_bible.md`, `image-factory/output_schema.md` (bao gồm mục "NGOẠI LỆ — ẢNH SẢN PHẨM"); nếu review Product Image, thêm `product-image-factory/product_image_guide.md` | `output_schema.md` → `image_output_schema.md` |
-| Featured Image | `featured-image-factory/instructions_FEATURED_IMAGE.md`, `featured_image_editorial_rules.md`, `featured_image_style_rules.md`, `featured_image_prompt_rules.md`, `featured_image_checklist.md`, `featured-image-factory/output_schema.md` | `output_schema.md` → `featured_image_output_schema.md` |
+| Featured Image | `featured-Image-factory/instructions_FEATURED_IMAGE.md`, `featured_image_editorial_rules.md`, `featured_image_style_rules.md`, `featured_image_prompt_rules.md`, `featured_image_checklist.md`, `featured-Image-factory/output_schema.md` | `output_schema.md` → `featured_image_output_schema.md` |
 | Video | `video-factory/video_rules.md`, `core-brain/image_style_bible.md` (đã trùng với Image ở trên nếu tải chung một Review Factory); nếu review Nhánh B (Dưỡng Sinh Ngắn), thêm `video-factory/duong_sinh_bai_tap.md` | — |
 | Community | `community-factory/community_rules.md`, `community-factory/engagement_rules.md`, `core-brain/dong_hanh_nguoi_benh.md` | — |
 | Publish Package (Pre-flight) | `publish-factory/output_schema.md` | `output_schema.md` → `publish_output_schema.md` |

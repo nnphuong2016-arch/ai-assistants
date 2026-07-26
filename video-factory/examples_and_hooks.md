@@ -65,9 +65,9 @@ nhịp, góc nhìn — dù nói cùng một đề tài.
 > lời thoại** — các câu dưới đây chỉ để cảm nhận *đúng độ mềm, độ mở, độ dài* của một câu hook
 > đạt chuẩn giọng kênh, rồi tự viết câu mới.
 >
-> Danh sách dưới đây gom theo 5 trụ nội dung cũ. Hệ thống hiện có **6 trụ** (thêm *Bếp An Nhiên*
-> — xem `core-brain/instructions.md` mục 6) — trụ thứ 6 không có ví dụ ở đây, lấy giọng mẫu từ
-> `bep_an_nhien.md` mục 4 (ví dụ mở/ví dụ câu kết) thay thế.
+> Danh sách dưới đây chỉ gom theo 5 trụ đầu. Trụ thứ 6 — **Bếp An Nhiên** (`core-brain/
+> instructions.md` mục 6) — không có ví dụ ở đây; lấy giọng mẫu từ `bep_an_nhien.md` mục 4
+> (ví dụ mở/ví dụ câu kết) thay thế.
 
 > **Luật riêng nhóm Sức khỏe:** được khơi tò mò mạnh (câu hỏi, nghịch lý, "nhiều người hiểu nhầm…"),
 > NHƯNG không dọa bệnh / dọa ung thư / "âm thầm suy yếu", không clickbait bỏ lửng (…),

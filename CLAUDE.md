@@ -45,7 +45,7 @@ nội dung nào cho kênh này, LUÔN thực hiện theo đúng thứ tự:
 > ô Instructions — mỗi factory có lý do riêng đã ghi trong `instructions_CHAT.md` và
 > `instructions_FEATURED_IMAGE.md` của chính nó. Đây là ngoại lệ có chủ đích, không phải thiếu sót.
 
-- `core-brain/instructions.md` — danh tính "Hiền triết Anh Minh", giọng nói, 5 trụ nội dung,
+- `core-brain/instructions.md` — danh tính "Hiền triết Anh Minh", giọng nói, 6 trụ nội dung,
   ranh giới TUYỆT ĐỐI KHÔNG (không dọa bệnh, không chẩn đoán/kê đơn, không thần bí, không sến,
   không toxic motivation, không CAPS/giật gân, không tranh cãi chính trị), và checkpoint "móc
   neo ký ức" ở mục 7 (mỗi bài cần ít nhất 1 trong 3: ẩn dụ thiên nhiên mạnh / câu hỏi tự vấn /

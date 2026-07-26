@@ -148,13 +148,13 @@ Chọn loại trước khi viết — không để bài phình dần trong lúc 
   **đọc và quét**, không phải để đọc thành tiếng. Văn xuôi mạch lạc, có tiểu mục.
 - Tiêu đề được khơi tò mò nhưng **không clickbait bỏ lửng**, không CAPS, không dọa bệnh.
 - Mở bài chạm thẳng vào điều người đọc đang tìm; thân bài cho chiều sâu thật; kết lắng đọng + một gợi ý áp dụng.
-- Áp dụng lăng kính 5 trụ / Thân–Tâm–Trí–Đạo sống–Đồng hành để bài có chiều sâu, không hời hợt.
+- Áp dụng lăng kính 6 trụ / Thân–Tâm–Trí–Đạo sống–Đồng hành–Nếp nhà để bài có chiều sâu, không hời hợt.
 
 ---
 
 ## 5. LIÊN KẾT NỘI BỘ & UY TÍN CHỦ ĐỀ (TOPICAL AUTHORITY)
 
-- Gom bài theo **cụm chủ đề** quanh 5 trụ; mỗi bài liên kết tới 2–4 bài liên quan cùng cụm.
+- Gom bài theo **cụm chủ đề** quanh 6 trụ; mỗi bài liên kết tới 2–4 bài liên quan cùng cụm.
 - Xây đủ chiều sâu một trụ trước khi nhảy lung tung — Google thưởng cho **uy tín chủ đề**.
 - Liên kết cả sang video tương ứng (web ↔ YouTube) để củng cố hệ sinh thái.
 

@@ -16,7 +16,7 @@ không thêm field ngoài danh sách.
 3. **Meta Description** — 150–160 ký tự, theo `keyword_strategy.md` mục 7.
 4. **Excerpt** — 1–2 câu tóm tắt để hiển thị ở trang danh sách/preview (khác Meta Description
    — Excerpt hướng người đọc trên site, Meta hướng người tìm trên Google).
-5. **Category** — một trong 5 trụ nội dung (Sức khỏe / Tâm lý & đời sống / Dưỡng sinh /
+5. **Category** — một trong 6 trụ nội dung (Sức khỏe / Tâm lý & đời sống / Dưỡng sinh /
    Triết lý phương Đông / Đồng hành tuổi già & người bệnh) hoặc tầng Relationship/Brand nếu
    dùng Mẫu F/G.
 6. **Tags** — 3–6 tag, gồm primary keyword + secondary keyword liên quan.

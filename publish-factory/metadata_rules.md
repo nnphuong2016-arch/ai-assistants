@@ -5,7 +5,7 @@
 > thiện** (kỹ thuật xuất bản, không thuộc phạm vi Factory nào khác).
 > Cập nhật: 04/07/2026.
 > Cập nhật: 20/07/2026 — sửa nguồn Featured Image: từ 14/07/2026, Featured Image do
-> `featured-image-factory/` (Factory riêng, độc lập) tạo ra, KHÔNG còn phải Image Factory.
+> `featured-Image-factory/` (Factory riêng, độc lập) tạo ra, KHÔNG còn phải Image Factory.
 
 ---
 
@@ -15,7 +15,7 @@ Những field này do SEO Factory / Featured Image Factory tạo ra. Publish Fac
 mặt và không rỗng — nếu thiếu, áp dụng gate ở `publish_rules.md` mục 2, không tự viết thay:
 
 - Title, Slug, Meta Description, Category, Tags (từ SEO Factory).
-- Featured Image, Alt Text (từ **Featured Image Factory** — `featured-image-factory/`, KHÔNG
+- Featured Image, Alt Text (từ **Featured Image Factory** — `featured-Image-factory/`, KHÔNG
   phải Image Factory).
 
 ## 2. NHÓM PUBLISH FACTORY TỰ HOÀN THIỆN (kỹ thuật xuất bản)

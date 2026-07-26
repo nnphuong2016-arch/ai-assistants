@@ -39,7 +39,7 @@ hợp này (xem mục "NGOẠI LỆ — ẢNH SẢN PHẨM" trong file đó).
 
 ## FEATURED IMAGE (MỚI — factory riêng, độc lập, tách khỏi Image Factory từ 14/07/2026)
 
-**Dùng nguyên:** `featured-image-factory/featured_image_checklist.md` (đối chiếu thêm
+**Dùng nguyên:** `featured-Image-factory/featured_image_checklist.md` (đối chiếu thêm
 `featured_image_editorial_rules.md`, `featured_image_style_rules.md`,
 `featured_image_prompt_rules.md`, `output_schema.md` khi cần).
 

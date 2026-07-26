@@ -153,7 +153,7 @@ Chuyển động → Phong cách hình ảnh → Chất lượng kỹ thuật �
 ## 11B. PROMPT ẢNH TĨNH + KEN BURNS (khác với prompt Clip)
 
 > Thêm 23/07/2026 — theo mô hình hybrid ở `model_selection_rules.md` mục 1B, phần lớn cảnh
-> (video DÀI Mức 1: tối đa 3 Clip, còn lại 13–16 Ảnh giữ) là **Ảnh giữ + Image Motion Engine** ở bước dựng (Ken Burns + tối đa 2 lớp phụ, xem `video_rules.md` mục 6B),
+> (video DÀI Mức 1: tối đa 3 Clip, còn lại 12–16 Ảnh giữ) là **Ảnh giữ + Image Motion Engine** ở bước dựng (Ken Burns + tối đa 2 lớp phụ, xem `video_rules.md` mục 6B),
 > không phải Clip AI video. Prompt cho ảnh tĩnh (Flux hoặc công cụ ảnh khác, xem
 > `video_ai_contract.md` Stage 3) khác Clip ở vài điểm:
 

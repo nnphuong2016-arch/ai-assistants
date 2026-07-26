@@ -19,8 +19,10 @@
    (Nhánh B, thị phạm động tác cho TikTok/Reels/Shorts, theo `duong_sinh_bai_tap.md`) /
    `Bếp An Nhiên` (theo `bep_an_nhien.md`) / `Suy Ngẫm` (video ngắn insight thường, không thuộc
    3 track trên) — xem `instructions_VIDEO.md` mục 1B. Quyết định track TRƯỚC khi chọn Format.
-3. **Format** — NGẮN / TRUNG / DÀI (theo khung định dạng `video_rules.md` mục 2).
-4. **Duration** — thời lượng mục tiêu (VD: 90 giây, 4 phút, 10 phút).
+3. **Format** — `CLIP` (1–3 phút) / `NGẮN` (3–5 phút) / `TRUNG` (5–8 phút) / `DÀI` (8–12 phút) —
+   theo khung định dạng `video_rules.md` mục 2. **Mặc định là `DÀI`** khi người dùng không nói rõ
+   (không hỏi lại — xem mục 3 file đó).
+4. **Duration** — thời lượng mục tiêu (VD: 2 phút, 4 phút, 10 phút).
 5. **Hook** — câu/hình mở đầu 3 giây. Nếu video chuyển đổi từ bài SEO có sẵn, **dùng nguyên
    hook bài đó đã dùng** (không tự chọn hook khác); nếu viết độc lập (Nhánh A), ghi rõ nguồn
    (VD: "Dòng #12, `bai-video-dang-Youtube-Anh-Minh.md`" hoặc "Google Drive/Sheet, mục X" nếu
@@ -97,7 +99,7 @@ Mỗi video có **2 file** trong cùng thư mục Drive, không phải 1:
 
 - Tên file prompt: giống hệt master script, chỉ đổi đuôi `_master_script.md` → `_prompts.md`.
 - Cuối file prompt ghi một dòng **tự kiểm ngân sách**: số Ảnh giữ độc lập và số Clip thực tế, đối
-  chiếu trần ở `model_selection_rules.md` mục 1B (video DÀI Mức 1: ≤3 Clip, ≤13–16 Ảnh giữ). Ảnh
+  chiếu trần ở `model_selection_rules.md` mục 1B (video DÀI Mức 1: ≤3 Clip, ≤12–16 Ảnh giữ). Ảnh
   làm start-frame cho Clip liệt kê riêng, không tính vào trần.
 - Tách 2 file để khi đổi/thêm công cụ AI chỉ phải viết lại file prompt, giữ nguyên Master Script —
   đúng nguyên tắc tool-agnostic ở mục 7 trên.

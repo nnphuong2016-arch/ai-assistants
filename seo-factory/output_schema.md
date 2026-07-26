@@ -24,9 +24,14 @@ không thêm field ngoài danh sách.
    viết **thuần chữ 100%** theo `web_content_rules.md` mục 3D, đã qua `seo_checklist.md`.
 8. **FAQ** — dạng danh sách câu hỏi/câu trả lời riêng biệt khỏi Body, để pipeline có thể tách
    ra dựng FAQ schema (Question/Answer từng cặp). Nội dung từng cặp cũng viết thuần chữ như Body.
-9. **Internal Links** — danh sách internal link của bài (2–5 link theo `internal_link_rules.md`),
-   mỗi mục gồm `anchor` (cụm chữ có sẵn nguyên văn trong Body) + `slug` (bài đích). Tách riêng
-   khỏi Body để Body giữ được thuần chữ; n8n/CMS tự bọc thẻ `<a>` vào đúng cụm anchor khi đăng.
+9. **Internal Links** — danh sách link của bài (2–5 link theo `internal_link_rules.md`), mỗi
+   mục gồm `anchor` (cụm chữ có sẵn nguyên văn trong Body) cộng **một trong hai**:
+   - `slug` — khi đích là bài khác trên chính website (ưu tiên 1–3 của `internal_link_rules.md`).
+   - `url` — khi đích nằm ngoài website: video YouTube (ưu tiên 4) hoặc trang sản phẩm
+     (ưu tiên 5). Hai loại này không có slug nội bộ nên bắt buộc ghi URL đầy đủ.
+
+   Không ghi cả hai cho cùng một mục. Tách riêng khỏi Body để Body giữ được thuần chữ; n8n/CMS
+   tự bọc thẻ `<a>` vào đúng cụm anchor khi đăng.
 10. **References (optional)** — nguồn đã dẫn khi có thông tin sức khỏe/nghiên cứu (tên nguồn,
     không cần URL nếu không có URL thật — không bịa link). Nhiều bài (Mẫu C/F/G — triết lý,
     câu chuyện, nhật ký) không có nguồn khoa học nào — để trống, KHÔNG cố tìm nguồn cho có.

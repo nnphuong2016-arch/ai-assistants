@@ -25,9 +25,10 @@ Factory có thể nhận một hoặc nhiều trường sau.
 
 **Trường hợp phổ biến nhất: người dùng chỉ dán đúng 1 dòng là tên file/slug bài viết** (không
 kèm gì khác). Factory tự động:
-1. Bỏ đuôi `.md` nếu có.
-2. Dùng nguyên slug đó làm `filename` output (chỉ đổi đuôi sang `.jpg`) — KHÔNG tự sinh tên
-   khác.
+1. Bỏ đuôi `.md` nếu có. Từ 21/07/2026 tên file bài SEO **không còn đuôi `.md`** (lưu thẳng
+   lên Google Drive), nên phần lớn input sẽ không có đuôi — vẫn chấp nhận cả hai dạng.
+2. Dùng nguyên slug đó làm `filename` output, **thêm đuôi `.jpg`** (nếu input còn `.md` thì thay
+   `.md` bằng `.jpg`) — KHÔNG tự sinh tên khác.
 3. Bỏ dấu chấm/gạch ngang, đọc phần chữ sau số thứ tự (VD: `co-the-can-nhung-khoang-yen-tinh`
    → hiểu là "cơ thể cần những khoảng yên tĩnh") để suy luận chủ đề, dùng như `hook`.
 4. Chạy thẳng toàn bộ quy trình (Editorial → Style → Prompt → Checklist → Output) và trả Output
@@ -206,8 +207,9 @@ Factory dùng mặc định.
 
 Tên file mong muốn.
 
-**Nếu input có `slug` (tên file bài viết) → filename LUÔN lấy nguyên slug đó (đổi đuôi
-`.md`→.jpg), không tự sinh tên khác, không tự rút gọn/diễn giải lại.**
+**Nếu input có `slug` (tên file bài viết) → filename LUÔN lấy nguyên slug đó rồi thêm đuôi
+`.jpg`; nếu slug còn đuôi `.md` (dạng cũ trước 21/07/2026) thì thay `.md` bằng `.jpg`. Không tự
+sinh tên khác, không tự rút gọn/diễn giải lại.**
 
 Nếu không có slug và cũng không có filename.
 

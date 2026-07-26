@@ -216,15 +216,40 @@ Quy trình khi lưu:
 
      Cập nhật lần cuối: <ngày cập nhật thật của bài, không copy cố định>
      ```
-   - KHÔNG cho vào file: Slug, Meta Description, Excerpt, Category, Tags, Featured Image,
-     Internal Links, tên Hook đã dùng, Loại bài, ghi chú kiểu "References để trống vì...",
-     "chưa có internal link vì...". Những thứ này là metadata cho pipeline, không phải nội dung
-     đọc được — giữ trong phần trả lời cho người dùng ở cuộc trò chuyện, không nằm trong file.
+   - KHÔNG cho vào file: Title thẻ SEO, Slug, Meta Description, Excerpt, Category, Tags,
+     Featured Image, Internal Links, References, tên Hook đã dùng, Loại bài, ghi chú kiểu
+     "References để trống vì...", "chưa có internal link vì...". Những thứ này là metadata cho
+     pipeline, không phải nội dung đọc được — chúng đi vào **file manifest metadata** kèm theo
+     (bước 3 dưới đây), KHÔNG nằm trong file bài và KHÔNG chỉ nằm trong cuộc trò chuyện.
    - Field nào không có nội dung thật (VD: chưa có nguồn để trích dẫn) → **không đưa vào file**,
      không viết placeholder giải thích.
 3. `create_file` lên đúng thư mục Drive ở trên rồi gửi link file cho người dùng. Không có bước
    commit/push (không còn GitHub cho bài SEO). Hỏi người dùng trước nếu ngữ cảnh chưa rõ có nên
    tự lưu luôn không, trừ khi đã xác nhận sẵn "luôn tự lưu, không cần hỏi lại" trong phiên.
+4. **Tạo thêm 1 file manifest metadata** cùng thư mục, tên `<tên file bài>.meta.json`. Đây là
+   nơi duy nhất 8 field metadata tồn tại — file bài chỉ chứa chữ đọc được, còn cuộc trò chuyện
+   thì mất khi đóng phiên. Manifest **KHÔNG lặp lại Body** (đó là lý do manifest cũ bị bỏ):
+
+   ```json
+   {
+     "file": "1.5.co-the-can-nhung-khoang-yen-tinh",
+     "title_seo": "Tiêu đề thẻ SEO ≤ 60 ký tự",
+     "slug": "co-the-can-nhung-khoang-yen-tinh",
+     "meta_description": "…",
+     "excerpt": "…",
+     "category": "Sức khỏe",
+     "tags": ["…", "…"],
+     "internal_links": [
+       { "anchor": "cụm chữ có sẵn trong bài", "slug": "bai-dich-noi-bo" },
+       { "anchor": "cụm chữ khác", "url": "https://youtube.com/watch?v=…" }
+     ],
+     "references": [],
+     "hook_used": "…",
+     "article_template": "Mẫu A"
+   }
+   ```
+
+   Field nào thật sự không có nội dung → để mảng rỗng hoặc chuỗi rỗng, KHÔNG bịa.
 
 **Quy cách đặt tên file bài SEO:** `<số chủ đề>.<số thứ tự bài trong chủ đề đó>.<slug>`
 
@@ -353,11 +378,22 @@ ghi Sheet). Khi đó mỗi bài/ảnh cần thêm 1 file JSON "manifest" để n
 cho video, vì file `_master_script.md` thật đã nằm sẵn trong chính thư mục n8n theo dõi nên tạo
 thêm JSON chứa lại y nguyên nội dung là dư thừa.
 
-**Cập nhật 21/07/2026 — bỏ nốt manifest JSON cho SEO và Featured Image.** Từ khi bài SEO
-(Bước 5.A) và prompt ảnh (Bước 5.5) đều được lưu thẳng dưới dạng file thật vào đúng thư mục n8n
-theo dõi, việc tạo thêm file `.json` lặp lại nội dung là **dư thừa và dễ lệch bản** (sửa file
-thật mà quên sửa JSON). Áp dụng cùng logic đã dùng cho video: **n8n parse trực tiếp file nội
-dung**. Vì vậy **KHÔNG còn tạo manifest JSON cho bất kỳ loại nội dung nào.**
+**Cập nhật 21/07/2026 — bỏ manifest JSON *lặp lại nội dung*.** Từ khi bài SEO (Bước 5.A) và
+prompt ảnh (Bước 5.5) đều được lưu thẳng dưới dạng file thật vào đúng thư mục n8n theo dõi, việc
+tạo thêm file `.json` **chép lại y nguyên Body** là dư thừa và dễ lệch bản (sửa file thật mà
+quên sửa JSON). n8n parse trực tiếp file nội dung.
+
+**Đính chính 26/07/2026 — riêng bài SEO vẫn cần 1 manifest CHỈ CHỨA METADATA.** Video và prompt
+ảnh thì file thật *là toàn bộ sản phẩm*, nên bỏ manifest là đúng. Bài SEO thì khác: nó có 8 thứ
+không tồn tại trong thân bài — Title thẻ SEO (khác H1), Slug, Meta Description, Excerpt,
+Category, Tags, Internal Links, References. Bỏ manifest mà không thay bằng gì thì 8 field đó
+không còn ở đâu cả, n8n chỉ nhận được thân bài. Vì vậy:
+
+| Loại | Manifest |
+|---|---|
+| Kịch bản video | KHÔNG — file `_master_script.md` là toàn bộ sản phẩm |
+| Prompt Featured Image | KHÔNG — file prompt là toàn bộ sản phẩm |
+| **Bài SEO** | **CÓ — `<tên file>.meta.json`, chỉ metadata, KHÔNG lặp Body** |
 
 **Thư mục gốc:** "Anh Minh - N8N Trigger" trên Google Drive, gồm 3 thư mục con (ID xác nhận
 14/07/2026, dùng công cụ Drive `create_file` với đúng `parentId`):

@@ -107,9 +107,10 @@ Có thể thay đổi nếu Workflow yêu cầu.
 
 ## filename
 
-**Nếu input có slug (tên file bài viết, VD: `1.5.co-the-can-nhung-khoang-yen-tinh.md`) → dùng
-NGUYÊN slug đó, chỉ đổi đuôi `.md` thành `.jpg`.** Ví dụ:
-`1.5.co-the-can-nhung-khoang-yen-tinh.jpg`.
+**Nếu input có slug (tên file bài viết, VD: `1.5.co-the-can-nhung-khoang-yen-tinh`) → dùng
+NGUYÊN slug đó và thêm đuôi `.jpg`.** Ví dụ: `1.5.co-the-can-nhung-khoang-yen-tinh.jpg`.
+Từ 21/07/2026 tên file bài SEO không còn đuôi `.md`; nếu gặp slug dạng cũ còn `.md` thì thay
+`.md` bằng `.jpg` — kết quả giống nhau.
 
 Nếu không có slug, tự sinh từ title/hook. Ví dụ: `gan-nhiem-mo-nen-an-gi.jpg`.
 

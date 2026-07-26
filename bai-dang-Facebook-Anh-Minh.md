@@ -1,5 +1,5 @@
 Đăng bài trên Facebook Hiền triết Anh Minh
-Trước mắt có 210 chủ đề Facebook từ 7 series, mỗi chủ đề 30 bài:
+Trước mắt có 210 chủ đề Facebook từ 7 series, mỗi series 30 chủ đề:
 
 Có những... → Quan sát về cuộc sống và cơ thể.
 Đôi khi... → Những nghịch lý ít người để ý.

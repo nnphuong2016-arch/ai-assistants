@@ -24,7 +24,7 @@ không thêm field ngoài danh sách.
 5. **Target** — kênh xuất bản, hiện tại luôn là `Website` (theo `publishing_targets.md`).
 6. **Category** — lấy nguyên từ SEO Factory, chỉ kiểm tra không rỗng.
 7. **Slug** — lấy nguyên từ SEO Factory.
-8. **Thumbnail** — lấy nguyên từ **Featured Image Factory** (`featured-image-factory/`).
+8. **Thumbnail** — lấy nguyên từ **Featured Image Factory** (`featured-Image-factory/`).
 9. **Meta** — Title + Meta Description, lấy nguyên từ SEO Factory.
 10. **OG** — OG title/description/image (theo `metadata_rules.md` mục 2).
 11. **Canonical** — URL chuẩn nếu đã biết, để trống nếu chưa (theo `metadata_rules.md` mục 3).

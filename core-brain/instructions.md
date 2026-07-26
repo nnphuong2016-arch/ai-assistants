@@ -100,13 +100,22 @@ chuyên gia khi cần. Tuyệt đối không chẩn đoán/kê đơn.
 
 ---
 
-## 6. NĂM TRỤ NỘI DUNG
+## 6. SÁU TRỤ NỘI DUNG
 
-> **Lăng kính chiều sâu (nội bộ):** năm trụ này tương ứng các tầng của con người —
+> **Cập nhật 25/07/2026 — từ 5 trụ lên 6 trụ.** Bếp An Nhiên trước đây không nằm trong danh sách
+> này dù trên thực tế đã vận hành như một trụ đầy đủ: có chuyên mục SEO riêng (số 6 trong
+> `bai-seo-dang-website-Anh-Minh.md`), có module video riêng (`video-factory/bep_an_nhien.md` +
+> `food_library.md`), có Content Track riêng trong `video-factory/output_schema.md`, và đã được
+> đánh số 6 trong bảng quy tắc đặt tên file ở `CLAUDE.md`. Việc thiếu nó ở đây khiến bài Bếp An
+> Nhiên không có Category hợp lệ trong `seo-factory/output_schema.md`. Nay bổ sung để CORE_BRAIN
+> khớp lại với thực tế vận hành.
+
+> **Lăng kính chiều sâu (nội bộ):** các trụ này tương ứng các tầng của con người —
 > **Thân** (Sức khỏe + Dưỡng sinh) · **Tâm** (Tâm lý & đời sống) · **Trí / Đạo sống**
-> (Triết lý phương Đông) · **Đồng hành** (tuổi già & người bệnh). Mỗi video nên chạm rõ
+> (Triết lý phương Đông) · **Đồng hành** (tuổi già & người bệnh) · **Nếp nhà** (Bếp An Nhiên —
+> chạm cả Thân qua bữa ăn lẫn Tâm qua ký ức gia đình). Mỗi video nên chạm rõ
 > một tầng để không hời hợt. Đây là cách *nhìn*, không phải nhãn hiển thị trên web —
-> với người xem vẫn dùng tên 5 trụ quen thuộc bên dưới.
+> với người xem vẫn dùng tên 6 trụ quen thuộc bên dưới.
 
 1. **Sức khỏe — hiểu cơ thể:** ngủ, stress, ăn uống, vận động, gan/huyết áp (lối sống), tuổi già.
 2. **Tâm lý & đời sống — hiểu cảm xúc:** lo âu, cô đơn, khủng hoảng trung niên, mất phương hướng, chữa lành.
@@ -116,6 +125,11 @@ chuyên gia khi cần. Tuyệt đối không chẩn đoán/kê đơn.
    NHIÊN (đồng hành cảm xúc, phẩm giá, không khí nhẹ, chăm sóc người chăm sóc, ăn/ngủ/nghỉ ở mức an ủi).
    TUYỆT ĐỐI không tư vấn chữa bệnh, không đụng tới diễn tiến bệnh, không thay/trì hoãn điều
    trị. Khi viết mảng này, theo đúng ranh giới trong `dong_hanh_nguoi_benh.md`.
+6. **Bếp An Nhiên — văn hóa bữa cơm Việt:** món theo mùa, ký ức gia đình, tập quán người xưa,
+   cách sống quanh mâm cơm (ăn đúng bữa, ăn chậm, ăn cùng người thân, biết đủ). Trục kể là
+   **cảm xúc và văn hóa**, KHÔNG phải tư vấn dinh dưỡng — không suy diễn món ăn thành lợi ích
+   sức khỏe hay tác động lên bộ phận cơ thể. Khi viết mảng này, theo đúng ranh giới trong
+   `video-factory/bep_an_nhien.md` mục 2–3 (bảng "Đừng nói / Hãy nói").
 
 Tình huống đời sống (cha mẹ, tuổi già, nghỉ hưu, bệnh tật, mất mát, cô đơn, vợ chồng, con cái):
 tham khảo `life_stories.md` — chạm cảm xúc bằng thấu hiểu, không thao túng, không sến.

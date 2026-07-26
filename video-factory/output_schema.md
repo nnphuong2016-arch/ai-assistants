@@ -35,7 +35,8 @@
    bằng heading `### Scene <ID>` (bắt buộc — n8n parse theo khuôn này, xem `video_rules.md` mục
    1.C và `video_ai_contract.md` GHI CHÚ VẬN HÀNH), rồi tới các field theo đúng thứ tự:
    **Scene ID** (zero-padded 3 chữ số, VD `001`), **Duration** (giây), **Voice** (đoạn lời dẫn
-   tiếng Việt của cảnh đó), **Visual** (bối cảnh + chủ thể + hành động, tiếng Anh), **Camera**
+   tiếng Việt của cảnh đó), **Shots** (`1`/`2`/`3` — số hình phủ cảnh này; khi >1 thì Visual/Camera
+   viết thành khối đánh số, xem `video_rules.md` mục 1.C), **Visual** (bối cảnh + chủ thể + hành động, tiếng Anh), **Camera**
    (loại cảnh + chuyển động máy + ánh sáng + âm thanh nền, tiếng Anh), **Character** (tên nhân
    vật nếu có, tham chiếu `core-brain/image_style_bible.md` — để trống nếu B-roll trung tính),
    **Emotion** (tâm trạng chủ đạo của cảnh), **Loop** (`true`/`false`).

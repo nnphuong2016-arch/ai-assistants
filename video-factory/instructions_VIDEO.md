@@ -144,12 +144,31 @@ nghiệm thật (Anh Minh là nhân vật AI). Thông tin sức khỏe nhắc t�
 
 ## 5. QUY TRÌNH VIẾT MỘT KỊCH BẢN
 
+Quy trình gồm **2 bước tách rời, sinh ra 2 file `.md`** — không gộp làm một.
+
+### BƯỚC 1 — Viết Master Script (`..._master_script.md`)
+
 Xác định **nhánh** trước tiên (mục 1B: Giải Đáp hay Dưỡng Sinh Ngắn — hỏi lại nếu chưa rõ) →
 Nhận chủ đề + định dạng (NGẮN/TRUNG/DÀI, hoặc thời lượng cụ thể) → xác định hook: nếu đang
 chuyển đổi từ bài SEO có sẵn, **dùng lại đúng hook bài đó đã chọn**; nếu viết độc lập (Nhánh A),
-lấy câu hỏi từ `bai-video-dang-Youtube-Anh-Minh.md` hoặc nguồn ngoài (Drive/Sheet) → viết theo khuôn xuất & khung định dạng tương ứng
-(`video_rules.md` mục 1–4), giữ đúng giọng viết hook theo `examples_and_hooks.md` → viết prompt
-hình tham chiếu nhân vật (`core-brain/image_style_bible.md`), chọn công cụ AI theo
-`model_selection_rules.md` rồi viết prompt theo `video_ai_prompt_rules.md` → áp quy tắc chống
-lặp nếu sản xuất hàng loạt (mục 7 `video_rules.md`) → nếu cần thumbnail, theo mục 8 → xuất theo
-`output_schema.md`.
+lấy câu hỏi từ `bai-video-dang-Youtube-Anh-Minh.md` hoặc nguồn ngoài (Drive/Sheet) → viết theo
+khuôn xuất & khung định dạng tương ứng (`video_rules.md` mục 1–4), giữ đúng giọng viết hook theo
+`examples_and_hooks.md` → áp quy tắc chống lặp nếu sản xuất hàng loạt (mục 7 `video_rules.md`) →
+nếu cần thumbnail, theo mục 8 → đóng gói theo `output_schema.md`.
+
+⚠️ **Bước 1 KHÔNG viết prompt và KHÔNG chọn công cụ AI.** Field Visual/Camera chỉ mô tả trung
+tính (bối cảnh, hành động, góc máy, ánh sáng), không phải prompt của Kling/Veo3/Hailuo/Runway.
+`model_selection_rules.md` ghi rõ: *"Kịch bản (Master Script) KHÔNG BAO GIỜ tự chỉ định công cụ
+AI — việc chọn công cụ là của pipeline sản xuất."*
+
+### BƯỚC 2 — Viết file prompt (`..._prompts.md`), làm SAU khi Bước 1 xong
+
+Đọc lại Master Script vừa viết → quyết định cảnh nào là **Clip**, cảnh nào là **Ảnh giữ** theo
+`model_selection_rules.md` mục 1B (đọc cờ "MỨC CHI HIỆN HÀNH" ở đầu file TRƯỚC — video DÀI hiện ở
+Mức 1: tối đa 3 Clip, tối đa 13–16 Ảnh giữ) → chọn công cụ cho từng Clip theo bảng mục 4 file đó
+→ viết prompt đầy đủ theo `video_ai_prompt_rules.md`, tham chiếu ngoại hình nhân vật theo
+`core-brain/image_style_bible.md` → cuối file ghi **dòng tự kiểm ngân sách** (đếm Clip và Ảnh giữ
+thực tế, đối chiếu trần; ảnh làm start-frame cho Clip liệt kê riêng, không tính vào trần).
+
+**Chưa có đủ 2 file thì chưa coi là xong.** Cả hai lưu vào cùng thư mục Drive theo `CLAUDE.md`
+Bước 5.B.

@@ -153,8 +153,8 @@ Chuyển động → Phong cách hình ảnh → Chất lượng kỹ thuật �
 ## 11B. PROMPT ẢNH TĨNH + KEN BURNS (khác với prompt Clip)
 
 > Thêm 23/07/2026 — theo mô hình hybrid ở `model_selection_rules.md` mục 1B, phần lớn cảnh
-> (video DÀI Mức 1: tối đa 3 Clip, còn lại 12–16 Ảnh giữ) là **Ảnh giữ + Image Motion Engine** ở bước dựng (Ken Burns + tối đa 2 lớp phụ, xem `video_rules.md` mục 6B),
-> không phải Clip AI video. Prompt cho ảnh tĩnh (Flux hoặc công cụ ảnh khác, xem
+> (video DÀI Mức 1: tối đa 3 Clip, còn lại 12–16 Ảnh giữ) là **Ảnh giữ + một cú Ken Burns** ở
+> bước dựng (`video_rules.md` mục 6B), không phải Clip AI video. Prompt cho ảnh tĩnh (Flux hoặc công cụ ảnh khác, xem
 > `video_ai_contract.md` Stage 3) khác Clip ở vài điểm:
 
 - **Chừa khoảng trống bố cục (headroom):** không đặt chủ thể chính sát mép khung hình — pan/zoom
@@ -164,8 +164,14 @@ Chuyển động → Phong cách hình ảnh → Chất lượng kỹ thuật �
   mất tự nhiên.
 - **Độ phân giải/tỷ lệ ảnh cao hơn khung xuất** (nếu công cụ cho phép chọn) — để còn dư biên khi
   zoom in mà không vỡ nét.
+- **Chiều sâu và không khí phải VẼ SẴN vào ảnh** (thêm 26/07/2026): khâu dựng chỉ có một cú Ken
+  Burns, không thêm được hiệu ứng sau. Muốn khung hình có chiều sâu/không khí thì phải yêu cầu
+  ngay trong prompt — **tối đa 2 trong 4** thứ sau, danh sách gốc ở `video_rules.md` mục 6B:
+  **chiều sâu lớp** (tiền cảnh tách rõ khỏi hậu cảnh) · **độ sâu trường ảnh** (hậu cảnh mờ dịu,
+  tiền cảnh nét) · **ánh sáng có hướng** (tia nắng qua cửa sổ/tán cây — chỉ cho đoạn ấm áp) ·
+  **hạt trong không khí** (bụi nắng, lá rơi, hạt mưa — rất tiết chế).
 - Các nguyên tắc còn lại (bản sắc hình ảnh, phong cách điện ảnh, môi trường, tính nhất quán) áp
-  dụng y hệt mục 1–10 — chỉ khác ở bố cục chừa biên nói trên.
+  dụng y hệt mục 1–10 — chỉ khác ở bố cục chừa biên và điểm vẽ sẵn nói trên.
 
 ---
 

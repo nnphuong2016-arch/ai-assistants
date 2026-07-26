@@ -137,9 +137,10 @@ kể cả khi hook lấy từ kho có sẵn.
 
 ------------------------------------------------------------------------
 
-# 7. ĐẦU VÀO — HAI ĐƯỜNG TRIỂN KHAI SONG SONG (cập nhật 20/07/2026)
+# 7. ĐẦU VÀO — HAI ĐƯỜNG TRIỂN KHAI (Đường 1 đang chạy, Đường 2 chưa xây — cập nhật 26/07/2026)
 
-Facebook Factory được vận hành theo **2 đường độc lập**, không đường nào thay thế đường kia:
+Facebook Factory được thiết kế theo **2 đường độc lập**, không đường nào thay thế đường kia —
+nhưng tính đến 26/07/2026 **chỉ Đường 1 tồn tại trên thực tế**:
 
 **Đường 1 — Trợ lý tương tác (Custom GPT / Claude Project / Claude Code):**
 Đầu vào có 3 nguồn, xếp hạng đúng như `execution_flow.md` STEP 3 (file đó là nguồn gốc; nếu
@@ -151,9 +152,24 @@ sau này lệch nhau thì STEP 3 thắng):
 2. `bai-dang-Facebook-Anh-Minh.md` — kho hook có sẵn, dùng khi người vận hành không đưa chủ đề.
 3. `idea_library.md` — tự sinh, khi hai nguồn trên không đủ hoặc cần thêm hướng tiếp cận.
 
-**Đường 2 — Workflow n8n "Facebook Factory" (qua API, tự động hoàn toàn):**
-Đầu vào = Google Sheet "bai-dang-facebook-anh-minh". Đường này do n8n tự đọc/ghi Sheet và tự
-gọi API — không thuộc phạm vi trợ lý tương tác, không cần lưu ý gì thêm ở đây.
+**Đường 2 — Workflow n8n "Facebook Factory": ⏸️ CHƯA XÂY (kế hoạch).**
+Thiết kế dự kiến: đầu vào = Google Sheet "bai-dang-facebook-anh-minh", n8n tự đọc/ghi Sheet
+và tự gọi API.
+
+> Đính chính 26/07/2026 — **workflow này không tồn tại trên n8n**. Đã rà toàn bộ 30 workflow
+> đang có: không workflow nào đọc `bai-dang-Facebook-Anh-Minh.md`, `facebook-factory/`, hay
+> field `hook_source`. WF-08 — Community Factory chỉ làm **trả lời bình luận** (lấy comment
+> Facebook + comment website rồi soạn câu trả lời), nó không viết bài đăng, và chỉ đọc 8 file
+> trong `community-factory/`. Bản cũ viết "tự động hoàn toàn" khiến người đọc tưởng bài
+> Facebook đang chạy máy — thực tế **100% bài đăng Facebook hiện đi qua Đường 1**.
+>
+> Khi nào dựng Đường 2 thì phải làm 3 việc: (a) node parse JSON phải nhận **8 field**
+> theo `output_schema.md` v2.1 — `hook_source` là field thứ 8, thêm 25/07/2026; (b) Sheet phải
+> có cột `hook_source`; (c) nếu Sheet chứa bản sao 210 hook thì phải đồng bộ lại với
+> `bai-dang-Facebook-Anh-Minh.md` — file trong repo đã đổi chữ ở 10 hook (Đợt A) và 2 hook
+> nữa khi rà trùng ý, nên bản sao cũ đang lệch.
+
+Chừng nào Đường 2 chưa có, mọi bài đăng Facebook đều đi qua Đường 1.
 
 ------------------------------------------------------------------------
 

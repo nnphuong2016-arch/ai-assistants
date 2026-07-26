@@ -15,7 +15,8 @@
 | Kênh | Factory phụ trách | Vai trò một câu | Độ sâu nội dung | Định dạng & độ dài |
 |---|---|---|---|---|
 | **Website** | SEO Factory | **Lưu giữ kiến thức** | Sâu nhất — định nghĩa, nguyên nhân/góc nhìn, cách áp dụng, có cấu trúc H2/H3 | Bài SEO 600–2500 từ (`web_content_rules.md` 3B) |
-| **Facebook / X / Zalo** | Community Factory | **Chia sẻ điều đáng nhớ mỗi ngày** | Nông nhất, cố ý — một cảm xúc/một insight, KHÔNG giải thích | Post 100–300 từ (`social_templates.md`) |
+| **Facebook / X** | Facebook Factory | **Chia sẻ điều đáng nhớ mỗi ngày** | Nông nhất, cố ý — một cảm xúc/một insight, KHÔNG giải thích | Post không có sàn từ, trần cứng 300 từ (`facebook-factory/writing_rules.md` 6.1) |
+| **Zalo / Newsletter / trả lời bình luận** | Community Factory | **Giữ liên hệ đều đặn với người đã theo dõi** | Nông — nhắc lại, hỏi thăm, dẫn về nội dung dài hơn | Post 100–300 từ (`community-factory/social_templates.md`) |
 | **YouTube (câu hỏi "Tại sao")** | Video Factory — nhánh **Giải Đáp** | **Giải đáp câu hỏi** | Vừa–sâu — kể chuyện + giải thích bằng hình ảnh, có ví dụ đời thường | Video TRUNG/DÀI 3–12 phút (`video_rules.md` mục 2) |
 | **TikTok / FB Reels / YouTube Shorts (bài tập)** | Video Factory — nhánh **Dưỡng Sinh Ngắn** | **Hành động ngay lập tức** | Nông, thị phạm — xem là làm theo được luôn, không lý thuyết | Video NGẮN 60–120s, thị phạm động tác (`duong_sinh_bai_tap.md`) |
 | **Telegram** *(chưa build — kế hoạch)* | Factory tương lai | **Xây cộng đồng học & thực hành** | Trung bình — hướng dẫn từng bước, có tương tác/checklist | Bài hướng dẫn dài hơn post FB, ngắn hơn bài SEO |
@@ -55,14 +56,18 @@ mình?"* Nếu câu trả lời nghiêng về vế đầu — viết lại.
 
 - Mỗi Factory tự đặt tên sản phẩm của mình **theo đúng quy tắc đặt tên của chính Factory đó**:
   - SEO Factory: Title theo `keyword_strategy.md` mục 5 (50–60 ký tự, chứa primary keyword).
-  - Community Factory: không có "tiêu đề" — chỉ có câu mở đầu chạm ngay (`social_templates.md`).
+  - Facebook Factory: không có "tiêu đề" — chỉ có câu mở đầu chạm ngay
+    (`facebook-factory/hook_library.md`).
+  - Community Factory: không có "tiêu đề" — chỉ có câu mở đầu chạm ngay
+    (`community-factory/social_templates.md`).
   - Video Factory: Video Title theo `video_rules.md` mục 1.A (tên video + 1 câu ý chính).
 - **KHÔNG Factory nào được lấy nguyên tiêu đề/câu mở đã xuất bản ở Factory khác làm tên/tiêu đề
   cho sản phẩm của mình** — kể cả khi cùng chủ đề. Mỗi kênh phải tự đặt tên phản ánh đúng góc vào
   và vai trò của kênh mình (xem mục 2).
 - **Cập nhật 20/07/2026 — mỗi kênh có backlog riêng, không dùng chung một kho nữa** (xem
-  `CLAUDE.md` Bước 2): SEO Factory dùng `bai-seo-dang-website-Anh-Minh.md`, Community Factory
-  dùng `bai-dang-Facebook-Anh-Minh.md`, Video Factory (Nhánh A) dùng
+  `CLAUDE.md` Bước 2): SEO Factory dùng `bai-seo-dang-website-Anh-Minh.md`, **Facebook Factory**
+  dùng `bai-dang-Facebook-Anh-Minh.md` (kho hook này chuyển từ Community Factory sang từ
+  20/07/2026 — Community Factory không còn đọc nó), Video Factory (Nhánh A) dùng
   `bai-video-dang-Youtube-Anh-Minh.md` + nguồn ngoài (Drive/Sheet). `hook_library_full.md` (kho
   hook dùng chung cũ) **không còn Factory nào đọc** — chính việc dùng chung kho này là nguyên
   nhân gốc gây trùng lặp đã phát hiện (xem đầu file). Mỗi file backlog này vẫn chỉ là **nguồn
@@ -87,10 +92,15 @@ Mỗi Factory giờ chọn dòng/hook từ đúng file backlog riêng của mìn
   mục 1) — nhưng viết lại **toàn bộ diễn đạt** theo giọng kể của video, không đọc lại nguyên văn
   bài viết. Khi viết độc lập (không convert), chọn dòng riêng trong
   `bai-video-dang-Youtube-Anh-Minh.md`, không liên quan gì tới dòng SEO/Community đã dùng.
-- **Community Factory** chọn dòng từ `bai-dang-Facebook-Anh-Minh.md`, độc lập với 2 file trên —
+- **Facebook Factory** chọn dòng từ `bai-dang-Facebook-Anh-Minh.md`, độc lập với 2 file trên —
   khi viết về một chủ đề đã có bài SEO/video gần đây, **không cần và không nên** mở bằng đúng câu
-  đã dùng ở kênh kia; hãy dùng `storytelling_patterns.md` để kể lại bằng một khuôn hoàn toàn khác
-  (quan sát, ký ức, câu hỏi mở...) — đúng tinh thần mục 2 ở trên.
+  đã dùng ở kênh kia; hãy dùng `facebook-factory/post_frameworks.md` để kể lại bằng một khuôn
+  hoàn toàn khác (quan sát, ký ức, câu hỏi mở...) — đúng tinh thần mục 2 ở trên. Lưu ý kho hook
+  này có thể bị bỏ qua hoàn toàn: khi người vận hành đưa thẳng một chủ đề thì đó mới là nguồn ưu
+  tiên cao nhất (`facebook-factory/execution_flow.md` STEP 3).
+- **Community Factory** (Zalo/Newsletter/bình luận) không còn kho dòng riêng — nội dung bám theo
+  bài đã xuất bản ở kênh khác, và vẫn phải kể lại bằng khuôn khác theo
+  `community-factory/storytelling_patterns.md`.
 
 ## 5. CHẾ ĐỘ THỦ CÔNG (chat trực tiếp, không qua n8n)
 

@@ -23,12 +23,16 @@ Factory hay bất kỳ Factory nào khác), `ai-anh-minh-chat-factory/`, `resear
 cho `hook_library_full.md` cũ — xem Bước 2): `bai-seo-dang-website-Anh-Minh.md`,
 `bai-dang-Facebook-Anh-Minh.md`, `bai-video-dang-Youtube-Anh-Minh.md`.
 
-**Nội dung thành phẩm KHÔNG lưu ở repo này** — xem Bước 5 bên dưới:
-- Bài viết SEO → GitHub `nnphuong2016-arch/bai-viet-seo`, sau đó luôn tạo thêm file manifest
-  JSON trong Google Drive ("Anh Minh - N8N Trigger") để kích hoạt n8n — xem Bước 6.
+**Nội dung thành phẩm KHÔNG lưu ở repo này** — xem Bước 5 bên dưới. **Từ 21/07/2026, KHÔNG còn
+dùng GitHub cho bất kỳ loại thành phẩm nào — tất cả lưu thẳng Google Drive:**
+- Bài viết SEO → **chỉ lưu Google Drive** (quyết định 21/07/2026 — ngừng dùng repo
+  `nnphuong2016-arch/bai-viet-seo`) — thư mục "Anh Minh - N8N Trigger" → "Bai-viet-SEO".
+  Không cần manifest JSON riêng (xem Bước 5.A + Bước 6).
 - Kịch bản video → **chỉ lưu trực tiếp Google Drive, KHÔNG dùng GitHub nữa** (quyết định
   18/07/2026 — đã ngừng dùng repo `kich-ban-video`) — thư mục "Anh Minh - N8N Trigger" →
   "Kich-ban-video". Không cần thêm manifest JSON riêng cho video (xem Bước 5.B + Bước 6).
+- Prompt Featured Image → Google Drive, "Anh Minh - N8N Trigger" → "Prompt-Featured-Image"
+  (xem Bước 5.5).
 - Bài đăng Facebook → Google Drive riêng (không GitHub) — xem Bước 5F.
 
 ---
@@ -107,9 +111,14 @@ một kho nữa)
    từng mục (áp dụng cả 6 mục nội dung, không riêng Sức khỏe).
 6. `seo-factory/seo_checklist.md` — tự kiểm TRƯỚC khi xuất, bắt buộc không bỏ qua (mục 0 Quick
    Fail: title dài, slug thừa stopword, thiếu minh bạch AI, Disclaimer lẫn References, thiếu
-   ngày cập nhật — sai 1 trong 5 điều này thì dừng và sửa ngay).
-7. `seo-factory/internal_link_rules.md` — gắn 2–5 internal link.
-8. `seo-factory/output_schema.md` — đóng gói đúng khuôn field.
+   ngày cập nhật, Body còn ký tự định dạng — sai 1 trong 6 điều này thì dừng và sửa ngay).
+7. `seo-factory/article_examples_full.md` — 3 bài mẫu VIẾT TRỌN VẸN (Mẫu A/C/E), đối chiếu khi
+   thấy bài đang viết còn mỏng hoặc lệch khuôn.
+8. `seo-factory/internal_link_rules.md` — gắn 2–5 internal link (ghi ở field `Internal Links`,
+   không nhúng markdown vào Body — mục 4 của file đó).
+9. `core-brain/channel_roles.md` — vai trò Website so với Facebook/YouTube, tránh viết trùng vai
+   trò kênh khi cùng một chủ đề gốc.
+10. `seo-factory/output_schema.md` — đóng gói đúng khuôn field.
 
 Chủ đề Sức khỏe cần tăng chiều sâu (semantic entity) → tra bảng Preferred/Allowed/Forbidden ở
 `core-brain/health_knowledge.md` mục 9 trước — KHÔNG tự thêm thuật ngữ hormone/y sinh (cortisol,
@@ -167,20 +176,27 @@ Sau khi hoàn tất một bài SEO hoặc một kịch bản video (đã qua Bư
 không chứa nội dung thành phẩm). **Bài SEO và kịch bản video lưu ở HAI NƠI KHÁC NHAU** (5.A/5.B)
 — quyết định 18/07/2026: kịch bản video chuyển hẳn sang Google Drive, ngừng dùng GitHub.
 
-#### 5.A — Bài viết SEO (GitHub `nnphuong2016-arch/bai-viet-seo`)
+#### 5.A — Bài viết SEO (Google Drive — KHÔNG dùng GitHub, đổi 21/07/2026)
+
+**Nơi lưu:** Google Drive, thư mục "Anh Minh - N8N Trigger" → **"Bai-viet-SEO"** (parentId
+`1ubrFWlDezfMX91zoV7hqjc1PqnGNZ3Gn`, dùng công cụ Drive `create_file`). Đây chính là thư mục
+n8n theo dõi bằng Drive Trigger, nên file bài thật nằm sẵn ở đó là đủ để kích hoạt workflow —
+KHÔNG cần tạo thêm manifest JSON (cùng lý do đã áp dụng cho video từ 18/07/2026, xem Bước 6).
 
 Quy trình khi lưu:
-1. Nếu repo chưa có trong session → gọi `add_repo` (owner: `nnphuong2016-arch`, repo:
-   `bai-viet-seo`), clone, rồi `register_repo_root`.
-2. Đặt tên file theo đúng quy cách ở dưới — không ghi đè file cũ trừ khi đang sửa đúng bài đó.
-3. **File .md CHỈ chứa đúng nội dung bài viết (những gì hiển thị cho người đọc trên web) — KHÔNG
+1. Đặt tên file theo đúng quy cách ở dưới — không ghi đè file cũ trừ khi đang sửa đúng bài đó.
+2. **File CHỈ chứa đúng nội dung bài viết (những gì hiển thị cho người đọc trên web) — KHÔNG
    thêm bất kỳ chữ/field/ghi chú nào khác**:
-   - CÓ trong file: tiêu đề (H1), toàn văn thân bài (H2/H3, đoạn văn, list), FAQ hiển thị trên
-     trang (Q&A thật), disclaimer + minh bạch AI + ngày cập nhật (đây là nội dung bắt buộc hiển
-     thị ở chân bài theo `web_content_rules.md`, không phải ghi chú nội bộ).
+   - CÓ trong file: tiêu đề bài, toàn văn thân bài, FAQ hiển thị trên trang (Q&A thật),
+     disclaimer + minh bạch AI + ngày cập nhật (đây là nội dung bắt buộc hiển thị ở chân bài
+     theo `web_content_rules.md`, không phải ghi chú nội bộ).
+   - **Viết thuần chữ 100%** theo `web_content_rules.md` mục 3D: KHÔNG `#`, `-`, `—`, `*`,
+     bảng, link markdown — vì pipeline giọng đọc sẽ đọc thành lời mọi ký tự còn sót. Tiêu đề
+     mục viết thành một dòng chữ riêng; n8n/CMS tự bọc thẻ `<h2>` khi đăng web.
    - **Khối đóng bài chuẩn (bắt buộc, CHỈ áp dụng cho bài thuộc chủ đề Sức khỏe — số 1):** đặt
-     cuối file, sau FAQ, dùng đúng khuôn dưới đây — heading `### Lưu ý` tạo ranh giới rõ giữa
-     đoạn kết cảm xúc của bài và phần thông tin bắt buộc, tránh gãy mạch/gây hụt hẫng cho người
+     cuối file, sau FAQ, dùng đúng khuôn dưới đây — dòng tiêu đề "Lưu ý" (viết trơn, KHÔNG có
+     `###` đứng trước, theo mục 3D) tạo ranh giới rõ giữa đoạn kết cảm xúc của bài và phần thông
+     tin bắt buộc, tránh gãy mạch/gây hụt hẫng cho người
      đọc. Mở đầu bằng tên nhân vật "Hiền triết Anh Minh" (không mở đầu bằng chữ "AI") — vẫn giữ
      đủ minh bạch AI ngay trong cùng câu, chỉ đổi từ đầu tiên người đọc thấy. **Các chủ đề khác
      (Tâm lý, Dưỡng sinh, Triết lý, Đồng hành, Bếp An Nhiên) KHÔNG dùng khối này** — khớp đúng
@@ -191,26 +207,51 @@ Quy trình khi lưu:
      máy móc.
 
      ```
-     ### Lưu ý
+     Lưu ý
 
      Hiền triết Anh Minh là nhân vật nội dung AI của Funamark, chia sẻ các góc nhìn về lối sống
      ở mức phổ thông. Nội dung không thay thế tư vấn, chẩn đoán hoặc điều trị y khoa. Nếu triệu
      chứng kéo dài hoặc ảnh hưởng đến sinh hoạt hằng ngày, hãy trao đổi với bác sĩ hoặc chuyên
      gia phù hợp.
 
-     **Cập nhật lần cuối:** <ngày cập nhật thật của bài, không copy cố định>
+     Cập nhật lần cuối: <ngày cập nhật thật của bài, không copy cố định>
      ```
-   - KHÔNG cho vào file: Slug, Meta Description, Excerpt, Category, Tags, Featured Image
-     (mô tả prompt ảnh), tên Hook đã dùng, Loại bài, ghi chú kiểu "References để trống vì...",
-     "chưa có internal link vì...". Những thứ này là metadata cho pipeline, không phải nội dung
-     đọc được — chuyển sang lưu ở Google Drive manifest (xem Bước 6) hoặc trong commit message
-     (lý do quyết định), không nằm trong file.
+   - KHÔNG cho vào file: Title thẻ SEO, Slug, Meta Description, Excerpt, Category, Tags,
+     Featured Image, Internal Links, References, tên Hook đã dùng, Loại bài, ghi chú kiểu
+     "References để trống vì...", "chưa có internal link vì...". Những thứ này là metadata cho
+     pipeline, không phải nội dung đọc được — chúng đi vào **file manifest metadata** kèm theo
+     (bước 3 dưới đây), KHÔNG nằm trong file bài và KHÔNG chỉ nằm trong cuộc trò chuyện.
    - Field nào không có nội dung thật (VD: chưa có nguồn để trích dẫn) → **không đưa vào file**,
      không viết placeholder giải thích.
-4. Commit + push (hỏi người dùng trước nếu ngữ cảnh chưa rõ có nên tự push luôn không, trừ khi
-   người dùng đã xác nhận sẵn "luôn tự lưu, không cần hỏi lại" trong phiên).
+3. `create_file` lên đúng thư mục Drive ở trên rồi gửi link file cho người dùng. Không có bước
+   commit/push (không còn GitHub cho bài SEO). Hỏi người dùng trước nếu ngữ cảnh chưa rõ có nên
+   tự lưu luôn không, trừ khi đã xác nhận sẵn "luôn tự lưu, không cần hỏi lại" trong phiên.
+4. **Tạo thêm 1 file manifest metadata** cùng thư mục, tên `<tên file bài>.meta.json`. Đây là
+   nơi duy nhất 8 field metadata tồn tại — file bài chỉ chứa chữ đọc được, còn cuộc trò chuyện
+   thì mất khi đóng phiên. Manifest **KHÔNG lặp lại Body** (đó là lý do manifest cũ bị bỏ):
 
-**Quy cách đặt tên file bài SEO:** `<số chủ đề>.<số thứ tự bài trong chủ đề đó>.<slug>.md`
+   ```json
+   {
+     "file": "1.5.co-the-can-nhung-khoang-yen-tinh",
+     "title_seo": "Tiêu đề thẻ SEO ≤ 60 ký tự",
+     "slug": "co-the-can-nhung-khoang-yen-tinh",
+     "meta_description": "…",
+     "excerpt": "…",
+     "category": "Sức khỏe",
+     "tags": ["…", "…"],
+     "internal_links": [
+       { "anchor": "cụm chữ có sẵn trong bài", "slug": "bai-dich-noi-bo" },
+       { "anchor": "cụm chữ khác", "url": "https://youtube.com/watch?v=…" }
+     ],
+     "references": [],
+     "hook_used": "…",
+     "article_template": "Mẫu A"
+   }
+   ```
+
+   Field nào thật sự không có nội dung → để mảng rỗng hoặc chuỗi rỗng, KHÔNG bịa.
+
+**Quy cách đặt tên file bài SEO:** `<số chủ đề>.<số thứ tự bài trong chủ đề đó>.<slug>`
 
 Số chủ đề đánh theo đúng thứ tự 6 trụ/mục nội dung chuẩn của hệ thống (theo `core-brain/
 instructions.md` mục 6 + mục Bếp An Nhiên — không tự đổi số, không còn phụ thuộc
@@ -225,15 +266,23 @@ instructions.md` mục 6 + mục Bếp An Nhiên — không tự đổi số, kh
 | 5 | Đồng hành tuổi già & người bệnh |
 | 6 | Bếp An Nhiên |
 
-Ví dụ: bài SEO đầu tiên thuộc chủ đề Sức khỏe → `1.1.<slug>.md`. Bài Sức khỏe tiếp theo →
-`1.2.<slug>.md`. Bài đầu tiên thuộc Tâm lý & đời sống → `2.1.<slug>.md`.
+Ví dụ: bài SEO đầu tiên thuộc chủ đề Sức khỏe → `1.1.<slug>`. Bài Sức khỏe tiếp theo →
+`1.2.<slug>`. Bài đầu tiên thuộc Tâm lý & đời sống → `2.1.<slug>`.
 
-**Cách xác định số thứ tự:** trước khi tạo file mới, liệt kê các file đã có trong repo
-`bai-viet-seo` bắt đầu bằng đúng `<số chủ đề>.` (VD: liệt kê file bắt đầu `1.` để biết đã có bài
+**Cách xác định số thứ tự:** trước khi tạo file mới, liệt kê các file đã có trong thư mục Drive
+"Bai-viet-SEO" bắt đầu bằng đúng `<số chủ đề>.` (VD: liệt kê file bắt đầu `1.` để biết đã có bài
 Sức khỏe nào), lấy số thứ tự lớn nhất + 1. Nếu chưa có file nào của chủ đề đó → bắt đầu từ `1`.
 
-Repo `bai-viet-seo` KHÔNG chứa bộ não/quy tắc — chỉ chứa thành phẩm cuối cùng. Không tự thêm
-CLAUDE.md hay file cấu hình vào repo đó.
+> ⚠️ **KHÔNG nhầm với số dòng trong file backlog** (làm rõ 21/07/2026). Backlog
+> `bai-seo-dang-website-Anh-Minh.md` cũng đánh số dạng `<số chủ đề>.<số>` (VD `1.26. Có một loại
+> mệt mà ngủ đủ tám tiếng vẫn không tan.`) — đó là **vị trí của chủ đề trong backlog**, KHÁC hẳn
+> số thứ tự bài đã viết. Hai hệ số trùng dạng nhưng khác nghĩa:
+> - **Tên file** dùng số thứ tự bài đã viết trong chủ đề đó (đếm trong thư mục Drive).
+> - Khi cần ghi lại chủ đề gốc đã dùng, ghi **nguyên câu hook** kèm số dòng backlog trong phần
+>   trả lời cho người dùng — không đưa vào tên file, không đưa vào nội dung bài.
+>
+> VD thực tế: bài `1.1.vi-sao-ngu-du-tam-tieng-van-met` là bài Sức khỏe **thứ nhất đã viết**,
+> lấy chủ đề từ **dòng 1.26** của backlog. Hai số này không cần khớp nhau.
 
 #### 5.B — Kịch bản video (Google Drive — KHÔNG dùng GitHub)
 
@@ -255,7 +304,7 @@ CLAUDE.md hay file cấu hình vào repo đó.
   (nội dung thật đã nằm sẵn trong chính file `.md` này — xem thêm ghi chú ở Bước 6).
 - **Tên file:** `<số chủ đề>.<STT>. <Tên video>_master_script.md` — số chủ đề theo đúng bảng ở
   mục 5.A; STT xác định bằng cách liệt kê file đã có cùng `<số chủ đề>.` trong thư mục Drive
-  "Kich-ban-video" (đếm ĐỘC LẬP với `bai-viet-seo`, kể cả khi video chuyển thể từ đúng bài SEO
+  "Kich-ban-video" (đếm ĐỘC LẬP với thư mục "Bai-viet-SEO", kể cả khi video chuyển thể từ đúng bài SEO
   đó). `<Tên video>` giữ nguyên tên tiếng Việt, có dấu cách/viết hoa như bình thường — KHÔNG rút
   gọn thành slug; bỏ các ký tự không an toàn cho tên file khi tải về máy (Windows):
   `\ / : * ? " < > |` (VD dấu `?` cuối câu hỏi thì bỏ hẳn).
@@ -299,97 +348,73 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
 1. Đọc `featured-Image-factory/` theo đúng thứ tự trong `instructions_FEATURED_IMAGE.md` mục
    "Đọc theo thứ tự" (editorial → style → prompt → checklist → output schema). **Không dùng**
    `image-factory/` cho việc này nữa (đã tách riêng).
-2. Input = đúng tên file bài viết vừa lưu (VD `1.5.co-the-can-nhung-khoang-yen-tinh.md`) —
+2. Input = đúng tên file bài viết vừa lưu (VD `1.5.co-the-can-nhung-khoang-yen-tinh`) —
    Featured Image Factory tự suy luận chủ đề từ slug và tự đặt `filename` output khớp nguyên
-   tên bài (chỉ đổi đuôi `.md`→`.jpg`), không cần tự viết prompt tay.
+   tên bài (thêm đuôi `.jpg`), không cần tự viết prompt tay.
 3. Featured Image **không bao giờ có nhân vật Hiền triết Anh Minh** — đây là ảnh minh họa nội
    dung chung (người vô danh/phong cảnh/đồ vật), không phải ảnh nhân vật thương hiệu. Không tra
    `core-brain/image_style_bible.md` cho việc này.
-4. **KHÔNG** cho prompt ảnh vào file `.md` của bài viết (giữ đúng quy tắc pure-content ở Bước 5).
-   Thay vào đó, ghi vào **1 file Excel chạy dọc duy nhất** (không tạo file rời cho từng bài):
-   - Vị trí: `bai-viet-seo/_prompt-anh/prompt-anh.xlsx` (cho ảnh bài SEO). Nếu sau này cần prompt
-     ảnh riêng cho video/kịch bản, lưu tương tự nhưng dưới dạng file Excel riêng trong Google
-     Drive (không dùng đường dẫn GitHub `kich-ban-video/_prompt-anh/` nữa — repo đó đã ngừng
-     dùng từ 18/07/2026, xem Bước 5.B).
-   - **Thứ tự cột đầy đủ** (cập nhật 14/07/2026, khớp cấu trúc Google Sheet "Anh Minh hook
-     list" ở Bước 6 để đồng bộ; cột Link kịch bản video sửa 18/07/2026 vì video không còn ở
-     GitHub): STT, Bài viết (tên file), Link bài SEO (raw GitHub link), **Link kịch bản video**
-     (link Google Drive file `_master_script.md` trong thư mục "Kich-ban-video" — để trống nếu
-     bài chưa có video), rồi tới các cột theo `featured-Image-factory/output_schema.md` (Image
-     Type, Category, Concept,
-     Subject, Prompt, Negative Prompt, Aspect Ratio, Suggested Size, Filename, Alt Text,
-     Caption), và **Trạng thái** ở cột cuối cùng (để trống khi mới tạo, cập nhật thủ công khi
-     đã đăng/publish).
-   - Không ghi đè các dòng cũ — chỉ thêm dòng mới ở cuối.
-5. Commit + push file Excel đã cập nhật vào đúng repo output (cùng lúc hoặc ngay sau khi push bài
-   viết), rồi gửi file đã cập nhật cho người dùng (không chỉ báo đã làm xong mà không đưa file).
-6. File Excel này nằm trong repo chỉ để lưu bền qua các phiên làm việc (môi trường chạy có thể bị
-   dọn sạch giữa các phiên) — không phải nội dung xuất bản, không vi phạm quy tắc "repo output chỉ
-   chứa thành phẩm cuối cùng" vì đây là file phụ trợ pipeline riêng, đặt trong thư mục con
-   `_prompt-anh/` tách biệt rõ khỏi các file `.md` bài viết.
+4. **KHÔNG** cho prompt ảnh vào file bài viết (giữ đúng quy tắc pure-content ở Bước 5).
+   Thay vào đó, lưu thành **1 file riêng cho mỗi bài** trong Google Drive, thư mục
+   "Anh Minh - N8N Trigger" → **"Prompt-Featured-Image"** (parentId
+   `17ni-02iYzjljg0IM1E9aQcPShtxhiE0I`, dùng `create_file`):
+   - **Tên file:** khớp nguyên tên bài viết tương ứng (VD bài `1.5.co-the-can-nhung-khoang-yen-tinh`
+     → file prompt cùng tên `1.5.co-the-can-nhung-khoang-yen-tinh`), để đối chiếu 1–1 giữa hai
+     thư mục.
+   - **Nội dung:** đúng các field theo `featured-Image-factory/output_schema.md`, mỗi field một
+     dòng: Image Type, Category, Concept, Subject, Prompt, Negative Prompt, Aspect Ratio,
+     Suggested Size, Filename, Alt Text, Caption.
+   - Không ghi đè file cũ trừ khi đang sửa đúng bài đó.
+5. **KHÔNG còn dùng file Excel `prompt-anh.xlsx`** (bỏ 21/07/2026 cùng lúc ngừng dùng GitHub cho
+   bài SEO — Excel vốn nằm ở `bai-viet-seo/_prompt-anh/`, repo đó đã ngừng dùng). Mỗi prompt giờ
+   là một file Drive riêng như trên, n8n đọc trực tiếp; không cần bảng tổng hợp trung gian.
+6. Sau khi tạo xong, gửi link cả hai file (bài viết + prompt ảnh) cho người dùng.
 
-### Bước 6 — TẠO FILE MANIFEST TRONG GOOGLE DRIVE CHO N8N (bắt buộc — chỉ còn áp dụng cho SEO
-và Featured Image, KHÔNG áp dụng cho video/Facebook, xem lý do bên dưới)
+### Bước 6 — CÁC THƯ MỤC GOOGLE DRIVE N8N THEO DÕI (không còn manifest JSON — đơn giản hoá
+21/07/2026)
 
-**Đã đổi từ Google Sheet sang Google Drive (quyết định 14/07/2026)** — Google Sheet "Anh Minh
-hook list" KHÔNG còn dùng làm đầu vào n8n nữa (không có connector ghi Sheet, kỹ thuật không cho
-phép). Thay bằng: tạo 1 file JSON "manifest" trong Google Drive cho mỗi bài/ảnh đã hoàn tất —
-n8n dùng Drive Trigger theo dõi các thư mục dưới đây để tự kích hoạt workflow (đăng bài, tạo
-ảnh...).
+**Lịch sử quyết định:** 14/07/2026 chuyển từ Google Sheet sang Google Drive (không có connector
+ghi Sheet). Khi đó mỗi bài/ảnh cần thêm 1 file JSON "manifest" để n8n đọc. 18/07/2026 bỏ manifest
+cho video, vì file `_master_script.md` thật đã nằm sẵn trong chính thư mục n8n theo dõi nên tạo
+thêm JSON chứa lại y nguyên nội dung là dư thừa.
 
-**Cập nhật 18/07/2026 — bỏ manifest JSON cho video:** từ khi kịch bản video chuyển sang lưu trực
-tiếp Google Drive dưới dạng file `..._master_script.md` thật (Bước 5.B) ngay trong chính thư mục
-`Kich-ban-video` mà n8n theo dõi, việc tạo thêm 1 file `.json` chứa lại y nguyên nội dung đó là
-**dư thừa/trùng lặp** — n8n parse thẳng file `.md` (xem `video-factory/video_ai_contract.md`
-ghi chú WF-07B). Vì vậy **KHÔNG còn tạo manifest JSON cho video nữa** — chỉ còn áp dụng cho bài
-viết SEO và Featured Image.
+**Cập nhật 21/07/2026 — bỏ manifest JSON *lặp lại nội dung*.** Từ khi bài SEO (Bước 5.A) và
+prompt ảnh (Bước 5.5) đều được lưu thẳng dưới dạng file thật vào đúng thư mục n8n theo dõi, việc
+tạo thêm file `.json` **chép lại y nguyên Body** là dư thừa và dễ lệch bản (sửa file thật mà
+quên sửa JSON). n8n parse trực tiếp file nội dung.
+
+**Đính chính 26/07/2026 — riêng bài SEO vẫn cần 1 manifest CHỈ CHỨA METADATA.** Video và prompt
+ảnh thì file thật *là toàn bộ sản phẩm*, nên bỏ manifest là đúng. Bài SEO thì khác: nó có 8 thứ
+không tồn tại trong thân bài — Title thẻ SEO (khác H1), Slug, Meta Description, Excerpt,
+Category, Tags, Internal Links, References. Bỏ manifest mà không thay bằng gì thì 8 field đó
+không còn ở đâu cả, n8n chỉ nhận được thân bài. Vì vậy:
+
+| Loại | Manifest |
+|---|---|
+| Kịch bản video | KHÔNG — file `_master_script.md` là toàn bộ sản phẩm |
+| Prompt Featured Image | KHÔNG — file prompt là toàn bộ sản phẩm |
+| **Bài SEO** | **CÓ — `<tên file>.meta.json`, chỉ metadata, KHÔNG lặp Body** |
 
 **Thư mục gốc:** "Anh Minh - N8N Trigger" trên Google Drive, gồm 3 thư mục con (ID xác nhận
 14/07/2026, dùng công cụ Drive `create_file` với đúng `parentId`):
 
-| Thư mục | parentId | Dùng cho |
+| Thư mục | parentId | Chứa gì (file thật, KHÔNG phải manifest) |
 |---|---|---|
-| `Bai-viet-SEO` | `1ubrFWlDezfMX91zoV7hqjc1PqnGNZ3Gn` | Manifest bài viết SEO (JSON) |
-| `Kich-ban-video` | `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F` | File Master Script kịch bản video thật (`.md`, xem Bước 5.B) — KHÔNG tạo thêm manifest JSON ở đây nữa |
-| `Prompt-Featured-Image` | `17ni-02iYzjljg0IM1E9aQcPShtxhiE0I` | Manifest Featured Image (JSON) |
+| `Bai-viet-SEO` | `1ubrFWlDezfMX91zoV7hqjc1PqnGNZ3Gn` | Toàn văn bài viết SEO (Bước 5.A) |
+| `Kich-ban-video` | `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F` | Master Script kịch bản video (Bước 5.B) |
+| `Prompt-Featured-Image` | `17ni-02iYzjljg0IM1E9aQcPShtxhiE0I` | Prompt Featured Image từng bài (Bước 5.5) |
+
+Tên file trong cả 3 thư mục đều theo quy cách `<số chủ đề>.<STT>.<slug>` ở Bước 5.A, để đối
+chiếu 1–1 giữa bài viết và prompt ảnh của chính bài đó.
 
 **Không áp dụng cho Facebook** — thư mục Drive `Bai-dang-Facebook`
-(`1zrZzd_1YEu8PC8LEQ14hGHwjuQbkV0ha`) lưu file `.md` nội dung thuần theo Bước 5F, KHÔNG phải
-manifest JSON kích hoạt n8n — workflow Facebook Factory trong n8n đọc trực tiếp Google Sheet
-"bai-dang-facebook-anh-minh" qua API, không dùng Drive Trigger.
+(`1zrZzd_1YEu8PC8LEQ14hGHwjuQbkV0ha`) lưu file `.md` nội dung thuần theo Bước 5F, và workflow
+Facebook Factory trong n8n đọc trực tiếp Google Sheet "bai-dang-facebook-anh-minh" qua API,
+không dùng Drive Trigger.
 
-**Tên file manifest:** khớp đúng slug bài viết + `.json` (VD:
-`1.5.co-the-can-nhung-khoang-yen-tinh.json`) — dùng `disableConversionToGoogleType: true` khi
-tạo, để giữ đúng JSON thuần, không bị convert sang Google Docs.
-
-**Nội dung file:**
-
-`Bai-viet-SEO/<slug>.json`:
-```json
-{
-  "slug": "1.5.co-the-can-nhung-khoang-yen-tinh",
-  "hook_number": "1.5",
-  "hook_text": "...(đúng câu/dòng đã dùng, khớp đúng file backlog của Factory tương ứng — xem Bước 2)...",
-  "category": "Sức khỏe",
-  "title": "...",
-  "content_markdown": "...(toàn văn bài viết, đúng nội dung đã push GitHub — Bước 5.A)...",
-  "link_github": "https://raw.githubusercontent.com/nnphuong2016-arch/bai-viet-seo/main/1.5.co-the-can-nhung-khoang-yen-tinh.md"
-}
-```
-
-`Prompt-Featured-Image/<slug>.json`: đúng nguyên object `output_schema.md` của Featured Image
-Factory (`image_type`, `category`, `concept`, `subject`, `prompt`, `negative_prompt`,
-`aspect_ratio`, `suggested_size`, `filename`, `alt_text`, `caption`) — thêm `slug` ở đầu để dễ
-đối chiếu.
-
-**Quy trình:** ngay sau khi push GitHub bài SEO (Bước 5.A) và cập nhật Excel (Bước 5.5), tạo
-LUÔN manifest JSON tương ứng (SEO luôn có, Featured Image tuỳ đã làm xong phần nào) — không đợi
-người dùng nhắc, không hỏi lại. Với kịch bản video, chỉ cần lưu đúng file `_master_script.md`
-theo Bước 5.B, KHÔNG tạo thêm file `.json`. Facebook cũng không tham gia bước này (xem Bước 5F).
-Không tự xoá/ghi đè manifest cũ trừ khi đang sửa đúng bài đó.
-
-Excel (`prompt-anh.xlsx`, Bước 5.5) vẫn giữ nguyên song song — dùng để người dùng rà soát thủ
-công, độc lập với luồng Drive/n8n tự động.
+**Quy trình gọn lại còn 2 việc:** lưu bài SEO (Bước 5.A) → lưu prompt Featured Image của đúng bài
+đó (Bước 5.5). Làm luôn, không đợi người dùng nhắc, không hỏi lại. Không tự xoá/ghi đè file cũ
+trừ khi đang sửa đúng bài đó.
 
 ---
 
@@ -421,8 +446,22 @@ song với bác sĩ.
   file bộ não), lần sau chỉ cần đọc lại từ đầu (không cần hỏi lại người dùng), vì đây là nguồn
   gốc duy nhất (single source of truth) cho toàn bộ persona & quy tắc.
 
-### ĐỒNG BỘ NGAY SAU MỖI LẦN SỬA FILE TRONG REPO NÀY (bắt buộc — quy tắc thường trực,
-xác nhận 25/07/2026)
+### ĐỒNG BỘ REPO — TRƯỚC KHI ĐỌC VÀ SAU KHI SỬA (bắt buộc — quy tắc thường trực,
+xác nhận 25/07/2026, bổ sung vế "trước khi đọc" ngày 25/07/2026)
+
+**Vế 1 — TRƯỚC khi đọc / rà soát / sửa bất kỳ file nào trong repo này:** luôn chạy
+`git fetch origin main` rồi đối chiếu bản đang có với `origin/main`
+(`git rev-list --count HEAD..origin/main` phải bằng 0). Môi trường chạy giữa các phiên có thể
+giữ lại một clone cũ — đọc bản cũ sẽ cho kết luận sai. Nếu lệch → đồng bộ trước
+(`git rebase origin/main`), rồi mới bắt đầu làm việc. **Không bao giờ kết luận "file X có vấn
+đề" khi chưa kiểm bản đang đọc có phải bản mới nhất không.**
+
+> Sự cố thật (21/07/2026) khiến quy tắc này ra đời: đã rà soát và báo cáo trên một bản lạc hậu
+> 27 commit — nhận xét về `hook_library_full.md` vốn đã bị xoá khỏi `main`, đồng thời bỏ sót các
+> file mới như `seo-factory/article_examples_full.md`, `facebook-factory/`,
+> `core-brain/channel_roles.md`. Toàn bộ báo cáo phải làm lại từ đầu.
+
+**Vế 2 — SAU khi sửa xong:**
 
 Mỗi lần sửa BẤT KỲ file nào trong repo `ai-assistants` (kể cả sửa nhỏ, sửa 1 dòng, sửa file
 bộ não của bất kỳ Factory nào — `seo-factory/`, `video-factory/`, `core-brain/`, các file

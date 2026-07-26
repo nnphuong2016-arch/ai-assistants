@@ -48,8 +48,11 @@ vào — đây là backlog RIÊNG của SEO Factory, không dùng chung với Co
 
 **Không làm (việc của Factory khác):**
 - Không viết kịch bản video, không viết lời thoại đọc thành tiếng → Video Factory.
-- Không tạo prompt ảnh/thumbnail → Video Factory.
 - Không viết audio script → Video Factory.
+- Không tạo prompt **ảnh đại diện đầu bài (Featured Image)** → `featured-Image-factory/`
+  (Factory riêng, nhận input là tên file/slug bài viết — xem `CLAUDE.md` Bước 5.5).
+- Không tạo prompt **các loại ảnh khác** (thumbnail YouTube, hero banner, quote image, ảnh chèn
+  giữa bài...) → `image-factory/`.
 - Không viết bài social, không viết caption tương tác → Community Factory.
 - Không tạo workflow n8n, không tự động hóa pipeline → nằm ngoài Factory.
 - Không viết nội dung affiliate/bán hàng trực tiếp — sản phẩm chỉ được nhắc theo tỷ lệ ở

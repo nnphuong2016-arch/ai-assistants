@@ -15,7 +15,8 @@
 > 2. `input_schema.md` → 3. `featured_image_editorial_rules.md` → 4. `featured_image_style_rules.md`
 > → 5. `featured_image_prompt_rules.md` → 6. `featured_image_checklist.md` (đọc SAU CÙNG, trước
 > khi xuất) → 7. `output_schema.md`.
-> Cập nhật: 14/07/2026 — dán tên file/slug bài viết (VD: `1.5.ten-bai.md`) là chạy thẳng ra
+> Cập nhật: 14/07/2026 — dán tên file/slug bài viết (VD: `1.5.ten-bai`, dạng cũ có thể còn
+> đuôi `.md`) là chạy thẳng ra
 > ảnh, không hỏi lại kể cả Interactive Mode; filename output luôn khớp nguyên slug đầu vào.
 > Bỏ hẳn core-brain khỏi Instructions — dán chính file này thay vào, giống cách làm hiệu quả
 > đã xác nhận qua test với Chat Factory (`instructions_CHAT.md`).

@@ -36,7 +36,25 @@ Không nhảy xuống mức ưu tiên thấp hơn khi mức cao hơn vẫn còn 
 - Anchor tự nhiên trong câu, không phải cụm từ khóa trần trụi chèn cứng ("xem thêm tại đây" là dở
   cả hai đầu — vừa không giọng Anh Minh, vừa không anchor có nghĩa).
 
-## 4. TRÁNH ORPHAN & LINK CHẾT
+## 4. CÁCH GHI LINK — KHÔNG NHÚNG VÀO BODY (cập nhật 21/07/2026)
+
+Body của bài phải thuần chữ 100% để pipeline giọng đọc không đọc lẫn ký tự (xem
+`web_content_rules.md` mục 3D), nên **KHÔNG viết link markdown `[chữ neo](/slug)` trực tiếp
+trong Body**.
+
+Thay vào đó, mỗi internal link ghi thành một dòng trong field riêng `Internal Links` của
+`output_schema.md`, gồm 2 phần:
+
+- **Anchor** — đúng cụm chữ ĐÃ CÓ SẴN trong Body để n8n/CMS tìm và bọc thẻ `<a>` khi đăng web.
+  Cụm chữ này phải xuất hiện nguyên văn, duy nhất một lần trong Body, để không gắn nhầm chỗ.
+- **Slug đích** — bài được trỏ tới.
+
+Ví dụ: anchor "ngủ đủ tám tiếng mà vẫn thấy mệt" → slug `1.1.vi-sao-ngu-du-tam-tieng-van-met`.
+
+Quy tắc số lượng (mục 1), thứ tự ưu tiên (mục 2) và anchor text (mục 3) vẫn giữ nguyên — chỉ đổi
+CHỖ GHI link, không đổi cách chọn link.
+
+## 5. TRÁNH ORPHAN & LINK CHẾT
 
 - Trước khi publish một bài vệ tinh mới, quay lại bài trụ và các vệ tinh liên quan để thêm
   link tới bài mới — không để bài nào bị "mồ côi" (không có bài nào link tới).

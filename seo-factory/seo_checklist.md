@@ -7,9 +7,9 @@
 
 ---
 
-## 0. QUICK FAIL (kiểm trước tiên — sai 1 trong 5 điều này thì DỪNG, sửa ngay, không viết tiếp)
+## 0. QUICK FAIL (kiểm trước tiên — sai 1 trong 6 điều này thì DỪNG, sửa ngay, không viết tiếp)
 
-Rút từ lỗi thực tế gặp phải khi so bài với một bản viết khác (12/07/2026) — 5 lỗi hay gặp nhất,
+Rút từ lỗi thực tế gặp phải khi so bài với một bản viết khác (12/07/2026, bổ sung 21/07/2026) — 6 lỗi hay gặp nhất,
 kiểm trong 30 giây trước khi chạy hết checklist đầy đủ bên dưới:
 
 - ☐ **Title > 60 ký tự?** → STOP, viết lại ngắn hơn (`keyword_strategy.md` mục 5).
@@ -19,8 +19,11 @@ kiểm trong 30 giây trước khi chạy hết checklist đầy đủ bên dư�
 - ☐ **Disclaimer bị nhét nhầm vào field References**? → STOP, tách riêng: References = nguồn
   trích dẫn thật (hoặc để trống), Disclaimer nằm trong Body theo `article_templates.md`.
 - ☐ **Thiếu ngày cập nhật** hiển thị trong bài? → STOP, thêm "Cập nhật: ..." theo đúng ngày.
+- ☐ **Body còn ký tự định dạng/phân cách** (`#`, `-`, `--`, `—`, `*`, `•`...)? → STOP, viết lại
+  thành văn xuôi 100% chữ liền mạch theo `web_content_rules.md` mục 3D — pipeline giọng đọc sẽ
+  đọc thành lời mọi ký tự còn sót.
 
-Qua được cả 5 điều trên mới chạy tiếp checklist mục 1–5 bên dưới.
+Qua được cả 6 điều trên mới chạy tiếp checklist mục 1–5 bên dưới.
 
 ---
 
@@ -36,7 +39,7 @@ Qua được cả 5 điều trên mới chạy tiếp checklist mục 1–5 bên
 ## 2. GIỌNG & AN TOÀN (CORE_BRAIN)
 
 - ☐ Đúng giọng Anh Minh: điềm tĩnh, gợi mở, không giật gân, không rao giảng?
-- ☐ Không dọa bệnh, không CAPS, không clickbold bỏ lửng?
+- ☐ Không dọa bệnh, không CAPS, không clickbait bỏ lửng?
 - ☐ Không chẩn đoán, không kê đơn, không cam kết điều trị?
 - ☐ Có disclaimer + minh bạch AI (nếu bài chạm sức khỏe)?
 - ☐ Mọi thông tin sức khỏe/triết học đã tra nguồn trong knowledge base, không tự bịa?
@@ -56,7 +59,8 @@ Qua được cả 5 điều trên mới chạy tiếp checklist mục 1–5 bên
 
 ## 5. LIÊN KẾT & ĐẦU RA
 
-- ☐ Có 2–5 internal link đúng theo `internal_link_rules.md`, không trùng anchor text?
+- ☐ Có 2–5 internal link đúng theo `internal_link_rules.md`, không trùng anchor text — và đã ghi ở
+  field `Internal Links` riêng, KHÔNG nhúng link markdown vào Body (`internal_link_rules.md` mục 4)?
 - ☐ Đầu ra đã đóng đúng khuôn `output_schema.md` (đủ field, đúng thứ tự)?
 
 ## 6. CHẤT LƯỢNG BIÊN TẬP (tự kiểm thêm — không phải điều kiện xuất bản như mục 1–5)

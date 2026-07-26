@@ -15,8 +15,8 @@ Anh Minh** (Funamark) nằm ngay trong các thư mục con của repo này: `cor
 giới an toàn, kiến thức nền dùng chung), và từng thư mục Factory riêng (`seo-factory/`,
 `video-factory/`, `community-factory/` (Zalo/Newsletter/bình luận, KHÔNG còn viết Facebook),
 `facebook-factory/` (chuyên riêng bài đăng Facebook — tách khỏi Community Factory từ
-20/07/2026; **2 nguồn ý tưởng song song**: `bai-dang-Facebook-Anh-Minh.md` + tự sinh qua
-`idea_library.md` — xem Bước 2), `image-factory/`, `featured-Image-factory/` (chuyên riêng ảnh
+20/07/2026; **3 nguồn ý tưởng**, ưu tiên từ trên xuống: chủ đề người vận hành đưa trực tiếp →
+`bai-dang-Facebook-Anh-Minh.md` → tự sinh qua `idea_library.md` — xem Bước 2), `image-factory/`, `featured-Image-factory/` (chuyên riêng ảnh
 đại diện đầu bài viết — tách khỏi `image-factory/` từ 14/07/2026, độc lập, không gắn với Image
 Factory hay bất kỳ Factory nào khác), `ai-anh-minh-chat-factory/`, `research-factory/`,
 `review-factory/`, `publish-factory/`), cùng 3 file backlog chủ đề riêng cho từng kênh (thay
@@ -74,7 +74,7 @@ một kho nữa)
 |---|---|---|
 | SEO Factory (Web) | `bai-seo-dang-website-Anh-Minh.md` | gốc repo `ai-assistants/` |
 | Video Factory (nhánh Giải Đáp — YouTube) | `bai-video-dang-Youtube-Anh-Minh.md` **+ nguồn ngoài** (Google Drive/Google Sheet khi có) | gốc repo `ai-assistants/` + Drive/Sheet |
-| Facebook Factory | **2 nguồn song song** (20/07/2026): `bai-dang-Facebook-Anh-Minh.md` (kho 210 hook có sẵn, 7 series) + tự sinh qua `facebook-factory/idea_library.md` (Pattern + Emotion + Observation + Contradiction). Ưu tiên hook chưa dùng trong file trước; nếu đã dùng hết/không hợp chủ đề đang cần → chuyển sang tự sinh. | gốc repo `ai-assistants/` + `facebook-factory/idea_library.md` |
+| Facebook Factory | **3 nguồn xếp hạng** (cập nhật 25/07/2026, nguồn gốc: `facebook-factory/execution_flow.md` STEP 3): (1) **chủ đề người vận hành đưa trực tiếp — ưu tiên cao nhất**, khi có thì bỏ qua (2) và đi thẳng sang STEP 3.5; (2) `bai-dang-Facebook-Anh-Minh.md` (kho 210 hook có sẵn, 7 series), ưu tiên hook chưa dùng gần đây; (3) tự sinh qua `facebook-factory/idea_library.md` (Pattern + Emotion + Observation + Contradiction) khi hai nguồn trên không đủ hoặc cần thêm hướng cho cùng một chủ đề. | người vận hành + gốc repo `ai-assistants/` + `facebook-factory/idea_library.md` |
 
 - Cách dùng: nếu người dùng chỉ định "hook/dòng số N" → dùng đúng câu đó trong đúng file backlog
   của Factory đang làm làm điểm vào. Nếu không chỉ định, tự chọn dòng phù hợp chủ đề trong đúng
@@ -135,11 +135,14 @@ danh sách ở đây để tránh 2 nơi cùng liệt kê rồi lệch nhau khi 
 `output_schema.md` → `video_ai_contract.md` (chỉ khi đụng tới pipeline n8n/khuôn field, không
 cần khi viết kịch bản thủ công).
 
-**Khi được yêu cầu viết BÀI ĐĂNG FACEBOOK (Page/Group):** đọc `facebook-factory/` theo đúng thứ
-tự trong `instructions_facebook.md` (đã ghi rõ trong file: instructions_facebook → execution_flow
-→ writing_rules → writing_craft → quality_check → post_frameworks → emotion_palette →
-idea_library → hook_library → topic_map → post_examples → output_schema). Factory riêng, tách
-khỏi Community Factory từ 20/07/2026.
+**Khi được yêu cầu viết BÀI ĐĂNG FACEBOOK (Page/Group):** đọc đúng theo thứ tự ghi ở **khối
+trích dẫn đầu** `facebook-factory/instructions_facebook.md` — 13 file, trong đó có
+`bai-dang-Facebook-Anh-Minh.md` (kho 210 hook, nằm ở gốc repo chứ không trong thư mục Factory).
+Đó là nguồn danh sách duy nhất; **không lặp lại danh sách ở đây** để tránh 2 nơi cùng liệt kê rồi
+lệch nhau khi thêm file mới — cùng cách làm với khối KỊCH BẢN VIDEO ở trên. Khi làm việc bằng
+Claude Code thì đọc thêm `facebook-factory/CLAUDE.md` (file này dành riêng cho Claude Code, không
+thuộc khu Files của Custom GPT nên không nằm trong 13 file trên). Factory riêng, tách khỏi
+Community Factory từ 20/07/2026.
 
 **Khi được yêu cầu viết post Zalo/Newsletter hoặc trả lời bình luận:** đọc `community-factory/`
 (instructions_COMMUNITY, community_rules, social_templates, storytelling_patterns,

@@ -1,7 +1,7 @@
 # QUALITY CHECK
 
 Version: 2.0
-Cập nhật: 25/07/2026
+Cập nhật: 26/07/2026
 
 > Đây là cổng bắt buộc cuối cùng trước khi xuất bài (STEP 9 của `execution_flow.md`).
 > Đây cũng là checklist DUY NHẤT của Facebook Factory — `writing_craft.md` và
@@ -26,7 +26,7 @@ Nhóm này áp dụng ngưỡng riêng ở phần Quyết định bên dưới.
 -   Một ý chính?
 -   Mạch lạc?
 -   Đúng chủ đề?
--   Đúng độ dài mục tiêu (`writing_rules.md` mục 6)?
+-   Trong trần độ dài (`writing_rules.md` mục 6.1)?
 
 ## Nhóm 3 — Cảm xúc
 
@@ -52,7 +52,7 @@ Nhóm này áp dụng ngưỡng riêng ở phần Quyết định bên dưới.
 
 Một bài "đúng" khác một bài "đáng nhớ". Bài cần có ít nhất MỘT trong ba:
 
--   Một ẩn dụ thiên nhiên đủ mạnh (`writing_craft.md` mục 38.1)?
+-   Một ẩn dụ thiên nhiên đủ mạnh (`writing_craft.md` mục 36.1)?
 -   Một câu hỏi khiến người đọc dừng lại một nhịp?
 -   Một điều nhận ra không hiển nhiên?
 

@@ -1,7 +1,7 @@
 # WRITING RULES
 
 Version: 1.1\
-Cập nhật: 25/07/2026\
+Cập nhật: 26/07/2026\
 Status: Canonical Rules
 
 ------------------------------------------------------------------------
@@ -143,9 +143,16 @@ Không bắt buộc số đoạn.
 
 ## 6.1. ĐỘ DÀI
 
--   Mục tiêu: **120–250 từ**.
+-   **Không có số từ tối thiểu.** Bài dừng khi ý đã đủ.
 -   Trần cứng: **300 từ**. Vượt 300 → cắt, không xuất.
 -   Bài dạng hội thoại (F11): tối đa 280 từ.
+-   Thực tế phần lớn bài rơi vào **50–250 từ**.
+
+> Sửa 26/07/2026 — bỏ sàn "120 từ". Sàn đó đánh nhau với hai nguồn có thẩm quyền cao hơn:
+> ba bài mẫu hoàn chỉnh trong `post_examples.md` (Example 22/23/24) chỉ dài 51–58 từ, mà STEP 8
+> lại bắt đối chiếu với chính chúng; và `writing_craft.md` mục 32–33 ("Ý đã đủ. Đừng cố viết
+> thêm" / Quy tắc "Đủ") coi việc viết thêm cho đạt số là lỗi. Một con số tối thiểu chính là lời
+> mời viết lan man, nên bỏ hẳn thay vì hạ xuống.
 
 Nếu bài vượt trần, đừng cắt câu lẻ tẻ — quay lại xem bài có đang chứa hai ý không.
 Bài quá dài gần như luôn là dấu hiệu của việc nhồi ý, không phải viết kỹ.

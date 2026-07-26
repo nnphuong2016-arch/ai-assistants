@@ -10,8 +10,8 @@
 > Dưỡng Sinh Ngắn — xem `instructions_VIDEO.md` mục 1B).
 > Cập nhật: 25/07/2026 — **chốt VIDEO DÀI = 8–12 cảnh · tối đa 3 Clip · tối đa 12–16 Ảnh giữ**
 > (mục 2 + mục 6), thay "15–20 cảnh" cũ và gỡ mâu thuẫn với bảng "30–35 cảnh" ở
-> `model_selection_rules.md`. Thêm **mục 6B Image Motion Engine** — Ken Burns đơn thuần chỉ giữ
-> được ảnh ~20–25 giây, muốn giữ 30–45 giây phải xếp tầng hiệu ứng. Trần ảnh nâng từ 10–12 lên
+> `model_selection_rules.md`. Thêm **mục 6B** về chuyển động cho ảnh giữ (đã viết lại 26/07/2026
+> — xem chính mục đó). Trần ảnh nâng từ 10–12 lên
 > 12–16 (25/07/2026, quyết định của chủ kênh) — thời lượng giữ mỗi ảnh giảm tương ứng còn 30–45
 > giây thay vì 45–75. Học từ mô hình kênh
 > My Dog & My Love (`youtube-mydog_mylove`), điều chỉnh theo thể loại chiêm nghiệm và thực tế

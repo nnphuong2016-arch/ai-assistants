@@ -339,11 +339,16 @@ Video.mp4
 Yêu cầu
 
 - ghép đúng thứ tự theo Scene ID
-- Scene "static": áp **Image Motion Engine** (Ken Burns là lớp nền + tối đa 2 lớp phụ:
-  Parallax / Depth of Field / Light Rays / Particles — xem `video_rules.md` mục 6B) trong đúng
+- Scene "static": áp **một cú Ken Burns duy nhất** (xem `video_rules.md` mục 6B), trong đúng
   **Duration** của Scene đó (lấy từ Master Script, ~110–130 từ/phút theo Voice — mục 1.C).
-  ⚠️ KHÔNG giữ một ảnh 45 giây trở lên chỉ bằng Ken Burns — màn hình sẽ đứng chết. KHÔNG dùng
-  Camera Shake cho kênh này (nội dung chiêm nghiệm, rung máy đọc thành lỗi kỹ thuật).
+  Tốc độ zoom tính theo chính độ dài giữ của ảnh đó để chuyển động trải đều hết đoạn; chiều zoom
+  đổi xen kẽ giữa các ảnh liên tiếp, có trôi ngang nhẹ đổi hướng theo chu kỳ.
+  ⚠️ **Sửa 26/07/2026 — bản trước ghi sai.** Bản cũ yêu cầu "Ken Burns + tối đa 2 lớp phụ
+  (Parallax / Depth of Field / Light Rays / Particles)". `ffmpeg-service` mà WF-07.2 gọi KHÔNG
+  có tách lớp chiều sâu, chuyển nét, tia sáng hay hạt — bốn thứ đó nay là **từ vựng cho prompt
+  sinh ảnh** (Stage 3), phải vẽ sẵn vào ảnh, không thêm được ở khâu dựng.
+  ⚠️ Trần thực dụng cho một ảnh giữ là **45 giây** — quá đó một cú chuyển động đơn không giữ nổi
+  khung hình, phải cắt ngắn hoặc tách beat làm hai ảnh. KHÔNG dùng Camera Shake cho kênh này.
 - Scene "clip": clip gốc 6–10 giây → kéo dài cảm giác thành 8–12 giây bằng zoom/pan/crop nhẹ
   ngay trên clip đó (không generate lại clip dài hơn)
 - subtitle đồng bộ

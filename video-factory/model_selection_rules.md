@@ -15,7 +15,8 @@
 > nhật theo lớp quyết định mới này.
 > Cập nhật: 25/07/2026 — thêm **cờ MỨC CHI HIỆN HÀNH** ngay dưới đây (đọc TRƯỚC mọi thứ khác);
 > thay bảng "30–35 cảnh / 9–11 Clip" bằng trần cứng theo số tuyệt đối; đổi "Ken Burns" thành
-> **Image Motion Engine** (Ken Burns chỉ là lớp nền, xem `video_rules.md` mục 6B).
+> **Ảnh giữ + một cú Ken Burns** (xem `video_rules.md` mục 6B — viết lại 26/07/2026 sau khi
+> kiểm tra thực tế `ffmpeg-service`).
 
 ---
 
@@ -110,17 +111,16 @@ Chỉ dùng Runway khi bố cục hoặc chuyển động máy quay là ưu tiê
 
 ---
 
-## 1B. LỚP QUYẾT ĐỊNH 0 — CLIP AI VIDEO HAY ẢNH GIỮ + IMAGE MOTION ENGINE (quyết định TRƯỚC khi chọn công cụ)
+## 1B. LỚP QUYẾT ĐỊNH 0 — CLIP AI VIDEO HAY ẢNH GIỮ + KEN BURNS (quyết định TRƯỚC khi chọn công cụ)
 
 > Thêm 23/07/2026 — chính thức hoá mô hình hybrid tiết kiệm chi phí. Đây là bước quyết định
 > **đứng trước** mục 2–4 bên dưới: trước khi hỏi "cảnh này dùng Veo3 hay Kling hay Hailuo hay
 > Runway", phải hỏi câu hỏi gốc hơn — **"cảnh này có cần generate clip AI (chuyển động thật)
-> không, hay một ảnh giữ + Image Motion Engine là đủ?"** Phần lớn cảnh KHÔNG cần
+> không, hay một ảnh giữ + một cú Ken Burns là đủ?"** Phần lớn cảnh KHÔNG cần
 > clip — ảnh tĩnh rẻ hơn nhiều lần so với video generate (dù công cụ nào), vì chỉ tốn 1 lần
 > generate ảnh (hoặc dùng ảnh có sẵn từ kho) thay vì generate video.
 
-**Mặc định: Ảnh giữ + Image Motion Engine** (Ken Burns + tối đa 2 lớp phụ, `video_rules.md` mục
-6B)**.** Chỉ chuyển sang Clip AI video khi cảnh thuộc một trong các
+**Mặc định: Ảnh giữ + một cú Ken Burns** (`video_rules.md` mục 6B)**.** Chỉ chuyển sang Clip AI video khi cảnh thuộc một trong các
 trường hợp sau:
 - Anh Minh nói trực diện camera (môi/biểu cảm cần chuyển động thật).
 - Cận cảnh cảm xúc — khoảnh khắc khán giả cần thấy vi biểu cảm (chớp mắt, thở, ngập ngừng).
@@ -128,7 +128,7 @@ trường hợp sau:
 - Hành động có chuyển động là chính nội dung cảnh (VD: bước đi, cầm/đặt vật, cử chỉ tay có ý
   nghĩa) — nếu đứng yên thì mất hết ý cảnh muốn truyền tải.
 
-**Giữ Ảnh giữ + Image Motion Engine cho các trường hợp còn lại** (đa số cảnh): thiên nhiên, đồ vật, bối
+**Giữ Ảnh giữ + Ken Burns cho các trường hợp còn lại** (đa số cảnh): thiên nhiên, đồ vật, bối
 cảnh/không gian, ẩn dụ hình ảnh, establishing shot, nhân vật ngồi/đứng yên lặng không cần biểu
 cảm vi tế, B-roll chuyển cảnh. Với cảnh có Anh Minh nhưng chỉ ngồi/đứng tĩnh (không nói, không
 biểu cảm mạnh) → dùng thẳng ảnh từ kho ảnh nhân vật cố định (`core-brain/image_style_bible.md`
@@ -139,9 +139,9 @@ gốc, không generate lại.
 
 | Thành phần | Trần |
 |---|---|
-| Cảnh (đơn vị lời dẫn) | 8–10 (mỗi cảnh 55–70 giây) |
+| Cảnh (đơn vị lời dẫn) | 8–12 (mỗi cảnh 55–70 giây) — nguồn chốt: `video_rules.md` mục 2 |
 | Clip AI video | **tối đa 3** |
-| Ảnh giữ độc lập | **tối đa 12–16** (mỗi ảnh giữ 30–45 giây, qua Image Motion Engine) |
+| Ảnh giữ độc lập | **tối đa 12–16** (mỗi ảnh giữ 30–45 giây, trần thực dụng 45 giây — mục 6B) |
 
 > ⚠️ **Bảng này thay bảng cũ "30–35 cảnh / 9–11 Clip / 20–24 ảnh tĩnh"** (bản 23/07/2026). Bảng cũ
 > vừa mâu thuẫn với `video_rules.md` mục 2, vừa đắt bất hợp lý: 9–11 Clip cho 8–12 phút là
@@ -252,7 +252,7 @@ Nhân vật · Hội thoại · Anh Minh nói trực diện · Thiên nhiên · 
 ## 5. TỐI ƯU CHI PHÍ
 
 Hệ thống sản xuất nên tự động ưu tiên hiệu quả chi phí. **Trước hết, áp dụng Lớp quyết định 0
-(mục 1B)** — loại phần lớn cảnh sang Ảnh giữ + Image Motion Engine, không tốn chi phí generate
+(mục 1B)** — loại phần lớn cảnh sang Ảnh giữ + Ken Burns, không tốn chi phí generate
 video. Bảng % dưới đây chỉ áp dụng cho phần CÒN LẠI đã được xác định là cần Clip AI video (video
 DÀI Mức 1: tối đa 3 Clip, xem mục 1B) — tức là % trong nội bộ "rổ Clip", không phải % trên tổng
 số cảnh của cả video:

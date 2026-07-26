@@ -32,7 +32,8 @@
 6. **Voice** — toàn văn lời dẫn (LỜI), viết liền mạch theo khuôn xuất kịch bản (`video_rules.md`
    mục 1/4 tùy độ dài) — đây là lớp mang độ dài và giá trị của video. Bằng đúng nội dung ghép nối
    các field Voice trong Scenes theo thứ tự Scene ID; dùng để đọc liền mạch/kiểm tra tổng thể,
-   không thay thế Scenes.
+   không thay thế Scenes. **Phải kết thúc bằng nguyên văn OUTRO CỐ ĐỊNH** (`video_rules.md` mục
+   1.E) — thiếu outro thì kịch bản chưa hợp lệ.
 7. **Scenes** — danh sách cảnh theo đúng khuôn field ở `video_rules.md` mục 1.C. Mỗi cảnh mở đầu
    bằng heading `### Scene <ID>` (bắt buộc — n8n parse theo khuôn này, xem `video_rules.md` mục
    1.C và `video_ai_contract.md` GHI CHÚ VẬN HÀNH), rồi tới các field theo đúng thứ tự:

@@ -340,28 +340,44 @@ B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn kh�
   zoom/pan/crop nhẹ (không generate clip dài hơn — tốn thêm chi phí).
 - Công cụ AI lo HÌNH + ambient; lời dẫn tiếng Việt lồng riêng (TTS chất lượng cao hoặc người đọc).
 
-### 6B. IMAGE MOTION ENGINE (bắt buộc — không giữ ảnh lâu chỉ bằng Ken Burns)
+### 6B. CHUYỂN ĐỘNG CHO ẢNH GIỮ — trình dựng làm được gì, và phần còn lại phải yêu cầu ở khâu sinh ảnh
 
-> Thêm 25/07/2026. Đây là mảnh còn thiếu khiến các tính toán trước đó sai: **Ken Burns đơn thuần
-> chỉ giữ được một ảnh ~20–25 giây trước khi màn hình thấy đứng chết.** Muốn giữ 30–45 giây thì
-> phải xếp tầng hiệu ứng. Học từ `visual_bible_dog1.md` §15.4 của kênh My Dog & My Love.
+> Viết lại 26/07/2026. Bản trước ghi rằng mỗi ảnh giữ "đi qua một chồng lớp hiệu ứng ở bước
+> dựng", gồm Parallax, Depth of Field, Light Rays và Particles. **Điều đó không đúng với hệ
+> thống đang chạy.** `ffmpeg-service` — dịch vụ mà WF-07.2 gọi để ghép video — chỉ áp **một
+> cú Ken Burns** cho mỗi ảnh tĩnh. Không có tách lớp chiều sâu, không có chuyển nét, không có
+> tia sáng, không có hạt. Bốn thứ đó cần bản đồ chiều sâu và một chuỗi ghép lớp mà dịch vụ
+> không có, nên lên kế hoạch giữ ảnh dựa vào chúng là lên kế hoạch dựa vào thứ không tồn tại.
 
-Mỗi ảnh giữ đi qua một chồng lớp hiệu ứng ở bước dựng — **Ken Burns là lớp nền của mọi ảnh**,
-cộng thêm **tối đa 2 lớp** trong số:
+**Trình dựng làm gì với mỗi ảnh giữ.** Một cú Ken Burns duy nhất, nhưng tốc độ zoom được tính
+theo **độ dài giữ của chính ảnh đó**, nên chuyển động trải đều từ giây đầu đến giây cuối thay
+vì chạy hết sớm rồi đứng im. Chiều zoom đổi xen kẽ giữa các ảnh liên tiếp và có trôi ngang nhẹ
+đổi hướng theo chu kỳ, để một loạt ảnh không cùng bò vào một kiểu.
 
-- **Parallax** — tách ảnh thành lớp gần/giữa/xa trôi khác tốc độ. Dùng cho cảnh không gian, hoặc
-  ảnh có chủ thể tiền cảnh rõ (bàn tay, khung cửa, tách trà).
-- **Depth of Field** — chuyển nét (rack focus) hoặc mờ hậu cảnh co/giãn nhẹ, để dẫn mắt người xem
-  giữa một lần giữ dài. Hiệu quả nhất với ảnh giữ trên 35 giây.
-- **Light Rays / Light Leak** — tia nắng mềm qua cửa sổ/tán cây. Để dành cho đoạn ấm áp, hy vọng,
-  chữa lành — không dùng ở đoạn trầm buồn, sẽ mất trọng lượng cảm xúc.
-- **Particles** — bụi nắng, lá rơi, hạt mưa. Dùng rất tiết chế, chỉ khi mùa/thời tiết trong nội
-  dung gọi tới. Không thêm chỉ để cho đẹp.
+> Con số "Ken Burns chỉ giữ nổi 20–25 giây" ở bản cũ đo trên hành vi trước đây: tốc độ zoom cố
+> định, chạm trần sau khoảng 11 giây rồi bất động. Sau khi sửa (26/07/2026) thì không còn mốc
+> chết đó nữa. Vẫn nên coi **45 giây** là trần thực dụng cho một ảnh — quá đó thì một cú
+> chuyển động đơn không còn giữ nổi khung hình, hãy cắt ngắn hoặc tách beat làm hai ảnh.
+
+**Bốn thứ dưới đây là từ vựng cho PROMPT SINH ẢNH, không phải hiệu ứng hậu kỳ.** Muốn khung
+hình có chúng thì phải yêu cầu model vẽ sẵn vào ảnh; không thể thêm sau ở khâu dựng. Mỗi prompt
+chỉ nên gọi **tối đa 2** trong số này:
+
+- **Chiều sâu lớp (thay cho Parallax)** — yêu cầu chủ thể tiền cảnh tách rõ khỏi hậu cảnh: bàn
+  tay, khung cửa, tách trà ở gần; không gian lùi xa phía sau. Ảnh có phân tầng rõ thì một cú
+  zoom chậm tự đọc ra chiều sâu.
+- **Độ sâu trường ảnh (thay cho Depth of Field)** — yêu cầu sẵn hậu cảnh mờ dịu, tiền cảnh nét.
+  Không có rack focus động, nhưng một khung đã sẵn phân biệt nét/mờ vẫn dẫn được mắt người xem
+  qua một lần giữ dài.
+- **Ánh sáng có hướng (thay cho Light Rays)** — tia nắng mềm qua cửa sổ hoặc tán cây, vẽ thẳng
+  vào ảnh. Để dành cho đoạn ấm áp, hy vọng, chữa lành — không dùng ở đoạn trầm buồn, sẽ mất
+  trọng lượng cảm xúc.
+- **Hạt trong không khí (thay cho Particles)** — bụi nắng, lá rơi, hạt mưa, cũng vẽ sẵn. Dùng
+  rất tiết chế, chỉ khi mùa/thời tiết trong nội dung gọi tới. Không thêm chỉ để cho đẹp.
 
 ⚠️ **Không chồng quá 2 lớp phụ** — nhiều hơn sẽ thành hình "làm quá", phạm đúng tinh thần tĩnh
-tại/chân thật của kênh. **Không dùng Camera Shake** (kể cả nhẹ) cho kênh này: My Dog dùng nó cho
-cảnh căng thẳng/hành động, còn nội dung Anh Minh là chiêm nghiệm — rung máy sẽ đọc thành lỗi kỹ
-thuật chứ không thành chủ ý.
+tại/chân thật của kênh. **Không dùng Camera Shake** (kể cả nhẹ) cho kênh này: nội dung Anh Minh là
+chiêm nghiệm — rung máy sẽ đọc thành lỗi kỹ thuật chứ không thành chủ ý.
 
 ---
 

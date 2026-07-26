@@ -26,20 +26,21 @@ Xem bảng đầy đủ 4 kênh ở `core-brain/channel_roles.md` mục 1. Trong
 **hai nhánh tách biệt**, mỗi nhánh phục vụ một vai trò khác nhau — khi nhận việc, xác định ngay
 đang làm nhánh nào trước khi chọn file rules:
 
-- **Nhánh A — GIẢI ĐÁP (kênh chính: YouTube):** chuyển thể các câu hỏi "Tại sao..." thành video
-  TRUNG (3–6 phút) hoặc DÀI (8–10 phút) — con số chuẩn duy nhất nằm ở `video_rules.md` mục 2,
-  không ghi lại khoảng thời lượng ở đây để tránh 2 nơi lệch nhau. Vai trò: **giải đáp câu hỏi** — kể chuyện + giải thích bằng hình ảnh,
-  trả lời trọn vẹn câu hỏi trong tên video. Dùng `video_rules.md` mục 2 (TRUNG/DÀI) + mục 4
+- **Nhánh A — GIẢI ĐÁP (kênh chính: YouTube):** chuyển thể các câu hỏi "Tại sao..." thành video —
+  **mặc định là định dạng DÀI**; các định dạng khác chỉ khi người dùng nói rõ. Con số chuẩn duy
+  nhất (thời lượng · số cảnh · trần hình cho cả 4 định dạng) nằm ở `video_rules.md` mục 2, không
+  ghi lại ở đây để tránh 2 nơi lệch nhau. Vai trò: **giải đáp câu hỏi** — kể chuyện + giải thích
+  bằng hình ảnh, trả lời trọn vẹn câu hỏi trong tên video. Dùng `video_rules.md` mục 2 + mục 4
   (kiến trúc video dài) + `examples_and_hooks.md`.
-- **Nhánh B — DƯỠNG SINH NGẮN (kênh chính: TikTok / Facebook Reels / YouTube Shorts):** video
-  NGẮN (60–120s) thị phạm một bài tập dưỡng sinh/yoga nhẹ cụ thể. Vai trò: **hành động ngay lập
-  tức** — người xem làm theo được luôn, không cần lý thuyết dài. Dùng `duong_sinh_bai_tap.md`
-  (luật riêng nhánh này) + `bai_tap_library.md` (kho động tác) thay vì cấu trúc kể chuyện
-  hook→thân→kết thông thường của Nhánh A.
+- **Nhánh B — DƯỠNG SINH NGẮN (kênh chính: TikTok / Facebook Reels / YouTube Shorts):** dùng định
+  dạng **CLIP** (1–3 phút, `video_rules.md` mục 2) để thị phạm một bài tập dưỡng sinh/yoga nhẹ cụ
+  thể. Vai trò: **hành động ngay lập tức** — người xem làm theo được luôn, không cần lý thuyết
+  dài. Dùng `duong_sinh_bai_tap.md` (luật riêng nhánh này) + `bai_tap_library.md` (kho động tác)
+  thay vì cấu trúc kể chuyện hook→thân→kết thông thường của Nhánh A.
 
 Hai nhánh này **không dùng chung khuôn kịch bản** — Nhánh A là kể chuyện/giải thích, Nhánh B là
-thị phạm động tác. Nếu người dùng chỉ nói "làm video" mà không rõ nhánh nào, hỏi lại: *"Đây là
-video giải đáp câu hỏi (YouTube) hay video bài tập dưỡng sinh ngắn (TikTok/Reels)?"*
+thị phạm động tác. **Mặc định là Nhánh A + định dạng DÀI** — chỉ chuyển sang Nhánh B khi người
+dùng nói rõ là muốn video bài tập dưỡng sinh.
 
 **Hai chế độ nhận việc (áp dụng cho cả hai nhánh):**
 1. **Chuyển đổi từ bài SEO đã có** (chế độ chính khi vận hành pipeline tự động: 1 chủ đề → 1
@@ -148,8 +149,9 @@ Quy trình gồm **2 bước tách rời, sinh ra 2 file `.md`** — không gộ
 
 ### BƯỚC 1 — Viết Master Script (`..._master_script.md`)
 
-Xác định **nhánh** trước tiên (mục 1B: Giải Đáp hay Dưỡng Sinh Ngắn — hỏi lại nếu chưa rõ) →
-Nhận chủ đề + định dạng (NGẮN/TRUNG/DÀI, hoặc thời lượng cụ thể) → xác định hook: nếu đang
+Xác định **nhánh** (mục 1B — mặc định Nhánh A Giải Đáp) → **định dạng: mặc định DÀI**, chỉ đổi
+khi người dùng nói rõ CLIP/NGẮN/TRUNG hoặc nêu thời lượng cụ thể (`video_rules.md` mục 3 —
+KHÔNG hỏi lại) → xác định hook: nếu đang
 chuyển đổi từ bài SEO có sẵn, **dùng lại đúng hook bài đó đã chọn**; nếu viết độc lập (Nhánh A),
 lấy câu hỏi từ `bai-video-dang-Youtube-Anh-Minh.md` hoặc nguồn ngoài (Drive/Sheet) → viết theo
 khuôn xuất & khung định dạng tương ứng (`video_rules.md` mục 1–4), giữ đúng giọng viết hook theo
@@ -165,7 +167,7 @@ AI — việc chọn công cụ là của pipeline sản xuất."*
 
 Đọc lại Master Script vừa viết → quyết định cảnh nào là **Clip**, cảnh nào là **Ảnh giữ** theo
 `model_selection_rules.md` mục 1B (đọc cờ "MỨC CHI HIỆN HÀNH" ở đầu file TRƯỚC — video DÀI hiện ở
-Mức 1: tối đa 3 Clip, tối đa 13–16 Ảnh giữ) → chọn công cụ cho từng Clip theo bảng mục 4 file đó
+Mức 1: tối đa 3 Clip, tối đa 12–16 Ảnh giữ) → chọn công cụ cho từng Clip theo bảng mục 4 file đó
 → viết prompt đầy đủ theo `video_ai_prompt_rules.md`, tham chiếu ngoại hình nhân vật theo
 `core-brain/image_style_bible.md` → cuối file ghi **dòng tự kiểm ngân sách** (đếm Clip và Ảnh giữ
 thực tế, đối chiếu trần; ảnh làm start-frame cho Clip liệt kê riêng, không tính vào trần).

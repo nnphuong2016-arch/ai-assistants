@@ -13,7 +13,8 @@
 
 ## 1. TINH THẦN
 
-Đây là những video **làm theo được ngay** — 60–120 giây, một bài tập/động tác dưỡng sinh hoặc
+Đây là những video **làm theo được ngay** — định dạng **CLIP** (1–3 phút, xem `video_rules.md`
+mục 2), một bài tập/động tác dưỡng sinh hoặc
 yoga nhẹ, cho TikTok, Facebook Reels, YouTube Shorts. Vai trò kênh là **hành động ngay lập tức**
 (khác hẳn Website "lưu giữ kiến thức" hay YouTube dài "giải đáp câu hỏi" — xem
 `core-brain/channel_roles.md` mục 1): người xem không cần hiểu lý thuyết trước, chỉ cần xem và
@@ -75,7 +76,7 @@ kỹ mà video ngắn không đủ thời lượng dạy đúng).
 
 ---
 
-## 5. KHUNG KỊCH BẢN CHUẨN (video bài tập, 60–120s, theo `video_rules.md` mục 2 VIDEO NGẮN)
+## 5. KHUNG KỊCH BẢN CHUẨN (video bài tập, định dạng CLIP 1–3 phút, theo `video_rules.md` mục 2)
 
 - **Hook (5–10s):** một câu chạm đúng tình huống quen (mỏi vai, cứng lưng, khó ngủ vì căng
   thẳng...) — không dọa bệnh, không hứa hẹn chữa khỏi.

@@ -8,11 +8,11 @@
 > Camera/Character/Emotion/Loop, tách Master Script khỏi prompt platform-specific (xem mục 1, 4, 5).
 > Cập nhật: 20/07/2026 — mục 2 làm rõ VIDEO NGẮN gồm 2 loại nội dung khác nhau (suy ngẫm vs
 > Dưỡng Sinh Ngắn — xem `instructions_VIDEO.md` mục 1B).
-> Cập nhật: 25/07/2026 — **chốt VIDEO DÀI = 8–10 cảnh · tối đa 3 Clip · tối đa 13–16 Ảnh giữ**
+> Cập nhật: 25/07/2026 — **chốt VIDEO DÀI = 8–12 cảnh · tối đa 3 Clip · tối đa 12–16 Ảnh giữ**
 > (mục 2 + mục 6), thay "15–20 cảnh" cũ và gỡ mâu thuẫn với bảng "30–35 cảnh" ở
 > `model_selection_rules.md`. Thêm **mục 6B Image Motion Engine** — Ken Burns đơn thuần chỉ giữ
 > được ảnh ~20–25 giây, muốn giữ 30–45 giây phải xếp tầng hiệu ứng. Trần ảnh nâng từ 10–12 lên
-> 13–16 (25/07/2026, quyết định của chủ kênh) — thời lượng giữ mỗi ảnh giảm tương ứng còn 30–45
+> 12–16 (25/07/2026, quyết định của chủ kênh) — thời lượng giữ mỗi ảnh giảm tương ứng còn 30–45
 > giây thay vì 45–75. Học từ mô hình kênh
 > My Dog & My Love (`youtube-mydog_mylove`), điều chỉnh theo thể loại chiêm nghiệm và thực tế
 > khán giả kênh này **nghe nhiều hơn nhìn**.
@@ -82,9 +82,9 @@ Mục đích: tránh rủi ro vi phạm bản quyền khi dùng bài viết củ
   - **Voice** — tiếng Việt: voiceover cho ý đó. **Giọng đọc lồng riêng** (không để công cụ đọc
     tiếng Việt — giữ kiểm soát tông).
   - **Shots** — số hình phủ cảnh này: `1`, `2` hoặc `3` (mặc định `1`).
-    ⚠️ **Bắt buộc với video DÀI.** Một cảnh DÀI dài 55–75 giây, trong khi một ảnh chỉ giữ tự
-    nhiên được 30–45 giây (mục 6B) → phần lớn cảnh cần 2 hình. Không có field này thì 8–10 cảnh
-    chỉ diễn đạt được tối đa 10 hình, trong khi trần là 13–16 (mục 2/mục 6) — kịch bản sẽ không
+    ⚠️ **Bắt buộc với video DÀI.** Một cảnh DÀI dài 55–70 giây, trong khi một ảnh chỉ giữ tự
+    nhiên được 30–45 giây (mục 6B) → phần lớn cảnh cần 2 hình. Không có field này thì 8–12 cảnh
+    chỉ diễn đạt được tối đa 10 hình, trong khi trần là 12–16 (mục 2/mục 6) — kịch bản sẽ không
     thể hợp lệ. Cộng tổng Shots của cả video trước khi xuất để tự kiểm trần.
     Khi `Shots > 1`, viết Visual/Camera thành đúng ngần ấy khối đánh số (`Visual 1:`/`Camera 1:`,
     `Visual 2:`/`Camera 2:`...), mỗi khối là một hình riêng. File media map theo
@@ -116,7 +116,7 @@ Mục đích: tránh rủi ro vi phạm bản quyền khi dùng bài viết củ
 - **D. KẾT:** một câu lắng đọng, mở ra suy ngẫm. Không "like share" gắt.
 
 **Ngân sách lời (giọng trầm-chậm):** ~110–130 từ/phút. Với video NGẮN, mỗi cảnh giữ gọn
-(~14–16 từ Voice / ~8 giây Duration); **với video DÀI, mỗi cảnh ~110–160 từ Voice / 55–75 giây
+(~14–16 từ Voice / ~8 giây Duration); **với video DÀI, mỗi cảnh ~110–160 từ Voice / 55–70 giây
 Duration** (quy từ 110–130 từ/phút — mục 2); với TRUNG/DÀI, viết lời dẫn liền mạch theo tổng thời
 lượng trước (giữ mạch cảm xúc), rồi chia thành các cảnh theo khuôn field ở trên — mỗi field
 Voice là một đoạn của lời dẫn liền mạch đã viết, không viết lại. Không nhồi chữ cho đủ, cũng
@@ -124,67 +124,81 @@ không kéo dãn một ý cho đủ giờ.
 
 ---
 
-## 2. KHUNG ĐỊNH DẠNG
+## 2. KHUNG ĐỊNH DẠNG (chốt lại 25/07/2026 theo tiêu chí kênh My Dog & My Love)
 
-### VIDEO NGẮN (SHORT)
-- Nền tảng: TikTok · Facebook Reels · YouTube Shorts.
-- Thời lượng: **60–120 giây**.
-- Số cảnh (ý) tham khảo: **5–8** · khuyến nghị **6**.
-- Mục tiêu: một ý chính duy nhất · một hook · một bài học · một kết lắng đọng.
-- ⚠️ **Hai loại nội dung khác nhau dùng chung khung thời lượng này** (xem `instructions_VIDEO.md`
-  mục 1B): (a) video suy ngẫm/insight ngắn theo khuôn Hook→Thân→Kết ở mục này, và (b) video
-  **Dưỡng Sinh Ngắn** — thị phạm một động tác cụ thể, theo khuôn kịch bản riêng ở
+> ⚠️ **Lưu ý tránh nhầm hai nghĩa của chữ "clip":**
+> - **CLIP** viết hoa, đứng một mình = **một định dạng video** 1–3 phút (bảng dưới).
+> - **Clip AI** = **một loại hình** trong kịch bản, đối lập với **Ảnh giữ** (mục 6/6B).
+>
+> Một video định dạng CLIP vẫn có thể chứa 1 Clip AI + vài Ảnh giữ. Trong toàn bộ hệ thống, loại
+> hình luôn viết đầy đủ là **"Clip AI"**, không bao giờ viết tắt thành "Clip" khi đang nói về
+> ngân sách hình.
+
+| Định dạng | Thời lượng | Số cảnh | Giây/cảnh | Clip AI | Ảnh giữ |
+|---|---|---|---|---|---|
+| **CLIP** | 1–3 phút | **3–6** | ~20–30 | tối đa **1** | **3–6** |
+| **NGẮN** | 3–5 phút | **5–7** | ~35–45 | tối đa **2** | **5–8** |
+| **TRUNG** | 5–8 phút | **6–9** | ~45–60 | tối đa **2** | **8–12** |
+| **DÀI** *(mặc định)* | 8–12 phút | **8–12** | ~55–70 | tối đa **3** | **12–16** |
+
+**Cách nhớ nhanh cho VIDEO DÀI: số cảnh ≈ số phút** (mỗi cảnh ~1 phút lời dẫn).
+
+**Ngân sách hình là TRẦN CỨNG, không phải chỉ tiêu** — dùng ít hơn luôn tốt hơn. Ảnh làm
+start-frame cho Clip AI **không tính vào trần Ảnh giữ** (xem mục 6). Chi tiết cách chia và cách
+chọn công cụ → `model_selection_rules.md` mục 1B.
+
+### Ghi chú riêng từng định dạng
+
+- **CLIP (1–3 phút)** — nền tảng: TikTok · Facebook Reels · YouTube Shorts. Một ý chính duy nhất ·
+  một hook · một bài học · một kết lắng đọng. ⚠️ **Hai loại nội dung khác nhau dùng chung khung
+  này** (xem `instructions_VIDEO.md` mục 1B): (a) video suy ngẫm/insight ngắn theo khuôn
+  Hook→Thân→Kết, và (b) **Dưỡng Sinh Ngắn** — thị phạm một động tác, theo khuôn riêng ở
   `duong_sinh_bai_tap.md` mục 5 (nhịp cảnh đi theo động tác/hơi thở, không theo nhịp kể chuyện).
   Xác định rõ đang làm loại nào trước khi chọn cấu trúc.
-
-### VIDEO TRUNG (MEDIUM)
-- Nền tảng: Facebook Video · YouTube.
-- Thời lượng: **3–6 phút**.
-- Số cảnh (ý) tham khảo: **10–14** · khuyến nghị **12**.
-- Mục tiêu: một chủ đề có chiều sâu hơn · có ví dụ hoặc một câu chuyện đời thực (xem `life_stories.md`).
-- ⚠️ **Điểm CHƯA chốt (25/07/2026):** sau khi DÀI hạ xuống 8–10 cảnh, TRUNG đang có **nhiều cảnh
-  hơn DÀI** dù ngắn hơn một nửa về thời lượng. Mật độ hiện tại: NGẮN ~15 giây/cảnh · TRUNG ~20
-  giây/cảnh · DÀI ~65 giây/cảnh — bậc DÀI lệch hẳn. Chỉ VIDEO DÀI được chốt lại theo mô hình
-  My Dog; NGẮN/TRUNG giữ nguyên tạm thời, **chờ quyết định riêng của chủ kênh**. Cũng vì vậy
-  TRUNG/NGẮN **chưa có trần ngân sách hình** — khi làm, xét từng cảnh theo 4 tiêu chí "Clip" ở
-  `model_selection_rules.md` mục 1B thay vì áp con số của video DÀI.
-
-### VIDEO DÀI (LONG)
-- Nền tảng: YouTube · Podcast video.
-- Thời lượng: **8–10 phút**.
-- Số cảnh: **8–10 cảnh** (chốt 25/07/2026 — thay "15–20" cũ). Mỗi cảnh **55–75 giây lời dẫn**.
-- **Ngân sách hình (trần cứng): tối đa 3 Clip + tối đa 13–16 Ảnh giữ** — xem mục 6 và
-  `model_selection_rules.md` mục 1B.
-- Mục tiêu: đào sâu chủ đề · nhiều lớp góc nhìn · có phần áp dụng thực tế · KHÔNG kéo dài một ý cho đủ giờ.
-- Theo **kiến trúc long-form ở mục 4**.
+- **NGẮN (3–5 phút)** — nền tảng: Facebook Video · YouTube. Một chủ đề gọn, có một ví dụ hoặc một
+  lát cắt đời thực.
+- **TRUNG (5–8 phút)** — nền tảng: Facebook Video · YouTube. Chủ đề có chiều sâu hơn · có ví dụ
+  hoặc một câu chuyện đời thực (xem `life_stories.md`).
+- **DÀI (8–12 phút)** — nền tảng: YouTube · Podcast video. Đào sâu chủ đề · nhiều lớp góc nhìn ·
+  có phần áp dụng thực tế · KHÔNG kéo dài một ý cho đủ giờ. Theo **kiến trúc long-form ở mục 4**.
 
 **Nguyên tắc chung về số cảnh:**
 - Mỗi cảnh đại diện cho một ý.
 - Không thêm cảnh chỉ để đạt đủ số lượng; không cắt ý quan trọng để giảm số cảnh.
-- Chất lượng nội dung quan trọng hơn số cảnh. Trợ lý được phép tăng/giảm số cảnh theo yêu cầu của chủ đề.
+- Chất lượng nội dung quan trọng hơn số cảnh. Trợ lý được phép xê dịch số cảnh trong khoảng của
+  định dạng — nhưng **trần ngân sách hình là con số cứng, không tự nới**. Nếu chủ đề thấy chật,
+  gộp ý lại hoặc chuyển lên định dạng dài hơn, không thêm hình.
 
 ---
 
 ## 3. QUY TẮC TỰ CHỌN ĐỊNH DẠNG
 
-- Khi người dùng nói **NGẮN / TRUNG / DÀI** → trợ lý **tự chọn số cảnh** theo khung trên,
-  KHÔNG hỏi lại. (VD: "Làm video trung về dưỡng sinh" → tự quyết: chủ đề đơn giản ~10 cảnh,
-  trung bình ~12, sâu ~14.)
-- Khi người dùng nêu **thời lượng cụ thể** (2 phút / 5 phút / 10 phút) → **thời lượng được ưu
-  tiên hơn số cảnh**; trợ lý tự điều chỉnh số cảnh + độ dài lời dẫn cho khớp.
-- Khi người dùng **không nói rõ định dạng** → hỏi lại: "Bạn muốn video NGẮN, TRUNG hay DÀI?".
+### ⭐ MẶC ĐỊNH LÀ VIDEO DÀI (chốt 25/07/2026 — quyết định của chủ kênh)
+
+**Khi người dùng KHÔNG nói rõ định dạng → mặc nhiên làm VIDEO DÀI (8–12 phút, 8–12 cảnh, tối đa
+3 Clip AI + 12–16 Ảnh giữ). KHÔNG hỏi lại "bạn muốn NGẮN, TRUNG hay DÀI?".**
+
+Áp dụng cả khi người dùng chỉ đưa một tiêu đề/câu hỏi "Tại sao..." mà không nói gì thêm — cứ làm
+đúng kích thước VIDEO DÀI. Chỉ làm định dạng khác khi người dùng **nói rõ** là muốn CLIP, NGẮN
+hoặc TRUNG.
+
+- Khi người dùng nói **CLIP / NGẮN / TRUNG / DÀI** → trợ lý **tự chọn số cảnh** trong khoảng của
+  định dạng đó theo bảng mục 2, KHÔNG hỏi lại.
+- Khi người dùng nêu **thời lượng cụ thể** (VD: 4 phút / 10 phút) → **thời lượng được ưu tiên**;
+  chọn định dạng có khoảng chứa thời lượng đó rồi điều chỉnh số cảnh + độ dài lời dẫn cho khớp.
 - Mục tiêu cuối cùng: **đúng trải nghiệm xem**, không phải đúng con số cảnh.
 
 ---
 
-## 4. KIẾN TRÚC VIDEO DÀI (8–10 phút)
+## 4. KIẾN TRÚC VIDEO DÀI (8–12 phút)
 
 Mục tiêu: chiều sâu thật, để người xem thấy "mình vừa nhận được điều gì đó".
 
 > ⚠️ **Các mốc giây dưới đây là TỶ TRỌNG NỘI DUNG, không phải ranh giới cảnh.** Mỗi cảnh video
-> DÀI dài 55–75 giây, nên MỞ (10–20s) và KẾT LẮNG (15–20s) **không đứng riêng thành một cảnh** —
+> DÀI dài 55–70 giây, nên MỞ (10–20s) và KẾT LẮNG (15–20s) **không đứng riêng thành một cảnh** —
 > chúng nằm gọn trong cảnh đầu và cảnh cuối cùng với phần nội dung kế bên. Cộng 4 phần có số:
-> 75–115 giây; phần THÂN gánh toàn bộ ~365–525 giây còn lại, tức chiếm 6–8 trong tổng số 8–10 cảnh.
+> 75–115 giây; phần THÂN gánh toàn bộ ~365–645 giây còn lại (video 8–12 phút), tức chiếm 6–10
+> trong tổng số 8–12 cảnh.
 
 **Khung 5 phần:**
 1. **MỞ (10–20s):** hook điềm tĩnh + một câu hứa nhẹ về điều người xem sẽ hiểu. Không clickbait.
@@ -199,7 +213,7 @@ còn hơn 10 phút loãng.
 
 **Khuôn xuất video dài:** A. Tên + ý chính + 1 câu hứa · B. Viết **lời dẫn liền mạch theo 5
 phần** trước (như một bài nói chậm, để giữ mạch cảm xúc — đây là bước nháp) · C. Sau đó **chia
-lời dẫn đã viết thành 8–10 cảnh** (mỗi cảnh 55–75 giây lời dẫn — xem trần ngân sách hình ở mục
+lời dẫn đã viết thành 8–12 cảnh** (mỗi cảnh 55–70 giây lời dẫn — xem trần ngân sách hình ở mục
 2 và mục 6), đóng gói mỗi cảnh theo đúng khuôn field ở mục 1.C (Scene ID
 zero-padded, Duration, Voice, Visual, Camera, Character, Emotion, Loop) — mỗi field Voice là một
 đoạn của lời dẫn liền mạch đã viết ở bước B, không viết lại. Đánh dấu `Loop: true` cho cảnh
@@ -232,29 +246,30 @@ B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn kh�
 ## 6. NGÂN SÁCH HÌNH & CHI PHÍ (tóm tắt — chi tiết đầy đủ ở `model_selection_rules.md` mục 1B/5)
 
 > **Cập nhật 25/07/2026 — thay hẳn mô hình "% cảnh là Clip" cũ.** Tỷ lệ 28–31% Clip trước đây
-> khiến một video 8–10 phút cần 9–11 Clip, tức **1,0–1,2 clip/phút** — đắt hơn cả mức cao nhất
+> khiến một video 8–12 phút cần 9–11 Clip, tức **1,0–1,2 clip/phút** — đắt hơn cả mức cao nhất
 > của kênh tham chiếu My Dog & My Love (Tier 3: 0,68 clip/phút, chỉ mở khi doanh thu đã gấp 3–5
 > lần chi phí). Nay chuyển sang **trần cứng theo số tuyệt đối**, học từ mô hình đó.
 
-**Trần cứng cho VIDEO DÀI (8–10 phút):**
+**Trần cứng cho VIDEO DÀI (8–12 phút):**
 
 | Thành phần | Trần |
 |---|---|
-| Cảnh | 8–10 (mỗi cảnh 55–75 giây lời dẫn) |
+| Cảnh | 8–10 (mỗi cảnh 55–70 giây lời dẫn) |
 | Clip AI video | **tối đa 3** |
-| Ảnh giữ | **tối đa 13–16** (mỗi ảnh giữ 30–45 giây) |
+| Ảnh giữ | **tối đa 12–16** (mỗi ảnh giữ 30–45 giây) |
 
 - **Vị trí 3 Clip:** MỞ (Anh Minh nói trực diện, neo sự hiện diện nhân vật) · một khoảnh khắc chủ
   đạo giữa bài · KẾT LẮNG. Không rải đều — đặt đúng 3 điểm cảm xúc.
-- **Ảnh làm start-frame cho Clip KHÔNG tính vào trần 13–16.** Chỉ đếm ảnh **giữ độc lập** (tự nó
+- **Ảnh làm start-frame cho Clip KHÔNG tính vào trần 12–16.** Chỉ đếm ảnh **giữ độc lập** (tự nó
   hiện trên màn hình). Với kênh này, start-frame của cả 3 Clip lấy thẳng từ `characters/` nên
   **chi phí ảnh nhân vật bằng 0** — không generate lại (xem `core-brain/image_style_bible.md` mục 0B).
 - **Khán giả kênh này NGHE nhiều hơn NHÌN** (nội dung sức khỏe/triết lý dạng kể chuyện, thường
   bật lên nghe khi đang làm việc khác). Vì vậy ưu tiên giữ ảnh ở **mức dài của khoảng (40–45
   giây)**, không cần đổi hình dồn dập. Giá trị video nằm ở lời dẫn — hình để nâng đỡ, không để
   tranh sự chú ý.
-- **Cách tính ra 13–16 ảnh:** video 8–10 phút trừ đi ~27 giây của 3 Clip còn ~450–570 giây hình.
-  Chia cho 13–16 ảnh ra ~30–45 giây mỗi ảnh. Muốn ảnh giữ lâu hơn thì giảm số ảnh, muốn đổi hình
+- **Cách tính ra 12–16 ảnh:** video 8–12 phút (480–720 giây) trừ ~27 giây của 3 Clip AI còn
+  ~453–693 giây hình. Chia cho 12–16 ảnh ra ~38–43 giây mỗi ảnh, nằm gọn trong khoảng giữ tự
+  nhiên 30–45 giây. Muốn ảnh giữ lâu hơn thì giảm số ảnh, muốn đổi hình
   dày hơn thì tăng số ảnh — nhưng **không vượt trần 16**.
 - Tạo MỘT kho B-roll tĩnh đẹp, dùng lại across nhiều video — đừng generate mới từng cảnh.
 - Clip AI video generate gốc 6–10 giây → khi dựng, kéo dài cảm giác thành 8–12 giây bằng

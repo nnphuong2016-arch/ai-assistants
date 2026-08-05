@@ -23,11 +23,15 @@ Factory hay bất kỳ Factory nào khác), `ai-anh-minh-chat-factory/`, `resear
 cho `hook_library_full.md` cũ — xem Bước 2): `bai-seo-dang-website-Anh-Minh.md`,
 `bai-dang-Facebook-Anh-Minh.md`, `bai-video-dang-Youtube-Anh-Minh.md`.
 
-**Nội dung thành phẩm KHÔNG lưu ở repo này** — xem Bước 5 bên dưới. **Từ 21/07/2026, KHÔNG còn
-dùng GitHub cho bất kỳ loại thành phẩm nào — tất cả lưu thẳng Google Drive:**
-- Bài viết SEO → **chỉ lưu Google Drive** (quyết định 21/07/2026 — ngừng dùng repo
-  `nnphuong2016-arch/bai-viet-seo`) — thư mục "Anh Minh - N8N Trigger" → "Bai-viet-SEO".
-  Không cần manifest JSON riêng (xem Bước 5.A + Bước 6).
+**Nội dung thành phẩm KHÔNG lưu ở repo này** — xem Bước 5 bên dưới.
+- Bài viết SEO → **mỗi bài xuất 2 BẢN, lưu 3 NƠI** (quyết định 05/08/2026 — GitHub quay lại
+  dùng, thay cho quyết định "chỉ Drive" ngày 21/07/2026):
+  **(1)** bản `.mdx` (có frontmatter, dành cho web) → repo `nnphuong2016-arch/Bai-seo-web-MDX-anhminh`;
+  **(2)** bản `.md` (thuần chữ, dành cho giọng đọc) → repo `nnphuong2016-arch/bai-viet-seo`;
+  **(3)** cũng bản `.md` đó + `<tên bài>.meta.json` → Google Drive "Anh Minh - N8N Trigger" →
+  "Bai-viet-SEO" (Drive Trigger kích hoạt n8n).
+  **Hai bản TRÙNG TÊN**, chỉ khác đuôi file. Chi tiết đầy đủ ở
+  `seo-factory/website_publishing_rules.md` — đọc file đó trước khi lưu bài.
 - Kịch bản video → **chỉ lưu trực tiếp Google Drive, KHÔNG dùng GitHub nữa** (quyết định
   18/07/2026 — đã ngừng dùng repo `kich-ban-video`) — thư mục "Anh Minh - N8N Trigger" →
   "Kich-ban-video". Không cần thêm manifest JSON riêng cho video (xem Bước 5.B + Bước 6).
@@ -120,6 +124,8 @@ một kho nữa)
 9. `core-brain/channel_roles.md` — vai trò Website so với Facebook/YouTube, tránh viết trùng vai
    trò kênh khi cùng một chủ đề gốc.
 10. `seo-factory/output_schema.md` — đóng gói đúng khuôn field.
+11. `seo-factory/website_publishing_rules.md` — **đọc trước khi lưu bài**: 7 trường frontmatter
+    của bản `.mdx`, quy cách đặt tên chung cho cả 2 bản, và 3 nơi phải lưu (xem Bước 5.A).
 
 Chủ đề Sức khỏe cần tăng chiều sâu (semantic entity) → tra bảng Preferred/Allowed/Forbidden ở
 `core-brain/health_knowledge.md` mục 9 trước — KHÔNG tự thêm thuật ngữ hormone/y sinh (cortisol,
@@ -180,17 +186,32 @@ Sau khi hoàn tất một bài SEO hoặc một kịch bản video (đã qua Bư
 không chứa nội dung thành phẩm). **Bài SEO và kịch bản video lưu ở HAI NƠI KHÁC NHAU** (5.A/5.B)
 — quyết định 18/07/2026: kịch bản video chuyển hẳn sang Google Drive, ngừng dùng GitHub.
 
-#### 5.A — Bài viết SEO (Google Drive — KHÔNG dùng GitHub, đổi 21/07/2026)
+#### 5.A — Bài viết SEO: 2 BẢN, 3 NƠI (cập nhật 05/08/2026 — GitHub quay lại dùng)
 
-**Nơi lưu:** Google Drive, thư mục "Anh Minh - N8N Trigger" → **"Bai-viet-SEO"** (parentId
-`1ubrFWlDezfMX91zoV7hqjc1PqnGNZ3Gn`, dùng công cụ Drive `create_file`). Đây chính là thư mục
-n8n theo dõi bằng Drive Trigger, nên file bài thật nằm sẵn ở đó là đủ để kích hoạt workflow —
-KHÔNG cần tạo thêm manifest JSON (cùng lý do đã áp dụng cho video từ 18/07/2026, xem Bước 6).
+> Quy tắc chi tiết (7 trường frontmatter, slug chuyên mục, quy tắc thân bài MDX) nằm ở
+> `seo-factory/website_publishing_rules.md`. Mục này chỉ nêu quy trình lưu.
 
-Quy trình khi lưu:
+**Thứ tự làm — viết BẢN MDX TRƯỚC, rồi sinh bản MD từ chính nó** (để hai bản không thể lệch chữ,
+không viết tay hai lần):
+
+1. **Viết bản `.mdx`** — có frontmatter 7 trường, có `##`/`###`, blockquote khi trích lời Anh
+   Minh, link markdown. Lưu vào repo **`nnphuong2016-arch/Bai-seo-web-MDX-anhminh`**.
+2. **Sinh bản `.md` bằng cách gỡ lớp định dạng khỏi chính file `.mdx` đó**: bỏ frontmatter, bỏ
+   `#`, `>`, `**`, đổi `[chữ neo](/url)` thành chữ neo trần. Kết quả phải **thuần chữ 100%** theo
+   `web_content_rules.md` mục 3D. Lưu vào repo **`nnphuong2016-arch/bai-viet-seo`**.
+3. **Lưu cùng bản `.md` đó lên Google Drive**, thư mục "Anh Minh - N8N Trigger" →
+   **"Bai-viet-SEO"** (parentId `1ubrFWlDezfMX91zoV7hqjc1PqnGNZ3Gn`, dùng Drive `create_file`),
+   kèm `<tên bài>.meta.json` chứa 8 field metadata (xem Bước 6). Đây là thư mục n8n theo dõi bằng
+   Drive Trigger để kích hoạt pipeline giọng đọc.
+4. Commit + push cả hai repo, rồi gửi người dùng link cả 3 nơi.
+
+**Hai bản TRÙNG TÊN, chỉ khác đuôi file** — để đối chiếu được bằng mắt. VD:
+`1.1.vi-sao-ngu-du-tam-tieng-van-met.mdx` và `1.1.vi-sao-ngu-du-tam-tieng-van-met.md`.
+
+Nội dung file (áp dụng cho phần thân bài của CẢ HAI bản):
 1. Đặt tên file theo đúng quy cách ở dưới — không ghi đè file cũ trừ khi đang sửa đúng bài đó.
 2. **File CHỈ chứa đúng nội dung bài viết (những gì hiển thị cho người đọc trên web) — KHÔNG
-   thêm bất kỳ chữ/field/ghi chú nào khác**:
+   thêm bất kỳ chữ/field/ghi chú nào khác** (riêng bản `.mdx` có thêm frontmatter ở đầu):
    - CÓ trong file: tiêu đề bài, toàn văn thân bài, FAQ hiển thị trên trang (Q&A thật),
      disclaimer + minh bạch AI + ngày cập nhật (đây là nội dung bắt buộc hiển thị ở chân bài
      theo `web_content_rules.md`, không phải ghi chú nội bộ).
@@ -242,10 +263,10 @@ Quy trình khi lưu:
      (bước 3 dưới đây), KHÔNG nằm trong file bài và KHÔNG chỉ nằm trong cuộc trò chuyện.
    - Field nào không có nội dung thật (VD: chưa có nguồn để trích dẫn) → **không đưa vào file**,
      không viết placeholder giải thích.
-3. `create_file` lên đúng thư mục Drive ở trên rồi gửi link file cho người dùng. Không có bước
-   commit/push (không còn GitHub cho bài SEO). Hỏi người dùng trước nếu ngữ cảnh chưa rõ có nên
-   tự lưu luôn không, trừ khi đã xác nhận sẵn "luôn tự lưu, không cần hỏi lại" trong phiên.
-4. **Tạo thêm 1 file manifest metadata** cùng thư mục, tên `<tên file bài>.meta.json`. Đây là
+3. Lưu đủ 3 nơi theo thứ tự ở đầu mục 5.A (repo MDX → repo `bai-viet-seo` → Drive), rồi gửi
+   người dùng link cả 3. Hỏi người dùng trước nếu ngữ cảnh chưa rõ có nên tự lưu luôn không, trừ
+   khi đã xác nhận sẵn "luôn tự lưu, không cần hỏi lại" trong phiên.
+4. **Tạo thêm 1 file manifest metadata** trên Drive, tên `<tên file bài>.meta.json`. Đây là
    nơi duy nhất 8 field metadata tồn tại — file bài chỉ chứa chữ đọc được, còn cuộc trò chuyện
    thì mất khi đóng phiên. Manifest **KHÔNG lặp lại Body** (đó là lý do manifest cũ bị bỏ):
 
@@ -288,9 +309,11 @@ instructions.md` mục 6 + mục Bếp An Nhiên — không tự đổi số, kh
 Ví dụ: bài SEO đầu tiên thuộc chủ đề Sức khỏe → `1.1.<slug>`. Bài Sức khỏe tiếp theo →
 `1.2.<slug>`. Bài đầu tiên thuộc Tâm lý & đời sống → `2.1.<slug>`.
 
-**Cách xác định số thứ tự:** trước khi tạo file mới, liệt kê các file đã có trong thư mục Drive
-"Bai-viet-SEO" bắt đầu bằng đúng `<số chủ đề>.` (VD: liệt kê file bắt đầu `1.` để biết đã có bài
-Sức khỏe nào), lấy số thứ tự lớn nhất + 1. Nếu chưa có file nào của chủ đề đó → bắt đầu từ `1`.
+**Cách xác định số thứ tự:** trước khi tạo file mới, liệt kê các file đã có trong repo
+`nnphuong2016-arch/bai-viet-seo` bắt đầu bằng đúng `<số chủ đề>.` (VD: liệt kê file bắt đầu `1.`
+để biết đã có bài Sức khỏe nào), lấy số thứ tự lớn nhất + 1. Nếu chưa có file nào của chủ đề đó
+→ bắt đầu từ `1`. Dùng repo làm nguồn đếm (không dùng Drive) vì repo có git history, dễ đối
+chiếu; cả 3 nơi đằng nào cũng mang cùng một tên file.
 
 > ⚠️ **KHÔNG nhầm với số dòng trong file backlog** (làm rõ 21/07/2026). Backlog
 > `bai-seo-dang-website-Anh-Minh.md` cũng đánh số dạng `<số chủ đề>.<số>` (VD `1.26. Có một loại

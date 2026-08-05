@@ -190,9 +190,15 @@ Số chủ đề theo bảng 6 trụ ở `CLAUDE.md` Bước 5.A. STT đếm tro
 
 ---
 
-## 7. CÒN THIẾU — CHECKLIST TRƯỚC KHI DÙNG FILE NÀY
+## 7. CÒN THIẾU — CHECKLIST
 
-- [ ] Danh sách trường frontmatter đầy đủ (mục 2).
+- [x] ~~Danh sách trường frontmatter~~ — đã nhận 26/07/2026, xem mục 2.
 - [ ] Danh sách slug mục con thật (mục 4) + làm rõ 76 hay 78.
-- [ ] Link bài mẫu đã lên web để đối chiếu văn phong (hướng dẫn có nhắc, chưa nhận được link).
 - [ ] Chốt tên hiển thị của trụ 4 (mục 3).
+- [ ] Chốt còn dùng Google Drive song song hay không (mục 6).
+- [ ] **Kiểm URL thật khi có bài lên web** (mục 6B) — internal link đang trỏ dạng
+      `/[category]/[slug]` không kèm phần số. Chưa kiểm được: bài đang có trên web là **bài mẫu
+      dựng tạm, người vận hành sẽ xoá** (xác nhận 05/08/2026), nên không dùng nó để đối chiếu URL
+      lẫn văn phong. Kiểm lại ngay khi bài thật đầu tiên lên web.
+- [x] ~~Link bài mẫu trên web để đối chiếu văn phong~~ — bỏ, bài mẫu là bản dựng tạm sẽ bị xoá.
+      Chuẩn văn phong lấy từ `article_examples_full.md` trong repo này, không lấy từ web.

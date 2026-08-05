@@ -140,17 +140,40 @@ Gia vị Việt & Bí quyết bếp nhà · Quà từ căn bếp · Nơi bình y
 
 ---
 
-## 6. HAI BẢN CỦA CÙNG MỘT BÀI — KHÔNG NHẦM
+## 6. MỖI BÀI SEO LƯU 3 NƠI (cập nhật 05/08/2026 — người vận hành chốt)
 
-Từ khi có kênh website MDX, mỗi bài SEO tồn tại ở **hai dạng**, phục vụ hai đích khác nhau:
+Từ 05/08/2026, mỗi bài SEO viết xong phải xuất **hai bản**, lưu vào **ba nơi**:
 
-| Dạng | Nơi lưu | Định dạng | Dùng cho |
+| Bản | Nơi lưu | Định dạng | Dùng cho |
 |---|---|---|---|
-| **Bản giọng đọc** | Google Drive `Bai-viet-SEO` + `.meta.json` | Thuần chữ 100%, không ký tự nào (mục 3D) | Pipeline n8n đọc thành tiếng |
-| **Bản website** | File `.mdx` giao cho người vận hành | Có frontmatter, có blockquote khi trích | Đăng lên web |
+| **Bản giọng đọc** | Repo GitHub `nnphuong2016-arch/bai-viet-seo` (file `.md`) | Thuần chữ 100%, không ký tự định dạng nào (`web_content_rules.md` mục 3D) | Pipeline n8n đọc thành tiếng |
+| **Bản giọng đọc** | Google Drive `Bai-viet-SEO` + `<tên bài>.meta.json` | Như trên | Drive Trigger kích hoạt n8n + chứa 8 field metadata |
+| **Bản website** | Repo GitHub `nnphuong2016-arch/Bai-seo-web-MDX-anhminh` (file `.mdx`) | Có frontmatter 7 trường, có `##`/`###`, blockquote, link markdown | Đăng lên web |
 
-Nội dung chữ của hai bản **phải giống nhau**; chỉ khác lớp định dạng. Khi sửa nội dung, sửa cả
-hai để không lệch bản.
+**Cách làm để hai bản không bao giờ lệch chữ:** viết bản `.mdx` trước (bản đầy đủ định dạng),
+rồi sinh bản `.md` bằng cách **gỡ lớp định dạng** khỏi chính file đó — bỏ frontmatter, bỏ `#`,
+`>`, `**`, và đổi `[chữ neo](/url)` thành chữ neo trần. Không viết tay hai lần.
+
+> ⚠️ **Câu hỏi chưa chốt (05/08/2026):** khi đã có `.md` trên GitHub thì Google Drive còn cần
+> nữa không? Hiện **vẫn giữ Drive** vì n8n dùng Drive Trigger để kích hoạt pipeline giọng đọc, và
+> `.meta.json` là nơi duy nhất chứa 8 field metadata (Title thẻ SEO, Slug, Meta Description,
+> Excerpt, Category, Tags, Internal Links, References). Bỏ Drive thì phải đổi n8n sang đọc GitHub
+> và tìm chỗ khác cho metadata trước. Cần chốt với Claude n8n.
+
+### 6B. QUY CÁCH ĐẶT TÊN — HAI REPO ĐANG KHÁC NHAU
+
+| Repo | Quy cách đang dùng | Ví dụ |
+|---|---|---|
+| `bai-viet-seo` (`.md`) | `<số chủ đề>.<STT>.<slug có gạch nối>.md` | `1.1.vi-sao-ngu-du-tam-tieng-van-met.md` |
+| `Bai-seo-web-MDX-anhminh` (`.mdx`) | `<STT>.<slugliềnkhônggạch>.mdx` | `1.visaongudutamtiengvanmet.mdx` |
+
+> ⚠️ **Hai rủi ro từ chỗ lệch này, cần người vận hành xác nhận:**
+> 1. Repo MDX đánh số chạy thẳng 1–5, không có số chủ đề. Khi sang chủ đề khác (Tâm lý, Dưỡng
+>    sinh...) sẽ đụng số — bài Tâm lý đầu tiên cũng muốn mang số 1.
+> 2. **Internal link đang giả định URL bài là `/[category-slug]/[slug-có-gạch-nối]`** (VD
+>    `/suc-khoe/vi-sao-ngu-du-tam-tieng-van-met`). Nếu website sinh URL từ **tên file** thì URL
+>    thật sẽ là `/suc-khoe/1.visaongudutamtiengvanmet` và **mọi internal link trong bài sẽ chết**.
+>    Phải kiểm tra một link thật trên web trước khi đăng loạt tiếp theo.
 
 ---
 

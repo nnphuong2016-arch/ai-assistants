@@ -160,20 +160,33 @@ rồi sinh bản `.md` bằng cách **gỡ lớp định dạng** khỏi chính 
 > Excerpt, Category, Tags, Internal Links, References). Bỏ Drive thì phải đổi n8n sang đọc GitHub
 > và tìm chỗ khác cho metadata trước. Cần chốt với Claude n8n.
 
-### 6B. QUY CÁCH ĐẶT TÊN — HAI REPO ĐANG KHÁC NHAU
+### 6B. QUY CÁCH ĐẶT TÊN — HAI BẢN LUÔN TRÙNG TÊN (chốt 05/08/2026)
 
-| Repo | Quy cách đang dùng | Ví dụ |
+**Hai bản của cùng một bài phải mang ĐÚNG MỘT TÊN, chỉ khác thư mục và đuôi file** — để người
+vận hành đối chiếu được bằng mắt, không phải dò.
+
+```
+<số chủ đề>.<STT trong chủ đề>.<slug có gạch nối>
+```
+
+| Bản | Repo | Ví dụ |
 |---|---|---|
-| `bai-viet-seo` (`.md`) | `<số chủ đề>.<STT>.<slug có gạch nối>.md` | `1.1.vi-sao-ngu-du-tam-tieng-van-met.md` |
-| `Bai-seo-web-MDX-anhminh` (`.mdx`) | `<STT>.<slugliềnkhônggạch>.mdx` | `1.visaongudutamtiengvanmet.mdx` |
+| Giọng đọc | `bai-viet-seo` | `1.1.vi-sao-ngu-du-tam-tieng-van-met.md` |
+| Website | `Bai-seo-web-MDX-anhminh` | `1.1.vi-sao-ngu-du-tam-tieng-van-met.mdx` |
 
-> ⚠️ **Hai rủi ro từ chỗ lệch này, cần người vận hành xác nhận:**
-> 1. Repo MDX đánh số chạy thẳng 1–5, không có số chủ đề. Khi sang chủ đề khác (Tâm lý, Dưỡng
->    sinh...) sẽ đụng số — bài Tâm lý đầu tiên cũng muốn mang số 1.
-> 2. **Internal link đang giả định URL bài là `/[category-slug]/[slug-có-gạch-nối]`** (VD
->    `/suc-khoe/vi-sao-ngu-du-tam-tieng-van-met`). Nếu website sinh URL từ **tên file** thì URL
->    thật sẽ là `/suc-khoe/1.visaongudutamtiengvanmet` và **mọi internal link trong bài sẽ chết**.
->    Phải kiểm tra một link thật trên web trước khi đăng loạt tiếp theo.
+Số chủ đề theo bảng 6 trụ ở `CLAUDE.md` Bước 5.A. STT đếm trong phạm vi từng chủ đề (bài Tâm lý
+đầu tiên là `2.1`, không phải `6`).
+
+> **Lịch sử:** repo MDX ban đầu dùng `<STT>.<slugliềnkhônggạch>.mdx` (VD
+> `1.visaongudutamtiengvanmet.mdx`). Đã đổi hết sang quy cách trên ngày 05/08/2026, vì kiểu cũ
+> không có số chủ đề nên sẽ đụng số ngay khi sang chủ đề thứ hai.
+
+> ⚠️ **Rủi ro còn lại — phải kiểm trước khi đăng loạt tiếp theo:** internal link trong bài đang
+> trỏ dạng `/[category-slug]/[slug-có-gạch-nối]`, VD `/suc-khoe/vi-sao-ngu-du-tam-tieng-van-met`
+> — tức **không có phần số** `1.1.` ở đầu. Nếu website sinh URL từ tên file thì URL thật sẽ là
+> `/suc-khoe/1.1.vi-sao-ngu-du-tam-tieng-van-met` và mọi internal link sẽ 404. Bấm thử một link
+> trên web để biết website lấy slug từ **tên file** hay từ một trường riêng; nếu lấy từ tên file
+> thì phải thêm phần số vào link, hoặc bỏ phần số khỏi tên file.
 
 ---
 

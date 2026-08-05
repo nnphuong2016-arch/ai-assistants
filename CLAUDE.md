@@ -518,3 +518,17 @@ lượt làm việc đó** — KHÔNG để dồn sang lượt sau, KHÔNG đợ
 - Quy trình chuẩn đang dùng: commit → push nhánh làm việc → tạo PR → merge vào `main` →
   `git checkout -B <nhánh> origin/main` rồi push lại nhánh để mọi thứ cùng một commit.
 - Sau khi xong, báo lại cho người dùng commit/PR tương ứng, không chỉ nói "đã sửa xong".
+
+> ⚠️ **PUSH LÊN NHÁNH CHƯA PHẢI LÀ XONG — PHẢI ĐI TỚI `main`** (siết lại 05/08/2026, sau sự cố
+> thật ngay trong ngày). Người vận hành kéo về máy từ **`main`**, không từ nhánh làm việc. Một
+> thay đổi mới push lên nhánh mà chưa merge thì với họ **coi như chưa tồn tại** — kể cả khi đã
+> commit sạch sẽ và báo "đã push xong".
+>
+> Sự cố: quy trình lưu bài SEO 2 bản/3 nơi đã sửa vào `CLAUDE.md` và push lên nhánh, nhưng
+> `main` vẫn giữ câu cũ *"chỉ lưu Google Drive, ngừng dùng repo `bai-viet-seo`"* — ngược hẳn.
+> Vì `CLAUDE.md` tự nạp đầu mỗi phiên, một phiên mới đọc `main` sẽ làm sai hoàn toàn. Người vận
+> hành phải tự hỏi "đồng bộ chưa" mới lộ ra.
+>
+> **Chưa merge vào `main` thì KHÔNG được báo là "đã đồng bộ".** Nếu không tự merge được (thiếu
+> quyền, PR còn chờ duyệt), phải nói thẳng: *"đã push lên nhánh, còn chờ merge vào `main`, bạn
+> kéo về máy chưa thấy đâu"* — không được để người dùng tưởng là xong.

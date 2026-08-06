@@ -7,6 +7,9 @@
 > Không phụ thuộc Image AI.
 > Mọi Featured Image đều phải được quyết định theo file này trước khi viết Prompt.
 > Cập nhật: 20/07/2026 — thêm dòng ngày cập nhật cho đồng bộ quy ước với các Factory khác.
+> Cập nhật: 06/08/2026 — thêm mục 7B "Lấy ý chính bài viết làm Subject trực tiếp", sau sự cố
+> thật: nhiều Featured Image chọn Subject là cảnh đời sống chung chung (VD "người cầm ly
+> nước", "người tưới cây") thay vì bản dịch trực tiếp của ý chính bài viết sang hình ảnh.
 
 ---
 
@@ -211,6 +214,53 @@ Không chọn Subject chỉ vì đẹp.
 **Nếu Subject là "Con người": luôn là người vô danh (mẫu chung, không xác định danh tính cụ
 thể). KHÔNG BAO GIỜ là nhân vật Hiền triết Anh Minh** — Featured Image không dùng nhân vật
 thương hiệu, chỉ minh họa nội dung bằng người/cảnh đời thường chung chung.
+
+---
+
+# 7B. LẤY Ý CHÍNH BÀI VIẾT LÀM SUBJECT TRỰC TIẾP (nguyên tắc cốt lõi, xác nhận 06/08/2026)
+
+Subject không phải là một cảnh "đời sống lành mạnh" bất kỳ.
+
+Subject phải là bản dịch trực tiếp của Ý CHÍNH bài viết sang hình ảnh.
+
+Cách làm: đọc bài → xác định Ý CHÍNH (chủ đề/hiện tượng/hành vi cụ thể bài đang nói tới) →
+chuyển thẳng Ý CHÍNH đó thành Subject, không đi vòng qua một cảnh sinh hoạt chung chung nào
+khác "nghe có vẻ liên quan".
+
+Vài ví dụ minh họa cách suy luận (không phải danh sách đầy đủ — tự áp dụng cùng logic cho
+mọi chủ đề khác chưa liệt kê ở đây):
+
+Bài nói về một bộ phận/cấu trúc cơ thể cụ thể (mạch máu, gan, thận, khớp, mắt...)
+
+→ Subject là chính bộ phận đó — minh họa hoặc cận cảnh bộ phận đó (xem mục 6 "Nội tạng →
+Medical Illustration").
+
+---------------
+
+Bài nói về giấc ngủ
+
+→ Subject là người đang ngủ hoặc chuẩn bị ngủ, không phải người đang làm việc khác.
+
+---------------
+
+Bài nói về lo âu, căng thẳng
+
+→ Subject là hình ảnh thể hiện đúng trạng thái đó (dáng ngồi trầm ngâm, ánh mắt xa xăm...),
+vẫn theo đúng mục 10–11 (không giật gân, không cường điệu).
+
+---------------
+
+Bài nói về một hành vi/thói quen cụ thể (đo huyết áp, đi bộ, ăn nhạt, hít thở...)
+
+→ Subject là người đang thực hiện ĐÚNG hành vi đó, không phải một hành vi khác "cùng vẻ đời
+thường" nhưng không liên quan.
+
+---------------
+
+**Tự kiểm nhanh trước khi chốt:** Subject vừa chọn có xuất hiện trực tiếp trong nội dung bài
+(một câu, một đoạn, một chi tiết cụ thể) hay chỉ là suy diễn xa của Concept? Nếu chỉ là suy
+diễn xa (VD chọn "người ngồi cầm ly nước" cho bài không hề nhắc tới việc uống nước) → sai,
+quay lại đọc bài tìm chi tiết cụ thể hơn.
 
 ---
 

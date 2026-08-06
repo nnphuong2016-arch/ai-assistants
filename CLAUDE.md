@@ -186,6 +186,14 @@ Luôn chạy qua đúng file `*_checklist.md` (hoặc `seo_checklist.md`/`commun
 `image_checklist.md`) của Factory tương ứng trước khi coi là xong — không xuất nội dung "tạm
 được" rồi sửa sau.
 
+> **Bắt buộc đọc lại từng bài sau khi viết xong** (xác nhận 06/08/2026): viết xong một bài là
+> chưa xong việc — phải đọc lại toàn bộ bài đó, đối chiếu từng điểm với checklist (mục 0 Quick
+> Fail + mục 1–5 của `seo_checklist.md`, hoặc checklist tương ứng của Factory đang làm), và tự
+> tìm xem có sai sót gì không: tên/tiêu đề có đúng nguyên văn backlog không (xem Bước 5.A), số
+> thứ tự file có đúng không, độ dài có đúng khoảng quy định không, Body bản `.md` có còn sót ký
+> tự định dạng không, có đoạn nào lặp ý/lan man/nghe rõ là AI viết không. Sai chỗ nào thì sửa
+> ngay tại chỗ đó trước khi lưu — không lưu bài "chắc là ổn" rồi để sai sót lọt qua.
+
 ### Bước 5 — LƯU KẾT QUẢ VÀO ĐÚNG NƠI OUTPUT (bắt buộc, không nhầm lẫn)
 
 Sau khi hoàn tất một bài SEO hoặc một kịch bản video (đã qua Bước 4), LUÔN lưu file kết quả vào
@@ -202,6 +210,16 @@ KHÔNG dùng GitHub)
 > **Luôn lấy chủ đề bài viết từ `bai-seo-dang-website-Anh-Minh.md`** (gốc repo `ai-assistants/`,
 > xem Bước 2) trừ khi người dùng chỉ định chủ đề khác — viết TUẦN TỰ từ trên xuống, dòng CHƯA
 > dùng, không tự nhảy cóc sang chủ đề khác trong file.
+
+> **Tiêu đề (title/H1) phải giữ sát đúng nguyên văn dòng backlog tương ứng** (xác nhận
+> 06/08/2026, sau khi bị sửa lỗi tự đổi câu backlog thành một câu hỏi khác). VD dòng backlog
+> `1.1. Huyết áp thay đổi theo từng thời điểm trong ngày.` → title phải là "Huyết Áp Thay Đổi
+> Theo Từng Thời Điểm Trong Ngày" (chỉ viết hoa đầu từ, bỏ dấu chấm cuối câu) — KHÔNG tự đổi
+> thành "Vì sao huyết áp thay đổi..." hay một góc/câu hỏi khác. Slug cũng bám sát cụm từ chính
+> của dòng backlog đó (không tự rút gọn mất nghĩa). Đây là ngoại lệ riêng cho **title/slug của
+> SEO Factory** — không áp dụng cho quy tắc chung ở Bước 2 ("không copy nguyên dòng backlog làm
+> thẳng title/caption") vốn dành cho hook mạng xã hội/video; dòng backlog SEO đã được viết sẵn
+> như một tiêu đề hoàn chỉnh nên giữ nguyên là đúng.
 
 **Thứ tự làm — viết BẢN MDX TRƯỚC, rồi sinh bản MD từ chính nó** (để hai bản không thể lệch chữ,
 không viết tay hai lần):

@@ -404,6 +404,16 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
 2. Input = đúng tên file bài viết vừa lưu (VD `1.5.co-the-can-nhung-khoang-yen-tinh`) —
    Featured Image Factory tự suy luận chủ đề từ slug và tự đặt `filename` output khớp nguyên
    tên bài (thêm đuôi `.jpg`), không cần tự viết prompt tay.
+
+> **Bắt buộc tự kiểm "2 giây" trước khi chốt Subject** (xác nhận 06/08/2026, sau khi bị sửa lỗi
+> dùng ảnh quá chung chung không liên quan bài viết — VD bài về so sánh huyết áp cao/thấp lại
+> chọn ảnh "người ngồi cầm ly nước", bài về huyết áp tăng âm thầm lại chọn ảnh "tưới cây").
+> Đúng theo `featured_image_editorial_rules.md` mục 14: tự hỏi "nếu người đọc chỉ nhìn ảnh 2
+> giây, họ có đoán đúng bài viết nói về điều gì không?" — nếu KHÔNG, chọn lại Concept/Subject
+> trước khi viết Prompt. Với chủ đề trừu tượng (VD "diễn tiến âm thầm", "so sánh cao/thấp"),
+> ưu tiên giữ lại một vật thể/hành động gắn trực tiếp với chủ đề bài (VD máy đo huyết áp, cử
+> chỉ tự kiểm cơ thể) làm mỏ neo thị giác, thay vì chọn một cảnh sinh hoạt chung chung chỉ vì
+> đúng Concept Lifestyle — đúng Concept nhưng sai Subject vẫn tính là lỗi.
 3. Featured Image **không bao giờ có nhân vật Hiền triết Anh Minh** — đây là ảnh minh họa nội
    dung chung (người vô danh/phong cảnh/đồ vật), không phải ảnh nhân vật thương hiệu. Không tra
    `core-brain/image_style_bible.md` cho việc này.

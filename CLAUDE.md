@@ -404,20 +404,27 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
 2. Input = đúng tên file bài viết vừa lưu (VD `1.5.co-the-can-nhung-khoang-yen-tinh`) —
    Featured Image Factory tự suy luận chủ đề từ slug và tự đặt `filename` output khớp nguyên
    tên bài (thêm đuôi `.jpg`), không cần tự viết prompt tay.
-
-> **Bắt buộc tự kiểm "2 giây" trước khi chốt Subject** (xác nhận 06/08/2026, sau khi bị sửa lỗi
-> dùng ảnh quá chung chung không liên quan bài viết — VD bài về so sánh huyết áp cao/thấp lại
-> chọn ảnh "người ngồi cầm ly nước", bài về huyết áp tăng âm thầm lại chọn ảnh "tưới cây").
-> Đúng theo `featured_image_editorial_rules.md` mục 14: tự hỏi "nếu người đọc chỉ nhìn ảnh 2
-> giây, họ có đoán đúng bài viết nói về điều gì không?" — nếu KHÔNG, chọn lại Concept/Subject
-> trước khi viết Prompt. Với chủ đề trừu tượng (VD "diễn tiến âm thầm", "so sánh cao/thấp"),
-> ưu tiên giữ lại một vật thể/hành động gắn trực tiếp với chủ đề bài (VD máy đo huyết áp, cử
-> chỉ tự kiểm cơ thể) làm mỏ neo thị giác, thay vì chọn một cảnh sinh hoạt chung chung chỉ vì
-> đúng Concept Lifestyle — đúng Concept nhưng sai Subject vẫn tính là lỗi.
-3. Featured Image **không bao giờ có nhân vật Hiền triết Anh Minh** — đây là ảnh minh họa nội
+3. **TỰ KIỂM "2 GIÂY" — BẮT BUỘC, KHÔNG ĐƯỢC BỎ QUA, làm TRƯỚC khi viết Prompt hoàn chỉnh**
+   (chốt 06/08/2026, sau sự cố thật: bài so sánh huyết áp cao/thấp ra ảnh "người ngồi cầm ly
+   nước", bài huyết áp tăng âm thầm ra ảnh "tưới cây" — cả hai đều đúng Concept Lifestyle nhưng
+   Subject không ai đoán được bài nói về huyết áp). Quy tắc này vốn đã có sẵn trong
+   `featured_image_editorial_rules.md` mục 14 và `featured_image_checklist.md` mục 1 — lỗi
+   thật không phải vì thiếu quy tắc, mà vì đọc file rules xong không thực sự tự hỏi lại câu này
+   trước khi chốt Subject. Từ nay bắt buộc dừng lại tự hỏi đúng nguyên văn:
+   *"Nếu người đọc chỉ nhìn Featured Image này trong khoảng 2 giây, họ có đoán đúng bài viết
+   đang nói về điều gì không?"*
+   - Nếu **CÓ** → được viết Prompt hoàn chỉnh, sang bước 4.
+   - Nếu **KHÔNG** → STOP, chọn lại Subject, không viết Prompt cho Subject vừa loại.
+   - Với chủ đề trừu tượng (VD "diễn tiến âm thầm", "so sánh cao/thấp", "thay đổi theo tuổi
+     tác"): ưu tiên giữ một vật thể/hành động gắn trực tiếp với chủ đề bài làm mỏ neo thị giác
+     (VD máy đo huyết áp, cử chỉ tự kiểm cơ thể, cận cảnh chi tiết cơ thể được nhắc trong bài)
+     — KHÔNG chọn một cảnh sinh hoạt chung chung chỉ vì nó đúng Concept (VD "Lifestyle" không
+     có nghĩa là bất kỳ cảnh đời thường nào cũng hợp — nó phải là cảnh đời thường THUỘC ĐÚNG
+     chủ đề bài).
+4. Featured Image **không bao giờ có nhân vật Hiền triết Anh Minh** — đây là ảnh minh họa nội
    dung chung (người vô danh/phong cảnh/đồ vật), không phải ảnh nhân vật thương hiệu. Không tra
    `core-brain/image_style_bible.md` cho việc này.
-4. **KHÔNG** cho prompt ảnh vào file bài viết (giữ đúng quy tắc pure-content ở Bước 5).
+5. **KHÔNG** cho prompt ảnh vào file bài viết (giữ đúng quy tắc pure-content ở Bước 5).
    Thay vào đó, lưu thành **1 file riêng cho mỗi bài** trong Google Drive, thư mục
    "Anh Minh - N8N Trigger" → **"Prompt-Featured-Image"** (parentId
    `17ni-02iYzjljg0IM1E9aQcPShtxhiE0I`, dùng `create_file`):
@@ -428,10 +435,15 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
      dòng: Image Type, Category, Concept, Subject, Prompt, Negative Prompt, Aspect Ratio,
      Suggested Size, Filename, Alt Text, Caption.
    - Không ghi đè file cũ trừ khi đang sửa đúng bài đó.
-5. **KHÔNG còn dùng file Excel `prompt-anh.xlsx`** và **KHÔNG dùng repo GitHub nào** cho việc
+6. **KHÔNG còn dùng file Excel `prompt-anh.xlsx`** và **KHÔNG dùng repo GitHub nào** cho việc
    này (bỏ hẳn 06/08/2026). Mỗi prompt là một file Drive riêng như trên, n8n đọc trực tiếp;
    không cần bảng tổng hợp trung gian.
-6. Sau khi tạo xong, gửi link cả 3 file (mdx, md, prompt ảnh) cho người dùng.
+7. Sau khi tạo xong, gửi link cả 3 file (mdx, md, prompt ảnh) cho người dùng.
+
+> ⚠️ **Công cụ Drive hiện có KHÔNG hỗ trợ xóa hay ghi đè file** — chỉ có `create_file`. Nếu phát
+> hiện một prompt ảnh đã lưu bị sai (như sự cố 06/08/2026 ở trên) và cần sửa, tạo file mới đúng
+> nội dung rồi **báo rõ cho người dùng ID/link file CŨ cần tự xóa thủ công**, không im lặng để
+> hai file trùng tên (một đúng, một sai) cùng tồn tại trong thư mục mà không cảnh báo.
 
 ### Bước 6 — CÁC THƯ MỤC GOOGLE DRIVE N8N THEO DÕI (KHÔNG manifest JSON nào — cập nhật 06/08/2026)
 

@@ -4,7 +4,7 @@
 > website (Next.js/MDX) — khác với `output_schema.md` (khuôn field nội bộ của Factory) và
 > `web_content_rules.md` (quy tắc viết nội dung).
 > Nguồn: Claude website bàn giao ngày 26/07/2026, file gốc `huong-dan-dang-bai-seo.md`.
-> Cập nhật: 26/07/2026.
+> Cập nhật: 06/08/2026 — quay lại "chỉ Drive", bỏ hẳn GitHub và `.meta.json` cho bài SEO (mục 6).
 
 > ⚠️ **FILE NÀY CHƯA ĐẦY ĐỦ.** Mới nhận được bản tóm tắt, chưa nhận toàn văn
 > `huong-dan-dang-bai-seo.md`. Hai phần còn thiếu được đánh dấu **[CHƯA CÓ]** bên dưới — chưa
@@ -58,8 +58,10 @@ featured: false
 
 **Ánh xạ frontmatter với `output_schema.md`:** `title` ← Title · `excerpt` ← Excerpt ·
 `tags` ← Tags · `subcategory` là field MỚI, chưa có trong output_schema. Các field Slug, Meta
-Description, Category, Internal Links, References **không có chỗ trong frontmatter** — vẫn giữ
-ở `.meta.json` cho n8n.
+Description, Category **không có chỗ trong frontmatter** — suy ra được từ tên file/thư mục
+chuyên mục (mục 1 và mục 3), nên KHÔNG cần file manifest riêng cho chúng (cập nhật 06/08/2026 —
+không còn `.meta.json`, xem mục 6). Internal Links nằm ngay trong link markdown của body.
+References để trống thì không đưa vào file nào cả.
 
 ---
 
@@ -140,46 +142,48 @@ Gia vị Việt & Bí quyết bếp nhà · Quà từ căn bếp · Nơi bình y
 
 ---
 
-## 6. MỖI BÀI SEO LƯU 3 NƠI (cập nhật 05/08/2026 — người vận hành chốt)
+## 6. MỖI BÀI SEO LƯU VÀO 3 THƯ MỤC GOOGLE DRIVE — KHÔNG DÙNG GITHUB (cập nhật 06/08/2026 — người
+vận hành chốt lại "chỉ Drive")
 
-Từ 05/08/2026, mỗi bài SEO viết xong phải xuất **hai bản**, lưu vào **ba nơi**:
+> **Lịch sử đổi qua đổi lại:** 21/07/2026 chốt "chỉ Drive, ngừng GitHub" → 05/08/2026 thử quay
+> lại "2 bản GitHub + 1 bản Drive" → 06/08/2026 người vận hành xác nhận qua ảnh chụp thư mục Drive
+> thật đang dùng: **quay lại hẳn "chỉ Drive"**, không dùng repo GitHub nào cho bài SEO nữa. Đây là
+> quyết định hiện hành, không phải quyết định tạm.
 
-| Bản | Nơi lưu | Định dạng | Dùng cho |
+Mỗi bài SEO viết xong xuất **3 file**, mỗi file lưu vào **1 thư mục Drive riêng** trong "Anh Minh
+- N8N Trigger":
+
+| File | Thư mục Drive | Định dạng | Dùng cho |
 |---|---|---|---|
-| **Bản giọng đọc** | Repo GitHub `nnphuong2016-arch/bai-viet-seo` (file `.md`) | Thuần chữ 100%, không ký tự định dạng nào (`web_content_rules.md` mục 3D) | Pipeline n8n đọc thành tiếng |
-| **Bản giọng đọc** | Google Drive `Bai-viet-SEO` + `<tên bài>.meta.json` | Như trên | Drive Trigger kích hoạt n8n + chứa 8 field metadata |
-| **Bản website** | Repo GitHub `nnphuong2016-arch/Bai-seo-web-MDX-anhminh` (file `.mdx`) | Có frontmatter 7 trường, có `##`/`###`, blockquote, link markdown | Đăng lên web |
+| `.md` | `Bai-viet-SEO` (parentId `1ubrFWlDezfMX91zoV7hqjc1PqnGNZ3Gn`) | Thuần chữ 100%, không ký tự định dạng nào (`web_content_rules.md` mục 3D) | Drive Trigger kích hoạt pipeline giọng đọc |
+| `.mdx` | `Bai-viet-seo-dang-web-MDX` (parentId `1FBUMRZSLWmfe1d3WkdLfp9l0IXm_ihIA`) | Có frontmatter 7 trường, có `##`/`###`, blockquote, link markdown | Đăng lên web |
+| Prompt Featured Image (không đuôi) | `Prompt-Featured-Image` (parentId `17ni-02iYzjljg0IM1E9aQcPShtxhiE0I`) | Field theo `featured-Image-factory/output_schema.md` | n8n tạo ảnh tự động |
 
-**Cách làm để hai bản không bao giờ lệch chữ:** viết bản `.mdx` trước (bản đầy đủ định dạng),
-rồi sinh bản `.md` bằng cách **gỡ lớp định dạng** khỏi chính file đó — bỏ frontmatter, bỏ `#`,
-`>`, `**`, và đổi `[chữ neo](/url)` thành chữ neo trần. Không viết tay hai lần.
+**Cách làm để hai bản md/mdx không bao giờ lệch chữ:** viết bản `.mdx` trước (bản đầy đủ định
+dạng), rồi sinh bản `.md` bằng cách **gỡ lớp định dạng** khỏi chính file đó — bỏ frontmatter, bỏ
+`#`, `>`, `**`, và đổi `[chữ neo](/url)` thành chữ neo trần. Không viết tay hai lần.
 
-> ⚠️ **Câu hỏi chưa chốt (05/08/2026):** khi đã có `.md` trên GitHub thì Google Drive còn cần
-> nữa không? Hiện **vẫn giữ Drive** vì n8n dùng Drive Trigger để kích hoạt pipeline giọng đọc, và
-> `.meta.json` là nơi duy nhất chứa 8 field metadata (Title thẻ SEO, Slug, Meta Description,
-> Excerpt, Category, Tags, Internal Links, References). Bỏ Drive thì phải đổi n8n sang đọc GitHub
-> và tìm chỗ khác cho metadata trước. Cần chốt với Claude n8n.
+**Không còn `.meta.json` nào** (bỏ 06/08/2026) — 7 trường frontmatter trong bản `.mdx` đã đủ cho
+web; Slug/Category suy từ tên file + thư mục chuyên mục; Internal Links nằm sẵn trong link
+markdown của body. Không có field metadata nào bị mất chỗ chứa.
 
-### 6B. QUY CÁCH ĐẶT TÊN — HAI BẢN LUÔN TRÙNG TÊN (chốt 05/08/2026)
+### 6B. QUY CÁCH ĐẶT TÊN — 3 FILE LUÔN TRÙNG TÊN (chốt 05/08/2026, giữ nguyên khi đổi sang Drive)
 
-**Hai bản của cùng một bài phải mang ĐÚNG MỘT TÊN, chỉ khác thư mục và đuôi file** — để người
+**3 file của cùng một bài phải mang ĐÚNG MỘT TÊN, chỉ khác thư mục và đuôi file** — để người
 vận hành đối chiếu được bằng mắt, không phải dò.
 
 ```
 <số chủ đề>.<STT trong chủ đề>.<slug có gạch nối>
 ```
 
-| Bản | Repo | Ví dụ |
+| File | Thư mục Drive | Ví dụ |
 |---|---|---|
-| Giọng đọc | `bai-viet-seo` | `1.1.vi-sao-ngu-du-tam-tieng-van-met.md` |
-| Website | `Bai-seo-web-MDX-anhminh` | `1.1.vi-sao-ngu-du-tam-tieng-van-met.mdx` |
+| Giọng đọc | `Bai-viet-SEO` | `1.1.vi-sao-ngu-du-tam-tieng-van-met.md` |
+| Website | `Bai-viet-seo-dang-web-MDX` | `1.1.vi-sao-ngu-du-tam-tieng-van-met.mdx` |
+| Prompt ảnh | `Prompt-Featured-Image` | `1.1.vi-sao-ngu-du-tam-tieng-van-met` (không đuôi) |
 
 Số chủ đề theo bảng 6 trụ ở `CLAUDE.md` Bước 5.A. STT đếm trong phạm vi từng chủ đề (bài Tâm lý
-đầu tiên là `2.1`, không phải `6`).
-
-> **Lịch sử:** repo MDX ban đầu dùng `<STT>.<slugliềnkhônggạch>.mdx` (VD
-> `1.visaongudutamtiengvanmet.mdx`). Đã đổi hết sang quy cách trên ngày 05/08/2026, vì kiểu cũ
-> không có số chủ đề nên sẽ đụng số ngay khi sang chủ đề thứ hai.
+đầu tiên là `2.1`, không phải `6`) — đếm bằng cách liệt kê file trong thư mục Drive `Bai-viet-SEO`.
 
 > ⚠️ **Rủi ro còn lại — phải kiểm trước khi đăng loạt tiếp theo:** internal link trong bài đang
 > trỏ dạng `/[category-slug]/[slug-có-gạch-nối]`, VD `/suc-khoe/vi-sao-ngu-du-tam-tieng-van-met`
@@ -195,7 +199,8 @@ Số chủ đề theo bảng 6 trụ ở `CLAUDE.md` Bước 5.A. STT đếm tro
 - [x] ~~Danh sách trường frontmatter~~ — đã nhận 26/07/2026, xem mục 2.
 - [ ] Danh sách slug mục con thật (mục 4) + làm rõ 76 hay 78.
 - [ ] Chốt tên hiển thị của trụ 4 (mục 3).
-- [ ] Chốt còn dùng Google Drive song song hay không (mục 6).
+- [x] ~~Chốt còn dùng Google Drive song song hay không~~ — chốt 06/08/2026: **chỉ Drive, không
+      dùng GitHub**, xem mục 6.
 - [ ] **Kiểm URL thật khi có bài lên web** (mục 6B) — internal link đang trỏ dạng
       `/[category]/[slug]` không kèm phần số. Chưa kiểm được: bài đang có trên web là **bài mẫu
       dựng tạm, người vận hành sẽ xoá** (xác nhận 05/08/2026), nên không dùng nó để đối chiếu URL

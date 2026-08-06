@@ -421,6 +421,14 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
      — KHÔNG chọn một cảnh sinh hoạt chung chung chỉ vì nó đúng Concept (VD "Lifestyle" không
      có nghĩa là bất kỳ cảnh đời thường nào cũng hợp — nó phải là cảnh đời thường THUỘC ĐÚNG
      chủ đề bài).
+   - **Nếu chủ đề CHÍNH của bài là cấu trúc/bộ phận bên trong cơ thể** (VD mạch máu, nội tạng,
+     cơ chế sinh lý) chứ không phải một hành vi/thói quen sống — cân nhắc đổi hẳn Concept sang
+     **Medical Illustration** thay vì cố ép Lifestyle (đúng theo `featured_image_editorial_rules.md`
+     mục 6 "Nội tạng → Medical Illustration" và `featured_image_style_rules.md` mục 12). Một
+     ảnh chụp đời thường — dù có vật thể neo tốt tới đâu — vẫn khó truyền tải đúng chủ đề khi
+     bài thực chất đang nói về cấu trúc bên trong, không phải một thói quen sống. Vẫn giữ đúng
+     bảng màu thương hiệu (beige, cream, warm gold, walnut brown — KHÔNG dùng đỏ/xanh y khoa
+     gắt), phong cách minh họa nhẹ nhàng/giáo dục, không máu, không rùng rợn.
 4. Featured Image **không bao giờ có nhân vật Hiền triết Anh Minh** — đây là ảnh minh họa nội
    dung chung (người vô danh/phong cảnh/đồ vật), không phải ảnh nhân vật thương hiệu. Không tra
    `core-brain/image_style_bible.md` cho việc này.

@@ -404,31 +404,23 @@ Ngay sau khi một bài SEO đã lưu xong (Bước 5), luôn tạo kèm **1 Fea
 2. Input = đúng tên file bài viết vừa lưu (VD `1.5.co-the-can-nhung-khoang-yen-tinh`) —
    Featured Image Factory tự suy luận chủ đề từ slug và tự đặt `filename` output khớp nguyên
    tên bài (thêm đuôi `.jpg`), không cần tự viết prompt tay.
-3. **TỰ KIỂM "2 GIÂY" — BẮT BUỘC, KHÔNG ĐƯỢC BỎ QUA, làm TRƯỚC khi viết Prompt hoàn chỉnh**
-   (chốt 06/08/2026, sau sự cố thật: bài so sánh huyết áp cao/thấp ra ảnh "người ngồi cầm ly
-   nước", bài huyết áp tăng âm thầm ra ảnh "tưới cây" — cả hai đều đúng Concept Lifestyle nhưng
-   Subject không ai đoán được bài nói về huyết áp). Quy tắc này vốn đã có sẵn trong
-   `featured_image_editorial_rules.md` mục 14 và `featured_image_checklist.md` mục 1 — lỗi
-   thật không phải vì thiếu quy tắc, mà vì đọc file rules xong không thực sự tự hỏi lại câu này
-   trước khi chốt Subject. Từ nay bắt buộc dừng lại tự hỏi đúng nguyên văn:
-   *"Nếu người đọc chỉ nhìn Featured Image này trong khoảng 2 giây, họ có đoán đúng bài viết
-   đang nói về điều gì không?"*
+3. **LẤY Ý CHÍNH BÀI VIẾT LÀM SUBJECT TRỰC TIẾP + TỰ KIỂM "2 GIÂY" — BẮT BUỘC, làm TRƯỚC khi
+   viết Prompt hoàn chỉnh** (chốt 06/08/2026, sau sự cố thật: nhiều Featured Image chọn Subject
+   là cảnh đời sống chung chung — VD "người cầm ly nước" cho bài so sánh huyết áp cao/thấp,
+   "người tưới cây" cho bài huyết áp tăng âm thầm — đúng Concept Lifestyle nhưng Subject không
+   ai đoán được bài nói về điều gì). Quy tắc gốc và ví dụ áp dụng theo từng loại chủ đề (bộ
+   phận cơ thể, giấc ngủ, cảm xúc, thói quen...) nằm ở `featured_image_editorial_rules.md`
+   mục 7B — đọc kỹ mục đó trước khi chọn Subject, không tự suy diễn xa khỏi nội dung bài thật.
+   Sau khi chọn Subject theo đúng mục 7B, tự hỏi đúng nguyên văn: *"Nếu người đọc chỉ nhìn
+   Featured Image này trong khoảng 2 giây, họ có đoán đúng bài viết đang nói về điều gì
+   không?"*
    - Nếu **CÓ** → được viết Prompt hoàn chỉnh, sang bước 4.
-   - Nếu **KHÔNG** → STOP, chọn lại Subject, không viết Prompt cho Subject vừa loại.
-   - Với chủ đề trừu tượng (VD "diễn tiến âm thầm", "so sánh cao/thấp", "thay đổi theo tuổi
-     tác"): ưu tiên giữ một vật thể/hành động gắn trực tiếp với chủ đề bài làm mỏ neo thị giác
-     (VD máy đo huyết áp, cử chỉ tự kiểm cơ thể, cận cảnh chi tiết cơ thể được nhắc trong bài)
-     — KHÔNG chọn một cảnh sinh hoạt chung chung chỉ vì nó đúng Concept (VD "Lifestyle" không
-     có nghĩa là bất kỳ cảnh đời thường nào cũng hợp — nó phải là cảnh đời thường THUỘC ĐÚNG
-     chủ đề bài).
-   - **Nếu chủ đề CHÍNH của bài là cấu trúc/bộ phận bên trong cơ thể** (VD mạch máu, nội tạng,
-     cơ chế sinh lý) chứ không phải một hành vi/thói quen sống — cân nhắc đổi hẳn Concept sang
-     **Medical Illustration** thay vì cố ép Lifestyle (đúng theo `featured_image_editorial_rules.md`
-     mục 6 "Nội tạng → Medical Illustration" và `featured_image_style_rules.md` mục 12). Một
-     ảnh chụp đời thường — dù có vật thể neo tốt tới đâu — vẫn khó truyền tải đúng chủ đề khi
-     bài thực chất đang nói về cấu trúc bên trong, không phải một thói quen sống. Vẫn giữ đúng
-     bảng màu thương hiệu (beige, cream, warm gold, walnut brown — KHÔNG dùng đỏ/xanh y khoa
-     gắt), phong cách minh họa nhẹ nhàng/giáo dục, không máu, không rùng rợn.
+   - Nếu **KHÔNG** → STOP, quay lại mục 7B chọn Subject khác, không viết Prompt cho Subject
+     vừa loại.
+   - Nếu chủ đề CHÍNH của bài là cấu trúc/bộ phận bên trong cơ thể (mạch máu, nội tạng, cơ
+     chế sinh lý) chứ không phải một hành vi/thói quen sống → đổi hẳn Concept sang **Medical
+     Illustration** (đúng `featured_image_editorial_rules.md` mục 6), vẫn giữ bảng màu thương
+     hiệu, phong cách nhẹ nhàng/giáo dục, không máu/rùng rợn.
 4. Featured Image **không bao giờ có nhân vật Hiền triết Anh Minh** — đây là ảnh minh họa nội
    dung chung (người vô danh/phong cảnh/đồ vật), không phải ảnh nhân vật thương hiệu. Không tra
    `core-brain/image_style_bible.md` cho việc này.

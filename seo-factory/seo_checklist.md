@@ -14,8 +14,10 @@ kiểm trong 30 giây trước khi chạy hết checklist đầy đủ bên dư�
 
 - ☐ **Title > 60 ký tự?** → STOP, viết lại ngắn hơn (`keyword_strategy.md` mục 5).
 - ☐ **Slug dài/có stopword thừa** ("la-gi", "nhu-the-nao", "mot", "ma", "van"...)? → STOP, rút gọn.
-- ☐ **Thiếu dòng minh bạch AI** ("AI Hiền triết Anh Minh là một nhân vật AI")? → STOP, thêm ngay,
-  không xuất bài chạm sức khỏe/tâm lý mà thiếu dòng này.
+- ☐ **Bài thuộc Tâm lý & đời sống mà thiếu dòng minh bạch AI** ("AI Hiền triết Anh Minh là một
+  nhân vật AI")? → STOP, thêm ngay theo khối rút gọn ở `CLAUDE.md` Bước 5.A. (Riêng bài Sức khỏe
+  từ 06/08/2026 KHÔNG còn bắt buộc dòng này trong khối đóng bài — xem khối đóng bài chuẩn mới ở
+  `CLAUDE.md` Bước 5.A, không áp dụng mục này cho Sức khỏe nữa.)
 - ☐ **Disclaimer bị nhét nhầm vào field References**? → STOP, tách riêng: References = nguồn
   trích dẫn thật (hoặc để trống), Disclaimer nằm trong Body theo `article_templates.md`.
 - ☐ **Thiếu ngày cập nhật** hiển thị trong bài? → STOP, thêm "Cập nhật: ..." theo đúng ngày.

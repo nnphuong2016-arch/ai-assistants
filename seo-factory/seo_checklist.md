@@ -65,10 +65,12 @@ Qua được cả 6 điều trên mới chạy tiếp checklist mục 1–5 bên
   field `Internal Links` riêng, KHÔNG nhúng link markdown vào Body (`internal_link_rules.md` mục 4)?
 - ☐ Đầu ra đã đóng đúng khuôn `output_schema.md` (đủ field, đúng thứ tự)?
 
-## 6. CHẤT LƯỢNG BIÊN TẬP (tự kiểm thêm — không phải điều kiện xuất bản như mục 1–5)
+## 6. CHẤT LƯỢNG BIÊN TẬP (bắt buộc — phần của bước đọc lại sau khi viết, xem `CLAUDE.md` Bước 4,
+cập nhật 07/08/2026)
 
-Đối chiếu nhanh với `writing_craft_examples.md` trước khi coi là xong (mục này chỉ để bài hay
-hơn, không phải rào chắn PASS/FAIL — nếu bỏ qua, bài vẫn hợp lệ để xuất):
+Đối chiếu với `writing_craft_examples.md`. Mục này không chỉ để phát hiện lỗi mà để **chủ động
+viết lại cho bài hay hơn, hấp dẫn hơn** — thấy chỗ nào nhạt/lặp/chung chung thì sửa ngay tại chỗ
+đó, không liệt kê ra rồi để nguyên:
 
 - ☐ Có 3 đoạn liên tiếp nào cùng khuôn "giải thích → ví dụ → kết luận" không?
 - ☐ Có đoạn nào mở bằng đúng cụm giống đoạn ngay trước nó không ("có lẽ", "đôi khi", "nhiều người"...)?

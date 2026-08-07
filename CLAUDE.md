@@ -260,35 +260,36 @@ Nội dung file (áp dụng cho phần thân bài của CẢ HAI bản):
 
      | Chủ đề | Minh bạch AI | Miễn trừ y khoa |
      |---|---|---|
-     | Sức khỏe (1) | Có | Có — dùng khối đầy đủ dưới đây |
+     | Sức khỏe (1) | Không — bỏ 06/08/2026, xem khối đóng bài mới dưới đây | Có — dùng khối đầy đủ dưới đây |
      | Tâm lý & đời sống (2) | **Có** — dùng khối rút gọn ở cuối mục này | Không |
      | Dưỡng sinh, Triết lý, Đồng hành, Bếp An Nhiên | Không bắt buộc | Không |
 
      (Mẫu D — Đồng hành — có khối kết riêng theo `dong_hanh_nguoi_benh.md`, giữ nguyên.)
 
-   - **Khối đóng bài chuẩn (bắt buộc, CHỈ áp dụng cho bài thuộc chủ đề Sức khỏe — số 1):** đặt
-     cuối file, sau FAQ, dùng đúng khuôn dưới đây — dòng tiêu đề "Lưu ý" (viết trơn, KHÔNG có
-     `###` đứng trước, theo mục 3D) tạo ranh giới rõ giữa đoạn kết cảm xúc của bài và phần thông
-     tin bắt buộc, tránh gãy mạch/gây hụt hẫng cho người
-     đọc. Mở đầu bằng tên nhân vật "Hiền triết Anh Minh" (không mở đầu bằng chữ "AI") — vẫn giữ
-     đủ minh bạch AI ngay trong cùng câu, chỉ đổi từ đầu tiên người đọc thấy. **Các chủ đề khác
-     (Dưỡng sinh, Triết lý, Đồng hành, Bếp An Nhiên) KHÔNG dùng khối này; **Tâm lý dùng khối
-     rút gọn** ghi ở cuối mục — khớp đúng
+   - **Khối đóng bài chuẩn (bắt buộc, CHỈ áp dụng cho bài thuộc chủ đề Sức khỏe — số 1, chốt lại
+     06/08/2026 theo yêu cầu người vận hành — áp dụng cho MỌI bài Sức khỏe, kể cả các bài đã lưu
+     trước đó, cần sửa lại theo đúng khối mới này):** đặt cuối file, sau FAQ, dùng đúng khuôn
+     dưới đây — dòng tiêu đề "Lưu ý" (viết trơn, KHÔNG có `###` đứng trước, theo mục 3D) tạo
+     ranh giới rõ giữa đoạn kết cảm xúc của bài và phần thông tin bắt buộc, tránh gãy mạch/gây
+     hụt hẫng cho người đọc. **Không còn nhắc tên nhân vật hay chữ "AI" trong khối này** — dòng
+     minh bạch AI đã bị bỏ khỏi khối đóng bài Sức khỏe theo quyết định 06/08/2026 (xem bảng ở
+     trên). **Các chủ đề khác (Dưỡng sinh, Triết lý, Đồng hành, Bếp An Nhiên) KHÔNG dùng khối
+     này; Tâm lý dùng khối rút gọn** ghi ở cuối mục — chưa đổi, vẫn giữ nguyên như cũ, khớp đúng
      `web_content_rules.md` mục 2 (disclaimer y khoa chỉ bắt buộc cho bài chạm sức khỏe) và
      `article_templates.md` (Mẫu C triết lý không cần disclaimer y khoa, Mẫu D đồng hành có
      khối kết riêng theo `dong_hanh_nguoi_benh.md`). Nếu một bài ở chủ đề khác có chạm nhẹ tới
      sức khỏe, cân nhắc theo đúng tinh thần "chỉ cần khi bài thật sự nói về sức khỏe", không áp
-     máy móc.
+     máy móc. Các chủ đề khác (Tâm lý, Dưỡng sinh, Triết lý, Đồng hành, Bếp An Nhiên) người vận
+     hành sẽ chốt khối đóng bài riêng sau — chưa áp dụng thay đổi này cho các chủ đề đó.
 
      ```
      Lưu ý
 
-     Hiền triết Anh Minh là nhân vật nội dung AI của Funamark, chia sẻ các góc nhìn về lối sống
-     ở mức phổ thông. Nội dung không thay thế tư vấn, chẩn đoán hoặc điều trị y khoa. Nếu triệu
-     chứng kéo dài hoặc ảnh hưởng đến sinh hoạt hằng ngày, hãy trao đổi với bác sĩ hoặc chuyên
-     gia phù hợp.
+     Đây là chia sẻ các góc nhìn về lối sống ở mức phổ thông, không thay thế tư vấn, chẩn đoán
+     hoặc điều trị y khoa. Nếu triệu chứng kéo dài hoặc ảnh hưởng đến sinh hoạt hằng ngày, hãy
+     trao đổi với bác sĩ chuyên môn.
 
-     Cập nhật lần cuối: <ngày cập nhật thật của bài, không copy cố định>
+     Cập nhật: <ngày cập nhật thật của bài, không copy cố định>
      ```
    - KHÔNG cho vào file: Title thẻ SEO (khác H1), Meta Description, Loại bài, tên Hook đã dùng,
      ghi chú kiểu "References để trống vì...", "chưa có internal link vì...". Đây là nội dung

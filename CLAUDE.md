@@ -186,13 +186,20 @@ Luôn chạy qua đúng file `*_checklist.md` (hoặc `seo_checklist.md`/`commun
 `image_checklist.md`) của Factory tương ứng trước khi coi là xong — không xuất nội dung "tạm
 được" rồi sửa sau.
 
-> **Bắt buộc đọc lại từng bài sau khi viết xong** (xác nhận 06/08/2026): viết xong một bài là
-> chưa xong việc — phải đọc lại toàn bộ bài đó, đối chiếu từng điểm với checklist (mục 0 Quick
-> Fail + mục 1–5 của `seo_checklist.md`, hoặc checklist tương ứng của Factory đang làm), và tự
-> tìm xem có sai sót gì không: tên/tiêu đề có đúng nguyên văn backlog không (xem Bước 5.A), số
-> thứ tự file có đúng không, độ dài có đúng khoảng quy định không, Body bản `.md` có còn sót ký
-> tự định dạng không, có đoạn nào lặp ý/lan man/nghe rõ là AI viết không. Sai chỗ nào thì sửa
-> ngay tại chỗ đó trước khi lưu — không lưu bài "chắc là ổn" rồi để sai sót lọt qua.
+> **Bắt buộc đọc lại từng bài sau khi viết xong** (xác nhận 06/08/2026, bổ sung 07/08/2026): viết
+> xong một bài là chưa xong việc — phải đọc lại toàn bộ bài đó, đối chiếu từng điểm với checklist
+> (mục 0 Quick Fail + mục 1–5 của `seo_checklist.md`, hoặc checklist tương ứng của Factory đang
+> làm), và tự tìm xem có sai sót gì không: tên/tiêu đề có đúng nguyên văn backlog không (xem Bước
+> 5.A), số thứ tự file có đúng không, độ dài có đúng khoảng quy định không, Body bản `.md` có còn
+> sót ký tự định dạng không, có đoạn nào lặp ý/lan man/nghe rõ là AI viết không.
+>
+> **Không dừng lại ở việc bắt lỗi — phải chủ động sửa lại cho bài hay hơn, hấp dẫn hơn**: đọc
+> tiếp theo đúng mục 6 "Chất lượng biên tập" của `seo_checklist.md` (nay là phần bắt buộc của
+> bước đọc lại này, không còn là tự kiểm tùy chọn) — tìm đoạn nào đọc còn nhạt/chung chung/sáo
+> rỗng, câu nào nghe rõ là AI viết, chỗ nào ý bị lặp giữa các H2, mở bài/kết bài có đủ cuốn
+> người đọc chưa, ví dụ có đủ cụ thể/sống động chưa. Thấy chỗ nào nhạt hoặc sai thì **viết lại
+> ngay tại chỗ đó**, không chỉ liệt kê ra rồi để nguyên. Không lưu bài "đúng checklist kỹ thuật
+> là đủ" rồi để một bài nhạt, lặp ý, hoặc đọc chán lọt qua.
 
 ### Bước 5 — LƯU KẾT QUẢ VÀO ĐÚNG NƠI OUTPUT (bắt buộc, không nhầm lẫn)
 

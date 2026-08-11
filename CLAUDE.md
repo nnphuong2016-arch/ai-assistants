@@ -124,8 +124,8 @@ một kho nữa)
    thấy bài đang viết còn mỏng hoặc lệch khuôn. Đọc TRƯỚC checklist — bài mẫu để viết, checklist
    để kiểm; thứ tự này khớp `seo-factory/instructions_SEO.md` mục 3.
 7. `seo-factory/seo_checklist.md` — tự kiểm TRƯỚC khi xuất, bắt buộc không bỏ qua (mục 0 Quick
-   Fail: title dài, slug thừa stopword, thiếu minh bạch AI, Disclaimer lẫn References, thiếu
-   ngày cập nhật, Body còn ký tự định dạng — sai 1 trong 6 điều này thì dừng và sửa ngay).
+   Fail: title dài, slug thừa stopword, thiếu minh bạch AI, Disclaimer lẫn References, disclaimer
+   y khoa lặp 2 lần, Body còn ký tự định dạng — sai 1 trong 6 điều này thì dừng và sửa ngay).
 8. `seo-factory/internal_link_rules.md` — gắn 2–5 internal link (ghi ở field `Internal Links`,
    không nhúng markdown vào Body — mục 4 của file đó).
 9. `core-brain/channel_roles.md` — vai trò Website so với Facebook/YouTube, tránh viết trùng vai
@@ -254,8 +254,10 @@ Nội dung file (áp dụng cho phần thân bài của CẢ HAI bản):
 2. **File CHỈ chứa đúng nội dung bài viết (những gì hiển thị cho người đọc trên web) — KHÔNG
    thêm bất kỳ chữ/field/ghi chú nào khác** (riêng bản `.mdx` có thêm frontmatter ở đầu):
    - CÓ trong file: tiêu đề bài, toàn văn thân bài, FAQ hiển thị trên trang (Q&A thật),
-     disclaimer + minh bạch AI + ngày cập nhật (đây là nội dung bắt buộc hiển thị ở chân bài
-     theo `web_content_rules.md`, không phải ghi chú nội bộ).
+     disclaimer + minh bạch AI (đây là nội dung bắt buộc hiển thị ở chân bài theo
+     `web_content_rules.md`, không phải ghi chú nội bộ). **Không còn ghi "Cập nhật: ngày"** — bỏ
+     hẳn 11/08/2026 theo yêu cầu người vận hành (lý do: field này không phục vụ người đọc, và khi
+     ép mỗi bài phải có dòng ngày tháng cuối bài, AI dễ sinh thêm câu đệm để "đủ format" quanh nó).
    - **Viết thuần chữ 100%** theo `web_content_rules.md` mục 3D: KHÔNG `#`, `-`, `—`, `*`,
      bảng, link markdown — vì pipeline giọng đọc sẽ đọc thành lời mọi ký tự còn sót. Tiêu đề
      mục viết thành một dòng chữ riêng; n8n/CMS tự bọc thẻ `<h2>` khi đăng web.
@@ -274,8 +276,8 @@ Nội dung file (áp dụng cho phần thân bài của CẢ HAI bản):
      (Mẫu D — Đồng hành — có khối kết riêng theo `dong_hanh_nguoi_benh.md`, giữ nguyên.)
 
    - **Khối đóng bài chuẩn (bắt buộc, CHỈ áp dụng cho bài thuộc chủ đề Sức khỏe — số 1, chốt lại
-     06/08/2026 theo yêu cầu người vận hành — áp dụng cho MỌI bài Sức khỏe, kể cả các bài đã lưu
-     trước đó, cần sửa lại theo đúng khối mới này):** đặt cuối file, sau FAQ, dùng đúng khuôn
+     06/08/2026 theo yêu cầu người vận hành, bỏ dòng "Cập nhật: ngày" ngày 11/08/2026 — áp dụng
+     cho MỌI bài Sức khỏe, kể cả các bài đã lưu trước đó, cần sửa lại theo đúng khối mới này):** đặt cuối file, sau FAQ, dùng đúng khuôn
      dưới đây — dòng tiêu đề "Lưu ý" (viết trơn, KHÔNG có `###` đứng trước, theo mục 3D) tạo
      ranh giới rõ giữa đoạn kết cảm xúc của bài và phần thông tin bắt buộc, tránh gãy mạch/gây
      hụt hẫng cho người đọc. **Không còn nhắc tên nhân vật hay chữ "AI" trong khối này** — dòng
@@ -295,9 +297,14 @@ Nội dung file (áp dụng cho phần thân bài của CẢ HAI bản):
      Đây là chia sẻ các góc nhìn về lối sống ở mức phổ thông, không thay thế tư vấn, chẩn đoán
      hoặc điều trị y khoa. Nếu triệu chứng kéo dài hoặc ảnh hưởng đến sinh hoạt hằng ngày, hãy
      trao đổi với bác sĩ chuyên môn.
-
-     Cập nhật: <ngày cập nhật thật của bài, không copy cố định>
      ```
+
+     > **Không lặp disclaimer** (chốt 11/08/2026, sau khi bị người vận hành bắt lỗi 50 bài SEO đầu
+     > tiên đều mắc): khối "Lưu ý" trên là nơi DUY NHẤT nhắc "không thay thế tư vấn y khoa". Nếu
+     > bài có mục "Khi nào nên tìm đến bác sĩ" ở giữa thân bài, mục đó chỉ nêu dấu hiệu cụ thể nên
+     > đi khám — KHÔNG lặp lại câu kiểu "những chia sẻ trên chỉ ở mức thói quen sống chung, không
+     > thay thế tư vấn y khoa" ngay sau đó, vì khối Lưu ý cuối bài đã nói đúng ý này rồi. Đọc lại
+     > bài (Bước 4) phải tự rà xem có bị lặp ý này không trước khi coi là xong.
    - KHÔNG cho vào file: Title thẻ SEO (khác H1), Meta Description, Loại bài, tên Hook đã dùng,
      ghi chú kiểu "References để trống vì...", "chưa có internal link vì...". Đây là nội dung
      chỉ dùng nội bộ lúc soạn — nếu cần lưu lại, ghi trong phần trả lời cho người dùng, KHÔNG

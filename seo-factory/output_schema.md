@@ -49,7 +49,8 @@ không thêm field ngoài danh sách.
 - Body là văn bản thuần 100% chữ liền mạch — KHÔNG markdown, KHÔNG HTML, KHÔNG bất kỳ ký tự
   định dạng/phân cách nào (`#`, `-`, `--`, `—`, `*`, `•`...), theo `web_content_rules.md`
   mục 3D — pipeline giọng đọc cần đọc được nguyên văn không vấp ký tự lạ.
-- Không chèn disclaimer/ngày cập nhật như field riêng — chúng nằm trong Body, ở vị trí đã
-  quy định tại `web_content_rules.md` và `article_templates.md`.
+- Không chèn disclaimer như field riêng — nằm trong Body, ở vị trí đã quy định tại
+  `web_content_rules.md` và `article_templates.md`. Không còn field/dòng "ngày cập nhật" (bỏ
+  11/08/2026 — bài SEO không còn ghi "Cập nhật: ..." ở cuối nữa).
 - **Reading Time không nằm trong khuôn xuất** — pipeline/CMS tự tính từ độ dài `Body`
   (khoảng 200–250 từ/phút). Không để AI tự ước lượng số phút đọc, vì AI đếm từ không đáng tin.

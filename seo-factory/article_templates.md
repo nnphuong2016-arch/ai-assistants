@@ -19,8 +19,9 @@
 4. **Thân bài:** các H2/H3, mỗi mục mở bằng 2 câu thẳng rồi khai triển; có list/bảng khi hợp.
 5. **FAQ (3–5 câu):** đúng cách người ta hỏi.
 6. **Kết lắng + một gợi ý áp dụng.**
-7. **Disclaimer + ngày cập nhật + liên kết nội bộ 2–5 bài cùng cụm** (ghi ở field `Internal Links`,
-   không nhúng vào Body — xem `internal_link_rules.md` mục 4).
+7. **Disclaimer (đúng một lần, ở khối "Lưu ý" cuối bài — không lặp lại giữa bài) + liên kết nội
+   bộ 2–5 bài cùng cụm** (ghi ở field `Internal Links`, không nhúng vào Body — xem
+   `internal_link_rules.md` mục 4). Không còn ghi "ngày cập nhật" (bỏ 11/08/2026).
 
 ---
 

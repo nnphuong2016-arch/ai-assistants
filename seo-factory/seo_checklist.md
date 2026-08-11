@@ -9,8 +9,9 @@
 
 ## 0. QUICK FAIL (kiểm trước tiên — sai 1 trong 6 điều này thì DỪNG, sửa ngay, không viết tiếp)
 
-Rút từ lỗi thực tế gặp phải khi so bài với một bản viết khác (12/07/2026, bổ sung 21/07/2026) — 6 lỗi hay gặp nhất,
-kiểm trong 30 giây trước khi chạy hết checklist đầy đủ bên dưới:
+Rút từ lỗi thực tế gặp phải khi so bài với một bản viết khác (12/07/2026, bổ sung 21/07/2026,
+mục "ngày cập nhật" đổi thành "disclaimer lặp 2 lần" ngày 11/08/2026 vì field ngày cập nhật đã bị
+bỏ hẳn khỏi bài) — 6 lỗi hay gặp nhất, kiểm trong 30 giây trước khi chạy hết checklist đầy đủ bên dưới:
 
 - ☐ **Title > 60 ký tự?** → STOP, viết lại ngắn hơn (`keyword_strategy.md` mục 5).
 - ☐ **Slug dài/có stopword thừa** ("la-gi", "nhu-the-nao", "mot", "ma", "van"...)? → STOP, rút gọn.
@@ -20,7 +21,9 @@ kiểm trong 30 giây trước khi chạy hết checklist đầy đủ bên dư�
   `CLAUDE.md` Bước 5.A, không áp dụng mục này cho Sức khỏe nữa.)
 - ☐ **Disclaimer bị nhét nhầm vào field References**? → STOP, tách riêng: References = nguồn
   trích dẫn thật (hoặc để trống), Disclaimer nằm trong Body theo `article_templates.md`.
-- ☐ **Thiếu ngày cập nhật** hiển thị trong bài? → STOP, thêm "Cập nhật: ..." theo đúng ngày.
+- ☐ **Disclaimer y khoa xuất hiện 2 lần** (một câu ở mục "Khi nào nên tìm đến bác sĩ" giữa bài,
+  một câu ở khối "Lưu ý" cuối bài)? → STOP, chỉ giữ đúng một lần ở khối "Lưu ý" cuối bài; mục
+  giữa bài chỉ nêu dấu hiệu cụ thể cần đi khám, không lặp câu "không thay thế tư vấn y khoa".
 - ☐ **Body còn ký tự định dạng/phân cách** (`#`, `-`, `--`, `—`, `*`, `•`...)? → STOP, viết lại
   thành văn xuôi 100% chữ liền mạch theo `web_content_rules.md` mục 3D — pipeline giọng đọc sẽ
   đọc thành lời mọi ký tự còn sót.
@@ -50,12 +53,15 @@ Qua được cả 6 điều trên mới chạy tiếp checklist mục 1–5 bên
 
 - ☐ Đúng độ dài theo loại bài đã chọn (Quick Answer / Standard / Pillar — xem `web_content_rules.md` 3B)?
 - ☐ H2/H3 phân cấp rõ, đoạn ngắn dễ quét, có list/bảng khi hợp?
-- ☐ Có khối FAQ (3–5 câu), có ngày cập nhật?
+- ☐ Có khối FAQ (3–5 câu)?
 - ☐ Có H2 nào **thừa** — không phục vụ ý định chính — cần bỏ không?
 
 ## 4. KHÔNG LẶP, KHÔNG LAN MAN (dễ bị AI mắc nhất)
 
 - ☐ Có ý nào bị **giải thích lặp lại** ở nhiều H2 không? Nếu có → cắt bớt, giữ một chỗ duy nhất.
+- ☐ **Disclaimer y khoa** ("không thay thế tư vấn y khoa"...) chỉ xuất hiện đúng một lần, ở khối
+  "Lưu ý" cuối bài — không lặp ở mục "Khi nào nên tìm đến bác sĩ" giữa bài? (Đã trùng ở toàn bộ
+  50 bài SEO đầu tiên, sửa 11/08/2026 — xem `web_content_rules.md` mục 2.)
 - ☐ Có đoạn nào **lan man**, không trả lời câu hỏi chính của H2 chứa nó không?
 - ☐ Có câu nào **nghe rõ là AI viết** (sáo rỗng, liệt kê máy móc, thừa từ đệm) không? Nếu có → viết lại tự nhiên hơn.
 

@@ -100,7 +100,12 @@ Nếu chỉ có thể là tiêu đề trên kênh lối sống/triết sống �
 - **Minh bạch AI:** trang About + chân bài nói rõ "AI Hiền triết Anh Minh là một nhân vật AI".
   Google khuyến nghị minh bạch khi dùng AI — và sự thật thà này **xây niềm tin**, yếu tố E-E-A-T quan trọng nhất.
 - **Disclaimer** mỗi bài sức khỏe: "Nội dung mang tính tham khảo, không thay tư vấn y khoa;
-  gặp chuyên gia khi cần." (Khớp sẵn với ranh giới CORE_BRAIN.)
+  gặp chuyên gia khi cần." (Khớp sẵn với ranh giới CORE_BRAIN.) **Chỉ viết CÂU NÀY ĐÚNG MỘT LẦN,
+  ở khối "Lưu ý" cuối bài** (xem `CLAUDE.md` Bước 5.A). Nếu bài có mục "Khi nào nên tìm đến bác
+  sĩ" ở giữa thân bài (rất nên có), mục đó chỉ nêu dấu hiệu cụ thể cần đi khám — KHÔNG lặp lại
+  câu disclaimer ngay sau đó. Lỗi này từng lặp ở toàn bộ 50 bài SEO đầu tiên (phát hiện và sửa
+  11/08/2026): mỗi bài có 2 câu gần giống nhau nói "không thay thế tư vấn y khoa", một câu giữa
+  bài một câu cuối bài, đọc lên thừa và rối.
 - **Dẫn nguồn uy tín** khi nêu bất kỳ thông tin sức khỏe nào (tổ chức y tế, nghiên cứu) — không bịa số liệu.
 - **Trải nghiệm & nguyên bản:** chiều sâu suy ngẫm, góc nhìn riêng của nhân vật = tín hiệu Experience.
   KHÔNG sản xuất hàng loạt bài mỏng, chung chung (Google phạt "scaled content abuse").
@@ -121,8 +126,10 @@ AI Overviews trích nội dung **dễ tổng hợp, dễ trích**. Mỗi bài n�
   tín hiệu liệt kê để AI Overviews trích, mà Body giữ được 100% chữ.
 - **Khối FAQ** ở cuối, mô phỏng đúng cách người ta hỏi (3–5 câu). Mỗi cặp câu hỏi/câu trả lời
   cũng viết thuần chữ, không đánh số bằng ký tự đặc biệt.
-- **Ngày cập nhật** hiển thị ("Cập nhật: …") để báo độ tươi mới.
 - **Schema** khi triển khai web: Article/BlogPosting + FAQ + Person (tác giả). Chỉ schema khớp nội dung thật.
+
+> Bỏ 11/08/2026: mục "Ngày cập nhật hiển thị" từng nằm ở đây đã bị loại — bài không còn ghi dòng
+> "Cập nhật: …" ở cuối nữa (xem `CLAUDE.md` Bước 5.A, khối đóng bài chuẩn).
 
 ---
 
@@ -149,6 +156,11 @@ Chọn loại trước khi viết — không để bài phình dần trong lúc 
   không diễn lại bằng từ khác — chỉ nhắc bằng nửa câu nếu cần nối mạch, rồi đi tiếp sang ý mới.
 - **Không viết lan man:** trước khi giữ một H2, tự hỏi *"H2 này có trả lời cho ý định chính
   của bài không?"* Nếu không → bỏ, không cố nhét cho đủ độ dài.
+- **Không ép bài chạm sàn dưới của mục 3B bằng cách lặp ý** (bổ sung 11/08/2026, sau sự cố 50
+  bài SEO đầu tiên đều lặp câu disclaimer y khoa 2 lần — giữa bài và cuối bài — để "cho chắc đủ
+  từ"). Nếu bài đã nói hết ý mà chưa chạm mức 1200 từ, dừng lại và để bài ngắn hơn — KHÔNG thêm
+  câu thừa, đoạn diễn giải lại, hay disclaimer lặp chỉ để kéo dài. Bài ngắn mà chặt luôn tốt hơn
+  bài đủ từ mà giẫm chân lên chính nó.
 - Thà bài ngắn mà chặt, còn hơn bài dài mà giẫm chân lên chính nó.
 
 ---

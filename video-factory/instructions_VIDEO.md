@@ -27,11 +27,11 @@ Xem bảng đầy đủ 4 kênh ở `core-brain/channel_roles.md` mục 1. Trong
 đang làm nhánh nào trước khi chọn file rules:
 
 - **Nhánh A — GIẢI ĐÁP (kênh chính: YouTube):** chuyển thể các câu hỏi "Tại sao..." thành video —
-  **mặc định là định dạng DÀI**; các định dạng khác chỉ khi người dùng nói rõ. Con số chuẩn duy
-  nhất (thời lượng · số cảnh · trần hình cho cả 4 định dạng) nằm ở `video_rules.md` mục 2, không
-  ghi lại ở đây để tránh 2 nơi lệch nhau. Vai trò: **giải đáp câu hỏi** — kể chuyện + giải thích
-  bằng hình ảnh, trả lời trọn vẹn câu hỏi trong tên video. Dùng `video_rules.md` mục 2 + mục 4
-  (kiến trúc video dài) + `examples_and_hooks.md`.
+  **chỉ còn 2 định dạng DÀI/TRUNG, trợ lý tự chọn theo độ sâu chủ đề** (chốt 05/09/2026, không
+  còn "mặc định luôn DÀI" — xem `video_rules.md` mục 3). Con số chuẩn duy nhất (thời lượng · số
+  cảnh · trần hình) nằm ở `video_rules.md` mục 2, không ghi lại ở đây để tránh 2 nơi lệch nhau.
+  Vai trò: **giải đáp câu hỏi** — kể chuyện + giải thích bằng hình ảnh, trả lời trọn vẹn câu hỏi
+  trong tên video. Dùng `video_rules.md` mục 2–4 + `examples_and_hooks.md`.
 - **Nhánh B — DƯỠNG SINH NGẮN (kênh chính: TikTok / Facebook Reels / YouTube Shorts):** dùng định
   dạng **CLIP** (1–3 phút, `video_rules.md` mục 2) để thị phạm một bài tập dưỡng sinh/yoga nhẹ cụ
   thể. Vai trò: **hành động ngay lập tức** — người xem làm theo được luôn, không cần lý thuyết
@@ -39,8 +39,9 @@ Xem bảng đầy đủ 4 kênh ở `core-brain/channel_roles.md` mục 1. Trong
   thay vì cấu trúc kể chuyện hook→thân→kết thông thường của Nhánh A.
 
 Hai nhánh này **không dùng chung khuôn kịch bản** — Nhánh A là kể chuyện/giải thích, Nhánh B là
-thị phạm động tác. **Mặc định là Nhánh A + định dạng DÀI** — chỉ chuyển sang Nhánh B khi người
-dùng nói rõ là muốn video bài tập dưỡng sinh.
+thị phạm động tác. **Mặc định là Nhánh A** (định dạng cụ thể DÀI hay TRUNG do trợ lý tự chọn
+theo độ sâu chủ đề — xem trên) — chỉ chuyển sang Nhánh B khi người dùng nói rõ là muốn video bài
+tập dưỡng sinh.
 
 **Hai chế độ nhận việc (áp dụng cho cả hai nhánh):**
 1. **Chuyển đổi từ bài SEO đã có** (chế độ chính khi vận hành pipeline tự động: 1 chủ đề → 1

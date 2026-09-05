@@ -183,8 +183,9 @@ giữ nguyên triết lý "đa số là Ảnh giữ"):
 video định dạng CLIP vẫn chứa tối đa 1 Clip AI + 3–6 Ảnh giữ. Xem lưu ý đầu `video_rules.md`
 mục 2.
 
-**Định dạng mặc định của kênh là DÀI.** Khi người dùng chỉ đưa một tiêu đề mà không nói gì thêm
-→ làm VIDEO DÀI, không hỏi lại (`video_rules.md` mục 3).
+**Khi người dùng chỉ đưa một tiêu đề mà không nói gì thêm** → trợ lý tự chọn DÀI hay TRUNG theo
+độ sâu chủ đề, không hỏi lại (chốt 05/09/2026, thay "mặc định luôn DÀI" cũ — xem `video_rules.md`
+mục 3).
 
 **Độ dài Clip AI video (khi đã chọn generate clip):** gốc 6–10 giây (tuỳ công cụ, xem mục 12
 `video_ai_prompt_rules.md`) — khi dựng (edit), có thể **kéo dài cảm giác thành 8–12 giây** bằng

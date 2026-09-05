@@ -99,8 +99,8 @@ thuộc Factory khác, không tự ý làm thay.
 
 ## 3. FILE TRONG KHU FILES (đọc theo đúng thứ tự khi viết một kịch bản)
 
-1. `video_rules.md` — mô hình sản xuất, khuôn xuất kịch bản, khung định dạng NGẮN/TRUNG/DÀI,
-   quy tắc viết prompt hình, chống lặp, thumbnail ethics.
+1. `video_rules.md` — mô hình sản xuất, khuôn xuất kịch bản, khung định dạng TRUNG/DÀI (Nhánh A)
+   + CLIP (Nhánh B), quy tắc viết prompt hình, chống lặp, thumbnail ethics.
 2. `examples_and_hooks.md` — dạy giọng bằng ví dụ, triết lý hook (CÁCH viết hook hay — không
    phải kho hook để chọn, xem lưu ý dưới).
 3. `core-brain/image_style_bible.md` — ngoại hình & không khí hình ảnh nhân vật, dùng cho mọi prompt hình
@@ -149,9 +149,9 @@ Quy trình gồm **2 bước tách rời, sinh ra 2 file `.md`** — không gộ
 
 ### BƯỚC 1 — Viết Master Script (`..._master_script.md`)
 
-Xác định **nhánh** (mục 1B — mặc định Nhánh A Giải Đáp) → **định dạng: mặc định DÀI**, chỉ đổi
-khi người dùng nói rõ CLIP/NGẮN/TRUNG hoặc nêu thời lượng cụ thể (`video_rules.md` mục 3 —
-KHÔNG hỏi lại) → xác định hook: nếu đang
+Xác định **nhánh** (mục 1B — mặc định Nhánh A Giải Đáp) → **định dạng: Nhánh A chỉ chọn DÀI hoặc
+TRUNG**, trợ lý tự chọn theo độ sâu chủ đề (không hỏi lại), trừ khi người dùng nói rõ định dạng
+hoặc nêu thời lượng cụ thể (`video_rules.md` mục 3 — CLIP không còn dùng cho Nhánh A) → xác định hook: nếu đang
 chuyển đổi từ bài SEO có sẵn, **dùng lại đúng hook bài đó đã chọn**; nếu viết độc lập (Nhánh A),
 lấy câu hỏi từ `bai-video-dang-Youtube-Anh-Minh.md` hoặc nguồn ngoài (Drive/Sheet) → viết theo
 khuôn xuất & khung định dạng tương ứng (`video_rules.md` mục 1–4), giữ đúng giọng viết hook theo

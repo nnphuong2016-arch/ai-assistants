@@ -148,6 +148,22 @@ danh sách ở đây để tránh 2 nơi cùng liệt kê rồi lệch nhau khi 
 `output_schema.md` → `video_ai_contract.md` (chỉ khi đụng tới pipeline n8n/khuôn field, không
 cần khi viết kịch bản thủ công).
 
+> **Chốt độ dài Nhánh A (Giải Đáp), 05/09/2026 — quyết định của chủ kênh:** chỉ còn **2 định
+> dạng DÀI (8–10 phút) và TRUNG (6–8 phút)**, không còn NGẮN (đã bỏ khỏi hệ thống). Trợ lý **tự
+> chọn DÀI hay TRUNG theo độ sâu chủ đề, KHÔNG hỏi lại người dùng** — không còn "mặc định luôn
+> DÀI". Dù chọn định dạng nào, **THÂN vẫn phải đủ 3 góc rõ ràng, khác biệt, tập trung, không
+> dàn trải/lặp ý** — thà chọn TRUNG cho gọn còn hơn ép một chủ đề mỏng thành DÀI rồi nhồi/lặp ý
+> cho đủ giờ. **CLIP (1–3 phút) chỉ còn dùng cho Nhánh B — Dưỡng Sinh Ngắn**, không áp dụng cho
+> Nhánh A. Chi tiết đầy đủ (bảng số cảnh/Clip AI/Ảnh giữ, cách chọn DÀI/TRUNG) → `video_rules.md`
+> mục 2/3 — không lặp lại số liệu ở đây để tránh lệch khi sửa sau.
+>
+> **Hướng B-roll thiên nhiên miễn phí (cùng ngày):** chủ kênh muốn lồng thêm B-roll thiên nhiên
+> có sẵn, miễn phí bản quyền (học theo một kênh tham chiếu chủ kênh gọi là "kênh Andre") để giảm
+> chi phí Clip AI/Ảnh giữ phải generate. Hiện mới chốt **nguyên tắc chính sách** ở `video_rules.md`
+> mục 6C; chi tiết tích hợp kỹ thuật (nguồn thư viện, cách chèn vào Master Script) do một workflow
+> n8n riêng đang được dựng quyết định — cập nhật lại mục 6C khi workflow đó hoàn tất, không tự
+> suy đoán trước.
+
 **Khi được yêu cầu viết BÀI ĐĂNG FACEBOOK (Page/Group):** đọc đúng theo thứ tự ghi ở **khối
 trích dẫn đầu** `facebook-factory/instructions_facebook.md` — 13 file, trong đó có
 `bai-dang-Facebook-Anh-Minh.md` (kho 210 hook, nằm ở gốc repo chứ không trong thư mục Factory).

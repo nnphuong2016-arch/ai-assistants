@@ -198,7 +198,7 @@ nhịp, góc nhìn — dù nói cùng một đề tài.
 > Viết theo khuôn field chuẩn ở `video_rules.md` mục 1.C — cập nhật 18/07/2026.
 >
 > ⚠️ **Cũng là TRÍCH ĐOẠN, không phải video TRUNG.** Nhãn cũ ghi "định dạng TRUNG" là sai: TRUNG
-> hiện là 5–8 phút / 6–9 cảnh và quay ngang cho Facebook Video/YouTube (`video_rules.md` mục
+> hiện là 6–8 phút / 7–9 cảnh và quay ngang cho Facebook Video/YouTube (`video_rules.md` mục
 > 2), trong khi mẫu này chỉ 75 giây / 5 cảnh / khung dọc 9:16. Mục đích thật của mẫu: minh hoạ
 > **Cấu trúc B** (Mở → Nhận diện cảm xúc → Lý giải nhịp sống → Thay đổi nhỏ → Suy ngẫm, xem mục
 > 4) chạy trọn vẹn qua 5 cảnh. Đừng dùng độ dài/tỷ lệ khung hình của mẫu này làm chuẩn.

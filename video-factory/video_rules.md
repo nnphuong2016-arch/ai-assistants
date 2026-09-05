@@ -20,6 +20,23 @@
 > nguyên văn cố định (93 từ ≈ 43–51 giây), là CTA duy nhất được phép trên toàn kênh. Nguyên văn
 > chỉ nằm ở mục 1.E, các file khác trỏ về. Mục 2/4/7 cập nhật theo (trừ thời lượng outro khỏi
 > ngân sách, thêm vào khung 5 phần, miễn trừ khỏi luật chống lặp).
+> Cập nhật: 05/09/2026 — **chốt lại độ dài Nhánh A (Giải Đáp), quyết định của chủ kênh**: chỉ còn
+> **2 định dạng DÀI (8–10 phút) và TRUNG (6–8 phút)** cho Nhánh A (thay 8–12 phút / 5–8 phút cũ);
+> bỏ **NGẮN** khỏi hệ thống (không còn Nhánh/Factory nào dùng — trước đây NGẮN chỉ phục vụ Nhánh
+> A). **CLIP (1–3 phút) giữ nguyên nhưng chỉ còn dùng cho Nhánh B — Dưỡng Sinh Ngắn**
+> (`duong_sinh_bai_tap.md` mục 5), Nhánh A không dùng CLIP nữa. Trợ lý **tự chọn DÀI hay TRUNG
+> theo độ sâu chủ đề, không hỏi lại** (thay quy tắc "mặc định luôn DÀI" 25/07/2026 — xem mục 3
+> viết lại), nhưng **cả hai định dạng đều bắt buộc đủ 3 góc rõ ràng, tập trung, không dàn
+> trải/lặp ý** — lý do đổi: ép mọi chủ đề (kể cả chủ đề mỏng, chỉ đủ 1 insight) thành DÀI 8–12
+> phút cũ dễ dẫn tới nhồi/lặp ý để đủ giờ, vi phạm "Kỷ luật giữ chân" mục 4. Mục 2/3/4/6 cập nhật
+> theo; trần Clip AI/Ảnh giữ của DÀI (tối đa 3 Clip · 12–16 Ảnh giữ) và TRUNG (tối đa 2 Clip ·
+> 8–12 Ảnh giữ) giữ nguyên không đổi — chỉ đổi khung phút/số cảnh. Quyết định này cũng nêu trong
+> `CLAUDE.md` (Bước 3, khối "KỊCH BẢN VIDEO") để không phải lật riêng file này mới biết.
+> Cập nhật: 05/09/2026 (2) — thêm hướng **B-roll thiên nhiên miễn phí** (mục 6C): dùng clip/ảnh
+> thiên nhiên có sẵn, miễn phí bản quyền, để giảm chi phí Clip AI/Ảnh giữ phải generate — học
+> theo mô hình kênh tham chiếu chủ kênh gọi là "kênh Andre". Chi tiết tích hợp kỹ thuật (nguồn
+> cụ thể, cách chèn vào Master Script/n8n) do workflow n8n riêng đang được dựng quyết định — mục
+> 6C ở đây chỉ chốt **nguyên tắc chính sách**, cập nhật lại khi workflow đó hoàn tất.
 
 ---
 
@@ -87,7 +104,7 @@ Mục đích: tránh rủi ro vi phạm bản quyền khi dùng bài viết củ
     tiếng Việt — giữ kiểm soát tông).
   - **Shots** — số hình phủ cảnh này: `1`, `2` hoặc `3` (mặc định `1`).
     ⚠️ **Bắt buộc với video DÀI.** Một cảnh DÀI dài 55–70 giây, trong khi một ảnh chỉ giữ tự
-    nhiên được 30–45 giây (mục 6B) → phần lớn cảnh cần 2 hình. Không có field này thì 8–12 cảnh
+    nhiên được 30–45 giây (mục 6B) → phần lớn cảnh cần 2 hình. Không có field này thì 8–10 cảnh
     chỉ diễn đạt được tối đa 10 hình, trong khi trần là 12–16 (mục 2/mục 6) — kịch bản sẽ không
     thể hợp lệ. Cộng tổng Shots của cả video trước khi xuất để tự kiểm trần.
     Khi `Shots > 1`, viết Visual/Camera thành đúng ngần ấy khối đánh số (`Visual 1:`/`Camera 1:`,
@@ -164,10 +181,10 @@ không".
 lần** rồi tái sử dụng — không tốn TTS và không tốn generate hình cho mỗi tập (xem
 `video_ai_contract.md` Stage 5 và Stage 7).
 
-**Ngân sách lời (giọng trầm-chậm):** ~110–130 từ/phút. Với video NGẮN, mỗi cảnh giữ gọn
-(~14–16 từ Voice / ~8 giây Duration); **với video DÀI, mỗi cảnh ~110–160 từ Voice / 55–70 giây
-Duration** (quy từ 110–130 từ/phút — mục 2); với TRUNG/DÀI, viết lời dẫn liền mạch theo tổng thời
-lượng trước (giữ mạch cảm xúc), rồi chia thành các cảnh theo khuôn field ở trên — mỗi field
+**Ngân sách lời (giọng trầm-chậm):** ~110–130 từ/phút. Với video CLIP (chỉ Nhánh B), mỗi cảnh
+giữ gọn (~14–16 từ Voice / ~8 giây Duration); **với video DÀI, mỗi cảnh ~110–160 từ Voice /
+55–70 giây Duration** (quy từ 110–130 từ/phút — mục 2); với TRUNG/DÀI, viết lời dẫn liền mạch
+theo tổng thời lượng trước (giữ mạch cảm xúc), rồi chia thành các cảnh theo khuôn field ở trên — mỗi field
 Voice là một đoạn của lời dẫn liền mạch đã viết, không viết lại. Không nhồi chữ cho đủ, cũng
 không kéo dãn một ý cho đủ giờ.
 
@@ -185,16 +202,20 @@ không kéo dãn một ý cho đủ giờ.
 
 | Định dạng | Thời lượng | Số cảnh | Giây/cảnh | Clip AI | Ảnh giữ |
 |---|---|---|---|---|---|
-| **CLIP** | 1–3 phút | **3–6** | ~20–30 | tối đa **1** | **3–6** |
-| **NGẮN** | 3–5 phút | **5–7** | ~35–45 | tối đa **2** | **5–8** |
-| **TRUNG** | 5–8 phút | **6–9** | ~45–60 | tối đa **2** | **8–12** |
-| **DÀI** *(mặc định)* | 8–12 phút | **8–12** | ~55–70 | tối đa **3** | **12–16** |
+| **CLIP** *(chỉ Nhánh B)* | 1–3 phút | **3–6** | ~20–30 | tối đa **1** | **3–6** |
+| **TRUNG** | 6–8 phút | **7–9** | ~45–60 | tối đa **2** | **8–12** |
+| **DÀI** | 8–10 phút | **8–10** | ~55–70 | tối đa **3** | **12–16** |
+
+> **Cập nhật 05/09/2026:** bỏ **NGẮN** (3–5 phút) khỏi bảng — không còn Factory/Nhánh nào dùng.
+> **Nhánh A (Giải Đáp) chỉ còn DÀI và TRUNG**, trợ lý tự chọn giữa hai định dạng này theo độ sâu
+> chủ đề (xem mục 3), không hỏi lại người dùng. **CLIP giữ nguyên nhưng chỉ dành cho Nhánh B**
+> (Dưỡng Sinh Ngắn, `duong_sinh_bai_tap.md` mục 5) — Nhánh A không còn dùng CLIP.
 
 **Cách nhớ nhanh cho VIDEO DÀI: số cảnh ≈ số phút** (mỗi cảnh ~1 phút lời dẫn).
 
 > ⚠️ **Số cảnh trong bảng ĐÃ BAO GỒM cảnh outro cố định** (mục 1.E, 43–51 giây). Nghĩa là phần
 > nội dung thật chỉ còn N−1 cảnh. Với video DÀI 10 phút: 600 giây − ~47 giây outro = ~553 giây
-> cho nội dung, chia 9–11 cảnh nội dung. **Luôn trừ outro trước khi chia cảnh.**
+> cho nội dung, chia 9 cảnh nội dung. **Luôn trừ outro trước khi chia cảnh.**
 >
 > ⚠️ **Định dạng CLIP: outro chiếm tỷ trọng quá lớn — cần chủ kênh quyết.** Outro 43–51 giây trên
 > một CLIP 60 giây là **~78% thời lượng**, chỉ còn ~13 giây cho nội dung → không dùng được. Ngay
@@ -209,18 +230,21 @@ chọn công cụ → `model_selection_rules.md` mục 1B.
 
 ### Ghi chú riêng từng định dạng
 
-- **CLIP (1–3 phút)** — nền tảng: TikTok · Facebook Reels · YouTube Shorts. Một ý chính duy nhất ·
-  một hook · một bài học · một kết lắng đọng. ⚠️ **Hai loại nội dung khác nhau dùng chung khung
-  này** (xem `instructions_VIDEO.md` mục 1B): (a) video suy ngẫm/insight ngắn theo khuôn
-  Hook→Thân→Kết, và (b) **Dưỡng Sinh Ngắn** — thị phạm một động tác, theo khuôn riêng ở
+- **CLIP (1–3 phút) — chỉ Nhánh B (Dưỡng Sinh Ngắn), từ 05/09/2026** — nền tảng: TikTok ·
+  Facebook Reels · YouTube Shorts. Thị phạm một động tác, theo khuôn riêng ở
   `duong_sinh_bai_tap.md` mục 5 (nhịp cảnh đi theo động tác/hơi thở, không theo nhịp kể chuyện).
-  Xác định rõ đang làm loại nào trước khi chọn cấu trúc.
-- **NGẮN (3–5 phút)** — nền tảng: Facebook Video · YouTube. Một chủ đề gọn, có một ví dụ hoặc một
-  lát cắt đời thực.
-- **TRUNG (5–8 phút)** — nền tảng: Facebook Video · YouTube. Chủ đề có chiều sâu hơn · có ví dụ
-  hoặc một câu chuyện đời thực (xem `life_stories.md`).
-- **DÀI (8–12 phút)** — nền tảng: YouTube · Podcast video. Đào sâu chủ đề · nhiều lớp góc nhìn ·
-  có phần áp dụng thực tế · KHÔNG kéo dài một ý cho đủ giờ. Theo **kiến trúc long-form ở mục 4**.
+  Nhánh A (Giải Đáp) không còn dùng CLIP — video suy ngẫm/insight ngắn trước đây làm CLIP/NGẮN
+  nay gộp vào TRUNG (định dạng ngắn nhất còn lại của Nhánh A).
+- **TRUNG (6–8 phút)** — nền tảng: Facebook Video · YouTube. Chủ đề gọn nhưng đủ chiều sâu cho
+  **3 góc rõ ràng** ở mức súc tích — có ví dụ hoặc một lát cắt đời thực (xem `life_stories.md`).
+  Chọn khi chủ đề chưa đủ chất liệu để mỗi góc kéo dài như DÀI mà không lặp/loãng.
+- **DÀI (8–10 phút)** — nền tảng: YouTube · Podcast video. Đào sâu chủ đề · **3 góc nhìn khác
+  biệt thật sự** (không chỉ diễn giải lại cùng một ý) · có phần áp dụng thực tế · KHÔNG kéo dài
+  một ý cho đủ giờ. Theo **kiến trúc long-form ở mục 4**. Chọn khi chủ đề đủ chiều sâu để tách 3
+  lớp khác biệt (VD: nguyên nhân ẩn + tác động + ví dụ đời thực).
+
+⚠️ **Cách chọn DÀI hay TRUNG cho Nhánh A: xem mục 3.** Không còn "mặc định luôn DÀI" — trợ lý tự
+chọn theo độ sâu chủ đề thật sự, miễn cả hai đều giữ đủ 3 góc rõ ràng, tập trung.
 
 **Nguyên tắc chung về số cảnh:**
 - Mỗi cảnh đại diện cho một ý.
@@ -233,24 +257,43 @@ chọn công cụ → `model_selection_rules.md` mục 1B.
 
 ## 3. QUY TẮC TỰ CHỌN ĐỊNH DẠNG
 
-### ⭐ MẶC ĐỊNH LÀ VIDEO DÀI (chốt 25/07/2026 — quyết định của chủ kênh)
+### ⭐ NHÁNH A: CHỈ DÀI HOẶC TRUNG — TỰ CHỌN THEO ĐỘ SÂU CHỦ ĐỀ (chốt lại 05/09/2026 — quyết
+định của chủ kênh, thay quy tắc "mặc định luôn DÀI" 25/07/2026)
 
-**Khi người dùng KHÔNG nói rõ định dạng → mặc nhiên làm VIDEO DÀI (8–12 phút, 8–12 cảnh, tối đa
-3 Clip AI + 12–16 Ảnh giữ). KHÔNG hỏi lại "bạn muốn NGẮN, TRUNG hay DÀI?".**
+**Nhánh A (Giải Đáp) chỉ còn 2 định dạng: DÀI (8–10 phút) và TRUNG (6–8 phút).** Không còn dùng
+CLIP hay NGẮN cho Nhánh A (CLIP nay chỉ dành cho Nhánh B — Dưỡng Sinh Ngắn; NGẮN đã bỏ hẳn khỏi
+hệ thống, xem mục 2).
 
-Áp dụng cả khi người dùng chỉ đưa một tiêu đề/câu hỏi "Tại sao..." mà không nói gì thêm — cứ làm
-đúng kích thước VIDEO DÀI. Chỉ làm định dạng khác khi người dùng **nói rõ** là muốn CLIP, NGẮN
-hoặc TRUNG.
+**Trợ lý TỰ CHỌN DÀI hay TRUNG cho từng chủ đề, KHÔNG hỏi lại người dùng "bạn muốn TRUNG hay
+DÀI?".** Căn cứ chọn: chủ đề đó có đủ chất liệu cho **3 góc nhìn khác nhau, rõ ràng, không lặp
+ý** hay không (đúng khung THÂN mục 4):
 
-- Khi người dùng nói **CLIP / NGẮN / TRUNG / DÀI** → trợ lý **tự chọn số cảnh** trong khoảng của
-  định dạng đó theo bảng mục 2, KHÔNG hỏi lại.
-- Khi người dùng nêu **thời lượng cụ thể** (VD: 4 phút / 10 phút) → **thời lượng được ưu tiên**;
-  chọn định dạng có khoảng chứa thời lượng đó rồi điều chỉnh số cảnh + độ dài lời dẫn cho khớp.
-- Mục tiêu cuối cùng: **đúng trải nghiệm xem**, không phải đúng con số cảnh.
+- Chủ đề đủ chiều sâu, tách được 3 lớp/góc **khác biệt thật sự** (VD: nguyên nhân ẩn + tác động
+  lặng lẽ + một ví dụ/câu chuyện đời thực) → chọn **DÀI (8–10 phút)**.
+- Chủ đề gọn hơn, chỉ đủ chất liệu cho 3 góc ở mức súc tích (không đủ để mỗi góc kéo dài như DÀI
+  mà không lặp ý/loãng) → chọn **TRUNG (6–8 phút)**.
+
+**Bắt buộc với CẢ HAI định dạng: luôn đủ 3 góc rõ ràng, tập trung — không dàn trải, không lặp ý,
+không kéo dài một ý cho đủ giờ.** Đây là điều kiện cứng, áp dụng dù chọn DÀI hay TRUNG — thà
+chọn TRUNG cho gọn còn hơn ép một chủ đề mỏng thành DÀI rồi phải nhồi/lặp cho đủ phút (vi phạm
+"Kỷ luật giữ chân" mục 4). Nếu viết xong mà thấy một trong 3 góc bị lặp ý với góc khác, hoặc
+phải kéo dãn mới đủ thời lượng, đó là dấu hiệu chọn sai định dạng — chuyển sang định dạng còn
+lại (DÀI ↔ TRUNG) hoặc tách/gộp lại 3 góc cho thật khác biệt, không cố giữ nguyên định dạng ban
+đầu.
+
+- Khi người dùng **nói rõ muốn DÀI hoặc TRUNG** → làm đúng định dạng đó, trợ lý tự chọn số cảnh
+  trong khoảng của định dạng theo bảng mục 2, KHÔNG hỏi lại.
+- Khi người dùng nêu **thời lượng cụ thể** (VD: 7 phút, 9 phút) → thời lượng được ưu tiên; chọn
+  định dạng có khoảng chứa thời lượng đó rồi điều chỉnh số cảnh + độ dài lời dẫn cho khớp.
+- Khi người dùng KHÔNG nói rõ định dạng/thời lượng (kể cả khi chỉ đưa một tiêu đề/câu hỏi "Tại
+  sao...") → trợ lý tự chọn DÀI hoặc TRUNG theo đúng tiêu chí độ sâu chủ đề ở trên, KHÔNG hỏi
+  lại.
+- Mục tiêu cuối cùng: **đúng trải nghiệm xem, nội dung tập trung** — không phải đúng con số cảnh
+  hay đúng một định dạng "mặc định" cố định.
 
 ---
 
-## 4. KIẾN TRÚC VIDEO DÀI (8–12 phút)
+## 4. KIẾN TRÚC VIDEO DÀI (8–10 phút)
 
 Mục tiêu: chiều sâu thật, để người xem thấy "mình vừa nhận được điều gì đó".
 
@@ -258,7 +301,7 @@ Mục tiêu: chiều sâu thật, để người xem thấy "mình vừa nhận 
 > DÀI dài 55–70 giây, nên MỞ (10–20s) và KẾT LẮNG (15–20s) **không đứng riêng thành một cảnh** —
 > chúng nằm gọn trong cảnh đầu và cảnh cuối cùng với phần nội dung kế bên. Cộng 4 phần có số:
 > 75–115 giây, **cộng outro cố định 43–51 giây (mục 1.E) = 118–166 giây**; phần THÂN gánh phần
-> còn lại ~314–602 giây (video 8–12 phút), tức chiếm 6–10 trong tổng số 8–12 cảnh.
+> còn lại ~314–482 giây (video 8–10 phút), tức chiếm 6–8 trong tổng số 8–10 cảnh.
 > Outro luôn là cảnh cuối và đã nằm trong tổng số cảnh của bảng mục 2.
 
 **Khung 5 phần:**
@@ -277,7 +320,7 @@ còn hơn 10 phút loãng.
 **Khuôn xuất video dài:** A. Tên + ý chính + 1 câu hứa · B. Viết **lời dẫn liền mạch theo 5
 phần đầu** trước (outro ở phần 6 là văn bản cố định, không cần viết — chỉ dán nguyên văn từ mục
 1.E vào cảnh cuối) (như một bài nói chậm, để giữ mạch cảm xúc — đây là bước nháp) · C. Sau đó **chia
-lời dẫn đã viết thành 8–12 cảnh** (mỗi cảnh 55–70 giây lời dẫn — xem trần ngân sách hình ở mục
+lời dẫn đã viết thành 8–10 cảnh** (mỗi cảnh 55–70 giây lời dẫn — xem trần ngân sách hình ở mục
 2 và mục 6), đóng gói mỗi cảnh theo đúng khuôn field ở mục 1.C (Scene ID
 zero-padded, Duration, Voice, Visual, Camera, Character, Emotion, Loop) — mỗi field Voice là một
 đoạn của lời dẫn liền mạch đã viết ở bước B, không viết lại. Đánh dấu `Loop: true` cho cảnh
@@ -314,7 +357,7 @@ B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn kh�
 > của kênh tham chiếu My Dog & My Love (Tier 3: 0,68 clip/phút, chỉ mở khi doanh thu đã gấp 3–5
 > lần chi phí). Nay chuyển sang **trần cứng theo số tuyệt đối**, học từ mô hình đó.
 
-**Trần cứng cho VIDEO DÀI (8–12 phút):**
+**Trần cứng cho VIDEO DÀI (8–10 phút):**
 
 | Thành phần | Trần |
 |---|---|
@@ -331,10 +374,11 @@ B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn kh�
   bật lên nghe khi đang làm việc khác). Vì vậy ưu tiên giữ ảnh ở **mức dài của khoảng (40–45
   giây)**, không cần đổi hình dồn dập. Giá trị video nằm ở lời dẫn — hình để nâng đỡ, không để
   tranh sự chú ý.
-- **Cách tính ra 12–16 ảnh:** video 8–12 phút (480–720 giây) trừ ~27 giây của 3 Clip AI còn
-  ~453–693 giây hình. Chia cho 12–16 ảnh ra ~38–43 giây mỗi ảnh, nằm gọn trong khoảng giữ tự
-  nhiên 30–45 giây. Muốn ảnh giữ lâu hơn thì giảm số ảnh, muốn đổi hình
-  dày hơn thì tăng số ảnh — nhưng **không vượt trần 16**.
+- **Cách tính ra 12–16 ảnh:** video 8–10 phút (480–600 giây) trừ ~27 giây của 3 Clip AI còn
+  ~453–573 giây hình. Chia cho 12–16 ảnh ra ~28–48 giây mỗi ảnh, vẫn nằm sát khoảng giữ tự
+  nhiên 30–45 giây (hai đầu cực của khung phút có thể lệch nhẹ ra ngoài khoảng này, chấp nhận
+  được vì đây là khoảng linh hoạt, không phải ranh giới cứng). Muốn ảnh giữ lâu hơn thì giảm số
+  ảnh, muốn đổi hình dày hơn thì tăng số ảnh — nhưng **không vượt trần 16**.
 - Tạo MỘT kho B-roll tĩnh đẹp, dùng lại across nhiều video — đừng generate mới từng cảnh.
 - Clip AI video generate gốc 6–10 giây → khi dựng, kéo dài cảm giác thành 8–12 giây bằng
   zoom/pan/crop nhẹ (không generate clip dài hơn — tốn thêm chi phí).
@@ -378,6 +422,35 @@ chỉ nên gọi **tối đa 2** trong số này:
 ⚠️ **Không chồng quá 2 lớp phụ** — nhiều hơn sẽ thành hình "làm quá", phạm đúng tinh thần tĩnh
 tại/chân thật của kênh. **Không dùng Camera Shake** (kể cả nhẹ) cho kênh này: nội dung Anh Minh là
 chiêm nghiệm — rung máy sẽ đọc thành lỗi kỹ thuật chứ không thành chủ ý.
+
+### 6C. B-ROLL THIÊN NHIÊN MIỄN PHÍ — CHÍNH SÁCH (thêm 05/09/2026, quyết định của chủ kênh)
+
+> ⚠️ **Mục này chỉ chốt nguyên tắc chính sách, KHÔNG phải khuôn kỹ thuật đầy đủ.** Chủ kênh muốn
+> giảm chi phí Clip AI/Ảnh giữ bằng cách lồng thêm B-roll thiên nhiên có sẵn, miễn phí bản
+> quyền, theo hướng một kênh tham chiếu (chủ kênh gọi là "kênh Andre"). Cách tích hợp kỹ thuật cụ
+> thể (nguồn thư viện stock nào, node n8n nào chèn vào, cách khớp với field Visual/Camera ở mục
+> 1.C) đang được dựng riêng trong một workflow n8n khác — mục này sẽ cập nhật lại phần "Đóng gói
+> trong Master Script" bên dưới khi workflow đó chốt xong, không tự đoán trước chi tiết.
+
+**Nguyên tắc chính sách đã chốt:**
+- **Thêm một loại B-roll thứ 3** bên cạnh Clip AI (generate, tốn phí) và Ảnh giữ (generate, tốn
+  phí): **B-roll thiên nhiên stock miễn phí** (mây, lá, nước, nắng, gió, rừng, biển… cảnh thiên
+  nhiên trung tính, không có nhân vật/thương hiệu) — lấy từ thư viện video miễn phí bản quyền
+  thương mại, KHÔNG generate bằng AI.
+- **Mục đích duy nhất: cắt chi phí**, không phải thay thế giá trị nội dung — B-roll stock chỉ
+  dùng cho những đoạn hình nền trung tính mà Ảnh giữ/Clip AI trước đây phải generate tốn tiền
+  (VD: cảnh vườn, cảnh trà, cảnh mây trôi) chứ không dùng cho cảnh cần đúng phong cách nhân vật
+  Anh Minh (`core-brain/image_style_bible.md` vẫn là nguồn duy nhất cho mọi cảnh có nhân vật).
+- **Không tính vào trần Clip AI/Ảnh giữ ở mục 6** — vì không tốn chi phí generate AI, đúng tinh
+  thần "trần là chi phí sinh ảnh AI", không phải trần tổng số cảnh hình. Số lượng B-roll stock
+  dùng trong một video hiện chưa có trần riêng — chờ workflow n8n xác định giới hạn thực tế
+  (băng thông, thời gian dựng) rồi bổ sung vào đây.
+- **Vẫn phải đúng tông kênh**: chọn cảnh thiên nhiên tĩnh tại, ấm áp, không chọn cảnh giật gân/
+  timelapse dồn dập — giữ đúng tinh thần chiêm nghiệm (mục 8 Thumbnail Ethics áp dụng tinh thần
+  tương tự cho B-roll).
+
+**Đóng gói trong Master Script:** *(để trống, chờ workflow n8n chốt xong — không tự bịa khuôn
+field mới khi chưa có quyết định kỹ thuật cụ thể)*.
 
 ---
 

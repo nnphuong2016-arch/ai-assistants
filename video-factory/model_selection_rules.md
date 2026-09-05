@@ -17,6 +17,9 @@
 > thay bảng "30–35 cảnh / 9–11 Clip" bằng trần cứng theo số tuyệt đối; đổi "Ken Burns" thành
 > **Ảnh giữ + một cú Ken Burns** (xem `video_rules.md` mục 6B — viết lại 26/07/2026 sau khi
 > kiểm tra thực tế `ffmpeg-service`).
+> Cập nhật: 05/09/2026 — đổi khung phút theo quyết định mới ở `video_rules.md` mục 2/3: **DÀI
+> 8–10 phút** (was 8–12), **TRUNG 6–8 phút** (was 5–8), bỏ **NGẮN**, **CLIP chỉ còn Nhánh B**.
+> Trần Clip AI/Ảnh giữ của từng định dạng giữ nguyên, chỉ đổi khung phút/số cảnh.
 
 ---
 
@@ -135,11 +138,11 @@ biểu cảm mạnh) → dùng thẳng ảnh từ kho ảnh nhân vật cố đ�
 mục 0B) làm ảnh tĩnh, KHÔNG cần img2video — rẻ nhất, vẫn giữ đúng nhận diện nhân vật vì là ảnh
 gốc, không generate lại.
 
-**Ngân sách hình cho VIDEO DÀI (8–12 phút) — Mức 1, trần cứng:**
+**Ngân sách hình cho VIDEO DÀI (8–10 phút, chốt lại 05/09/2026) — Mức 1, trần cứng:**
 
 | Thành phần | Trần |
 |---|---|
-| Cảnh (đơn vị lời dẫn) | 8–12 (mỗi cảnh 55–70 giây) — nguồn chốt: `video_rules.md` mục 2 |
+| Cảnh (đơn vị lời dẫn) | 8–10 (mỗi cảnh 55–70 giây) — nguồn chốt: `video_rules.md` mục 2 |
 | Clip AI video | **tối đa 3** |
 | Ảnh giữ độc lập | **tối đa 12–16** (mỗi ảnh giữ 30–45 giây, trần thực dụng 45 giây — mục 6B) |
 
@@ -164,15 +167,17 @@ Minh là chiêm nghiệm về sức khỏe/triết lý, gần như không cảnh
 động thì mất cảm xúc". Thêm nữa, **khán giả kênh này nghe nhiều hơn nhìn** — thường bật lên nghe
 khi đang làm việc khác — nên hình chỉ cần nâng đỡ lời dẫn, không cần tranh sự chú ý.
 
-**Ngân sách hình cho 3 định dạng còn lại** (chốt 25/07/2026 — giảm dần theo thời lượng, cùng
-triết lý "đa số là Ảnh giữ"):
+**Ngân sách hình cho định dạng còn lại** (cập nhật 05/09/2026 — bỏ NGẮN, TRUNG đổi khung phút,
+giữ nguyên triết lý "đa số là Ảnh giữ"):
 
 | Định dạng | Thời lượng | Cảnh | Clip AI | Ảnh giữ |
 |---|---|---|---|---|
-| CLIP | 1–3 phút | 3–6 | tối đa 1 | 3–6 |
-| NGẮN | 3–5 phút | 5–7 | tối đa 2 | 5–8 |
-| TRUNG | 5–8 phút | 6–9 | tối đa 2 | 8–12 |
-| **DÀI** *(mặc định)* | 8–12 phút | 8–12 | **tối đa 3** | **12–16** |
+| CLIP *(chỉ Nhánh B)* | 1–3 phút | 3–6 | tối đa 1 | 3–6 |
+| TRUNG | 6–8 phút | 7–9 | tối đa 2 | 8–12 |
+| **DÀI** | 8–10 phút | 8–10 | **tối đa 3** | **12–16** |
+
+> Nhánh A (Giải Đáp) chỉ dùng DÀI hoặc TRUNG, tự chọn theo độ sâu chủ đề — xem `video_rules.md`
+> mục 3. CLIP chỉ còn dành cho Nhánh B (Dưỡng Sinh Ngắn). NGẮN (3–5 phút) đã bỏ khỏi hệ thống.
 
 ⚠️ **Chữ "Clip" ở đây là loại hình (Clip AI video), KHÔNG phải định dạng CLIP 1–3 phút.** Một
 video định dạng CLIP vẫn chứa tối đa 1 Clip AI + 3–6 Ảnh giữ. Xem lưu ý đầu `video_rules.md`

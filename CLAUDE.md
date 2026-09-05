@@ -163,6 +163,15 @@ cần khi viết kịch bản thủ công).
 > mục 6C; chi tiết tích hợp kỹ thuật (nguồn thư viện, cách chèn vào Master Script) do một workflow
 > n8n riêng đang được dựng quyết định — cập nhật lại mục 6C khi workflow đó hoàn tất, không tự
 > suy đoán trước.
+>
+> **Thêm khối QUICK COPY + PROMPT THUMBNAIL, 05/09/2026 — quyết định của chủ kênh:** cuối file
+> `..._prompts.md` mỗi video giờ có thêm khối **Quick Copy** (Title/Description/SEO Keywords/
+> Tags-Hashtag để dán thẳng khi đăng YouTube) và **Prompt Thumbnail** (prompt sinh ảnh thumbnail
+> đầy đủ field, gây tò mò/hook mạnh nhưng KHÔNG nói quá — đúng `video_rules.md` mục 8 Thumbnail
+> Ethics; khác Featured Image bài SEO, thumbnail video được phép có mặt Hiền triết Anh Minh).
+> Tham khảo mô hình kênh "Dấu Vết Văn Minh" (chủ kênh dẫn), viết lại theo đúng giọng/ranh giới
+> kênh Anh Minh, không sao chép câu chữ. **Vẫn giữ đúng 2 file/video** — không thêm file thứ 3.
+> Khuôn field đầy đủ → `output_schema.md` mục "QUICK COPY + PROMPT THUMBNAIL".
 
 **Khi được yêu cầu viết BÀI ĐĂNG FACEBOOK (Page/Group):** đọc đúng theo thứ tự ghi ở **khối
 trích dẫn đầu** `facebook-factory/instructions_facebook.md` — 13 file, trong đó có

@@ -17,8 +17,8 @@
 | **Website** | SEO Factory | **Lưu giữ kiến thức** | Sâu nhất — định nghĩa, nguyên nhân/góc nhìn, cách áp dụng, có cấu trúc H2/H3 | Bài SEO 600–2500 từ (`web_content_rules.md` 3B) |
 | **Facebook / X** | Facebook Factory | **Chia sẻ điều đáng nhớ mỗi ngày** | Nông nhất, cố ý — một cảm xúc/một insight, KHÔNG giải thích | Post không có sàn từ, trần cứng 300 từ (`facebook-factory/writing_rules.md` 6.1) |
 | **Zalo / Newsletter / trả lời bình luận** | Community Factory | **Giữ liên hệ đều đặn với người đã theo dõi** | Nông — nhắc lại, hỏi thăm, dẫn về nội dung dài hơn | Post 100–300 từ (`community-factory/social_templates.md`) |
-| **YouTube (câu hỏi "Tại sao")** | Video Factory — nhánh **Giải Đáp** | **Giải đáp câu hỏi** | Vừa–sâu — kể chuyện + giải thích bằng hình ảnh, có ví dụ đời thường | Video TRUNG/DÀI 3–12 phút (`video_rules.md` mục 2) |
-| **TikTok / FB Reels / YouTube Shorts (bài tập)** | Video Factory — nhánh **Dưỡng Sinh Ngắn** | **Hành động ngay lập tức** | Nông, thị phạm — xem là làm theo được luôn, không lý thuyết | Video NGẮN 60–120s, thị phạm động tác (`duong_sinh_bai_tap.md`) |
+| **YouTube (câu hỏi "Tại sao")** | Video Factory — nhánh **Giải Đáp** | **Giải đáp câu hỏi** | Vừa–sâu — kể chuyện + giải thích bằng hình ảnh, có ví dụ đời thường | Video TRUNG/DÀI 6–10 phút, tự chọn theo độ sâu chủ đề (`video_rules.md` mục 2/3) |
+| **TikTok / FB Reels / YouTube Shorts (bài tập)** | Video Factory — nhánh **Dưỡng Sinh Ngắn** | **Hành động ngay lập tức** | Nông, thị phạm — xem là làm theo được luôn, không lý thuyết | Video CLIP 1–3 phút, thị phạm động tác (`duong_sinh_bai_tap.md` + `video_rules.md` mục 2) |
 | **Telegram** *(chưa build — kế hoạch)* | Factory tương lai | **Xây cộng đồng học & thực hành** | Trung bình — hướng dẫn từng bước, có tương tác/checklist | Bài hướng dẫn dài hơn post FB, ngắn hơn bài SEO |
 
 **Cách đọc bảng:** cột "Vai trò một câu" là **kim chỉ nam duy nhất** khi quyết định viết gì cho

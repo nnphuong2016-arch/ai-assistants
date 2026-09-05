@@ -9,6 +9,9 @@
 > Drive, không qua GitHub — nay đã chính thức áp dụng toàn hệ thống, xem `CLAUDE.md` Bước 5.B).
 > Cập nhật: 20/07/2026 — thêm field 2 "Content Track" (Giải Đáp / Dưỡng Sinh Ngắn / Bếp An
 > Nhiên / Suy Ngẫm), field còn lại đánh số lại theo đó.
+> Cập nhật: 05/09/2026 — field 3 "Format" bỏ `NGẮN`, đổi khung `TRUNG` (6–8 phút)/`DÀI` (8–10
+> phút), Nhánh A tự chọn `TRUNG`/`DÀI` theo độ sâu chủ đề thay vì mặc định `DÀI` — theo
+> `video_rules.md` mục 2/3.
 
 ---
 
@@ -19,9 +22,11 @@
    (Nhánh B, thị phạm động tác cho TikTok/Reels/Shorts, theo `duong_sinh_bai_tap.md`) /
    `Bếp An Nhiên` (theo `bep_an_nhien.md`) / `Suy Ngẫm` (video ngắn insight thường, không thuộc
    3 track trên) — xem `instructions_VIDEO.md` mục 1B. Quyết định track TRƯỚC khi chọn Format.
-3. **Format** — `CLIP` (1–3 phút) / `NGẮN` (3–5 phút) / `TRUNG` (5–8 phút) / `DÀI` (8–12 phút) —
-   theo khung định dạng `video_rules.md` mục 2. **Mặc định là `DÀI`** khi người dùng không nói rõ
-   (không hỏi lại — xem mục 3 file đó).
+3. **Format** — `CLIP` (1–3 phút, chỉ Nhánh B — Dưỡng Sinh Ngắn) / `TRUNG` (6–8 phút) / `DÀI`
+   (8–10 phút) — theo khung định dạng `video_rules.md` mục 2 (chốt lại 05/09/2026, bỏ `NGẮN`).
+   **Nhánh A (Giải Đáp) chỉ chọn giữa `TRUNG`/`DÀI`**, trợ lý tự chọn theo độ sâu chủ đề — không
+   còn "mặc định luôn DÀI", không hỏi lại người dùng (xem mục 3 `video_rules.md`). Dù chọn định
+   dạng nào, THÂN vẫn phải đủ 3 góc rõ ràng, không dàn trải.
 4. **Duration** — thời lượng mục tiêu (VD: 2 phút, 4 phút, 10 phút).
 5. **Hook** — câu/hình mở đầu 3 giây. Nếu video chuyển đổi từ bài SEO có sẵn, **dùng nguyên
    hook bài đó đã dùng** (không tự chọn hook khác); nếu viết độc lập (Nhánh A), ghi rõ nguồn

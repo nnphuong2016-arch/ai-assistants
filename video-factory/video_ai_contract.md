@@ -28,7 +28,7 @@ DATE: 25/07/2026
 
 > ⚠️ **Cập nhật 23/07/2026 — mô hình hybrid tiết kiệm chi phí (xem `model_selection_rules.md`
 > mục 1B):** từ nay pipeline có **2 nhánh song song** sau Stage 2, không phải mọi Scene đều đi
-> qua Stage 4 (generate Clip). Đa số Scene (video DÀI Mức 1: chỉ 3 Clip trên 8–12 cảnh) chỉ dừng ở Ảnh giữ
+> qua Stage 4 (generate Clip). Đa số Scene (video DÀI Mức 1: chỉ 3 Clip trên 8–10 cảnh) chỉ dừng ở Ảnh giữ
 > (Stage 3, hoặc lấy thẳng ảnh có sẵn trong kho `image_style_bible.md` mục 0B nếu là Anh Minh
 > đứng/ngồi yên) rồi đi thẳng tới Stage 7 kèm tham số Ken Burns — **bỏ qua Stage 4 hoàn toàn**,
 > tiết kiệm chi phí generate video. Chỉ Scene được đánh dấu Clip ở Stage 2B mới đi qua Stage 4.
@@ -61,7 +61,7 @@ Camera → Character → Emotion → Loop.
 `Visual 2:`, `Camera 2:`...) thay vì một khối duy nhất — parser phải đọc đủ ngần ấy cặp và sinh
 `Shot<SceneID>-<n>` cho mỗi cặp. `Voice`/`Subtitle` vẫn 1 file/Scene. Parser cũ (giả định 1 Visual
 + 1 Camera mỗi Scene) sẽ bỏ sót hình thứ 2–3 → **phải sửa Code node trước khi chạy video DÀI theo
-chuẩn hiện hành**, vì 8–12 cảnh với trần 12–16 ảnh chắc chắn có cảnh nhiều hình. Chỉ gọi AI cho Stage 1-2 khi input là script rời rạc KHÔNG qua Video
+chuẩn hiện hành**, vì 8–10 cảnh với trần 12–16 ảnh chắc chắn có cảnh nhiều hình. Chỉ gọi AI cho Stage 1-2 khi input là script rời rạc KHÔNG qua Video
 Factory (trường hợp hiếm, chưa build).
 
 ========================================================

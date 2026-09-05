@@ -170,7 +170,9 @@ AI — việc chọn công cụ là của pipeline sản xuất."*
 Mức 1: tối đa 3 Clip, tối đa 12–16 Ảnh giữ) → chọn công cụ cho từng Clip theo bảng mục 4 file đó
 → viết prompt đầy đủ theo `video_ai_prompt_rules.md`, tham chiếu ngoại hình nhân vật theo
 `core-brain/image_style_bible.md` → cuối file ghi **dòng tự kiểm ngân sách** (đếm Clip và Ảnh giữ
-thực tế, đối chiếu trần; ảnh làm start-frame cho Clip liệt kê riêng, không tính vào trần).
+thực tế, đối chiếu trần; ảnh làm start-frame cho Clip liệt kê riêng, không tính vào trần) → **sau
+đó viết tiếp khối QUICK COPY + PROMPT THUMBNAIL** (thêm 05/09/2026, theo đúng khuôn
+`output_schema.md`) ngay cuối file này — vẫn cùng 1 file `..._prompts.md`, không tạo file riêng.
 
-**Chưa có đủ 2 file thì chưa coi là xong.** Cả hai lưu vào cùng thư mục Drive theo `CLAUDE.md`
-Bước 5.B.
+**Chưa có đủ 2 file, và file `..._prompts.md` chưa có khối Quick Copy + Prompt Thumbnail, thì
+chưa coi là xong.** Cả hai lưu vào cùng thư mục Drive theo `CLAUDE.md` Bước 5.B.

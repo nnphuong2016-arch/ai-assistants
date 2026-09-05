@@ -12,6 +12,11 @@
 > Cập nhật: 05/09/2026 — field 3 "Format" bỏ `NGẮN`, đổi khung `TRUNG` (6–8 phút)/`DÀI` (8–10
 > phút), Nhánh A tự chọn `TRUNG`/`DÀI` theo độ sâu chủ đề thay vì mặc định `DÀI` — theo
 > `video_rules.md` mục 2/3.
+> Cập nhật: 05/09/2026 (2) — thêm khối **QUICK COPY + PROMPT THUMBNAIL** vào cuối file
+> `..._prompts.md` (Title/Description/SEO Keywords/Tags/Hashtag để dán khi đăng YouTube, cộng
+> prompt sinh ảnh thumbnail đầy đủ field) — vẫn giữ **2 file/video**, không thêm file thứ 3.
+> Field 9 "Suggested Thumbnail" ở Master Script nay chỉ còn là ý tưởng ngắn, prompt đầy đủ
+> chuyển sang khối này.
 
 ---
 
@@ -59,8 +64,10 @@
 8. **Character Reference** — `true`/`false`: video này có cảnh nào chứa nhân vật chính không
    (cờ tổng quan cấp video, suy ra nhanh từ việc field Character ở bất kỳ Scene nào trong mục 7
    có giá trị hay không) — để trống nếu toàn bộ video chỉ có B-roll trung tính.
-9. **Suggested Thumbnail** — mô tả ý tưởng thumbnail (không phải ảnh thật) theo mục 8
-   `video_rules.md` — để Image Factory hoặc bước sau tạo ảnh thật.
+9. **Suggested Thumbnail** — mô tả ngắn Ý TƯỞNG thumbnail (không phải prompt đầy đủ) theo mục 8
+   `video_rules.md`. **Prompt sinh ảnh thumbnail thật (đầy đủ field)** nằm ở phần "QUICK COPY +
+   PROMPT THUMBNAIL" cuối file `..._prompts.md` (xem mục "File prompt đi kèm" bên dưới) — không
+   cần qua Image Factory riêng cho thumbnail video nữa (thêm 05/09/2026).
 10. **Music** — gợi ý nhạc nền theo `core-brain/image_style_bible.md` mục 10 (piano tối giản,
     ambient) — để trống nếu dùng nhạc mặc định của kênh.
 11. **Structure Used** — cấu trúc kịch bản đã dùng (A–E theo `video_rules.md` mục 7); để trống
@@ -101,12 +108,42 @@ Mỗi video có **2 file** trong cùng thư mục Drive, không phải 1:
 | File | Chứa gì |
 |---|---|
 | `..._master_script.md` | Master Script — cảnh, lời dẫn, Visual/Camera trung tính. **Không** chứa prompt của công cụ nào. |
-| `..._prompts.md` | Prompt thật để generate, viết SAU khi Master Script xong. Đánh dấu rõ cảnh nào là Clip (`🎬 CLIP 1/3`), cảnh nào là Ảnh giữ. |
+| `..._prompts.md` | Prompt thật để generate (cảnh Clip/Ảnh giữ) + dòng tự kiểm ngân sách + khối **QUICK COPY + PROMPT THUMBNAIL** ở cuối file (xem bên dưới, thêm 05/09/2026). |
 
 - Tên file prompt: giống hệt master script, chỉ đổi đuôi `_master_script.md` → `_prompts.md`.
-- Cuối file prompt ghi một dòng **tự kiểm ngân sách**: số Ảnh giữ độc lập và số Clip thực tế, đối
-  chiếu trần ở `model_selection_rules.md` mục 1B (video DÀI Mức 1: ≤3 Clip, ≤12–16 Ảnh giữ). Ảnh
-  làm start-frame cho Clip liệt kê riêng, không tính vào trần.
+- Cuối phần prompt cảnh ghi một dòng **tự kiểm ngân sách**: số Ảnh giữ độc lập và số Clip thực
+  tế, đối chiếu trần ở `model_selection_rules.md` mục 1B (video DÀI Mức 1: ≤3 Clip, ≤12–16 Ảnh
+  giữ). Ảnh làm start-frame cho Clip liệt kê riêng, không tính vào trần.
+
+### QUICK COPY + PROMPT THUMBNAIL (thêm 05/09/2026, quyết định của chủ kênh)
+
+> Đặt ở **cuối file `..._prompts.md`**, sau dòng tự kiểm ngân sách — không tạo file thứ 3, không
+> cho vào Master Script (Master Script chỉ chứa nội dung kịch bản thuần, giữ đúng nguyên tắc
+> pure-content). Tham khảo mô hình kênh "Dấu Vết Văn Minh" (chủ kênh dẫn), viết lại theo đúng
+> giọng và ranh giới của kênh Anh Minh — không sao chép câu chữ kênh tham khảo.
+
+**A. QUICK COPY (dán thẳng khi đăng YouTube):**
+- **Title:** 2–3 phương án tiêu đề, khớp nội dung thật của video (không giật gân/nói quá — theo
+  đúng "TUYỆT ĐỐI KHÔNG" ở `core-brain/instructions.md`).
+- **Description:** đoạn mô tả ngắn giới thiệu video (không phải chép lại toàn văn lời dẫn), có
+  thể chèn 1 câu CTA nhẹ (đăng ký kênh — khớp outro `video_rules.md` mục 1.E, không tạo CTA
+  khác). Không tự thêm timestamp giả nếu chưa cắt dựng xong.
+- **SEO Keywords:** 5–10 từ khóa liên quan chủ đề, cùng tinh thần chọn từ khóa ở
+  `seo-factory/keyword_strategy.md` nhưng áp cho tìm kiếm YouTube (không phải Google Search).
+- **Tags/Hashtag:** danh sách tag YouTube (ô Tags khi upload) + 2–4 hashtag ngắn gọn cho phần
+  đầu Description/Title.
+
+**B. PROMPT THUMBNAIL** (ngay dưới Quick Copy — prompt sinh ảnh thumbnail thật, đầy đủ field
+theo đúng khuôn của `featured-Image-factory/output_schema.md` để nhất quán hệ thống): Image
+Type, Concept, Subject, Prompt, Negative Prompt, Aspect Ratio (16:9, khung ngang YouTube),
+Suggested Size (1280×720), Filename (khớp tên video), Alt Text.
+- **Mục tiêu prompt:** gây tò mò, thể hiện sức hút, hook mạnh — nhưng **KHÔNG nói quá/giật
+  gân/fake urgency**, đúng `video_rules.md` mục 8 THUMBNAIL ETHICS (cấm CAPS LOCK, cấm "SỐC"/
+  "BÍ MẬT", cấm dọa bệnh/dọa chết, cấm biểu cảm phóng đại).
+- **Khác Featured Image (bài SEO):** thumbnail video **ĐƯỢC PHÉP** có khuôn mặt nhân vật Hiền
+  triết Anh Minh (biểu cảm chân thực, nhẹ nhàng — đúng mục 8) — khi có nhân vật, luôn tham chiếu
+  `core-brain/image_style_bible.md` mục 0B để giữ đúng nhận diện, không tự mô tả lại ngoại hình.
+  Nếu không cần nhân vật (thumbnail ẩn dụ/phong cảnh), áp dụng tinh thần tương tự Featured Image.
 - Tách 2 file để khi đổi/thêm công cụ AI chỉ phải viết lại file prompt, giữ nguyên Master Script —
   đúng nguyên tắc tool-agnostic ở mục 7 trên.
 

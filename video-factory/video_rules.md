@@ -37,6 +37,11 @@
 > theo mô hình kênh tham chiếu chủ kênh gọi là "kênh Andre". Chi tiết tích hợp kỹ thuật (nguồn
 > cụ thể, cách chèn vào Master Script/n8n) do workflow n8n riêng đang được dựng quyết định — mục
 > 6C ở đây chỉ chốt **nguyên tắc chính sách**, cập nhật lại khi workflow đó hoàn tất.
+> Cập nhật: 05/09/2026 (3) — mục 8: thêm khối **QUICK COPY + PROMPT THUMBNAIL** (Title/
+> Description/SEO Keywords/Tags-Hashtag để dán khi đăng YouTube + prompt sinh ảnh thumbnail đầy
+> đủ field) ở cuối file `..._prompts.md`, khuôn field đầy đủ ở `output_schema.md`. Vẫn giữ đúng
+> **2 file/video**, không thêm file thứ 3. Tham khảo mô hình kênh "Dấu Vết Văn Minh" (chủ kênh
+> dẫn), viết lại theo giọng và ranh giới riêng của kênh Anh Minh.
 
 ---
 
@@ -478,6 +483,10 @@ mọi video. Quy tắc xoay vòng câu kết ở trên chỉ áp cho **phần D 
 từng video**, đứng trước outro.
 
 ## 8. THUMBNAIL ETHICS (ảnh đại diện video)
+
+> **Prompt sinh ảnh thumbnail thật (đầy đủ field) + khối Quick Copy đăng YouTube** → viết ở cuối
+> file `..._prompts.md`, theo đúng khuôn `output_schema.md` mục "QUICK COPY + PROMPT THUMBNAIL"
+> (thêm 05/09/2026). Mục này chỉ nêu NGUYÊN TẮC/ranh giới nội dung — không lặp khuôn field ở đây.
 
 Thumbnail là ấn tượng đầu tiên — phải **mời người xem**, không tấn công cảm xúc.
 

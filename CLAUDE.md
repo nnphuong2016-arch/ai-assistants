@@ -205,6 +205,34 @@ chính thư mục đó).
 **Research / Review / Publish:** dùng khi pipeline cần — xem `research-factory/`,
 `review-factory/`, `publish-factory/` tương ứng.
 
+### Bước 3.5 — Giao bản nháp cho agent con viết, phiên chính chỉ biên tập lại (bắt buộc, thêm
+06/09/2026 theo yêu cầu người vận hành)
+
+> Áp dụng khi đang chạy trong môi trường có công cụ `Agent` (Claude Code/Claude Code on the
+> web) — tức hầu hết các phiên làm nội dung thật. Nếu môi trường không có công cụ `Agent` (ví
+> dụ một Custom GPT riêng lẻ không gọi được subagent), bỏ qua bước này và viết trực tiếp, vẫn
+> giữ nguyên Bước 4.
+
+Khi người vận hành yêu cầu **viết một nội dung cụ thể** (một bài SEO, một kịch bản video, một
+bài Facebook, một post cộng đồng...), phiên chính (Claude) **không tự viết thẳng bản nháp đầu
+tiên**. Thay vào đó:
+
+1. Giao việc viết bản nháp cho **một agent con** (dùng công cụ `Agent`, loại `general-purpose`
+   trừ khi có agent chuyên biệt hơn phù hợp hơn). Trong prompt giao việc, phải nói rõ agent con
+   cần đọc đúng CORE_BRAIN (Bước 1) + đúng file backlog (Bước 2) + đúng bộ file Factory tương
+   ứng (Bước 3) trước khi viết — không rút gọn, không đoán quy tắc.
+2. Đợi agent con trả bản nháp đầy đủ về.
+3. Phiên chính **tự đọc lại toàn bộ bản nháp đó bằng con mắt biên tập viên, không phải người vừa
+   viết ra nó** — đây chính là Bước 4 (tự kiểm + "Không dừng lại ở việc bắt lỗi — phải chủ động
+   sửa lại cho hay hơn"). Vì bản nháp không phải do phiên chính tự gõ, phiên chính giữ được góc
+   nhìn khách quan hơn khi rà lỗi, thay vì dễ bỏ qua vì đã quen câu chữ mình vừa viết.
+4. Sửa trực tiếp mọi chỗ nhạt/lặp/sai ngay trong bản nháp (không giao lại cho agent con sửa vòng
+   2 trừ khi lỗi quá lớn cần viết lại gần như toàn bộ), rồi mới lưu theo Bước 5.
+
+**Khi nào KHÔNG áp dụng:** việc trò chuyện/tư vấn nhanh (chat trực tiếp — không phải "viết một
+nội dung" để lưu file), các câu hỏi/rà soát không tạo ra nội dung mới, và các tác vụ kỹ thuật
+không phải sinh nội dung văn bản (sửa file rules, upload file, thao tác Drive/GitHub...).
+
 ### Bước 4 — Tự kiểm trước khi đưa ra kết quả cuối
 
 Luôn chạy qua đúng file `*_checklist.md` (hoặc `seo_checklist.md`/`community_checklist.md`/

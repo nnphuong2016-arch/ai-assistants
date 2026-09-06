@@ -366,6 +366,25 @@ Nội dung file (áp dụng cho phần thân bài của CẢ HAI bản):
      > đi khám — KHÔNG lặp lại câu kiểu "những chia sẻ trên chỉ ở mức thói quen sống chung, không
      > thay thế tư vấn y khoa" ngay sau đó, vì khối Lưu ý cuối bài đã nói đúng ý này rồi. Đọc lại
      > bài (Bước 4) phải tự rà xem có bị lặp ý này không trước khi coi là xong.
+
+   - **Khối đóng bài rút gọn cho Tâm lý & đời sống (số 2) — khôi phục lại 06/09/2026:** bảng ở
+     trên nói Tâm lý dùng "khối rút gọn ở cuối mục này" (chỉ có minh bạch AI, không disclaimer y
+     khoa), nhưng khối đó đã bị dọn mất chữ cụ thể khi viết lại "Khối đóng bài chuẩn" ngày
+     06/08/2026 — chỉ còn lại tên gọi, không còn nội dung. Khôi phục lại đây, dùng đúng khuôn
+     dưới đây (cùng vị trí cuối file, sau FAQ, dòng tiêu đề "Lưu ý" viết trơn không `###`):
+
+     ```
+     Lưu ý
+
+     Đây là góc nhìn chia sẻ từ Hiền triết Anh Minh, một nhân vật AI, không phải một chuyên gia
+     tâm lý thật. Nếu điều bạn đang trải qua kéo dài hoặc nặng nề hơn một cuộc trò chuyện có thể
+     giúp được, hãy tìm đến người thân hoặc chuyên gia tâm lý để được đồng hành đúng cách.
+     ```
+
+     Không dùng chữ "tư vấn/chẩn đoán/điều trị y khoa" (đó là câu riêng của Sức khỏe) — Tâm lý
+     chỉ cần thật thà về việc đây là nhân vật AI, và gợi ý tìm người thật khi cần. Cùng áp dụng
+     nguyên tắc "không lặp disclaimer" ở trên: nếu bài có đoạn giữa bài đã nhắc tới việc tìm
+     chuyên gia/người thân, khối Lưu ý cuối bài không cần lặp lại y nguyên câu đó.
    - KHÔNG cho vào file: Title thẻ SEO (khác H1), Meta Description, Loại bài, tên Hook đã dùng,
      ghi chú kiểu "References để trống vì...", "chưa có internal link vì...". Đây là nội dung
      chỉ dùng nội bộ lúc soạn — nếu cần lưu lại, ghi trong phần trả lời cho người dùng, KHÔNG

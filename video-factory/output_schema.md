@@ -23,6 +23,11 @@
 > ý. `TRUNG`/`DÀI` vẫn dùng khi chủ đề thật sự đủ sâu — theo `video_rules.md` mục 2/3.
 > Cập nhật: 07/09/2026 (2) — **CHỐT CỨNG: field 3 "Format" cho Nhánh A chỉ còn giá trị `NGẮN`**,
 > bỏ hẳn `TRUNG`/`DÀI` (không còn ngoại lệ theo độ sâu chủ đề) — theo `video_rules.md` mục 2/3.
+> Cập nhật: 07/09/2026 (3) — mục "File prompt đi kèm" thêm cảnh báo bắt buộc kiểm tra pipeline
+> (Cách 1 sinh ảnh/clip AI vs Cách 2 nền thiên nhiên có sẵn) trước khi viết `_prompts.md` — kênh
+> Anh Minh chạy Cách 2 nên `_prompts.md` của kênh này CHỈ còn khối Quick Copy + Prompt Thumbnail,
+> bỏ hẳn phần scene-prompt/tự kiểm ngân sách. Xem sự cố và chi tiết đầy đủ ở `video_rules.md`
+> mục 6C.
 
 ---
 
@@ -107,19 +112,32 @@
     `video_rules.md`).
   - VD: `1.1. Vì sao ngủ đủ tám tiếng mà vẫn thấy mệt_master_script.md`
 
-### File prompt đi kèm (thêm 25/07/2026)
+### File prompt đi kèm (thêm 25/07/2026, thu hẹp phạm vi 07/09/2026 — xem cảnh báo Cách 2 ngay dưới)
 
 Mỗi video có **2 file** trong cùng thư mục Drive, không phải 1:
 
 | File | Chứa gì |
 |---|---|
 | `..._master_script.md` | Master Script — cảnh, lời dẫn, Visual/Camera trung tính. **Không** chứa prompt của công cụ nào. |
-| `..._prompts.md` | Prompt thật để generate (cảnh Clip/Ảnh giữ) + dòng tự kiểm ngân sách + khối **QUICK COPY + PROMPT THUMBNAIL** ở cuối file (xem bên dưới, thêm 05/09/2026). |
+| `..._prompts.md` | **Cách 1 (sinh ảnh/clip AI):** prompt thật để generate (cảnh Clip/Ảnh giữ) + dòng tự kiểm ngân sách + khối QUICK COPY + PROMPT THUMBNAIL. **Cách 2 (nền thiên nhiên có sẵn — pipeline thật của kênh Anh Minh):** CHỈ khối **QUICK COPY + PROMPT THUMBNAIL** — xem cảnh báo ngay dưới. |
+
+> ⚠️ **KIỂM TRA PIPELINE TRƯỚC KHI VIẾT `_prompts.md` — bắt buộc, thêm 07/09/2026 sau sự cố
+> thật** (cả 3 tập đầu của kênh Anh Minh 1.1–1.3 đều viết nhầm đầy đủ phần Clip AI/Ảnh giữ theo
+> Cách 1, dù kênh chạy Cách 2 — xem `video_rules.md` mục 6C để biết chi tiết sự cố và cách phân
+> biệt 2 pipeline). Trước khi viết `_prompts.md` cho MỘT KÊNH CỤ THỂ, luôn xác định kênh đó đang
+> chạy **Cách 1** (sinh Clip AI/Ảnh giữ bằng Flux/Veo3/Replicate cho từng cảnh) hay **Cách 2**
+> (chỉ ghép ảnh host cố định + clip nền thiên nhiên có sẵn + giọng đọc, KHÔNG sinh ảnh/clip AI
+> nào) — hỏi người vận hành nếu chưa chắc, hoặc tra trực tiếp workflow n8n của kênh đó. **Kênh
+> Anh Minh (kênh duy nhất đang vận hành tại thời điểm viết mục này) chạy Cách 2** — mọi
+> `_prompts.md` viết cho kênh này CHỈ gồm 2 khối Quick Copy + Prompt Thumbnail, bỏ hẳn phần
+> scene-prompt/tự kiểm ngân sách mô tả bên dưới (phần đó vẫn giữ lại làm tài liệu cho Cách 1,
+> dùng khi có kênh/pipeline khác cần).
 
 - Tên file prompt: giống hệt master script, chỉ đổi đuôi `_master_script.md` → `_prompts.md`.
-- Cuối phần prompt cảnh ghi một dòng **tự kiểm ngân sách**: số Ảnh giữ độc lập và số Clip thực
-  tế, đối chiếu trần ở `model_selection_rules.md` mục 1B (video DÀI Mức 1: ≤3 Clip, ≤12–16 Ảnh
-  giữ). Ảnh làm start-frame cho Clip liệt kê riêng, không tính vào trần.
+- **Chỉ áp dụng khi kênh dùng Cách 1:** cuối phần prompt cảnh ghi một dòng **tự kiểm ngân sách**:
+  số Ảnh giữ độc lập và số Clip thực tế, đối chiếu trần ở `model_selection_rules.md` mục 1B
+  (video DÀI Mức 1: ≤3 Clip, ≤12–16 Ảnh giữ). Ảnh làm start-frame cho Clip liệt kê riêng, không
+  tính vào trần.
 
 ### QUICK COPY + PROMPT THUMBNAIL (thêm 05/09/2026, quyết định của chủ kênh)
 

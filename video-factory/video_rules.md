@@ -60,6 +60,14 @@
 > sâu thì lên TRUNG/DÀI" — cơ chế đó dễ bị lạm dụng, quay lại đúng vấn đề đã sửa. Trợ lý không
 > còn phải chọn định dạng — mọi video Nhánh A đều NGẮN, không hỏi lại. Mục 2/3/4/6 cập nhật
 > theo; CLAUDE.md Bước 3 khối "KỊCH BẢN VIDEO" cũng cập nhật để khớp.
+> Cập nhật: 07/09/2026 (3) — **VIẾT LẠI HẲN mục 6C, thay bản "chính sách B-roll" 05/09/2026 (2)
+> cũ**, sau sự cố thật: cả 3 tập 1.1–1.3 đều viết `_prompts.md` đầy đủ phần Clip AI/Ảnh giữ/Veo3
+> theo khuôn Cách 1, dù kênh này chạy Cách 2 (đã tự xác nhận qua log n8n từ trước trong cùng
+> phiên). Rà node-by-node 4 workflow thật (`WFAnhMinhC201–204`) xác nhận: **Cách 2 không sinh
+> Clip AI/Ảnh giữ nào cả** — chỉ ghép ảnh host cố định + clip nền thiên nhiên có sẵn + giọng đọc;
+> Cách 1 (`WF-AnhMinh-00/01/02/02B`) chưa từng được dùng thật. Mục 6C giờ nêu rõ: `_prompts.md`
+> cho kênh này CHỈ còn 2 khối Quick Copy + Prompt Thumbnail, bỏ hẳn phần scene-prompt. Xem chi
+> tiết đầy đủ ở chính mục 6C — không lặp lại ở đây.
 
 ---
 
@@ -465,34 +473,51 @@ chỉ nên gọi **tối đa 2** trong số này:
 tại/chân thật của kênh. **Không dùng Camera Shake** (kể cả nhẹ) cho kênh này: nội dung Anh Minh là
 chiêm nghiệm — rung máy sẽ đọc thành lỗi kỹ thuật chứ không thành chủ ý.
 
-### 6C. B-ROLL THIÊN NHIÊN MIỄN PHÍ — CHÍNH SÁCH (thêm 05/09/2026, quyết định của chủ kênh)
+### 6C. PIPELINE THẬT ĐANG CHẠY CHO KÊNH NÀY = "CÁCH 2" — KHÔNG CÒN CLIP AI/ẢNH GIỮ NÀO (viết
+lại 07/09/2026 sau sự cố thật, thay hẳn bản "chính sách 05/09/2026" cũ bên dưới)
 
-> ⚠️ **Mục này chỉ chốt nguyên tắc chính sách, KHÔNG phải khuôn kỹ thuật đầy đủ.** Chủ kênh muốn
-> giảm chi phí Clip AI/Ảnh giữ bằng cách lồng thêm B-roll thiên nhiên có sẵn, miễn phí bản
-> quyền, theo hướng một kênh tham chiếu (chủ kênh gọi là "kênh Andre"). Cách tích hợp kỹ thuật cụ
-> thể (nguồn thư viện stock nào, node n8n nào chèn vào, cách khớp với field Visual/Camera ở mục
-> 1.C) đang được dựng riêng trong một workflow n8n khác — mục này sẽ cập nhật lại phần "Đóng gói
-> trong Master Script" bên dưới khi workflow đó chốt xong, không tự đoán trước chi tiết.
+> ⚠️ **XÁC NHẬN TRỰC TIẾP QUA RÀ SOÁT WORKFLOW N8N THẬT (07/09/2026)** — không còn là "chính sách
+> đang chờ chốt" như bản viết ngày 05/09/2026. Đã kiểm node-by-node 4 workflow đang chạy cho kênh
+> này: `WFAnhMinhC201` (sinh giọng đọc) → `WFAnhMinhC202` (ghép video) → `WFAnhMinhC203` (đăng
+> YouTube) → `WFAnhMinhC204` (tạo Short + đăng). **Không có bất kỳ node Flux/Veo3/Replicate/sinh
+> ảnh-clip AI nào trong toàn bộ pipeline.** `WFAnhMinhC202` chỉ ghép: ảnh host **cố định**
+> (`assets/anhminh.png`, KHÔNG đổi theo cảnh) + **clip nền thiên nhiên có sẵn** (thư mục
+> `nature_bg/<chủ đề>/`, workflow tự chọn chủ đề dựa trên nội dung, KHÔNG generate) + giọng đọc
+> TTS (VieNeu) + phụ đề + nhạc nền. Đây gọi tắt là **"Cách 2"**, để phân biệt với **"Cách 1"**
+> (`WF-AnhMinh-00/01/02/02B`, dựng 30/7, sinh Clip AI/Ảnh giữ từng cảnh bằng Flux/Veo3 qua
+> Replicate) — Cách 1 **CHƯA TỪNG được dùng thật** (`kich-ban-video/` rỗng suốt từ khi dựng tới
+> nay). Toàn bộ mô tả Clip AI/Ảnh giữ/Veo3/`characters/`-reference ở mục 1.C–6B của file này (và
+> ở `model_selection_rules.md`, `video_ai_prompt_rules.md`, `video_ai_contract.md`) mô tả đúng
+> **Cách 1** — **không áp dụng cho kênh này** khi Cách 2 còn là pipeline thật đang chạy. Giữ lại
+> các mục đó làm tài liệu tham khảo (phòng khi đổi kênh/đổi pipeline sau này), KHÔNG xoá.
+>
+> **Sự cố thật gây ra lần viết lại này:** khi viết `_prompts.md` cho cả 3 tập 1.1–1.3, đã viết
+> đầy đủ phần Clip AI/Ảnh giữ/Veo3/character-reference theo đúng khuôn Cách 1 ở `output_schema.md`
+> — dù đã tự xác nhận Cách 2 qua log n8n từ trước đó trong cùng phiên. Chủ kênh phát hiện và chỉ
+> thẳng: *"làm gì có clip, chỉ ghép video thiên nhiên có sẵn cơ mà"*. Toàn bộ phần đó là công sức
+> viết ra nhưng KHÔNG BAO GIỜ được pipeline đọc — lãng phí hoàn toàn. Mục này viết lại để không ai
+> (kể cả agent con được giao viết bản nháp — xem Bước 3.5 ở `CLAUDE.md`) lặp lại đúng lỗi này.
 
-**Nguyên tắc chính sách đã chốt:**
-- **Thêm một loại B-roll thứ 3** bên cạnh Clip AI (generate, tốn phí) và Ảnh giữ (generate, tốn
-  phí): **B-roll thiên nhiên stock miễn phí** (mây, lá, nước, nắng, gió, rừng, biển… cảnh thiên
-  nhiên trung tính, không có nhân vật/thương hiệu) — lấy từ thư viện video miễn phí bản quyền
-  thương mại, KHÔNG generate bằng AI.
-- **Mục đích duy nhất: cắt chi phí**, không phải thay thế giá trị nội dung — B-roll stock chỉ
-  dùng cho những đoạn hình nền trung tính mà Ảnh giữ/Clip AI trước đây phải generate tốn tiền
-  (VD: cảnh vườn, cảnh trà, cảnh mây trôi) chứ không dùng cho cảnh cần đúng phong cách nhân vật
-  Anh Minh (`core-brain/image_style_bible.md` vẫn là nguồn duy nhất cho mọi cảnh có nhân vật).
-- **Không tính vào trần Clip AI/Ảnh giữ ở mục 6** — vì không tốn chi phí generate AI, đúng tinh
-  thần "trần là chi phí sinh ảnh AI", không phải trần tổng số cảnh hình. Số lượng B-roll stock
-  dùng trong một video hiện chưa có trần riêng — chờ workflow n8n xác định giới hạn thực tế
-  (băng thông, thời gian dựng) rồi bổ sung vào đây.
-- **Vẫn phải đúng tông kênh**: chọn cảnh thiên nhiên tĩnh tại, ấm áp, không chọn cảnh giật gân/
-  timelapse dồn dập — giữ đúng tinh thần chiêm nghiệm (mục 8 Thumbnail Ethics áp dụng tinh thần
-  tương tự cho B-roll).
+**Hệ quả bắt buộc khi viết kịch bản cho kênh này (Cách 2):**
 
-**Đóng gói trong Master Script:** *(để trống, chờ workflow n8n chốt xong — không tự bịa khuôn
-field mới khi chưa có quyết định kỹ thuật cụ thể)*.
+1. **`_master_script.md`** — vẫn viết đủ field `Visual`/`Camera`/`Shots` như mục 1.C (giữ làm tài
+   liệu định hướng hình ảnh, phòng khi sau này đổi sang Cách 1 hoặc pipeline khác) — **nhưng
+   field DUY NHẤT pipeline Cách 2 thật sự đọc là `Voice`** (khớp theo từng `### Scene NNN`) và
+   `Video Title` ở đầu file. Không cần lo Visual/Camera "vô dụng" — cứ viết đúng chuẩn, chỉ đừng
+   ngộ nhận rằng viết chi tiết hơn ở đây sẽ đổi được hình ảnh thật lên video.
+2. **`_prompts.md`** — **BỎ HẲN phần scene-prompt Clip AI/Ảnh giữ/Veo3/character reference/
+   negative prompt/tự kiểm ngân sách** mô tả ở `output_schema.md` mục "File prompt đi kèm". File
+   chỉ còn đúng **2 khối**: **QUICK COPY** và **PROMPT THUMBNAIL** — đây là 2 khối DUY NHẤT
+   `WFAnhMinhC203` (Đăng YouTube) thật sự đọc từ file này. Viết thêm bất kỳ phần nào khác vào
+   `_prompts.md` cho kênh này là viết nội dung không ai đọc.
+3. **B-roll thiên nhiên** (`nature_bg/`) do chính `WFAnhMinhC202` tự chọn theo chủ đề — Claude
+   KHÔNG cần (và không thể) chỉ định cảnh nào dùng B-roll nào trong kịch bản; đây khác với dự
+   định "chính sách cắt chi phí" ghi ở bản 05/09/2026 cũ (bản đó giả định B-roll chỉ là một lựa
+   chọn *thêm vào bên cạnh* Clip AI/Ảnh giữ để giảm chi phí — thực tế Cách 2 không sinh Clip
+   AI/Ảnh giữ nào để mà giảm; B-roll thiên nhiên là **toàn bộ** phần hình, không phải một phần).
+4. **Nếu sau này chủ kênh đổi sang dùng Cách 1** (hoặc một kênh khác dùng Cách 1) — quay lại làm
+   đúng mục 1.C–6B + `output_schema.md` bản đầy đủ như cũ; mục này không xoá các mục đó chính vì
+   lý do này.
 
 ---
 

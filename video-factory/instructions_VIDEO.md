@@ -16,6 +16,9 @@
 > mục 2/3 (nguồn chốt, không lặp lại số liệu ở đây).
 > Cập nhật: 07/09/2026 (2) — **CHỐT CỨNG: Nhánh A chỉ còn NGẮN**, bỏ hẳn TRUNG/DÀI, không còn
 > ngoại lệ theo độ sâu chủ đề — xem `video_rules.md` mục 2/3.
+> Cập nhật: 07/09/2026 (3) — BƯỚC 2 thêm bước bắt buộc xác định Cách 1/Cách 2 trước khi viết
+> `_prompts.md`. Kênh Anh Minh chạy Cách 2 (không sinh Clip AI/Ảnh giữ nào) — xem `video_rules.md`
+> mục 6C để biết sự cố và chi tiết đầy đủ.
 
 ---
 
@@ -170,6 +173,12 @@ AI — việc chọn công cụ là của pipeline sản xuất."*
 
 ### BƯỚC 2 — Viết file prompt (`..._prompts.md`), làm SAU khi Bước 1 xong
 
+⚠️ **Trước tiên, xác định kênh đang chạy Cách 1 hay Cách 2** (`video_rules.md` mục 6C — bắt buộc,
+thêm 07/09/2026 sau sự cố thật: cả 3 tập đầu của kênh Anh Minh đều viết nhầm phần Clip AI/Ảnh giữ
+dù kênh chạy Cách 2). **Kênh Anh Minh (hiện là kênh duy nhất) chạy Cách 2** — bỏ qua toàn bộ đoạn
+quy trình Clip/Ảnh giữ dưới đây, chỉ viết đúng 2 khối **QUICK COPY + PROMPT THUMBNAIL**. Đoạn quy
+trình dưới đây chỉ áp dụng khi xác nhận kênh đang chạy **Cách 1**:
+
 Đọc lại Master Script vừa viết → quyết định cảnh nào là **Clip**, cảnh nào là **Ảnh giữ** theo
 `model_selection_rules.md` mục 1B (đọc cờ "MỨC CHI HIỆN HÀNH" ở đầu file TRƯỚC — video DÀI hiện ở
 Mức 1: tối đa 3 Clip, tối đa 12–16 Ảnh giữ) → chọn công cụ cho từng Clip theo bảng mục 4 file đó
@@ -178,6 +187,9 @@ Mức 1: tối đa 3 Clip, tối đa 12–16 Ảnh giữ) → chọn công cụ 
 thực tế, đối chiếu trần; ảnh làm start-frame cho Clip liệt kê riêng, không tính vào trần) → **sau
 đó viết tiếp khối QUICK COPY + PROMPT THUMBNAIL** (thêm 05/09/2026, theo đúng khuôn
 `output_schema.md`) ngay cuối file này — vẫn cùng 1 file `..._prompts.md`, không tạo file riêng.
+
+**Với Cách 2 (kênh Anh Minh):** file `..._prompts.md` gọn lại còn đúng khối QUICK COPY + PROMPT
+THUMBNAIL — không có đoạn Clip/Ảnh giữ/tự kiểm ngân sách phía trên.
 
 **Chưa có đủ 2 file, và file `..._prompts.md` chưa có khối Quick Copy + Prompt Thumbnail, thì
 chưa coi là xong.** Cả hai lưu vào cùng thư mục Drive theo `CLAUDE.md` Bước 5.B.

@@ -148,14 +148,19 @@ danh sách ở đây để tránh 2 nơi cùng liệt kê rồi lệch nhau khi 
 `output_schema.md` → `video_ai_contract.md` (chỉ khi đụng tới pipeline n8n/khuôn field, không
 cần khi viết kịch bản thủ công).
 
-> **Chốt độ dài Nhánh A (Giải Đáp), 05/09/2026 — quyết định của chủ kênh:** chỉ còn **2 định
-> dạng DÀI (8–10 phút) và TRUNG (6–8 phút)**, không còn NGẮN (đã bỏ khỏi hệ thống). Trợ lý **tự
-> chọn DÀI hay TRUNG theo độ sâu chủ đề, KHÔNG hỏi lại người dùng** — không còn "mặc định luôn
-> DÀI". Dù chọn định dạng nào, **THÂN vẫn phải đủ 3 góc rõ ràng, khác biệt, tập trung, không
-> dàn trải/lặp ý** — thà chọn TRUNG cho gọn còn hơn ép một chủ đề mỏng thành DÀI rồi nhồi/lặp ý
-> cho đủ giờ. **CLIP (1–3 phút) chỉ còn dùng cho Nhánh B — Dưỡng Sinh Ngắn**, không áp dụng cho
-> Nhánh A. Chi tiết đầy đủ (bảng số cảnh/Clip AI/Ảnh giữ, cách chọn DÀI/TRUNG) → `video_rules.md`
-> mục 2/3 — không lặp lại số liệu ở đây để tránh lệch khi sửa sau.
+> **Chốt lại độ dài Nhánh A (Giải Đáp), 07/09/2026 — quyết định của chủ kênh, thay quyết định
+> 05/09/2026:** sau khi 3 tập đầu (1.1–1.3) dựng thật ra chỉ 2:44–3:43 dù viết cho ~9 phút, tra
+> log n8n thật (`Probe Scene Voice Durations`) xác nhận giọng VieNeu đang dùng đọc **~250
+> từ/phút** — gấp đôi giả định 110–130 từ/phút dùng để chốt DÀI/TRUNG hôm 05/09. Chủ kênh xác
+> nhận giữ nguyên tốc độ đọc (không đổi giọng/tốc độ TTS) và chấp nhận rằng một câu hỏi "Tại
+> sao...?" đơn lẻ không đủ chất liệu cho 6–10 phút ở tốc độ thật mà không lặp ý/loãng. **NGẮN
+> (3–5 phút) khôi phục lại làm định dạng MẶC ĐỊNH của Nhánh A**, trợ lý **tự chọn, KHÔNG hỏi lại
+> người dùng**. TRUNG (6–8 phút)/DÀI (8–10 phút) vẫn dùng được khi chủ đề thật sự đủ sâu (hiếm),
+> nhưng số từ mục tiêu đã tính lại theo đúng 250 từ/phút. Dù chọn định dạng nào, **THÂN vẫn phải
+> đủ 3 góc rõ ràng, khác biệt, tập trung, không dàn trải/lặp ý**. **CLIP (1–3 phút) chỉ dùng cho
+> Nhánh B — Dưỡng Sinh Ngắn**, không áp dụng cho Nhánh A. Ba tập 1.1–1.3 đã dựng **không cần viết
+> lại**. Chi tiết đầy đủ (bảng số cảnh/Clip AI/Ảnh giữ, cách chọn định dạng, tốc độ đọc thật) →
+> `video_rules.md` mục 1.E/2/3 — không lặp lại số liệu ở đây để tránh lệch khi sửa sau.
 >
 > **Hướng B-roll thiên nhiên miễn phí (cùng ngày):** chủ kênh muốn lồng thêm B-roll thiên nhiên
 > có sẵn, miễn phí bản quyền (học theo một kênh tham chiếu chủ kênh gọi là "kênh Andre") để giảm

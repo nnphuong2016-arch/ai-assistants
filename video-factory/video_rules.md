@@ -42,6 +42,18 @@
 > đủ field) ở cuối file `..._prompts.md`, khuôn field đầy đủ ở `output_schema.md`. Vẫn giữ đúng
 > **2 file/video**, không thêm file thứ 3. Tham khảo mô hình kênh "Dấu Vết Văn Minh" (chủ kênh
 > dẫn), viết lại theo giọng và ranh giới riêng của kênh Anh Minh.
+> Cập nhật: 07/09/2026 — **CHỐT LẠI tốc độ đọc & định dạng Nhánh A theo dữ liệu thật** (quyết
+> định của chủ kênh, sau khi 3 tập đầu — 1.1/1.2/1.3 — dựng thật ra chỉ 2:44–3:43 dù viết theo
+> mục tiêu ~9 phút). Tra trực tiếp log `Probe Scene Voice Durations`/`Call FFmpeg Service` của
+> WFAnhMinhC201/C202 (27 cảnh thật) cho thấy giọng VieNeu đang dùng đọc **~250 từ/phút** —
+> KHÔNG phải 110–130 từ/phút như giả định cũ (sai gần gấp đôi). Chủ kênh xác nhận giữ nguyên tốc
+> độ đọc này (không đổi giọng/tốc độ TTS). Hệ quả: một câu hỏi "Tại sao...?" đơn lẻ của Nhánh A
+> không đủ chất liệu để kéo dài 6–10 phút ở tốc độ đọc thật này mà không lặp ý/loãng (cần tới
+> ~1500–2500 từ, gấp đôi–gấp ba số từ đã viết cho 3 tập đầu). **NGẮN (3–5 phút) khôi phục lại
+> làm định dạng MẶC ĐỊNH của Nhánh A**, thay DÀI/TRUNG (05/09/2026) — xem mục 1.E/2/3/4 viết lại.
+> TRUNG/DÀI vẫn giữ làm lựa chọn khi chủ đề thật sự đủ sâu, nhưng số từ mục tiêu đã tính lại theo
+> đúng 250 từ/phút. Ba tập 1.1–1.3 đã dựng (2:44–3:43) **không cần viết lại** — đã nằm gọn hoặc
+> sát ngay dưới khoảng NGẮN mới.
 
 ---
 
@@ -163,8 +175,10 @@ sẽ nhẹ hơn một chút.
 Hẹn gặp lại bạn trong video tiếp theo.
 ```
 
-**Ngân sách thời lượng:** 93 từ ≈ **43–51 giây** (ở 110–130 từ/phút). Phải **trừ trước** khỏi tổng
-thời lượng khi chia cảnh — nếu quên, video sẽ dài hơn khung định dạng gần một phút.
+**Ngân sách thời lượng:** 93 từ ≈ **22–23 giây** (ở tốc độ đọc THẬT ~250 từ/phút, đo trực tiếp từ
+3 tập đầu — chốt lại 07/09/2026, xem changelog đầu file. Con số 43–51 giây trước đây tính theo
+giả định 110–130 từ/phút chưa kiểm chứng, sai gần gấp đôi). Phải **trừ trước** khỏi tổng thời
+lượng khi chia cảnh.
 
 **Quan hệ với phần D:** outro đứng **SAU** câu kết lắng đọng, không thay thế nó. Phần D vẫn là
 câu để nhớ của riêng video đó; outro là phần đóng khung chung của kênh.
@@ -186,10 +200,15 @@ không".
 lần** rồi tái sử dụng — không tốn TTS và không tốn generate hình cho mỗi tập (xem
 `video_ai_contract.md` Stage 5 và Stage 7).
 
-**Ngân sách lời (giọng trầm-chậm):** ~110–130 từ/phút. Với video CLIP (chỉ Nhánh B), mỗi cảnh
-giữ gọn (~14–16 từ Voice / ~8 giây Duration); **với video DÀI, mỗi cảnh ~110–160 từ Voice /
-55–70 giây Duration** (quy từ 110–130 từ/phút — mục 2); với TRUNG/DÀI, viết lời dẫn liền mạch
-theo tổng thời lượng trước (giữ mạch cảm xúc), rồi chia thành các cảnh theo khuôn field ở trên — mỗi field
+**Ngân sách lời — tốc độ đọc THẬT ~250 từ/phút** (đo trực tiếp từ giọng VieNeu đang dùng cho
+kênh, chốt lại 07/09/2026 — xem changelog đầu file. Con số 110–130 từ/phút trước đây chỉ là giả
+định "giọng trầm-chậm" chưa từng kiểm chứng bằng TTS thật — sai gần gấp đôi so với thực tế, đây
+là nguyên nhân khiến 3 tập đầu viết cho ~9 phút lại dựng ra chỉ 2:44–3:43). Với video CLIP (chỉ
+Nhánh B), mỗi cảnh giữ gọn (~35–45 từ Voice / ~8–10 giây Duration ở tốc độ thật); **với video
+NGẮN (mặc định Nhánh A), mỗi cảnh ~80–145 từ Voice / ~20–35 giây Duration**; với TRUNG/DÀI (khi
+chủ đề đủ sâu để chọn), mỗi cảnh dài hơn tương ứng theo bảng mục 2. Luôn **tính số từ theo đúng
+250 từ/phút trước khi viết** (đừng ước theo cảm giác), rồi viết lời dẫn liền mạch theo tổng thời
+lượng đã tính (giữ mạch cảm xúc), sau đó chia thành các cảnh theo khuôn field ở trên — mỗi field
 Voice là một đoạn của lời dẫn liền mạch đã viết, không viết lại. Không nhồi chữ cho đủ, cũng
 không kéo dãn một ý cho đủ giờ.
 
@@ -205,29 +224,38 @@ không kéo dãn một ý cho đủ giờ.
 > hình luôn viết đầy đủ là **"Clip AI"**, không bao giờ viết tắt thành "Clip" khi đang nói về
 > ngân sách hình.
 
-| Định dạng | Thời lượng | Số cảnh | Giây/cảnh | Clip AI | Ảnh giữ |
+| Định dạng | Thời lượng | Số cảnh | Giây/cảnh (ở tốc độ đọc thật ~250 từ/phút) | Clip AI | Ảnh giữ |
 |---|---|---|---|---|---|
 | **CLIP** *(chỉ Nhánh B)* | 1–3 phút | **3–6** | ~20–30 | tối đa **1** | **3–6** |
-| **TRUNG** | 6–8 phút | **7–9** | ~45–60 | tối đa **2** | **8–12** |
-| **DÀI** | 8–10 phút | **8–10** | ~55–70 | tối đa **3** | **12–16** |
+| **NGẮN** *(mặc định Nhánh A)* | 3–5 phút | **8–9** | ~20–35 | tối đa **2** | **4–8** |
+| **TRUNG** *(Nhánh A, khi chủ đề đủ sâu)* | 6–8 phút | **8–9** | ~40–55 | tối đa **3** | **8–12** |
+| **DÀI** *(Nhánh A, hiếm — chủ đề rất sâu)* | 8–10 phút | **9–10** | ~48–58 | tối đa **3** | **12–16** |
 
-> **Cập nhật 05/09/2026:** bỏ **NGẮN** (3–5 phút) khỏi bảng — không còn Factory/Nhánh nào dùng.
-> **Nhánh A (Giải Đáp) chỉ còn DÀI và TRUNG**, trợ lý tự chọn giữa hai định dạng này theo độ sâu
-> chủ đề (xem mục 3), không hỏi lại người dùng. **CLIP giữ nguyên nhưng chỉ dành cho Nhánh B**
-> (Dưỡng Sinh Ngắn, `duong_sinh_bai_tap.md` mục 5) — Nhánh A không còn dùng CLIP.
-
-**Cách nhớ nhanh cho VIDEO DÀI: số cảnh ≈ số phút** (mỗi cảnh ~1 phút lời dẫn).
-
-> ⚠️ **Số cảnh trong bảng ĐÃ BAO GỒM cảnh outro cố định** (mục 1.E, 43–51 giây). Nghĩa là phần
-> nội dung thật chỉ còn N−1 cảnh. Với video DÀI 10 phút: 600 giây − ~47 giây outro = ~553 giây
-> cho nội dung, chia 9 cảnh nội dung. **Luôn trừ outro trước khi chia cảnh.**
+> **Cập nhật 07/09/2026 — khôi phục NGẮN làm mặc định Nhánh A** (thay quyết định 05/09/2026 bỏ
+> hẳn NGẮN): dữ liệu thật từ 3 tập đầu cho thấy tốc độ đọc TTS thật (~250 từ/phút) gấp đôi giả
+> định cũ, khiến một câu hỏi "Tại sao...?" đơn lẻ không đủ chất liệu để kéo dài 6–10 phút mà
+> không lặp ý/loãng. **NGẮN (3–5 phút) là định dạng MẶC ĐỊNH của Nhánh A** — trợ lý tự chọn,
+> không hỏi lại. TRUNG/DÀI vẫn dùng được khi chủ đề thật sự đủ sâu (xem mục 3), nhưng số từ mục
+> tiêu đã tính lại theo đúng 250 từ/phút — **nhiều hơn hẳn** con số cũ (vốn chỉ đủ cho ~3–4 phút
+> thật dù ghi nhãn 6–10 phút). **CLIP giữ nguyên, chỉ dành cho Nhánh B** (Dưỡng Sinh Ngắn,
+> `duong_sinh_bai_tap.md` mục 5).
 >
-> ⚠️ **Định dạng CLIP: outro chiếm tỷ trọng quá lớn — cần chủ kênh quyết.** Outro 43–51 giây trên
-> một CLIP 60 giây là **~78% thời lượng**, chỉ còn ~13 giây cho nội dung → không dùng được. Ngay
-> cả CLIP 3 phút thì outro vẫn chiếm ~26%. Hiện quy định "mọi video đều có outro" áp cho **TRUNG
-> và DÀI** là an toàn; với **CLIP và NGẮN**, tạm thời vẫn gắn outro theo đúng yêu cầu nhưng đây
-> là điểm **chờ quyết định** — hai hướng khả dĩ: (a) dùng bản rút gọn chỉ 2 câu cuối cho
-> CLIP/NGẮN, hoặc (b) miễn outro cho CLIP. Không tự chọn thay chủ kênh.
+> ⚠️ Số cảnh/Ảnh giữ trong bảng áp dụng khi Nhánh A dùng pipeline sinh ảnh AI từng cảnh ("Cách 1"
+> trong `video_ai_contract.md`). Khi dùng pipeline nền thiên nhiên có sẵn (không sinh ảnh AI —
+> xem mục 6C), số Ảnh giữ/Clip AI ở đây không áp dụng; thời lượng video vẫn do đúng tổng số từ
+> Voice ở tốc độ đọc thật quyết định, không phải số hình.
+
+**Cách nhớ nhanh cho NGẮN (mặc định):** ~750–1250 từ cả outro (outro cố định 93 từ ≈ 22–23 giây
+ở tốc độ thật), chia 8–9 cảnh.
+
+> ⚠️ **Số cảnh trong bảng ĐÃ BAO GỒM cảnh outro cố định** (mục 1.E, ~22–23 giây ở tốc độ thật).
+> Nghĩa là phần nội dung thật chỉ còn N−1 cảnh. **Luôn trừ outro trước khi chia cảnh.**
+>
+> ⚠️ **Định dạng CLIP: outro chiếm tỷ trọng quá lớn — cần chủ kênh quyết.** Outro ~22–23 giây
+> trên một CLIP 60 giây vẫn là **~37% thời lượng**. Hiện quy định "mọi video đều có outro" áp cho
+> **NGẮN/TRUNG/DÀI** là an toàn; với **CLIP**, tạm thời vẫn gắn outro theo đúng yêu cầu nhưng đây
+> là điểm **chờ quyết định** — hai hướng khả dĩ: (a) dùng bản rút gọn chỉ 2 câu cuối cho CLIP,
+> hoặc (b) miễn outro cho CLIP. Không tự chọn thay chủ kênh.
 
 **Ngân sách hình là TRẦN CỨNG, không phải chỉ tiêu** — dùng ít hơn luôn tốt hơn. Ảnh làm
 start-frame cho Clip AI **không tính vào trần Ảnh giữ** (xem mục 6). Chi tiết cách chia và cách
@@ -235,21 +263,22 @@ chọn công cụ → `model_selection_rules.md` mục 1B.
 
 ### Ghi chú riêng từng định dạng
 
-- **CLIP (1–3 phút) — chỉ Nhánh B (Dưỡng Sinh Ngắn), từ 05/09/2026** — nền tảng: TikTok ·
-  Facebook Reels · YouTube Shorts. Thị phạm một động tác, theo khuôn riêng ở
-  `duong_sinh_bai_tap.md` mục 5 (nhịp cảnh đi theo động tác/hơi thở, không theo nhịp kể chuyện).
-  Nhánh A (Giải Đáp) không còn dùng CLIP — video suy ngẫm/insight ngắn trước đây làm CLIP/NGẮN
-  nay gộp vào TRUNG (định dạng ngắn nhất còn lại của Nhánh A).
-- **TRUNG (6–8 phút)** — nền tảng: Facebook Video · YouTube. Chủ đề gọn nhưng đủ chiều sâu cho
-  **3 góc rõ ràng** ở mức súc tích — có ví dụ hoặc một lát cắt đời thực (xem `life_stories.md`).
-  Chọn khi chủ đề chưa đủ chất liệu để mỗi góc kéo dài như DÀI mà không lặp/loãng.
-- **DÀI (8–10 phút)** — nền tảng: YouTube · Podcast video. Đào sâu chủ đề · **3 góc nhìn khác
-  biệt thật sự** (không chỉ diễn giải lại cùng một ý) · có phần áp dụng thực tế · KHÔNG kéo dài
-  một ý cho đủ giờ. Theo **kiến trúc long-form ở mục 4**. Chọn khi chủ đề đủ chiều sâu để tách 3
-  lớp khác biệt (VD: nguyên nhân ẩn + tác động + ví dụ đời thực).
+- **CLIP (1–3 phút) — chỉ Nhánh B (Dưỡng Sinh Ngắn)** — nền tảng: TikTok · Facebook Reels ·
+  YouTube Shorts. Thị phạm một động tác, theo khuôn riêng ở `duong_sinh_bai_tap.md` mục 5 (nhịp
+  cảnh đi theo động tác/hơi thở, không theo nhịp kể chuyện). Nhánh A không dùng CLIP.
+- **NGẮN (3–5 phút) — mặc định Nhánh A, chốt lại 07/09/2026** — nền tảng: YouTube. Trả lời trọn
+  vẹn một câu hỏi "Tại sao...?" bằng **3 góc rõ ràng** ở mức súc tích, đúng với chất liệu thật sự
+  có của một câu hỏi đơn lẻ trong backlog — không dàn trải, không nhồi chữ cho đủ phút. Đây là
+  độ dài phù hợp nhất với phần lớn chủ đề Nhánh A ở tốc độ đọc thật (mục 1.E).
+- **TRUNG (6–8 phút) — khi chủ đề đủ sâu hơn NGẮN** — có thêm một ví dụ/câu chuyện đời thực đủ
+  chi tiết (xem `life_stories.md`) mà NGẮN không đủ chỗ khai triển trọn vẹn. Chỉ chọn khi thật
+  sự có chất liệu thêm — không chọn TRUNG chỉ để "cho có vẻ đầy đặn hơn".
+- **DÀI (8–10 phút) — hiếm, chủ đề thật sự rất sâu** — nhiều lớp góc nhìn + phần áp dụng thực tế
+  chi tiết. Theo **kiến trúc ở mục 4**. Ở tốc độ đọc thật, DÀI cần ~1900–2400 từ — chỉ chọn khi
+  chắc chắn không phải lặp ý để đủ số từ đó.
 
-⚠️ **Cách chọn DÀI hay TRUNG cho Nhánh A: xem mục 3.** Không còn "mặc định luôn DÀI" — trợ lý tự
-chọn theo độ sâu chủ đề thật sự, miễn cả hai đều giữ đủ 3 góc rõ ràng, tập trung.
+⚠️ **Cách chọn định dạng cho Nhánh A: xem mục 3.** NGẮN là mặc định; chỉ lên TRUNG/DÀI khi chủ
+đề thật sự có thêm chất liệu, không phải để video "trông dài hơn".
 
 **Nguyên tắc chung về số cảnh:**
 - Mỗi cảnh đại diện cho một ý.
@@ -262,74 +291,80 @@ chọn theo độ sâu chủ đề thật sự, miễn cả hai đều giữ đ�
 
 ## 3. QUY TẮC TỰ CHỌN ĐỊNH DẠNG
 
-### ⭐ NHÁNH A: CHỈ DÀI HOẶC TRUNG — TỰ CHỌN THEO ĐỘ SÂU CHỦ ĐỀ (chốt lại 05/09/2026 — quyết
-định của chủ kênh, thay quy tắc "mặc định luôn DÀI" 25/07/2026)
+### ⭐ NHÁNH A: NGẮN LÀ MẶC ĐỊNH, LÊN TRUNG/DÀI CHỈ KHI CHỦ ĐỀ THẬT SỰ ĐỦ SÂU (chốt lại
+07/09/2026 — quyết định của chủ kênh, thay quy tắc "chỉ DÀI hoặc TRUNG" 05/09/2026)
 
-**Nhánh A (Giải Đáp) chỉ còn 2 định dạng: DÀI (8–10 phút) và TRUNG (6–8 phút).** Không còn dùng
-CLIP hay NGẮN cho Nhánh A (CLIP nay chỉ dành cho Nhánh B — Dưỡng Sinh Ngắn; NGẮN đã bỏ hẳn khỏi
-hệ thống, xem mục 2).
+**Nhánh A (Giải Đáp) mặc định dùng NGẮN (3–5 phút).** Lý do đổi lại (xem changelog đầu file):
+tốc độ đọc TTS thật (~250 từ/phút, đo trực tiếp từ 3 tập đầu) gấp đôi giả định cũ dùng để chốt
+DÀI/TRUNG ngày 05/09/2026 — ở tốc độ thật, một câu hỏi "Tại sao...?" đơn lẻ hiếm khi có đủ chất
+liệu cho 6–10 phút mà không lặp ý/loãng. CLIP vẫn chỉ dành cho Nhánh B (Dưỡng Sinh Ngắn).
 
-**Trợ lý TỰ CHỌN DÀI hay TRUNG cho từng chủ đề, KHÔNG hỏi lại người dùng "bạn muốn TRUNG hay
-DÀI?".** Căn cứ chọn: chủ đề đó có đủ chất liệu cho **3 góc nhìn khác nhau, rõ ràng, không lặp
-ý** hay không (đúng khung THÂN mục 4):
+**Trợ lý TỰ CHỌN định dạng cho từng chủ đề, KHÔNG hỏi lại người dùng.** Căn cứ chọn: chủ đề đó
+có chất liệu thật sự vượt quá những gì NGẮN chứa nổi hay không (đúng khung THÂN mục 4):
 
-- Chủ đề đủ chiều sâu, tách được 3 lớp/góc **khác biệt thật sự** (VD: nguyên nhân ẩn + tác động
-  lặng lẽ + một ví dụ/câu chuyện đời thực) → chọn **DÀI (8–10 phút)**.
-- Chủ đề gọn hơn, chỉ đủ chất liệu cho 3 góc ở mức súc tích (không đủ để mỗi góc kéo dài như DÀI
-  mà không lặp ý/loãng) → chọn **TRUNG (6–8 phút)**.
+- Mặc định: chủ đề đủ chất liệu cho **3 góc nhìn rõ ràng, không lặp ý** ở mức súc tích →
+  **NGẮN (3–5 phút)**. Đây là lựa chọn đúng cho phần lớn câu hỏi "Tại sao...?" trong backlog.
+- Chủ đề có THÊM một ví dụ/câu chuyện đời thực đủ chi tiết mà NGẮN không đủ chỗ khai triển trọn
+  vẹn (không phải chỉ "muốn dài hơn") → **TRUNG (6–8 phút)**.
+- Chủ đề thật sự rất sâu, tách được nhiều lớp góc nhìn khác biệt thật sự + cần phần áp dụng
+  thực tế chi tiết → **DÀI (8–10 phút)**, hiếm khi dùng.
 
-**Bắt buộc với CẢ HAI định dạng: luôn đủ 3 góc rõ ràng, tập trung — không dàn trải, không lặp ý,
-không kéo dài một ý cho đủ giờ.** Đây là điều kiện cứng, áp dụng dù chọn DÀI hay TRUNG — thà
-chọn TRUNG cho gọn còn hơn ép một chủ đề mỏng thành DÀI rồi phải nhồi/lặp cho đủ phút (vi phạm
-"Kỷ luật giữ chân" mục 4). Nếu viết xong mà thấy một trong 3 góc bị lặp ý với góc khác, hoặc
-phải kéo dãn mới đủ thời lượng, đó là dấu hiệu chọn sai định dạng — chuyển sang định dạng còn
-lại (DÀI ↔ TRUNG) hoặc tách/gộp lại 3 góc cho thật khác biệt, không cố giữ nguyên định dạng ban
-đầu.
+**Bắt buộc với MỌI định dạng: luôn đủ 3 góc rõ ràng, tập trung — không dàn trải, không lặp ý,
+không kéo dài một ý cho đủ giờ.** Thà chọn NGẮN cho gọn còn hơn ép một chủ đề mỏng lên TRUNG/DÀI
+rồi phải nhồi/lặp cho đủ số từ (vi phạm "Kỷ luật giữ chân" mục 4). Nếu viết xong mà thấy phải
+kéo dãn mới đủ số từ mục tiêu, đó là dấu hiệu chọn sai định dạng — lùi xuống định dạng ngắn hơn,
+không cố giữ nguyên định dạng ban đầu.
 
-- Khi người dùng **nói rõ muốn DÀI hoặc TRUNG** → làm đúng định dạng đó, trợ lý tự chọn số cảnh
+- Khi người dùng **nói rõ muốn NGẮN/TRUNG/DÀI** → làm đúng định dạng đó, trợ lý tự chọn số cảnh
   trong khoảng của định dạng theo bảng mục 2, KHÔNG hỏi lại.
-- Khi người dùng nêu **thời lượng cụ thể** (VD: 7 phút, 9 phút) → thời lượng được ưu tiên; chọn
-  định dạng có khoảng chứa thời lượng đó rồi điều chỉnh số cảnh + độ dài lời dẫn cho khớp.
+- Khi người dùng nêu **thời lượng cụ thể** (VD: 4 phút, 7 phút) → thời lượng được ưu tiên; chọn
+  định dạng có khoảng chứa thời lượng đó rồi điều chỉnh số cảnh + độ dài lời dẫn cho khớp (tính
+  đúng theo 250 từ/phút — mục 1.E).
 - Khi người dùng KHÔNG nói rõ định dạng/thời lượng (kể cả khi chỉ đưa một tiêu đề/câu hỏi "Tại
-  sao...") → trợ lý tự chọn DÀI hoặc TRUNG theo đúng tiêu chí độ sâu chủ đề ở trên, KHÔNG hỏi
-  lại.
+  sao...") → trợ lý mặc định làm **NGẮN**, chỉ lên TRUNG/DÀI khi tự thấy rõ chủ đề có thêm chất
+  liệu thật sự, KHÔNG hỏi lại.
 - Mục tiêu cuối cùng: **đúng trải nghiệm xem, nội dung tập trung** — không phải đúng con số cảnh
-  hay đúng một định dạng "mặc định" cố định.
+  hay cố kéo dài cho có vẻ đầy đặn.
 
 ---
 
-## 4. KIẾN TRÚC VIDEO DÀI (8–10 phút)
+## 4. KIẾN TRÚC 5 PHẦN CHO NHÁNH A (dùng chung NGẮN/TRUNG/DÀI — chỉ khác độ dài mỗi phần)
 
-Mục tiêu: chiều sâu thật, để người xem thấy "mình vừa nhận được điều gì đó".
+> Viết lại 07/09/2026 để áp dụng cho cả NGẮN (mặc định) — trước đó mục này chỉ mô tả riêng DÀI.
+> Khung 5 phần và nguyên tắc "3 góc rõ ràng, không lặp ý" giữ nguyên ở mọi định dạng; khác nhau
+> ở SỐ TỪ mỗi phần (nhiều từ hơn khi lên TRUNG/DÀI), không phải ở cấu trúc.
 
-> ⚠️ **Các mốc giây dưới đây là TỶ TRỌNG NỘI DUNG, không phải ranh giới cảnh.** Mỗi cảnh video
-> DÀI dài 55–70 giây, nên MỞ (10–20s) và KẾT LẮNG (15–20s) **không đứng riêng thành một cảnh** —
-> chúng nằm gọn trong cảnh đầu và cảnh cuối cùng với phần nội dung kế bên. Cộng 4 phần có số:
-> 75–115 giây, **cộng outro cố định 43–51 giây (mục 1.E) = 118–166 giây**; phần THÂN gánh phần
-> còn lại ~314–482 giây (video 8–10 phút), tức chiếm 6–8 trong tổng số 8–10 cảnh.
-> Outro luôn là cảnh cuối và đã nằm trong tổng số cảnh của bảng mục 2.
+Mục tiêu: chiều sâu thật, để người xem thấy "mình vừa nhận được điều gì đó" — dù ở NGẮN cũng
+không hời hợt.
+
+> ⚠️ **Các mốc dưới đây là TỶ TRỌNG NỘI DUNG, không phải ranh giới cảnh cứng.** Ví dụ cho NGẮN
+> (mặc định, tổng ~750–1250 từ cả outro ở tốc độ đọc thật ~250 từ/phút — mục 1.E): outro cố định
+> chiếm 93 từ (~22–23 giây); phần THÂN gánh phần lớn còn lại, khai triển qua 8–9 cảnh. Với
+> TRUNG/DÀI, nhân số từ mỗi phần lên tương ứng theo bảng mục 2 — cấu trúc và tỷ lệ giữa các phần
+> giữ nguyên, chỉ mỗi phần được viết dài/chi tiết hơn.
 
 **Khung 5 phần:**
-1. **MỞ (10–20s):** hook điềm tĩnh + một câu hứa nhẹ về điều người xem sẽ hiểu. Không clickbait.
-2. **VÌ SAO ĐÁNG QUAN TÂM (20–30s):** nối chủ đề vào đời sống người xem.
+1. **MỞ:** hook điềm tĩnh + một câu hứa nhẹ về điều người xem sẽ hiểu. Không clickbait.
+2. **VÌ SAO ĐÁNG QUAN TÂM:** nối chủ đề vào đời sống người xem.
 3. **THÂN — 2–3 LỚP (phần chính):** khai triển qua 2–3 góc KHÁC NHAU, không lặp một ý. Mỗi lớp
    có mở–khai triển–lắng riêng + B-roll riêng. Có thể chèn một câu chuyện đời thực (xem `life_stories.md`).
-4. **ÁP DỤNG (30–45s):** vài gợi ý cụ thể, nhẹ nhàng, người xem làm được ngay.
-5. **KẾT LẮNG (15–20s):** một câu để nhớ.
-6. **OUTRO CỐ ĐỊNH (43–51s):** đọc nguyên văn đoạn ở mục 1.E — không viết lại, không rút gọn.
-   Đây là cảnh cuối cùng, `Loop: true`, dùng lại y hệt ở mọi video.
+4. **ÁP DỤNG:** vài gợi ý cụ thể, nhẹ nhàng, người xem làm được ngay.
+5. **KẾT LẮNG:** một câu để nhớ.
+6. **OUTRO CỐ ĐỊNH (93 từ ≈ 22–23 giây ở tốc độ thật):** đọc nguyên văn đoạn ở mục 1.E — không
+   viết lại, không rút gọn. Đây là cảnh cuối cùng, `Loop: true`, dùng lại y hệt ở mọi video.
 
-**Kỷ luật giữ chân:** mỗi lớp phải THÊM cái mới; chuyển lớp thì "re-hook" nhẹ; thà 8 phút đặc
-còn hơn 10 phút loãng.
+**Kỷ luật giữ chân:** mỗi lớp phải THÊM cái mới; chuyển lớp thì "re-hook" nhẹ; thà NGẮN đặc còn
+hơn TRUNG/DÀI loãng — đây chính là lý do NGẮN là mặc định (mục 3).
 
-**Khuôn xuất video dài:** A. Tên + ý chính + 1 câu hứa · B. Viết **lời dẫn liền mạch theo 5
-phần đầu** trước (outro ở phần 6 là văn bản cố định, không cần viết — chỉ dán nguyên văn từ mục
-1.E vào cảnh cuối) (như một bài nói chậm, để giữ mạch cảm xúc — đây là bước nháp) · C. Sau đó **chia
-lời dẫn đã viết thành 8–10 cảnh** (mỗi cảnh 55–70 giây lời dẫn — xem trần ngân sách hình ở mục
-2 và mục 6), đóng gói mỗi cảnh theo đúng khuôn field ở mục 1.C (Scene ID
-zero-padded, Duration, Voice, Visual, Camera, Character, Emotion, Loop) — mỗi field Voice là một
-đoạn của lời dẫn liền mạch đã viết ở bước B, không viết lại. Đánh dấu `Loop: true` cho cảnh
-B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn khác nhau.
+**Khuôn xuất:** A. Tên + ý chính + 1 câu hứa · B. **Tính số từ mục tiêu theo đúng 250 từ/phút**
+(mục 1.E) cho định dạng đã chọn, rồi viết **lời dẫn liền mạch theo 5 phần đầu** trước (outro ở
+phần 6 là văn bản cố định, không cần viết — chỉ dán nguyên văn từ mục 1.E vào cảnh cuối), như
+một bài nói chậm, để giữ mạch cảm xúc — đây là bước nháp · C. Sau đó **chia lời dẫn đã viết
+thành 8–9 cảnh** (NGẮN) hoặc 8–10 cảnh (TRUNG/DÀI, xem bảng mục 2), đóng gói mỗi cảnh theo đúng
+khuôn field ở mục 1.C (Scene ID zero-padded, Duration, Voice, Visual, Camera, Character,
+Emotion, Loop) — mỗi field Voice là một đoạn của lời dẫn liền mạch đã viết ở bước B, không viết
+lại. Đánh dấu `Loop: true` cho cảnh B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn khác
+nhau.
 
 ---
 
@@ -361,6 +396,11 @@ B-roll dùng lại/kéo dài để phủ dưới nhiều đoạn lời dẫn kh�
 > khiến một video 8–12 phút cần 9–11 Clip, tức **1,0–1,2 clip/phút** — đắt hơn cả mức cao nhất
 > của kênh tham chiếu My Dog & My Love (Tier 3: 0,68 clip/phút, chỉ mở khi doanh thu đã gấp 3–5
 > lần chi phí). Nay chuyển sang **trần cứng theo số tuyệt đối**, học từ mô hình đó.
+
+> ⚠️ Mục 6/6B mô tả trần hình cho **DÀI** — nay là lựa chọn hiếm, không phải mặc định (xem mục
+> 3, chốt lại 07/09/2026). Trần tương ứng cho **NGẮN** (mặc định) và **TRUNG** nằm ở bảng mục 2
+> (Ảnh giữ 4–8 cho NGẮN, 8–12 cho TRUNG). Mục 6/6B cũng chỉ áp dụng khi Nhánh A dùng pipeline
+> sinh ảnh AI từng cảnh — không áp dụng khi dùng pipeline nền thiên nhiên có sẵn (mục 6C).
 
 **Trần cứng cho VIDEO DÀI (8–10 phút):**
 

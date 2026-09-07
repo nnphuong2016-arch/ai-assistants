@@ -20,6 +20,11 @@
 > Cập nhật: 05/09/2026 — đổi khung phút theo quyết định mới ở `video_rules.md` mục 2/3: **DÀI
 > 8–10 phút** (was 8–12), **TRUNG 6–8 phút** (was 5–8), bỏ **NGẮN**, **CLIP chỉ còn Nhánh B**.
 > Trần Clip AI/Ảnh giữ của từng định dạng giữ nguyên, chỉ đổi khung phút/số cảnh.
+> Cập nhật: 07/09/2026 — **khôi phục NGẮN (3–5 phút) làm định dạng MẶC ĐỊNH của Nhánh A**, thay
+> DÀI/TRUNG — dữ liệu thật từ 3 tập đầu cho thấy tốc độ đọc TTS thật ~250 từ/phút (gấp đôi giả
+> định 110–130 cũ ở `video_rules.md`), khiến DÀI/TRUNG cũ chỉ đủ cho ~3–4 phút thật, không phải
+> 6–10 phút như ghi nhãn. TRUNG/DÀI vẫn dùng được khi chủ đề thật sự đủ sâu, xem
+> `video_rules.md` mục 2/3.
 
 ---
 
@@ -138,7 +143,8 @@ biểu cảm mạnh) → dùng thẳng ảnh từ kho ảnh nhân vật cố đ�
 mục 0B) làm ảnh tĩnh, KHÔNG cần img2video — rẻ nhất, vẫn giữ đúng nhận diện nhân vật vì là ảnh
 gốc, không generate lại.
 
-**Ngân sách hình cho VIDEO DÀI (8–10 phút, chốt lại 05/09/2026) — Mức 1, trần cứng:**
+**Ngân sách hình cho VIDEO DÀI (8–10 phút — nay là lựa chọn hiếm, không phải mặc định Nhánh A,
+xem `video_rules.md` mục 3 chốt lại 07/09/2026) — Mức 1, trần cứng:**
 
 | Thành phần | Trần |
 |---|---|
@@ -167,25 +173,30 @@ Minh là chiêm nghiệm về sức khỏe/triết lý, gần như không cảnh
 động thì mất cảm xúc". Thêm nữa, **khán giả kênh này nghe nhiều hơn nhìn** — thường bật lên nghe
 khi đang làm việc khác — nên hình chỉ cần nâng đỡ lời dẫn, không cần tranh sự chú ý.
 
-**Ngân sách hình cho định dạng còn lại** (cập nhật 05/09/2026 — bỏ NGẮN, TRUNG đổi khung phút,
+**Ngân sách hình cho định dạng còn lại** (cập nhật 07/09/2026 — khôi phục NGẮN làm mặc định
+Nhánh A sau khi đo tốc độ đọc TTS thật ~250 từ/phút, xem `video_rules.md` changelog đầu file;
 giữ nguyên triết lý "đa số là Ảnh giữ"):
 
 | Định dạng | Thời lượng | Cảnh | Clip AI | Ảnh giữ |
 |---|---|---|---|---|
 | CLIP *(chỉ Nhánh B)* | 1–3 phút | 3–6 | tối đa 1 | 3–6 |
-| TRUNG | 6–8 phút | 7–9 | tối đa 2 | 8–12 |
-| **DÀI** | 8–10 phút | 8–10 | **tối đa 3** | **12–16** |
+| **NGẮN** *(mặc định Nhánh A)* | 3–5 phút | 8–9 | tối đa 2 | 4–8 |
+| TRUNG *(khi chủ đề đủ sâu)* | 6–8 phút | 8–9 | tối đa 3 | 8–12 |
+| **DÀI** *(hiếm, chủ đề rất sâu)* | 8–10 phút | 9–10 | **tối đa 3** | **12–16** |
 
-> Nhánh A (Giải Đáp) chỉ dùng DÀI hoặc TRUNG, tự chọn theo độ sâu chủ đề — xem `video_rules.md`
-> mục 3. CLIP chỉ còn dành cho Nhánh B (Dưỡng Sinh Ngắn). NGẮN (3–5 phút) đã bỏ khỏi hệ thống.
+> Nhánh A (Giải Đáp) mặc định dùng **NGẮN**, tự chọn lên TRUNG/DÀI chỉ khi chủ đề thật sự đủ
+> sâu — xem `video_rules.md` mục 3. CLIP chỉ dành cho Nhánh B (Dưỡng Sinh Ngắn). Bảng này (Ảnh
+> giữ/Clip AI) chỉ áp dụng khi Nhánh A dùng pipeline sinh ảnh AI từng cảnh — không áp dụng cho
+> pipeline nền thiên nhiên có sẵn (`video_rules.md` mục 6C), nơi thời lượng do tổng số từ Voice
+> quyết định, không phải số hình.
 
 ⚠️ **Chữ "Clip" ở đây là loại hình (Clip AI video), KHÔNG phải định dạng CLIP 1–3 phút.** Một
 video định dạng CLIP vẫn chứa tối đa 1 Clip AI + 3–6 Ảnh giữ. Xem lưu ý đầu `video_rules.md`
 mục 2.
 
-**Khi người dùng chỉ đưa một tiêu đề mà không nói gì thêm** → trợ lý tự chọn DÀI hay TRUNG theo
-độ sâu chủ đề, không hỏi lại (chốt 05/09/2026, thay "mặc định luôn DÀI" cũ — xem `video_rules.md`
-mục 3).
+**Khi người dùng chỉ đưa một tiêu đề mà không nói gì thêm** → trợ lý mặc định làm **NGẮN**, chỉ
+lên TRUNG/DÀI khi tự thấy chủ đề có thêm chất liệu thật sự, không hỏi lại (chốt lại 07/09/2026 —
+xem `video_rules.md` mục 3).
 
 **Độ dài Clip AI video (khi đã chọn generate clip):** gốc 6–10 giây (tuỳ công cụ, xem mục 12
 `video_ai_prompt_rules.md`) — khi dựng (edit), có thể **kéo dài cảm giác thành 8–12 giây** bằng
@@ -193,7 +204,8 @@ kỹ thuật zoom/pan/crop nhẹ trên chính clip đó (không phải generate 
 phí). Kỹ thuật này áp dụng ở bước FFMPEG Composer, xem `video_ai_contract.md` Stage 7.
 
 **Độ dài hiển thị Ảnh tĩnh:** bám sát **Duration** của scene đó (đã có sẵn ở khuôn field
-`video_rules.md` mục 1.C — Duration ước theo ngân sách lời của đoạn Voice, ~110–130 từ/phút),
+`video_rules.md` mục 1.C — Duration ước theo ngân sách lời của đoạn Voice, tốc độ đọc thật ~250
+từ/phút — mục 1.E, chốt lại 07/09/2026),
 không phải một con số cố định riêng cho ảnh tĩnh. Ảnh tĩnh giữ nguyên khung hình, chỉ áp Ken
 Burns (zoom in/out chậm, pan ngang/dọc nhẹ) trong suốt Duration đó.
 

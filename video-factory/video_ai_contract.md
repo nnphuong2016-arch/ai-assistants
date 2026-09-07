@@ -340,7 +340,8 @@ Yêu cầu
 
 - ghép đúng thứ tự theo Scene ID
 - Scene "static": áp **một cú Ken Burns duy nhất** (xem `video_rules.md` mục 6B), trong đúng
-  **Duration** của Scene đó (lấy từ Master Script, ~110–130 từ/phút theo Voice — mục 1.C).
+  **Duration** của Scene đó (lấy từ Master Script, ước theo Voice ở tốc độ đọc thật ~250
+  từ/phút — `video_rules.md` mục 1.E, chốt lại 07/09/2026).
   Tốc độ zoom tính theo chính độ dài giữ của ảnh đó để chuyển động trải đều hết đoạn; chiều zoom
   đổi xen kẽ giữa các ảnh liên tiếp, có trôi ngang nhẹ đổi hướng theo chu kỳ.
   ⚠️ **Sửa 26/07/2026 — bản trước ghi sai.** Bản cũ yêu cầu "Ken Burns + tối đa 2 lớp phụ

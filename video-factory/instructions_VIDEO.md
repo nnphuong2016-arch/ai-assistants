@@ -14,6 +14,8 @@
 > Cập nhật: 07/09/2026 — Nhánh A đổi lại định dạng mặc định thành **NGẮN (3–5 phút)** sau khi đo
 > tốc độ đọc TTS thật (~250 từ/phút, gấp đôi giả định cũ) qua 3 tập đầu — xem `video_rules.md`
 > mục 2/3 (nguồn chốt, không lặp lại số liệu ở đây).
+> Cập nhật: 07/09/2026 (2) — **CHỐT CỨNG: Nhánh A chỉ còn NGẮN**, bỏ hẳn TRUNG/DÀI, không còn
+> ngoại lệ theo độ sâu chủ đề — xem `video_rules.md` mục 2/3.
 
 ---
 
@@ -30,11 +32,11 @@ Xem bảng đầy đủ 4 kênh ở `core-brain/channel_roles.md` mục 1. Trong
 đang làm nhánh nào trước khi chọn file rules:
 
 - **Nhánh A — GIẢI ĐÁP (kênh chính: YouTube):** chuyển thể các câu hỏi "Tại sao..." thành video —
-  **mặc định định dạng NGẮN (3–5 phút), lên TRUNG/DÀI chỉ khi chủ đề thật sự đủ sâu** (chốt lại
-  07/09/2026 sau khi đo tốc độ đọc TTS thật — xem `video_rules.md` mục 3). Con số chuẩn duy nhất
-  (thời lượng · số cảnh · trần hình) nằm ở `video_rules.md` mục 2, không ghi lại ở đây để tránh 2
-  nơi lệch nhau. Vai trò: **giải đáp câu hỏi** — kể chuyện + giải thích bằng hình ảnh, trả lời
-  trọn vẹn câu hỏi trong tên video. Dùng `video_rules.md` mục 2–4 + `examples_and_hooks.md`.
+  **CHỈ định dạng NGẮN (3–5 phút), không còn TRUNG/DÀI dưới bất kỳ lý do gì** (chốt cứng
+  07/09/2026 (2), sau khi đo tốc độ đọc TTS thật — xem `video_rules.md` mục 3). Con số chuẩn duy
+  nhất (thời lượng · số cảnh · trần hình) nằm ở `video_rules.md` mục 2, không ghi lại ở đây để
+  tránh 2 nơi lệch nhau. Vai trò: **giải đáp câu hỏi** — kể chuyện + giải thích bằng hình ảnh, trả
+  lời trọn vẹn câu hỏi trong tên video. Dùng `video_rules.md` mục 2–4 + `examples_and_hooks.md`.
 - **Nhánh B — DƯỠNG SINH NGẮN (kênh chính: TikTok / Facebook Reels / YouTube Shorts):** dùng định
   dạng **CLIP** (1–3 phút, `video_rules.md` mục 2) để thị phạm một bài tập dưỡng sinh/yoga nhẹ cụ
   thể. Vai trò: **hành động ngay lập tức** — người xem làm theo được luôn, không cần lý thuyết
@@ -42,9 +44,8 @@ Xem bảng đầy đủ 4 kênh ở `core-brain/channel_roles.md` mục 1. Trong
   thay vì cấu trúc kể chuyện hook→thân→kết thông thường của Nhánh A.
 
 Hai nhánh này **không dùng chung khuôn kịch bản** — Nhánh A là kể chuyện/giải thích, Nhánh B là
-thị phạm động tác. **Mặc định là Nhánh A** (định dạng cụ thể NGẮN/TRUNG/DÀI do trợ lý tự chọn
-theo độ sâu chủ đề — xem trên) — chỉ chuyển sang Nhánh B khi người dùng nói rõ là muốn video bài
-tập dưỡng sinh.
+thị phạm động tác. **Mặc định là Nhánh A** (định dạng luôn là NGẮN — xem trên) — chỉ chuyển sang
+Nhánh B khi người dùng nói rõ là muốn video bài tập dưỡng sinh.
 
 **Hai chế độ nhận việc (áp dụng cho cả hai nhánh):**
 1. **Chuyển đổi từ bài SEO đã có** (chế độ chính khi vận hành pipeline tự động: 1 chủ đề → 1
@@ -103,8 +104,8 @@ thuộc Factory khác, không tự ý làm thay.
 
 ## 3. FILE TRONG KHU FILES (đọc theo đúng thứ tự khi viết một kịch bản)
 
-1. `video_rules.md` — mô hình sản xuất, khuôn xuất kịch bản, khung định dạng NGẮN/TRUNG/DÀI
-   (Nhánh A) + CLIP (Nhánh B), quy tắc viết prompt hình, chống lặp, thumbnail ethics.
+1. `video_rules.md` — mô hình sản xuất, khuôn xuất kịch bản, khung định dạng NGẮN (Nhánh A) +
+   CLIP (Nhánh B), quy tắc viết prompt hình, chống lặp, thumbnail ethics.
 2. `examples_and_hooks.md` — dạy giọng bằng ví dụ, triết lý hook (CÁCH viết hook hay — không
    phải kho hook để chọn, xem lưu ý dưới).
 3. `core-brain/image_style_bible.md` — ngoại hình & không khí hình ảnh nhân vật, dùng cho mọi prompt hình
@@ -153,9 +154,9 @@ Quy trình gồm **2 bước tách rời, sinh ra 2 file `.md`** — không gộ
 
 ### BƯỚC 1 — Viết Master Script (`..._master_script.md`)
 
-Xác định **nhánh** (mục 1B — mặc định Nhánh A Giải Đáp) → **định dạng: Nhánh A mặc định NGẮN**,
-chỉ lên TRUNG/DÀI khi tự thấy chủ đề thật sự đủ sâu (không hỏi lại), trừ khi người dùng nói rõ
-định dạng hoặc nêu thời lượng cụ thể (`video_rules.md` mục 3 — CLIP không dùng cho Nhánh A) → xác định hook: nếu đang
+Xác định **nhánh** (mục 1B — mặc định Nhánh A Giải Đáp) → **định dạng: Nhánh A CHỈ NGẮN**, không
+hỏi lại, không tự xét "đủ sâu" để lên định dạng khác (`video_rules.md` mục 3 — CLIP không dùng
+cho Nhánh A) → xác định hook: nếu đang
 chuyển đổi từ bài SEO có sẵn, **dùng lại đúng hook bài đó đã chọn**; nếu viết độc lập (Nhánh A),
 lấy câu hỏi từ `bai-video-dang-Youtube-Anh-Minh.md` hoặc nguồn ngoài (Drive/Sheet) → viết theo
 khuôn xuất & khung định dạng tương ứng (`video_rules.md` mục 1–4), giữ đúng giọng viết hook theo

@@ -25,6 +25,9 @@
 > định 110–130 cũ ở `video_rules.md`), khiến DÀI/TRUNG cũ chỉ đủ cho ~3–4 phút thật, không phải
 > 6–10 phút như ghi nhãn. TRUNG/DÀI vẫn dùng được khi chủ đề thật sự đủ sâu, xem
 > `video_rules.md` mục 2/3.
+> Cập nhật: 07/09/2026 (2) — **CHỐT CỨNG: bỏ hẳn TRUNG/DÀI cho Nhánh A**, không còn ngoại lệ
+> "chủ đề đủ sâu". NGẮN (3–5 phút) là định dạng DUY NHẤT của Nhánh A — xem `video_rules.md`
+> mục 2/3.
 
 ---
 
@@ -143,8 +146,9 @@ biểu cảm mạnh) → dùng thẳng ảnh từ kho ảnh nhân vật cố đ�
 mục 0B) làm ảnh tĩnh, KHÔNG cần img2video — rẻ nhất, vẫn giữ đúng nhận diện nhân vật vì là ảnh
 gốc, không generate lại.
 
-**Ngân sách hình cho VIDEO DÀI (8–10 phút — nay là lựa chọn hiếm, không phải mặc định Nhánh A,
-xem `video_rules.md` mục 3 chốt lại 07/09/2026) — Mức 1, trần cứng:**
+**Ngân sách hình cho VIDEO DÀI (8–10 phút — KHÔNG còn dùng cho Nhánh A dưới bất kỳ lý do gì,
+chốt cứng `video_rules.md` mục 2/3 ngày 07/09/2026 (2); bảng dưới đây chỉ giữ làm tài liệu tham
+khảo) — Mức 1, trần cứng:**
 
 | Thành phần | Trần |
 |---|---|
@@ -173,30 +177,29 @@ Minh là chiêm nghiệm về sức khỏe/triết lý, gần như không cảnh
 động thì mất cảm xúc". Thêm nữa, **khán giả kênh này nghe nhiều hơn nhìn** — thường bật lên nghe
 khi đang làm việc khác — nên hình chỉ cần nâng đỡ lời dẫn, không cần tranh sự chú ý.
 
-**Ngân sách hình cho định dạng còn lại** (cập nhật 07/09/2026 — khôi phục NGẮN làm mặc định
-Nhánh A sau khi đo tốc độ đọc TTS thật ~250 từ/phút, xem `video_rules.md` changelog đầu file;
-giữ nguyên triết lý "đa số là Ảnh giữ"):
+**Ngân sách hình cho định dạng còn lại** (cập nhật 07/09/2026 (2) — Nhánh A CHỐT CỨNG chỉ còn
+NGẮN, bỏ hẳn TRUNG/DÀI, xem `video_rules.md` mục 2/3; giữ nguyên triết lý "đa số là Ảnh giữ"):
 
 | Định dạng | Thời lượng | Cảnh | Clip AI | Ảnh giữ |
 |---|---|---|---|---|
 | CLIP *(chỉ Nhánh B)* | 1–3 phút | 3–6 | tối đa 1 | 3–6 |
-| **NGẮN** *(mặc định Nhánh A)* | 3–5 phút | 8–9 | tối đa 2 | 4–8 |
-| TRUNG *(khi chủ đề đủ sâu)* | 6–8 phút | 8–9 | tối đa 3 | 8–12 |
-| **DÀI** *(hiếm, chủ đề rất sâu)* | 8–10 phút | 9–10 | **tối đa 3** | **12–16** |
+| **NGẮN** *(DUY NHẤT cho Nhánh A)* | 3–5 phút | 8–9 | tối đa 2 | 4–8 |
 
-> Nhánh A (Giải Đáp) mặc định dùng **NGẮN**, tự chọn lên TRUNG/DÀI chỉ khi chủ đề thật sự đủ
-> sâu — xem `video_rules.md` mục 3. CLIP chỉ dành cho Nhánh B (Dưỡng Sinh Ngắn). Bảng này (Ảnh
-> giữ/Clip AI) chỉ áp dụng khi Nhánh A dùng pipeline sinh ảnh AI từng cảnh — không áp dụng cho
-> pipeline nền thiên nhiên có sẵn (`video_rules.md` mục 6C), nơi thời lượng do tổng số từ Voice
+> Nhánh A (Giải Đáp) **chỉ dùng NGẮN, không còn ngoại lệ TRUNG/DÀI** (chốt cứng 07/09/2026 (2)
+> — xem `video_rules.md` mục 3). TRUNG/DÀI vẫn còn định nghĩa ở mục "Ngân sách hình cho VIDEO
+> DÀI" phía trên, giữ làm tài liệu tham khảo, nhưng Nhánh A không còn được chọn hai định dạng
+> này. CLIP chỉ dành cho Nhánh B (Dưỡng Sinh Ngắn). Bảng này (Ảnh giữ/Clip AI) chỉ áp dụng khi
+> Nhánh A dùng pipeline sinh ảnh AI từng cảnh — không áp dụng cho pipeline nền thiên nhiên có
+> sẵn (`video_rules.md` mục 6C, pipeline đang chạy thật), nơi thời lượng do tổng số từ Voice
 > quyết định, không phải số hình.
 
 ⚠️ **Chữ "Clip" ở đây là loại hình (Clip AI video), KHÔNG phải định dạng CLIP 1–3 phút.** Một
 video định dạng CLIP vẫn chứa tối đa 1 Clip AI + 3–6 Ảnh giữ. Xem lưu ý đầu `video_rules.md`
 mục 2.
 
-**Khi người dùng chỉ đưa một tiêu đề mà không nói gì thêm** → trợ lý mặc định làm **NGẮN**, chỉ
-lên TRUNG/DÀI khi tự thấy chủ đề có thêm chất liệu thật sự, không hỏi lại (chốt lại 07/09/2026 —
-xem `video_rules.md` mục 3).
+**Khi người dùng chỉ đưa một tiêu đề mà không nói gì thêm** → trợ lý luôn làm **NGẮN**, không
+hỏi lại, không tự xét "đủ sâu" để lên định dạng khác (chốt cứng 07/09/2026 (2) — xem
+`video_rules.md` mục 3).
 
 **Độ dài Clip AI video (khi đã chọn generate clip):** gốc 6–10 giây (tuỳ công cụ, xem mục 12
 `video_ai_prompt_rules.md`) — khi dựng (edit), có thể **kéo dài cảm giác thành 8–12 giây** bằng

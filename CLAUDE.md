@@ -169,12 +169,19 @@ cần khi viết kịch bản thủ công).
 > 3 phút. Chi tiết đầy đủ (bảng số cảnh/Clip AI/Ảnh giữ, tốc độ đọc thật ~250 từ/phút) →
 > `video_rules.md` mục 1.E/2/3 — không lặp lại số liệu ở đây để tránh lệch khi sửa sau.
 >
-> **Hướng B-roll thiên nhiên miễn phí (cùng ngày):** chủ kênh muốn lồng thêm B-roll thiên nhiên
-> có sẵn, miễn phí bản quyền (học theo một kênh tham chiếu chủ kênh gọi là "kênh Andre") để giảm
-> chi phí Clip AI/Ảnh giữ phải generate. Hiện mới chốt **nguyên tắc chính sách** ở `video_rules.md`
-> mục 6C; chi tiết tích hợp kỹ thuật (nguồn thư viện, cách chèn vào Master Script) do một workflow
-> n8n riêng đang được dựng quyết định — cập nhật lại mục 6C khi workflow đó hoàn tất, không tự
-> suy đoán trước.
+> **XÁC NHẬN PIPELINE THẬT = "CÁCH 2" — kênh Anh Minh KHÔNG sinh Clip AI/Ảnh giữ nào cả (viết lại
+> 07/09/2026, thay hẳn ghi chú "chính sách B-roll đang chờ chốt" cũ):** rà trực tiếp 4 workflow
+> n8n thật đang chạy (`WFAnhMinhC201–204`) xác nhận kênh này chỉ ghép **ảnh host cố định**
+> (`assets/anhminh.png`) + **clip nền thiên nhiên có sẵn** (`nature_bg/`, workflow tự chọn chủ
+> đề) + giọng đọc — KHÔNG generate ảnh/clip AI nào (Flux/Veo3/Replicate mô tả ở
+> `model_selection_rules.md`/`video_ai_prompt_rules.md` thuộc "Cách 1", một pipeline khác dựng
+> 30/7 nhưng **chưa từng dùng thật**). **Hệ quả bắt buộc:** `_prompts.md` viết cho kênh này CHỈ
+> gồm khối Quick Copy + Prompt Thumbnail — **bỏ hẳn phần scene-prompt Clip AI/Ảnh giữ/Veo3/
+> character reference**. Sự cố từng xảy ra: cả 3 tập 1.1–1.3 ban đầu đều viết nhầm đầy đủ phần đó
+> theo khuôn Cách 1 dù đã biết kênh chạy Cách 2 — chủ kênh phát hiện, đã sửa lại tập 1.3 (1.1/1.2
+> giữ nguyên vì đã đăng). **Trước khi viết `_prompts.md` cho bất kỳ kênh nào, luôn xác định trước
+> kênh đó chạy Cách 1 hay Cách 2** — hỏi người vận hành nếu chưa chắc. Chi tiết đầy đủ (bằng
+> chứng, hệ quả cho từng file) → `video_rules.md` mục 6C — không lặp lại ở đây.
 >
 > **Thêm khối QUICK COPY + PROMPT THUMBNAIL, 05/09/2026 — quyết định của chủ kênh:** cuối file
 > `..._prompts.md` mỗi video giờ có thêm khối **Quick Copy** (Title/Description/SEO Keywords/
@@ -240,6 +247,19 @@ tiên**. Thay vào đó:
    nhìn khách quan hơn khi rà lỗi, thay vì dễ bỏ qua vì đã quen câu chữ mình vừa viết.
 4. Sửa trực tiếp mọi chỗ nhạt/lặp/sai ngay trong bản nháp (không giao lại cho agent con sửa vòng
    2 trừ khi lỗi quá lớn cần viết lại gần như toàn bộ), rồi mới lưu theo Bước 5.
+
+> **Siết lại riêng cho KỊCH BẢN VIDEO (thêm 07/09/2026, sau sự cố Cách 1/Cách 2 — xem
+> `video_rules.md` mục 6C):** khi giao việc viết kịch bản video cho agent con ở bước 1 trên, prompt
+> giao việc **PHẢI** nói rõ thêm, không được để agent con tự đoán: (a) kênh đang chạy **Cách 1**
+> hay **Cách 2** (nêu rõ tên kênh + kết luận đã xác nhận — hiện tại kênh Anh Minh là Cách 2, KHÔNG
+> sinh Clip AI/Ảnh giữ nào), và hệ quả trực tiếp: nếu Cách 2 thì `_prompts.md` chỉ viết đúng 2
+> khối Quick Copy + Prompt Thumbnail, bỏ hẳn phần scene-prompt; (b) định dạng Nhánh A hiện hành
+> là NGẮN (3–5 phút) DUY NHẤT, tính theo tốc độ đọc thật ~250 từ/phút — không phải giả định cũ.
+> Phiên chính khi tự đọc lại bản nháp (bước 3–4 trên) phải tự kiểm thêm đúng 2 điểm này trước khi
+> coi là xong — đây là đúng loại lỗi (viết đủ nội dung nhưng sai pipeline/sai định dạng) mà việc
+> "phiên chính chỉ biên tập, không tự viết" ở Bước 3.5 vốn được lập ra để bắt được nhưng đã bị bỏ
+> sót trong lần đầu (khi đó phiên chính tự viết thẳng, không qua agent con, nên không có bước
+> soát lại độc lập).
 
 **Khi nào KHÔNG áp dụng:** việc trò chuyện/tư vấn nhanh (chat trực tiếp — không phải "viết một
 nội dung" để lưu file), các câu hỏi/rà soát không tạo ra nội dung mới, và các tác vụ kỹ thuật

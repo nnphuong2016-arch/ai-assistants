@@ -21,6 +21,8 @@
 > thay `TRUNG`/`DÀI` — dữ liệu thật từ 3 tập đầu cho thấy tốc độ đọc TTS thật ~250 từ/phút (gấp
 > đôi giả định cũ), khiến TRUNG/DÀI không đủ chất liệu cho phần lớn câu hỏi đơn lẻ mà không lặp
 > ý. `TRUNG`/`DÀI` vẫn dùng khi chủ đề thật sự đủ sâu — theo `video_rules.md` mục 2/3.
+> Cập nhật: 07/09/2026 (2) — **CHỐT CỨNG: field 3 "Format" cho Nhánh A chỉ còn giá trị `NGẮN`**,
+> bỏ hẳn `TRUNG`/`DÀI` (không còn ngoại lệ theo độ sâu chủ đề) — theo `video_rules.md` mục 2/3.
 
 ---
 
@@ -31,11 +33,11 @@
    (Nhánh B, thị phạm động tác cho TikTok/Reels/Shorts, theo `duong_sinh_bai_tap.md`) /
    `Bếp An Nhiên` (theo `bep_an_nhien.md`) / `Suy Ngẫm` (video ngắn insight thường, không thuộc
    3 track trên) — xem `instructions_VIDEO.md` mục 1B. Quyết định track TRƯỚC khi chọn Format.
-3. **Format** — `CLIP` (1–3 phút, chỉ Nhánh B — Dưỡng Sinh Ngắn) / `NGẮN` (3–5 phút, **mặc định
-   Nhánh A**) / `TRUNG` (6–8 phút) / `DÀI` (8–10 phút) — theo khung định dạng `video_rules.md`
-   mục 2 (chốt lại 07/09/2026, khôi phục `NGẮN`). **Nhánh A (Giải Đáp) mặc định `NGẮN`**, trợ lý
-   chỉ lên `TRUNG`/`DÀI` khi tự thấy chủ đề thật sự đủ sâu — không hỏi lại người dùng (xem mục 3
-   `video_rules.md`). Dù chọn định dạng nào, THÂN vẫn phải đủ 3 góc rõ ràng, không dàn trải.
+3. **Format** — `CLIP` (1–3 phút, chỉ Nhánh B — Dưỡng Sinh Ngắn) / `NGẮN` (3–5 phút, **DUY NHẤT
+   cho Nhánh A**) — theo khung định dạng `video_rules.md` mục 2 (chốt cứng 07/09/2026 (2)).
+   **Nhánh A (Giải Đáp) luôn dùng `NGẮN`** — không còn `TRUNG`/`DÀI` cho Nhánh A dưới bất kỳ lý
+   do gì, không hỏi lại người dùng (xem mục 3 `video_rules.md`). THÂN vẫn phải đủ 3 góc rõ ràng,
+   không dàn trải, trong đúng khoảng 3–5 phút.
 4. **Duration** — thời lượng mục tiêu (VD: 2 phút, 4 phút, 10 phút).
 5. **Hook** — câu/hình mở đầu 3 giây. Nếu video chuyển đổi từ bài SEO có sẵn, **dùng nguyên
    hook bài đó đã dùng** (không tự chọn hook khác); nếu viết độc lập (Nhánh A), ghi rõ nguồn

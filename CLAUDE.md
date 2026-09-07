@@ -153,13 +153,20 @@ cần khi viết kịch bản thủ công).
 > log n8n thật (`Probe Scene Voice Durations`) xác nhận giọng VieNeu đang dùng đọc **~250
 > từ/phút** — gấp đôi giả định 110–130 từ/phút dùng để chốt DÀI/TRUNG hôm 05/09. Chủ kênh xác
 > nhận giữ nguyên tốc độ đọc (không đổi giọng/tốc độ TTS) và chấp nhận rằng một câu hỏi "Tại
-> sao...?" đơn lẻ không đủ chất liệu cho 6–10 phút ở tốc độ thật mà không lặp ý/loãng. **NGẮN
-> (3–5 phút) khôi phục lại làm định dạng MẶC ĐỊNH của Nhánh A**, trợ lý **tự chọn, KHÔNG hỏi lại
-> người dùng**. TRUNG (6–8 phút)/DÀI (8–10 phút) vẫn dùng được khi chủ đề thật sự đủ sâu (hiếm),
-> nhưng số từ mục tiêu đã tính lại theo đúng 250 từ/phút. Dù chọn định dạng nào, **THÂN vẫn phải
-> đủ 3 góc rõ ràng, khác biệt, tập trung, không dàn trải/lặp ý**. **CLIP (1–3 phút) chỉ dùng cho
-> Nhánh B — Dưỡng Sinh Ngắn**, không áp dụng cho Nhánh A. Ba tập 1.1–1.3 đã dựng **không cần viết
-> lại**. Chi tiết đầy đủ (bảng số cảnh/Clip AI/Ảnh giữ, cách chọn định dạng, tốc độ đọc thật) →
+> sao...?" đơn lẻ không đủ chất liệu cho 6–10 phút ở tốc độ thật mà không lặp ý/loãng.
+>
+> **CHỐT CỨNG cùng ngày, vài giờ sau (07/09/2026 (2)) — quyết định của chủ kênh:** bỏ hẳn
+> TRUNG/DÀI cho Nhánh A, không còn ngoại lệ "chủ đề đủ sâu thì lên TRUNG/DÀI" (cơ chế đó dễ bị
+> lạm dụng, quay lại đúng vấn đề đã sửa hôm 05/09). **NGẮN (3–5 phút) là định dạng DUY NHẤT của
+> Nhánh A** — trợ lý không còn phải chọn định dạng, luôn luôn viết NGẮN, KHÔNG hỏi lại người
+> dùng. Dù chủ đề nào, **THÂN vẫn phải đủ 3 góc rõ ràng, khác biệt, tập trung, không dàn
+> trải/lặp ý** trong đúng khoảng 3–5 phút đó. **CLIP (1–3 phút) chỉ dùng cho Nhánh B — Dưỡng
+> Sinh Ngắn**, không áp dụng cho Nhánh A.
+>
+> **Về 3 tập đã dựng:** tập 1.1 (3:43) và 1.2 (3:02) đã nằm trong khoảng NGẮN, không cần viết
+> lại. Tập 1.3 ban đầu dựng ra 2:44 — dưới mốc 3 phút, bị YouTube xếp vào Shorts — nên đã viết
+> lại (thêm chi tiết cụ thể cho từng cảnh, không thêm góc/ý mới) để đạt ~3:38, an toàn trên mốc
+> 3 phút. Chi tiết đầy đủ (bảng số cảnh/Clip AI/Ảnh giữ, tốc độ đọc thật ~250 từ/phút) →
 > `video_rules.md` mục 1.E/2/3 — không lặp lại số liệu ở đây để tránh lệch khi sửa sau.
 >
 > **Hướng B-roll thiên nhiên miễn phí (cùng ngày):** chủ kênh muốn lồng thêm B-roll thiên nhiên

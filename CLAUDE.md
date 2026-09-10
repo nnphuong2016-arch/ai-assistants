@@ -33,9 +33,12 @@ cho `hook_library_full.md` cũ — xem Bước 2): `bai-seo-dang-website-Anh-Min
   Không còn manifest JSON nào cho bài SEO — mọi metadata cần thiết (title, subcategory, date,
   readTime, excerpt, tags, featured) đã nằm sẵn trong frontmatter của chính bản `.mdx`. Chi tiết
   đầy đủ ở `seo-factory/website_publishing_rules.md` — đọc file đó trước khi lưu bài.
-- Kịch bản video → **chỉ lưu trực tiếp Google Drive, KHÔNG dùng GitHub nữa** (quyết định
-  18/07/2026 — đã ngừng dùng repo `kich-ban-video`) — thư mục "Anh Minh - N8N Trigger" →
-  "Kich-ban-video". Không cần thêm manifest JSON riêng cho video (xem Bước 5.B + Bước 6).
+- Kịch bản video → **quay lại dùng GitHub, quy trình 3 bước** (chỉnh lại 10/09/2026 — dòng cũ ở
+  đây nói "chỉ Drive, không GitHub" theo quyết định 18/07/2026 đã KHÔNG còn đúng thực tế đang
+  chạy): Claude commit/push vào repo GitHub riêng `Youtube---Anh-Minh` (thư mục `kich-ban-video/`,
+  nhánh `master`) để chủ kênh review → chủ kênh tự tay copy file đã duyệt sang Google Drive → n8n
+  đọc từ Drive. Claude KHÔNG tự tay thao tác Google Drive cho video nữa. Chi tiết đầy đủ + quy
+  tắc bắt buộc đẩy `master` và xác nhận đồng bộ ngay sau khi viết xong → xem Bước 5.B.
 - Prompt Featured Image → Google Drive, "Anh Minh - N8N Trigger" → "Prompt-Featured-Image"
   (xem Bước 5.5).
 - Bài đăng Facebook → Google Drive riêng (không GitHub) — xem Bước 5F.
@@ -464,42 +467,65 @@ kết quả — chọn "Bai-viet-SEO" làm chuẩn để nhất quán.
 > VD thực tế: bài `1.1.vi-sao-ngu-du-tam-tieng-van-met` là bài Sức khỏe **thứ nhất đã viết**,
 > lấy chủ đề từ **dòng 1.26** của backlog. Hai số này không cần khớp nhau.
 
-#### 5.B — Kịch bản video (Google Drive — KHÔNG dùng GitHub)
+#### 5.B — Kịch bản video (GitHub `Youtube---Anh-Minh` → chủ kênh tự copy sang Drive → n8n)
+
+> ⚠️ **Sửa lại 10/09/2026 cho đúng thực tế đang chạy.** Bản trước ghi "chỉ Drive, KHÔNG dùng
+> GitHub" (quyết định 18/07/2026) — điều đó **không còn đúng**: quy trình thật đã quay lại dùng
+> GitHub làm bước trung gian review từ trước phiên viết kịch bản 1.1–1.15, chỉ là chưa từng sửa
+> lại đoạn này cho khớp. Quy trình thật gồm đúng 3 bước:
+>
+> 1. **Claude viết + commit/push vào repo GitHub riêng `nnphuong2016-arch/Youtube---Anh-Minh`**
+>    (KHÔNG phải repo `ai-assistants` này), thư mục `kich-ban-video/`, nhánh `master` — chỉ để
+>    chủ kênh **review**, n8n KHÔNG đọc trực tiếp từ GitHub.
+> 2. **Chủ kênh tự tay copy file đã duyệt sang Google Drive** — đây là thao tác thủ công của chủ
+>    kênh. Claude KHÔNG tự ý dùng công cụ Drive `create_file` cho video nữa.
+> 3. **n8n (`WFAnhMinhC201`) đọc file từ Drive**, parse theo đúng khuôn `### Scene NNN` +
+>    `- **Voice:**` (xem `video-factory/video_rules.md` mục 1.C).
 
 - **MỖI VIDEO SINH RA 2 FILE `.md`, KHÔNG PHẢI 1** (chuẩn hoá 25/07/2026 theo mô hình kênh
   My Dog & My Love — xem `video-factory/output_schema.md` mục "File prompt đi kèm"):
   1. `..._master_script.md` — kịch bản: cảnh, lời dẫn, Visual/Camera trung tính. **Không** chứa
      prompt của bất kỳ công cụ AI nào.
-  2. `..._prompts.md` — prompt thật để generate, viết **SAU** khi Master Script xong. Đánh dấu rõ
-     cảnh nào là Clip (`🎬 CLIP 1/3`), cảnh nào là Ảnh giữ; cuối file có dòng tự kiểm ngân sách
-     (đếm Clip và Ảnh giữ, đối chiếu trần ở `model_selection_rules.md` mục 1B).
+  2. `..._prompts.md` — với kênh đang chạy **Cách 2** (xem `video_rules.md` mục 6C — hiện là
+     kênh Anh Minh), file này CHỈ gồm khối **Quick Copy + Prompt Thumbnail**, KHÔNG có scene-prompt
+     Clip AI/Ảnh giữ (đã sinh nhầm ở tập 1.1–1.3, sửa lại 07/09/2026). Chỉ viết đủ khuôn Clip/Ảnh
+     giữ + tự kiểm ngân sách khi xác nhận kênh đó đang chạy Cách 1.
 
   Chưa tạo đủ 2 file thì **chưa coi là xong**. Tách 2 file để khi đổi/thêm công cụ AI chỉ phải
   viết lại file prompt, giữ nguyên kịch bản.
-- **Nơi lưu:** Google Drive, thư mục "Anh Minh - N8N Trigger" → "Kich-ban-video" (parentId
-  `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F`, dùng công cụ Drive `create_file`) — lưu **cả hai file** vào
-  đây. File Master Script chứa **toàn văn** kịch bản — n8n đọc/parse trực tiếp file này (xem
-  `video-factory/video_ai_contract.md`),
-  KHÔNG cần repo GitHub `kich-ban-video` (đã ngừng dùng) và KHÔNG cần thêm manifest JSON riêng
-  (nội dung thật đã nằm sẵn trong chính file `.md` này — xem thêm ghi chú ở Bước 6).
 - **Tên file:** `<số chủ đề>.<STT>. <Tên video>_master_script.md` — số chủ đề theo đúng bảng ở
-  mục 5.A; STT xác định bằng cách liệt kê file đã có cùng `<số chủ đề>.` trong thư mục Drive
-  "Kich-ban-video" (đếm ĐỘC LẬP với thư mục "Bai-viet-SEO", kể cả khi video chuyển thể từ đúng bài SEO
-  đó). `<Tên video>` giữ nguyên tên tiếng Việt, có dấu cách/viết hoa như bình thường — KHÔNG rút
-  gọn thành slug; bỏ các ký tự không an toàn cho tên file khi tải về máy (Windows):
-  `\ / : * ? " < > |` (VD dấu `?` cuối câu hỏi thì bỏ hẳn).
+  mục 5.A; STT xác định bằng cách liệt kê file đã có cùng `<số chủ đề>.` trong thư mục
+  `kich-ban-video/` của repo `Youtube---Anh-Minh`. `<Tên video>` giữ nguyên tên tiếng Việt, có
+  dấu cách/viết hoa như bình thường — KHÔNG rút gọn thành slug; bỏ các ký tự không an toàn cho
+  tên file khi tải về máy (Windows): `\ / : * ? " < > |` (VD dấu `?` cuối câu hỏi thì bỏ hẳn).
   VD: `1.1. Vì sao ngủ đủ tám tiếng mà vẫn thấy mệt_master_script.md`.
-  File prompt dùng **đúng tên đó**, chỉ đổi đuôi `_master_script.md` → `_prompts.md`
-  (VD: `1.1. Vì sao ngủ đủ tám tiếng mà vẫn thấy mệt_prompts.md`).
+  File prompt dùng **đúng tên đó**, chỉ đổi đuôi `_master_script.md` → `_prompts.md`.
 - **Nội dung & khuôn field:** viết đúng theo `video-factory/video_rules.md` mục 1.C (Scene ID
   zero-padded, Duration, Voice, Visual, Camera, Character, Emotion, Loop) và đóng gói theo
-  `video-factory/output_schema.md`.
+  `video-factory/output_schema.md`. **Field "Video Title" ở đầu Master Script phải nằm một mình
+  trên một dòng sạch** (VD `**Video Title:** ...`), KHÔNG kèm chú thích/bình luận nào khác trên
+  cùng dòng — `WFAnhMinhC202` dùng regex bắt "Video Title" rồi lấy hết phần còn lại của dòng làm
+  tên, chú thích dính vào sẽ lẫn vào tên file .mp4 xuất bản thật (lỗi thật đã bắt được và sửa ở
+  tập 1.7, 07/09/2026).
 - **Hook/chủ đề gốc:** lấy theo đúng Bước 2 — `bai-video-dang-Youtube-Anh-Minh.md` (hoặc nguồn
   ngoài Drive/Sheet khi vận hành tự động) nếu viết độc lập, hoặc hook đã chọn sẵn ở bài SEO gốc
   nếu đang convert. **KHÔNG còn dùng `hook_library_full.md`.**
-- Không có bước commit/push (không còn GitHub cho video) — chỉ `create_file` lên đúng thư mục
-  Drive trên rồi gửi link file cho người dùng. Hỏi người dùng trước nếu ngữ cảnh chưa rõ có nên
-  tự lưu luôn không, trừ khi đã xác nhận sẵn "luôn tự lưu, không cần hỏi lại" trong phiên.
+
+> ⚠️ **BẮT BUỘC — đẩy lên `master` VÀ xác nhận đồng bộ ngay trong cùng lượt làm việc, không để
+> dồn sang lượt sau** (thêm 10/09/2026 theo yêu cầu người vận hành, cùng tinh thần "ĐỒNG BỘ REPO"
+> đã áp dụng cho chính repo `ai-assistants` — xem "GHI CHÚ VẬN HÀNH" cuối file):
+>
+> - Viết xong một hay nhiều kịch bản **chưa coi là xong** nếu file mới chỉ nằm trên đĩa cục bộ.
+>   Luôn `git add` đích danh từng file vừa viết (KHÔNG dùng `git add -A` — repo này có phiên
+>   Claude khác làm việc song song trên n8n, dễ cuốn nhầm file người khác đang sửa dở).
+> - Trước khi push: `git fetch origin master`, nếu remote đã có commit mới thì
+>   `git merge --ff-only origin/master` trước (không ghi đè công việc của phiên khác).
+> - Commit rồi `git push origin master` **ngay trong cùng lượt**, không đợi người dùng nhắc.
+> - Sau khi push: `git fetch origin master` lại một lần nữa, xác nhận
+>   `git rev-list --count HEAD..origin/master` = 0. Đây là mức "đồng bộ" thật — máy của người vận
+>   hành `git pull` từ đây xuống phải thấy đúng bản mới nhất, không lệch.
+> - **Không được báo "đã viết xong"/"đã lưu xong" nếu chưa qua bước push + xác nhận đồng bộ này.**
+>   Nếu push thất bại (xung đột, mất mạng...), phải nói rõ đang vướng ở đâu, không im lặng bỏ qua.
 
 ### Bước 5F — LƯU BÀI ĐĂNG FACEBOOK (song song với Bước 5, khác quy trình — thêm 20/07/2026)
 
@@ -590,16 +616,21 @@ không cần manifest nữa. Cả 3 loại sản phẩm giờ đều **không c�
 | Kịch bản video | KHÔNG — file `_master_script.md` là toàn bộ sản phẩm |
 | Prompt Featured Image | KHÔNG — file prompt là toàn bộ sản phẩm |
 
+> ⚠️ **Kịch bản video KHÔNG còn nằm trong bảng thư mục Drive dưới đây** (sửa 10/09/2026 — dòng
+> `Kich-ban-video` từng liệt kê ở đây đã lạc hậu). Từ khi quay lại quy trình 3 bước (Bước 5.B),
+> Claude chỉ commit/push kịch bản vào repo GitHub `Youtube---Anh-Minh` — KHÔNG tự tay ghi vào bất
+> kỳ thư mục Drive nào cho video nữa. Việc copy sang Drive là thao tác thủ công của chủ kênh, nằm
+> ngoài phạm vi Claude. Xem Bước 5.B để biết đúng nơi/quy trình lưu kịch bản.
+
 **Thư mục gốc:** "Anh Minh - N8N Trigger" trên Google Drive, gồm các thư mục con sau (ID xác
 nhận qua ảnh chụp thư mục thật của người dùng ngày 06/08/2026, dùng công cụ Drive `create_file`
-với đúng `parentId`):
+với đúng `parentId`) — **chỉ áp dụng cho bài SEO + Featured Image**, không áp dụng cho video:
 
 | Thư mục | parentId | Chứa gì (file thật, KHÔNG phải manifest) |
 |---|---|---|
 | `Bai-viet-SEO` | `1ubrFWlDezfMX91zoV7hqjc1PqnGNZ3Gn` | Bản `.md` thuần chữ của bài viết SEO (Bước 5.A) |
 | `Bai-viet-seo-dang-web-MDX` | `1FBUMRZSLWmfe1d3WkdLfp9l0IXm_ihIA` | Bản `.mdx` có frontmatter của bài viết SEO (Bước 5.A) |
 | `Prompt-Featured-Image` | `17ni-02iYzjljg0IM1E9aQcPShtxhiE0I` | Prompt Featured Image từng bài (Bước 5.5) |
-| `Kich-ban-video` | `1aqbgUNiaPJ5KKQEC3QZqAn23j7oTrr4F` | Master Script + file prompt kịch bản video (Bước 5.B) |
 
 > Thư mục "Anh Minh - N8N Trigger" còn có `voice-doc-bai-seo` (chứa file `.mp3` giọng đọc) và
 > `Featured-Image` (chứa file `.jpg` ảnh đã render) — đây là **thư mục OUTPUT của n8n** (kết quả
@@ -649,6 +680,11 @@ song với bác sĩ.
 
 ### ĐỒNG BỘ REPO — TRƯỚC KHI ĐỌC VÀ SAU KHI SỬA (bắt buộc — quy tắc thường trực,
 xác nhận 25/07/2026, bổ sung vế "trước khi đọc" ngày 25/07/2026)
+
+> **Cùng tinh thần này áp dụng cho repo `Youtube---Anh-Minh` khi lưu kịch bản video** (thêm
+> 10/09/2026, theo yêu cầu người vận hành) — xem quy tắc riêng, cụ thể hơn ở Bước 5.B (đẩy
+> `master` + xác nhận đồng bộ ngay sau khi viết xong, không dồn sang lượt sau). Phần dưới đây mô
+> tả chi tiết cho chính repo `ai-assistants`.
 
 **Vế 1 — TRƯỚC khi đọc / rà soát / sửa bất kỳ file nào trong repo này:** luôn chạy
 `git fetch origin main` rồi đối chiếu bản đang có với `origin/main`

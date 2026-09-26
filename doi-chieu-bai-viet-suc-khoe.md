@@ -18,6 +18,21 @@
 > **Cần làm lại/cập nhật file này khi:** viết thêm bài Sức khỏe mới, hoặc phát hiện phiên làm
 > việc khác (xem cảnh báo ⚠️ ở nhóm Gan bên dưới) đã lưu thêm file mới. Đây là ảnh chụp tại một
 > thời điểm, không tự động cập nhật.
+>
+> **CẬP NHẬT 26/09/2026 (phiên sau) — đã đổi tên xong thư mục Drive "Prompt-Featured-Image":**
+> tại thời điểm tạo file này, thư mục "Bai-viet-SEO" và "Bai-viet-seo-dang-web-MDX" đã đổi tên
+> xong (khớp đúng số dòng backlog), riêng "Prompt-Featured-Image" còn 50 file mang số cũ (nhóm
+> Dinh dưỡng/Tiêu hóa/Gan/Thận). Đã đổi tên xong 48/50 file đó (14 Tiêu hóa, 19 Gan, 15 Thận —
+> nhóm Dinh dưỡng 20 file hoá ra đã được đổi từ trước, cùng với 2 file 1.71/1.111 của nhóm
+> Gan/Thận). Đã kiểm tra 2 thư mục output của n8n (`voice-doc-bai-seo`, `Featured-Image`): CHƯA
+> có file voice/ảnh nào được n8n sinh ra cho các bài thuộc 4 nhóm này, nên không có gì lệch cần
+> sửa ở 2 nơi đó — n8n sẽ tự đọc đúng tên mới khi chạy sau này.
+>
+> **Còn lại đúng 1 file KHÔNG được tự đổi** (giữ nguyên cảnh báo ⚠️ ở nhóm Gan bên dưới):
+> `1.127.nhung-thoi-quen-hang-ngay-giup-giam-ganh-nang-cho-gan` trong "Prompt-Featured-Image" —
+> nội dung khớp backlog **1.124** nhưng tên lại trùng số với backlog **1.127** (dòng khác hẳn,
+> chủ đề Thận, đã có file riêng đúng nội dung — chính là file vừa đổi tên ở trên). Cần người vận
+> hành xác nhận trực tiếp rồi mới đổi tên/xử lý, không tự sửa.
 
 ---
 

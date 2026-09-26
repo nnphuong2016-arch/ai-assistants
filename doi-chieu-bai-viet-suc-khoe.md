@@ -121,7 +121,8 @@ Không lệch số, cùng lý do như nhóm 1 (viết trước khi có lệch s�
 | 1.49 | Xây dựng một nhịp ngủ ổn định | `1.49....md` |
 | 1.50 | Một giấc ngủ ngon là nền tảng của một cơ thể khỏe mạnh | `1.50....md` |
 
-## 3. Dinh dưỡng & Chuyển hóa — backlog 1.51–1.75 — **20/25 đã viết** (1.71–1.75 chưa viết)
+## 3. Dinh dưỡng & Chuyển hóa — backlog 1.51–1.75 — **25/25 đã viết, HOÀN TẤT** (1.71–1.75 viết
+xong 26/09/2026, phiên sau)
 
 > Nhóm này viết SAU nhóm Tiêu hóa và Gan theo thứ tự phiên làm việc thật, nên tên file cũ mang số
 > 1.91–1.110 (không phải 1.51–1.70) — đây chính là nguồn gốc lệch số. Đã đối chiếu từng bài bằng
@@ -149,11 +150,11 @@ Không lệch số, cùng lý do như nhóm 1 (viết trước khi có lệch s�
 | 1.68 | Càng ăn nhiều đồ ngọt càng nhanh thấy đói | `1.108.cang-an-nhieu-do-ngot-cang-nhanh-thay-doi.md` |
 | 1.69 | Những hiểu lầm phổ biến về việc giảm cân | `1.109.nhung-hieu-lam-pho-bien-ve-viec-giam-can.md` |
 | 1.70 | Ăn trái cây bất cứ lúc nào trong ngày và những điều cần biết | `1.110.an-trai-cay-bat-cu-luc-nao-trong-ngay-va-nhung-dieu-can-biet.md` |
-| **1.71** | Sau tuổi trung niên, cơ thể cần thay đổi cách ăn như thế nào | — **chưa viết** |
-| **1.72** | Ăn chậm giúp cơ thể khỏe hơn ra sao | — **chưa viết** |
-| **1.73** | Điều gì quyết định một chế độ ăn bền vững | — **chưa viết** |
-| **1.74** | Những thói quen nhỏ giúp chuyển hóa hoạt động hiệu quả hơn | — **chưa viết** |
-| **1.75** | Dinh dưỡng không phải để kiêng khem, mà để nuôi cơ thể mỗi ngày | — **chưa viết** |
+| 1.71 | Sau tuổi trung niên, cơ thể cần thay đổi cách ăn như thế nào | `1.71.sau-tuoi-trung-nien-co-the-can-thay-doi-cach-an-nhu-the-nao.md` |
+| 1.72 | Ăn chậm giúp cơ thể khỏe hơn ra sao | `1.72.an-cham-giup-co-the-khoe-hon-ra-sao.md` |
+| 1.73 | Điều gì quyết định một chế độ ăn bền vững | `1.73.dieu-gi-quyet-dinh-mot-che-do-an-ben-vung.md` |
+| 1.74 | Những thói quen nhỏ giúp chuyển hóa hoạt động hiệu quả hơn | `1.74.nhung-thoi-quen-nho-giup-chuyen-hoa-hoat-dong-hieu-qua-hon.md` |
+| 1.75 | Dinh dưỡng không phải để kiêng khem, mà để nuôi cơ thể mỗi ngày | `1.75.dinh-duong-khong-phai-de-kieng-khem-ma-de-nuoi-co-the-moi-ngay.md` |
 
 ## 4. Tiêu hóa & Đường ruột — backlog 1.76–1.100 — **20/25 đã viết** (1.96–1.100 chưa viết)
 
@@ -296,7 +297,7 @@ Không lệch số, cùng lý do như nhóm 1 (viết trước khi có lệch s�
 |---|---|---|---|---|---|
 | 1 | Tim mạch & Huyết áp | 1.1–1.25 | 25/25 | 0 | Hoàn tất, khớp tuyệt đối |
 | 2 | Giấc ngủ & Phục hồi | 1.26–1.50 | 25/25 | 0 | Hoàn tất, khớp tuyệt đối |
-| 3 | Dinh dưỡng & Chuyển hóa | 1.51–1.75 | 20/25 | 0 (đã đủ 20) | Tên file cũ lệch, đã đối chiếu khớp |
+| 3 | Dinh dưỡng & Chuyển hóa | 1.51–1.75 | 25/25 | 0 — HOÀN TẤT | Viết đủ 1.71–1.75 ngày 26/09/2026 |
 | 4 | Tiêu hóa & Đường ruột | 1.76–1.100 | 20/25 | 0 (đã đủ 20) | Tên file cũ lệch, đã đối chiếu khớp |
 | 5 | Gan & Thanh lọc | 1.101–1.125 | 21/25 | -1 (đã vượt 20, nhưng 1.121–123, 1.125 vẫn trống) | ⚠️ có 1 file tên gây hiểu nhầm, xem mục 5 |
 | 6 | Thận & Tiết niệu | 1.126–1.150 | 18/25 | 2 (dòng 1.144, 1.145) | 2 bài cuối đã dùng đúng quy ước mới |

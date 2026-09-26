@@ -449,23 +449,41 @@ instructions.md` mục 6 + mục Bếp An Nhiên — không tự đổi số, kh
 Ví dụ: bài SEO đầu tiên thuộc chủ đề Sức khỏe → `1.1.<slug>`. Bài Sức khỏe tiếp theo →
 `1.2.<slug>`. Bài đầu tiên thuộc Tâm lý & đời sống → `2.1.<slug>`.
 
-**Cách xác định số thứ tự:** trước khi tạo file mới, liệt kê các file đã có trong thư mục Drive
-**"Bai-viet-SEO"** (parentId `1ubrFWlDezfMX91zoV7hqjc1PqnGNZ3Gn`, dùng `search_files` với
-`parentId`) bắt đầu bằng đúng `<số chủ đề>.` (VD: liệt kê file bắt đầu `1.` để biết đã có bài
-Sức khỏe nào), lấy số thứ tự lớn nhất + 1. Nếu chưa có file nào của chủ đề đó → bắt đầu từ `1`.
-Cả 3 thư mục Drive đằng nào cũng mang cùng một tên file, nên đếm ở thư mục nào cũng ra cùng
-kết quả — chọn "Bai-viet-SEO" làm chuẩn để nhất quán.
-
-> ⚠️ **KHÔNG nhầm với số dòng trong file backlog** (làm rõ 21/07/2026). Backlog
-> `bai-seo-dang-website-Anh-Minh.md` cũng đánh số dạng `<số chủ đề>.<số>` (VD `1.26. Có một loại
-> mệt mà ngủ đủ tám tiếng vẫn không tan.`) — đó là **vị trí của chủ đề trong backlog**, KHÁC hẳn
-> số thứ tự bài đã viết. Hai hệ số trùng dạng nhưng khác nghĩa:
-> - **Tên file** dùng số thứ tự bài đã viết trong chủ đề đó (đếm trong thư mục Drive).
-> - Khi cần ghi lại chủ đề gốc đã dùng, ghi **nguyên câu hook** kèm số dòng backlog trong phần
->   trả lời cho người dùng — không đưa vào tên file, không đưa vào nội dung bài.
+> ⚠️ **ĐỔI QUY TẮC — SỬA LẠI 26/09/2026, thay hẳn quy tắc "đếm file trong Drive" bên dưới
+> (bản trước ghi 21/07/2026, nay không còn dùng):** theo yêu cầu trực tiếp của người vận hành,
+> sau khi phát hiện tên file gây hiểu nhầm nghiêm trọng (tên file không khớp số dòng backlog
+> thật, tưởng như bịa chủ đề). **Từ nay, số trong tên file PHẢI là chính xác số dòng backlog**
+> của dòng đã dùng để viết bài đó, KHÔNG còn đếm file đã có trong Drive rồi +1 nữa. VD: bài lấy
+> từ dòng backlog `1.141. Cà phê ảnh hưởng đến thận như thế nào.` → tên file bắt đầu bằng
+> `1.141.`, không phải một số đếm riêng nào khác. Cách làm cũ (đếm file trong Drive, độc lập với
+> số dòng backlog) khiến người vận hành đối chiếu tên file với backlog rồi tưởng nội dung bị
+> bịa ra, dù thực chất bài vẫn lấy đúng thứ tự từ backlog — chỉ là tên file không phản ánh đúng
+> dòng gốc. Quy tắc mới đơn giản hơn và tự đối chiếu được ngay: nhìn tên file là biết ngay dòng
+> backlog tương ứng, không cần tra chéo qua Drive.
 >
-> VD thực tế: bài `1.1.vi-sao-ngu-du-tam-tieng-van-met` là bài Sức khỏe **thứ nhất đã viết**,
-> lấy chủ đề từ **dòng 1.26** của backlog. Hai số này không cần khớp nhau.
+> **Hệ quả với các bài đã lưu trước 26/09/2026** (dùng cách đếm cũ, tên file không khớp số dòng
+> backlog — ví dụ toàn bộ nhóm Sức khỏe > Thận & Tiết niệu tính đến bài thứ 16 của nhóm này):
+> **KHÔNG đổi tên lại** các file đã lưu đó, vì công cụ Drive hiện có chỉ `create_file`, không
+> `delete`/ghi đè, nên đổi tên nghĩa là phải tạo lại toàn bộ file cũ (tốn kém, lãng phí) trong khi
+> nội dung/thứ tự chủ đề của các bài đó chưa từng sai. Chỉ áp dụng quy tắc tên file mới cho MỌI
+> bài viết TỪ SAU thời điểm sửa quy tắc này trở đi.
+
+**Cách xác định số cho tên file (quy tắc mới, từ 26/09/2026):** lấy đúng số của dòng backlog vừa
+dùng để viết bài (VD dòng `1.141. ...` → số trong tên file là `1.141`). Không cần đếm file nào
+trong Drive nữa. Nếu người dùng chỉ định thẳng một chủ đề không nằm trong file backlog (hiếm khi
+xảy ra), mới cần tự hỏi người vận hành muốn đánh số thế nào cho trường hợp đó.
+
+<details>
+<summary>Quy tắc cũ (21/07/2026 – 26/09/2026, không còn dùng, giữ lại để biết lịch sử)</summary>
+
+Trước khi tạo file mới, liệt kê các file đã có trong thư mục Drive **"Bai-viet-SEO"** (parentId
+`1ubrFWlDezfMX91zoV7hqjc1PqnGNZ3Gn`, dùng `search_files` với `parentId`) bắt đầu bằng đúng
+`<số chủ đề>.` (VD: liệt kê file bắt đầu `1.` để biết đã có bài Sức khỏe nào), lấy số thứ tự lớn
+nhất + 1. Nếu chưa có file nào của chủ đề đó → bắt đầu từ `1`. Số này KHÁC số dòng trong file
+backlog (backlog cũng đánh số dạng `<số chủ đề>.<số>` nhưng là vị trí trong backlog, không phải
+số thứ tự bài đã viết) — đây chính là điểm gây hiểu nhầm khiến quy tắc này bị thay thế.
+
+</details>
 
 #### 5.B — Kịch bản video (GitHub `Youtube---Anh-Minh` → chủ kênh tự copy sang Drive → n8n)
 

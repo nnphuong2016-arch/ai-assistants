@@ -156,7 +156,8 @@ xong 26/09/2026, phiên sau)
 | 1.74 | Những thói quen nhỏ giúp chuyển hóa hoạt động hiệu quả hơn | `1.74.nhung-thoi-quen-nho-giup-chuyen-hoa-hoat-dong-hieu-qua-hon.md` |
 | 1.75 | Dinh dưỡng không phải để kiêng khem, mà để nuôi cơ thể mỗi ngày | `1.75.dinh-duong-khong-phai-de-kieng-khem-ma-de-nuoi-co-the-moi-ngay.md` |
 
-## 4. Tiêu hóa & Đường ruột — backlog 1.76–1.100 — **20/25 đã viết** (1.96–1.100 chưa viết)
+## 4. Tiêu hóa & Đường ruột — backlog 1.76–1.100 — **25/25 đã viết, HOÀN TẤT** (1.96–1.100 viết
+xong 26/09/2026, phiên sau)
 
 > Nhóm này viết TRƯỚC nhóm Dinh dưỡng và Gan, nên "may mắn" mang tên file cũ 1.51–1.70 — vẫn lệch
 > so với backlog thật (1.76–1.95) nhưng ít gây hiểu lầm hơn vì số vẫn liền mạch với nhóm trước.
@@ -183,11 +184,11 @@ xong 26/09/2026, phiên sau)
 | 1.93 | Những sai lầm phổ biến khiến dạ dày phải làm việc quá sức | `1.68.nhung-sai-lam-pho-bien-khien-da-day-lam-viec-qua-suc.md` |
 | 1.94 | Giữ một hệ tiêu hóa khỏe mạnh mỗi ngày | `1.69.giu-mot-he-tieu-hoa-khoe-manh-moi-ngay.md` |
 | 1.95 | Một đường ruột khỏe là nền tảng của nhiều cơ quan khác | `1.70.duong-ruot-khoe-la-nen-tang-cua-nhieu-co-quan-khac.md` |
-| **1.96** | Người lớn tuổi dễ gặp vấn đề về tiêu hóa hơn | — **chưa viết** |
-| **1.97** | Ăn quá no ảnh hưởng đến toàn bộ cơ thể như thế nào | — **chưa viết** |
-| **1.98** | Điều gì khiến bụng thường khó chịu vào buổi sáng | — **chưa viết** |
-| **1.99** | Nên đi khám vì các triệu chứng tiêu hóa kéo dài | — **chưa viết** |
-| **1.100** | Tiêu hóa khỏe bắt đầu từ những thói quen rất bình thường | — **chưa viết** |
+| 1.96 | Người lớn tuổi dễ gặp vấn đề về tiêu hóa hơn | `1.96.nguoi-lon-tuoi-de-gap-van-de-ve-tieu-hoa-hon.md` |
+| 1.97 | Ăn quá no ảnh hưởng đến toàn bộ cơ thể như thế nào | `1.97.an-qua-no-anh-huong-den-toan-bo-co-the-nhu-the-nao.md` |
+| 1.98 | Điều gì khiến bụng thường khó chịu vào buổi sáng | `1.98.dieu-gi-khien-bung-thuong-kho-chiu-vao-buoi-sang.md` |
+| 1.99 | Nên đi khám vì các triệu chứng tiêu hóa kéo dài | `1.99.nen-di-kham-vi-cac-trieu-chung-tieu-hoa-keo-dai.md` |
+| 1.100 | Tiêu hóa khỏe bắt đầu từ những thói quen rất bình thường | `1.100.tieu-hoa-khoe-bat-dau-tu-nhung-thoi-quen-rat-binh-thuong.md` |
 
 ## 5. Gan & Thanh lọc — backlog 1.101–1.125 — **21/25 đã viết** — ⚠️ có 1 ngoại lệ cần lưu ý
 
@@ -298,7 +299,7 @@ xong 26/09/2026, phiên sau)
 | 1 | Tim mạch & Huyết áp | 1.1–1.25 | 25/25 | 0 | Hoàn tất, khớp tuyệt đối |
 | 2 | Giấc ngủ & Phục hồi | 1.26–1.50 | 25/25 | 0 | Hoàn tất, khớp tuyệt đối |
 | 3 | Dinh dưỡng & Chuyển hóa | 1.51–1.75 | 25/25 | 0 — HOÀN TẤT | Viết đủ 1.71–1.75 ngày 26/09/2026 |
-| 4 | Tiêu hóa & Đường ruột | 1.76–1.100 | 20/25 | 0 (đã đủ 20) | Tên file cũ lệch, đã đối chiếu khớp |
+| 4 | Tiêu hóa & Đường ruột | 1.76–1.100 | 25/25 | 0 — HOÀN TẤT | Viết đủ 1.96–1.100 ngày 26/09/2026 |
 | 5 | Gan & Thanh lọc | 1.101–1.125 | 21/25 | -1 (đã vượt 20, nhưng 1.121–123, 1.125 vẫn trống) | ⚠️ có 1 file tên gây hiểu nhầm, xem mục 5 |
 | 6 | Thận & Tiết niệu | 1.126–1.150 | 18/25 | 2 (dòng 1.144, 1.145) | 2 bài cuối đã dùng đúng quy ước mới |
 | 7 | Đường huyết & Tiểu đường | 1.151–1.175 | 0/25 | 20 | Tạm dừng — có 2 bản nháp chưa duyệt |

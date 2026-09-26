@@ -28,11 +28,16 @@
 > có file voice/ảnh nào được n8n sinh ra cho các bài thuộc 4 nhóm này, nên không có gì lệch cần
 > sửa ở 2 nơi đó — n8n sẽ tự đọc đúng tên mới khi chạy sau này.
 >
-> **Còn lại đúng 1 file KHÔNG được tự đổi** (giữ nguyên cảnh báo ⚠️ ở nhóm Gan bên dưới):
-> `1.127.nhung-thoi-quen-hang-ngay-giup-giam-ganh-nang-cho-gan` trong "Prompt-Featured-Image" —
-> nội dung khớp backlog **1.124** nhưng tên lại trùng số với backlog **1.127** (dòng khác hẳn,
-> chủ đề Thận, đã có file riêng đúng nội dung — chính là file vừa đổi tên ở trên). Cần người vận
-> hành xác nhận trực tiếp rồi mới đổi tên/xử lý, không tự sửa.
+> **CẬP NHẬT (2) 26/09/2026 — đã xử lý xong file ngoại lệ:** người vận hành xác nhận đổi tên, đã
+> đổi `1.127.nhung-thoi-quen-hang-ngay-giup-giam-ganh-nang-cho-gan` → đúng
+> `1.124.nhung-thoi-quen-hang-ngay-giup-giam-ganh-nang-cho-gan` (khớp đúng backlog 1.124). Từ
+> giờ **cả 3 thư mục Drive (Bai-viet-SEO, Bai-viet-seo-dang-web-MDX, Prompt-Featured-Image) của
+> nhóm Sức khỏe (1.1–1.141) đều khớp 100% với `bai-seo-dang-website-Anh-Minh.md`** — đã đối
+> chiếu trực tiếp từng dòng backlog 1.51–1.141 với từng file, không còn file nào lệch số/lệch
+> chủ đề. Đã kiểm tra thêm: web thật (`content/bai-viet/suc-khoe/` trong repo `webfunamark`)
+> hiện chỉ có 50 bài thuộc 2 nhóm Tim mạch (1.1–1.25) + Giấc ngủ (1.26–1.50); các nhóm Dinh
+> dưỡng/Tiêu hóa/Gan/Thận vừa sửa số **chưa bài nào được đưa lên web**, nên không có rủi ro
+> trùng/đè số khi publish sau này (web dùng slug thuần, không dùng số thứ tự).
 
 ---
 

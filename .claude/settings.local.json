@@ -17,7 +17,9 @@
       "Bash(echo \"ffmpeg: $?\")",
       "Bash(echo \"python: $?\")",
       "Bash(where n8n *)",
-      "Bash(echo \"n8n: $?\")"
+      "Bash(echo \"n8n: $?\")",
+      "mcp__Google_Drive__update_file",
+      "mcp__Google_Drive__search_files"
     ]
   }
 }

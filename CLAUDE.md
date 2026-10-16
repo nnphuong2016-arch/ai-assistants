@@ -15,8 +15,8 @@ Anh Minh** (Funamark) nằm ngay trong các thư mục con của repo này: `cor
 giới an toàn, kiến thức nền dùng chung), và từng thư mục Factory riêng (`seo-factory/`,
 `video-factory/`, `community-factory/` (Zalo/Newsletter/bình luận, KHÔNG còn viết Facebook),
 `facebook-factory/` (chuyên riêng bài đăng Facebook — tách khỏi Community Factory từ
-20/07/2026; **3 nguồn ý tưởng**, ưu tiên từ trên xuống: chủ đề người vận hành đưa trực tiếp →
-`bai-dang-Facebook-Anh-Minh.md` → tự sinh qua `idea_library.md` — xem Bước 2), `image-factory/`, `featured-Image-factory/` (chuyên riêng ảnh
+20/07/2026; **bài viết PHẢI dựa vào `bai-dang-Facebook-Anh-Minh.md`**, đánh số bài
+`<series>.<dòng>` (1.1 … 7.30) — xem Bước 2), `image-factory/`, `featured-Image-factory/` (chuyên riêng ảnh
 đại diện đầu bài viết — tách khỏi `image-factory/` từ 14/07/2026, độc lập, không gắn với Image
 Factory hay bất kỳ Factory nào khác), `ai-anh-minh-chat-factory/`, `research-factory/`,
 `review-factory/`, `publish-factory/`), cùng 3 file backlog chủ đề riêng cho từng kênh (thay
@@ -82,7 +82,7 @@ một kho nữa)
 |---|---|---|
 | SEO Factory (Web) | `bai-seo-dang-website-Anh-Minh.md` | gốc repo `ai-assistants/` |
 | Video Factory (nhánh Giải Đáp — YouTube) | `bai-video-dang-Youtube-Anh-Minh.md` **+ nguồn ngoài** (Google Drive/Google Sheet khi có) | gốc repo `ai-assistants/` + Drive/Sheet |
-| Facebook Factory | **3 nguồn xếp hạng** (cập nhật 25/07/2026, nguồn gốc: `facebook-factory/execution_flow.md` STEP 3): (1) **chủ đề người vận hành đưa trực tiếp — ưu tiên cao nhất**, khi có thì bỏ qua (2) và đi thẳng sang STEP 3.5; (2) `bai-dang-Facebook-Anh-Minh.md` (kho 210 hook có sẵn, 7 series), ưu tiên hook chưa dùng gần đây; (3) tự sinh qua `facebook-factory/idea_library.md` (Pattern + Emotion + Observation + Contradiction) khi hai nguồn trên không đủ hoặc cần thêm hướng cho cùng một chủ đề. | người vận hành + gốc repo `ai-assistants/` + `facebook-factory/idea_library.md` |
+| Facebook Factory | **BẮT BUỘC dựa vào `bai-dang-Facebook-Anh-Minh.md`** (7 series × 30 dòng = 210 dòng; đánh số bài `<series>.<dòng>` — quy cách và cách dùng ở khối "Bắt buộc với Facebook Factory" ngay dưới bảng). Ngoại lệ duy nhất: người vận hành CHỦ ĐỘNG đưa một chủ đề ngoài danh mục. | gốc repo `ai-assistants/` |
 
 > **Bắt buộc với SEO Factory:** luôn **đọc file `bai-seo-dang-website-Anh-Minh.md`** (gốc repo
 > `ai-assistants/`) để lấy chủ đề bài viết tiếp theo — không tự nghĩ ra chủ đề ngoài file này khi
@@ -90,10 +90,42 @@ một kho nữa)
 > xuất hiện trong file, KHÔNG tự nhảy cóc chọn dòng theo chủ đề mình thấy hợp (đã bị người dùng
 > sửa lỗi này 05/08/2026 — từng nhảy thẳng tới một chủ đề khác thay vì đi từ đầu file).
 
+> **Bắt buộc với Facebook Factory (thêm 16/10/2026 — yêu cầu trực tiếp của người vận hành, sau khi
+> bản 14/10/2026 biến 5 dòng đầu thành cảnh kể chuyện không hiện câu gốc và đặt tên file theo ngày
+> nên không đối chiếu được với danh mục):** khi viết bài đăng Facebook, LUÔN dựa vào file
+> `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — không tự nghĩ chủ đề ngoài file này
+> khi người vận hành không chỉ định.
+>
+> - **Cách đánh số bài: `<số series>.<số dòng trong series>`.** File có 7 series, mỗi series 30 dòng:
+>   **1.1 → 1.30** ("Có những…"), **2.1 → 2.30** ("Đôi khi…"), **3.1 → 3.30** ("Hóa ra…"),
+>   **4.1 → 4.30** ("Đừng vội…"), **5.1 → 5.30** ("Nếu hôm nay…"), **6.1 → 6.30** ("Điều đáng nghĩ
+>   hôm nay"), **7.1 → 7.30** ("Một phút nhìn lại"). Số dòng = số thứ tự ghi đầu mỗi dòng trong
+>   từng mục `# SERIES n` của file. VD: bài 1.3 = Series 1, dòng 3 = "Có những người chỉ bắt đầu
+>   yêu sức khỏe sau một lần nhập viện."
+> - Người vận hành chỉ định số ("bài 1.3", "bài 1.1 đến 1.5") → dùng đúng các dòng đó. Nói "bài 1
+>   đến bài 5" mà không nói series → hiểu là 1.1 → 1.5 và nêu giả định ngay đầu câu trả lời. Không
+>   chỉ định → lấy dòng CHƯA dùng có số nhỏ nhất (1.1 → 1.30 → 2.1 → …; đối chiếu số đầu tên file
+>   trong thư mục Drive "Bai-dang-Facebook", xem Bước 5F), KHÔNG tự nhảy cóc theo chủ đề mình thấy hợp.
+> - **Dòng gốc là "tiêu đề quy định" của bài — bài PHẢI mở bằng đúng câu đó, nguyên văn** (làm câu
+>   đầu tiên của bài, không in đậm, không tách thành heading — Facebook Factory vẫn không dùng tiêu
+>   đề kiểu bài báo; Series 6–7 bỏ phần nhãn đầu dòng "Điều đáng nghĩ hôm nay:"/"Một phút nhìn
+>   lại:", giữ câu phía sau). Phần thân bám đúng luận điểm của dòng bằng MỘT khoảnh khắc cụ thể —
+>   không đổi sang chủ đề/góc khác, và không nhắc lại luận điểm ở cuối bài (câu mở đã nói rồi).
+>   (Không mâu thuẫn với quy tắc "không copy nguyên dòng" ở dưới: câu gốc chỉ là câu MỞ của bài
+>   nhiều đoạn, không phải toàn bộ caption; và backlog Facebook chỉ Facebook dùng nên không có nguy
+>   cơ trùng câu giữa các kênh.) Dòng không qua Safety Filter (`facebook-factory/execution_flow.md`
+>   STEP 3.5) thì mở bằng bản đã lọc nghĩa, giữ sát câu gốc nhất có thể, và nói rõ điều đó trong
+>   phần trả lời.
+> - **Ngoại lệ DUY NHẤT:** người vận hành CHỦ ĐỘNG đưa một chủ đề ngoài danh mục → viết theo chủ đề
+>   đó, `Hook Source` = `Trực tiếp`, và hỏi người vận hành muốn đánh số/đặt tên file thế nào (không
+>   tự bịa số). `facebook-factory/idea_library.md` KHÔNG còn là nguồn thay thế dòng — chỉ dùng để tìm
+>   thêm hướng kể cho CHÍNH dòng đã chọn.
+
 - Cách dùng: nếu người dùng chỉ định "hook/dòng số N" → dùng đúng câu đó trong đúng file backlog
   của Factory đang làm làm điểm vào. Nếu không chỉ định, tự chọn dòng phù hợp chủ đề trong đúng
   file đó, ưu tiên dòng CHƯA dùng gần đây (chống lặp — không có bộ nhớ dài hạn giữa các phiên,
-  nên nếu người dùng nhắc "đã dùng dòng nào rồi" hãy tôn trọng thông tin đó).
+  nên nếu người dùng nhắc "đã dùng dòng nào rồi" hãy tôn trọng thông tin đó). **Riêng SEO và
+  Facebook: đi tuần tự theo khối "Bắt buộc" tương ứng ở trên, không tự chọn dòng theo chủ đề.**
 - Hook/chủ đề gốc chỉ là **điểm vào**, không phải cả kịch bản/bài viết — giọng, cấu trúc, ví dụ
   vẫn theo file rules của Factory tương ứng (bước 3). Đặc biệt: **không copy nguyên một dòng
   trong file backlog để làm thẳng title/caption/lời thoại** — luôn viết lại theo đúng vai trò
@@ -198,7 +230,8 @@ cần khi viết kịch bản thủ công).
 **Khi được yêu cầu viết BÀI ĐĂNG FACEBOOK (Page/Group):** đọc đúng theo thứ tự ghi ở **khối
 trích dẫn đầu** `facebook-factory/instructions_facebook.md` — 13 file, trong đó có
 `bai-dang-Facebook-Anh-Minh.md` (kho 210 hook, nằm ở gốc repo chứ không trong thư mục Factory).
-Đó là nguồn danh sách duy nhất; **không lặp lại danh sách ở đây** để tránh 2 nơi cùng liệt kê rồi
+**Bài viết PHẢI dựa vào một dòng của file này, đánh số `<series>.<dòng>` (VD 1.3) — xem khối
+"Bắt buộc với Facebook Factory" ở Bước 2.** Đó là nguồn danh sách duy nhất; **không lặp lại danh sách ở đây** để tránh 2 nơi cùng liệt kê rồi
 lệch nhau khi thêm file mới — cùng cách làm với khối KỊCH BẢN VIDEO ở trên. Khi làm việc bằng
 Claude Code thì đọc thêm `facebook-factory/CLAUDE.md` (file này dành riêng cho Claude Code, không
 thuộc khu Files của Custom GPT nên không nằm trong 13 file trên). Factory riêng, tách khỏi
@@ -554,8 +587,14 @@ lưu KHÁC hẳn bài SEO/kịch bản video:
 - Sau khi bài đạt `facebook-factory/quality_check.md`, lưu thành file `.md` chứa ĐÚNG nội dung
   bài viết (không kèm field Mood/Topic/Framework/Internal Tags — những field đó chỉ dùng nội bộ
   lúc soạn, không đưa vào file lưu, giữ đúng tinh thần "pure content" như Bước 5).
-- Đặt tên file: `<ngày YYYY-MM-DD>-<vài từ khoá chủ đề>.md` (VD: `2026-07-20-ngu-som-hon.md`) —
-  Facebook Factory không có quy cách số thứ tự theo trụ như SEO/Video.
+- **Đặt tên file: `<series>.<dòng>.<slug>.md`** (đổi 16/10/2026, thay quy cách `<ngày>-<từ khoá>.md`
+  cũ): số ĐẦU TÊN FILE PHẢI là đúng số bài trong `bai-dang-Facebook-Anh-Minh.md` (xem Bước 2) —
+  nhìn tên file là biết ngay dòng backlog tương ứng. `<slug>` = cụm từ chính của dòng gốc (bám sát
+  tiêu đề, không rút gọn mất nghĩa — giống quy tắc slug của SEO), chữ thường không dấu, nối bằng
+  gạch nối. VD bài 1.3 ("Có những người chỉ bắt đầu yêu sức khỏe sau một lần nhập viện.") →
+  `1.3.nguoi-bat-dau-yeu-suc-khoe-sau-lan-nhap-vien.md`. Muốn biết dòng nào đã viết: liệt kê thư
+  mục Drive "Bai-dang-Facebook" theo số đầu tên file. Bài chủ đề "Trực tiếp" (ngoài danh mục) → hỏi
+  người vận hành cách đánh số.
 - Lưu trực tiếp vào thư mục Google Drive **"Bai-dang-Facebook"**
   (parentId `1zrZzd_1YEu8PC8LEQ14hGHwjuQbkV0ha`, dùng công cụ Drive `create_file`,
   `disableConversionToGoogleType: true`).

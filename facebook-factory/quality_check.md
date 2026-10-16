@@ -1,7 +1,7 @@
 # QUALITY CHECK
 
-Version: 2.0
-Cập nhật: 26/07/2026
+Version: 2.1
+Cập nhật: 16/10/2026
 
 > Đây là cổng bắt buộc cuối cùng trước khi xuất bài (STEP 9 của `execution_flow.md`).
 > Đây cũng là checklist DUY NHẤT của Facebook Factory — `writing_craft.md` và
@@ -26,6 +26,8 @@ Nhóm này áp dụng ngưỡng riêng ở phần Quyết định bên dưới.
 -   Một ý chính?
 -   Mạch lạc?
 -   Đúng chủ đề?
+-   Mở bằng đúng câu gốc của dòng trong danh mục (nguyên văn; hoặc bản đã lọc nghĩa nếu dòng
+    không qua STEP 3.5) và bám đúng luận điểm của dòng? (Bài chủ đề `Trực tiếp`: bỏ qua mục này.)
 -   Trong trần độ dài (`writing_rules.md` mục 6.1)?
 
 ## Nhóm 3 — Cảm xúc

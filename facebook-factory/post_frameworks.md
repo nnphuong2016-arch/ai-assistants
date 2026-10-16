@@ -1,8 +1,8 @@
 # POST FRAMEWORKS
 
-Version: 1.1
+Version: 1.2
 Status: Official Framework Library
-Cập nhật: 25/07/2026
+Cập nhật: 16/10/2026
 
 ------------------------------------------------------------------------
 
@@ -37,7 +37,9 @@ framework F01 (đổi góc nhìn) hoàn toàn có thể mở bằng hook hình �
 và thường hay hơn.
 
 Nếu hook và framework trùng đúng một cụm từ, bài sẽ bị khoá cứng vào cụm đó và lộ công thức.
-Khi thấy trùng, đổi hook — giữ framework.
+Khi thấy trùng: với bài lấy từ danh mục, câu mở đã cố định theo dòng gốc (`CLAUDE.md` gốc,
+Bước 2) nên **đổi framework** (VD dòng 3.x mở bằng "Hóa ra…" thì không chọn F01); với bài chủ đề
+"Trực tiếp" thì đổi hook, giữ framework.
 
 ------------------------------------------------------------------------
 

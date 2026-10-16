@@ -1,7 +1,7 @@
 # CLAUDE.md — FACEBOOK FACTORY (bài đăng Facebook Page/Group)
 
-Version: 1.1
-Cập nhật: 25/07/2026
+Version: 1.2
+Cập nhật: 16/10/2026
 
 > File nhắc việc riêng cho Facebook Factory, đặt trong chính thư mục này để mỗi lần mở cửa sổ
 > làm việc ở đây, Claude tự đọc lại và không quên quy trình — không cần người dùng nhắc lại.
@@ -15,6 +15,30 @@ Cập nhật: 25/07/2026
 
 ---
 
+## LUẬT SỐ 1 — BÀI PHẢI DỰA VÀO `bai-dang-Facebook-Anh-Minh.md`, ĐÁNH SỐ `<series>.<dòng>`
+
+(Thêm 16/10/2026 theo yêu cầu trực tiếp của người vận hành. Nguồn gốc đầy đủ: `CLAUDE.md` gốc,
+Bước 2, khối "Bắt buộc với Facebook Factory". Đây là bản tóm tắt — đọc TRƯỚC mọi thứ khác.)
+
+- Mọi bài đăng Facebook PHẢI dựa vào **một dòng** của `bai-dang-Facebook-Anh-Minh.md` (gốc repo):
+  7 series × 30 dòng. **Số bài = `<series>.<dòng>`**: 1.1–1.30 "Có những…" · 2.x "Đôi khi…" ·
+  3.x "Hóa ra…" · 4.x "Đừng vội…" · 5.x "Nếu hôm nay…" · 6.x "Điều đáng nghĩ hôm nay" ·
+  7.x "Một phút nhìn lại". VD: 1.3 = Series 1, dòng 3.
+- Người vận hành nói "bài 1.3" / "bài 1.1 đến 1.5" → đúng các dòng đó. Nói "bài 1 đến bài 5" không
+  kèm series → hiểu là 1.1–1.5, nêu giả định ngay đầu câu trả lời. Không chỉ định → dòng chưa dùng
+  có số nhỏ nhất, không tự nhảy cóc theo chủ đề.
+- **Dòng gốc là "tiêu đề quy định" của bài: bài PHẢI mở bằng đúng câu đó, nguyên văn** (câu đầu
+  tiên, không in đậm, không heading; Series 6–7 bỏ nhãn đầu dòng, giữ câu sau dấu hai chấm). Thân
+  bài bám đúng luận điểm của dòng bằng MỘT khoảnh khắc cụ thể, không đổi sang chủ đề khác, không
+  nhắc lại luận điểm ở cuối. Dòng không qua STEP 3.5 → mở bằng bản đã lọc nghĩa, giữ sát câu gốc,
+  nói rõ trong phần trả lời.
+- Tên file lưu: `<series>.<dòng>.<slug>.md`, slug = cụm từ chính của dòng gốc (VD
+  `1.3.nguoi-bat-dau-yeu-suc-khoe-sau-lan-nhap-vien.md`); field `Hook Source` ghi `1.3`.
+- Ngoại lệ DUY NHẤT: người vận hành CHỦ ĐỘNG đưa chủ đề ngoài danh mục → `Hook Source` = `Trực tiếp`,
+  hỏi người vận hành cách đánh số.
+
+---
+
 ## 0. THỨ TỰ ĐỌC BẮT BUỘC TRƯỚC KHI VIẾT (không bỏ qua, không đảo thứ tự)
 
 Đúng theo Priority Order ở `execution_flow.md`:
@@ -23,19 +47,20 @@ Cập nhật: 25/07/2026
 2. `execution_flow.md` — trình tự 10 bước bắt buộc (xem mục 1 bên dưới).
 3. `writing_rules.md` — được phép/không được phép viết gì (mục 4.1 = ranh giới thương hiệu
    tuyệt đối, ưu tiên cao hơn mọi file khác trừ `instructions_facebook.md`).
-4. `writing_craft.md` — dạy giọng viết bằng ví dụ (40 mục, file dài nhất — tra khi cần, không
+4. `writing_craft.md` — dạy giọng viết bằng ví dụ (38 mục, file dài nhất — tra khi cần, không
    cần đọc lại toàn bộ mỗi lần nếu đã nắm tinh thần cốt lõi ở mục 2 bên dưới).
-5. `quality_check.md` — tự kiểm trước khi xuất, ≥2 lỗi thì viết lại.
-6. `post_frameworks.md` — chọn 1 trong 10 khung F01–F10.
+5. `quality_check.md` — tự kiểm trước khi xuất (Nhóm 1 An toàn sai 1 mục, hoặc nhóm khác sai ≥2
+   mục → viết lại).
+6. `post_frameworks.md` — chọn 1 trong 11 khung F01–F11.
 7. `emotion_palette.md` — chọn 1 cảm xúc chính (+ tối đa 1 cảm xúc phụ).
-8. `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — kho 210 hook có sẵn, nguồn ý
-   tưởng thứ nhất.
-9. `idea_library.md` — nguồn ý tưởng thứ hai (tự sinh: Pattern + Emotion + Observation +
-   Contradiction), dùng khi nguồn 1 không có hook hợp chủ đề hoặc cần thêm ý tưởng.
+8. `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — danh mục 210 dòng; **nguồn BẮT
+   BUỘC của mọi bài** (xem Luật số 1 ở trên).
+9. `idea_library.md` — chỉ để tìm thêm hướng kể (Pattern + Emotion + Observation +
+   Contradiction) cho CHÍNH dòng đã chọn; không còn là nguồn thay thế dòng.
 10. `hook_library.md` — 20 kiểu hook + công thức Hook Engine.
 11. `topic_map.md` — bản đồ chủ đề theo trải nghiệm sống (không theo kiến thức y khoa) + bảng
     quy đổi sang 6 trụ chính thức (mục "Cầu nối 6 trụ chính thức").
-12. `post_examples.md` — so sánh, KHÔNG copy (nếu giống ví dụ >30% → viết lại).
+12. `post_examples.md` — so sánh, KHÔNG copy (3 câu tự kiểm ở cuối file).
 13. `output_schema.md` — đóng gói đúng field.
 
 Ngoài ra, khi cần: `core-brain/dong_hanh_nguoi_benh.md` (nếu bài chạm người bệnh/người già/
@@ -46,8 +71,9 @@ seasonal_calendar.md` (post theo mùa/dịp).
 
 ## 1. QUY TRÌNH 10 BƯỚC (`execution_flow.md`) — KHÔNG BỎ BƯỚC, KHÔNG ĐẢO THỨ TỰ
 
-Understand → Select Topic (`topic_map.md`, CHỈ 1 topic chính) → Generate Ideas (**3 nguồn**:
-chủ đề người dùng đưa trực tiếp ưu tiên cao nhất → kho hook → `idea_library.md`) →
+Understand → Select Topic (`topic_map.md`, CHỈ 1 topic chính) → Generate Ideas (**dòng
+`<series>.<dòng>` của danh mục**, hoặc chủ đề người vận hành CHỦ ĐỘNG đưa ngoài danh mục;
+`idea_library.md` chỉ để tìm hướng kể) →
 **Safety Filter (STEP 3.5)** → Choose Hook (`hook_library.md`) → Choose Framework
 (`post_frameworks.md`, F01–F11) → **Choose Emotion** (`emotion_palette.md`, chọn TRƯỚC khi
 viết) → Write Draft (`writing_rules.md` + `writing_craft.md`, không tự sửa trong lúc viết) →
@@ -73,7 +99,8 @@ Anh-Minh.md`. Kho hook KHÔNG được coi là đã an toàn sẵn.
 - Tránh các câu mở kiểu AI: "Bạn có biết...", "Hôm nay mình sẽ chia sẻ...", "5 cách để...",
   "Theo nghiên cứu...", "Hãy cùng tìm hiểu...".
 - Không lạm dụng dấu chấm than, CHỮ HOA, emoji, dấu "...".
-- **Độ dài:** mục tiêu 120–250 từ, trần cứng 300 từ (`writing_rules.md` mục 6.1).
+- **Độ dài:** không có số từ tối thiểu — bài dừng khi ý đã đủ (thực tế phần lớn rơi vào 50–250
+  từ); trần cứng 300 từ, bài hội thoại F11 tối đa 280 từ (`writing_rules.md` mục 6.1).
 - **Nhân xưng** (`writing_rules.md` mục 5.1): "mình" **được nghĩ, không được nhớ**. Cấm dựng
   quan hệ gia đình riêng cho nhân vật ("bố mình", "con trai mình") và hồi ký cá nhân cụ thể.
   Chuyện về người khác → giọng quan sát ngôi ba ("Có người cha…", "Có những người…").
@@ -128,12 +155,15 @@ Viết lại thì quay về đúng bước hỏng theo Retry Logic, không vá t
 ## 6. ĐẦU RA & NƠI LƯU (khác hẳn quy trình SEO/Video — đọc kỹ, đừng áp nhầm Bước 5 gốc)
 
 - **Interactive Mode** (chat trực tiếp): xuất Markdown đủ field `output_schema.md` — Mood /
-  Topic / Pillar (tra bảng quy đổi ở `topic_map.md`) / Framework / Body / Suggested Featured
-  Image / Internal Tags.
+  Topic / Pillar (tra bảng quy đổi ở `topic_map.md`) / Framework / Hook Source (số bài, VD `1.3`) /
+  Body / Suggested Featured Image / Internal Tags.
 - **Khi lưu file `.md`** (theo Bước 5F của `CLAUDE.md` gốc): CHỈ chứa nội dung `Body` — KHÔNG
-  kèm Mood/Topic/Pillar/Framework/Suggested Featured Image/Internal Tags (các field đó chỉ để
-  trao đổi lúc soạn).
-- Tên file: `<ngày YYYY-MM-DD>-<vài từ khoá chủ đề>.md` (VD: `2026-07-20-ngu-som-hon.md`).
+  kèm Mood/Topic/Pillar/Framework/Hook Source/Suggested Featured Image/Internal Tags (các field đó
+  chỉ để trao đổi lúc soạn).
+- **Tên file: `<series>.<dòng>.<slug>.md`** — số đầu PHẢI là đúng số bài trong danh mục, slug = cụm
+  từ chính của dòng gốc, chữ thường không dấu, nối gạch nối (VD bài 1.3 →
+  `1.3.nguoi-bat-dau-yeu-suc-khoe-sau-lan-nhap-vien.md`). Quy cách theo ngày dùng trước
+  16/10/2026 không còn dùng.
 - **Không dùng GitHub** — Facebook Factory không có repo output riêng. Lưu trực tiếp vào Google
   Drive, thư mục **"Bai-dang-Facebook"** (parentId `1zrZzd_1YEu8PC8LEQ14hGHwjuQbkV0ha`), dùng
   `create_file` với `disableConversionToGoogleType: true`.

@@ -1,7 +1,7 @@
 # EXECUTION FLOW
 
-Version: 2.1
-Cập nhật: 25/07/2026
+Version: 2.2
+Cập nhật: 16/10/2026
 
 Purpose:
 Điều phối toàn bộ Facebook Factory.
@@ -112,17 +112,19 @@ Không trộn nhiều chủ đề.
 # STEP 3
 Generate Ideas
 
-Ba nguồn (cập nhật 25/07/2026):
+Nguồn ý tưởng (cập nhật 16/10/2026 — yêu cầu trực tiếp của người vận hành: bài phải dựa vào file
+danh mục):
 
-1. **Chủ đề do người vận hành đưa trực tiếp** — một chủ đề, một câu nói, một câu chuyện, một
-   tình huống. Đây là nguồn ƯU TIÊN CAO NHẤT: khi có, bỏ qua nguồn 2, đi thẳng sang STEP 3.5.
-   Nếu đầu vào quá rộng, tự thu hẹp thành một ý duy nhất trước khi đi tiếp.
-2. `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — kho 210 hook có sẵn, 7 series
-   (Có những.../Đôi khi.../Hóa ra.../Đừng vội.../Nếu hôm nay.../Điều đáng nghĩ hôm nay/Một phút
-   nhìn lại). Dùng khi người vận hành KHÔNG đưa chủ đề cụ thể. Nếu người dùng chỉ định số dòng →
-   dùng đúng dòng đó. Nếu không, ưu tiên dòng CHƯA dùng gần đây trong file này trước.
-3. `idea_library.md` — tự sinh khi hai nguồn trên không đủ, hoặc khi cần thêm hướng tiếp cận cho
-   cùng một chủ đề.
+1. **BẮT BUỘC: một dòng trong `bai-dang-Facebook-Anh-Minh.md`** (gốc repo `ai-assistants/`), đánh số
+   `<series>.<dòng>` — 7 series × 30 dòng = 210 dòng (1.1 → 7.30; quy cách đầy đủ ở `CLAUDE.md` gốc,
+   Bước 2). Người vận hành chỉ định số ("bài 1.3", "bài 1.1 đến 1.5") → dùng đúng các dòng đó.
+   Không chỉ định → lấy dòng CHƯA dùng có số nhỏ nhất, không tự nhảy cóc.
+2. **Ngoại lệ duy nhất:** người vận hành CHỦ ĐỘNG đưa một chủ đề/câu nói/câu chuyện/tình huống ngoài
+   danh mục → dùng chủ đề đó, đi thẳng sang STEP 3.5; Hook Source = `Trực tiếp`. Nếu đầu vào quá
+   rộng, tự thu hẹp thành một ý duy nhất.
+
+`idea_library.md` KHÔNG còn là nguồn thay thế dòng — chỉ dùng ở bước "Sinh nhiều hướng tiếp cận"
+bên dưới, để tìm góc kể cho CHÍNH dòng/chủ đề đã chọn.
 
 Sinh nhiều hướng tiếp cận.
 
@@ -141,9 +143,11 @@ Tạo nhiều lựa chọn.
 
 Sau đó chọn ý mạnh nhất.
 
-Hook/dòng từ `bai-dang-Facebook-Anh-Minh.md` chỉ là **điểm vào** — không copy nguyên câu làm
-bài hoàn chỉnh, vẫn phải qua Lọc an toàn (STEP 3.5), Hook (STEP 4), Framework (STEP 5) và
-Writing Craft (STEP 7) như ý tưởng tự sinh.
+Dòng từ `bai-dang-Facebook-Anh-Minh.md` là **tiêu đề quy định** của bài: bài PHẢI mở bằng đúng câu
+đó, nguyên văn (Series 6–7 bỏ nhãn đầu dòng), rồi bám đúng luận điểm của dòng bằng một khoảnh khắc
+cụ thể — không dừng ở việc chép lại câu gốc, không nhắc lại luận điểm ở cuối bài. Vẫn phải qua Lọc
+an toàn (STEP 3.5; dòng không qua được thì mở bằng bản đã lọc nghĩa, giữ sát câu gốc), Hook
+(STEP 4), Framework (STEP 5) và Writing Craft (STEP 7) như mọi ý tưởng khác.
 
 ---
 

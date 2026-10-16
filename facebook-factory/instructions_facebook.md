@@ -1,7 +1,7 @@
 # FACEBOOK FACTORY --- INSTRUCTIONS
 
-Version: 1.2\
-Cập nhật: 26/07/2026\
+Version: 1.3\
+Cập nhật: 16/10/2026\
 Status: Official Foundation Document
 
 > **Ô Instructions (Custom GPT/Claude Project):** dán TOÀN BỘ nội dung CHÍNH FILE NÀY vào ô
@@ -16,12 +16,8 @@ Status: Official Foundation Document
 > 7. `emotion_palette.md` → 8. `bai-dang-Facebook-Anh-Minh.md` (kho 210 hook có sẵn — tải thêm
 > file này từ gốc repo `ai-assistants/` vào khu Files) → 9. `idea_library.md` →
 > 10. `hook_library.md` → 11. `topic_map.md` → 12. `post_examples.md` → 13. `output_schema.md`.
-> Cập nhật: 20/07/2026 — thêm chuẩn ô Instructions + thứ tự đọc file tường minh (bài học từ
-> Chat Factory: model không đáng tin cậy tự tra Files nếu không có lệnh đọc rõ ràng).
-> Cập nhật: 20/07/2026 (2) — thêm `bai-dang-Facebook-Anh-Minh.md` làm nguồn ý tưởng bên cạnh
-> tự sinh qua `idea_library.md` — xem `execution_flow.md` STEP 3.
-> Cập nhật: 25/07/2026 — nâng **chủ đề người vận hành đưa trực tiếp** thành nguồn ƯU TIÊN CAO
-> NHẤT, thành 3 nguồn xếp hạng. `execution_flow.md` STEP 3 là nguồn gốc của thứ hạng này.
+> Cập nhật 16/10/2026 (yêu cầu của người vận hành): bài PHẢI dựa vào `bai-dang-Facebook-Anh-Minh.md`,
+> đánh số `<series>.<dòng>`, mở bằng đúng câu gốc (mục 7); tên file theo số bài (mục 8).
 
 ------------------------------------------------------------------------
 
@@ -143,14 +139,17 @@ Facebook Factory được thiết kế theo **2 đường độc lập**, không
 nhưng tính đến 26/07/2026 **chỉ Đường 1 tồn tại trên thực tế**:
 
 **Đường 1 — Trợ lý tương tác (Custom GPT / Claude Project / Claude Code):**
-Đầu vào có 3 nguồn, xếp hạng đúng như `execution_flow.md` STEP 3 (file đó là nguồn gốc; nếu
-sau này lệch nhau thì STEP 3 thắng):
+Đầu vào theo `execution_flow.md` STEP 3 (file đó là nguồn gốc; nếu lệch nhau thì STEP 3 thắng):
 
-1. **Chủ đề người vận hành đưa trực tiếp — ƯU TIÊN CAO NHẤT.** Một chủ đề, một câu nói, một câu
-   chuyện, một tình huống. Khi có nguồn này thì KHÔNG mở kho hook nữa, đi thẳng sang STEP 3.5.
-   Nếu đầu vào quá rộng, tự thu hẹp thành một ý duy nhất trước.
-2. `bai-dang-Facebook-Anh-Minh.md` — kho hook có sẵn, dùng khi người vận hành không đưa chủ đề.
-3. `idea_library.md` — tự sinh, khi hai nguồn trên không đủ hoặc cần thêm hướng tiếp cận.
+1. **BẮT BUỘC: một dòng trong `bai-dang-Facebook-Anh-Minh.md`**, đánh số bài `<series>.<dòng>`
+   (7 series × 30 dòng: 1.1 → 7.30; VD 1.3 = Series 1 dòng 3). Người vận hành chỉ định số → dùng
+   đúng dòng đó; không chỉ định → dòng chưa dùng có số nhỏ nhất, không nhảy cóc. Dòng gốc là
+   "tiêu đề quy định": bài PHẢI mở bằng đúng câu đó, nguyên văn (dòng không qua STEP 3.5 → bản đã
+   lọc nghĩa, giữ sát câu gốc).
+2. **Ngoại lệ duy nhất:** người vận hành CHỦ ĐỘNG đưa chủ đề ngoài danh mục → viết theo chủ đề đó,
+   Hook Source = `Trực tiếp`, hỏi người vận hành cách đánh số. Quá rộng → tự thu hẹp thành một ý.
+
+`idea_library.md` chỉ để tìm thêm hướng kể cho chính dòng/chủ đề đã chọn.
 
 **Đường 2 — Workflow n8n "Facebook Factory": ⏸️ CHƯA XÂY (kế hoạch).**
 Thiết kế dự kiến: đầu vào = Google Sheet "bai-dang-facebook-anh-minh", n8n tự đọc/ghi Sheet
@@ -179,7 +178,8 @@ Chừng nào Đường 2 chưa có, mọi bài đăng Facebook đều đi qua Đ
 
 **Đường 1 (trợ lý tương tác):** sau khi bài đạt `quality_check.md`, LƯU THÀNH FILE — nội dung
 bài viết thuần (không kèm field Mood/Topic/Framework...), đặt tên
-`<ngày YYYY-MM-DD>-<vài từ khoá chủ đề>.md` (VD: `2026-07-20-ngu-som-hon.md`), lưu trực tiếp
+`<series>.<dòng>.<slug>.md` (số đầu = đúng số bài trong danh mục; slug = cụm từ chính của dòng gốc;
+VD bài 1.3 → `1.3.nguoi-bat-dau-yeu-suc-khoe-sau-lan-nhap-vien.md`), lưu trực tiếp
 vào thư mục Google Drive **"Bai-dang-Facebook"** (parentId `1zrZzd_1YEu8PC8LEQ14hGHwjuQbkV0ha`,
 dùng công cụ Drive `create_file`, `disableConversionToGoogleType: true` để giữ đúng Markdown
 thuần) — giống cách trợ lý viết bài SEO lưu file, chỉ khác nơi lưu là Drive thay vì GitHub (vì

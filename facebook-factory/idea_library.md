@@ -1,11 +1,12 @@
 # IDEA LIBRARY
 
-Version: 1.1
-Cập nhật: 25/07/2026
+Version: 1.2
+Cập nhật: 16/10/2026
 
-> Nguồn ý tưởng thứ ba của Facebook Factory (`execution_flow.md` STEP 3) — dùng khi
-> người vận hành không đưa chủ đề cụ thể và kho `bai-dang-Facebook-Anh-Minh.md` không có
-> dòng hợp chủ đề đang cần.
+> Công cụ hỗ trợ của Facebook Factory (`execution_flow.md` STEP 3) — dùng để tìm thêm hướng kể
+> cho CHÍNH dòng/chủ đề đã chọn. Từ 16/10/2026 file này KHÔNG còn là nguồn thay thế dòng trong
+> `bai-dang-Facebook-Anh-Minh.md`: mọi bài phải dựa vào một dòng của danh mục (`CLAUDE.md` gốc,
+> Bước 2).
 >
 > File này sinh **ý tưởng** (viết về cái gì). Mẫu **câu mở đầu** nằm ở `hook_library.md`.
 > Danh sách điều cần tránh nằm ở `writing_rules.md` mục 4 — file này không lặp lại.

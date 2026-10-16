@@ -1,7 +1,7 @@
 # OUTPUT SCHEMA
 
-Version: 2.1
-Cập nhật: 25/07/2026
+Version: 2.2
+Cập nhật: 16/10/2026
 
 ## Đối tượng đầu ra
 
@@ -16,10 +16,10 @@ gạch chéo (VD: `Đồng cảm / Bình yên`).
 
 **Framework** — mã framework đã dùng (F01–F11) theo `post_frameworks.md`.
 
-**Hook Source** — ghi lại điểm vào đã dùng, để về sau tra cứu chống trùng:
-- Hook từ kho: ghi mã `S<series>-<dòng>` (VD: `S1-16` = Series 1 dòng 16).
-- Chủ đề do người vận hành đưa: ghi `Trực tiếp`.
-- Tự sinh qua `idea_library.md`: ghi `Tự sinh`.
+**Hook Source** — số bài trong `bai-dang-Facebook-Anh-Minh.md` (= số đầu tên file lưu), để về sau
+tra cứu chống trùng:
+- Bài lấy từ danh mục: ghi `<series>.<dòng>` (VD: `1.16` = Series 1 dòng 16; `3.5` = Series 3 dòng 5).
+- Chủ đề do người vận hành CHỦ ĐỘNG đưa ngoài danh mục: ghi `Trực tiếp`.
 
 **Body** — toàn văn bài viết.
 

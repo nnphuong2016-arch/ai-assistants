@@ -320,6 +320,155 @@ Nên
 
 ---
 
+# Example 21
+## Bài hoàn chỉnh — Series 2 "Đôi khi" (dòng 2.30; Mood: Mỉm cười; kết kiểu a)
+
+> Đôi khi sống khỏe không bắt đầu từ những điều lớn lao, mà từ những việc rất nhỏ mỗi ngày.
+>
+> Ta vẫn hay chờ một thời điểm đủ lớn để bắt đầu: một lời hứa đầu năm, một kế hoạch kín cả trang
+> giấy. Nhiều kế hoạch như thế rồi nằm lại trong ngăn kéo. Còn vài phút đi quanh khu nhà, một bữa
+> cơm ngồi ăn cho tử tế, lại cứ ở với ta suốt nhiều năm.
+>
+> Nồi cơm ngon chín bằng lửa riu riu, đều tay đến lúc cạn nước. Việc nhỏ ở lại được vì nó đủ nhẹ để
+> hôm nào cũng làm nổi, và sự đều ấy mới nuôi được cơ thể.
+>
+> Lửa nhỏ mà đều, gạo nào rồi cũng chín.
+
+Điểm học:
+
+- Dạng nghịch lý nhẹ: Phần 2 nêu nghịch lý (ta chờ điều lớn, nhưng việc nhỏ mới ở lại), Phần 3 lật
+  góc nhìn bằng nồi cơm lửa riu riu; không phán xét người bỏ dở kế hoạch
+- Góc nhìn mới chỉ một ý: việc nhỏ ở lại được vì đủ nhẹ để hôm nào cũng làm nổi; không số liệu,
+  không thuật ngữ
+- Không nhân vật mà vẫn gần: "ta", kế hoạch trong ngăn kéo, bữa cơm ngồi ăn tử tế; kết bằng một
+  câu ngắn như lời cha ông
+- 125 từ — nằm trong chuẩn
+
+---
+
+# Example 22
+## Bài hoàn chỉnh — Series 3 "Hóa ra" (dòng 3.26; Mood: Tò mò; kết kiểu b)
+
+> Hóa ra vận động ít nhưng đều còn tốt hơn tập quá sức rồi bỏ cuộc.
+>
+> Ai rồi cũng có một đầu tuần đầy quyết tâm: dậy thật sớm, tập cho bằng hết sức. Hôm sau người ê ẩm,
+> hôm sau nữa thì nghỉ, và nghỉ luôn từ đó. Chẳng ai trách được ai.
+>
+> Mưa phùn thấm vào đất được rất sâu. Mưa rào ào xuống rồi chảy đi, đất chưa kịp giữ. Cơ thể cũng
+> vậy: quen từng chút một thì giữ được, dồn một lần thì dễ mỏi rồi bỏ.
+>
+> Một vòng quanh con ngõ mỗi chiều cũng đã đáng kể. Vậy hôm nay, đi bao xa thì ngày mai bạn vẫn còn
+> muốn đi tiếp?
+
+Điểm học:
+
+- Dạng "Hóa ra", giải thích vừa đủ: đúng MỘT lý do đời thường (mưa phùn thấm sâu hơn mưa rào),
+  không cơ chế sinh lý, không "theo nghiên cứu"
+- Phần 2 gọi tên tình huống ai cũng gặp (đầu tuần đầy quyết tâm rồi nghỉ luôn) và chốt "Chẳng ai
+  trách được ai" — người đọc thấy mình mà không thấy bị chê
+- Kết bằng câu hỏi tự nhiên, đo bằng cảm giác ("ngày mai vẫn còn muốn đi tiếp") thay vì chỉ tiêu;
+  không con số, không lời khuyên y khoa
+- 118 từ — nằm trong chuẩn
+
+---
+
+# Example 23
+## Bài hoàn chỉnh — Series 4 "Đừng vội" (dòng 4.28; Mood: Hy vọng / Bình yên; kết kiểu e)
+
+> Đừng vội nghĩ bình an là điều tự nhiên mà có.
+>
+> Ta hay nghĩ bình an sẽ tới khi mọi việc êm xuôi: khi con cái yên bề, khi tiền bạc không còn phải
+> đắn đo. Nên ta ngồi chờ, như chờ một mùa.
+>
+> Chén trà thơm cũng chẳng tự đến: nước phải được đun, được chờ sôi, được rót thật chậm. Bình an
+> cũng được pha như thế, từng chút một, ngay giữa những ngày còn bộn bề. Một buổi chiều ngồi yên,
+> một câu nói nhẹ đi, mỗi thứ ấy rót thêm một chút vào chén.
+>
+> Hơi trà vẫn bay lên, chậm và đều.
+
+Điểm học:
+
+- Dạng "Đừng vội", gỡ hiểu lầm không phán xét: Phần 2 gọi tên điều ai cũng hay nghĩ (bình an đến
+  khi mọi việc êm), Phần 3 đưa cách nhìn khác bằng MỘT ẩn dụ (chén trà); không dọa, không hàm ý
+  trả giá
+- Góc nhìn mới: bình an được làm ra ngay giữa ngày bộn bề, qua những lần rất nhỏ
+- Kết bằng một hình ảnh, không bài học, không CTA
+- 106 từ — nằm trong chuẩn
+
+---
+
+# Example 24
+## Bài hoàn chỉnh — Series 5 "Nếu hôm nay" (dòng 5.28; Mood: Bình yên; kết kiểu d)
+
+> Nếu hôm nay còn có thể bỏ điện thoại xuống sớm hơn, hãy đổi lấy một giấc ngủ ngon.
+>
+> Ngón tay cứ lướt thêm một đoạn nữa, rồi thêm một đoạn nữa, đến khi ngẩng lên thì đêm đã quá nửa.
+> Màn hình sáng như thế, mắt khó mà biết trời đã khuya.
+>
+> Trời mỗi chiều vẫn tối dần, chẳng cần ai bấm nút. Tối nay, nếu tiện, thử cắm sạc điện thoại ở bàn
+> ngoài kia, cách giường vài bước chân. Rồi thử dành mười phút cuối ngày cho một việc chẳng cần màn
+> hình, như rửa mặt thật chậm hay nhìn ngọn đèn vàng dịu xuống.
+>
+> Mười phút thôi, mà đêm sẽ đến êm hơn một chút.
+
+Điểm học:
+
+- Dạng "Nếu hôm nay": Phần 3 đúng hai việc rất nhỏ, cụ thể (cắm sạc xa giường; mười phút cuối ngày
+  không màn hình), giọng mời "nếu tiện, thử…", không "thứ nhất/thứ hai", không giọng lệnh
+- Phần 2 đồng cảm bằng tình huống chung (lướt thêm một đoạn nữa đến quá nửa đêm), không chỉ trích
+- Kết chốt một mốc làm được ngay tối nay (mười phút) — người đọc có việc để làm, không bị khuyên
+  suông
+- 119 từ — nằm trong chuẩn
+
+---
+
+# Example 25
+## Bài hoàn chỉnh — Series 6 "Điều đáng nghĩ hôm nay" (dòng 6.29; Mood: Trăn trở / Hy vọng; kết kiểu a)
+
+> Một cuộc đời ý nghĩa luôn bắt đầu từ những lựa chọn rất bình thường mỗi ngày.
+>
+> Lối mòn trước sân chưa từng có ai vạch ra. Chỉ là nhiều bước chân, qua nhiều buổi sáng, cứ đi về
+> cùng một hướng, cho đến khi cỏ không mọc nữa.
+>
+> Đời người cũng có lối của nó. Ta hay nhớ những ngã rẽ lớn, nhưng lối ấy được in bằng những lần rất
+> nhỏ: nói một lời nhẹ hơn, ở lại thêm một chút bên người cần mình.
+>
+> Ý nghĩa ít khi đứng ở cuối đường. Nó nằm trong từng bước ta đã chọn đi.
+
+Điểm học:
+
+- Dạng suy ngẫm ít lời: chỉ MỘT ẩn dụ thiên nhiên (lối mòn trước sân), không giải thích thêm
+- Phần 3 gọn, một ý: ý nghĩa nằm trong những lần rất nhỏ (một lời nhẹ hơn, ở lại thêm bên người
+  cần mình); không triết lý dài, không "Bài học là"
+- Kết lắng đọng, không kêu gọi
+- 104 từ — nằm trong chuẩn
+
+---
+
+# Example 26
+## Bài hoàn chỉnh — Series 7 "Một phút nhìn lại" (dòng 7.30; Mood: Biết ơn; kết kiểu c)
+
+> Nếu hôm nay là một ngày đáng nhớ, bạn muốn nhớ điều gì nhất?
+>
+> Có những ngày trôi qua nhẹ như chiếc lá rụng, đến tối chẳng nhớ nổi mình đã ăn gì, đã nghe những
+> gì. Ngày nào cũng đủ ba bữa cơm, đủ sáng trưa chiều tối, vậy mà trí nhớ giữ lại rất ít.
+>
+> Thứ nó giữ thường là những khoảnh khắc ta thật sự có mặt: một câu nói làm lòng ấm lên, một khoảng
+> trời chiều nhìn lâu hơn mọi hôm.
+>
+> Nếu muốn kể, mình ngồi nghe: điều gì đang ở lại với bạn từ hôm nay?
+
+Điểm học:
+
+- Dạng câu hỏi tự soi chiếu: dòng gốc đã là câu hỏi; Phần 2 chỉ nói vì sao khó trả lời (nhiều ngày
+  trôi như chiếc lá rụng); Phần 4 quay lại câu hỏi dưới dạng lời mời kể
+- Góc nhìn mới một ý: trí nhớ chỉ giữ những khoảnh khắc ta thật sự có mặt; không khuyên, không dạy
+- Mời kể nhẹ ("Nếu muốn kể, mình ngồi nghe"), không "hãy comment"; ngôi "bạn" chỉ xuất hiện ở câu
+  hỏi nên bài không có nhân vật
+- 102 từ — nằm trong chuẩn
+
+---
+
 # Common Patterns
 
 Mẫu mở đầu

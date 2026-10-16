@@ -1,6 +1,6 @@
 # QUALITY CHECK
 
-Version: 2.1
+Version: 2.2
 Cập nhật: 16/10/2026
 
 > Đây là cổng bắt buộc cuối cùng trước khi xuất bài (STEP 9 của `execution_flow.md`).
@@ -28,7 +28,12 @@ Nhóm này áp dụng ngưỡng riêng ở phần Quyết định bên dưới.
 -   Đúng chủ đề?
 -   Mở bằng đúng câu gốc của dòng trong danh mục (nguyên văn; hoặc bản đã lọc nghĩa nếu dòng
     không qua STEP 3.5) và bám đúng luận điểm của dòng? (Bài chủ đề `Trực tiếp`: bỏ qua mục này.)
--   Trong trần độ dài (`writing_rules.md` mục 6.1)?
+-   KHÔNG có nhân vật (không dựng một người cụ thể, không tên riêng, không cốt truyện, không
+    lời thoại — `writing_rules.md` mục 5.2)?
+-   Đúng Dạng bài của Series và có đủ Đồng cảm → Góc nhìn mới → Câu kết (`post_frameworks.md`
+    mục 2.2)?
+-   Đúng độ dài chuẩn 100–180 từ (Series 6–7: 80–120; trần cứng 300) — `writing_rules.md`
+    mục 6.1?
 
 ## Nhóm 3 — Cảm xúc
 
@@ -47,7 +52,8 @@ Nhóm này áp dụng ngưỡng riêng ở phần Quyết định bên dưới.
 
 -   Không SEO?
 -   Không clickbait?
--   Không CTA rẻ tiền?
+-   Không CTA máy móc (comment / tag / follow / chia sẻ ngay)? Nếu có câu hỏi cuối bài: tự
+    nhiên, dễ trả lời, và khác kiểu kết của bài kề bên?
 -   Không hashtag nếu không cần?
 
 ## Nhóm 6 — Móc neo ký ức
@@ -64,6 +70,9 @@ Một bài "đúng" khác một bài "đáng nhớ". Bài cần có ít nhất M
 không sửa nhẹ để lách.
 
 **Nhóm 2 đến 6:** sai từ **hai** mục trở lên -> viết lại.
+
+**Hai luật cứng của Nhóm 2** — "mở bằng đúng câu gốc" và "KHÔNG có nhân vật": sai **một** trong
+hai -> viết lại ngay, không tính vào ngưỡng hai mục.
 
 Khi phải viết lại, quay về đúng bước hỏng theo Retry Logic của
 `execution_flow.md` — không vá từng câu.

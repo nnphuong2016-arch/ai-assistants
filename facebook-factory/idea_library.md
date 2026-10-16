@@ -123,10 +123,14 @@ Một chủ đề, nhìn từ nhiều người.
 
 Ví dụ — giấc ngủ:
 
-người trẻ → người già → người bệnh → người chăm sóc → một đứa trẻ →
-một người từng mất ngủ nhiều năm
+người trẻ → người già → người bệnh → người chăm sóc → trẻ nhỏ →
+những người từng mất ngủ nhiều năm
 
 Một ý. Sinh sáu bài khác nhau.
+
+Lưu ý: đây là các NHÓM người để chọn góc nhìn, nói ở dạng chung ("Có những người đã lớn
+tuổi", "Nhiều người đang chăm sóc người thân"). Không dựng một người cụ thể thành nhân vật
+(`writing_rules.md` mục 5.2).
 
 ---
 

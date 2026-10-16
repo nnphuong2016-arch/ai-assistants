@@ -1,6 +1,6 @@
 # EXECUTION FLOW
 
-Version: 2.2
+Version: 2.3
 Cập nhật: 16/10/2026
 
 Purpose:
@@ -144,10 +144,12 @@ Tạo nhiều lựa chọn.
 Sau đó chọn ý mạnh nhất.
 
 Dòng từ `bai-dang-Facebook-Anh-Minh.md` là **tiêu đề quy định** của bài: bài PHẢI mở bằng đúng câu
-đó, nguyên văn (Series 6–7 bỏ nhãn đầu dòng), rồi bám đúng luận điểm của dòng bằng một khoảnh khắc
-cụ thể — không dừng ở việc chép lại câu gốc, không nhắc lại luận điểm ở cuối bài. Vẫn phải qua Lọc
-an toàn (STEP 3.5; dòng không qua được thì mở bằng bản đã lọc nghĩa, giữ sát câu gốc), Hook
-(STEP 4), Framework (STEP 5) và Writing Craft (STEP 7) như mọi ý tưởng khác.
+đó, nguyên văn (Series 6–7 bỏ nhãn đầu dòng), rồi triển khai đúng luận điểm của dòng theo **Dạng
+bài của Series** và Công thức nền 4 phần (`post_frameworks.md` mục 2.2) — KHÔNG nhân vật
+(`writing_rules.md` mục 5.2), độ dài chuẩn 100–180 từ (mục 6.1). Không dừng ở việc chép lại câu
+gốc; không nhắc lại nguyên câu gốc ở cuối bài. Vẫn phải qua Lọc an toàn (STEP 3.5; dòng không qua
+được thì mở bằng bản đã lọc nghĩa, giữ sát câu gốc), Hook (STEP 4), Framework (STEP 5) và Writing
+Craft (STEP 7) như mọi ý tưởng khác.
 
 ---
 
@@ -218,11 +220,13 @@ Contradiction
 
 Image
 
-Tiny Story
-
 Hook phải phù hợp chủ đề.
 
 Không dùng Hook chỉ để gây tò mò.
+
+Bài lấy từ danh mục đã có câu mở cố định theo dòng gốc (STEP 3). Khi đó STEP này dùng để chọn
+cách vào Phần 2 (Đồng cảm) và câu thứ hai nếu Phần 1 cần dài hơn một câu. Kiểu Tiny Story
+(kể một cảnh có người) đã ngừng dùng từ 16/10/2026.
 
 ---
 
@@ -234,6 +238,9 @@ Sử dụng
 post_frameworks.md
 
 Chọn cấu trúc phù hợp.
+
+Thứ tự: (1) Dạng bài theo Series và Công thức nền 4 phần (`post_frameworks.md` mục 2.2) quyết
+định cả bài; (2) framework F01–F10 chỉ là cách kể phụ bên trong dạng bài đó.
 
 Ví dụ
 
@@ -249,15 +256,15 @@ Reflection
 
 Hoặc
 
-Story
+Situation
 
 ↓
 
-Lesson
+New view
 
 ↓
 
-Open Ending
+Closing line
 
 Framework quyết định nhịp bài.
 
@@ -303,6 +310,8 @@ Sử dụng đồng thời:
 writing_rules.md
 
 writing_craft.md
+
+post_frameworks.md (mục 2.2 — công thức 4 phần)
 
 Giữ đúng cảm xúc đã chọn ở STEP 6.
 
@@ -356,13 +365,15 @@ Một ý?
 
 Một cảm xúc?
 
-Một câu chuyện?
+Đúng dạng bài của Series?
 
 Có hình ảnh?
 
 Có khoảng lặng?
 
 Có dạy đời?
+
+Có nhân vật?
 
 Có lặp?
 

@@ -1,7 +1,7 @@
 # HOOK LIBRARY
 
-Version: 2.1
-Cập nhật: 25/07/2026
+Version: 2.2
+Cập nhật: 16/10/2026
 
 Purpose:
 Hook không dùng để câu view.
@@ -70,11 +70,11 @@ Ví dụ
 
 Dạo này mình để ý một chuyện.
 
-Dạo này cơ thể mình lạ lắm.
+Dạo này cơ thể lạ lắm.
 
 Dạo này nhiều người lớn tuổi đi ngủ sớm hơn trước.
 
-Dạo này sáng nào mình cũng dậy mệt.
+Dạo này sáng nào cũng dậy mệt.
 
 ---
 
@@ -278,25 +278,11 @@ Chiếc ghế trước hiên vẫn còn đó.
 ---
 
 # TYPE 10
-Tiny Story Hooks
+Tiny Story Hooks — NGỪNG DÙNG (16/10/2026)
 
-Ví dụ
-
-Sáng nay.
-
-Mình dậy muộn.
-
-Chỉ vậy thôi.
-
-Nhưng...
-
----
-
-Có người cha.
-
-Chỉ nói một câu.
-
-Mà người con nhớ mãi.
+Kiểu mở này kể một cảnh có người ("Có người cha…") hoặc một việc đã xảy ra với người kể, trái
+`writing_rules.md` mục 5.1–5.2 (không nhân vật, không hồi ký). Cần mở bằng một tình huống thì
+dùng TYPE 9 (hình ảnh) hoặc TYPE 15 (mùa, thời điểm).
 
 ---
 
@@ -366,20 +352,18 @@ Không lấy tên nội tạng làm điểm vào.
 # TYPE 14
 Family Hooks
 
-Kể về gia đình bằng giọng quan sát ngôi ba — nhân vật không có gia đình riêng
-(xem `writing_rules.md` mục 5.1).
+Nói về gia đình ở dạng chung — nhân vật không có gia đình riêng (`writing_rules.md` mục 5.1)
+và bài không dựng người cụ thể (mục 5.2).
 
 Ví dụ
 
-Có người cha...
-
-Có người mẹ...
+Nhiều người làm cha mẹ...
 
 Nhiều người con...
 
 Có những gia đình...
 
-Ở nhà bên...
+Có những bữa cơm gia đình...
 
 Không dùng
 
@@ -431,7 +415,7 @@ Ví dụ
 
 Có hôm.
 
-Mình ngồi rất lâu.
+Ngồi rất lâu.
 
 Không làm gì cả.
 
@@ -468,8 +452,6 @@ Không dùng danh ngôn nổi tiếng.
 Dùng lời đời thường, kể bằng giọng quan sát.
 
 Ví dụ
-
-Có người cha từng nói với con.
 
 Các cụ ngày trước hay bảo.
 

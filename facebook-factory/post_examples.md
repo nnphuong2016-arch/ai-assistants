@@ -1,7 +1,7 @@
 # POST EXAMPLES
 
-Version: 2.1
-Cập nhật: 25/07/2026
+Version: 3.0
+Cập nhật: 16/10/2026
 
 Purpose:
 Không dùng để copy bài viết.
@@ -9,7 +9,7 @@ Không dùng để copy bài viết.
 Dùng để AI học:
 
 - cách mở bài
-- cách kể chuyện
+- cách nêu một tình huống quen thuộc (không nhân vật)
 - cách chuyển ý
 - cách kết bài
 - cách tạo cảm xúc
@@ -17,6 +17,15 @@ Dùng để AI học:
 
 Nếu ví dụ và Writing Craft mâu thuẫn.
 Luôn ưu tiên Writing Craft.
+
+Cách đọc file này (từ 16/10/2026):
+
+- Example 1–19: mảnh kỹ thuật ngắn (câu mở, chuyển ý, kết, chi tiết). Chỉ học nhịp — KHÔNG phải
+  chuẩn độ dài, KHÔNG phải bài hoàn chỉnh.
+- Example 20–26: bảy BÀI HOÀN CHỈNH, mỗi Series một dạng, theo chuẩn mới — không nhân vật, công
+  thức 4 phần, 100–180 từ (`post_frameworks.md` mục 2.2). Đây là chuẩn để so sánh ở STEP 8.
+- Bài mẫu dùng dòng thật trong danh mục chỉ để minh họa dạng bài. Khi viết bài thật cho cùng dòng,
+  đổi hình ảnh và cách vào Phần 2, không chép lại.
 
 ---
 
@@ -238,11 +247,9 @@ Nên
 # Example 17
 ## Một khoảnh khắc
 
-> Người cha đứng trước cửa.
+> Chiếc ghế trước hiên vẫn còn đó.
 >
-> Không nói gì.
->
-> Chỉ nhìn theo.
+> Chiều nào cũng quay ra phía con đường.
 
 ---
 
@@ -277,162 +284,39 @@ Nên
 ---
 
 # Example 20
-## Một bài hoàn chỉnh (Mini Sample)
+## Bài hoàn chỉnh — Series 1 "Có những" (dòng 1.9; Mood: Đồng cảm)
 
-> Có những buổi sáng.
+> Có những người cả đời chăm lo cho người khác nhưng quên chăm sóc chính mình.
 >
-> Chuông báo thức reo.
+> Họ nhớ con thích ăn món gì, nhớ ngày giỗ của cha mẹ, nhớ từng việc lớn nhỏ trong nhà. Ai cần
+> giúp đỡ, họ đều có mặt.
 >
-> Mình vẫn nằm thêm năm phút.
+> Chỉ có một câu họ ít khi hỏi chính mình: hôm nay mình có mệt không? Và khi mệt, họ thường nói:
+> “Không sao đâu, tôi vẫn ổn.”
 >
-> Trước đây.
+> Có lẽ vì đã quen làm chỗ dựa cho người khác, họ quên rằng mình cũng cần được nghỉ ngơi, được
+> quan tâm, và đôi khi được chăm sóc.
 >
-> Mình nghĩ đó là lười.
+> Một cây tre muốn đứng vững qua nhiều mùa gió cũng cần đất nuôi dưỡng bộ rễ. Con người cũng vậy.
+> Chăm sóc bản thân không phải là ích kỷ, mà là giữ gìn sức mình để tiếp tục sống tử tế với những
+> người mình thương.
 >
-> Sau này.
+> Hôm nay, nếu có thể, hãy dành cho mình một chút thời gian.
 >
-> Mình mới nhận ra.
->
-> Có khi.
->
-> Cơ thể chỉ đang xin thêm một chút nghỉ ngơi.
->
-> Chỉ vậy thôi.
-
-Điểm học:
-
-- Một ý
-- Một hình ảnh
-- Một chuyển ý
-- Một kết mở
-
----
-
-# Example 21
-## Một bài hội thoại hoàn chỉnh (F11)
-
-> Buổi tối.
->
-> Hai cha con ngồi ngoài hiên.
->
-> Người con nói, giọng nhỏ:
->
-> "Con muốn chọn hướng khác, không phải hướng bố mong."
->
-> Người cha im một lúc.
->
-> "Bố có buồn không ạ?"
->
-> "Bố chỉ sợ con chọn đường này vì bố. Chứ không phải vì con."
->
-> Người con ngồi yên.
->
-> Nhìn ra khoảng sân tối.
->
-> Đêm ấy hai người ngồi rất lâu.
->
-> Không ai nói thêm gì nữa.
+> Còn bạn, đã bao lâu rồi bạn chưa thật sự dành thời gian cho chính mình?
 
 Điểm học:
 
-- Đúng 4 lượt thoại, hai nhân vật
-- Câu chốt nằm trong lời thoại của người cha, nhưng là một **nỗi sợ**, không phải một bài học
-- Kết bằng khoảng lặng, không giải thích gì thêm
-- KHÔNG có câu kiểu "Nhân cách là thứ đi cùng con suốt đời" — đó là lỗi biến nhân vật
-  thành cái loa giảng đạo
-
----
-
-# Example 22
-## Bài hoàn chỉnh — F09 Quan sát (Mood: Bình yên)
-
-> Sáng nay ngoài công viên.
->
-> Có bác lớn tuổi đi bộ rất chậm.
->
-> Chậm đến mức người phía sau phải vòng qua.
->
-> Đi được một vòng.
->
-> Bác dừng lại.
->
-> Ngồi xuống ghế đá.
->
-> Nhìn mấy con chim sà xuống bãi cỏ.
->
-> Rất lâu.
->
-> Có lẽ với bác.
->
-> Đi bộ không phải để về đích.
-
-Điểm học:
-
-- Một quan sát, một ý, không giải thích
-- Chi tiết cụ thể ("người phía sau phải vòng qua") thay vì tính từ
-- Kết mở, không có chữ "bài học"
-- Nhân vật là người vô danh, không phải người thân của Anh Minh
-
----
-
-# Example 23
-## Bài hoàn chỉnh — F02 Có những ngày (Mood: Đồng cảm)
-
-> Có những ngày.
->
-> Việc chẳng nhiều hơn hôm qua.
->
-> Mà người thì nặng hơn hẳn.
->
-> Buổi trưa chỉ muốn ngồi yên một lúc.
->
-> Không ăn.
->
-> Không nói.
->
-> Không mở điện thoại.
->
-> Những ngày như vậy.
->
-> Có khi cơ thể không đòi hỏi gì to tát.
->
-> Chỉ xin được nghỉ một chút.
-
-Điểm học:
-
-- Cảm xúc đồng cảm giữ đều từ đầu đến cuối, không lên cao trào
-- Ba câu phủ định liên tiếp tạo khoảng lặng
-- Không khuyên gì, không kê đơn nghỉ ngơi
-
----
-
-# Example 24
-## Bài hoàn chỉnh — F01 Hóa ra, mở bằng hook hình ảnh (Mood: Hoài niệm)
-
-> Trong bếp có một cái ấm cũ.
->
-> Men đã rạn, quai hơi lung lay.
->
-> Nhà có ấm mới rồi.
->
-> Nhưng sáng nào cũng vẫn dùng cái cũ.
->
-> Trước đây cứ nghĩ đó là tiếc của.
->
-> Hóa ra không phải.
->
-> Có những thứ ta giữ lại.
->
-> Không vì nó còn tốt.
->
-> Mà vì nó đã ở đó quá lâu.
-
-Điểm học:
-
-- Framework F01 nhưng hook là **hình ảnh**, không mở bằng chữ "Hóa ra"
-  (`post_frameworks.md` mục 2.1)
-- "Hóa ra" nằm giữa bài, làm bản lề chuyển ý
-- Đồ vật cũ làm móc neo ký ức
+- Phần 1 là đúng dòng 1.9, nguyên văn. Phần 2 nói về một KIỂU người ("Họ nhớ con thích ăn món gì…"),
+  không phải một người cụ thể — người đọc nhận ra mình, không đứng ngoài xem chuyện người khác
+- Phần 3 có một ý chính ("chăm sóc bản thân không phải là ích kỷ") và MỘT ẩn dụ thiên nhiên (cây
+  tre, bộ rễ) — ẩn dụ không được giải thích thêm
+- Phần 4 gồm một gợi ý nhẹ ("nếu có thể, hãy…") và một câu hỏi tự nhiên. Không bài nào cũng cần cả
+  hai: xoay vòng kiểu kết (`post_frameworks.md` mục 2.2)
+- Mỗi cụm công thức chỉ một lần: một "Có lẽ", một "không phải… mà là"
+- Không nói bệnh, không thuật ngữ, không "theo nghiên cứu"; người đọc được quyền chọn, không bị khuyên
+  phải sống tốt hơn
+- 177 từ — nằm trong chuẩn 100–180 (đã rút nhẹ vài từ so với bản gốc để không vượt 180)
 
 ---
 
@@ -481,7 +365,7 @@ Chỉ học:
 - nhịp
 - khoảng nghỉ
 - cách mở
-- cách kể
+- cách nêu tình huống chung
 - cách chuyển
 - cách kết
 - cách tạo hình ảnh

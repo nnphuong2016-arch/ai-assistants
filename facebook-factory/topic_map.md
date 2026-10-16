@@ -578,7 +578,7 @@ Một Topic tốt phải:
 
 ✓ Ai cũng từng trải qua.
 
-✓ Có thể kể thành câu chuyện.
+✓ Gợi được một tình huống quen thuộc (không cần nhân vật).
 
 ✓ Có cảm xúc.
 

@@ -1,6 +1,6 @@
 # CLAUDE.md — FACEBOOK FACTORY (bài đăng Facebook Page/Group)
 
-Version: 1.2
+Version: 1.3
 Cập nhật: 16/10/2026
 
 > File nhắc việc riêng cho Facebook Factory, đặt trong chính thư mục này để mỗi lần mở cửa sổ
@@ -29,13 +29,34 @@ Bước 2, khối "Bắt buộc với Facebook Factory". Đây là bản tóm t�
   có số nhỏ nhất, không tự nhảy cóc theo chủ đề.
 - **Dòng gốc là "tiêu đề quy định" của bài: bài PHẢI mở bằng đúng câu đó, nguyên văn** (câu đầu
   tiên, không in đậm, không heading; Series 6–7 bỏ nhãn đầu dòng, giữ câu sau dấu hai chấm). Thân
-  bài bám đúng luận điểm của dòng bằng MỘT khoảnh khắc cụ thể, không đổi sang chủ đề khác, không
-  nhắc lại luận điểm ở cuối. Dòng không qua STEP 3.5 → mở bằng bản đã lọc nghĩa, giữ sát câu gốc,
+  bài triển khai đúng luận điểm của dòng theo Luật số 2, không đổi sang chủ đề khác, không nhắc
+  lại nguyên câu mở ở cuối. Dòng không qua STEP 3.5 → mở bằng bản đã lọc nghĩa, giữ sát câu gốc,
   nói rõ trong phần trả lời.
 - Tên file lưu: `<series>.<dòng>.<slug>.md`, slug = cụm từ chính của dòng gốc (VD
   `1.3.nguoi-bat-dau-yeu-suc-khoe-sau-lan-nhap-vien.md`); field `Hook Source` ghi `1.3`.
 - Ngoại lệ DUY NHẤT: người vận hành CHỦ ĐỘNG đưa chủ đề ngoài danh mục → `Hook Source` = `Trực tiếp`,
   hỏi người vận hành cách đánh số.
+
+---
+
+## LUẬT SỐ 2 — CÁCH VIẾT: KHÔNG NHÂN VẬT, CÔNG THỨC 4 PHẦN, 100–180 TỪ
+
+(Thêm 16/10/2026 — người vận hành chọn thay cho lối kể chuyện nhân vật trước đó. Nguồn đầy đủ:
+`writing_rules.md` mục 5.2 và 6.1, `post_frameworks.md` mục 2.2. Đọc ngay sau Luật số 1.)
+
+- **KHÔNG nhân vật:** không dựng một người cụ thể (anh/chị/ông/bà/người cha…), không tên riêng,
+  không cốt truyện, không lời thoại. Nói ở dạng chung — "Có những người…", "Nhiều người…",
+  "Họ…", "Ta…" — để người đọc thấy MÌNH trong bài, không đứng ngoài xem chuyện người khác.
+- **Công thức nền 4 phần:** Câu mở (dòng gốc) → Đồng cảm (2–4 câu, tình huống quen thuộc) → Góc
+  nhìn mới (2–3 câu, MỘT ý, dấu ấn riêng của Anh Minh) → Câu kết (một câu đáng nhớ; tùy bài thêm
+  một câu hỏi tự nhiên hoặc một việc nhỏ).
+- **Mỗi Series một dạng bài:** 1 quan sát đồng cảm · 2 nghịch lý nhẹ · 3 điều nhận ra (giải thích
+  vừa đủ) · 4 gỡ hiểu lầm không phán xét · 5 một việc nhỏ làm ngay · 6 suy ngẫm ít lời · 7 một
+  câu hỏi tự soi chiếu.
+- **Độ dài chuẩn 100–180 từ** (Series 6–7: 80–120; trần cứng 300).
+- **Xoay vòng kiểu kết:** hai bài kề nhau không cùng kiểu; không bài nào cũng "Bạn nghĩ sao?";
+  không "hãy comment".
+- Bài mẫu: `post_examples.md` Example 20–26.
 
 ---
 
@@ -47,11 +68,12 @@ Bước 2, khối "Bắt buộc với Facebook Factory". Đây là bản tóm t�
 2. `execution_flow.md` — trình tự 10 bước bắt buộc (xem mục 1 bên dưới).
 3. `writing_rules.md` — được phép/không được phép viết gì (mục 4.1 = ranh giới thương hiệu
    tuyệt đối, ưu tiên cao hơn mọi file khác trừ `instructions_facebook.md`).
-4. `writing_craft.md` — dạy giọng viết bằng ví dụ (38 mục, file dài nhất — tra khi cần, không
+4. `writing_craft.md` — dạy giọng viết bằng ví dụ (39 mục, file dài nhất — tra khi cần, không
    cần đọc lại toàn bộ mỗi lần nếu đã nắm tinh thần cốt lõi ở mục 2 bên dưới).
 5. `quality_check.md` — tự kiểm trước khi xuất (Nhóm 1 An toàn sai 1 mục, hoặc nhóm khác sai ≥2
    mục → viết lại).
-6. `post_frameworks.md` — chọn 1 trong 11 khung F01–F11.
+6. `post_frameworks.md` — Dạng bài theo Series + Công thức nền 4 phần (mục 2.2), rồi chọn khung
+   kể phụ trong F01–F06, F08–F10 (F07 và F11 đã ngừng dùng).
 7. `emotion_palette.md` — chọn 1 cảm xúc chính (+ tối đa 1 cảm xúc phụ).
 8. `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — danh mục 210 dòng; **nguồn BẮT
    BUỘC của mọi bài** (xem Luật số 1 ở trên).
@@ -75,7 +97,8 @@ Understand → Select Topic (`topic_map.md`, CHỈ 1 topic chính) → Generate 
 `<series>.<dòng>` của danh mục**, hoặc chủ đề người vận hành CHỦ ĐỘNG đưa ngoài danh mục;
 `idea_library.md` chỉ để tìm hướng kể) →
 **Safety Filter (STEP 3.5)** → Choose Hook (`hook_library.md`) → Choose Framework
-(`post_frameworks.md`, F01–F11) → **Choose Emotion** (`emotion_palette.md`, chọn TRƯỚC khi
+(`post_frameworks.md`: Dạng bài theo Series + Công thức nền mục 2.2, khung phụ F01–F10) →
+**Choose Emotion** (`emotion_palette.md`, chọn TRƯỚC khi
 viết) → Write Draft (`writing_rules.md` + `writing_craft.md`, không tự sửa trong lúc viết) →
 Compare Examples (`post_examples.md`, chỉ so sánh không copy) → Quality Review
 (`quality_check.md`) → Output (`output_schema.md`).
@@ -90,8 +113,9 @@ Anh-Minh.md`. Kho hook KHÔNG được coi là đã an toàn sẵn.
 ## 2. TINH THẦN GIỌNG VIẾT (đọc `writing_craft.md` để hiểu sâu, đây là bản tóm tắt nhanh)
 
 - Viết như đang ngồi uống trà nói chuyện, KHÔNG như giáo viên/báo chí/AI/copywriter.
-- Câu ngắn, đoạn ngắn, nhiều khoảng trống. Không giải thích quá nhiều — chừa chỗ cho người đọc
-  tự cảm nhận. Không kết luận thay ("Bài học là...") — dùng kết mở ("Có lẽ...", "Chỉ vậy thôi.").
+- Câu ngắn, đoạn ngắn (1–3 câu), nhiều khoảng trống. Không giảng giải. Không kết luận kiểu
+  "Bài học là..." — kết bằng một câu đáng nhớ; tùy bài thêm một câu hỏi tự nhiên hoặc một việc
+  nhỏ (xoay vòng kiểu kết, không bài nào cũng cần).
 - **Một bài = MỘT ý chính duy nhất** — đây là nguyên tắc quan trọng nhất của cả Factory. Không
   gộp ngủ + ăn + tập + thiền vào một bài.
 - Dùng chi tiết cụ thể thay vì khái quát ("Chuông báo thức reo đến lần thứ ba" thay vì "Mình rất
@@ -99,11 +123,12 @@ Anh-Minh.md`. Kho hook KHÔNG được coi là đã an toàn sẵn.
 - Tránh các câu mở kiểu AI: "Bạn có biết...", "Hôm nay mình sẽ chia sẻ...", "5 cách để...",
   "Theo nghiên cứu...", "Hãy cùng tìm hiểu...".
 - Không lạm dụng dấu chấm than, CHỮ HOA, emoji, dấu "...".
-- **Độ dài:** không có số từ tối thiểu — bài dừng khi ý đã đủ (thực tế phần lớn rơi vào 50–250
-  từ); trần cứng 300 từ, bài hội thoại F11 tối đa 280 từ (`writing_rules.md` mục 6.1).
+- **Độ dài:** chuẩn 100–180 từ; Series 6–7 khoảng 80–120; trần cứng 300 từ (`writing_rules.md`
+  mục 6.1). Mốc biên tập, không viết thêm chỉ để đủ số.
 - **Nhân xưng** (`writing_rules.md` mục 5.1): "mình" **được nghĩ, không được nhớ**. Cấm dựng
   quan hệ gia đình riêng cho nhân vật ("bố mình", "con trai mình") và hồi ký cá nhân cụ thể.
-  Chuyện về người khác → giọng quan sát ngôi ba ("Có người cha…", "Có những người…").
+  Nói về người khác → chỉ ở dạng chung ("Có những người…", "Nhiều người…", "Họ…"), không dựng
+  một người cụ thể (mục 5.2).
 - **Móc neo ký ức:** mỗi bài cần ≥1 trong 3 — ẩn dụ thiên nhiên mạnh / câu hỏi khiến người đọc
   dừng một nhịp / insight không hiển nhiên (`writing_craft.md` mục 36.1–36.2).
 
@@ -120,8 +145,9 @@ CORE_BRAIN:
   `core-brain/dong_hanh_nguoi_benh.md`: không hứa khỏi bệnh, không đụng diễn tiến bệnh, luôn
   đặt song song bác sĩ.
 - Nhắc sản phẩm → tỷ lệ giá trị/sản phẩm ~95/5, không biến bài chia sẻ thành quảng cáo.
-- **Không dùng CTA rẻ tiền**: "Bạn có đồng ý không?", "Comment bên dưới nhé", "Tag bạn bè",
-  "Follow để...". Chỉ khuyến khích suy ngẫm tự nhiên nếu phù hợp, không ép tương tác.
+- **Không dùng CTA máy móc**: "Bạn có đồng ý không?", "Comment bên dưới nhé", "Hãy chia sẻ ở
+  phần bình luận", "Tag bạn bè", "Follow để...". Được phép một câu hỏi tự nhiên, dễ trả lời ở
+  cuối bài — không ép tương tác, không bài nào cũng có.
 
 ---
 
@@ -147,6 +173,7 @@ CORE_BRAIN:
 **Hai ngưỡng khác nhau:**
 - **Nhóm 1 (An toàn):** sai **1** mục → viết lại ngay, không ngoại lệ.
 - **Nhóm 2–6:** sai **≥2** mục → viết lại.
+- **Hai luật cứng của Nhóm 2:** mở bằng đúng câu gốc + KHÔNG có nhân vật — sai **1** là viết lại.
 
 Viết lại thì quay về đúng bước hỏng theo Retry Logic, không vá từng câu.
 

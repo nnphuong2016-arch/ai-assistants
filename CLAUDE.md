@@ -109,8 +109,8 @@ một kho nữa)
 > - **Dòng gốc là "tiêu đề quy định" của bài — bài PHẢI mở bằng đúng câu đó, nguyên văn** (làm câu
 >   đầu tiên của bài, không in đậm, không tách thành heading — Facebook Factory vẫn không dùng tiêu
 >   đề kiểu bài báo; Series 6–7 bỏ phần nhãn đầu dòng "Điều đáng nghĩ hôm nay:"/"Một phút nhìn
->   lại:", giữ câu phía sau). Phần thân bám đúng luận điểm của dòng bằng MỘT khoảnh khắc cụ thể —
->   không đổi sang chủ đề/góc khác, và không nhắc lại luận điểm ở cuối bài (câu mở đã nói rồi).
+>   lại:", giữ câu phía sau). Phần thân triển khai đúng luận điểm của dòng theo Dạng bài của
+>   Series — không đổi sang chủ đề/góc khác, và không nhắc lại nguyên câu mở ở cuối bài.
 >   (Không mâu thuẫn với quy tắc "không copy nguyên dòng" ở dưới: câu gốc chỉ là câu MỞ của bài
 >   nhiều đoạn, không phải toàn bộ caption; và backlog Facebook chỉ Facebook dùng nên không có nguy
 >   cơ trùng câu giữa các kênh.) Dòng không qua Safety Filter (`facebook-factory/execution_flow.md`
@@ -120,6 +120,14 @@ một kho nữa)
 >   đó, `Hook Source` = `Trực tiếp`, và hỏi người vận hành muốn đánh số/đặt tên file thế nào (không
 >   tự bịa số). `facebook-factory/idea_library.md` KHÔNG còn là nguồn thay thế dòng — chỉ dùng để tìm
 >   thêm hướng kể cho CHÍNH dòng đã chọn.
+> - **Cách viết bài Facebook (chuẩn do người vận hành chọn 16/10/2026, thay lối kể chuyện nhân
+>   vật):** (1) **KHÔNG nhân vật** — không dựng người cụ thể, không tên riêng, không cốt truyện,
+>   không lời thoại; nói ở dạng chung ("Có những người…", "Ta…") để người đọc thấy MÌNH trong bài
+>   (`facebook-factory/writing_rules.md` mục 5.2); (2) **Công thức nền 4 phần** Câu mở → Đồng cảm
+>   → Góc nhìn mới → Câu kết, mỗi Series một dạng bài riêng, xoay vòng kiểu kết, không CTA máy
+>   móc (`facebook-factory/post_frameworks.md` mục 2.2); (3) **độ dài chuẩn 100–180 từ**, Series
+>   6–7 khoảng 80–120, trần cứng 300 (`writing_rules.md` mục 6.1). Bài mẫu:
+>   `facebook-factory/post_examples.md` Example 20–26.
 
 - Cách dùng: nếu người dùng chỉ định "hook/dòng số N" → dùng đúng câu đó trong đúng file backlog
   của Factory đang làm làm điểm vào. Nếu không chỉ định, tự chọn dòng phù hợp chủ đề trong đúng

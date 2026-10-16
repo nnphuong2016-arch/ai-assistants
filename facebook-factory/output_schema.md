@@ -14,7 +14,8 @@ gạch chéo (VD: `Đồng cảm / Bình yên`).
 **Pillar** — 1 trong 6 trụ chính thức, tra bảng quy đổi ở `topic_map.md` mục
 "Cầu nối 6 trụ".
 
-**Framework** — mã framework đã dùng (F01–F11) theo `post_frameworks.md`.
+**Framework** — mã framework đã dùng (F01–F10; F07 và F11 đã ngừng dùng từ 16/10/2026 vì
+bài Facebook không có nhân vật) theo `post_frameworks.md`.
 
 **Hook Source** — số bài trong `bai-dang-Facebook-Anh-Minh.md` (= số đầu tên file lưu), để về sau
 tra cứu chống trùng:

@@ -1,7 +1,7 @@
 WRITING CRAFT
 
-Version: 2.1
-Cập nhật: 25/07/2026
+Version: 2.2
+Cập nhật: 16/10/2026
 Status: Foundation Document
 Applies to: Facebook Factory (AI-Agnostic)
 
@@ -208,6 +208,10 @@ Có lẽ cơ thể chỉ đang muốn được nghỉ.
 
 Để người đọc tự nối phần còn lại.
 
+Ngoại lệ có chừng mực: Series 3 (Hóa ra) và Series 4 (Đừng vội) được giải thích vừa đủ — một
+lý do đời thường trong một–hai câu (`post_frameworks.md` mục 2.2). Vẫn không cơ chế y khoa,
+không "theo nghiên cứu".
+
 10. Chừa khoảng trống cho người đọc
 
 Không cần nói hết.
@@ -272,7 +276,7 @@ Thật tuyệt vời.
 
 Không.
 
-Hãy kể.
+Hãy chỉ ra một chi tiết thật.
 
 Để người đọc tự cảm thấy.
 
@@ -300,7 +304,10 @@ Biết đâu...
 
 Hôm nay cũng vậy.
 
-Người đọc sẽ mang câu chuyện đi tiếp.
+Người đọc sẽ mang bài viết đi tiếp.
+
+Một câu hỏi tự nhiên, dễ trả lời cũng là một cách kết nhẹ — miễn không lặp mãi một kiểu
+(xoay vòng kiểu kết: `post_frameworks.md` mục 2.2).
 
 16. Giọng viết mong muốn
 
@@ -386,13 +393,11 @@ Tôi nhận ra rằng việc ngủ đủ giấc đóng vai trò vô cùng quan t
 
 Đúng
 
-Dạo này mình ngủ sớm hơn.
+Ngủ sớm hơn chỉ ba mươi phút.
 
-Chỉ sớm khoảng ba mươi phút.
+Nghe thì nhỏ.
 
-Điều lạ là...
-
-Buổi sáng không còn thấy người nặng như trước.
+Vậy mà sáng ra, người nhẹ hơn hẳn.
 
 Cùng một ý.
 
@@ -581,6 +586,20 @@ Biết đâu.
 
 Chỉ là nghỉ sớm hơn một chút.
 
+Kiểu 6
+
+Một câu hỏi tự nhiên.
+
+Còn bạn, lần cuối bạn ngồi yên mà không phải làm gì là khi nào?
+
+Kiểu 7
+
+Một việc nhỏ làm được ngay.
+
+Hôm nay, nếu có thể, hãy uống một ly nước ấm thật chậm.
+
+Không bài nào cũng cần câu hỏi hay việc nhỏ. Xoay vòng kiểu kết theo `post_frameworks.md` mục 2.2.
+
 22. Ngôn ngữ cần tránh
 
 > Toàn bộ danh sách từ ngữ và câu cần tránh gom về đúng mục này. Mục 27, 30, 31 trước đây
@@ -638,6 +657,8 @@ Hóa ra... · Có lẽ... · Mình nhận ra... · Đôi khi... · Thật ra...
 Những cụm này KHÔNG sai — nhưng mỗi bài chỉ nên dùng **một** làm điểm nhấn.
 Dùng ba bốn lần trong một bài là lộ công thức.
 
+Cụm "không phải X, mà là Y" cũng vậy: tối đa một lần mỗi bài — nhịp này rất dễ lặp ở văn do máy viết.
+
 23. Nguyên tắc cuối cùng
 
 Nếu bạn phân vân giữa hai cách viết.
@@ -663,7 +684,7 @@ Buổi sáng.
 
 Chuông báo thức reo đến lần thứ ba.
 
-Mình vẫn chưa muốn mở mắt.
+Người vẫn chưa muốn mở mắt.
 
 Hai câu đều nói về sự mệt mỏi.
 
@@ -673,7 +694,7 @@ Nhưng câu thứ hai tạo ra một bộ phim trong đầu người đọc.
 
 24.1 Đừng nói cảm xúc.
 
-Hãy kể hoàn cảnh.
+Hãy nêu hoàn cảnh — ở dạng chung, không nhân vật.
 
 Sai
 
@@ -914,7 +935,13 @@ Bạn nên...
 
 Bạn phải...
 
-Hãy...
+Ai cũng cần...
+
+Đúng (lời mời nhẹ — người đọc được quyền chọn)
+
+Hôm nay, nếu có thể, hãy dành cho mình một chút thời gian.
+
+Định nghĩa đầy đủ: `writing_rules.md` mục 4.2.
 
 27.2 Liệt kê
 
@@ -932,27 +959,26 @@ Giấc ngủ là...
 
 Facebook không phải Wikipedia.
 
-27.4 Để nhân vật nói ra bài học thay tác giả
+27.4 Dựng nhân vật
 
-Lỗi hay gặp nhất ở bài hội thoại (F11).
+Từ 16/10/2026 bài Facebook không có nhân vật (`writing_rules.md` mục 5.2). Framework hội thoại
+(F11) đã ngừng dùng.
 
 Sai
 
-"Nhân cách là thứ sẽ đi cùng con suốt cuộc đời."
-
-Không ai nói câu đó ngoài đời.
+Chị chủ tiệm tạp hóa đầu ngõ chưa bao giờ nói mình đau.
 
 Đúng
 
-"Bố chỉ sợ con chọn đường này vì bố."
+Có những người chưa bao giờ nói mình đau.
 
-Một nỗi sợ thật.
+Họ chỉ cười: "Vẫn vậy."
 
-Không phải một bài giảng.
+Người đọc phải thấy MÌNH trong bài, không đứng ngoài xem chuyện của người khác.
 
-27.5 Giải thích thêm sau khi câu chuyện đã kết thúc
+27.5 Giải thích thêm sau khi ý đã rõ
 
-Nếu cảnh cuối đã đủ.
+Nếu Góc nhìn mới đã đủ.
 
 Đừng viết thêm một đoạn rút ra ý nghĩa.
 
@@ -981,13 +1007,11 @@ Nhưng rất giống AI.
 
 Facebook Factory
 
-Mình từng nghĩ.
+Nhiều người từng nghĩ.
 
 Chỉ cần ngủ đủ tám tiếng là sẽ khỏe.
 
-Sau này mới nhận ra.
-
-Có những hôm ngủ rất lâu.
+Rồi có những hôm ngủ rất lâu.
 
 Nhưng sáng dậy vẫn thấy người nặng như vừa đi một quãng đường dài.
 
@@ -1012,7 +1036,7 @@ Facebook Factory
 
 Có những chiều.
 
-Mình chỉ ngồi yên ngoài ban công.
+Ta chỉ ngồi yên ngoài ban công.
 
 Không đọc sách.
 
@@ -1033,7 +1057,7 @@ Facebook Factory
 
 Có hôm.
 
-Mình pha cà phê.
+Ta pha cà phê.
 
 Rồi mang đi làm luôn.
 
@@ -1124,9 +1148,9 @@ Không nên
 
 Nên
 
-Gần đây mình thử.
+Có thể thử xem.
 
-Và thấy khá hợp với bản thân.
+Biết đâu lại hợp với bạn.
 
 36. Mỗi bài chỉ nên có một "khoảnh khắc"
 
@@ -1233,6 +1257,23 @@ Người đọc nghĩ:
 "Đúng là AI."
 
 Factory thất bại.
+
+39. Công thức nền và dạng bài theo Series
+
+File này dạy GIỌNG. Cấu trúc bài nằm ở một nơi duy nhất: `post_frameworks.md` mục 2.2 — Công
+thức nền 4 phần (Câu mở → Đồng cảm → Góc nhìn mới → Câu kết), bảy dạng bài theo Series và quy
+tắc xoay vòng kiểu kết. Không nhân vật: `writing_rules.md` mục 5.2. Độ dài chuẩn 100–180 từ:
+mục 6.1.
+
+Khi viết từng phần, dùng giọng ở các mục trên:
+
+Câu mở — một nhận xét gần gũi, không giật gân (mục 19).
+
+Đồng cảm — chi tiết đời thường ở dạng chung, một giác quan là đủ (mục 24).
+
+Góc nhìn mới — một ý, một ẩn dụ thiên nhiên, không giải thích dài (mục 9, 36.1).
+
+Câu kết — nhẹ hơn mở đầu, không bài học (mục 15, 21).
 
 Phụ lục A – Chất giọng của Facebook Factory
 

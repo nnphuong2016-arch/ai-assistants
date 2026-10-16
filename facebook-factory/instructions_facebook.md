@@ -38,28 +38,10 @@ Facebook khơi mở cuộc trò chuyện.
 
 # 2. THIẾT KẾ ĐỘC LẬP AI (AI-AGNOSTIC)
 
-Facebook Factory được thiết kế để dùng chung cho:
-
--   ChatGPT Custom GPT
--   Claude Project
--   OpenAI API
--   Anthropic API
--   Gemini
--   n8n
--   AI Agents
--   Các workflow tự động trong tương lai
-
-Vì vậy toàn bộ tài liệu phải:
-
--   Không phụ thuộc vào một mô hình AI cụ thể.
--   Không sử dụng prompt hack.
--   Không sử dụng kỹ thuật jailbreak.
--   Không sử dụng chain-of-thought.
--   Không yêu cầu memory riêng của từng nền tảng.
--   Không phụ thuộc conversation history.
--   Không phụ thuộc tool đặc biệt.
-
-Mọi file phải có thể được đọc độc lập.
+Facebook Factory dùng chung cho ChatGPT Custom GPT, Claude Project, OpenAI/Anthropic API,
+Gemini, n8n, AI Agents và các workflow sau này. Vì vậy toàn bộ tài liệu không phụ thuộc một mô
+hình, tool, memory hay conversation history cụ thể; không dùng prompt hack, jailbreak,
+chain-of-thought. Mọi file phải đọc độc lập được.
 
 ------------------------------------------------------------------------
 
@@ -109,10 +91,13 @@ Mỗi bài chỉ có MỘT ý chính.
 Ưu tiên:
 
 -   Quan sát.
--   Câu chuyện.
+-   Tình huống quen thuộc (KHÔNG nhân vật).
 -   Suy ngẫm.
 -   Góc nhìn.
 -   Điều nhận ra.
+
+Bài theo Công thức nền 4 phần (Câu mở → Đồng cảm → Góc nhìn mới → Câu kết) và Dạng bài của
+Series, chuẩn 100–180 từ — `post_frameworks.md` mục 2.2, `writing_rules.md` mục 5.2 và 6.1.
 
 Không cố truyền đạt quá nhiều kiến thức trong một bài.
 

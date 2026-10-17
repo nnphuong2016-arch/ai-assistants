@@ -1,6 +1,6 @@
 # EXECUTION FLOW
 
-Version: 3.1
+Version: 4.0
 Cập nhật: 17/10/2026
 
 Purpose:
@@ -60,8 +60,11 @@ Sử dụng `topic_map.md` để xác định Topic chính → Topic phụ → c
 
 Chỉ chọn một Topic chính. Không trộn nhiều chủ đề.
 
-Xoay vòng chủ đề: không viết liên tiếp hai Short cùng một nhóm (xem Topic Rotation ở `topic_map.md`). Muốn biết
-những Short đã có, liệt kê thư mục đích trên Drive (kể cả file đã có tiền tố `DONE_`/`SHORTDONE_`).
+Xoay vòng chủ đề: không viết liên tiếp hai Short cùng một nhóm (xem Topic Rotation ở `topic_map.md`).
+
+**Chống lặp (bắt buộc):** đọc 5–8 dòng gần nhất của `short_log.md` (và liệt kê thư mục Drive đích, kể cả file mang tiền tố
+`DONE_`/`SHORTDONE_`, nếu có công cụ). Ghi nhớ kiểu mở, ẩn dụ trung tâm, khung kể và kiểu kết của chúng — chọn ý và cách
+kể KHÁC. Chống lặp không chỉ theo chủ đề mà theo cả bốn thứ đó, kẻo "bài nào cũng giống bài nào".
 
 ---
 
@@ -83,10 +86,19 @@ Ba nguồn:
 Không rút ngắn bài SEO hay kịch bản video dài để làm Short — viết lại từ đầu như một câu chuyện để nghe
 (`instructions_short.md` mục 5A).
 
-Sinh nhiều hướng tiếp cận. Ví dụ: Quan sát · Trải nghiệm · Nghịch lý · Ký ức chung · Câu hỏi · Một khoảnh khắc.
+**Tạo ĐÚNG 3 góc tiếp cận** khác nhau cho cùng ý (ví dụ: Quan sát · Trải nghiệm · Nghịch lý · Ký ức chung · Câu hỏi · Một khoảnh
+khắc) rồi chọn góc mạnh nhất. Không chọn góc nghĩ ra đầu tiên.
 
-Không chọn ý đầu tiên. Tạo nhiều lựa chọn, sau đó chọn ý mạnh nhất — và kiểm tra ý đó **nói được trong hai câu**
-và **đủ cho khoảng một phút lời đọc** (không quá lớn để phải nhồi, không quá mỏng để phải kéo dài).
+Với góc đã chọn, xác định ngay:
+
+- **Một chi tiết cụ thể hình dung được** (mâm cơm nguội, chuông báo thức lần thứ ba, đôi dép trước cửa…) — thay cho một loạt câu
+  triết lý.
+- **Một chuyển biến** trong cách nhìn: từ cách nghĩ nào sang điều nhận ra nào.
+
+Kiểm tra ý đó (xem thêm `idea_library.md` mục 11): nói được trong hai câu; có góc nhìn riêng; kể được bằng một tình huống cụ
+thể; và **đủ cho một trong ba cỡ** ở `writing_rules.md` mục 6.1 (không quá lớn để phải nhồi, không quá mỏng để phải kéo dài).
+
+Chọn luôn cỡ (Nhanh / Tiêu chuẩn / Kể chuyện) ở bước này.
 
 ---
 
@@ -142,9 +154,12 @@ cơ hội đọc lại. Không dùng câu mở chỉ để gây tò mò.
 # STEP 5
 Choose Framework
 
-Sử dụng `short_frameworks.md`. Chọn một cấu trúc phù hợp (F01–F10).
+Sử dụng `short_frameworks.md`. Chọn một cấu trúc phù hợp (F01–F15) và đọc phần "Khi nào chọn / khi nào không" của nó.
 
-Framework quyết định nhịp bài — đường đi từ câu mở đến câu hỏi cuối.
+Framework quyết định nhịp bài — đường đi từ câu mở đến câu kết. Lập **đường dây** trước khi viết: mở → phát triển → nhận ra
+→ kết, mỗi nhịp một dòng ghi chú ngắn (chỉ để mình dùng, không xuất).
+
+Chọn khung KHÁC khung của hai Short liền trước (`short_log.md`).
 
 ---
 
@@ -165,8 +180,8 @@ Write Draft
 
 Sử dụng đồng thời `writing_rules.md` và `writing_craft.md`.
 
-Giữ đúng cảm xúc đã chọn ở STEP 6. Viết theo khuôn file Short (`output_schema.md`): mỗi ý một đoạn ngắn, câu cuối
-là một câu hỏi tự vấn in đậm.
+Giữ đúng cảm xúc đã chọn ở STEP 6. Viết theo khuôn file Short (`output_schema.md`): mỗi ý một đoạn ngắn, câu kết có
+dư âm (mặc định là một câu hỏi tự vấn in đậm; đổi kiểu theo `writing_rules.md` mục 8 để khỏi lặp).
 
 Trong bước này: không kiểm tra, không sửa. Chỉ tập trung viết.
 
@@ -186,19 +201,24 @@ Nếu có: viết lại.
 # STEP 9
 Quality Review
 
-Sử dụng `quality_check.md`. Kiểm tra toàn bộ. Nếu chưa đạt: quay lại Step 7.
+Sử dụng `quality_check.md` — **hai tầng**: Tầng 1 là cổng (an toàn, đúng khuôn, trong giới hạn hệ thống); Tầng 2 là chấm chất
+lượng (câu mở, chuyển biến, kết có dư âm, không giống bài gần đây, phép thử "bỏ tên Anh Minh đi").
 
-Đếm độ dài thật (số từ, số ký tự) và **đọc nhẩm thành tiếng một lượt** — chỗ nào vấp, chỗ nào dài hơi thở, sửa
-từ gốc.
+Đếm độ dài thật (số từ, số ký tự) và **đọc nhẩm thành tiếng một lượt** — chỗ nào vấp, chỗ nào dài hơi thở, sửa từ gốc.
+Rớt Tầng 1 hoặc rớt Tầng 2 theo ngưỡng: quay lại đúng bước hỏng.
 
 ---
 
 # STEP 10
 Output Format
 
-Sử dụng `output_schema.md`. Xuất đúng định dạng: tên file + toàn văn kịch bản (dòng tiêu đề `# …` + lời đọc).
+Sử dụng `output_schema.md`. Xuất hai khối: **A. File kịch bản** (tên file + dòng tiêu đề `# …` + lời đọc) và **B. Gói đăng và
+nhật ký** (thông tin nội bộ, Reel Caption, Log Row).
 
 Không thêm giải thích. Không thêm ghi chú. Không tự nhận xét. Chỉ xuất bài.
+
+**Sau khi đăng:** thêm dòng `Log Row` vào `short_log.md`; khoảng 7 ngày sau điền số liệu và bài học. Dùng chúng ở STEP 2–5
+cho các Short tiếp theo.
 
 ---
 

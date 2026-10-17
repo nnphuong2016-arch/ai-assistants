@@ -1,6 +1,6 @@
 # IDEA LIBRARY
 
-Version: 2.0
+Version: 2.1
 Cập nhật: 17/10/2026
 
 > Nguồn ý tưởng thứ ba của Short Factory (`execution_flow.md` STEP 3) — dùng khi
@@ -166,6 +166,25 @@ Một ý tưởng tốt phải có:
 ✓ có hình ảnh
 
 ✓ không cần giải thích nhiều
+
+---
+
+# 11A. Bộ lọc độ sâu
+
+Công thức Pattern + Emotion + Observation + Contradiction dễ sinh nhiều ý khác chữ nhưng cùng một thông điệp. Lọc thêm:
+
+✓ có góc nhìn riêng, khác hàng chục chủ đề tương tự?
+
+✓ có một chi tiết đời sống làm nó khác biệt?
+
+✓ kể được bằng MỘT tình huống cụ thể?
+
+✓ bỏ câu kết triết lý đi, phần còn lại có đủ hấp dẫn không?
+
+✓ có quá gần một Short đã có trong `short_log.md` không?
+
+Phân biệt **ý tưởng để suy ngẫm** (nhìn lại, nhận ra) với **ý tưởng để hướng dẫn** (làm gì). Short của kênh thiên về suy ngẫm:
+đừng cố biến mọi chủ đề thành một bài học cuộc sống.
 
 ---
 

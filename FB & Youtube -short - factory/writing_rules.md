@@ -1,6 +1,6 @@
 # WRITING RULES
 
-Version: 2.1\
+Version: 3.0\
 Cập nhật: 17/10/2026\
 Status: Canonical Rules
 
@@ -136,20 +136,34 @@ Ranh giới ngắn gọn: **"mình" được nghĩ, không được nhớ.**
 
 ## 6.1. ĐỘ DÀI (đo bằng lời đọc, không đo bằng bài viết)
 
--   **Mục tiêu: 150–200 từ** (khoảng 700–950 ký tự, 40–50 giây đọc) — hai kịch bản mẫu dài 163 và 194 từ, dựng ra
-    video 40 và 47 giây. Tốc độ đọc đo thật: khoảng 18 ký tự (4 từ) mỗi giây.
--   **Tối đa 2 phút — là mức trần, không phải mục tiêu.** Không phải bài nào cũng dài: có bài 40 giây, có bài 90 giây,
-    miễn ý đã trọn. Không có sàn cứng; đừng kéo dài cho đủ số.
--   **Dài hơn mục tiêu** chỉ khi ý cần thêm một lớp, và vẫn là MỘT ý chính.
--   **Trần cứng: 1800 ký tự** (khoảng 100 giây đọc, chừa dư địa cho nhịp ngập ngừng). n8n chặn đúng mốc 1800 ký tự
-    và còn chặn nếu giọng đọc dựng ra vượt 120 giây. Vượt trần → cắt, không xuất.
--   Khoảng 12–18 đoạn, mỗi đoạn 1–2 câu ngắn.
+Tốc độ đọc đo thật: khoảng 18 ký tự (4 từ) mỗi giây. **Tối đa 2 phút — là mức trần, không phải mục tiêu.** Chọn MỘT cỡ theo ý
+của bài, không theo mong muốn "cho đủ dài":
+
+| Cỡ | Thời lượng | Khoảng | Khi nào dùng |
+|---|---|---|---|
+| Nhanh | 30–45 giây | 130–190 từ (550–850 ký tự) | Một quan sát hoặc một điều nhận ra |
+| Tiêu chuẩn | 45–90 giây | 190–380 từ (850–1700 ký tự) | Đồng cảm, suy ngẫm, một thói quen nhỏ |
+| Kể chuyện | 90–120 giây | 380–480 từ (1700–2100 ký tự) | Cần tình huống, diễn biến và chuyển biến rõ |
+
+-   Hai kịch bản mẫu: 163 từ → video 40 giây (Nhanh), 194 từ → 47 giây (Tiêu chuẩn).
+-   Không phải bài nào cũng dài. Không có sàn cứng: lời đọc trọn ý thì ngắn hơn cỡ đã chọn vẫn tốt. Đừng kéo dài cho đủ số.
+-   Mặc định (người vận hành không nói): chọn Nhanh hoặc Tiêu chuẩn. Chỉ dùng Kể chuyện khi ý thật sự cần một câu chuyện nhỏ.
+-   **Trần cứng: 2100 ký tự** (khoảng 114 giây đọc). n8n chặn đúng mốc 2100 ký tự và còn chặn nếu giọng đọc dựng ra vượt
+    120 giây. Vượt trần → cắt, không xuất.
+-   Vẫn là MỘT ý chính, dù cỡ nào. Khoảng 12–40 đoạn, mỗi đoạn 1–3 câu ngắn.
 
 Nếu bài vượt trần, đừng cắt câu lẻ tẻ — quay lại xem bài có đang chứa hai ý không. Bài quá dài gần như luôn là
 dấu hiệu của việc nhồi ý, không phải viết kỹ.
 
 Vai trò của Short trong hệ sinh thái: **nông nhất có chủ đích** — gợi cảm xúc, không giải thích cơ chế. Nếu bài
 bắt đầu giải thích "vì sao" như một bài blog, bài đó đang lấn vai trò Website, cần cắt lại.
+
+## 6.2. AN TOÀN THÌ CỨNG, NGHỆ THUẬT THÌ LINH HOẠT
+
+Mục 4.1 (ranh giới thương hiệu) và mục 5.1 (nhân xưng) là luật cứng. Phần còn lại của file này — nhịp câu, kiểu mở, kiểu kết,
+số đoạn, khung kể — là **mặc định tốt**, không phải khuôn bắt buộc. Không cần mọi bài có cùng nhịp câu, cùng kiểu mở, cùng
+một dạng câu kết. Được lệch khỏi mặc định khi bài cần, miễn vẫn qua cổng ở `quality_check.md` Tầng 1. Hai bài liền nhau không
+nên giống nhau về kiểu mở, ẩn dụ trung tâm, khung kể và kiểu kết (tra `short_log.md`).
 
 ------------------------------------------------------------------------
 
@@ -160,7 +174,7 @@ Toàn bộ file được máy đọc nguyên văn, nên:
 Ưu tiên:
 
 -   Câu ngắn và rõ — một hơi đọc hết.
--   Từ ngữ đời thường.
+-   Từ ngữ đời thường — và câu nghe tự nhiên bằng giọng đọc máy, không chỉ đẹp trên giấy.
 -   Ít thuật ngữ.
 -   Nhịp nghe tự nhiên.
 -   Mỗi câu kết thúc bằng dấu chấm, dấu hỏi hoặc dấu chấm lửng — dấu câu chính là chỗ giọng đọc nghỉ.
@@ -179,15 +193,23 @@ Không dùng:
 
 ------------------------------------------------------------------------
 
-# 8. CÂU CUỐI — CÂU HỎI TỰ VẤN IN ĐẬM
+# 8. CÂU KẾT
 
-Câu cuối cùng của bài là **một câu hỏi**, đặt trong cặp dấu `**…**`, đứng một mình trên dòng cuối. Nó được đọc thành
-tiếng như phần còn lại, để người nghe mang theo.
+Câu kết là điều người nghe mang theo sau khi video hết. Nó được đọc thành tiếng như phần còn lại. Có năm kiểu:
 
-Câu hỏi phải:
+1.  **Câu hỏi tự vấn** (mặc định) — một câu hỏi người nghe tự hỏi chính mình, gắn với ý chính, đặt trong `**…**`, đứng một
+    mình trên dòng cuối.
+2.  **Một điều nhận ra** — một câu ngắn, không rút bài học.
+3.  **Một hình ảnh khép lại** — "Ngoài cửa, trời vẫn đang mưa."
+4.  **Một lời nhắn nhẹ** — không ra lệnh, không "hãy…".
+5.  **Một khoảng lặng** — không kết luận, dừng ở chỗ ý đã đủ.
 
--   Là câu hỏi người nghe tự hỏi chính mình, gắn với ý chính của bài.
--   Không phải lời kêu gọi tương tác.
+Quy tắc:
+
+-   Giữ câu hỏi làm kiểu mặc định; đổi kiểu khi bài hợp, nhưng **không dùng cùng một kiểu kết quá hai Short liên tiếp**.
+-   Chỉ câu hỏi (kiểu 1) mới in đậm. Các kiểu khác viết thường.
+-   Không biến câu kết thành thủ tục máy móc — nếu câu hỏi nghe như điền cho đủ, đổi kiểu.
+-   Câu hỏi không phải lời kêu gọi tương tác, và không cần đứng một mình làm tiêu đề (tiêu đề là dòng `#` đầu file).
 
 Không dùng các mẫu như:
 
@@ -196,7 +218,7 @@ Không dùng các mẫu như:
 -   "Chia sẻ cho bạn bè."
 -   "Theo dõi kênh để..."
 
-Ví dụ đúng (từ hai kịch bản mẫu):
+Ví dụ kiểu 1 (từ hai kịch bản mẫu):
 
 -   **Hôm nay, bạn đã cho mình được nghỉ ngơi thật sự chưa?**
 -   **Bạn có nhận ra điều gì ở cơ thể mình đã khác so với vài năm trước không?**

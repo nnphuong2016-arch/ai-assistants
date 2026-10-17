@@ -1,6 +1,6 @@
 # SHORT FACTORY --- INSTRUCTIONS
 
-Version: 1.1\
+Version: 1.2\
 Cập nhật: 17/10/2026\
 Status: Official Foundation Document
 
@@ -13,13 +13,13 @@ Status: Official Foundation Document
 > 4. `writing_craft.md` → 5. `quality_check.md` → 6. `short_frameworks.md` →
 > 7. `emotion_palette.md` → 8. `bai-dang-Facebook-Anh-Minh.md` (kho 210 hook, gốc repo `ai-assistants/`) →
 > 9. `idea_library.md` → 10. `hook_library.md` → 11. `topic_map.md` → 12. `short_examples.md` →
-> 13. `output_schema.md`.
+> 13. `short_log.md` → 14. `output_schema.md`.
 
 ------------------------------------------------------------------------
 
 # 1. MỤC ĐÍCH
 
-Short Factory là Factory chuyên tạo **kịch bản Short** (lời đọc thường 40–60 giây, tối đa 2 phút) cho Reel và YouTube Shorts
+Short Factory là Factory chuyên tạo **kịch bản Short** (lời đọc thường 30–90 giây, tối đa 2 phút) cho Reel và YouTube Shorts
 của hệ sinh thái Funamark.
 
 Nhiệm vụ của Factory là tạo ra những đoạn lời đọc khiến người nghe dừng lại, nghe hết và suy ngẫm; không phải
@@ -116,20 +116,29 @@ Không cố truyền đạt quá nhiều kiến thức trong một bài.
 | Mục tiêu | Giải đáp sâu để người ta tìm thấy | Giải thích, dẫn dắt câu chuyện | Giữ người nghe lại, truyền MỘT ý chính |
 | Cách viết | Nhiều ý, nhiều lớp | Nhiều lớp nội dung | Một thông điệp, câu ngắn |
 | Hình ảnh | Minh hoạ | Hỗ trợ diễn giải xuyên suốt | Cảnh thiên nhiên chạy nền cùng lời đọc |
-| Kết thúc | Tổng kết | Tổng kết hoặc mở rộng | Một câu hỏi tự vấn đọng lại |
+| Kết thúc | Tổng kết | Tổng kết hoặc mở rộng | Một câu kết có dư âm (mặc định: câu hỏi tự vấn) |
 
 **Không rút ngắn bài SEO hay kịch bản video dài rồi đọc thành Short.** Cùng chủ đề thì được, nhưng phải viết lại từ
 đầu như một câu chuyện để nghe: bài SEO là nội dung chuyên sâu để người ta tìm kiếm, Short là kể chuyện bằng giọng đọc.
 
-**Tối đa 2 phút** là mức trần, không phải mục tiêu: thường 40–60 giây, không phải bài nào cũng dài. Lời đọc trọn ý thì
-ngắn hơn vẫn tốt; chỉ dài gần hai phút khi ý thật sự cần. Không kéo dài cho đủ.
+**Tối đa 2 phút** là mức trần, không phải mục tiêu — không phải bài nào cũng dài. Có ba cỡ (`writing_rules.md` mục 6.1):
+**Nhanh** 30–45 giây (một quan sát/nhận ra), **Tiêu chuẩn** 45–90 giây (đồng cảm, suy ngẫm, thói quen nhỏ), **Kể chuyện** 90–120
+giây (cần tình huống, diễn biến, chuyển biến rõ). Lời đọc trọn ý thì ngắn hơn vẫn tốt; không kéo dài cho đủ. Thời lượng chỉ là
+điểm khởi đầu để thử nghiệm, tinh chỉnh dần theo số liệu thật ở `short_log.md`.
+
+**Dùng chung cho Facebook Reels và YouTube Shorts:** một kịch bản, một video sạch. Chỉ tối ưu riêng tiêu đề, mô tả (YouTube,
+do n8n tự làm) và caption + cách đặt câu hỏi (Reel, do Factory gợi ý ở field Reel Caption).
+
+**Hai loại đầu ra tách bạch** (`output_schema.md`): **A — file kịch bản** (chỉ dòng tiêu đề và lời đọc, đưa cho n8n) và **B — gói
+đăng và nhật ký** (Reel Caption, thông tin nội bộ, Log Row — cho người vận hành, không vào file).
 
 ------------------------------------------------------------------------
 
 # 6. NGUYÊN TẮC THỰC THI
 
 Quy trình thực thi nằm ở **một nơi duy nhất**: `execution_flow.md` (10 bước, kể cả bước lọc an toàn STEP 3.5).
-File này KHÔNG lặp lại quy trình đó — theo đúng nguyên tắc bảo trì ở mục 10.
+File này KHÔNG lặp lại quy trình đó — theo đúng nguyên tắc bảo trì ở mục 10. Quy trình có thêm: chống lặp bằng `short_log.md`, ba góc
+tiếp cận, chuyển biến trong cách nhìn, chấm chất lượng hai tầng, và ghi nhật ký sau khi đăng.
 
 Tóm tắt để định hướng (chi tiết luôn đọc `execution_flow.md`):
 
@@ -185,7 +194,8 @@ mọi chữ trong file đều là lời đọc, trừ dòng tiêu đề.
 
 # 10. NGUYÊN TẮC BẢO TRÌ
 
-Mọi quy định chỉ tồn tại ở đúng một file.
+Mọi quy định chỉ tồn tại ở đúng một file. **Riêng bản dán vào Custom GPT (`custom_gpt_instructions.md`) là bản gọn, trùng
+một phần quy định — mỗi khi đổi quy định ở file nguồn phải cập nhật bản dán CÙNG LÚC, nếu không hai bên sẽ lệch nhau.**
 
 Không sao chép quy định giữa nhiều file.
 

@@ -1,6 +1,6 @@
 WRITING CRAFT
 
-Version: 3.0
+Version: 3.1
 Cập nhật: 17/10/2026
 Status: Foundation Document
 Applies to: Short Factory (AI-Agnostic)
@@ -1235,6 +1235,55 @@ Người nghe nghĩ:
 "Đúng là AI."
 
 Factory thất bại.
+
+39. Chi tiết cụ thể thay cho câu triết lý
+
+Một câu triết lý chung chung ai cũng từng nghe. Một chi tiết cụ thể thì người nghe nhìn thấy.
+
+Chung chung
+
+Cuộc sống đôi khi rất mệt mỏi.
+
+Cụ thể
+
+Tối nay, ta ngồi trước mâm cơm đã nguội.
+
+Mà vẫn chưa muốn đứng dậy.
+
+Chung chung
+
+Ta nên dành thời gian cho gia đình.
+
+Cụ thể
+
+Có những bữa cơm, cả nhà ngồi đủ.
+
+Mà chẳng ai nói với ai câu nào.
+
+Quy tắc: mỗi đoạn lời đọc nên có ít nhất một thứ nhìn thấy, nghe thấy hoặc sờ thấy. Nếu một đoạn chỉ gồm khái niệm
+(mệt mỏi, áp lực, cân bằng, bình yên…), thay bằng một hoàn cảnh.
+
+40. Một chuyển biến trong cách nhìn
+
+Bài chỉ lặp lại một cảm xúc từ đầu đến cuối thì người nghe không đi đâu cả. Bài hay có một chuyển biến:
+từ một cách nghĩ quen thuộc sang một điều nhận ra nhỏ.
+
+Cách nghĩ cũ → điều làm ta nghĩ khác → cách nhìn bây giờ.
+
+Chuyển biến chỉ cần nhỏ: "tưởng đó là lười — hóa ra cơ thể chỉ đang xin nghỉ". Không cần bài học, không cần lời khuyên.
+
+41. Chống lặp giữa các Short
+
+Khi làm hàng trăm Short, nguy cơ lớn nhất không phải sai giọng mà là giống nhau. Trước khi viết, đọc `short_log.md` và tránh
+dùng lại, so với hai Short liền trước:
+
+cùng kiểu câu mở (đừng mở "Có những…" hai bài liền)
+cùng ẩn dụ trung tâm (đừng hai bài liền cùng một cái ấm trà)
+cùng khung kể
+cùng kiểu kết (đừng hai bài liền cùng kết bằng câu hỏi nếu có thể kết khác)
+
+Một chủ đề có thể nở thành nhiều Short khác nhau, miễn góc kể, chi tiết và chuyển biến khác nhau — không chỉ thay vài từ trong
+câu mở.
 
 Phụ lục A – Chất giọng của Short Factory
 

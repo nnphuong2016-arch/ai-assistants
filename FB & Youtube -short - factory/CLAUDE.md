@@ -1,6 +1,6 @@
 # CLAUDE.md — SHORT FACTORY (kịch bản Short cho Reel & YouTube Shorts)
 
-Version: 1.2
+Version: 1.3
 Cập nhật: 17/10/2026
 
 > File nhắc việc riêng cho Short Factory, đặt trong chính thư mục này để mỗi lần mở cửa sổ làm việc ở đây,
@@ -12,7 +12,7 @@ Cập nhật: 17/10/2026
 
 ## 0. FACTORY NÀY LÀM RA CÁI GÌ
 
-Mỗi lần chạy ra **một file kịch bản `.md`** — một đoạn lời đọc ngắn (thường 40–60 giây, tối đa 2 phút) của **Hiền triết Anh Minh**.
+Mỗi lần chạy ra **một file kịch bản `.md`** — một đoạn lời đọc ngắn (thường 30–90 giây, tối đa 2 phút) của **Hiền triết Anh Minh**.
 Phần còn lại do n8n lo (workflow `WFAnhMinhC204`): đọc nguyên file làm lời đọc bằng giọng VieNeu, dựng phụ đề,
 ghép clip thiên nhiên + nhạc nền + logo, rồi workflow `WFAnhMinhC205` đăng YouTube Shorts. Cùng một video đó
 dùng cho Reel.
@@ -32,15 +32,16 @@ mục khác, không hướng dẫn quay, không hashtag. Chi tiết khuôn file:
 3. `writing_rules.md` — được phép/không được phép viết gì (mục 4.1 = ranh giới thương hiệu tuyệt đối).
 4. `writing_craft.md` — dạy giọng viết cho lời đọc (tra khi cần).
 5. `quality_check.md` — tự kiểm trước khi xuất, ≥2 lỗi thì viết lại.
-6. `short_frameworks.md` — chọn 1 trong 10 khung F01–F10.
+6. `short_frameworks.md` — chọn 1 trong 15 khung F01–F15 (kèm khi nào KHÔNG nên dùng).
 7. `emotion_palette.md` — chọn 1 cảm xúc chính (+ tối đa 1 cảm xúc phụ).
 8. `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — kho 210 hook/chủ đề của Anh Minh, 7 series × 30 dòng, nguồn ý tưởng thứ hai.
 9. `idea_library.md` — nguồn ý tưởng thứ ba (tự sinh) khi hai nguồn trên không đủ.
 10. `hook_library.md` — 20 kiểu câu mở + công thức Hook Engine.
 11. `topic_map.md` — bản đồ chủ đề theo trải nghiệm sống + bảng quy đổi sang 6 trụ chính thức.
 12. `short_examples.md` — hai kịch bản mẫu hoàn chỉnh + kỹ thuật nhỏ; so sánh, KHÔNG copy.
-13. `output_schema.md` — đóng gói đúng khuôn file.
-14. `custom_gpt_instructions.md` — bản gọn (dưới 8000 ký tự) để DÁN vào ô Instructions của Custom GPT; không dùng để viết bài ở đây.
+13. `short_log.md` — nhật ký từng Short: đọc 5–8 dòng gần nhất để CHỐNG LẶP, ghi thêm sau mỗi bài, điền số liệu sau khi đăng.
+14. `output_schema.md` — đóng gói đúng khuôn: khối A (file kịch bản) + khối B (gói đăng, nhật ký).
+15. `custom_gpt_instructions.md` — bản gọn (dưới 8000 ký tự) để DÁN vào ô Instructions của Custom GPT; không dùng để viết bài ở đây.
 
 Ngoài ra, khi cần: `core-brain/dong_hanh_nguoi_benh.md` (nếu bài chạm người bệnh/người già/người chăm sóc —
 `writing_rules.md` mục 4.1 yêu cầu bắt buộc tra file này), `core-brain/seasonal_calendar.md` (bài theo mùa/dịp).
@@ -50,7 +51,7 @@ Ngoài ra, khi cần: `core-brain/dong_hanh_nguoi_benh.md` (nếu bài chạm ng
 ## 2. QUY TRÌNH 10 BƯỚC (`execution_flow.md`) — KHÔNG BỎ BƯỚC, KHÔNG ĐẢO THỨ TỰ
 
 Understand → Select Topic (CHỈ 1 topic chính) → Generate Ideas (3 nguồn: chủ đề người dùng đưa trực tiếp ưu tiên cao
-nhất → kho 210 hook → `idea_library.md`) → **Safety Filter (STEP 3.5)** → Choose Hook → Choose Framework (F01–F10) →
+nhất → kho 210 hook → `idea_library.md`) → **Safety Filter (STEP 3.5)** → Choose Hook → Choose Framework (F01–F15) →
 **Choose Emotion** (chọn TRƯỚC khi viết) → Write Draft → Compare Examples → Quality Review → Output.
 
 Nếu một bước chưa đạt, quay lại đúng bước đó theo Retry Logic — không sửa chắp vá từng câu.
@@ -68,9 +69,13 @@ Nếu một bước chưa đạt, quay lại đúng bước đó theo Retry Logi
 - Dùng chi tiết cụ thể thay vì khái quát ("Chuông báo thức reo đến lần thứ ba" thay vì "Mình rất mệt").
 - Tránh câu mở kiểu AI: "Bạn có biết...", "Hôm nay mình sẽ chia sẻ...", "5 cách để...", "Theo nghiên cứu...".
 - Không CHỮ HOA, không emoji, không dấu chấm than, không hashtag, không chữ số (viết số bằng chữ).
-- **Độ dài:** mục tiêu 150–200 từ (40–50 giây, như hai kịch bản mẫu). **Tối đa 2 phút — là mức trần, không phải mục tiêu:**
-  không phải bài nào cũng dài, không có sàn cứng, ngắn hơn được nếu ý đã trọn. Trần cứng 1800 ký tự (n8n chặn đúng mốc
-  này và chặn thêm nếu giọng đọc vượt 120 giây) — `writing_rules.md` mục 6.1.
+- **Độ dài:** ba cỡ — Nhanh 30–45 giây · Tiêu chuẩn 45–90 giây · Kể chuyện 90–120 giây (`writing_rules.md` mục 6.1). **Tối đa 2
+  phút — là mức trần, không phải mục tiêu:** không phải bài nào cũng dài, không có sàn cứng, ngắn hơn được nếu ý đã trọn. Trần cứng
+  2100 ký tự (n8n chặn đúng mốc này và chặn thêm nếu giọng đọc vượt 120 giây).
+- **Chống lặp:** trước khi chọn ý, đọc 5–8 dòng gần nhất của `short_log.md`; không dùng lại cùng kiểu mở, ẩn dụ, khung kể, kiểu
+  kết như hai Short liền trước. Sau mỗi bài, thêm một dòng vào log.
+- **Chấm hai tầng** (`quality_check.md`): Tầng 1 là cổng (an toàn, đúng khuôn, trong giới hạn); Tầng 2 là chất lượng (câu mở cụ thể,
+  chuyển biến, kết có dư âm, phép thử "bỏ tên Anh Minh đi"). An toàn thì cứng; nghệ thuật thì linh hoạt (`writing_rules.md` mục 6.2).
 - **Short không phải bài SEO hay video dài rút ngắn:** cùng chủ đề nhưng viết lại từ đầu như một câu chuyện để nghe
   (`instructions_short.md` mục 5A).
 - **Nhân xưng** (`writing_rules.md` mục 5.1): "ta/chúng ta" và "bạn" là chính; "mình" **được nghĩ, không được nhớ**.
@@ -79,7 +84,8 @@ Nếu một bước chưa đạt, quay lại đúng bước đó theo Retry Logi
   điều nhận ra không hiển nhiên (`writing_craft.md` mục 36).
 - **Tiêu đề** = dòng `# …` đầu file: với Short viết từ kho 210 hook thì dùng ĐÚNG câu của dòng đó trong kho (bỏ dấu chấm
   cuối); chủ đề khác thì viết một câu tiêu đề cùng kiểu. Không được đọc thành tiếng.
-- **Câu cuối cùng** của lời đọc luôn là MỘT câu hỏi tự vấn in đậm `**…**` — để người nghe mang theo (không còn là tiêu đề).
+- **Câu kết** (dòng cuối) để người nghe mang theo: mặc định là MỘT câu hỏi tự vấn in đậm `**…**`; có thể đổi kiểu (nhận ra / hình
+  ảnh / lời nhắn / khoảng lặng) nhưng không dùng cùng một kiểu quá hai Short liên tiếp. Không còn là tiêu đề.
 
 ---
 
@@ -123,8 +129,8 @@ Cùng một nhân vật Hiền triết Anh Minh với Website/YouTube/Chat:
 
 ## 7. ĐẦU RA & NƠI LƯU
 
-- **Interactive Mode** (chat trực tiếp): xuất tên file + toàn văn kịch bản, kèm các field nội bộ theo
-  `output_schema.md` (Mood / Topic / Pillar / Framework / Hook Source / Reel Caption).
+- **Interactive Mode** (chat trực tiếp): xuất **khối A** (tên file + toàn văn file) rồi **khối B** (Title, Reel Caption, Mood,
+  Topic, Pillar, Framework, Hook Source, Hook Type, Ending Type, Size, Log Row) theo `output_schema.md`.
 - **Khi lưu file `.md`:** CHỈ chứa nội dung kịch bản (lời đọc) — KHÔNG kèm các field nội bộ.
 - **Tên file:** `<chuỗi>.<thứ tự>.<slug-không-dấu>.md` — ví dụ `1.2.thay-doi-cua-co-the-dien-ra-rat-lau-truoc-khi-ta-nhan-ra.md`.
   Số hiệu theo kho 210 hook: Short viết từ Series N dòng M của kho → file `N.M.…` (1.1 = Series 1 dòng 1, 1.2 = dòng 2).

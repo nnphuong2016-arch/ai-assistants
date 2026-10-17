@@ -1,6 +1,6 @@
 # SHORT EXAMPLES
 
-Version: 3.0
+Version: 3.1
 Cập nhật: 17/10/2026
 
 Purpose:
@@ -23,7 +23,10 @@ Luôn ưu tiên Writing Craft.
 # PHẦN A — HAI KỊCH BẢN HOÀN CHỈNH (đúng khuôn file thật)
 
 Đây là nội dung như file nằm trong thư mục Drive, kèm dòng tiêu đề `# …` đầu file theo khuôn mới (hai file Drive thật chưa có dòng này; n8n tạm lấy câu in đậm cuối bài làm tiêu đề cho file cũ) (mỗi kịch bản lớn lên từ một dòng của kho 210 hook: dòng 1 và dòng 2 của Series 1): mỗi dòng cách nhau một dòng trống, câu cuối in đậm.
-163 từ và 194 từ; 12–18 đoạn; chỉ có lời đọc.
+163 từ (video 40 giây — cỡ Nhanh) và 194 từ (video 47 giây — cỡ Tiêu chuẩn); chỉ có lời đọc. Cả hai đều kết bằng
+câu hỏi tự vấn; các kiểu kết khác (nhận ra, hình ảnh, lời nhắn, khoảng lặng) xem `writing_rules.md` mục 8. Hai mẫu cùng một nhịp
+(mở bằng cảm xúc → nhận ra → lời nhắn → câu hỏi) — đừng học nhịp đó thành khuôn duy nhất; khi có thêm bài đã duyệt thì bổ sung
+vào Phần C để có bài ngắn hơn, bài kể chuyện, bài không kết bằng câu hỏi.
 
 ## Kịch bản 1 — `1.1.con-met-khong-den-tu-thieu-ngu-ma-den-tu-cach-minh-song.md` (Mood: Đồng cảm · Hook Source: S1-1)
 
@@ -240,6 +243,39 @@ Nên
 > **Hôm nay, bạn đã cho mình được nghỉ ngơi thật sự chưa?**
 
 Điểm học: câu hỏi tự vấn, gắn với ý chính, không phải lời kêu gọi.
+
+---
+
+# PHẦN C — MẪU TRƯỚC / SAU (sửa câu sáo rỗng thành câu có hình ảnh và chuyển biến)
+
+Trước (chung chung)
+
+> Cuộc sống đôi khi rất mệt mỏi. Ta nên dành thời gian nghỉ ngơi.
+
+Sau (chi tiết cụ thể + chuyển biến)
+
+> Tối nay, ta ngồi trước mâm cơm đã nguội.
+>
+> Mà vẫn chưa muốn đứng dậy.
+>
+> Từng nghĩ đó là lười.
+>
+> Hóa ra… cơ thể chỉ đang xin thêm một chút nghỉ ngơi.
+
+Điểm học: một thứ nhìn thấy được, một chuyển biến nhỏ (lười → xin nghỉ), không lời khuyên, kết bằng khoảng lặng.
+
+Trước (hook chung chung)
+
+> Có những điều trong cuộc sống khiến ta phải suy nghĩ.
+
+Sau (hook cụ thể)
+
+> Có những bữa cơm, cả nhà ngồi đủ.
+>
+> Mà chẳng ai nói với ai câu nào.
+
+> Ghi chú: chỗ cần bổ sung dần — bài siêu ngắn (30–40 giây), bài kể chuyện (90–120 giây), bài chỉ suy ngẫm không lời khuyên, bài
+> gia đình/tuổi già/người chăm sóc (đúng ranh giới thương hiệu), mỗi loại một bài đã được duyệt. Chất lượng quan trọng hơn số lượng.
 
 ---
 

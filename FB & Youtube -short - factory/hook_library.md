@@ -1,6 +1,6 @@
 # HOOK LIBRARY
 
-Version: 3.0
+Version: 3.1
 Cập nhật: 17/10/2026
 
 Purpose:
@@ -493,6 +493,45 @@ Không phải điều gì chậm lại cũng là xấu.
 ---
 
 Có khi bình yên chỉ là một bữa cơm đúng giờ.
+
+---
+
+# Hook cụ thể và hook chung chung
+
+Hook cụ thể tạo hình ảnh hoặc một tình huống rõ. Hook chung chung ai cũng nói được nên không giữ ai lại.
+
+Chung chung: "Có những điều trong cuộc sống khiến ta phải suy nghĩ."
+
+Cụ thể hơn: "Có những bữa cơm, cả nhà ngồi đủ mà chẳng ai nói với ai câu nào."
+
+Chung chung: "Tuổi tác thay đổi cơ thể chúng ta."
+
+Cụ thể hơn: "Ngày trước, thức khuya một chút, sáng mai vẫn dậy như không."
+
+Lưu ý: hook không nhất thiết phải gây tò mò mạnh. Với thương hiệu này, một câu rất đúng với trải nghiệm sống đôi khi
+có sức giữ hơn một câu cố gây bất ngờ.
+
+---
+
+# Tránh lặp kiểu mở
+
+Các mẫu "Có những…", "Hóa ra…", "Đừng vội…", "Nếu hôm nay…" rất dễ bị lặp khi làm nhiều Short.
+
+- Không dùng cùng một kiểu mở (TYPE) cho hai Short liền nhau — tra `short_log.md`, cột "Kiểu mở".
+- Không dùng cùng một cụm mở quá thường xuyên; xoay giữa các TYPE (Quan sát, Hình ảnh, Ký ức chung, Nghịch lý, Câu chuyện
+  ngắn…).
+- Mẫu mở ở kho 210 hook (Có những… / Đôi khi… / Hóa ra…) là tiêu đề của bài; **câu mở của lời đọc không bắt buộc lặp lại nó**
+  — có thể mở bằng một hình ảnh rồi đưa ý tiêu đề ra giữa bài.
+
+---
+
+# Chấm hook (ba tiêu chí)
+
+1. **Nghe một lần là hiểu** — không cần đọc lại.
+2. **Gần đời sống** — ai nghe cũng từng gặp hoặc hình dung được.
+3. **Gợi một câu hỏi tự nhiên** trong đầu người nghe ("rồi sao nữa?"), không cần gây sốc.
+
+Hook chỉ đạt 1 trên 3 tiêu chí: viết lại.
 
 ---
 

@@ -1,76 +1,85 @@
 # QUALITY CHECK
 
-Version: 3.1
+Version: 4.0
 Cập nhật: 17/10/2026
 
 > Đây là cổng bắt buộc cuối cùng trước khi xuất bài (STEP 9 của `execution_flow.md`).
 > Đây cũng là checklist DUY NHẤT của Short Factory — `writing_craft.md` và `execution_flow.md` không giữ
 > checklist riêng, chỉ trỏ về file này.
+>
+> **Hai tầng, hai mục đích:** Tầng 1 là CỔNG — đạt hay không đạt, không thương lượng. Tầng 2 là CHẤM CHẤT LƯỢNG — để
+> bài hay chứ không chỉ đúng. Đạt Tầng 1 mà rớt Tầng 2 thì vẫn phải viết lại. Đừng chỉ "đạt checklist".
 
-## Nhóm 1 — An toàn thương hiệu (theo `writing_rules.md` mục 4.1)
+# TẦNG 1 — CỔNG BẮT BUỘC
 
-Nhóm này áp dụng ngưỡng riêng ở phần Quyết định bên dưới.
+## 1A. An toàn thương hiệu (theo `writing_rules.md` mục 4.1)
+
+Sai **một** mục → viết lại ngay. Không có ngoại lệ, không sửa nhẹ để lách.
 
 -   Không dọa bệnh, không hàm ý cơ thể đang suy yếu mà ta không biết?
 -   Không hàm ý sẽ phải trả giá về sau nếu không thay đổi?
 -   Không chẩn đoán, không kê đơn, không nói về diễn tiến bệnh?
--   Không nêu chỉ số xét nghiệm, không lấy tên nội tạng làm chủ đề chính?
--   Nếu bài chạm người bệnh / người cao tuổi / người chăm sóc: có đặt song song với bác sĩ, không hứa hẹn
-    khỏi bệnh?
+-   Không nêu chỉ số xét nghiệm, không lấy tên bệnh hay nội tạng làm chủ đề chính?
+-   Nếu bài chạm người bệnh / người cao tuổi / người chăm sóc: có đặt song song với bác sĩ, không hứa hẹn khỏi bệnh?
 -   Không thần bí, không bói toán, không tranh cãi chính trị?
 -   Không thao túng cảm xúc, không toxic motivation?
 -   Không nhắc sản phẩm?
+-   Không bịa tiểu sử/hồi ký cho nhân vật (bố mẹ, vợ con, "hồi nhỏ mình…") — `writing_rules.md` mục 5.1?
 
-## Nhóm 2 — Nội dung
+## 1B. Khuôn file và giới hạn hệ thống (`output_schema.md`, `writing_rules.md` mục 6–8A)
 
--   Một ý chính?
--   Mạch lạc?
--   Đúng chủ đề?
--   Nói được trong hai câu?
--   Không trùng ý với các Short đã có trong thư mục Drive?
--   Viết lại từ đầu như một câu chuyện để nghe — không phải bài SEO/video dài rút gọn, không đọc nguyên câu hook của kho?
+Sai một mục là phải sửa ngay, vì máy đọc/đăng nguyên văn.
 
-## Nhóm 3 — Cảm xúc
-
--   Chân thật?
--   Không gượng ép?
--   Đúng cảm xúc đã chọn ở `emotion_palette.md`?
-
-## Nhóm 4 — Giọng văn
-
--   Tự nhiên, đọc nhẩm thành tiếng không bị vấp?
--   Không giống AI?
--   Không dạy đời?
--   Đúng chuẩn nhân xưng (`writing_rules.md` mục 5.1)?
-
-## Nhóm 5 — Khuôn Short (`output_schema.md`, `writing_rules.md` mục 6–8)
-
--   Độ dài trong mục tiêu 150–200 từ (hoặc ngắn hơn mà trọn ý) và dưới trần 1800 ký tự = tối đa 2 phút (đã đếm thật)?
--   Dòng đầu là `# Tiêu đề` (đúng câu tiêu đề của bài viết/kho, không dấu chấm cuối, dưới 90 ký tự) và dòng thứ hai trống?
+-   Dòng 1 là `# Tiêu đề` (đúng câu tiêu đề của bài/kho, không dấu chấm cuối, dưới 90 ký tự), dòng 2 trống?
 -   Ngoài dòng tiêu đề chỉ có lời đọc: không tiêu đề mục khác, không ghi chú, không hướng dẫn quay, không hashtag,
     không emoji, không ngoặc đơn?
--   Không chữ số, không năm, không phần trăm, không từ viết tắt, không từ tiếng Anh?
+-   Không chữ số, năm, phần trăm, từ viết tắt, từ tiếng Anh?
 -   Không `...` ba chấm rời; dấu `…` không quá bốn lần?
--   Câu cuối là **đúng một câu hỏi tự vấn in đậm** `**…**`, đứng một mình trên dòng cuối?
+-   Độ dài đúng cỡ đã chọn (Nhanh / Tiêu chuẩn / Kể chuyện) và **dưới trần 2100 ký tự = tối đa 2 phút** (đã đếm thật)?
 -   Không có lời kêu gọi rẻ tiền (bình luận, chia sẻ, theo dõi)?
--   Không SEO, không clickbait?
 -   Tên file đúng dạng `<chuỗi>.<thứ tự>.<slug-không-dấu>.md`, số hiệu không trùng file nào trong thư mục?
 
-## Nhóm 6 — Móc neo ký ức
+# TẦNG 2 — CHẤM CHẤT LƯỢNG
 
-Một bài "đúng" khác một bài "đáng nhớ". Bài cần có ít nhất MỘT trong ba:
+Chấm từng mục: **Đạt / Tạm / Chưa**. Có từ **hai mục "Chưa"** trở lên (hoặc **ba "Tạm"**) → viết lại, quay về đúng bước hỏng
+theo Retry Logic của `execution_flow.md`, không vá từng câu.
 
--   Một ẩn dụ thiên nhiên đủ mạnh (`writing_craft.md` mục 36.1)?
--   Một câu hỏi khiến người nghe dừng lại một nhịp?
--   Một điều nhận ra không hiển nhiên?
+## 2A. Câu mở và sức giữ chân
+
+-   Nghe MỘT lần là hiểu câu mở (người xem không đọc lại được)?
+-   Câu mở cụ thể, có hình ảnh hoặc tình huống — không phải câu chung chung ("Cuộc sống đôi khi rất mệt mỏi")?
+-   Có một chi tiết đời thường hình dung được (mâm cơm nguội, chuông báo thức lần thứ ba…), thay cho một loạt câu triết lý?
+-   Có chỗ nào người nghe có thể bỏ đi (đoạn lặp ý, đoạn giải thích)? Nếu có, cắt.
+
+## 2B. Mạch kể và chuyển biến
+
+-   Một ý chính, nói được trong hai câu?
+-   Có **một chuyển biến trong cách nhìn** (từ cách nghĩ cũ sang điều nhận ra), không chỉ lặp lại một cảm xúc?
+-   Đường dây rõ: mở → phát triển → nhận ra → kết?
+-   Nhịp thay đổi giữa câu ngắn và câu vừa; không xuống dòng vụn đến mức lời đọc rời rạc?
+-   Đọc nhẩm thành tiếng không bị vấp, không hết hơi giữa câu?
+
+## 2C. Cảm xúc và giọng
+
+-   Cảm xúc đúng loại đã chọn, thể hiện qua chi tiết và nhịp, không chỉ qua từ cảm xúc?
+-   Không giống AI, không dạy đời, không rút bài học thay người nghe?
+-   Đúng chuẩn nhân xưng (`writing_rules.md` mục 5.1)?
+-   Có ít nhất MỘT móc neo ký ức: ẩn dụ thiên nhiên đủ mạnh / câu hỏi khiến dừng một nhịp / điều nhận ra không hiển nhiên?
+
+## 2D. Kết và chống lặp
+
+-   Câu kết có dư âm và hợp với bài (không phải thủ tục)? Kiểu kết có khác hai Short liền trước (xem `short_log.md`)?
+-   Kiểu mở, ẩn dụ trung tâm và khung kể có khác các Short gần nhất trong `short_log.md`?
+-   Chủ đề không trùng ý một Short đã có (cùng thông điệp chỉ đổi chữ)?
+
+## 2E. Phép thử riêng
+
+-   **Bỏ tên Anh Minh đi** — kịch bản còn điều gì riêng khiến người nghe nhớ không? Nếu không, bài chỉ đúng giọng mà
+    chưa có góc nhìn riêng → quay lại STEP 3, chọn góc khác.
+-   Viết lại từ đầu như một câu chuyện để NGHE — không phải bài SEO/video dài rút gọn, không đọc nguyên câu hook của kho?
 
 ## Quyết định
 
-**Nhóm 1 (An toàn):** sai **một** mục -> viết lại ngay. Không có ngoại lệ, không sửa nhẹ để lách.
-
-**Nhóm 2 đến 6:** sai từ **hai** mục trở lên -> viết lại.
-
-Riêng hai mục sau sai là phải sửa ngay dù chỉ sai một, vì máy sẽ đọc/đăng nguyên văn: **vượt trần 1800 ký tự**
-và **thiếu dòng `# Tiêu đề` đầu file** (video sẽ lấy nhầm tiêu đề, hoặc tiêu đề bị đọc lên).
+Tầng 1A sai mục nào → viết lại ngay. Tầng 1B sai mục nào → sửa ngay. Tầng 2 → theo ngưỡng ở trên.
 
 Khi phải viết lại, quay về đúng bước hỏng theo Retry Logic của `execution_flow.md` — không vá từng câu.

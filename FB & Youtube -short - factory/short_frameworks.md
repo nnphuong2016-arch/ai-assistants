@@ -1,6 +1,6 @@
 # SHORT FRAMEWORKS
 
-Version: 2.0
+Version: 2.1
 Status: Official Framework Library
 Cập nhật: 17/10/2026
 
@@ -23,8 +23,8 @@ framework khác nhau.
 -   Framework phục vụ ý tưởng, không ép ý tưởng theo framework.
 -   Ưu tiên tự nhiên hơn kỹ thuật.
 -   Không tạo cảm giác theo công thức.
--   Mọi framework đều đi tới cùng một điểm cuối: **câu hỏi tự vấn in đậm** (`writing_rules.md` mục 8). Framework chỉ quyết định
-    đường đi tới đó.
+-   Mọi framework đều đi tới một **câu kết có dư âm** (`writing_rules.md` mục 8; mặc định là câu hỏi tự vấn). Framework chỉ quyết
+    định đường đi tới đó.
 -   Chỉ có **một giọng đọc**, nên không dùng khung hội thoại hai nhân vật — nếu cần nhắc lời người khác thì kể lại
     bằng giọng quan sát ("Có người cha từng nói một câu...").
 
@@ -132,15 +132,72 @@ Ghi lại một quan sát đời sống và ý nghĩa phía sau.
 
 ------------------------------------------------------------------------
 
+## F11 - Khoảnh khắc nhỏ → Nhận ra
+
+Kể MỘT khoảnh khắc rất nhỏ (một cử chỉ, một âm thanh), rồi để điều nhận ra tự lộ.
+
+Luồng: Khoảnh khắc → Điều ta để ý → Điều nhận ra nhỏ.
+
+Khi nào chọn: bài Nhanh, một hình ảnh đủ mạnh. Tránh: kéo thành bài học.
+
+------------------------------------------------------------------------
+
+## F12 - Hiểu lầm quen thuộc, nhìn lại nhẹ nhàng
+
+Một điều ta vẫn hiểu như vậy — rồi nhìn lại bằng một góc khác, không phán xét ai.
+
+Luồng: Điều ai cũng nghĩ → Điều làm ta nghĩ lại → Cách nhìn nhẹ hơn.
+
+Khi nào chọn: ý có sẵn một "hiểu lầm" (tưởng lười, tưởng già, tưởng mình yếu). Tránh: dạy đời, bắt lỗi người nghe.
+
+------------------------------------------------------------------------
+
+## F13 - Hai thế hệ, một việc
+
+Kể (ngôi ba, một giọng) hai thế hệ nhìn cùng một việc theo hai cách khác nhau, và chỗ họ gặp nhau.
+
+Luồng: Người đi trước làm thế nào → Người đi sau làm thế nào → Điều chung.
+
+Khi nào chọn: đề tài gia đình, cha mẹ con cái. Tránh: hội thoại hai nhân vật; tránh dựng gia đình riêng cho nhân vật (mục 5.1).
+
+------------------------------------------------------------------------
+
+## F14 - Một câu nói đời thường
+
+Lấy một câu người ta hay nói (ngôi ba: "Các cụ ngày trước hay bảo…") rồi mở ra ý nghĩa của nó.
+
+Luồng: Câu nói → Hoàn cảnh nó thường được nói → Điều ta chợt hiểu.
+
+Khi nào chọn: bài Tiêu chuẩn có ký ức chung. Tránh: câu nói nghe như danh ngôn, như bài giảng.
+
+------------------------------------------------------------------------
+
+## F15 - Chi tiết lặp lại
+
+Một hình ảnh quay lại 2–3 lần trong bài, mỗi lần mang thêm một nghĩa.
+
+Luồng: Hình ảnh → Hình ảnh (nghĩa khác) → Hình ảnh (nghĩa trọn).
+
+Khi nào chọn: bài Tiêu chuẩn/Kể chuyện có một vật trung tâm (ấm trà, chiếc ghế trống). Tránh: nhắc lướt, giải thích nghĩa của vật.
+
+------------------------------------------------------------------------
+
 # 5. CÁCH CHỌN FRAMEWORK
 
 -   Đồng cảm → F02
--   Thay đổi góc nhìn → F01
--   Kể chuyện → F07
--   Tự sự → F05
--   Quan sát đời thường → F06 hoặc F09
+-   Thay đổi góc nhìn → F01 hoặc F12
+-   Kể chuyện → F07 hoặc F13
+-   Tự sự (thay đổi cách nghĩ) → F05
+-   Quan sát đời thường → F06, F09 hoặc F11
+-   Ký ức chung → F14
+-   Có một vật trung tâm → F15
 
-------------------------------------------------------------------------
+**Khi nào KHÔNG nên dùng:**
+
+-   F01, F02, F05, F09, F12 rất dễ đi đến cùng một kiểu kết luận ("có lẽ cơ thể chỉ cần nghỉ"). Nếu hai Short liền trước đã dùng
+    một trong số này, chọn khung khác.
+-   Đừng dùng một khung chỉ vì quen. Tra cột "Khung" trong `short_log.md` trước.
+-   Đừng ép ý vào khung; nếu ý không hợp khung nào, chọn khung đơn giản nhất (F09 hoặc F11).
 
 # 6. ĐIỀU CẦN TRÁNH
 

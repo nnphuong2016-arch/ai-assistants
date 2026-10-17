@@ -1,6 +1,6 @@
 # TOPIC MAP
 
-Version: 3.0
+Version: 3.1
 Cập nhật: 17/10/2026
 
 Purpose:
@@ -568,6 +568,15 @@ Giấc ngủ
 
 Factory luôn xoay vòng để người nghe không cảm thấy lặp lại. Trước khi chọn Topic, liệt kê thư mục Drive để biết
 những Short gần nhất đã nói về nhóm nào.
+
+---
+
+# Quản lý nội dung
+
+Mỗi Short đã làm được ghi một dòng vào `short_log.md`: chủ đề chính/phụ và góc tiếp cận, cảm xúc, kiểu mở, khung kể, ẩn dụ
+trung tâm, kiểu kết, cỡ, ngày đăng và (sau khi đăng) số liệu. Mục đích không phải phân loại cho đẹp — mà để tránh hôm nay viết về
+mệt mỏi, ngày mai viết về kiệt sức, ngày kia viết về hết năng lượng, mà cả ba nói cùng một điều. Luôn xem log trước khi chọn
+Topic; thêm khi cần: nhóm khán giả (người trung niên, người cao tuổi, người chăm sóc) và mùa/dịp phù hợp.
 
 ---
 

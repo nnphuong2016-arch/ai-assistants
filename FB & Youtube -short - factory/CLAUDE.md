@@ -1,6 +1,6 @@
 # CLAUDE.md — SHORT FACTORY (kịch bản Short cho Reel & YouTube Shorts)
 
-Version: 1.0
+Version: 1.1
 Cập nhật: 17/10/2026
 
 > File nhắc việc riêng cho Short Factory, đặt trong chính thư mục này để mỗi lần mở cửa sổ làm việc ở đây,
@@ -12,7 +12,7 @@ Cập nhật: 17/10/2026
 
 ## 0. FACTORY NÀY LÀM RA CÁI GÌ
 
-Mỗi lần chạy ra **một file kịch bản `.md`** — một đoạn lời đọc ngắn (khoảng một phút) của **Hiền triết Anh Minh**.
+Mỗi lần chạy ra **một file kịch bản `.md`** — một đoạn lời đọc ngắn (khoảng 45–90 giây) của **Hiền triết Anh Minh**.
 Phần còn lại do n8n lo (workflow `WFAnhMinhC204`): đọc nguyên file làm lời đọc bằng giọng VieNeu, dựng phụ đề,
 ghép clip thiên nhiên + nhạc nền + logo, rồi workflow `WFAnhMinhC205` đăng YouTube Shorts. Cùng một video đó
 dùng cho Reel.
@@ -33,11 +33,12 @@ mục, không hướng dẫn quay, không hashtag trong file. Chi tiết khuôn 
 5. `quality_check.md` — tự kiểm trước khi xuất, ≥2 lỗi thì viết lại.
 6. `short_frameworks.md` — chọn 1 trong 10 khung F01–F10.
 7. `emotion_palette.md` — chọn 1 cảm xúc chính (+ tối đa 1 cảm xúc phụ).
-8. `idea_library.md` — nguồn ý tưởng tự sinh khi người vận hành không đưa chủ đề.
-9. `hook_library.md` — 20 kiểu câu mở + công thức Hook Engine.
-10. `topic_map.md` — bản đồ chủ đề theo trải nghiệm sống + bảng quy đổi sang 6 trụ chính thức.
-11. `short_examples.md` — hai kịch bản mẫu hoàn chỉnh + kỹ thuật nhỏ; so sánh, KHÔNG copy.
-12. `output_schema.md` — đóng gói đúng khuôn file.
+8. `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — kho 210 hook/chủ đề của Anh Minh, 7 series × 30 dòng, nguồn ý tưởng thứ hai.
+9. `idea_library.md` — nguồn ý tưởng thứ ba (tự sinh) khi hai nguồn trên không đủ.
+10. `hook_library.md` — 20 kiểu câu mở + công thức Hook Engine.
+11. `topic_map.md` — bản đồ chủ đề theo trải nghiệm sống + bảng quy đổi sang 6 trụ chính thức.
+12. `short_examples.md` — hai kịch bản mẫu hoàn chỉnh + kỹ thuật nhỏ; so sánh, KHÔNG copy.
+13. `output_schema.md` — đóng gói đúng khuôn file.
 
 Ngoài ra, khi cần: `core-brain/dong_hanh_nguoi_benh.md` (nếu bài chạm người bệnh/người già/người chăm sóc —
 `writing_rules.md` mục 4.1 yêu cầu bắt buộc tra file này), `core-brain/seasonal_calendar.md` (bài theo mùa/dịp).
@@ -46,8 +47,8 @@ Ngoài ra, khi cần: `core-brain/dong_hanh_nguoi_benh.md` (nếu bài chạm ng
 
 ## 2. QUY TRÌNH 10 BƯỚC (`execution_flow.md`) — KHÔNG BỎ BƯỚC, KHÔNG ĐẢO THỨ TỰ
 
-Understand → Select Topic (CHỈ 1 topic chính) → Generate Ideas (chủ đề người dùng đưa trực tiếp ưu tiên cao
-nhất → `idea_library.md`) → **Safety Filter (STEP 3.5)** → Choose Hook → Choose Framework (F01–F10) →
+Understand → Select Topic (CHỈ 1 topic chính) → Generate Ideas (3 nguồn: chủ đề người dùng đưa trực tiếp ưu tiên cao
+nhất → kho 210 hook → `idea_library.md`) → **Safety Filter (STEP 3.5)** → Choose Hook → Choose Framework (F01–F10) →
 **Choose Emotion** (chọn TRƯỚC khi viết) → Write Draft → Compare Examples → Quality Review → Output.
 
 Nếu một bước chưa đạt, quay lại đúng bước đó theo Retry Logic — không sửa chắp vá từng câu.
@@ -65,7 +66,10 @@ Nếu một bước chưa đạt, quay lại đúng bước đó theo Retry Logi
 - Dùng chi tiết cụ thể thay vì khái quát ("Chuông báo thức reo đến lần thứ ba" thay vì "Mình rất mệt").
 - Tránh câu mở kiểu AI: "Bạn có biết...", "Hôm nay mình sẽ chia sẻ...", "5 cách để...", "Theo nghiên cứu...".
 - Không CHỮ HOA, không emoji, không dấu chấm than, không hashtag, không chữ số (viết số bằng chữ).
-- **Độ dài:** mục tiêu 150–200 từ (khoảng 700–950 ký tự), trần cứng 1200 ký tự (`writing_rules.md` mục 6.1).
+- **Độ dài:** mục tiêu 150–200 từ (khoảng 45–75 giây, như hai kịch bản mẫu); không có sàn cứng — ngắn hơn được nếu ý đã
+  trọn; trần cứng 1400 ký tự (khoảng 2 phút; n8n dừng ở 1500) — `writing_rules.md` mục 6.1.
+- **Short không phải bài SEO hay video dài rút ngắn:** cùng chủ đề nhưng viết lại từ đầu như một câu chuyện để nghe
+  (`instructions_short.md` mục 5A).
 - **Nhân xưng** (`writing_rules.md` mục 5.1): "ta/chúng ta" và "bạn" là chính; "mình" **được nghĩ, không được nhớ**.
   Cấm dựng quan hệ gia đình riêng cho nhân vật và hồi ký cá nhân cụ thể.
 - **Móc neo ký ức:** mỗi bài cần ≥1 trong 3 — ẩn dụ thiên nhiên mạnh / câu hỏi khiến người nghe dừng một nhịp /
@@ -116,10 +120,12 @@ Cùng một nhân vật Hiền triết Anh Minh với Website/YouTube/Chat:
 ## 7. ĐẦU RA & NƠI LƯU
 
 - **Interactive Mode** (chat trực tiếp): xuất tên file + toàn văn kịch bản, kèm các field nội bộ theo
-  `output_schema.md` (Mood / Topic / Pillar / Framework / Hook Source).
+  `output_schema.md` (Mood / Topic / Pillar / Framework / Hook Source / Reel Caption).
 - **Khi lưu file `.md`:** CHỈ chứa nội dung kịch bản (lời đọc) — KHÔNG kèm các field nội bộ.
 - **Tên file:** `<chuỗi>.<thứ tự>.<slug-không-dấu>.md` — ví dụ `1.2.thay-doi-cua-co-the-dien-ra-rat-lau-truoc-khi-ta-nhan-ra.md`.
-  Số hiệu lấy số tiếp theo trong thư mục đích (không trùng, không gắn với số tập video dài).
+  Số hiệu theo kho 210 hook: Short viết từ Series N dòng M của kho → file `N.M.…` (1.1 = Series 1 dòng 1, 1.2 = dòng 2).
+  Chủ đề không lấy từ kho → chuỗi `0` (`0.1`, `0.2`…, n8n sẽ làm trước hàng đợi của kho). Không trùng số nào đang có trong thư mục,
+  không gắn với số tập video dài.
 - **Nơi lưu:** Google Drive tài khoản funamark, thư mục **"Kich-ban-short for Reel FB & Youtube"**
   (`Anh Minh - N8N Trigger/Kich-ban-short for Reel FB & Youtube`, parentId `1SoKkr2dzkuc0sNWzYkHFv_Z_R03FRw38`).
   Lưu `.md` thuần (nếu dùng `create_file` thì `disableConversionToGoogleType: true`).

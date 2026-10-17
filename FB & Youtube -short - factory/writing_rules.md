@@ -1,6 +1,6 @@
 # WRITING RULES
 
-Version: 2.0\
+Version: 2.1\
 Cập nhật: 17/10/2026\
 Status: Canonical Rules
 
@@ -136,11 +136,13 @@ Ranh giới ngắn gọn: **"mình" được nghĩ, không được nhớ.**
 
 ## 6.1. ĐỘ DÀI (đo bằng lời đọc, không đo bằng bài viết)
 
--   **Mục tiêu: 150–200 từ** (khoảng 700–950 ký tự) — hai kịch bản mẫu dài 163 và 194 từ.
--   **Trần cứng: 1200 ký tự** (khoảng 210 từ, vừa trong mốc 90 giây của Reel). Vượt → cắt, không xuất.
-    n8n còn có chốt chặn riêng ở 1500 ký tự; không bao giờ để bài chạm tới mốc đó.
--   **Không có số từ tối thiểu cứng**, nhưng dưới 100 từ thì video quá ngắn để dựng — chỉ chấp nhận khi chủ kênh
-    yêu cầu bản siêu ngắn.
+-   **Mục tiêu: 150–200 từ** (khoảng 700–950 ký tự, khoảng 45–75 giây đọc) — hai kịch bản mẫu dài 163 và 194 từ.
+-   **Không có sàn cứng.** Thời lượng chỉ là điểm khởi đầu để thử nghiệm: lời đọc đã trọn ý thì ngắn hơn vẫn tốt;
+    đừng kéo dài cho đủ số. Dưới khoảng 100 từ thì video rất ngắn — chỉ nên làm khi ý thật sự gọn.
+-   **Dài hơn mục tiêu** (tới khoảng 250 từ) chỉ khi ý cần thêm một lớp, và vẫn là MỘT ý chính.
+-   **Trần cứng: 1400 ký tự** (khoảng 2 phút). Vượt → cắt, không xuất. n8n có chốt chặn riêng ở 1500 ký tự; không
+    bao giờ để bài chạm tới mốc đó. (Muốn làm Short gần 3 phút thì phải nâng chốt chặn ở workflow trước — hiện
+    chưa làm.)
 -   Khoảng 12–18 đoạn, mỗi đoạn 1–2 câu ngắn.
 
 Nếu bài vượt trần, đừng cắt câu lẻ tẻ — quay lại xem bài có đang chứa hai ý không. Bài quá dài gần như luôn là

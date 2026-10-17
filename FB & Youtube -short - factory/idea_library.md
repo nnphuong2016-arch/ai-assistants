@@ -3,8 +3,8 @@
 Version: 2.0
 Cập nhật: 17/10/2026
 
-> Nguồn ý tưởng thứ hai của Short Factory (`execution_flow.md` STEP 3) — dùng khi
-> người vận hành không đưa chủ đề cụ thể.
+> Nguồn ý tưởng thứ ba của Short Factory (`execution_flow.md` STEP 3) — dùng khi
+> người vận hành không đưa chủ đề cụ thể và kho 210 hook không có dòng hợp chủ đề đang cần.
 >
 > File này sinh **ý tưởng** (viết về cái gì). Mẫu **câu mở đầu** nằm ở `hook_library.md`.
 > Danh sách điều cần tránh nằm ở `writing_rules.md` mục 4 — file này không lặp lại.

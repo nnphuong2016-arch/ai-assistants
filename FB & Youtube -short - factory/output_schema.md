@@ -1,6 +1,6 @@
 # OUTPUT SCHEMA
 
-Version: 3.0
+Version: 3.1
 Cập nhật: 17/10/2026
 
 ## Đối tượng đầu ra
@@ -15,13 +15,19 @@ không tự đặt tên cảm xúc mới. Nếu có cảm xúc phụ, ghi sau d�
 **Framework** — mã framework đã dùng (F01–F10) theo `short_frameworks.md`.
 
 **Hook Source** — ghi lại điểm vào đã dùng, để về sau tra cứu chống trùng:
+- Dòng từ kho 210 hook: ghi mã `S<series>-<dòng>` (VD: `S1-1` = Series 1 dòng 1).
 - Chủ đề do người vận hành đưa: ghi `Trực tiếp`.
 - Tự sinh qua `idea_library.md`: ghi `Tự sinh`.
 
+**Reel Caption** — chữ đăng kèm Reel (chỉ để người vận hành copy, KHÔNG vào file): 1–2 câu ngắn gợi ý chính của video và
+một câu hỏi mở dễ trả lời, khác với câu hỏi cuối video. Không hashtag dài, không lời kêu gọi rẻ tiền. YouTube Shorts đã có
+tiêu đề/mô tả tự động từ file nên không cần field riêng.
+
 **File Name** — `<chuỗi>.<thứ tự>.<slug-không-dấu>.md`:
-- `<chuỗi>.<thứ tự>`: số tiếp theo trong thư mục Drive đích (hiện đã có `1.1`, `1.2`). Liệt kê thư mục (kể cả file
-  mang tiền tố `DONE_`/`SHORTDONE_`/`LOI_`) rồi lấy số kế tiếp trong cùng chuỗi; chỉ mở chuỗi mới khi chủ kênh
-  yêu cầu. Không trùng số nào đang có, không gắn với số tập của video dài.
+- `<chuỗi>.<thứ tự>`: Short viết từ kho 210 hook → số hiệu = `<series>.<dòng>` của dòng đó (hai Short đầu: `1.1` =
+  `S1-1`, `1.2` = `S1-2`). Short có chủ đề không lấy từ kho → chuỗi `0` (`0.1`, `0.2`…, số kế tiếp chưa dùng; n8n sẽ làm
+  chúng trước hàng đợi của kho). Luôn liệt kê thư mục (kể cả file mang tiền tố `DONE_`/`SHORTDONE_`/`LOI_`) để không
+  trùng số nào đang có; không gắn với số tập của video dài.
 - `<slug>`: nói đúng ý chính của bài, chữ thường không dấu, chỉ gồm `a–z`, `0–9` và dấu gạch nối, không có dấu
   chấm, dài vừa phải (khoảng 40–70 ký tự). Phải khớp mẫu `^\d+\.\d+\..+\.md$` mà n8n dùng để nhận file.
 - Ví dụ: `1.2.thay-doi-cua-co-the-dien-ra-rat-lau-truoc-khi-ta-nhan-ra.md`
@@ -30,18 +36,18 @@ không tự đặt tên cảm xúc mới. Nếu có cảm xúc phụ, ghi sau d�
 - Mỗi đoạn 1–2 câu ngắn, hai đoạn cách nhau **một dòng trống**.
 - Không tiêu đề mục, không gạch đầu dòng, không chữ nghiêng, không ghi chú, không hashtag, không emoji.
 - **Dòng cuối cùng** là câu hỏi tự vấn in đậm `**…**` (dưới 80 ký tự) — n8n dùng nó làm tiêu đề YouTube.
-- Độ dài: 150–200 từ, trần 1200 ký tự (`writing_rules.md` mục 6.1).
+- Độ dài: mục tiêu 150–200 từ, trần 1400 ký tự (`writing_rules.md` mục 6.1).
 
 ------------------------------------------------------------------------
 
 ## Interactive Mode (Custom GPT / Claude Project / Claude Code — người vận hành trực tiếp)
 
 Trong cuộc trò chuyện: xuất theo thứ tự — `File Name`, `Body`, rồi các field nội bộ (Mood, Topic, Pillar,
-Framework, Hook Source) ghi gọn một dòng mỗi field. Có thể kèm giải thích ngắn nếu người dùng chủ động hỏi lý do
+Framework, Hook Source, Reel Caption) ghi gọn một dòng mỗi field (Reel Caption đặt cuối cùng). Có thể kèm giải thích ngắn nếu người dùng chủ động hỏi lý do
 chọn Framework/Mood — không tự thêm giải thích khi không được hỏi.
 
 **Khi lưu file `.md` vào Drive (xem CLAUDE.md mục 7): CHỈ chứa nội dung `Body`** — không kèm
-Mood/Topic/Pillar/Framework/Hook Source/File Name vào file. Các field đó chỉ để trao đổi trong lúc soạn, không phải
+Mood/Topic/Pillar/Framework/Hook Source/Reel Caption/File Name vào file. Các field đó chỉ để trao đổi trong lúc soạn, không phải
 lời đọc (nếu lọt vào file, giọng đọc sẽ đọc luôn).
 
 ------------------------------------------------------------------------
@@ -61,6 +67,7 @@ Chỉ trả đúng Object:
   "pillar": "...",
   "framework": "...",
   "hook_source": "...",
+  "reel_caption": "...",
   "file_name": "...",
   "body": "..."
 }

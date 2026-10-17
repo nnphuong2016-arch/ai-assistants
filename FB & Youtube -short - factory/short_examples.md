@@ -22,10 +22,10 @@ Luôn ưu tiên Writing Craft.
 
 # PHẦN A — HAI KỊCH BẢN HOÀN CHỈNH (đúng khuôn file thật)
 
-Đây là nội dung đúng như file đã nằm trong thư mục Drive: mỗi dòng cách nhau một dòng trống, câu cuối in đậm.
+Đây là nội dung đúng như file đã nằm trong thư mục Drive (mỗi kịch bản lớn lên từ một dòng của kho 210 hook: dòng 1 và dòng 2 của Series 1): mỗi dòng cách nhau một dòng trống, câu cuối in đậm.
 163 từ và 194 từ; 12–18 đoạn; chỉ có lời đọc.
 
-## Kịch bản 1 — `1.1.con-met-khong-den-tu-thieu-ngu-ma-den-tu-cach-minh-song.md` (Mood: Đồng cảm)
+## Kịch bản 1 — `1.1.con-met-khong-den-tu-thieu-ngu-ma-den-tu-cach-minh-song.md` (Mood: Đồng cảm · Hook Source: S1-1)
 
 > Có những cơn mệt…
 >
@@ -63,7 +63,7 @@ Luôn ưu tiên Writing Craft.
 - Ba cụm "Một bữa cơm… Một cuộc trò chuyện… Một buổi tối…" — liệt kê bằng hình ảnh, không bằng lời khuyên
 - Câu hỏi cuối bám đúng ý chính, đứng một mình vẫn làm tiêu đề được
 
-## Kịch bản 2 — `1.2.thay-doi-cua-co-the-dien-ra-rat-lau-truoc-khi-ta-nhan-ra.md` (Mood: Trăn trở)
+## Kịch bản 2 — `1.2.thay-doi-cua-co-the-dien-ra-rat-lau-truoc-khi-ta-nhan-ra.md` (Mood: Trăn trở · Hook Source: S1-2)
 
 > Ngày trước, thức khuya một chút…
 >

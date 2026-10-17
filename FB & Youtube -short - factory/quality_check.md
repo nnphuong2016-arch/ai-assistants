@@ -1,6 +1,6 @@
 # QUALITY CHECK
 
-Version: 3.0
+Version: 3.1
 Cập nhật: 17/10/2026
 
 > Đây là cổng bắt buộc cuối cùng trước khi xuất bài (STEP 9 của `execution_flow.md`).
@@ -28,6 +28,7 @@ Nhóm này áp dụng ngưỡng riêng ở phần Quyết định bên dưới.
 -   Đúng chủ đề?
 -   Nói được trong hai câu?
 -   Không trùng ý với các Short đã có trong thư mục Drive?
+-   Viết lại từ đầu như một câu chuyện để nghe — không phải bài SEO/video dài rút gọn, không đọc nguyên câu hook của kho?
 
 ## Nhóm 3 — Cảm xúc
 
@@ -44,7 +45,7 @@ Nhóm này áp dụng ngưỡng riêng ở phần Quyết định bên dưới.
 
 ## Nhóm 5 — Khuôn Short (`output_schema.md`, `writing_rules.md` mục 6–8)
 
--   Độ dài trong mục tiêu 150–200 từ và dưới trần 1200 ký tự (đã đếm thật)?
+-   Độ dài trong mục tiêu 150–200 từ (hoặc ngắn hơn mà trọn ý) và dưới trần 1400 ký tự (đã đếm thật)?
 -   Chỉ có lời đọc: không tiêu đề mục, không ghi chú, không hướng dẫn quay, không hashtag, không emoji, không
     ngoặc đơn?
 -   Không chữ số, không năm, không phần trăm, không từ viết tắt, không từ tiếng Anh?
@@ -69,7 +70,7 @@ Một bài "đúng" khác một bài "đáng nhớ". Bài cần có ít nhất M
 
 **Nhóm 2 đến 6:** sai từ **hai** mục trở lên -> viết lại.
 
-Riêng hai mục sau sai là phải sửa ngay dù chỉ sai một, vì máy sẽ đọc/đăng nguyên văn: **vượt trần 1200 ký tự**
+Riêng hai mục sau sai là phải sửa ngay dù chỉ sai một, vì máy sẽ đọc/đăng nguyên văn: **vượt trần 1400 ký tự**
 và **thiếu câu hỏi in đậm cuối bài** (video sẽ không có tiêu đề đúng).
 
 Khi phải viết lại, quay về đúng bước hỏng theo Retry Logic của `execution_flow.md` — không vá từng câu.

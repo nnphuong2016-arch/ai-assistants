@@ -1,6 +1,6 @@
 # EXECUTION FLOW
 
-Version: 3.0
+Version: 3.1
 Cập nhật: 17/10/2026
 
 Purpose:
@@ -68,13 +68,20 @@ những Short đã có, liệt kê thư mục đích trên Drive (kể cả file
 # STEP 3
 Generate Ideas
 
-Hai nguồn:
+Ba nguồn:
 
 1. **Chủ đề do người vận hành đưa trực tiếp** — một chủ đề, một câu nói, một câu chuyện, một tình huống. Đây là
-   nguồn ƯU TIÊN CAO NHẤT: khi có, đi thẳng sang STEP 3.5. Nếu đầu vào quá rộng, tự thu hẹp thành một ý duy
-   nhất trước khi đi tiếp.
-2. `idea_library.md` — tự sinh khi người vận hành không đưa chủ đề, hoặc khi cần thêm hướng tiếp cận cho cùng
-   một chủ đề.
+   nguồn ƯU TIÊN CAO NHẤT: khi có, bỏ qua nguồn 2, đi thẳng sang STEP 3.5. Nếu đầu vào quá rộng, tự thu hẹp thành
+   một ý duy nhất trước khi đi tiếp.
+2. `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — kho 210 hook/chủ đề, 7 series (Có những.../Đôi khi.../Hóa
+   ra.../Đừng vội.../Nếu hôm nay.../Điều đáng nghĩ hôm nay/Một phút nhìn lại). Dùng khi người vận hành KHÔNG đưa
+   chủ đề cụ thể. Nếu người dùng chỉ định số dòng → dùng đúng dòng đó. Nếu không, liệt kê thư mục Drive đích rồi
+   ưu tiên dòng CHƯA có Short. Dòng trong kho chỉ là **điểm vào** — không đọc nguyên câu hook làm bài, vẫn phải qua
+   Lọc an toàn (STEP 3.5), Hook (STEP 4), Framework (STEP 5) và Writing Craft (STEP 7) như ý tưởng tự sinh.
+3. `idea_library.md` — tự sinh khi hai nguồn trên không đủ, hoặc khi cần thêm hướng tiếp cận cho cùng một chủ đề.
+
+Không rút ngắn bài SEO hay kịch bản video dài để làm Short — viết lại từ đầu như một câu chuyện để nghe
+(`instructions_short.md` mục 5A).
 
 Sinh nhiều hướng tiếp cận. Ví dụ: Quan sát · Trải nghiệm · Nghịch lý · Ký ức chung · Câu hỏi · Một khoảnh khắc.
 
@@ -88,7 +95,7 @@ Safety Filter
 
 Bắt buộc. Không bỏ qua.
 
-Ý tưởng tự sinh KHÔNG được coi là đã an toàn.
+Kho hook và ý tưởng tự sinh đều KHÔNG được coi là đã an toàn — kể cả dòng lấy từ kho.
 
 Đối chiếu ý tưởng vừa chọn với `writing_rules.md` mục 4.1.
 
@@ -232,11 +239,12 @@ Khi có xung đột, ưu tiên theo thứ tự:
 5. quality_check.md
 6. short_frameworks.md
 7. emotion_palette.md
-8. idea_library.md
-9. hook_library.md
-10. topic_map.md
-11. short_examples.md
-12. output_schema.md
+8. bai-dang-Facebook-Anh-Minh.md (kho 210 hook — gốc repo `ai-assistants/`)
+9. idea_library.md
+10. hook_library.md
+11. topic_map.md
+12. short_examples.md
+13. output_schema.md
 
 ---
 

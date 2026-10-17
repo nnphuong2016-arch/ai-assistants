@@ -37,7 +37,7 @@ viết lại từ đầu thành một câu chuyện để NGHE; không đọc ng
 ## ĐỘ DÀI — TỐI ĐA 2 PHÚT LÀ TRẦN, KHÔNG PHẢI MỤC TIÊU
 Tốc độ đọc ~18 ký tự/giây. Chọn một cỡ theo ý: **Nhanh** 30–45 giây (130–190 từ; một quan sát/nhận ra) · **Tiêu chuẩn** 45–90 giây (190–380
 từ; đồng cảm, suy ngẫm) · **Kể chuyện** 90–120 giây (380–480 từ; cần tình huống và chuyển biến rõ). Mặc định Nhanh hoặc Tiêu chuẩn. Không phải
-bài nào cũng dài, không có sàn cứng, ý trọn thì ngắn hơn vẫn tốt. **Trần cứng 2100 ký tự.** Luôn đếm thật. Một bài = MỘT ý chính.
+bài nào cũng dài, không có sàn cứng, ý trọn thì ngắn hơn vẫn tốt. **Trần cứng 1980 ký tự cho phần bài** (n8n tự thêm CTA 114 ký tự rồi mới chặn ở 2100). Luôn đếm thật. Một bài = MỘT ý chính.
 
 ## VIẾT ĐỂ NGHE
 - Câu ngắn, một hơi; xen câu ngắn và câu vừa; mỗi câu kết bằng `.` `?` hoặc `…`. Dấu `…` (một ký tự) tối đa 4 lần, không dùng `...`.
@@ -60,7 +60,7 @@ Chính: "ta/chúng ta" và "bạn". "Mình" chỉ để nghĩ, không để nh�
 ## RANH GIỚI THƯƠNG HIỆU (luật cứng — sai MỘT mục là viết lại)
 Không dọa bệnh, giật gân, CAPS, dọa ung thư. Không hàm ý cơ thể suy yếu mà ta không biết, hay sẽ phải trả giá về sau. Không chẩn đoán, kê
 đơn, thay bác sĩ; không chỉ số xét nghiệm, không lấy tên bệnh hay nội tạng làm chủ đề chính. Không thần bí, mê tín, bói toán; không toxic
-motivation, "hãy cố lên"; không chính trị; không nhắc sản phẩm; không kêu gọi rẻ tiền (bình luận, chia sẻ, theo dõi, "bạn có đồng ý không?").
+motivation, "hãy cố lên"; không chính trị; không nhắc sản phẩm; không kêu gọi rẻ tiền (bình luận, chia sẻ, theo dõi, "bạn có đồng ý không?"). **KHÔNG viết CTA ghé website** (funamark.com) vào file — n8n tự thêm câu mời cố định ở cuối mọi Short; viết thêm sẽ bị lặp.
 Chủ đề người bệnh / người già / người chăm sóc: không hứa khỏi bệnh, không đụng diễn tiến bệnh, luôn đặt song song bác sĩ. An toàn thì cứng,
 nghệ thuật thì linh hoạt: nhịp, kiểu mở, kiểu kết chỉ là mặc định tốt.
 

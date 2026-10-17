@@ -28,8 +28,9 @@ bằng giọng đọc máy.
 - **Câu kết** (dòng cuối): mặc định là câu hỏi tự vấn in đậm `**…**`; có thể là kiểu kết khác (`writing_rules.md` mục 8) — khi đó
   viết thường, không in đậm. Được đọc thành tiếng. n8n bỏ các dấu `**`, `#`, `>`, `__` trước khi đọc nên dấu Markdown không bị
   đọc lên.
-- Độ dài: một trong ba cỡ — Nhanh 30–45 giây, Tiêu chuẩn 45–90 giây, Kể chuyện 90–120 giây; **trần cứng 2100 ký tự (tối đa
-  2 phút), không phải bài nào cũng dài** (`writing_rules.md` mục 6.1).
+- Độ dài: một trong ba cỡ — Nhanh 30–45 giây, Tiêu chuẩn 45–90 giây, Kể chuyện 90–120 giây; **trần cứng 2100 ký tự cho toàn bộ lời đọc
+  gồm CTA (phần bài tối đa khoảng 1980 ký tự), tối đa 2 phút, không phải bài nào cũng dài** (`writing_rules.md` mục 6.1).
+- **KHÔNG viết CTA ghé website** vào file: n8n tự thêm câu mời ghé funamark.com ở cuối lời đọc (`writing_rules.md` mục 8B).
 
 Khi lưu file `.md` vào Drive (CLAUDE.md mục 7): file CHỈ chứa `Body` (dòng tiêu đề + lời đọc).
 

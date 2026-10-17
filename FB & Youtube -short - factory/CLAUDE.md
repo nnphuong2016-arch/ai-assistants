@@ -74,7 +74,7 @@ Nếu một bước chưa đạt, quay lại đúng bước đó theo Retry Logi
 - Không CHỮ HOA, không emoji, không dấu chấm than, không hashtag, không chữ số (viết số bằng chữ).
 - **Độ dài:** ba cỡ — Nhanh 30–45 giây · Tiêu chuẩn 45–90 giây · Kể chuyện 90–120 giây (`writing_rules.md` mục 6.1). **Tối đa 2
   phút — là mức trần, không phải mục tiêu:** không phải bài nào cũng dài, không có sàn cứng, ngắn hơn được nếu ý đã trọn. Trần cứng
-  2100 ký tự (n8n chặn đúng mốc này và chặn thêm nếu giọng đọc vượt 120 giây).
+  2100 ký tự cho toàn bộ lời đọc, gồm CTA 114 ký tự n8n tự thêm (phần bài ≤ khoảng 1980); n8n chặn đúng mốc này và chặn thêm nếu giọng đọc vượt 120 giây.
 - **Chống lặp:** trước khi chọn ý, đọc 5–8 dòng gần nhất của `short_log.md`; không dùng lại cùng kiểu mở, ẩn dụ, khung kể, kiểu
   kết như hai Short liền trước. Sau mỗi bài, thêm một dòng vào log.
 - **Chấm hai tầng** (`quality_check.md`): Tầng 1 là cổng (an toàn, đúng khuôn, trong giới hạn); Tầng 2 là chất lượng (câu mở cụ thể,
@@ -102,6 +102,8 @@ Cùng một nhân vật Hiền triết Anh Minh với Website/YouTube/Chat:
 - Nhắc sản phẩm → tỷ lệ giá trị/sản phẩm ~95/5; với Short thì **không nhắc sản phẩm**.
 - **Không dùng lời kêu gọi rẻ tiền**: "Bình luận bên dưới nhé", "Chia sẻ cho bạn bè", "Theo dõi kênh để...". Câu hỏi
   cuối chỉ là câu tự vấn.
+- **CTA ghé website là CỐ ĐỊNH và do n8n tự thêm** ở cuối mọi Short ("Nếu bạn muốn tìm hiểu thêm về cách chăm sóc sức khỏe và sống… funamark.com nhé."). Kịch bản KHÔNG viết CTA
+  này (`writing_rules.md` mục 8B); đổi câu CTA chỉ ở node "Dựng Lời Đọc Short" của WF04.
 
 ---
 

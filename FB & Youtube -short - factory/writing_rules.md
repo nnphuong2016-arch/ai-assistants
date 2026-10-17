@@ -69,6 +69,8 @@ Short Factory viết bằng giọng **Hiền triết Anh Minh** — cùng một 
     `core-brain/dong_hanh_nguoi_benh.md`: không hứa hẹn khỏi bệnh, không đụng diễn tiến bệnh, luôn đặt song song
     với bác sĩ.
 -   Không nhắc sản phẩm trong Short (tỷ lệ giá trị/sản phẩm của Short là 100/0).
+-   Không tự viết lời kêu gọi (bình luận, chia sẻ, theo dõi, ghé website) vào file kịch bản. Câu mời ghé funamark.com là CỐ ĐỊNH và do
+    n8n tự thêm ở cuối mọi Short (mục 8B) — kịch bản không viết.
 
 ------------------------------------------------------------------------
 
@@ -148,8 +150,9 @@ của bài, không theo mong muốn "cho đủ dài":
 -   Hai kịch bản mẫu: 163 từ → video 40 giây (Nhanh), 194 từ → 47 giây (Tiêu chuẩn).
 -   Không phải bài nào cũng dài. Không có sàn cứng: lời đọc trọn ý thì ngắn hơn cỡ đã chọn vẫn tốt. Đừng kéo dài cho đủ số.
 -   Mặc định (người vận hành không nói): chọn Nhanh hoặc Tiêu chuẩn. Chỉ dùng Kể chuyện khi ý thật sự cần một câu chuyện nhỏ.
--   **Trần cứng: 2100 ký tự** (khoảng 114 giây đọc). n8n chặn đúng mốc 2100 ký tự và còn chặn nếu giọng đọc dựng ra vượt
-    120 giây. Vượt trần → cắt, không xuất.
+-   **Trần cứng: 2100 ký tự cho TOÀN BỘ lời đọc, đã gồm câu CTA do n8n thêm (114 ký tự, khoảng 6 giây)** → phần bài viết tối đa khoảng
+    **1980 ký tự**. n8n chặn đúng mốc 2100 ký tự (tính cả CTA) và còn chặn nếu giọng đọc dựng ra vượt 120 giây. Thời lượng video
+    thật = thời lượng bài + khoảng 6 giây CTA. Vượt trần → cắt, không xuất.
 -   Vẫn là MỘT ý chính, dù cỡ nào. Khoảng 12–40 đoạn, mỗi đoạn 1–3 câu ngắn.
 
 Nếu bài vượt trần, đừng cắt câu lẻ tẻ — quay lại xem bài có đang chứa hai ý không. Bài quá dài gần như luôn là
@@ -239,6 +242,22 @@ Dòng đầu tiên của file là tiêu đề, viết dạng `# Tiêu đề` (m�
     "Hóa ra…"…), một ý, đứng một mình vẫn hiểu.
 -   Dưới 90 ký tự, không dấu chấm cuối, không hashtag, không emoji, không chữ in hoa toàn câu.
 -   Tiêu đề và câu hỏi cuối là hai thứ khác nhau: tiêu đề nêu ý chính, câu hỏi cuối là điều người nghe mang theo.
+
+------------------------------------------------------------------------
+
+# 8B. CTA CỐ ĐỊNH — N8N TỰ THÊM, KỊCH BẢN KHÔNG VIẾT
+
+Cuối lời đọc của MỌI Short, n8n (workflow `WFAnhMinhC204`, node "Dựng Lời Đọc Short") tự thêm một câu mời ghé website, đọc thành
+tiếng và hiện trong phụ đề, đồng thời nằm trong mô tả YouTube:
+
+> Nếu bạn muốn tìm hiểu thêm về cách chăm sóc sức khỏe và sống an nhiên mỗi ngày, mời bạn ghé thăm funamark.com nhé.
+
+-   **Kịch bản KHÔNG viết câu này và không viết CTA nào khác về website** — để khỏi lặp hai lần và để đổi câu CTA chỉ ở một chỗ
+    (hằng `CTA` trong node đó). Nếu một kịch bản lỡ có sẵn dòng nhắc "funamark" ở ba dòng cuối thì n8n không thêm nữa.
+-   Câu kết của BÀI (mục 8) vẫn là câu cuối của bài; CTA đi sau như một lời mời tách riêng. Vì vậy câu kết phải tự khép được bài, đừng
+    viết kiểu "dẫn" sang CTA.
+-   CTA tính vào độ dài (mục 6.1). Giọng đọc đọc `funamark.com` thành "funamark (đọc theo tiếng Anh) chấm com".
+-   Các lời kêu gọi khác (bình luận, chia sẻ, theo dõi) vẫn CẤM.
 
 ------------------------------------------------------------------------
 

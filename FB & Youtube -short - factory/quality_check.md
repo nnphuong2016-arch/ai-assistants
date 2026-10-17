@@ -35,8 +35,8 @@ Sai một mục là phải sửa ngay, vì máy đọc/đăng nguyên văn.
     không emoji, không ngoặc đơn?
 -   Không chữ số, năm, phần trăm, từ viết tắt, từ tiếng Anh?
 -   Không `...` ba chấm rời; dấu `…` không quá bốn lần?
--   Độ dài đúng cỡ đã chọn (Nhanh / Tiêu chuẩn / Kể chuyện) và **dưới trần 2100 ký tự = tối đa 2 phút** (đã đếm thật)?
--   Không có lời kêu gọi rẻ tiền (bình luận, chia sẻ, theo dõi)?
+-   Độ dài đúng cỡ đã chọn (Nhanh / Tiêu chuẩn / Kể chuyện) và **phần bài dưới 1980 ký tự** (cộng CTA 114 ký tự do n8n thêm = trần 2100 = tối đa 2 phút; đã đếm thật)?
+-   Không có lời kêu gọi rẻ tiền (bình luận, chia sẻ, theo dõi) và KHÔNG tự viết CTA ghé website (n8n tự thêm câu CTA cố định ở cuối)?
 -   Tên file đúng dạng `<chuỗi>.<thứ tự>.<slug-không-dấu>.md`, số hiệu không trùng file nào trong thư mục?
 
 # TẦNG 2 — CHẤM CHẤT LƯỢNG

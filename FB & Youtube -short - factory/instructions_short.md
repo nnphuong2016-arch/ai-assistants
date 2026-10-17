@@ -190,7 +190,8 @@ mọi chữ trong file đều là lời đọc, trừ dòng tiêu đề.
     website trên khung hình.
 -   Khung hình dọc 9:16 (1080 × 1920), một bản video sạch dùng chung cho Reel và YouTube Shorts; một giọng đọc,
     một phong cách hình ảnh, phụ đề rõ, nhạc nền nhẹ.
--   Tiêu đề YouTube = dòng `# …` đầu file + `#Shorts`; mô tả = nguyên lời đọc; thẻ cố định của kênh.
+-   Tiêu đề YouTube = dòng `# …` đầu file + `#Shorts`; mô tả = nguyên lời đọc (kèm CTA); thẻ cố định của kênh.
+-   **CTA cố định ở cuối lời đọc**: "Nếu bạn muốn tìm hiểu thêm về cách chăm sóc sức khỏe và sống an nhiên mỗi ngày, mời bạn ghé thăm funamark.com nhé." — n8n tự thêm vào mọi Short (đọc thành tiếng, hiện phụ đề). Factory KHÔNG viết CTA này.
 -   Đánh tiền tố `SHORTDONE_`/`DONE_` lên tên file để theo dõi tiến độ.
 
 ------------------------------------------------------------------------

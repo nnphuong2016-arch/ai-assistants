@@ -1,6 +1,6 @@
 # CLAUDE.md — SHORT FACTORY (kịch bản Short cho Reel & YouTube Shorts)
 
-Version: 1.1
+Version: 1.2
 Cập nhật: 17/10/2026
 
 > File nhắc việc riêng cho Short Factory, đặt trong chính thư mục này để mỗi lần mở cửa sổ làm việc ở đây,
@@ -12,13 +12,14 @@ Cập nhật: 17/10/2026
 
 ## 0. FACTORY NÀY LÀM RA CÁI GÌ
 
-Mỗi lần chạy ra **một file kịch bản `.md`** — một đoạn lời đọc ngắn (khoảng 45–90 giây) của **Hiền triết Anh Minh**.
+Mỗi lần chạy ra **một file kịch bản `.md`** — một đoạn lời đọc ngắn (thường 40–60 giây, tối đa 2 phút) của **Hiền triết Anh Minh**.
 Phần còn lại do n8n lo (workflow `WFAnhMinhC204`): đọc nguyên file làm lời đọc bằng giọng VieNeu, dựng phụ đề,
 ghép clip thiên nhiên + nhạc nền + logo, rồi workflow `WFAnhMinhC205` đăng YouTube Shorts. Cùng một video đó
 dùng cho Reel.
 
-**Vì file được đọc thành tiếng NGUYÊN VĂN, mọi chữ trong file đều là lời đọc.** Không ghi chú, không tiêu đề
-mục, không hướng dẫn quay, không hashtag trong file. Chi tiết khuôn file: `output_schema.md`.
+**File được đọc thành tiếng NGUYÊN VĂN — trừ đúng một dòng: dòng đầu `# Tiêu đề`** (tiêu đề YouTube của video, lấy từ
+tiêu đề bài viết tương ứng, KHÔNG được đọc). Mọi chữ còn lại trong file đều là lời đọc: không ghi chú, không tiêu đề
+mục khác, không hướng dẫn quay, không hashtag. Chi tiết khuôn file: `output_schema.md`.
 
 ---
 
@@ -39,6 +40,7 @@ mục, không hướng dẫn quay, không hashtag trong file. Chi tiết khuôn 
 11. `topic_map.md` — bản đồ chủ đề theo trải nghiệm sống + bảng quy đổi sang 6 trụ chính thức.
 12. `short_examples.md` — hai kịch bản mẫu hoàn chỉnh + kỹ thuật nhỏ; so sánh, KHÔNG copy.
 13. `output_schema.md` — đóng gói đúng khuôn file.
+14. `custom_gpt_instructions.md` — bản gọn (dưới 8000 ký tự) để DÁN vào ô Instructions của Custom GPT; không dùng để viết bài ở đây.
 
 Ngoài ra, khi cần: `core-brain/dong_hanh_nguoi_benh.md` (nếu bài chạm người bệnh/người già/người chăm sóc —
 `writing_rules.md` mục 4.1 yêu cầu bắt buộc tra file này), `core-brain/seasonal_calendar.md` (bài theo mùa/dịp).
@@ -66,16 +68,18 @@ Nếu một bước chưa đạt, quay lại đúng bước đó theo Retry Logi
 - Dùng chi tiết cụ thể thay vì khái quát ("Chuông báo thức reo đến lần thứ ba" thay vì "Mình rất mệt").
 - Tránh câu mở kiểu AI: "Bạn có biết...", "Hôm nay mình sẽ chia sẻ...", "5 cách để...", "Theo nghiên cứu...".
 - Không CHỮ HOA, không emoji, không dấu chấm than, không hashtag, không chữ số (viết số bằng chữ).
-- **Độ dài:** mục tiêu 150–200 từ (khoảng 45–75 giây, như hai kịch bản mẫu); không có sàn cứng — ngắn hơn được nếu ý đã
-  trọn; trần cứng 1400 ký tự (khoảng 2 phút; n8n dừng ở 1500) — `writing_rules.md` mục 6.1.
+- **Độ dài:** mục tiêu 150–200 từ (40–50 giây, như hai kịch bản mẫu). **Tối đa 2 phút — là mức trần, không phải mục tiêu:**
+  không phải bài nào cũng dài, không có sàn cứng, ngắn hơn được nếu ý đã trọn. Trần cứng 1800 ký tự (n8n chặn đúng mốc
+  này và chặn thêm nếu giọng đọc vượt 120 giây) — `writing_rules.md` mục 6.1.
 - **Short không phải bài SEO hay video dài rút ngắn:** cùng chủ đề nhưng viết lại từ đầu như một câu chuyện để nghe
   (`instructions_short.md` mục 5A).
 - **Nhân xưng** (`writing_rules.md` mục 5.1): "ta/chúng ta" và "bạn" là chính; "mình" **được nghĩ, không được nhớ**.
   Cấm dựng quan hệ gia đình riêng cho nhân vật và hồi ký cá nhân cụ thể.
 - **Móc neo ký ức:** mỗi bài cần ≥1 trong 3 — ẩn dụ thiên nhiên mạnh / câu hỏi khiến người nghe dừng một nhịp /
   điều nhận ra không hiển nhiên (`writing_craft.md` mục 36).
-- **Câu cuối cùng** luôn là MỘT câu hỏi tự vấn in đậm `**…**` — nó vừa được đọc cuối bài, vừa làm **tiêu đề
-  YouTube** của video.
+- **Tiêu đề** = dòng `# …` đầu file: với Short viết từ kho 210 hook thì dùng ĐÚNG câu của dòng đó trong kho (bỏ dấu chấm
+  cuối); chủ đề khác thì viết một câu tiêu đề cùng kiểu. Không được đọc thành tiếng.
+- **Câu cuối cùng** của lời đọc luôn là MỘT câu hỏi tự vấn in đậm `**…**` — để người nghe mang theo (không còn là tiêu đề).
 
 ---
 
@@ -102,8 +106,8 @@ Cùng một nhân vật Hiền triết Anh Minh với Website/YouTube/Chat:
 - Không viết prompt ảnh/clip — Short ghép từ clip thiên nhiên có sẵn, không sinh ảnh.
 - Không trả lời comment → Community Factory.
 - Không tạo workflow n8n, không viết email, không viết quảng cáo.
-- Không tự đặt tiêu đề YouTube, mô tả, thẻ — workflow tự lấy: tiêu đề = câu in đậm cuối bài + `#Shorts`,
-  mô tả = nguyên kịch bản, thẻ cố định.
+- Không tự đặt mô tả, thẻ — workflow tự lấy: tiêu đề = dòng `# …` đầu file + `#Shorts`, mô tả = nguyên lời đọc,
+  thẻ cố định. (Tiêu đề thì Factory viết ở dòng đầu file; file không có dòng `# …` thì n8n dùng tạm câu in đậm cuối bài.)
 
 ---
 

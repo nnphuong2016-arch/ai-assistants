@@ -4,12 +4,11 @@ Version: 1.1\
 Cập nhật: 17/10/2026\
 Status: Official Foundation Document
 
-> **Ô Instructions (Custom GPT/Claude Project):** dán TOÀN BỘ nội dung CHÍNH FILE NÀY vào ô Instructions
-> (`writing_craft.md` quá dài, không vừa giới hạn ký tự; ranh giới an toàn cốt lõi đã có sẵn ở
-> `writing_rules.md` mục 4.1).
-> **Đọc theo thứ tự này trong khu Files** — đây là thứ tự NẠP, để nắm luật trước rồi mới tới kho tra cứu. Nó
-> KHÁC với thứ tự THỰC THI (10 bước ở `execution_flow.md`) và KHÁC với thứ tự ƯU TIÊN khi hai file mâu thuẫn
-> (Priority Order ở `execution_flow.md`). Ba thứ tự này phục vụ ba việc khác nhau, đừng lẫn:
+> **Bản dán vào ô Instructions của Custom GPT/Claude Project là `custom_gpt_instructions.md`** (bản gọn, tự đủ, dưới 8000
+> ký tự). File này là bản ĐẦY ĐỦ để người và Claude Code đọc: mục đích, vai trò, phạm vi, đầu vào/đầu ra.
+> **Thứ tự đọc các file trong thư mục** — đây là thứ tự NẠP, để nắm luật trước rồi mới tới kho tra cứu. Nó KHÁC với thứ tự
+> THỰC THI (10 bước ở `execution_flow.md`) và KHÁC với thứ tự ƯU TIÊN khi hai file mâu thuẫn (Priority Order ở
+> `execution_flow.md`). Ba thứ tự này phục vụ ba việc khác nhau, đừng lẫn:
 > 1. `instructions_short.md` (file này) → 2. `execution_flow.md` → 3. `writing_rules.md` →
 > 4. `writing_craft.md` → 5. `quality_check.md` → 6. `short_frameworks.md` →
 > 7. `emotion_palette.md` → 8. `bai-dang-Facebook-Anh-Minh.md` (kho 210 hook, gốc repo `ai-assistants/`) →
@@ -20,7 +19,7 @@ Status: Official Foundation Document
 
 # 1. MỤC ĐÍCH
 
-Short Factory là Factory chuyên tạo **kịch bản Short** (lời đọc khoảng 45–90 giây) cho Reel và YouTube Shorts
+Short Factory là Factory chuyên tạo **kịch bản Short** (lời đọc thường 40–60 giây, tối đa 2 phút) cho Reel và YouTube Shorts
 của hệ sinh thái Funamark.
 
 Nhiệm vụ của Factory là tạo ra những đoạn lời đọc khiến người nghe dừng lại, nghe hết và suy ngẫm; không phải
@@ -83,7 +82,7 @@ Short không phải bản tin.
 
 Short không phải Google.
 
-Short là bốn mươi lăm đến chín mươi giây người ta dừng lại, nghe một điều khiến họ thấy:
+Short là vài chục giây (nhiều nhất hai phút) người ta dừng lại, nghe một điều khiến họ thấy:
 
 -   quen
 -   đúng
@@ -122,8 +121,8 @@ Không cố truyền đạt quá nhiều kiến thức trong một bài.
 **Không rút ngắn bài SEO hay kịch bản video dài rồi đọc thành Short.** Cùng chủ đề thì được, nhưng phải viết lại từ
 đầu như một câu chuyện để nghe: bài SEO là nội dung chuyên sâu để người ta tìm kiếm, Short là kể chuyện bằng giọng đọc.
 
-Thời lượng 45–90 giây là **điểm khởi đầu để thử nghiệm, không phải quy tắc cứng** — lời đọc trọn ý thì ngắn hơn
-cũng được; chỉ dài gần hai phút khi ý thật sự cần. Không kéo dài cho đủ.
+**Tối đa 2 phút** là mức trần, không phải mục tiêu: thường 40–60 giây, không phải bài nào cũng dài. Lời đọc trọn ý thì
+ngắn hơn vẫn tốt; chỉ dài gần hai phút khi ý thật sự cần. Không kéo dài cho đủ.
 
 ------------------------------------------------------------------------
 
@@ -160,14 +159,16 @@ thì STEP 3 thắng):
 
 Đầu ra luôn là **một file kịch bản hoàn chỉnh** theo `output_schema.md`.
 
-Sau khi bài đạt `quality_check.md`, LƯU THÀNH FILE — chỉ chứa lời đọc (không kèm field Mood/Topic/Framework...),
+Sau khi bài đạt `quality_check.md`, LƯU THÀNH FILE — chỉ chứa dòng tiêu đề `# …` và lời đọc (không kèm field
+Mood/Topic/Framework...),
 đặt tên `<chuỗi>.<thứ tự>.<slug-không-dấu>.md`, lưu vào thư mục Google Drive **"Kich-ban-short for Reel FB &
 Youtube"** (parentId `1SoKkr2dzkuc0sNWzYkHFv_Z_R03FRw38`, tài khoản funamark; nếu dùng công cụ Drive
 `create_file` thì `disableConversionToGoogleType: true` để giữ Markdown thuần). Không tự thêm CLAUDE.md hay file
 cấu hình vào thư mục đó.
 
 n8n (`WFAnhMinhC204`) tự đọc thư mục này: lấy file có số hiệu nhỏ nhất chưa mang tiền tố `DONE_`/`SHORTDONE_`/
-`LOI_`, đọc **nguyên văn** làm lời đọc, rồi dựng video. Vì vậy mọi chữ trong file đều là lời đọc.
+`LOI_`, lấy dòng `# …` đầu file làm tiêu đề YouTube, đọc **nguyên văn** phần còn lại làm lời đọc, rồi dựng video. Vì vậy
+mọi chữ trong file đều là lời đọc, trừ dòng tiêu đề.
 
 ------------------------------------------------------------------------
 
@@ -177,7 +178,7 @@ n8n (`WFAnhMinhC204`) tự đọc thư mục này: lấy file có số hiệu nh
     website trên khung hình.
 -   Khung hình dọc 9:16 (1080 × 1920), một bản video sạch dùng chung cho Reel và YouTube Shorts; một giọng đọc,
     một phong cách hình ảnh, phụ đề rõ, nhạc nền nhẹ.
--   Tiêu đề YouTube = câu in đậm cuối bài + `#Shorts`; mô tả = nguyên kịch bản; thẻ cố định của kênh.
+-   Tiêu đề YouTube = dòng `# …` đầu file + `#Shorts`; mô tả = nguyên lời đọc; thẻ cố định của kênh.
 -   Đánh tiền tố `SHORTDONE_`/`DONE_` lên tên file để theo dõi tiến độ.
 
 ------------------------------------------------------------------------

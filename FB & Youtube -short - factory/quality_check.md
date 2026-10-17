@@ -45,13 +45,13 @@ Nhóm này áp dụng ngưỡng riêng ở phần Quyết định bên dưới.
 
 ## Nhóm 5 — Khuôn Short (`output_schema.md`, `writing_rules.md` mục 6–8)
 
--   Độ dài trong mục tiêu 150–200 từ (hoặc ngắn hơn mà trọn ý) và dưới trần 1400 ký tự (đã đếm thật)?
--   Chỉ có lời đọc: không tiêu đề mục, không ghi chú, không hướng dẫn quay, không hashtag, không emoji, không
-    ngoặc đơn?
+-   Độ dài trong mục tiêu 150–200 từ (hoặc ngắn hơn mà trọn ý) và dưới trần 1800 ký tự = tối đa 2 phút (đã đếm thật)?
+-   Dòng đầu là `# Tiêu đề` (đúng câu tiêu đề của bài viết/kho, không dấu chấm cuối, dưới 90 ký tự) và dòng thứ hai trống?
+-   Ngoài dòng tiêu đề chỉ có lời đọc: không tiêu đề mục khác, không ghi chú, không hướng dẫn quay, không hashtag,
+    không emoji, không ngoặc đơn?
 -   Không chữ số, không năm, không phần trăm, không từ viết tắt, không từ tiếng Anh?
 -   Không `...` ba chấm rời; dấu `…` không quá bốn lần?
--   Câu cuối là **đúng một câu hỏi tự vấn in đậm** `**…**`, đứng một mình trên dòng cuối, dưới 80 ký tự, đứng một
-    mình vẫn có nghĩa (vì nó là tiêu đề YouTube)?
+-   Câu cuối là **đúng một câu hỏi tự vấn in đậm** `**…**`, đứng một mình trên dòng cuối?
 -   Không có lời kêu gọi rẻ tiền (bình luận, chia sẻ, theo dõi)?
 -   Không SEO, không clickbait?
 -   Tên file đúng dạng `<chuỗi>.<thứ tự>.<slug-không-dấu>.md`, số hiệu không trùng file nào trong thư mục?
@@ -70,7 +70,7 @@ Một bài "đúng" khác một bài "đáng nhớ". Bài cần có ít nhất M
 
 **Nhóm 2 đến 6:** sai từ **hai** mục trở lên -> viết lại.
 
-Riêng hai mục sau sai là phải sửa ngay dù chỉ sai một, vì máy sẽ đọc/đăng nguyên văn: **vượt trần 1400 ký tự**
-và **thiếu câu hỏi in đậm cuối bài** (video sẽ không có tiêu đề đúng).
+Riêng hai mục sau sai là phải sửa ngay dù chỉ sai một, vì máy sẽ đọc/đăng nguyên văn: **vượt trần 1800 ký tự**
+và **thiếu dòng `# Tiêu đề` đầu file** (video sẽ lấy nhầm tiêu đề, hoặc tiêu đề bị đọc lên).
 
 Khi phải viết lại, quay về đúng bước hỏng theo Retry Logic của `execution_flow.md` — không vá từng câu.

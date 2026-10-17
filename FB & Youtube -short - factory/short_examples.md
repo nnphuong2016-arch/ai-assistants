@@ -22,11 +22,13 @@ Luôn ưu tiên Writing Craft.
 
 # PHẦN A — HAI KỊCH BẢN HOÀN CHỈNH (đúng khuôn file thật)
 
-Đây là nội dung đúng như file đã nằm trong thư mục Drive (mỗi kịch bản lớn lên từ một dòng của kho 210 hook: dòng 1 và dòng 2 của Series 1): mỗi dòng cách nhau một dòng trống, câu cuối in đậm.
+Đây là nội dung như file nằm trong thư mục Drive, kèm dòng tiêu đề `# …` đầu file theo khuôn mới (hai file Drive thật chưa có dòng này; n8n tạm lấy câu in đậm cuối bài làm tiêu đề cho file cũ) (mỗi kịch bản lớn lên từ một dòng của kho 210 hook: dòng 1 và dòng 2 của Series 1): mỗi dòng cách nhau một dòng trống, câu cuối in đậm.
 163 từ và 194 từ; 12–18 đoạn; chỉ có lời đọc.
 
 ## Kịch bản 1 — `1.1.con-met-khong-den-tu-thieu-ngu-ma-den-tu-cach-minh-song.md` (Mood: Đồng cảm · Hook Source: S1-1)
 
+> # Có những cơn mệt không đến từ thiếu ngủ mà đến từ cách mình sống
+>
 > Có những cơn mệt…
 >
 > Ngủ một đêm, vẫn chưa thấy khỏe.
@@ -61,10 +63,12 @@ Luôn ưu tiên Writing Craft.
 - Một ý duy nhất: người hay lo cho người khác cũng cần được nghỉ
 - Chuyển ý bằng "Nhưng bạn biết không…" — một nhịp ngập ngừng rồi mới nói điều chính
 - Ba cụm "Một bữa cơm… Một cuộc trò chuyện… Một buổi tối…" — liệt kê bằng hình ảnh, không bằng lời khuyên
-- Câu hỏi cuối bám đúng ý chính, đứng một mình vẫn làm tiêu đề được
+- Dòng `#` đầu file là tiêu đề (đúng câu S1-1 của kho), không được đọc; câu hỏi cuối bám đúng ý chính để người nghe mang theo
 
 ## Kịch bản 2 — `1.2.thay-doi-cua-co-the-dien-ra-rat-lau-truoc-khi-ta-nhan-ra.md` (Mood: Trăn trở · Hook Source: S1-2)
 
+> # Có những thay đổi của cơ thể diễn ra rất lâu trước khi ta nhận ra
+>
 > Ngày trước, thức khuya một chút…
 >
 > Sáng hôm sau, ta vẫn có thể bắt đầu một ngày mới.
@@ -235,7 +239,7 @@ Nên
 
 > **Hôm nay, bạn đã cho mình được nghỉ ngơi thật sự chưa?**
 
-Điểm học: câu hỏi tự vấn, gắn với ý chính, đứng một mình vẫn làm được tiêu đề.
+Điểm học: câu hỏi tự vấn, gắn với ý chính, không phải lời kêu gọi.
 
 ---
 

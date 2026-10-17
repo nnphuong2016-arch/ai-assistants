@@ -136,13 +136,13 @@ Ranh giới ngắn gọn: **"mình" được nghĩ, không được nhớ.**
 
 ## 6.1. ĐỘ DÀI (đo bằng lời đọc, không đo bằng bài viết)
 
--   **Mục tiêu: 150–200 từ** (khoảng 700–950 ký tự, khoảng 45–75 giây đọc) — hai kịch bản mẫu dài 163 và 194 từ.
--   **Không có sàn cứng.** Thời lượng chỉ là điểm khởi đầu để thử nghiệm: lời đọc đã trọn ý thì ngắn hơn vẫn tốt;
-    đừng kéo dài cho đủ số. Dưới khoảng 100 từ thì video rất ngắn — chỉ nên làm khi ý thật sự gọn.
--   **Dài hơn mục tiêu** (tới khoảng 250 từ) chỉ khi ý cần thêm một lớp, và vẫn là MỘT ý chính.
--   **Trần cứng: 1400 ký tự** (khoảng 2 phút). Vượt → cắt, không xuất. n8n có chốt chặn riêng ở 1500 ký tự; không
-    bao giờ để bài chạm tới mốc đó. (Muốn làm Short gần 3 phút thì phải nâng chốt chặn ở workflow trước — hiện
-    chưa làm.)
+-   **Mục tiêu: 150–200 từ** (khoảng 700–950 ký tự, 40–50 giây đọc) — hai kịch bản mẫu dài 163 và 194 từ, dựng ra
+    video 40 và 47 giây. Tốc độ đọc đo thật: khoảng 18 ký tự (4 từ) mỗi giây.
+-   **Tối đa 2 phút — là mức trần, không phải mục tiêu.** Không phải bài nào cũng dài: có bài 40 giây, có bài 90 giây,
+    miễn ý đã trọn. Không có sàn cứng; đừng kéo dài cho đủ số.
+-   **Dài hơn mục tiêu** chỉ khi ý cần thêm một lớp, và vẫn là MỘT ý chính.
+-   **Trần cứng: 1800 ký tự** (khoảng 100 giây đọc, chừa dư địa cho nhịp ngập ngừng). n8n chặn đúng mốc 1800 ký tự
+    và còn chặn nếu giọng đọc dựng ra vượt 120 giây. Vượt trần → cắt, không xuất.
 -   Khoảng 12–18 đoạn, mỗi đoạn 1–2 câu ngắn.
 
 Nếu bài vượt trần, đừng cắt câu lẻ tẻ — quay lại xem bài có đang chứa hai ý không. Bài quá dài gần như luôn là
@@ -174,20 +174,18 @@ Không dùng:
 -   Từ tiếng Anh, chữ viết tắt.
 -   Dấu ba chấm: chỉ dùng **một ký tự `…`** làm chỗ ngập ngừng, tối đa **bốn lần mỗi bài**, thường ở cuối dòng
     (như hai kịch bản mẫu); không dùng `...` ba dấu chấm rời.
--   Định dạng Markdown nào khác ngoài câu in đậm cuối bài (mục 8): không tiêu đề `#`, không gạch đầu dòng, không
-    chữ nghiêng, không dòng kẻ.
+-   Định dạng Markdown nào khác ngoài **dòng tiêu đề `# …` đầu file** (mục 8A, không được đọc) và câu in đậm cuối bài
+    (mục 8): không tiêu đề mục khác, không gạch đầu dòng, không chữ nghiêng, không dòng kẻ.
 
 ------------------------------------------------------------------------
 
 # 8. CÂU CUỐI — CÂU HỎI TỰ VẤN IN ĐẬM
 
-Câu cuối cùng của bài là **một câu hỏi**, đặt trong cặp dấu `**…**`, đứng một mình trên dòng cuối.
+Câu cuối cùng của bài là **một câu hỏi**, đặt trong cặp dấu `**…**`, đứng một mình trên dòng cuối. Nó được đọc thành
+tiếng như phần còn lại, để người nghe mang theo.
 
-Nó đồng thời là **tiêu đề YouTube** của video (n8n lấy đúng câu in đậm này, cắt tối đa 90 ký tự, thêm `#Shorts`).
-Vì vậy câu hỏi phải:
+Câu hỏi phải:
 
--   Đứng một mình vẫn có nghĩa (không cần đọc phần trước mới hiểu).
--   Dài **dưới 80 ký tự**.
 -   Là câu hỏi người nghe tự hỏi chính mình, gắn với ý chính của bài.
 -   Không phải lời kêu gọi tương tác.
 
@@ -202,6 +200,21 @@ Ví dụ đúng (từ hai kịch bản mẫu):
 
 -   **Hôm nay, bạn đã cho mình được nghỉ ngơi thật sự chưa?**
 -   **Bạn có nhận ra điều gì ở cơ thể mình đã khác so với vài năm trước không?**
+
+------------------------------------------------------------------------
+
+# 8A. DÒNG TIÊU ĐỀ ĐẦU FILE — KHÔNG ĐỌC THÀNH TIẾNG
+
+Dòng đầu tiên của file là tiêu đề, viết dạng `# Tiêu đề` (một dấu thăng, một dấu cách). n8n lấy đúng dòng này làm
+**tiêu đề YouTube** (thêm `#Shorts`) và **bỏ nó khỏi lời đọc** — giọng đọc sẽ không đọc nó. Dòng thứ hai để trống.
+
+-   Short viết từ kho 210 hook: dùng ĐÚNG câu của dòng đó trong kho làm tiêu đề, bỏ dấu chấm cuối. VD dòng `S1-1`
+    "Có những cơn mệt không đến từ thiếu ngủ mà đến từ cách mình sống." → `# Có những cơn mệt không đến từ thiếu ngủ mà`
+    `đến từ cách mình sống`.
+-   Chủ đề khác (người vận hành đưa, tự sinh): viết một câu tiêu đề cùng kiểu với kho (mở bằng "Có những…", "Đôi khi…",
+    "Hóa ra…"…), một ý, đứng một mình vẫn hiểu.
+-   Dưới 90 ký tự, không dấu chấm cuối, không hashtag, không emoji, không chữ in hoa toàn câu.
+-   Tiêu đề và câu hỏi cuối là hai thứ khác nhau: tiêu đề nêu ý chính, câu hỏi cuối là điều người nghe mang theo.
 
 ------------------------------------------------------------------------
 

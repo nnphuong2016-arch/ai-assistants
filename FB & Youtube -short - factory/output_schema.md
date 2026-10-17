@@ -32,22 +32,26 @@ tiêu đề/mô tả tự động từ file nên không cần field riêng.
   chấm, dài vừa phải (khoảng 40–70 ký tự). Phải khớp mẫu `^\d+\.\d+\..+\.md$` mà n8n dùng để nhận file.
 - Ví dụ: `1.2.thay-doi-cua-co-the-dien-ra-rat-lau-truoc-khi-ta-nhan-ra.md`
 
-**Body** — toàn văn kịch bản = toàn bộ lời đọc. Khuôn bắt buộc:
-- Mỗi đoạn 1–2 câu ngắn, hai đoạn cách nhau **một dòng trống**.
-- Không tiêu đề mục, không gạch đầu dòng, không chữ nghiêng, không ghi chú, không hashtag, không emoji.
-- **Dòng cuối cùng** là câu hỏi tự vấn in đậm `**…**` (dưới 80 ký tự) — n8n dùng nó làm tiêu đề YouTube.
-- Độ dài: mục tiêu 150–200 từ, trần 1400 ký tự (`writing_rules.md` mục 6.1).
+**Title** — tiêu đề YouTube của video (cũng là dòng đầu của file). Short viết từ kho 210 hook: đúng câu của dòng đó
+trong kho, bỏ dấu chấm cuối. Chủ đề khác: một câu tiêu đề cùng kiểu, dưới 90 ký tự (`writing_rules.md` mục 8A).
+
+**Body** — toàn văn file kịch bản = dòng tiêu đề + lời đọc. Khuôn bắt buộc:
+- **Dòng 1:** `# <Title>` — KHÔNG được đọc thành tiếng (n8n lấy làm tiêu đề YouTube và bỏ khỏi lời đọc). Dòng 2 để trống.
+- Từ dòng 3: lời đọc, mỗi đoạn 1–2 câu ngắn, hai đoạn cách nhau **một dòng trống**.
+- Ngoài dòng tiêu đề: không tiêu đề mục khác, không gạch đầu dòng, không chữ nghiêng, không ghi chú, không hashtag, không emoji.
+- **Dòng cuối cùng** là câu hỏi tự vấn in đậm `**…**` — được đọc thành tiếng, để người nghe mang theo (không còn là tiêu đề).
+- Độ dài: mục tiêu 150–200 từ (40–50 giây); tối đa 2 phút = trần 1800 ký tự, không phải bài nào cũng dài (`writing_rules.md` mục 6.1).
 
 ------------------------------------------------------------------------
 
 ## Interactive Mode (Custom GPT / Claude Project / Claude Code — người vận hành trực tiếp)
 
 Trong cuộc trò chuyện: xuất theo thứ tự — `File Name`, `Body`, rồi các field nội bộ (Mood, Topic, Pillar,
-Framework, Hook Source, Reel Caption) ghi gọn một dòng mỗi field (Reel Caption đặt cuối cùng). Có thể kèm giải thích ngắn nếu người dùng chủ động hỏi lý do
+Framework, Hook Source, Title, Reel Caption) ghi gọn một dòng mỗi field (Reel Caption đặt cuối cùng). Có thể kèm giải thích ngắn nếu người dùng chủ động hỏi lý do
 chọn Framework/Mood — không tự thêm giải thích khi không được hỏi.
 
-**Khi lưu file `.md` vào Drive (xem CLAUDE.md mục 7): CHỈ chứa nội dung `Body`** — không kèm
-Mood/Topic/Pillar/Framework/Hook Source/Reel Caption/File Name vào file. Các field đó chỉ để trao đổi trong lúc soạn, không phải
+**Khi lưu file `.md` vào Drive (xem CLAUDE.md mục 7): CHỈ chứa nội dung `Body` (dòng tiêu đề + lời đọc)** — không kèm
+Mood/Topic/Pillar/Framework/Hook Source/Reel Caption/File Name vào file (riêng `Title` thì CÓ, nằm ở dòng 1 dạng `# …`). Các field đó chỉ để trao đổi trong lúc soạn, không phải
 lời đọc (nếu lọt vào file, giọng đọc sẽ đọc luôn).
 
 ------------------------------------------------------------------------
@@ -67,6 +71,7 @@ Chỉ trả đúng Object:
   "pillar": "...",
   "framework": "...",
   "hook_source": "...",
+  "title": "...",
   "reel_caption": "...",
   "file_name": "...",
   "body": "..."

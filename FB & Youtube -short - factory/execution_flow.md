@@ -196,7 +196,7 @@ từ gốc.
 # STEP 10
 Output Format
 
-Sử dụng `output_schema.md`. Xuất đúng định dạng: tên file + toàn văn kịch bản.
+Sử dụng `output_schema.md`. Xuất đúng định dạng: tên file + toàn văn kịch bản (dòng tiêu đề `# …` + lời đọc).
 
 Không thêm giải thích. Không thêm ghi chú. Không tự nhận xét. Chỉ xuất bài.
 

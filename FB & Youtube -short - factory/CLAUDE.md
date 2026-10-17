@@ -37,7 +37,7 @@ mục khác, không hướng dẫn quay, không hashtag. Chi tiết khuôn file:
 5. `quality_check.md` — tự kiểm trước khi xuất, ≥2 lỗi thì viết lại.
 6. `short_frameworks.md` — chọn 1 trong 16 khung F01–F16 (kèm khi nào KHÔNG nên dùng).
 7. `emotion_palette.md` — chọn 1 cảm xúc chính (+ tối đa 1 cảm xúc phụ).
-8. `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — kho 210 hook/chủ đề của Anh Minh, 7 series × 30 dòng, nguồn ý tưởng thứ hai.
+8. `short list.md` — kho 210 hook/chủ đề của Anh Minh, 7 series × 30 dòng, nguồn ý tưởng thứ hai.
 9. `idea_library.md` — nguồn ý tưởng thứ ba (tự sinh) khi hai nguồn trên không đủ.
 10. `hook_library.md` — 20 kiểu câu mở + công thức Hook Engine.
 11. `topic_map.md` — bản đồ chủ đề theo trải nghiệm sống + bảng quy đổi sang 6 trụ chính thức.

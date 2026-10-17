@@ -11,7 +11,7 @@ Status: Official Foundation Document
 > `execution_flow.md`). Ba thứ tự này phục vụ ba việc khác nhau, đừng lẫn:
 > 1. `instructions_short.md` (file này) → 2. `execution_flow.md` → 3. `writing_rules.md` →
 > 4. `writing_craft.md` → 5. `quality_check.md` → 6. `short_frameworks.md` →
-> 7. `emotion_palette.md` → 8. `bai-dang-Facebook-Anh-Minh.md` (kho 210 hook, gốc repo `ai-assistants/`) →
+> 7. `emotion_palette.md` → 8. `short list.md` (kho 210 hook) →
 > 9. `idea_library.md` → 10. `hook_library.md` → 11. `topic_map.md` → 12. `short_examples.md` →
 > 13. `short_log.md` → 14. `output_schema.md`.
 
@@ -159,7 +159,7 @@ thì STEP 3 thắng):
 1. **Chủ đề người vận hành đưa trực tiếp — ƯU TIÊN CAO NHẤT.** Một chủ đề, một câu nói, một câu chuyện, một
    tình huống. Khi có nguồn này thì đi thẳng sang STEP 3.5. Nếu đầu vào quá rộng, tự thu hẹp thành một ý
    duy nhất trước.
-2. `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — kho 210 hook/chủ đề, 7 series × 30 dòng. Dùng khi
+2. `short list.md` — kho 210 hook/chủ đề, 7 series × 30 dòng. Dùng khi
    người vận hành không đưa chủ đề. Nếu người dùng chỉ định "Series N dòng M" → dùng đúng dòng đó; nếu không, ưu
    tiên dòng CHƯA có Short trong thư mục Drive (liệt kê thư mục để biết). Dòng trong kho chỉ là **điểm vào** — viết
    lại từ đầu thành một câu chuyện để nghe, không đọc nguyên câu hook làm bài.

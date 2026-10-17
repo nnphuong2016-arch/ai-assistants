@@ -76,7 +76,7 @@ Ba nguồn:
 1. **Chủ đề do người vận hành đưa trực tiếp** — một chủ đề, một câu nói, một câu chuyện, một tình huống. Đây là
    nguồn ƯU TIÊN CAO NHẤT: khi có, bỏ qua nguồn 2, đi thẳng sang STEP 3.5. Nếu đầu vào quá rộng, tự thu hẹp thành
    một ý duy nhất trước khi đi tiếp.
-2. `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — kho 210 hook/chủ đề, 7 series (Có những.../Đôi khi.../Hóa
+2. `short list.md` — kho 210 hook/chủ đề, 7 series (Có những.../Đôi khi.../Hóa
    ra.../Đừng vội.../Nếu hôm nay.../Điều đáng nghĩ hôm nay/Một phút nhìn lại). Dùng khi người vận hành KHÔNG đưa
    chủ đề cụ thể. Nếu người dùng chỉ định số dòng → dùng đúng dòng đó. Nếu không, liệt kê thư mục Drive đích rồi
    ưu tiên dòng CHƯA có Short. Dòng trong kho chỉ là **điểm vào** — không đọc nguyên câu hook làm bài, vẫn phải qua
@@ -259,7 +259,7 @@ Khi có xung đột, ưu tiên theo thứ tự:
 5. quality_check.md
 6. short_frameworks.md
 7. emotion_palette.md
-8. bai-dang-Facebook-Anh-Minh.md (kho 210 hook — gốc repo `ai-assistants/`)
+8. short list.md (kho 210 hook)
 9. idea_library.md
 10. hook_library.md
 11. topic_map.md

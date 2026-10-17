@@ -1,6 +1,6 @@
 # SHORT EXAMPLES
 
-Version: 3.1
+Version: 4.0
 Cập nhật: 17/10/2026
 
 Purpose:
@@ -113,6 +113,259 @@ vào Phần C để có bài ngắn hơn, bài kể chuyện, bài không kết 
 - Ba câu hỏi liên tiếp ở giữa bài giữ nhịp, rồi mới tới câu hỏi in đậm cuối bài
 - Không có bài học dọa nạt — chỉ nhắc ta nhìn lại bản thân
 - Dùng "ta" và "bạn" xuyên suốt; "mình" chỉ xuất hiện trong câu hỏi tự vấn
+
+---
+
+# PHẦN A2 — CÁC MẪU ĐA DẠNG ĐỂ HỌC NHỊP, CỠ VÀ KIỂU KẾT
+
+Hai kịch bản ở Phần A cùng một nhịp (mở bằng cảm xúc → nhận ra → lời nhắn → câu hỏi). Nếu chỉ học hai bài đó, AI sẽ viết mọi Short
+giống nhau. Các mẫu dưới đây khác nhau về **cỡ**, **kiểu mở**, **khung kể** và **kiểu kết**. Cùng khuôn file, cùng ranh giới thương
+hiệu, nhưng không cùng bộ khung câu chữ.
+
+> **Trạng thái:** các mẫu 3–7 do Claude soạn để dạy nhịp và cỡ; chưa phải kịch bản đã duyệt và KHÔNG dùng để đăng. Chủ kênh duyệt, sửa
+> hoặc thay bằng bài thật đã đăng tốt (thêm vào đây khi có số liệu ở `short_log.md`). Số từ/ký tự/giây là số đã đếm bằng máy.
+
+## Mẫu 3 — cỡ Nhanh (khoảng 30 giây) · F11 Khoảnh khắc nhỏ → Nhận ra · Mood Bình yên · mở: Hình ảnh · kết: Hình ảnh khép lại
+
+> # Hóa ra mưa vẫn rơi như mọi khi, chỉ là hôm nay ta mới nghe
+>
+> Mưa bắt đầu rơi trên mái tôn.
+>
+> Bạn đang rửa dở mấy cái chén, và bạn khựng lại.
+>
+> Tiếng mưa lộp độp, đều đều, như đã rơi từ rất lâu rồi.
+>
+> Lạ thật. Mái tôn ấy vẫn ở đó nhiều năm. Mưa nào cũng vậy.
+>
+> Vậy mà hôm nay, bạn mới nghe thấy.
+>
+> Hóa ra, mưa không hề to hơn mọi khi.
+>
+> Chỉ là trong đầu ta đã bớt ồn đi một chút.
+>
+> Bao nhiêu ngày, ta nghe mà không nghe. Tai thì ở đó, còn lòng thì đang ở những chuyện khác.
+>
+> Ta tắt vòi nước. Lau tay vào vạt áo. Đứng nghe cho hết một cơn mưa.
+>
+> Không nghĩ gì cả.
+>
+> Ngoài hiên, nước chảy thành một sợi mảnh, sáng lên dưới ánh đèn bếp.
+
+Đã đếm: 127 từ, 552 ký tự, khoảng 30 giây.
+
+Nhịp: Mở bằng hình ảnh (3 giây) → khựng lại (nhịp 1) → "Hóa ra" đổi góc nhìn (nhịp 2) → điều nhận ra về đầu óc ồn (nhịp 3) → hành động nhỏ → hình ảnh khép lại.
+
+Điểm học:
+
+- Câu mở sáu từ, nghe một lần là thấy; tiêu đề nêu ý, câu mở nêu hình ảnh — hai thứ khác nhau.
+- Không lời khuyên, không bài học: chỉ một chuyển biến nhỏ (nghe mà không nghe → nghe thấy).
+- Cảnh dùng "bạn" (cảnh chung của mọi người), không dựng hồi ký cho nhân vật.
+- Kết bằng hình ảnh, không dùng câu hỏi — đổi kiểu kết so với hai kịch bản mẫu đầu.
+
+---
+
+## Mẫu 4 — cỡ Tiêu chuẩn (khoảng 52 giây) · F12 Hiểu lầm quen thuộc, nhìn lại nhẹ nhàng · Mood Hoài niệm · mở: Gia đình (ngôi ba) · kết: Lời nhắn nhẹ
+
+> # Có những chuyện cũ được kể đi kể lại, vì nó vẫn còn ấm
+>
+> Có người mẹ, bữa cơm nào cũng kể lại một chuyện.
+>
+> Chuyện ngày xưa, nhà nghèo, mùa đông cả nhà chia nhau một chiếc chăn.
+>
+> Người con ngồi nghe, gắp thức ăn, gật đầu.
+>
+> Lần thứ mười cũng gật. Lần thứ hai mươi cũng gật.
+>
+> Nhưng trong lòng, có lúc người con thầm nghĩ, chuyện ấy mẹ kể rồi mà.
+>
+> Ta thường nghĩ, người lớn tuổi kể đi kể lại chỉ vì quen miệng.
+>
+> Nhưng có khi không phải vậy.
+>
+> Mỗi lần kể, giọng bà chậm lại ở đúng một chỗ. Mắt bà nhìn xa, như đang nhìn qua ô cửa sổ của ngày xưa.
+>
+> Có những chuyện, mỗi lần kể là một lần được ngồi lại trong căn nhà cũ.
+>
+> Được thấy lại những người đã cùng mình chia chiếc chăn ấy.
+>
+> Được ấm lại một chút, giữa bữa cơm của hôm nay.
+>
+> Chuyện kể một lần thì đã qua. Nhưng kể thêm lần nữa, nó vẫn còn đó.
+>
+> Người nghe không cần nhớ từng chi tiết.
+>
+> Chỉ cần ngồi lại, gắp cho nhau một miếng cá, và để chuyện cũ đi qua bữa cơm thêm một lần.
+>
+> Có lẽ lần tới, nếu có ai kể lại một chuyện cũ…
+>
+> Ta cứ ngồi xuống, và nghe như thể đây là lần đầu.
+
+Đã đếm: 213 từ, 951 ký tự, khoảng 52 giây.
+
+Nhịp: Mở bằng một người mẹ và một chuyện (nhịp 1) → lặp lại, người con gật (nhịp 2) → "Ta thường nghĩ… Nhưng có khi không phải vậy" (chuyển biến chính, khoảng 45%) → chi tiết giọng chậm lại, mắt nhìn xa (nhịp 3) → điều nhận ra → lời nhắn nhẹ.
+
+Điểm học:
+
+- Một hiểu lầm quen thuộc ("kể đi kể lại chỉ vì quen miệng") được nhìn lại nhẹ nhàng, không phán xét ai.
+- Chi tiết cụ thể (chiếc chăn chung, miếng cá, giọng chậm lại) thay cho câu triết lý.
+- Nhân vật là "người mẹ", "người con" vô danh — không phải người thân của Anh Minh.
+- Kết bằng lời nhắn nhẹ, không "hãy…", không ra lệnh.
+
+---
+
+## Mẫu 5 — cỡ Kể chuyện (khoảng 92 giây) · F07 Câu chuyện ngắn + F15 Chi tiết lặp lại · Mood Biết ơn · mở: Câu chuyện ngắn · kết: Khoảng lặng
+
+> # Có những đôi dép luôn được xếp sẵn trước cửa
+>
+> Nhà ấy có một thói quen nhỏ.
+>
+> Tối nào, người cha cũng xếp sẵn đôi dép của con trước cửa. Mũi dép quay ra ngoài, để con vừa về là xỏ vào được liền.
+>
+> Người cha ít nói. Hỏi con được vài câu, câu nào cũng ngắn. Dạo này đi làm có xa không. Ăn uống có đủ không. Rồi thôi.
+>
+> Người con đi làm xa, mỗi tuần mới về nhà một lần.
+>
+> Lần nào về, con cũng thấy đôi dép đã nằm đó. Dép nhựa màu xanh, quai đã sờn. Ngay ngắn, như đang đợi.
+>
+> Có bà hàng xóm thấy, hỏi, con trai lớn rồi, ông còn xếp dép làm gì. Người cha chỉ cười, bảo, tiện tay thôi.
+>
+> Ban đầu, con thấy buồn cười. Lớn thế này rồi, còn ai xếp dép cho.
+>
+> Có lần con nói, bố ơi, con tự xếp được mà.
+>
+> Người cha chỉ ừ một tiếng. Sáng hôm sau, đôi dép vẫn nằm ở chỗ cũ, mũi dép vẫn quay ra ngoài.
+>
+> Rồi con thôi không nói nữa.
+>
+> Mùa mưa năm ấy, có một tối con về rất muộn. Đèn ngoài hiên đã tắt. Trong buồng, có tiếng người cha trở mình, rồi lại im. Con rón rén mở cửa.
+>
+> Đôi dép vẫn ở đó. Mũi dép quay ra ngoài.
+>
+> Trên quai dép có một lớp bụi mỏng. Vì cả tuần nay, chẳng có chân nào xỏ vào.
+>
+> Vậy mà tối nào, người cha cũng vẫn xếp.
+>
+> Con đứng nhìn đôi dép rất lâu. Trong buồng, tiếng trở mình ấy đã im từ lúc nào. Con biết, ông chưa ngủ.
+>
+> Hóa ra, người cha không xếp dép vì sợ con vất vả.
+>
+> Ông xếp dép, vì đó là cách ông nói điều mà ông không biết nói thành lời.
+>
+> Rằng nhà vẫn ở đây. Rằng lúc nào con về, cũng có một chỗ đợi con.
+>
+> Con xỏ chân vào đôi dép. Dép hơi cũ, mà ấm.
+>
+> Sáng hôm sau, con dậy sớm hơn mọi khi.
+>
+> Con ra cửa, xếp đôi dép của bố, ngay ngắn, mũi dép quay ra ngoài.
+>
+> Người cha thức dậy, nhìn thấy.
+>
+> Ông không nói gì. Chỉ đứng ở cửa một lúc, lâu hơn thường lệ.
+>
+> Bữa sáng, ông gắp cho con miếng trứng to hơn mọi khi.
+>
+> Cũng không nói gì.
+>
+> Ngoài hiên, nắng vừa lên.
+
+Đã đếm: 387 từ, 1686 ký tự, khoảng 92 giây.
+
+Nhịp: Hồi 1 thiết lập (thói quen, người cha ít nói, đôi dép) → hồi 2 diễn biến (con nói "con tự xếp được", rồi đêm về muộn thấy lớp bụi) → hồi 3 nhận ra rồi dừng (con xếp dép cho bố, người cha đứng ở cửa). Đôi dép quay lại bốn lần, mỗi lần mang thêm một nghĩa.
+
+Điểm học:
+
+- Một chi tiết lặp lại (đôi dép, mũi dép quay ra ngoài) mang cả câu chuyện — không cần câu triết lý.
+- Có chuyển biến thật: từ "buồn cười" sang hiểu điều người cha không nói được.
+- Kết mở bằng một khoảng lặng; không lời khuyên, không bài học, không câu hỏi.
+- Dài hơn các mẫu khác nhưng vẫn MỘT ý; mỗi hồi có một nhịp mới nên người nghe không chùng.
+
+---
+
+## Mẫu 6 — cỡ Nhanh (khoảng 34 giây) · F09 Quan sát hôm nay (ẩn dụ thiên nhiên) · Mood Chấp nhận · mở: Hình ảnh · kết: Một điều nhận ra
+
+> # Dòng nước không cãi nhau với tảng đá
+>
+> Giữa con suối nhỏ, có một tảng đá lớn.
+>
+> Nước chảy tới, không đẩy, không dừng.
+>
+> Chỉ lách qua một bên, rồi đi tiếp.
+>
+> Nước trườn qua mép đá, kêu róc rách rất khẽ.
+>
+> Đứng xem một lúc, ta sẽ nhận ra, nước không hề coi tảng đá là kẻ cản đường.
+>
+> Với nước, đó chỉ là một chỗ phải đi vòng.
+>
+> Còn ta, mỗi khi chuyện chẳng như ý, lại thấy như cả ngày bị chặn lại.
+>
+> Cố đẩy. Cố cãi. Cố hỏi xem vì sao chuyện này lại đến với mình.
+>
+> Mà tảng đá vẫn nằm đó, chẳng nhúc nhích. Có những tảng đá ta không nhấc nổi, và cũng chẳng cần nhấc.
+>
+> Nước thì đã đi qua từ lúc nào, chẳng ai hay.
+>
+> Đi vòng một đoạn, nước vẫn là nước. Vẫn mát, vẫn trong, vẫn chảy ra biển.
+
+Đã đếm: 142 từ, 627 ký tự, khoảng 34 giây.
+
+Nhịp: Mở bằng hình ảnh (nhịp 1) → nước đi vòng (nhịp 2) → "Còn ta…" chuyển sang đời sống (chuyển biến chính, khoảng 55%) → tảng đá vẫn nằm đó (nhịp 3) → điều nhận ra bằng hình ảnh.
+
+Điểm học:
+
+- Một ẩn dụ thiên nhiên duy nhất, đặt đúng chỗ, không giải thích nghĩa của nó.
+- Thiên về suy ngẫm: không có lời khuyên "hãy…", chỉ một hình ảnh để người nghe tự nối.
+- Kết bằng một điều nhận ra ngắn (không phải câu hỏi) — kiểu kết thứ hai trong thư viện kết.
+
+---
+
+## Mẫu 7 — cỡ Tiêu chuẩn (khoảng 53 giây) · F13 Hai thế hệ, một việc (đồng hành — người chăm sóc) · Mood Đồng cảm · mở: Gia đình (ngôi ba) · kết: Câu hỏi
+
+> # Người ngồi cạnh cũng cần được nghỉ một chút
+>
+> Có một người con, những ngày này ngồi cạnh mẹ gần như cả ngày.
+>
+> Việc thuốc men, đã có bác sĩ hướng dẫn. Việc của con chỉ là ở bên.
+>
+> Nghe thì nhẹ. Nhưng ngồi mãi một chỗ, lắng nghe từng tiếng thở, từng lần mẹ trở mình, đêm nào con cũng ngủ chập chờn.
+>
+> Có hôm, con đứng ở bếp, tay cầm cốc nước mà quên cả uống.
+>
+> Người ta hỏi thăm mẹ. Hỏi rất nhiều.
+>
+> Ít ai hỏi con, dạo này con ngủ có được không.
+>
+> Mà con cũng chẳng muốn nói. Nói ra, thấy như mình đang than.
+>
+> Một chiều, người hàng xóm sang, mang theo nồi cháo, và nói đúng một câu.
+>
+> Chị ra hiên ngồi một lát đi. Để em ngồi với bác.
+>
+> Con ngại. Rồi con ra hiên.
+>
+> Ngoài hiên có gió. Con ngồi, hai tay đặt lên đầu gối, thở ra một hơi dài mà bao lâu nay chưa kịp thở.
+>
+> Hóa ra, người chăm sóc cũng cần được chăm sóc.
+>
+> Không phải vì yếu đuối.
+>
+> Mà vì muốn ở bên lâu hơn, ta cần giữ cho mình còn đủ sức.
+>
+> Nếu quanh bạn có ai đang ngồi cạnh một người thân, có lẽ họ đang chờ một câu hỏi thật nhỏ.
+>
+> **Dạo này, bạn có được nghỉ một chút nào không?**
+
+Đã đếm: 219 từ, 966 ký tự, khoảng 53 giây.
+
+Nhịp: Mở bằng người con ngồi cạnh mẹ (nhịp 1) → chi tiết đêm ngủ chập chờn, cốc nước quên uống (nhịp 2) → người hàng xóm và một câu nói (chuyển biến) → "Hóa ra…" điều nhận ra → hướng ra người nghe → câu hỏi.
+
+Điểm học:
+
+- Đúng ranh giới "Đồng hành": không nói bệnh gì, không hứa khỏi, không đụng diễn tiến; đặt song song bác sĩ ("việc thuốc men đã có bác sĩ hướng dẫn").
+- Hướng về người chăm sóc (vùng an toàn thật) bằng chi tiết đời thường, không bi kịch hóa, không khai thác nước mắt.
+- Nhân vật vô danh ("người con", "người hàng xóm"); không phải người thân của Anh Minh.
+- Câu kết là câu hỏi, nhưng là câu hỏi nhỏ người nghe có thể hỏi một người khác — không phải lời kêu gọi.
 
 ---
 
@@ -246,13 +499,15 @@ Nên
 
 ---
 
-# PHẦN C — MẪU TRƯỚC / SAU (sửa câu sáo rỗng thành câu có hình ảnh và chuyển biến)
+# PHẦN C — MẪU TRƯỚC / SAU (kèm lý do sửa)
 
-Trước (chung chung)
+## C1. Câu chung chung → chi tiết cụ thể + chuyển biến
+
+Trước
 
 > Cuộc sống đôi khi rất mệt mỏi. Ta nên dành thời gian nghỉ ngơi.
 
-Sau (chi tiết cụ thể + chuyển biến)
+Sau
 
 > Tối nay, ta ngồi trước mâm cơm đã nguội.
 >
@@ -262,20 +517,50 @@ Sau (chi tiết cụ thể + chuyển biến)
 >
 > Hóa ra… cơ thể chỉ đang xin thêm một chút nghỉ ngơi.
 
-Điểm học: một thứ nhìn thấy được, một chuyển biến nhỏ (lười → xin nghỉ), không lời khuyên, kết bằng khoảng lặng.
+Vì sao sửa:
 
-Trước (hook chung chung)
+- "Mệt mỏi", "nghỉ ngơi" chỉ là khái niệm — người nghe không nhìn thấy gì. Mâm cơm nguội là thứ nhìn thấy được.
+- "Ta nên…" là lời khuyên. Bản sau không khuyên gì.
+- Bản trước đứng yên một chỗ; bản sau có một chuyển biến nhỏ (lười → xin nghỉ).
+
+## C2. Hook chung chung → hook cụ thể
+
+Trước
 
 > Có những điều trong cuộc sống khiến ta phải suy nghĩ.
 
-Sau (hook cụ thể)
+Sau
 
 > Có những bữa cơm, cả nhà ngồi đủ.
 >
 > Mà chẳng ai nói với ai câu nào.
 
-> Ghi chú: chỗ cần bổ sung dần — bài siêu ngắn (30–40 giây), bài kể chuyện (90–120 giây), bài chỉ suy ngẫm không lời khuyên, bài
-> gia đình/tuổi già/người chăm sóc (đúng ranh giới thương hiệu), mỗi loại một bài đã được duyệt. Chất lượng quan trọng hơn số lượng.
+Vì sao sửa: câu trước ai cũng nói được nên không giữ ai lại; câu sau cho một tình huống rõ, người nghe tự hỏi "rồi sao nữa?".
+
+## C3. Kết bằng lời khuyên → kết bằng điều còn dang dở
+
+Trước
+
+> Vì vậy, hãy dành thời gian nghỉ ngơi mỗi ngày để có một cuộc sống khỏe mạnh hơn.
+
+Sau
+
+> Có lẽ hôm nay, ta chỉ cần ngồi xuống một lúc.
+
+Vì sao sửa: bản trước ra lệnh ("hãy…"), tổng kết và hứa hẹn ("khỏe mạnh hơn") — đều là điều kênh không làm. Bản sau để người nghe tự đi tiếp.
+
+## C4. Câu đẹp trên giấy → câu nghe được
+
+Trước
+
+> Chính sự lo toan thường nhật ấy mới là thứ âm thầm bào mòn ta.
+
+Sau
+
+> Lo toan mỗi ngày… cứ lặng lẽ lấy đi sức của ta.
+
+Vì sao sửa: câu trước đảo ngữ, dồn ba ý, cuối câu hết hơi; giọng đọc máy không nhấn nhá như người nên nghe nặng và khó theo.
+Câu sau ngắn hơn, đọc một hơi, dùng chữ đời thường (xem `writing_craft.md` mục 43).
 
 ---
 

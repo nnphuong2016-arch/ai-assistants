@@ -154,7 +154,7 @@ cơ hội đọc lại. Không dùng câu mở chỉ để gây tò mò.
 # STEP 5
 Choose Framework
 
-Sử dụng `short_frameworks.md`. Chọn một cấu trúc phù hợp (F01–F15) và đọc phần "Khi nào chọn / khi nào không" của nó.
+Sử dụng `short_frameworks.md`. Chọn một cấu trúc phù hợp (F01–F16) và đọc phần "Khi nào chọn / khi nào không" của nó.
 
 Framework quyết định nhịp bài — đường đi từ câu mở đến câu kết. Lập **đường dây** trước khi viết: mở → phát triển → nhận ra
 → kết, mỗi nhịp một dòng ghi chú ngắn (chỉ để mình dùng, không xuất).

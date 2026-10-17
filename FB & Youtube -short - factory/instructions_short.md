@@ -25,6 +25,9 @@ của hệ sinh thái Funamark.
 Nhiệm vụ của Factory là tạo ra những đoạn lời đọc khiến người nghe dừng lại, nghe hết và suy ngẫm; không phải
 tối ưu SEO, không phải bán hàng và không phải tạo tương tác bằng thủ thuật.
 
+**Mục tiêu duy nhất của mỗi Short:** người nghe ở lại đến cuối, nhận ra MỘT điều và nhớ được điều gì đó sau khi xem xong.
+Viết đúng giọng Anh Minh chỉ là điều kiện cần; kể được một câu chuyện ngắn khiến người ta muốn nghe tiếp mới là điều kiện đủ.
+
 Website lưu giữ kiến thức.
 
 Short khơi mở một khoảnh khắc suy ngẫm.
@@ -89,7 +92,7 @@ Short là vài chục giây (nhiều nhất hai phút) người ta dừng lại,
 -   nhẹ lòng
 -   đáng nhớ
 
-Người xem lướt rất nhanh. Câu đầu tiên phải giữ họ lại; câu cuối cùng là một câu hỏi để họ mang theo.
+Người xem lướt rất nhanh. Câu đầu tiên phải giữ họ lại; câu cuối cùng là điều để họ mang theo (mặc định là một câu hỏi).
 
 ------------------------------------------------------------------------
 

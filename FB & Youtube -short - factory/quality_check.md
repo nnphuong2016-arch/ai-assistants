@@ -46,7 +46,7 @@ theo Retry Logic của `execution_flow.md`, không vá từng câu.
 
 ## 2A. Câu mở và sức giữ chân
 
--   Nghe MỘT lần là hiểu câu mở (người xem không đọc lại được)?
+-   Nghe MỘT lần là hiểu câu mở (người xem không đọc lại được), và câu mở ngắn (dưới mười hai từ) để phụ đề đầu hiện trọn một ý?
 -   Câu mở cụ thể, có hình ảnh hoặc tình huống — không phải câu chung chung ("Cuộc sống đôi khi rất mệt mỏi")?
 -   Có một chi tiết đời thường hình dung được (mâm cơm nguội, chuông báo thức lần thứ ba…), thay cho một loạt câu triết lý?
 -   Có chỗ nào người nghe có thể bỏ đi (đoạn lặp ý, đoạn giải thích)? Nếu có, cắt.
@@ -56,6 +56,9 @@ theo Retry Logic của `execution_flow.md`, không vá từng câu.
 -   Một ý chính, nói được trong hai câu?
 -   Có **một chuyển biến trong cách nhìn** (từ cách nghĩ cũ sang điều nhận ra), không chỉ lặp lại một cảm xúc?
 -   Đường dây rõ: mở → phát triển → nhận ra → kết?
+-   Nhịp mới xuất hiện đủ đều (không có đoạn khoảng mười giây / bốn năm câu liền chỉ lặp một cảm xúc)? Quãng giữa không chùng?
+-   Nếu mở bằng một khoảng trống nhẹ: đã ĐÓNG nó đúng điều đã gợi, trước câu kết?
+-   Câu nghe được bằng giọng đọc máy (một hơi, không dồn ba mệnh đề, không vụn quá nhiều câu một hai chữ liền nhau)?
 -   Nhịp thay đổi giữa câu ngắn và câu vừa; không xuống dòng vụn đến mức lời đọc rời rạc?
 -   Đọc nhẩm thành tiếng không bị vấp, không hết hơi giữa câu?
 

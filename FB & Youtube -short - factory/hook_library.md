@@ -1,6 +1,6 @@
 # HOOK LIBRARY
 
-Version: 3.1
+Version: 3.2
 Cập nhật: 17/10/2026
 
 Purpose:
@@ -508,8 +508,40 @@ Chung chung: "Tuổi tác thay đổi cơ thể chúng ta."
 
 Cụ thể hơn: "Ngày trước, thức khuya một chút, sáng mai vẫn dậy như không."
 
+Quan sát — chung chung: "Dạo này ta để ý nhiều chuyện."
+
+Quan sát — cụ thể hơn: "Dạo này ta để ý, nhiều người cầm ly nước trong tay mà quên uống."
+
+Câu hỏi — chung chung: "Bạn có thấy mệt không?"
+
+Câu hỏi — cụ thể hơn: "Lần cuối bạn ngồi yên, không cầm điện thoại, là khi nào?"
+
+Nghịch lý — chung chung: "Có thời gian mà vẫn thấy chưa nghỉ."
+
+Nghịch lý — cụ thể hơn: "Chủ nhật rảnh cả ngày. Mà đến tối, vẫn thấy chưa được nghỉ."
+
+Ký ức chung — chung chung: "Ngày xưa mọi thứ đơn giản hơn."
+
+Ký ức chung — cụ thể hơn: "Ngày trước, cả xóm nghe chung một chiếc đài vào buổi tối."
+
+Một hook mở bằng hình ảnh hoặc tình huống đọc như chữ vẫn hiểu — quan trọng vì nhiều người xem Short không bật tiếng. Câu mở nên
+dưới mười hai từ (`writing_craft.md` mục 42.5).
+
 Lưu ý: hook không nhất thiết phải gây tò mò mạnh. Với thương hiệu này, một câu rất đúng với trải nghiệm sống đôi khi
 có sức giữ hơn một câu cố gây bất ngờ.
+
+---
+
+# Mở một khoảng trống nhẹ (giữ người nghe đến cuối)
+
+Hook có thể chỉ cho một nửa điều sắp nói, để người nghe muốn nghe nốt:
+
+"Có một việc nhỏ ta làm mỗi tối, mà ít khi nghĩ tới."
+
+"Có những lần mệt, mà ngủ bao nhiêu cũng không đỡ."
+
+Điều kiện bắt buộc (không có thì không dùng): khoảng trống phải được ĐÓNG trước câu kết, bằng đúng điều đã gợi — không giật tít,
+không hứa quá, không để lơ lửng. Xem `writing_craft.md` mục 42.3.
 
 ---
 

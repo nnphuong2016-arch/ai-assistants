@@ -50,7 +50,7 @@ và mô tả theo từng nơi.)
 
 **Pillar** — 1 trong 6 trụ chính thức, tra bảng "Cầu nối 6 trụ" ở `topic_map.md`.
 
-**Framework** — mã F01–F15 theo `short_frameworks.md`.
+**Framework** — mã F01–F16 theo `short_frameworks.md`.
 
 **Hook Source** — `S<series>-<dòng>` (từ kho), `Trực tiếp` (người vận hành đưa) hoặc `Tự sinh` (idea_library).
 
@@ -61,8 +61,9 @@ và mô tả theo từng nơi.)
 **Size** — Nhanh / Tiêu chuẩn / Kể chuyện, kèm số từ và số ký tự đã đếm.
 
 **Log Row** — một dòng sẵn để dán vào bảng của `short_log.md`:
-`| Mã | Topic / Góc | Mood · Khung | Kiểu mở | Hình/ẩn dụ | Kiểu kết | Cỡ (giây) | Đăng | | |` (hai cột cuối — số liệu và
-bài học — để trống, điền sau khi đăng).
+`| Mã | Topic / Góc | Khán giả · Mùa | Mood · Khung | Kiểu mở | Hình/ẩn dụ | Kiểu kết | Cỡ (giây) | Đăng | | |` (hai cột cuối — số
+liệu và bài học — để trống, điền sau khi đăng). Kèm: nếu bài lấy từ kho thì nhắc người vận hành thêm mã `S<series>-<dòng>` vào
+danh sách "Dòng kho đã làm" ở đầu `short_log.md`.
 
 ------------------------------------------------------------------------
 

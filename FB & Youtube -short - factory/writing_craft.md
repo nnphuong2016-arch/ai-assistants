@@ -1,6 +1,6 @@
 WRITING CRAFT
 
-Version: 3.1
+Version: 3.2
 Cập nhật: 17/10/2026
 Status: Foundation Document
 Applies to: Short Factory (AI-Agnostic)
@@ -284,7 +284,7 @@ Hãy cố gắng lên.
 
 Thay vào đó.
 
-Hãy kết bằng một câu hỏi nhẹ, để người nghe mang theo.
+Hãy kết bằng một điều còn dang dở, để người nghe mang theo — mặc định là một câu hỏi nhẹ; các kiểu kết khác ở mục 21.
 
 Ví dụ
 
@@ -554,28 +554,35 @@ Và chợt hiểu.
 
 Kết bài không phải để tổng kết.
 
-Kết bài là để người nghe mang câu hỏi đi tiếp.
+Kết bài là để người nghe mang MỘT điều đi tiếp.
 
-Công thức: một vài câu nhẹ khép lại ý chính (không rút bài học), rồi **một câu hỏi tự vấn in đậm** — xem
-writing_rules.md mục 8.
+Công thức: một vài câu nhẹ khép lại ý chính (không rút bài học), rồi một câu kết. Năm kiểu kết (xem `writing_rules.md` mục 8; câu hỏi
+là mặc định, nhưng không dùng cùng một kiểu quá hai Short liên tiếp):
 
-Kiểu 1 — Hỏi về hôm nay
+Kiểu 1 — Câu hỏi tự vấn (in đậm)
 
 Hôm nay, bạn đã cho mình được nghỉ ngơi thật sự chưa?
-
-Kiểu 2 — Hỏi về sự thay đổi
-
 Bạn có nhận ra điều gì ở cơ thể mình đã khác so với vài năm trước không?
-
-Kiểu 3 — Hỏi về một việc nhỏ
-
 Lần cuối bạn ngồi yên nghe tiếng mưa là khi nào?
-
-Kiểu 4 — Hỏi về điều bị bỏ quên
-
 Điều gì trong ngày hôm nay, bạn vẫn chưa kịp dành cho mình?
 
-Câu hỏi tốt:
+Kiểu 2 — Một điều nhận ra
+
+Đi vòng một đoạn, nước vẫn là nước.
+
+Kiểu 3 — Một hình ảnh khép lại
+
+Ngoài hiên, nắng vừa lên.
+
+Kiểu 4 — Một lời nhắn nhẹ
+
+Có lẽ lần tới, ta cứ ngồi xuống, và nghe như thể đây là lần đầu.
+
+Kiểu 5 — Một khoảng lặng
+
+Ông không nói gì. Chỉ đứng ở cửa một lúc, lâu hơn thường lệ.
+
+Câu kết tốt (kể cả khi là câu hỏi):
 
 Ngắn.
 
@@ -1284,6 +1291,72 @@ cùng kiểu kết (đừng hai bài liền cùng kết bằng câu hỏi nếu 
 
 Một chủ đề có thể nở thành nhiều Short khác nhau, miễn góc kể, chi tiết và chuyển biến khác nhau — không chỉ thay vài từ trong
 câu mở.
+
+42. Giữ người nghe đến cuối (nhịp kể)
+
+Người xem Short quyết định ở lại hay vuốt đi nhiều lần, không chỉ ở ba giây đầu. Một bài hay không chỉ "đúng giọng": nó luôn có thứ
+mới xuất hiện đủ đều để người nghe muốn nghe tiếp. Đây là chỗ bài đúng khuôn nhưng nhạt thường rơi.
+
+42.1 Nhịp là gì
+
+Một nhịp = một thứ mới: một hình ảnh mới, một chuyển ý ("Nhưng…", "Rồi năm tháng trôi qua."), một câu hỏi nhỏ, một chi tiết nhẹ nhàng
+bất ngờ. Quy tắc: không để quá khoảng mười giây lời đọc (ba, bốn câu, chừng một trăm tám mươi ký tự) mà không có nhịp mới.
+
+Đọc lại bài và đánh dấu: chỗ nào bốn, năm câu liền chỉ lặp một cảm xúc — đó là chỗ người nghe rời đi. Thay bằng một chi tiết, một
+chuyển ý hoặc cắt bỏ.
+
+42.2 Đường dây theo cỡ (gợi ý, không phải khuôn)
+
+Nhanh (4 nhịp): Mở bằng hình ảnh hoặc tình huống → Đổi góc nhìn ("Hóa ra…") → Điều nhận ra → Câu kết.
+Tiêu chuẩn (5–6 nhịp): Mở → Chi tiết cụ thể → Đổi góc nhìn lần một ("Không hẳn vì…") → Chuyển biến chính ("Nhưng bạn biết
+không…", thường vào khoảng hai phần năm đến hai phần ba bài) → Điều nhận ra hoặc lời nhắn nhẹ → Câu kết.
+Kể chuyện (3 hồi): Thiết lập (ai, ở đâu, thói quen) → Diễn biến (một lần khác thường) → Nhận ra rồi dừng. Mỗi hồi có nhịp mới riêng.
+
+Đối chiếu kịch bản 1.1: nhận ra cơn mệt → "Không hẳn vì…" → "Lo cho…" (chi tiết) → "Nhưng bạn biết không…" (chuyển biến chính) →
+lời nhắn nhẹ → câu hỏi. Mẫu 3–7 trong `short_examples.md` có ghi chú nhịp từng bài.
+
+42.3 Mở một khoảng trống nhẹ, rồi đóng nó
+
+Câu mở có thể chỉ đưa một nửa: "Có một việc nhỏ ta làm mỗi tối, mà ít khi nghĩ tới." Người nghe muốn biết đó là việc gì.
+
+Điều kiện bắt buộc: khoảng trống phải được ĐÓNG đàng hoàng trước câu kết, và đáp án phải đúng bằng điều đã gợi — không giật tít, không
+hứa quá, không để lơ lửng. Gợi tò mò mà không trả lời là clickbait, kênh không làm.
+
+42.4 Ba chỗ dễ rơi
+
+(a) Hai câu đầu — nếu chung chung, họ đi. (b) Quãng giữa — chỗ dễ chùng nhất: chèn nhịp mới. (c) Ngay trước câu kết — đừng giải thích lại
+những gì vừa nói; đoạn cuối nên ngắn hơn đoạn giữa.
+
+42.5 Câu mở ngắn
+
+Câu mở dưới mười hai từ, để dòng phụ đề đầu tiên hiện trọn một ý — nhiều người xem không bật tiếng. Câu mở nên đọc như chữ cũng hiểu.
+
+43. Câu hay trên giấy khác câu hay khi nghe
+
+Máy đọc không có mắt để dò lại và không nhấn nhá như người. Câu đẹp trên giấy có thể nghe rất nặng. So sánh:
+
+Trên giấy: Chính sự lo toan thường nhật ấy mới là thứ âm thầm bào mòn ta.
+Khi nghe: Lo toan mỗi ngày… cứ lặng lẽ lấy đi sức của ta.
+
+Trên giấy: Sự an yên trong tâm hồn đến từ việc chấp nhận.
+Khi nghe: Lòng yên lại, khi ta thôi cố sửa mọi thứ.
+
+Trên giấy: Lo cho con, lo cho nhà, lo cho việc, lo cho tương lai, lo cho sức khỏe.
+Khi nghe: Lo cho con. Lo chuyện nhà. Lo cả những điều chưa xảy đến. (Ba vế là đủ.)
+
+Trên giấy: một câu dài nhiều mệnh đề lồng nhau.
+Khi nghe: tách thành hai hoặc ba câu vừa, mỗi câu một hơi.
+
+Trên giấy: "an lạc", "tâm thế", "tiêu dao", hoặc chuỗi "sự…", "việc…" nối nhau.
+Khi nghe: "nhẹ lòng", "yên", "thong thả" — chữ đời thường, ít danh từ hóa.
+
+Quy tắc nghe: mỗi câu đọc được trong một hơi; không dồn ba mệnh đề vào một câu; tránh ba chữ giống nhau gần nhau; bỏ trò chơi chữ
+và vần điệu dựa vào mặt chữ.
+
+43.1 Đừng vụn quá
+
+Nhiều câu cực ngắn (một, hai chữ) liên tiếp khiến giọng đọc gằn từng tiếng, nghe rời rạc. Tối đa hai, ba câu cực ngắn liền nhau, rồi
+một câu vừa để giọng đọc "thở". Xuống dòng là để lấy hơi, không phải để băm câu. Nhịp hay là nhịp có ngắn có vừa, như người đang nói.
 
 Phụ lục A – Chất giọng của Short Factory
 

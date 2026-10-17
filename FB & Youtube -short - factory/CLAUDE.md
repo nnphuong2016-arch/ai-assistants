@@ -17,6 +17,9 @@ Phần còn lại do n8n lo (workflow `WFAnhMinhC204`): đọc nguyên file làm
 ghép clip thiên nhiên + nhạc nền + logo, rồi workflow `WFAnhMinhC205` đăng YouTube Shorts. Cùng một video đó
 dùng cho Reel.
 
+**Mục tiêu duy nhất của mỗi Short:** người nghe ở lại đến cuối, nhận ra MỘT điều và nhớ được điều gì đó sau khi xem xong.
+Viết đúng giọng Anh Minh chỉ là điều kiện cần; kể được một câu chuyện ngắn khiến người ta muốn nghe tiếp mới là điều kiện đủ.
+
 **File được đọc thành tiếng NGUYÊN VĂN — trừ đúng một dòng: dòng đầu `# Tiêu đề`** (tiêu đề YouTube của video, lấy từ
 tiêu đề bài viết tương ứng, KHÔNG được đọc). Mọi chữ còn lại trong file đều là lời đọc: không ghi chú, không tiêu đề
 mục khác, không hướng dẫn quay, không hashtag. Chi tiết khuôn file: `output_schema.md`.
@@ -32,7 +35,7 @@ mục khác, không hướng dẫn quay, không hashtag. Chi tiết khuôn file:
 3. `writing_rules.md` — được phép/không được phép viết gì (mục 4.1 = ranh giới thương hiệu tuyệt đối).
 4. `writing_craft.md` — dạy giọng viết cho lời đọc (tra khi cần).
 5. `quality_check.md` — tự kiểm trước khi xuất, ≥2 lỗi thì viết lại.
-6. `short_frameworks.md` — chọn 1 trong 15 khung F01–F15 (kèm khi nào KHÔNG nên dùng).
+6. `short_frameworks.md` — chọn 1 trong 16 khung F01–F16 (kèm khi nào KHÔNG nên dùng).
 7. `emotion_palette.md` — chọn 1 cảm xúc chính (+ tối đa 1 cảm xúc phụ).
 8. `bai-dang-Facebook-Anh-Minh.md` (gốc repo `ai-assistants/`) — kho 210 hook/chủ đề của Anh Minh, 7 series × 30 dòng, nguồn ý tưởng thứ hai.
 9. `idea_library.md` — nguồn ý tưởng thứ ba (tự sinh) khi hai nguồn trên không đủ.
@@ -51,7 +54,7 @@ Ngoài ra, khi cần: `core-brain/dong_hanh_nguoi_benh.md` (nếu bài chạm ng
 ## 2. QUY TRÌNH 10 BƯỚC (`execution_flow.md`) — KHÔNG BỎ BƯỚC, KHÔNG ĐẢO THỨ TỰ
 
 Understand → Select Topic (CHỈ 1 topic chính) → Generate Ideas (3 nguồn: chủ đề người dùng đưa trực tiếp ưu tiên cao
-nhất → kho 210 hook → `idea_library.md`) → **Safety Filter (STEP 3.5)** → Choose Hook → Choose Framework (F01–F15) →
+nhất → kho 210 hook → `idea_library.md`) → **Safety Filter (STEP 3.5)** → Choose Hook → Choose Framework (F01–F16) →
 **Choose Emotion** (chọn TRƯỚC khi viết) → Write Draft → Compare Examples → Quality Review → Output.
 
 Nếu một bước chưa đạt, quay lại đúng bước đó theo Retry Logic — không sửa chắp vá từng câu.

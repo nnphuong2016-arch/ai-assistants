@@ -132,7 +132,7 @@ Ranh giới ngắn gọn: **"mình" được nghĩ, không được nhớ.**
 -   Một bài = Một ý chính.
 -   Mở bằng một câu giữ người nghe lại (xem `hook_library.md`).
 -   Phát triển mạch lạc, mỗi đoạn một ý nhỏ.
--   Kết bằng **đúng một câu hỏi tự vấn in đậm** (mục 8).
+-   Kết bằng một câu kết có dư âm — mặc định là **một câu hỏi tự vấn in đậm**, có thể đổi kiểu (mục 8).
 
 ## 6.1. ĐỘ DÀI (đo bằng lời đọc, không đo bằng bài viết)
 
@@ -209,6 +209,8 @@ Quy tắc:
 -   Giữ câu hỏi làm kiểu mặc định; đổi kiểu khi bài hợp, nhưng **không dùng cùng một kiểu kết quá hai Short liên tiếp**.
 -   Chỉ câu hỏi (kiểu 1) mới in đậm. Các kiểu khác viết thường.
 -   Không biến câu kết thành thủ tục máy móc — nếu câu hỏi nghe như điền cho đủ, đổi kiểu.
+-   Thử nghiệm có kiểm soát: giai đoạn đầu giữ câu hỏi làm mặc định; thử các kiểu kết khác theo từng đợt nhỏ, mỗi đợt chỉ đổi MỘT
+    yếu tố, ghi cột "Kiểu kết" ở `short_log.md` rồi so số liệu cùng cỡ, cùng nhóm chủ đề. Không đổi tất cả cùng lúc.
 -   Câu hỏi không phải lời kêu gọi tương tác, và không cần đứng một mình làm tiêu đề (tiêu đề là dòng `#` đầu file).
 
 Không dùng các mẫu như:

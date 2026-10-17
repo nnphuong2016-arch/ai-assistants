@@ -1,6 +1,6 @@
 # SHORT FRAMEWORKS
 
-Version: 2.1
+Version: 2.2
 Status: Official Framework Library
 Cập nhật: 17/10/2026
 
@@ -182,6 +182,17 @@ Khi nào chọn: bài Tiêu chuẩn/Kể chuyện có một vật trung tâm (�
 
 ------------------------------------------------------------------------
 
+## F16 - Câu chuyện kết mở
+
+Kể một tình huống nhỏ và dừng đúng ở chỗ người nghe tự nghĩ tiếp. Không lời khuyên, không rút bài học, không câu hỏi tổng kết.
+
+Luồng: Tình huống → Một chi tiết lặp lại hoặc một chuyển biến → Hình ảnh cuối hoặc khoảng lặng.
+
+Khi nào chọn: bài Kể chuyện hoặc Nhanh có một hình ảnh đủ sức mang ý. Tránh: khi ý cần một lời nhắn rõ; tránh kết mở đến mức người
+nghe không hiểu bài nói gì (mẫu 5 trong `short_examples.md` là ví dụ).
+
+------------------------------------------------------------------------
+
 # 5. CÁCH CHỌN FRAMEWORK
 
 -   Đồng cảm → F02
@@ -191,6 +202,27 @@ Khi nào chọn: bài Tiêu chuẩn/Kể chuyện có một vật trung tâm (�
 -   Quan sát đời thường → F06, F09 hoặc F11
 -   Ký ức chung → F14
 -   Có một vật trung tâm → F15
+
+**Bảng chọn nhanh (khi nào dùng · khi nào tránh):**
+
+| Khung | Dùng khi | Tránh khi / dễ lặp |
+|---|---|---|
+| F01 Hóa ra | Ý có sẵn một hiểu lầm quen thuộc | Hai Short trước đã dùng "Hóa ra"; dễ kết "cơ thể chỉ cần nghỉ" |
+| F02 Có những ngày | Đồng cảm thuần | Muốn đưa góc nhìn mới (sẽ thành bài lặp một cảm xúc) |
+| F03 Đừng vội | Cần làm chậm nhịp nghĩ | Giọng dễ thành lời dạy "đừng…" |
+| F04 Nếu hôm nay | Tự đối thoại, một việc nhỏ | Dễ thành "hãy làm…" |
+| F05 Ta từng nghĩ | Thay đổi cách nghĩ (cách nghĩ chung) | Dễ thành hồi ký riêng; dễ kết "hóa ra ta đã nhầm" |
+| F06 Một điều nhỏ | Bắt đầu từ một chi tiết đời thường | Chi tiết không dẫn tới ý nào |
+| F07 Câu chuyện ngắn | Có nhân vật vô danh và diễn biến | Chưa có chuyển biến rõ; đừng rút bài học |
+| F08 Câu hỏi mở | Ý nằm ngay ở câu hỏi | Dễ thành câu tương tác |
+| F09 Quan sát hôm nay | Ghi lại một quan sát đời sống | Thiếu chi tiết cụ thể; dễ kết "có lẽ…" |
+| F10 Điều không ai nhắc | Góc ít được để ý nhưng gần gũi | Dễ giật tít, dễ dọa |
+| F11 Khoảnh khắc nhỏ → nhận ra | Bài Nhanh, một hình ảnh đủ mạnh | Kéo thành bài học |
+| F12 Hiểu lầm nhìn lại | Có sẵn một "hiểu lầm" (tưởng lười, tưởng già) | Dạy đời, bắt lỗi người nghe |
+| F13 Hai thế hệ | Đề tài gia đình, kể ngôi ba | Hội thoại hai nhân vật; dựng gia đình riêng cho nhân vật |
+| F14 Một câu nói đời thường | Bài có ký ức chung | Câu nói nghe như danh ngôn |
+| F15 Chi tiết lặp lại | Có một vật trung tâm (ấm trà, đôi dép) | Nhắc lướt; giải thích nghĩa của vật |
+| F16 Câu chuyện kết mở | Bài Kể chuyện/Nhanh, hình ảnh mạnh | Ý cần lời nhắn rõ; kết mở đến mức khó hiểu |
 
 **Khi nào KHÔNG nên dùng:**
 

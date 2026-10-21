@@ -1,0 +1,3 @@
+# FreeFileSync tu tao/xoa file khoa nay moi lan chay dong bo - khong commit
+sync.ffs_lock
+*.ffs_lock

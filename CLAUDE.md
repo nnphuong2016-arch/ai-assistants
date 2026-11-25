@@ -264,6 +264,25 @@ tiên**. Thay vào đó:
 > sót trong lần đầu (khi đó phiên chính tự viết thẳng, không qua agent con, nên không có bước
 > soát lại độc lập).
 
+> **QUY TẮC THƯỜNG TRỰC cho KỊCH BẢN VIDEO — mỗi tập một agent, làm tuần tự (thêm 25/11/2026 theo
+> yêu cầu trực tiếp của người vận hành, để KHÔNG phải nhắc lại mỗi lần):**
+>
+> - **Mỗi tập = đúng MỘT agent con, giao TUẦN TỰ từng tập** (chạy foreground, đợi xong rồi mới giao
+>   tập kế). **TUYỆT ĐỐI KHÔNG** chạy nhiều agent song song, và **KHÔNG** nhờ một agent viết nhiều
+>   tập. Người vận hành từng từ chối cách chạy song song 10 agent (25/11/2026) — đừng lặp lại. Áp dụng
+>   cả khi **sửa lại** tập theo góp ý (mỗi tập sửa một agent). Nếu một agent bị ngắt giữa chừng
+>   (giới hạn, lỗi API), giao agent mới đọc `git diff` hiện trạng rồi hoàn thiện.
+> - Phiên chính tự đọc lại và biên tập TỪNG tập ngay khi agent trả về (không dồn đến cuối), chạy
+>   kiểm tự động, rồi mới giao tập kế.
+> - **Khi người vận hành nói "viết tiếp N bài"**: không hỏi lại, tự lấy N dòng backlog kế tiếp trong
+>   `bai-video-dang-Youtube-Anh-Minh.md` sau tập có số lớn nhất đã có trong repo `Youtube---Anh-Minh`
+>   (số tập = số dòng backlog; Series 02 → `2.<dòng>`...), báo danh sách rồi làm.
+> - Quy tắc điều phối chi tiết, khuôn prompt, khung an toàn 3 mức (cấp cứu / khám sớm / tự chăm sóc
+>   nhẹ), danh sách bài học từ các đợt góp ý, kiểm tự động và mẫu báo cáo: **`video-factory/
+>   giao_viec_agent_video.md`** — phiên chính PHẢI cho agent con đọc file này mỗi lần giao việc.
+> - Cuối đợt: commit/push theo Bước 5.B rồi báo **giờ commit + danh sách file đã đổi** để người vận
+>   hành biết file nào phải copy lại sang Drive (bản Drive cũ hơn bản repo là nguồn gây dựng nhầm video).
+
 **Khi nào KHÔNG áp dụng:** việc trò chuyện/tư vấn nhanh (chat trực tiếp — không phải "viết một
 nội dung" để lưu file), các câu hỏi/rà soát không tạo ra nội dung mới, và các tác vụ kỹ thuật
 không phải sinh nội dung văn bản (sửa file rules, upload file, thao tác Drive/GitHub...).

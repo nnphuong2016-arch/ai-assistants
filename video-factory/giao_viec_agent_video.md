@@ -65,7 +65,7 @@ nhất trong `/home/user/youtube---anh-minh/kich-ban-video/` (cả `_master_scri
 6. Không URL/tên tổ chức trong lời thoại. Không thần bí. Anh Minh là nhân vật AI, không kể như có
    trải nghiệm y khoa/cá nhân thật.
 
-## 4. Khung an toàn bắt buộc + bài học từ các đợt góp ý (1.25–1.45)
+## 4. Khung an toàn bắt buộc + bài học từ các đợt góp ý (1.25–2.5)
 
 **3 mức hành động — mỗi mức một câu riêng, rõ, trung tính, không dọa, KHÔNG mốc ngày/ngưỡng số cứng, không chẩn đoán:**
 1. **Cấp cứu/khẩn:** triệu chứng đột ngột, nặng, tăng nhanh, dấu hiệu thần kinh, đau ngực/khó thở rõ,
@@ -95,9 +95,41 @@ scene/đoạn RIÊNG, đặt sau phần giải thích chính; nhắc không tự
 - Thumbnail: Anh Minh đúng ngoại hình `image_style_bible.md`, cinematic wellness, không CAPS/giật
   gân/bệnh viện/vết thương/chữ Hán/số đọc được; cảnh minh họa không mâu thuẫn lời thoại.
 
+**Bài học đợt góp ý 1.46–2.5 (26/11/2026 — Gemini + một bản góp ý độc lập; đừng lặp lại):**
+- **Chống "khuôn lắp ráp" giữa các tập.** 10 tập viết liền nhau từng dùng chung một công thức: câu dẫn
+  ẩn dụ ("Có một hình ảnh giúp dễ nhớ, nhưng chỉ là minh họa thôi" + chốt "hình ảnh ấy chỉ để... phức
+  tạp hơn nhiều") và đoạn kết Scene 008 ("Nếu muốn thử một điều thật nhỏ... Không cần hoàn hảo... Có
+  một điều ít khi ta để ý... Anh Minh xin để lại một câu hỏi"). Mỗi tập phải dẫn ẩn dụ và kết bài bằng
+  cách RIÊNG; trước khi viết, agent grep/đọc Scene 007–008 của các tập đã có trong thư mục để chọn cách
+  mở/kết khác tất cả. Vẫn nói rõ ẩn dụ chỉ là minh họa. Cụm "mỗi người một khác" tối đa 2 lần/tập.
+- **Scene 008 phải `Loop: false`** (chỉ Scene 009 outro `Loop: true`). Tổng Duration các scene phải
+  BẰNG "Duration mục tiêu" ghi ở đầu file; đổi số từ thì sửa lại cả hai. Phiên chính kiểm bằng Python.
+- **Sửa theo góp ý không được sinh lỗi mới:** đã xảy ra (2.2) agent viết lại Scene 008 bằng một ẩn dụ
+  THỨ HAI có nhân cách hóa ("câu tự trách gõ cửa, như khách quen ghé muộn"). Khi dặn agent viết lại cảnh
+  kết, nói rõ: không thêm ẩn dụ, không nhân cách hóa, dùng một việc nhỏ cụ thể hoặc một câu hỏi.
+- **Tiêu đề không được đặt cảm nhận chủ quan đối lập/cao hơn tư vấn chuyên môn** (VD "lắng nghe cơ thể
+  quan trọng hơn chạy theo lời khuyên" → đổi thành "Giữa nhiều lời khuyên, lắng nghe cơ thể thế nào cho
+  đúng"); không đặt một hiệu ứng tâm lý thành quy luật trong tiêu đề ("càng cố quên càng nhớ" → "Vì sao
+  có lúc chuyện cũ quay lại khi ta cố gạt đi"). Đổi tiêu đề = đổi cả Video Title, tên 2 file, Quick Copy,
+  Filename thumbnail. Ý nghĩ bám theo backlog vẫn giữ ở "Hook nguồn".
+- **Dấu hiệu cấp cứu không đặt điều kiện thừa:** sốc nhiệt có thể da khô HOẶC ẩm/đổ mồ hôi — chỉ nêu lú
+  lẫn, nói năng lạ, ngất/co giật, cơ thể rất nóng. Không dùng "da nóng mà khô" như điều kiện.
+- **Mẹo chăm sóc phải kèm điều kiện:** súc miệng nước sạch KHÔNG thay chải răng + làm sạch kẽ răng; không
+  lấy "bớt khẩu phần/bỏ bữa" làm ví dụ cho người nghe nói chung; ghi chép triệu chứng để hỏi bác sĩ, không
+  để tự chẩn đoán/tự loại thực phẩm hay thuốc; "khi không có cảm giác gì" nói là "một số vấn đề chỉ được
+  phát hiện qua thăm khám phù hợp", không gợi lo bệnh âm thầm.
+- **Tâm lý — giảm quy luật, mở lối an toàn:** dùng "đôi khi / một số người / có lúc"; một lời giải thích
+  chỉ là MỘT khả năng (tự trách không phải lúc nào cũng chứng tỏ quan tâm; nước mắt không có một ý nghĩa
+  chung; trống trải sau thành công còn có thể đi cùng mệt mỏi, mất mát, cô đơn, sức khỏe, tâm trạng);
+  các cách tự làm nhẹ phải kèm "chỉ chọn cách bạn thấy an toàn, có thể dừng, tìm người hỗ trợ"; lời
+  khuyên chia sẻ phải kèm "chỉ khi thấy an toàn"; chuyên gia là người cùng hiểu và hỗ trợ, không chỉ "người
+  nghe". Tránh "tự đánh mình" (dễ hiểu là đánh thể xác) — dùng "tự dằn vặt/tự hạ thấp mình".
+- Visual/Camera của scene phải bám lời thoại của chính scene đó (Scene 001 minh họa đúng hook, không
+  chỉ đổi bối cảnh chung chung).
+
 **Kiểm tự động phiên chính phải chạy sau mỗi tập (Python):** outro xuất hiện đúng 2 lần nguyên văn;
-VOICE (bỏ dòng tiêu đề `## VOICE`) khớp từng chữ với Voice ghép từ các scene; thân/tổng từ + duration
-trong khoảng; không từ cấm mục 9; `_prompts.md` chỉ có Quick Copy + Thumbnail, không rò ghi chú nội bộ.
+VOICE (bỏ dòng tiêu đề `## VOICE`) khớp từng chữ với Voice ghép từ các scene; thân/tổng từ trong khoảng; tổng Duration
+các scene BẰNG "Duration mục tiêu"; `Loop` Scene 008 = false; không từ cấm mục 9; `_prompts.md` chỉ có Quick Copy + Thumbnail, không rò ghi chú nội bộ.
 
 ## 5. "Lưu ý riêng của tập" — phiên chính viết vào prompt từng agent
 

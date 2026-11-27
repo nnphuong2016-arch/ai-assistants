@@ -149,6 +149,11 @@ Mỗi video có **2 file** trong cùng thư mục Drive, không phải 1:
 **A. QUICK COPY (dán thẳng khi đăng YouTube):**
 - **Title:** 2–3 phương án tiêu đề, khớp nội dung thật của video (không giật gân/nói quá — theo
   đúng "TUYỆT ĐỐI KHÔNG" ở `core-brain/instructions.md`).
+- **Hook Facebook** (thêm 26/11/2026 — BẮT BUỘC ở mọi file `_prompts.md`): viết dòng `**Hook Facebook:**`,
+  dòng dưới là 1–2 câu (khoảng 150 ký tự) cho bài đăng Fanpage, đặt ngay **trước** `**Description:**`.
+  Workflow `WFAnhMinhC206` lấy đúng mục này. Theo mục 1 và "Luật riêng nhóm Sức khỏe" ở
+  `examples_and_hooks.md`: điềm tĩnh, không giật gân, không dọa bệnh, không chạm chẩn đoán, không bỏ
+  lửng bằng dấu ba chấm; không chép lại câu mở đầu Description; xoay vòng kiểu mở giữa các tập.
 - **Description:** đoạn mô tả ngắn giới thiệu video (không phải chép lại toàn văn lời dẫn), có
   thể chèn 1 câu CTA nhẹ (đăng ký kênh — khớp outro `video_rules.md` mục 1.E, không tạo CTA
   khác). Không tự thêm timestamp giả nếu chưa cắt dựng xong.
